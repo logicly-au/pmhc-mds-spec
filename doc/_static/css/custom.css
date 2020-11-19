@@ -93,7 +93,12 @@ a.headerlink {
     src:local("Arial"),url(fonts/arial.ttf) format("truetype");
 }
 
-/* Fixes definition list styling */
+/* Styles DL/DT/DD elements correctly */
+td > dl.field-list.simple > dt, dd > dl.field-list.simple > dt {
+    float:left
+}
+
+/* Fixes spacing issue when DT element is longer than 2 characters */
 dt {
-    float:left;
+    padding-right: 1rem;
 }
