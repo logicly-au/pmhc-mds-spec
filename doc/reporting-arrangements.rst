@@ -59,7 +59,8 @@ Outcome Measure Standard Deviations
 Outcome Measure Standard Deviations will be updated in the second
 half of August each year.
 
-`Download PMHC Outcome Measure Standard Deviations 2020 as XLSX <_static/2020-pmhc-outcome-measure-standard-deviations.xlsx>`_.
+* `Download PMHC Outcome Measure Standard Deviations 2021 as XLSX <_static/2021-pmhc-outcome-measure-standard-deviations.xlsx>`_.
+* `Download PMHC Outcome Measure Standard Deviations 2020 as XLSX <_static/2020-pmhc-outcome-measure-standard-deviations.xlsx>`_.
 
 Support arrangements
 --------------------
