@@ -11,6 +11,11 @@ The domain of individual items is defined in :ref:`record-formats`.
 Current Validations
 -------------------
 
+.. contents::
+   :local:
+   :depth: 1
+
+
 .. _practitioner-current-validations:
 
 Practitioner
