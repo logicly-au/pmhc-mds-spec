@@ -12,5 +12,4 @@ ENV PERL5LIB=/usr/local/lib
 
 WORKDIR /mnt/cwd
 
-CMD ["metadata2rst.sh", "pmhc-metadata.json"]
-
+CMD ["metadata2rst.sh", "metadata.json"]
