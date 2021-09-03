@@ -3,6 +3,15 @@
 Data Specification Change log
 =============================
 
+3/8/2021
+--------
+
+* :ref:`reporting_arrangements`
+
+  * :ref:`reporting_inputs`
+
+    * Added 2021 PMHC Outcome Measure Standard Deviations
+
 12/5/2021
 ---------
 
