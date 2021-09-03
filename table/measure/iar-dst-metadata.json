@@ -1,0 +1,230 @@
+{
+  "@id": "iar-dst-metadata.json",
+  "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
+  "columns": [{
+    "name": "organisation_path",
+    "titles": [ "organisation_path" ],
+    "dc:title": "Organisation Path",
+    "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
+    "schema:disambiguatingDescription": "type/organisation-path.rst",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+     "name": "measure_key",
+    "titles": [ "measure_key" ],
+    "dc:title": "Measure Key",
+    "schema:description": "This is a number or code assigned to each instance of a measure. The Measure Key is unique and stable for each instance of a measure at the level of the organisation.",
+    "schema:disambiguatingDescription": "table/measure/key.rst",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "required": true
+  },{
+    "name": "intake_key",
+    "titles": [ "intake_key" ],
+    "dc:title": "Intake Key",
+    "schema:description": "This is a number or code assigned to each intake. The Intake Key is unique and stable for each intake at the level of the organisation.",
+    "schema:disambiguatingDescription": "table/intake/key.rst",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "required": true
+  },{
+    "name": "iar_dst_domain_1",
+    "titles": [ "iar_dst_domain_1" ],
+    "dc:title": "IAR-DST - Domain 1 - Symptom Severity and Distress (Primary Domain)",
+    "schema:description": "An initial assessment should examine severity of symptoms, distress and previous history of mental illness. Severity of current symptoms and associated levels of distress are important factors in assigning a level of care and making a referral decision. Assessing changes in symptom severity and distress also forms an important part of outcome monitoring.",
+    "schema:disambiguatingDescription": "table/measure/iar-dst/domain-1.rst",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "iar_dst_domain_2",
+    "titles": [ "iar_dst_domain_2" ],
+    "dc:title": "IAR-DST - Domain 2 - Risk of Harm (Primary Domain)",
+    "schema:description": "An initial assessment should include an evaluation of risk to determine a person’s potential for harm to self or others. Results from this assessment are of fundamental importance in deciding the appropriate level of care required.",
+    "schema:disambiguatingDescription": "table/measure/iar-dst/domain-2.rst",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "iar_dst_domain_3",
+    "titles": [ "iar_dst_domain_3" ],
+    "dc:title": "IAR-DST - Domain 3 - Functioning (Primary Domain)",
+    "schema:description": "An initial assessment should consider functional impairment caused by or exacerbated by the mental health condition. While other types of disabilities may play a role in determining what types of support services may be required, they should generally not be considered in determining mental health intervention intensity within a stepped care continuum.",
+    "schema:disambiguatingDescription": "table/measure/iar-dst/domain-3.rst",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "iar_dst_domain_4",
+    "titles": [ "iar_dst_domain_4" ],
+    "dc:title": "IAR-DST - Domain 4 - Impact of Co-existing Conditions (Primary Domain)",
+    "schema:description": "Increasingly, individuals are experiencing and managing multi-morbidity (coexistence of multiple conditions including chronic disease). An initial assessment should specifically examine the presence of other concurrent health conditions that contribute to (or have the potential to contribute to) increased severity of mental health problems and/or compromises the person’s ability to participate in the recommended treatment.",
+    "schema:disambiguatingDescription": "table/measure/iar-dst/domain-4.rst",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "iar_dst_domain_5",
+    "titles": [ "iar_dst_domain_5" ],
+    "dc:title": "IAR-DST - Domain 5 - Treatment and Recovery History (Contextual Domain)",
+    "schema:description": "This initial assessment domain should explore the individual’s relevant treatment history and their response to previous treatment. Response to previous treatment is a reasonable predictor of future treatment need and is particularly important when determining appropriateness of lower intensity services.",
+    "schema:disambiguatingDescription": "table/measure/iar-dst/domain-5.rst",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "iar_dst_domain_6",
+    "titles": [ "iar_dst_domain_6" ],
+    "dc:title": "IAR-DST - Domain 6 - Social and Environmental Stressors (Contextual Domain)",
+    "schema:description": "This initial assessment domain should consider how the person’s environment might contribute to the onset or maintenance of a mental health condition. Significant situational or social complexities can lead to increased condition severity and/or compromise ability to participate in the recommended treatment. Unresolved situational or social complexities can limit the likely benefit of treatment. Furthermore, understanding the complexities experienced by the individual (with carer/support person perspectives if available), may alter the type of service offered, or indicate that additional service referrals may be required (e.g., a referral to an emergency housing provider).",
+    "schema:disambiguatingDescription": "table/measure/iar-dst/domain-6.rst",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "iar_dst_domain_7",
+    "titles": [ "iar_dst_domain_7" ],
+    "dc:title": "IAR-DST - Domain 7 - Family and Other Supports (Contextual Domain)",
+    "schema:description": "This initial assessment domain should consider whether informal supports are present and their potential to contribute to recovery. A lack of supports might contribute to the onset or maintenance of the mental health condition and/or compromise ability to participate in the recommended treatment.",
+    "schema:disambiguatingDescription": "table/measure/iar-dst/domain-7.rst",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "iar_dst_domain_8",
+    "titles": [ "iar_dst_domain_8" ],
+    "dc:title": "IAR-DST - Domain 8 - Engagement and Motivation (Contextual Domain)",
+    "schema:description": "This initial assessment domain should explore the person’s understanding of the mental health condition and their willingness to engage in or accept treatment.",
+    "schema:disambiguatingDescription": "table/measure/iar-dst/domain-8.rst",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "iar_dst_recommended_level_of_care",
+    "titles": [ "iar_dst_recommended_level_of_care" ],
+    "dc:title" : "IAR-DST - Recommended Level of Care",
+    "schema:description": "The information gathered through the initial assessment is used to assign a recommended level of care and inform a referral decision. The levels of care are not intended to replace individualised assessment and care - rather to provide information to guide decision making.",
+    "schema:disambiguatingDescription": "table/measure/iar-dst/recommended-level-of-care.rst",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "iar_dst_practitioner_level_of_care",
+    "titles": [ "iar_dst_practitioner_level_of_care" ],
+    "dc:title" : "IAR-DST - Practitioner Level of Care",
+    "schema:description": "The individualised level of care assessed by the practitioner for the referral",
+    "schema:disambiguatingDescription": "table/measure/iar-dst/practitioner-level-of-care.rst",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "iar_dst_tags",
+    "titles": [ "iar_dst_tags" ],
+    "dc:title" : "IAR-DST - Tags",
+    "schema:description": "List of tags for the measure.",
+    "schema:disambiguatingDescription": "type/tags.rst",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string"
+      }
+  }],
+  "primaryKey": [ "organisation_path", "measure_key" ],
+  "foreignKeys": [{
+    "columnReference": [ "organisation_path", "collection_occasion_key" ],
+    "reference": {
+      "resource": "data/collection-occasions.csv",
+      "columnReference": [ "organisation_path", "collection_occasion_key" ]
+    }
+  }, {
+    "columnReference": "iar_dst_domain_1",
+    "reference": {
+      "resource": "table/measure/iar-dst/domain-1.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "iar_dst_domain_2",
+    "reference": {
+      "resource": "table/measure/iar-dst/domain-2.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "iar_dst_domain_3",
+    "reference": {
+      "resource": "table/measure/iar-dst/domain-3.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "iar_dst_domain_4",
+    "reference": {
+      "resource": "table/measure/iar-dst/domain-4.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "iar_dst_domain_5",
+    "reference": {
+      "resource": "table/measure/iar-dst/domain-5.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "iar_dst_domain_6",
+    "reference": {
+      "resource": "table/measure/iar-dst/domain-6.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "iar_dst_domain_7",
+    "reference": {
+      "resource": "table/measure/iar-dst/domain-7.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "iar_dst_domain_8",
+    "reference": {
+      "resource": "table/measure/iar-dst/domain-8.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "iar_dst_recommended_level_of_care",
+    "reference": {
+      "resource": "table/measure/iar-dst/recommended-level-of-care.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "iar_dst_practitioner_level_of_care",
+    "reference": {
+      "resource": "table/measure/iar-dst/practitioner-level-of-care.csv",
+      "columnReference": "id"
+    }
+  }]
+}

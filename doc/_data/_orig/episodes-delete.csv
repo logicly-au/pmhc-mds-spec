@@ -1,5 +1,0 @@
-organisation_path,episode_key,delete,client_key,episode_end_date,client_consent,episode_completion_status,referral_date,principal_focus,mental_health_treatment_plan,homelessness,client_postcode,labour_force_status,employment_participation,income_source,health_care_card,ndis_participant,marital_status,suicide_referral_flag,principal_diagnosis,additional_diagnosis,medication_antipsychotics,medication_anxiolytics,medication_hypnotics,medication_antidepressants,medication_psychostimulants,referrer_profession,referrer_organisation_type,continuity_of_support,episode_tags
-PHN999:NFP01,E01,,CL01,18062016,1,1,12022016,2,1,1,1101,2,1,2,2,2,1,2,107,903,2,2,2,2,2,2,1,2,tag3
-PHN999:NFP01,E02,,CL01,16082016,1,2,14072016,2,3,1,1101,2,1,2,2,2,1,2,107,903,2,2,2,2,2,2,1,2,
-PHN999:NFP01,E03,,CL02,,1,,10062016,5,2,3,1102,3,3,0,1,1,1,2,502,999,2,2,2,2,2,2,1,1,
-PHN999:NFP01,E04,delete,,,,,,,,,,,,,,,,,,,,,,,,,,,

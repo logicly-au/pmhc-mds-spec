@@ -11,7 +11,7 @@ docker pull stratdat/sphinx:production
 docker pull stratdat/sphinx-html2pdf:production
 
 docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst:v2 \
-  --meta=pmhc-metadata.json
+  --meta=metadata.json
 
 # make zip file
 scripts/metadata2zip.sh
@@ -22,7 +22,7 @@ pushd .
 cd doc
 
 rm -rf _data build
-cp -rf ../data _data
+#cp -rf ../data _data
 
 GIT_VERSION=$(git describe --tags --always)
 

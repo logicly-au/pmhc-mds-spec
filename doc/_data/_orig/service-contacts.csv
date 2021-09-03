@@ -1,3 +1,0 @@
-organisation_path,service_contact_key,episode_key,practitioner_key,service_contact_date,service_contact_type,service_contact_postcode,service_contact_modality,service_contact_participants,service_contact_venue,service_contact_duration,service_contact_copayment,service_contact_participation_indicator,service_contact_interpreter,service_contact_no_show,service_contact_final,service_contact_tags
-PHN999:NFP01,SC01,E01,P01,13022016,1,1101,1,1,1,2,0,1,2,2,2,
-PHN999:NFP01,SC02,E01,P01,18032016,1,1101,1,1,1,2,0,1,2,1,3,tag1

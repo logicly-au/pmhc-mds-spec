@@ -6,10 +6,8 @@
     "titles": [ "organisation_path" ],
     "dc:title": "Organisation Path",
     "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
-    "schema:disambiguatingDescription": "type/organisation_path.rst",
+    "schema:disambiguatingDescription": "type/organisation-path.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -19,10 +17,8 @@
     "titles": [ "service_contact_key" ],
     "dc:title": "Service Contact Key",
     "schema:description": "This is a number or code assigned to each service contact. The Service Contact Key is unique and stable for each service contact at the level of the Provider Organisation.",
-    "schema:disambiguatingDescription": "table/service-contact/key.rst",
+    "schema:disambiguatingDescription": "type/key.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string",
       "minLength": 2,
@@ -35,8 +31,6 @@
     "dc:title": "Episode Key",
     "schema:description": "This is a number or code assigned to each episode. The Episode Key is unique and stable for each episode at the level of the organisation.",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string",
       "minLength": 2,
@@ -49,8 +43,6 @@
     "dc:title": "Practitioner Key",
     "schema:description": "A unique identifier for a practitioner within the provider organisation.",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string",
       "minLength": 2,
@@ -65,8 +57,6 @@
     "schema:disambiguatingDescription": "table/service-contact/date.rst",
     "schema:meteorItem": "494356",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2018-01-02",
     "datatype": {
       "base": "date",
       "format": "dMMyyyy",
@@ -81,8 +71,6 @@
     "schema:description": "The main type of service provided in the service contact, as represented by the service type that accounted for most provider time.",
     "schema:disambiguatingDescription": "table/service-contact/type.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -95,8 +83,6 @@
     "schema:disambiguatingDescription": "table/service-contact/postcode.rst",
     "schema:meteorItem": "429894",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string",
       "format": "^([1-9][0-9]{3}|0[289][0-9]{2})$"
@@ -109,8 +95,6 @@
     "schema:description": "How the service contact was delivered, as represented by a code.",
     "schema:disambiguatingDescription": "table/service-contact/modality.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -122,7 +106,6 @@
     "schema:description": "An indication of who participated in the Service Contact.",
     "schema:disambiguatingDescription": "table/service-contact/participants.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateModified": "2016-06-08",
     "datatype": {
       "base": "string"
     },
@@ -134,8 +117,6 @@
     "schema:description": "Where the service contact was delivered, as represented by a code.",
     "schema:disambiguatingDescription": "table/service-contact/venue.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -147,8 +128,6 @@
     "schema:description": "The time from the start to finish of a service contact.",
     "schema:disambiguatingDescription": "table/service-contact/duration.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -160,8 +139,6 @@
     "schema:description": "The co-payment is the amount paid by the client per session.",
     "schema:disambiguatingDescription": "table/service-contact/copayment.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "number",
       "format": "#####0.##",
@@ -177,8 +154,6 @@
     "schema:disambiguatingDescription": "table/service-contact/participation-indicator.rst",
     "schema:meteorItem": "494341",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -190,7 +165,6 @@
     "schema:description": "Whether an interpreter service was used during the Service Contact",
     "schema:disambiguatingDescription": "table/service-contact/interpreter.rst",
     "schema:dateCreated": "2016-07-08",
-    "schema:dateModified": "2016-07-08",
     "datatype": {
       "base": "string"
     },
@@ -202,8 +176,6 @@
     "schema:description": "Where an appointment was made for an intended participant(s), but the intended participant(s) failed to attend the appointment, as represented by a code.",
     "schema:disambiguatingDescription": "table/service-contact/no-show.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -215,7 +187,29 @@
     "schema:description": "An indication of whether the Service Contact is the final for the current Episode of Care",
     "schema:disambiguatingDescription": "table/service-contact/final.rst",
     "schema:dateCreated": "2016-07-08",
-    "schema:dateModified": "2016-07-08",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "service_contact_start_time",
+    "titles": [ "service_contact_start_time" ],
+    "dc:title": "Service Contact - Start Time",
+    "schema:description": "The start time of each mental health service contact between a health service provider and patient/client.",
+    "schema:disambiguatingDescription": "table/service-contact/start-time.rst",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "time",
+      "format": "H:mm"
+    },
+    "schema:dateMissingUnknown": "9999-09-09",
+    "required": true
+  },{
+    "name": "funding_source",
+    "titles": [ "funding_source" ],
+    "dc:title": "Service Contact - Funding Source",
+    "schema:description": "The source of funding for a service contact",
+    "schema:dateCreated": "2021-08-23",
     "datatype": {
       "base": "string"
     },
@@ -227,8 +221,6 @@
     "schema:description": "List of tags for the service contact.",
     "schema:disambiguatingDescription": "type/tags.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
       },

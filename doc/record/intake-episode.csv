@@ -1,0 +1,13 @@
+"Data Element (Field Name)","Type (min,max)",Required,"Format / Values"
+"`Intake Organisation Path`_ (intake_organisation_path)
+
+",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing the intake to the client."
+"`Intake Key`_ (intake_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each intake. The Intake Key is unique and stable for each intake at the level of the organisation."
+"`Episode Organisation Path`_ (episode_organisation_path)
+
+",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing the clinical service to the client."
+"`Episode Key`_ (episode_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each PMHC MDS episode. The Episode Key is unique and stable for each episode at the level of the organisation. This key must link to an existing episode within the PMHC MDS."

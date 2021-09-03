@@ -1,0 +1,72 @@
+{
+  "@id": "service-contact-practitioner-metadata.json",
+  "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
+  "columns": [{
+    "name": "organisation_path",
+    "titles": [ "organisation_path" ],
+    "dc:title": "Organisation Path",
+    "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
+    "schema:disambiguatingDescription": "type/organisation-path.rst",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "service_contact_practitioner_key",
+    "titles": [ "service_contact_practitioner_key" ],
+    "dc:title": "Service Contact Practitioner Key",
+    "schema:description": "This is a number or code assigned to each service contact practitioner. The Service Contact Practitioner Key is unique and stable for each service contact practitioner at the level of the Provider Organisation.",
+    "schema:disambiguatingDescription": "type/key.rst",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "required": true
+  },{
+    "name": "service_contact_key",
+    "titles": [ "service_contact_key" ],
+    "dc:title": "Service Contact Key",
+    "schema:description": "This is a number or code assigned to each service contact. The Service Contact Key is unique and stable for each service contact at the level of the Provider Organisation.",
+    "schema:disambiguatingDescription": "table/service-contact/key.rst",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "required": true
+  },{
+    "name": "practitioner_key",
+    "titles": [ "practitioner_key" ],
+    "dc:title": "Practitioner Key",
+    "schema:description": "A unique identifier for a practitioner within the provider organisation.",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+      },
+    "required": true
+  },{
+    "name": "primary_practitioner_indicator",
+    "titles": [ "primary_practitioner_indicator" ],
+    "dc:title": "Primary Practitionner Indicator",
+    "schema:description": "An indicator of whether the practitioner was the primary practitioner responsible for the service contact.",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  }],
+  "primaryKey": [ "organisation_path", "service_contact_practitioner_key"],
+  "foreignKeys": [{
+    "columnReference": "primary_practitioner_indicator",
+    "reference": {
+      "resource": "type/boolean.csv",
+      "columnReference": "id"
+    }
+  }]
+}

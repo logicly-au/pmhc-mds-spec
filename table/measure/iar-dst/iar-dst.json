@@ -1,0 +1,20 @@
+{
+  "@id": "table/collection-occasion/measure/iar-dst.json",
+  "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
+  "columns": [{
+    "name": "id",
+    "titles": [ "id" ],
+    "schema:dateCreated": "2020-09-18",
+    "schema:dateModified": "2020-09-18",
+    "datatype": "string"
+  },{
+    "name": "description",
+    "titles": [ "description" ],
+    "schema:dateCreated": "2020-09-18",
+    "schema:dateModified": "2020-09-18",
+    "datatype": {
+      "base": "string"
+    }
+  }],
+  "primaryKey": "id"
+}

@@ -6,10 +6,8 @@
     "titles": [ "organisation_path" ],
     "dc:title": "Organisation Path",
     "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
-    "schema:disambiguatingDescription": "type/organisation_path.rst",
+    "schema:disambiguatingDescription": "type/organisation-path.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -34,8 +32,6 @@
     "dc:title": "Client Key",
     "schema:description": "This is a number or code assigned to each individual client referred to the commissioned organisation. The client identifier is unique and stable for each individual within the Provider Organisation.",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string",
       "minLength": 2,
@@ -50,7 +46,6 @@
     "schema:disambiguatingDescription": "table/episode/end-date.rst",
     "schema:meteorItem": "614094",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2018-01-02",
     "datatype": {
       "base": "date",
@@ -64,7 +59,6 @@
     "schema:description": "An indication that the client has consented to their anonymised data being provided to the Department of Health for statistical purposes in planning and improving mental health services.",
     "schema:disambiguatingDescription": "table/episode/client-consent.rst",
     "schema:dateCreated": "2016-07-08",
-    "schema:dateModified": "2016-07-08",
     "datatype": {
       "base": "string",
       "format": "^(1|2)$"
@@ -77,7 +71,6 @@
     "schema:description": "An indication of the completion status of an *Episode of Care*.",
     "schema:disambiguatingDescription": "table/episode/completion-status.rst",
     "schema:dateCreated": "2016-07-08",
-    "schema:dateModified": "2016-07-08",
     "datatype": {
       "base": "string"
     },
@@ -85,11 +78,10 @@
   },{
     "name": "referral_date",
     "titles": [ "referral_date" ],
-    "dc:title": "Episode - Referral Date",
+    "dc:title": "Referral Date",
     "schema:description": "The date the referrer made the referral.",
     "schema:disambiguatingDescription": "table/episode/referral-date.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2018-01-02",
     "datatype": {
       "base": "date",
@@ -103,7 +95,6 @@
     "schema:description": "The range of activities that best describes the overall services intended to be delivered to the client throughout the course of the episode. For most clients, this will equate to the activities that account for most time spent by the service provider.",
     "schema:disambiguatingDescription": "table/episode/principal-focus.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-07-08",
     "datatype": {
       "base": "string"
@@ -115,7 +106,6 @@
     "dc:title": "Episode - GP Mental Health Treatment Plan Flag",
     "schema:description": "An indication of whether a client has a GP mental health treatment plan. A GP should be involved in a referral where appropriate however a mental health treatment plan is not mandatory.",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-07-08",
     "datatype": {
       "base": "string"
@@ -128,8 +118,6 @@
     "schema:description": "An indication of whether the client has been homeless in the 4 weeks prior to the current service episode.",
     "schema:disambiguatingDescription": "table/episode/homelessness.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -142,8 +130,6 @@
     "schema:disambiguatingDescription": "table/episode/client-postcode.rst",
     "schema:meteorItem": "429894",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string",
       "format": "^([1-9][0-9]{3}|0[289][0-9]{2})$"
@@ -157,8 +143,6 @@
     "schema:disambiguatingDescription": "table/episode/labour-force-status.rst",
     "schema:meteorItem": "621450",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -171,8 +155,6 @@
     "schema:disambiguatingDescription": "table/episode/employment-participation.rst",
     "schema:meteorItem": "269950",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -209,8 +191,6 @@
     "dc:title": "Episode - NDIS Participant",
     "schema:description": "Is the client a participant in the National Disability Insurance Scheme?, as represented by a code.",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -223,8 +203,6 @@
     "schema:disambiguatingDescription": "table/episode/marital-status.rst",
     "schema:meteorItem": "291045",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -235,8 +213,6 @@
     "dc:title": "Episode - Suicide Referral Flag",
     "schema:description": "Identifies those individuals where a recent history of suicide attempt, or suicide risk, was a factor noted in the referral that underpinned the person's needs for assistance at entry to the episode, as represented by a code.",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -272,8 +248,6 @@
     "schema:description": "Whether the client is taking prescribed antipsychotics for a mental health condition as assessed at intake assessment, as represented by a code.",
     "schema:disambiguatingDescription": "table/episode/medication-antipsychotics.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -285,8 +259,6 @@
     "schema:description": "Whether the client is taking prescribed anxiolytics for a mental health condition as assessed at intake assessment, as represented by a code.",
     "schema:disambiguatingDescription": "table/episode/medication-anxiolytics.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -298,8 +270,6 @@
     "schema:description": "Whether the client is taking prescribed hypnotics and sedatives for a mental health condition as assessed at intake assessment, as represented by a code.",
     "schema:disambiguatingDescription": "table/episode/medication-hypnotics.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -311,8 +281,6 @@
     "schema:description": "Whether the client is taking prescribed antidepressants for a mental health condition as assessed at intake assessment, as represented by a code.",
     "schema:disambiguatingDescription": "table/episode/medication-antidepressants.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -324,34 +292,6 @@
     "schema:description": "Whether the client is taking prescribed psychostimulants and nootropics for a mental health condition as assessed at intake assessment, as represented by a code.",
     "schema:disambiguatingDescription": "table/episode/medication-psychostimulants.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
-    "datatype": {
-      "base": "string"
-    },
-    "required": true
-  },{
-    "name": "referrer_profession",
-    "titles": [ "referrer_profession" ],
-    "dc:title": "Episode - Referrer Profession",
-    "schema:description": "Profession of the provider who referred the client.",
-    "schema:disambiguatingDescription": "table/episode/referrer-profession.rst",
-    "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
-    "datatype": {
-      "base": "string"
-    },
-    "required": true
-  },{
-    "name": "referrer_organisation_type",
-    "titles": [ "referrer_organisation_type" ],
-    "dc:title": "Episode - Referrer Organisation Type",
-    "schema:description": "Type of organisation in which the referring professional is based.",
-    "schema:disambiguatingDescription": "table/episode/referrer-organisation-type.rst",
-    "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -363,8 +303,19 @@
     "schema:description": "Is the client a Continuity of Support Client?",
     "schema:disambiguatingDescription": "table/episode/continuity-of-support.rst",
     "schema:dateCreated": "2019-07-01",
-    "schema:dateDeleted": "2019-07-01",
-    "schema:dateModified": "2019-07-01",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "organisation_type_referred_to_at_episode_conclusion",
+    "titles": [ "organisation_type_referred_to_at_intake_conclusion" ],
+    "dc:title": "Organisation type referred to at Intake conclusion",
+    "schema:description": "Type of organisation to which the the client was referred at the Intake conclusion.",
+    "schema:disambiguatingDescription": "type/referrer-organisation-type.rst",
+    "schema:whenToCollect": "Intake conclusion",
+    "schema:dateCreated": "2021-08-23",
+    "separator": " ",
     "datatype": {
       "base": "string"
     },
@@ -376,8 +327,6 @@
     "schema:description": "List of tags for the episode.",
     "schema:disambiguatingDescription": "type/tags.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
       },
@@ -505,21 +454,15 @@
       "columnReference": "id"
     }
   }, {
-    "columnReference": "referrer_profession",
-    "reference": {
-      "resource": "table/episode/referrer-profession.csv",
-      "columnReference": "id"
-    }
-  }, {
-    "columnReference": "referrer_organisation_type",
-    "reference": {
-      "resource": "table/episode/referrer-organisation-type.csv",
-      "columnReference": "id"
-    }
-  }, {
     "columnReference": "continuity_of_support",
     "reference": {
       "resource": "table/episode/continuity-of-support.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "organisation_type_referred_to_at_episode_conclusion",
+    "reference": {
+      "resource": "table/episode/organisation-type-referred-to-at-episode-conclusion.csv",
       "columnReference": "id"
     }
   }]

@@ -1,0 +1,88 @@
+"Data Element (Field Name)","Type (min,max)",Required,"Format / Values"
+"`Organisation Path`_ (organisation_path)
+
+",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client."
+"`Measure Key`_ (measure_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each instance of a measure. The Measure Key is unique and stable for each instance of a measure at the level of the organisation."
+"`Intake Key`_ (intake_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each intake. The Intake Key is unique and stable for each intake at the level of the organisation."
+"`IAR-DST - Domain 1 - Symptom Severity and Distress (Primary Domain)`_ (iar_dst_domain_1)
+
+",string,yes,":0: No problem in this domain
+:1: Mild or sub diagnostic
+:2: Moderate
+:3: Severe
+:4: Very severe"
+"`IAR-DST - Domain 2 - Risk of Harm (Primary Domain)`_ (iar_dst_domain_2)
+
+",string,yes,":0: No identified risk in this domain
+:1: Low risk of harm
+:2: Moderate risk of harm
+:3: High risk of harm
+:4: Very high risk of harm"
+"`IAR-DST - Domain 3 - Functioning (Primary Domain)`_ (iar_dst_domain_3)
+
+",string,yes,":0: No problems in this domain
+:1: Mild impact
+:2: Moderate impact
+:3: Severe impact
+:4: Very severe to extreme impact"
+"`IAR-DST - Domain 4 - Impact of Co-existing Conditions (Primary Domain)`_ (iar_dst_domain_4)
+
+",string,yes,":0: No problem in this domain
+:1: Minor impact
+:2: Moderate impact
+:3: Severe impact
+:4: Very severe impact"
+"`IAR-DST - Domain 5 - Treatment and Recovery History (Contextual Domain)`_ (iar_dst_domain_5)
+
+",string,yes,":0: No prior treatment history
+:1: Full recovery with previous treatment
+:2: Moderate recovery with previous treatment
+:3: Minor recovery with previous treatment
+:4: Negligible recovery with previous treatment"
+"`IAR-DST - Domain 6 - Social and Environmental Stressors (Contextual Domain)`_ (iar_dst_domain_6)
+
+",string,yes,":0: No problem in this domain
+:1: Mildly stressful environment
+:2: Moderately stressful environment
+:3: Highly stressful environment
+:4: Extremely stressful environment"
+"`IAR-DST - Domain 7 - Family and Other Supports (Contextual Domain)`_ (iar_dst_domain_7)
+
+",string,yes,":0: Highly supported
+:1: Well supported
+:2: Limited supports
+:3: Minimal supports
+:4: No supports"
+"`IAR-DST - Domain 8 - Engagement and Motivation (Contextual Domain)`_ (iar_dst_domain_8)
+
+",string,yes,":0: Optimal
+:1: Positive
+:2: Limited
+:3: Minimal
+:4: Disengaged"
+"`IAR-DST - Recommended Level of Care`_ (iar_dst_recommended_level_of_care)
+
+",string,yes,":1: Level 1 - Self Management
+:1+: Level 1 or above - Review assessment on Contextual Domains to determine most appropriate placement
+:2: Level 2 - Low Intensity Services
+:2+: Level 2 or above - Review assessment on Contextual Domains to determine most appropriate placement
+:3: Level 3 - Moderate Intensity Services
+:3+: Level 3 or above - Review assessment on Contextual Domains to determine most appropriate placement
+:4: Level 4 - High Intensity Services
+:4+: Level 4 or above - Review assessment on Contextual Domains to determine most appropriate placement
+:5: Level 5 - Acute and Specialist Community Mental Health Services"
+"`IAR-DST - Practitioner Level of Care`_ (iar_dst_practitioner_level_of_care)
+
+",string,yes,":1: Level 1 - Self Management
+:2: Level 2 - Low Intensity Services
+:3: Level 3 - Moderate Intensity Services
+:4: Level 4 - High Intensity Services
+:5: Level 5 - Acute and Specialist Community Mental Health Services
+:9: Not stated"
+"`IAR-DST - Tags`_ (iar_dst_tags)
+
+",string,"—","List of tags for the measure."

@@ -11,12 +11,23 @@ The domain of individual items is defined in :ref:`record-formats`.
 Current Validations
 -------------------
 
+.. _key-current-validations:
+
+Keys
+~~~~
+
+The following rules apply to the key fields in all records:
+
+  1. All key fields are case sensitive
+  2. All key fields must be valid unicode characters
+
 .. _practitioner-current-validations:
 
 Practitioner
 ~~~~~~~~~~~~
 
-  1. :ref:`dfn-atsi_cultural_training` must only be set to
+  1. Refer to :ref:`key-current-validations` for Practitioner Key validations
+  2. :ref:`dfn-atsi_cultural_training` must only be set to
      '3 - Not required' where :ref:`dfn-practitioner_atsi_status` is one of
 
      * '1: Aboriginal but not Torres Strait Islander origin'
@@ -33,7 +44,59 @@ Practitioner
 Client
 ~~~~~~
 
-  1. :ref:`dfn-date_of_birth` must not be before 1 January 1900 and must not be in the future
+  1. Refer to :ref:`key-current-validations` for Client Key validations
+  2. :ref:`dfn-date_of_birth` must not be before 1 January 1900 and must not be in the future
+
+.. _intake-current-validations:
+
+Intake
+~~~~~~
+
+  1. Refer to :ref:`key-current-validations` for Intake Key validations
+  2. The :ref:`dfn-referral_out_date` must not be before the :ref:`dfn-contact_date`
+  3. The :ref:`dfn-referral_out_date` must not be before the :ref:`dfn-referral_in_date`
+  4. :ref:`dfn-referrer_organisation_type` must be set to
+     '98: N/A - Self referral' if and only if :ref:`dfn-referrer_profession` is also
+     '98: N/A - Self referral'
+  5. A maximum of one intake shall be open per client
+  6. The :ref:`dfn-referral_out_date`
+
+     * must not be before 1 January 2020
+     * and must not be before `Provider Organisation - Start Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date>`_
+     * and must not be after `Provider Organisation - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date>`_
+     * and must not be in the future
+
+  7. The :ref:`dfn-referral_in_date`
+
+     * must not be before 1 January 2020
+     * and must not be before `Provider Organisation - Start Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date>`_
+     * and must not be after `Provider Organisation - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date>`_
+     * and must not be in the future
+
+.. _iar-dst-current-validations:
+
+IAR-DST
+~~~~~~~
+
+  1. Refer to :ref:`key-current-validations` for Measure Key validations
+  2. :ref:`dfn-intake_collection_occasion_key` must be an existing Intake
+     Collection Occasion within the PMHC MDS.
+  3. Both all 8 domains and the level of care must be provided.
+  4. The level of care must be consistent with the 8 domain scores provided.
+
+.. _intake-episode-current-validations:
+
+Intake - Episode
+~~~~~~~~~~~~~~~~
+
+  1. If a :ref:`dfn-intake_organisation_path` is specified, that organisation must
+     be an existing organisation within the PMHC MDS.
+  2. If a :ref:`dfn-intake_key` is specified, a :ref:`dfn-intake_organisation_path`
+     must also be specified.
+  3. If a :ref:`dfn-episode_organisation_path` is specified, that organisation must
+     be an existing organisation within the PMHC MDS.
+  4. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC MDS.
+
 
 .. _episode-current-validations:
 
@@ -126,57 +189,55 @@ Service Contact
       * and must not be after :ref:`dfn-organisation_end_date`
       * and must not be in the future
 
+.. _collection-occasion-current-validations:
+
+Collection Occasion
+~~~~~~~~~~~~~~~~~~~
+
+  1. Collection Occasion Keys are case sensitive and must be valid unicode characters.
+  2. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC MDS.
+  3. The :ref:`dfn-collection_occasion_date`
+
+    * must not be before 1 January 2016
+    * and must not be before `Episode - Referral Date <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date>`_
+    * and must not be before `Provider Organisation - Start Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date>`_
+    * and must not be more than 7 days after `Episode - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#episode-end-date>`_
+    * and must not be after `Provider Organisation - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date>`_
+    * and must not be in the future
+
 .. _k10p-current-validations:
 
 K10+
 ~~~~
 
-  1. If both item scores and a total score are specified, the item scores must
-     add up to the total score (as per :ref:`Scoring the K10+ <dfn-k10p_score>`)
-  2. The :ref:`dfn-measure_date`
-
-     * must not be before 1 January 2016
-     * and must not be before :ref:`dfn-referral_date`
-     * and must not be before :ref:`dfn-organisation_start_date`
-     * and must not be after :ref:`dfn-episode_end_date`
-     * and must not be after :ref:`dfn-organisation_end_date`
-     * and must not be in the future
+  1. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
+     MDS.
+  2. If both item scores and a total score are specified, the item scores must
+     add up to the total score (as per :ref:`Scoring the K10+ <dfn-k10p_score>`).
 
 .. _k5-current-validations:
 
 K5
 ~~
 
-  1. If both item scores and a total score are specified, the item scores must
-     add up to the total score (as per :ref:`Scoring the K5 <dfn-k5_score>`)
-  2. The :ref:`dfn-measure_date`
-
-     * must not be before 1 January 2016
-     * and must not be before :ref:`dfn-referral_date`
-     * and must not be before :ref:`dfn-organisation_start_date`
-     * and must not be after :ref:`dfn-episode_end_date`
-     * and must not be after :ref:`dfn-organisation_end_date`
-     * and must not be in the future
+  1. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
+     MDS.
+  2. If both item scores and a total score are specified, the item scores must
+     add up to the total score (as per :ref:`Scoring the K5 <dfn-k5_score>`).
 
 .. _sdq-current-validations:
 
 SDQ
 ~~~
 
-1. Use the table at :ref:`SDQ Data Elements <sdq-data-elements>` to validate the items that
-   are used in each version of the SDQ
-2. If both item scores and subscales are specified, the sum of the items
-   must agree with the subscales score (as per :ref:`Scoring the SDQ <scoring-the-sdq>`)
-3. If both subscales and total score are specified, the sum of the subscales
-   must agree with the total score (as per :ref:`Scoring the SDQ <scoring-the-sdq>`)
-4. The :ref:`dfn-measure_date`
-
-     * must not be before 1 January 2016
-     * and must not be before :ref:`dfn-referral_date`
-     * and must not be before :ref:`dfn-organisation_start_date`
-     * and must not be after :ref:`dfn-episode_end_date`
-     * and must not be after :ref:`dfn-organisation_end_date`
-     * and must not be in the future
+  1. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
+     MDS.
+  2. Use the table at :ref:`SDQ Data Elements <sdq-data-elements>` to validate the items that
+     are used in each version of the SDQ
+  3. If both item scores and subscales are specified, the sum of the items
+     must agree with the subscales score (as per `Scoring the SDQ <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#scoring-the-sdq>`_)
+  4. If both subscales and total score are specified, the sum of the subscales
+     must agree with the total score (as per `Scoring the SDQ <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#scoring-the-sdq>`_)
 
 .. _organisation-current-validations:
 
