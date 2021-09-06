@@ -1,0 +1,4 @@
+organisation_path,episode_key,delete,intake_organisation_path,intake_episode_key,referral_out_organisation_type
+PHN999:Intake01,CL0001-E01,delete,,,
+PHN999:Intake01,CL0002-E01,,,,22
+PHN999:Intake01,CL0003-E01,,,,16

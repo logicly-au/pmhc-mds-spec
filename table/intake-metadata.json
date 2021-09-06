@@ -172,7 +172,7 @@
   }, {
     "columnReference": "organisation_type_referred_to_at_intake_conclusion",
     "reference": {
-      "resource": "type/referral-out-organisation-type.csv",
+      "resource": "table/intake/organisation_type_referred_to_at_intake_conclusion.csv",
       "columnReference": "id"
     }
   }, {
