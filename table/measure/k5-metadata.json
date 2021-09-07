@@ -8,8 +8,6 @@
     "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
     "schema:disambiguatingDescription": "type/organisation-path.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -21,8 +19,6 @@
     "schema:description": "This is a number or code assigned to each instance of a measure. The Measure Key is unique and stable for each instance of a measure at the level of the organisation.",
     "schema:disambiguatingDescription": "table/measure/key.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string",
       "minLength": 2,
@@ -36,8 +32,6 @@
     "schema:description": "This is a number or code assigned to each collection occasion of service activity. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation.",
     "schema:disambiguatingDescription": "table/collection-occasion/key.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string",
       "minLength": 2,
@@ -51,8 +45,6 @@
     "schema:description": "In the last 4 weeks, about how often did you feel nervous?",
     "schema:disambiguatingDescription": "table/measure/k5/Q1.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -64,8 +56,6 @@
     "schema:description": "In the last 4 weeks, about how often did you feel without hope?",
     "schema:disambiguatingDescription": "table/measure/k5/Q2.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -77,8 +67,6 @@
     "schema:description": "In the last 4 weeks, about how often did you feel restless or jumpy?",
     "schema:disambiguatingDescription": "table/measure/k5/Q3.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -90,8 +78,6 @@
     "schema:description": "In the last 4 weeks, about how often did you feel everything was an effort?",
     "schema:disambiguatingDescription": "table/measure/k5/Q4.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -103,8 +89,6 @@
     "schema:description": "In the last 4 weeks, about how often did you feel so sad that nothing could cheer you up?",
     "schema:disambiguatingDescription": "table/measure/k5/Q5.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -116,8 +100,6 @@
     "schema:description": "The overall K5 score.",
     "schema:disambiguatingDescription": "table/measure/k5/score.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "null": "99",
     "datatype": {
       "base": "integer",
@@ -131,8 +113,6 @@
     "schema:description": "List of tags for the measure.",
     "schema:disambiguatingDescription": "type/tags.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
       }

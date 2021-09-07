@@ -8,8 +8,6 @@
     "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
     "schema:disambiguatingDescription": "type/organisation-path.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -22,8 +20,6 @@
     "schema:description": "This is a number or code assigned to each individual client referred to the commissioned organisation. The client identifier must be unique and stable for each individual within the Provider Organisation. Assigned by either the PHN or Provider Organisation depending on local procedures.",
     "schema:disambiguatingDescription": "table/client/key.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string",
       "minLength": 2,
@@ -39,8 +35,6 @@
     "schema:disambiguatingDescription": "table/client/slk.rst",
     "schema:meteorItem": "349510",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string",
       "minLength": 14,
@@ -56,7 +50,6 @@
     "schema:disambiguatingDescription": "table/client/date-of-birth.rst",
     "schema:meteorItem": "287007",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2018-01-02",
     "datatype": {
       "base": "date",
@@ -72,8 +65,6 @@
     "dc:title": "Client - Estimated Date of Birth Flag",
     "schema:description": "The date of birth estimate flag records whether or not the client's date of birth has been estimated.",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -87,8 +78,6 @@
     "schema:absItem": "http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=",
     "schema:disambiguatingDescription": "type/gender.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -102,8 +91,6 @@
     "schema:disambiguatingDescription": "type/atsi-status.rst",
     "schema:meteorItem": "291036",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -118,8 +105,6 @@
     "schema:meteorItem": "459973",
     "schema:absItem": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/1269.0",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string",
       "length": 4
@@ -135,8 +120,6 @@
     "schema:meteorItem": "460125",
     "schema:absItem": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/1267.0",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string",
       "length": 4
@@ -151,8 +134,6 @@
     "schema:disambiguatingDescription": "table/client/prof-english.rst",
     "schema:meteorItem": "270203",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -165,8 +146,6 @@
     "schema:description": "List of tags for the client.",
     "schema:disambiguatingDescription": "type/tags.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
       },

@@ -8,8 +8,6 @@
     "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
     "schema:disambiguatingDescription": "type/organisation-path.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -22,8 +20,6 @@
     "schema:description": "A unique identifier for a practitioner within the responsible provider organisation. Assigned by either the PHN or Provider Organisation depending on local procedures.",
     "schema:disambiguatingDescription": "type/key.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string",
       "minLength": 2,
@@ -38,8 +34,6 @@
     "schema:description": "The type or category of the practitioner, as represented by a code.",
     "schema:disambiguatingDescription": "table/practitioner/category.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -65,8 +59,6 @@
     "schema:description": "The year the practitioner was born.",
     "schema:disambiguatingDescription": "table/practitioner/year-of-birth.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": "gYear",
     "required": true,
     "schema:formOrder": "5"
@@ -77,8 +69,6 @@
     "schema:description": "The term 'gender' refers to the way in which a person identifies their masculine or feminine characteristics. A persons gender relates to their deeply held internal and individual sense of gender and is not always exclusively male or female. It may or may not correspond to their sex assigned at birth.",
     "schema:absItem": "http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -92,8 +82,6 @@
     "schema:disambiguatingDescription": "type/atsi-status.rst",
     "schema:meteorItem": "291036",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -105,8 +93,6 @@
     "dc:title": "Practitioner - Active",
     "schema:description": "A flag to represent whether a practitioner is actively delivering services. This is a system field that is aimed at helping organisations manage practitioner codes.",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -119,8 +105,6 @@
     "schema:description": "List of tags for the practitioner.",
     "schema:disambiguatingDescription": "type/tags.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
       },

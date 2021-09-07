@@ -7,4 +7,4 @@ services:
       dockerfile: ./csvlint/Dockerfile
     image: docker.sdlocal.net/pmhc/csvlint:master
     volumes:
-      - ../data/intake/intake:/spec/data
+      - ../test-data:/spec/data

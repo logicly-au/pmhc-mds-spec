@@ -8,8 +8,6 @@
     "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
     "schema:disambiguatingDescription": "type/organisation-path.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -21,8 +19,6 @@
     "schema:description": "This is a number or code assigned to each instance of a measure. The Measure Key is unique and stable for each instance of a measure at the level of the organisation.",
     "schema:disambiguatingDescription": "table/measure/key.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string",
       "minLength": 2,
@@ -36,8 +32,6 @@
     "schema:description": "This is a number or code assigned to each collection occasion of service activity. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation.",
     "schema:disambiguatingDescription": "table/collection-occasion/key.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string",
       "minLength": 2,
@@ -51,8 +45,6 @@
     "schema:description": "In the past 4 weeks, about how often did you feel tired out for no good reason?",
     "schema:disambiguatingDescription": "table/measure/k10p/Q1.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -64,8 +56,6 @@
     "schema:description": "In the past 4 weeks, about how often did you feel nervous?",
     "schema:disambiguatingDescription": "table/measure/k10p/Q2.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -77,8 +67,6 @@
     "schema:description": "In the past 4 weeks, about how often did you feel so nervous that nothing could calm you down?",
     "schema:disambiguatingDescription": "table/measure/k10p/Q3.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -90,8 +78,6 @@
     "schema:description": "In the past 4 weeks, how often did you feel hopeless?",
     "schema:disambiguatingDescription": "table/measure/k10p/Q4.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -103,8 +89,6 @@
     "schema:description": "In the past 4 weeks, how often did you feel restless or fidgety?",
     "schema:disambiguatingDescription": "table/measure/k10p/Q5.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -116,8 +100,6 @@
     "schema:description": "In the past 4 weeks, how often did you feel so restless you could not sit still?",
     "schema:disambiguatingDescription": "table/measure/k10p/Q6.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -129,8 +111,6 @@
     "schema:description": "In the past 4 weeks, how often did you feel depressed?",
     "schema:disambiguatingDescription": "table/measure/k10p/Q7.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -142,8 +122,6 @@
     "schema:description": "In the past 4 weeks, how often did you feel that everything was an effort?",
     "schema:disambiguatingDescription": "table/measure/k10p/Q8.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -155,8 +133,6 @@
     "schema:description": "In the past 4 weeks, how often did you feel so sad that nothing could cheer you up?",
     "schema:disambiguatingDescription": "table/measure/k10p/Q9.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -168,8 +144,6 @@
     "schema:description": "In the past 4 weeks, how often did you feel worthless?",
     "schema:disambiguatingDescription": "table/measure/k10p/Q10.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -181,8 +155,6 @@
     "schema:description": "In the past four weeks, how many days were you totally unable to work, study or manage your day to day activities because of these feelings?",
     "schema:disambiguatingDescription": "table/measure/k10p/Q11.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "null": "99",
     "datatype": {
       "base": "integer",
@@ -196,8 +168,6 @@
     "schema:description": "Aside from those days, in the past four weeks, how many days were you able to work or study or manage your day to day activities, but had to cut down on what you did because of these feelings?",
     "schema:disambiguatingDescription": "table/measure/k10p/Q12.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "null": "99",
     "datatype": {
       "base": "integer",
@@ -211,8 +181,6 @@
     "schema:description": "In the past four weeks, how many times have you seen a doctor or any other health professional about these feelings?",
     "schema:disambiguatingDescription": "table/measure/k10p/Q13.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "null": "99",
     "datatype": {
       "base": "integer",
@@ -226,8 +194,6 @@
     "schema:description": "In the past four weeks, how often have physical health problems been the main cause of these feelings?",
     "schema:disambiguatingDescription": "table/measure/k10p/Q14.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -239,8 +205,6 @@
     "schema:description": "The overall K10 score.",
     "schema:disambiguatingDescription": "table/measure/k10p/score.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "null": "99",
     "datatype": {
       "base": "integer",
@@ -254,8 +218,6 @@
     "schema:description": "List of tags for the measure.",
     "schema:disambiguatingDescription": "type/tags.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
       }

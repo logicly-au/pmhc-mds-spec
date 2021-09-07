@@ -161,10 +161,10 @@
   }],
   "primaryKey": [ "organisation_path", "measure_key" ],
   "foreignKeys": [{
-    "columnReference": [ "organisation_path", "collection_occasion_key" ],
+    "columnReference": [ "organisation_path", "intake_key" ],
     "reference": {
-      "resource": "data/collection-occasions.csv",
-      "columnReference": [ "organisation_path", "collection_occasion_key" ]
+      "resource": "data/intakes.csv",
+      "columnReference": [ "organisation_path", "intake_key" ]
     }
   }, {
     "columnReference": "iar_dst_domain_1",

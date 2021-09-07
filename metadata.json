@@ -36,6 +36,18 @@
     "schema:description": "table/client.rst",
     "tableSchema": "table/client-metadata.json"
   }, {
+    "dc:title": "Intake",
+    "url": "data/intakes.csv",
+    "schema:name": "intake",
+    "schema:description": "table/intake.rst",
+    "tableSchema": "table/intake-metadata.json"
+  }, {
+    "dc:title": "Intake Episode",
+    "url": "data/intake-episodes.csv",
+    "schema:name": "intake-episode",
+    "schema:description": "table/intake-episode.rst",
+    "tableSchema": "table/intake-episode-metadata.json"
+  }, {
     "dc:title": "Episode",
     "url": "data/episodes.csv",
     "schema:name": "episode",
@@ -47,6 +59,12 @@
     "schema:name": "service-contact",
     "schema:description": "table/service-contact.rst",
     "tableSchema": "table/service-contact-metadata.json"
+  }, {
+    "dc:title": "Service Contact Practitioner",
+    "url": "data/service-contact-practitioners.csv",
+    "schema:name": "service-contact-practitioner",
+    "schema:description": "table/service-contact-practitioner.rst",
+    "tableSchema": "table/service-contact-practitioner-metadata.json"
   }, {
     "dc:title": "Collection Occasion",
     "url": "data/collection-occasions.csv",
@@ -71,6 +89,12 @@
     "schema:name": "sdq-measure",
     "schema:description": "table/measure/sdq-measure.rst",
     "tableSchema": "table/measure/sdq-metadata.json"
+  }, {
+    "dc:title": "IAR-DST Measure",
+    "url": "data/iar-dst.csv",
+    "schema:name": "iar-dst-measure",
+    "schema:description": "table/measure/iar-dst-measure.rst",
+    "tableSchema": "table/measure/iar-dst-metadata.json"
   }, {
     "url": "type/gender.csv",
     "tableSchema": "type/gender.json"

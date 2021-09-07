@@ -8,8 +8,6 @@
     "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
     "schema:disambiguatingDescription": "type/organisation-path.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -21,8 +19,6 @@
     "schema:description": "This is a number or code assigned to each instance of a measure. The Measure Key is unique and stable for each instance of a measure at the level of the organisation.",
     "schema:disambiguatingDescription": "table/measure/key.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string",
       "minLength": 2,
@@ -36,8 +32,6 @@
     "schema:description": "This is a number or code assigned to each collection occasion of service activity. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation.",
     "schema:disambiguatingDescription": "table/collection-occasion/key.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string",
       "minLength": 2,
@@ -51,7 +45,6 @@
     "schema:description": "The version of the SDQ collected.",
     "schema:disambiguatingDescription": "table/measure/sdq/sdq-version.rst",
     "schema:dateCreated": "2016-07-08",
-    "schema:dateModified": "2016-07-08",
     "datatype": {
       "base": "string"
     },
@@ -63,8 +56,6 @@
     "schema:description": "Parent Report: Considerate of other people's feelings.\n\nYouth Self Report: I try to be nice to other people. I care about their feelings.",
     "schema:disambiguatingDescription": "table/measure/sdq/item1.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -76,8 +67,6 @@
     "schema:description": "Parent Report: Restless, overactive, cannot stay still for long.\n\nYouth Self Report: I am restless, I cannot stay still for long.",
     "schema:disambiguatingDescription": "table/measure/sdq/item2.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -89,8 +78,6 @@
     "schema:description": "Parent Report: Often complains of headaches, stomach-aches or sickness.\n\nYouth Self Report: I get a lot of headaches, stomach-aches or sickness.",
     "schema:disambiguatingDescription": "table/measure/sdq/item3.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -102,8 +89,6 @@
     "schema:description": "Parent Report: Shares readily with other children {for example toys, treats, pencils} / young people {for example CDs, games, food}.\n\nYouth Self Report: I usually share with others, for examples CDs, games, food.",
     "schema:disambiguatingDescription": "table/measure/sdq/item4.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -115,8 +100,6 @@
     "schema:description": "Parent Report: Often loses temper.\n\nYouth Self Report: I get very angry and often lose my temper.",
     "schema:disambiguatingDescription": "table/measure/sdq/item5.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -128,8 +111,6 @@
     "schema:description": "Parent Report: {Rather solitary, prefers to play alone} / {would rather be alone than with other young people}.\n\nYouth Self Report: I would rather be alone than with people of my age.",
     "schema:disambiguatingDescription": "table/measure/sdq/item6.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -141,8 +122,6 @@
     "schema:description": "Parent Report: {Generally well behaved} / {Usually does what adults requests}.\n\nYouth Self Report: I usually do as I am told.",
     "schema:disambiguatingDescription": "table/measure/sdq/item7.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -154,8 +133,6 @@
     "schema:description": "Parent Report: Many worries or often seems worried.\n\nYouth Self Report: I worry a lot.",
     "schema:disambiguatingDescription": "table/measure/sdq/item8.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -167,8 +144,6 @@
     "schema:description": "Parent Report: Helpful if someone is hurt, upset or feeling ill.\n\nYouth Self Report: I am helpful if someone is hurt, upset or feeling ill.",
     "schema:disambiguatingDescription": "table/measure/sdq/item9.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -180,8 +155,6 @@
     "schema:description": "Parent Report: Constantly fidgeting or squirming.\n\nYouth Self Report: I am constantly fidgeting or squirming.",
     "schema:disambiguatingDescription": "table/measure/sdq/item10.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -193,8 +166,6 @@
     "schema:description": "Parent Report: Has at least one good friend.\n\nYouth Self Report: I have one good friend or more.",
     "schema:disambiguatingDescription": "table/measure/sdq/item11.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -206,8 +177,6 @@
     "schema:description": "Parent Report: Often fights with other {children} or bullies them / {young people}.\n\nYouth Self Report: I fight a lot. I can make other people do what I want.",
     "schema:disambiguatingDescription": "table/measure/sdq/item12.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -219,8 +188,6 @@
     "schema:description": "Parent Report: Often unhappy, depressed or tearful.\n\nYouth Self Report: I am often unhappy, depressed or tearful.",
     "schema:disambiguatingDescription": "table/measure/sdq/item13.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -232,8 +199,6 @@
     "schema:description": "Parent Report: Generally liked by other {children} / {young people}\n\nYouth Self Report: Other people my age generally like me.",
     "schema:disambiguatingDescription": "table/measure/sdq/item14.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -245,8 +210,6 @@
     "schema:description": "Parent Report: Easily distracted, concentration wanders.\n\nYouth Self Report: I am easily distracted, I find it difficult to concentrate.",
     "schema:disambiguatingDescription": "table/measure/sdq/item15.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -258,8 +221,6 @@
     "schema:description": "Parent Report: Nervous or {clingy} in new situations, easily loses confidence {omit clingy in PY}.\n\nYouth Self Report: I am nervous in new situations. I easily lose confidence.",
     "schema:disambiguatingDescription": "table/measure/sdq/item16.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -271,8 +232,6 @@
     "schema:description": "Parent Report: Kind to younger children.\n\nYouth Self Report: I am kind to younger people.",
     "schema:disambiguatingDescription": "table/measure/sdq/item17.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -284,8 +243,6 @@
     "schema:description": "Parent Report: Often lies or cheats.\n\nYouth Self Report: I am often accused of lying or cheating.",
     "schema:disambiguatingDescription": "table/measure/sdq/item18.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -297,8 +254,6 @@
     "schema:description": "Parent Report: Picked on or bullied by {children} / {youth}.\n\nYouth Self Report: Other children or young people pick on me or bully me.",
     "schema:disambiguatingDescription": "table/measure/sdq/item19.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -310,8 +265,6 @@
     "schema:description": "Parent Report: Often volunteers to help others (parents, teachers, {other} children) / Omit 'other' in PY.\n\nYouth Self Report: I often volunteer to help others (parents, teachers, children).",
     "schema:disambiguatingDescription": "table/measure/sdq/item20.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -323,8 +276,6 @@
     "schema:description": "Parent Report: Thinks things out before acting.\n\nYouth Self Report: I think before I do things.",
     "schema:disambiguatingDescription": "table/measure/sdq/item21.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -336,8 +287,6 @@
     "schema:description": "Parent Report: Steals from home, school or elsewhere.\n\nYouth Self Report: I take things that are not mine from home, school or elsewhere.",
     "schema:disambiguatingDescription": "table/measure/sdq/item22.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -349,8 +298,6 @@
     "schema:description": "Parent Report: Gets along better with adults than with other {children} / {youth}.\n\nYouth Self Report: I get along better with adults than with people my own age.",
     "schema:disambiguatingDescription": "table/measure/sdq/item23.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -362,8 +309,6 @@
     "schema:description": "Parent Report: Many fears, easily scared.\n\nYouth Self Report: I have many fears, I am easily scared.",
     "schema:disambiguatingDescription": "table/measure/sdq/item24.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -375,8 +320,6 @@
     "schema:description": "Parent Report: Good attention span sees chores or homework through to the end.\n\nYouth Self Report: I finish the work I'm doing. My attention is good.",
     "schema:disambiguatingDescription": "table/measure/sdq/item25.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -388,8 +331,6 @@
     "schema:description": "Parent Report: Overall, do you think that your child has difficulties in any of the following areas: emotions, concentration, behaviour or being able to get along with other people?\n\nYouth Self Report: Overall, do you think that you have difficulties in any of the following areas: emotions, concentration, behaviour or being able to get along with other people?",
     "schema:disambiguatingDescription": "table/measure/sdq/item26.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -401,8 +342,6 @@
     "schema:description": "Parent Report: How long have these difficulties been present?\n\nYouth Self Report: How long have these difficulties been present?",
     "schema:disambiguatingDescription": "table/measure/sdq/item27.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -414,8 +353,6 @@
     "schema:description": "Parent Report: Do the difficulties upset or distress your child?\n\nYouth Self Report: Do the difficulties upset or distress you?",
     "schema:disambiguatingDescription": "table/measure/sdq/item28.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -427,8 +364,6 @@
     "schema:description": "Parent Report: Do the difficulties interfere with your child's everyday life in the following areas? HOME LIFE.\n\nYouth Self Report: Do the difficulties interfere with your everyday life in the following areas? HOME LIFE.",
     "schema:disambiguatingDescription": "table/measure/sdq/item29.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -440,8 +375,6 @@
     "schema:description": "Parent Report: Do the difficulties interfere with your child's everyday life in the following areas? FRIENDSHIPS.\n\nYouth Self Report: Do the difficulties interfere with your everyday life in the following areas? FRIENDSHIPS.",
     "schema:disambiguatingDescription": "table/measure/sdq/item30.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -453,8 +386,6 @@
     "schema:description": "Parent Report: Do the difficulties interfere with your child's everyday life in the following areas? CLASSROOM LEARNING.\n\nYouth Self Report: Do the difficulties interfere with your everyday life in the following areas? CLASSROOM LEARNING",
     "schema:disambiguatingDescription": "table/measure/sdq/item31.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -466,8 +397,6 @@
     "schema:description": "Parent Report: Do the difficulties interfere with your child's everyday life in the following areas? LEISURE ACTIVITIES.\n\nYouth Self Report: Do the difficulties interfere with your everyday life in the following areas? LEISURE ACTIVITIES.",
     "schema:disambiguatingDescription": "table/measure/sdq/item32.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -479,8 +408,6 @@
     "schema:description": "Parent Report: Do the difficulties put a burden on you or the family as a whole?\n\nYouth Self Report: Do the difficulties make it harder for those around you (family, friends, teachers, etc)?",
     "schema:disambiguatingDescription": "table/measure/sdq/item33.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -492,8 +419,6 @@
     "schema:description": "Parent Report: Since coming to the services, are your child's problems:\n\nYouth Self Report: 'Since coming to the service, are your problems:",
     "schema:disambiguatingDescription": "table/measure/sdq/item34.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -505,8 +430,6 @@
     "schema:description": "Has coming to the service been helpful in other ways eg. providing information or making the problems bearable?",
     "schema:disambiguatingDescription": "table/measure/sdq/item35.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -518,8 +441,6 @@
     "schema:description": "Over the last 6 months have your child's teachers complained of fidgetiness, restlessness or overactivity?",
     "schema:disambiguatingDescription": "table/measure/sdq/item36.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -531,8 +452,6 @@
     "schema:description": "Over the last 6 months have your child's teachers complained of poor concentration or being easily distracted?",
     "schema:disambiguatingDescription": "table/measure/sdq/item37.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -544,8 +463,6 @@
     "schema:description": "Over the last 6 months have your child's teachers complained of acting without thinking, frequently butting in, or not waiting for his or her turn?",
     "schema:disambiguatingDescription": "table/measure/sdq/item38.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -557,8 +474,6 @@
     "schema:description": "Does your family complain about you having problems with overactivity or poor concentration?",
     "schema:disambiguatingDescription": "table/measure/sdq/item39.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -570,8 +485,6 @@
     "schema:description": "Do your teachers complain about you having problems with overactivity or poor concentration?",
     "schema:disambiguatingDescription": "table/measure/sdq/item40.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -583,8 +496,6 @@
     "schema:description": "Does your family complain about you being awkward or troublesome?",
     "schema:disambiguatingDescription": "table/measure/sdq/item41.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -596,8 +507,6 @@
     "schema:description": "Do your teachers complain about you being awkward or troublesome?",
     "schema:disambiguatingDescription": "table/measure/sdq/item42.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -608,8 +517,6 @@
     "dc:title" : "SDQ - Emotional Symptoms Scale",
     "schema:disambiguatingDescription": "table/measure/sdq/sdq-emotional-symptoms.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "null": "99",
     "datatype": {
       "base": "integer",
@@ -622,8 +529,6 @@
     "dc:title" : "SDQ - Conduct Problem Scale",
     "schema:disambiguatingDescription": "table/measure/sdq/sdq-conduct-problem.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "null": "99",
     "datatype": {
       "base": "integer",
@@ -636,8 +541,6 @@
     "dc:title" : "SDQ - Hyperactivity Scale",
     "schema:disambiguatingDescription": "table/measure/sdq/sdq-hyperactivity.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "null": "99",
     "datatype": {
       "base": "integer",
@@ -650,8 +553,6 @@
     "dc:title" : "SDQ - Peer Problem Scale",
     "schema:disambiguatingDescription": "table/measure/sdq/sdq-peer-problem.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "null": "99",
     "datatype": {
       "base": "integer",
@@ -664,8 +565,6 @@
     "dc:title" : "SDQ - Prosocial Scale",
     "schema:disambiguatingDescription": "table/measure/sdq/sdq-prosocial.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "null": "99",
     "datatype": {
       "base": "integer",
@@ -678,8 +577,6 @@
     "dc:title" : "SDQ - Total Difficulties Score",
     "schema:disambiguatingDescription": "table/measure/sdq/sdq-total.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "null": "99",
     "datatype": {
       "base": "integer",
@@ -692,8 +589,6 @@
     "dc:title" : "SDQ - Impact Score",
     "schema:disambiguatingDescription": "table/measure/sdq/sdq-impact.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "null": "99",
     "datatype": {
       "base": "integer",
@@ -707,8 +602,6 @@
     "schema:description": "List of tags for the measure.",
     "schema:disambiguatingDescription": "type/tags.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
       }

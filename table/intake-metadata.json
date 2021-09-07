@@ -140,22 +140,10 @@
   }],
   "primaryKey": [ "organisation_path", "intake_key" ],
   "foreignKeys": [{
-    "columnReference": "outcome",
-    "reference": {
-      "resource": "table/intake/outcome.csv",
-      "columnReference": "id"
-    }
-  }, {
     "columnReference": [ "organisation_path", "client_key" ],
     "reference": {
       "resource": "data/clients.csv",
       "columnReference": [ "organisation_path", "client_key" ]
-    }
-  }, {
-    "columnReference": "funding_source",
-    "reference": {
-      "resource": "table/intake/intake-funding-source.csv",
-      "columnReference": "id"
     }
   }, {
     "columnReference": "referrer_profession",

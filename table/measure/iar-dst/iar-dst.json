@@ -5,13 +5,11 @@
     "name": "id",
     "titles": [ "id" ],
     "schema:dateCreated": "2020-09-18",
-    "schema:dateModified": "2020-09-18",
     "datatype": "string"
   },{
     "name": "description",
     "titles": [ "description" ],
     "schema:dateCreated": "2020-09-18",
-    "schema:dateModified": "2020-09-18",
     "datatype": {
       "base": "string"
     }
