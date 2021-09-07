@@ -309,9 +309,9 @@
     "required": true
   },{
     "name": "organisation_type_referred_to_at_episode_conclusion",
-    "titles": [ "organisation_type_referred_to_at_intake_conclusion" ],
-    "dc:title": "Organisation type referred to at Intake conclusion",
-    "schema:description": "Type of organisation to which the the client was referred at the Intake conclusion.",
+    "titles": [ "organisation_type_referred_to_at_episode_conclusion" ],
+    "dc:title": "Organisation type referred to at Episode conclusion",
+    "schema:description": "Type of organisation to which the the client was referred at the Episode conclusion.",
     "schema:disambiguatingDescription": "type/referrer-organisation-type.rst",
     "schema:whenToCollect": "Intake conclusion",
     "schema:dateCreated": "2021-08-23",
@@ -329,7 +329,7 @@
     "schema:dateCreated": "2016-06-22",
     "datatype": {
       "base": "string"
-      },
+    },
     "required": false
   }],
   "primaryKey": [ "organisation_path", "episode_key" ],
