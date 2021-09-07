@@ -147,8 +147,8 @@
     "url": "table/intake/organisation-type-referred-to-at-intake-conclusion.csv",
     "tableSchema": "table/intake/organisation-type-referred-to-at-intake-conclusion.json"
   }, {
-    "url": "table/intake/funding-source.csv",
-    "tableSchema": "table/intake/funding-source.json"
+    "url": "table/intake/intake-funding-source.csv",
+    "tableSchema": "table/intake/intake-funding-source.json"
   }, {
     "url": "table/episode/completion-status.csv",
     "tableSchema": "table/episode/completion-status.json"
