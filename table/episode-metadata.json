@@ -313,7 +313,7 @@
     "dc:title": "Organisation type referred to at Episode conclusion",
     "schema:description": "Type of organisation to which the the client was referred at the Episode conclusion.",
     "schema:disambiguatingDescription": "type/referrer-organisation-type.rst",
-    "schema:whenToCollect": "Intake conclusion",
+    "schema:whenToCollect": "Episode conclusion",
     "schema:dateCreated": "2021-08-23",
     "separator": " ",
     "datatype": {
