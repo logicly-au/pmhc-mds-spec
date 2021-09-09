@@ -1,4 +1,4 @@
-organisation_path,measure_key,intake_key,iar_dst_domain_1,iar_dst_domain_2,iar_dst_domain_3,iar_dst_domain_4,iar_dst_domain_5,iar_dst_domain_6,iar_dst_domain_7,iar_dst_domain_8,iar_dst_recommended_level_of_care,iar_dst_tags
-PHN999:Intake01,M04,IN04-1,1,2,3,4,1,2,3,4,"3+"
-PHN999:Intake01,M05,IN05-1,1,2,1,2,1,2,1,2,"3+"
-PHN999:Intake01,M06,IN06-1,3,3,1,1,0,0,1,1,"4+"
+organisation_path,measure_key,intake_key,iar_dst_domain_1,iar_dst_domain_2,iar_dst_domain_3,iar_dst_domain_4,iar_dst_domain_5,iar_dst_domain_6,iar_dst_domain_7,iar_dst_domain_8,iar_dst_recommended_level_of_care,iar_dst_practitioner_level_of_care,iar_dst_tags
+PHN999:Intake01,M04,IN04-1,1,2,3,4,1,2,3,4,"3+","3",
+PHN999:Intake01,M05,IN05-1,1,2,1,2,1,2,1,2,"3+","3",
+PHN999:Intake01,M06,IN06-1,3,3,1,1,0,0,1,1,"4+","4"
