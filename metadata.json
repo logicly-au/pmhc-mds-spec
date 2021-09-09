@@ -108,9 +108,6 @@
     "url": "type/boolean.csv",
     "tableSchema": "type/boolean.json"
   }, {
-    "url": "type/unknown.csv",
-    "tableSchema": "type/unknown.json"
-  }, {
     "url": "type/active.csv",
     "tableSchema": "type/active.json"
   }, {
