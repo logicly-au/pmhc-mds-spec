@@ -72,3 +72,10 @@ If you need to build and push a new image containing the tools to convert
 metadata to restructured text see the csvw-metadata2rst repo.
 
 https://gh.sdintra.net/PMHC/csvw-metadata2rst
+
+## Commands useful for checking integrity/completeness of schema files
+
+Find files referenced files that don't exist:
+```
+cat metadata.json | grep tableSchema | cut -d: -f2 | sort | uniq | xargs -n1 -I{} cat {} > /dev/null
+```
