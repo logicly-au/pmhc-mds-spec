@@ -1041,7 +1041,7 @@ The date the measure was given.
   
   - The measure date must not be before :ref:`dfn-referral_date`
   
-  - The measure date must not be after :ref:`dfn-episode_end_date`
+  - The measure date must not be more than 7 days after :ref:`dfn-episode_end_date`
   
   - The measure date must not be in the future.
   
