@@ -3,6 +3,26 @@
 Data Specification Change log
 =============================
 
+9/9/2021
+--------
+
+* :ref:`validation-rules`
+
+  * :ref:`K10+ Current Validations <k10p-current-validations>`
+
+    * Updated the :ref:`dfn-measure_date` validation so that it must not be
+      more than 7 days after :ref:`dfn-episode_end_date`
+
+  * :ref:`K5 Current Validations <k5-current-validations>`
+
+    * Updated the :ref:`dfn-measure_date` validation so that it must not be
+      more than 7 days after :ref:`dfn-episode_end_date`
+
+  * :ref:`SDQ Current Validations <sdq-current-validations>`
+
+    * Updated the :ref:`dfn-measure_date` validation so that it must not be
+      more than 7 days after :ref:`dfn-episode_end_date`
+
 3/8/2021
 --------
 
