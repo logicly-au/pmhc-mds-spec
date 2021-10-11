@@ -207,7 +207,13 @@ Organisation
      * and must not be before the latest :ref:`dfn-measure_date`
      * can be in the future
 
- .. _future-validations:
+.. _future-validations:
 
- .. Future Validations
- .. ------------------
+Future Validations
+------------------
+
+  1. K10+
+
+    * the K10+ scoring calculation will be changing in the last week of
+      October 2021. See  :ref:`Scoring the K10+ <dfn-k10p_score>` for more
+      details
