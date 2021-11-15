@@ -86,7 +86,9 @@
 :23: Other PHN funded service
 :24: AMHC Hub
 :99: Not stated
-Multiple space separated values allowed"
+
+Multiple space separated values allowed
+"
 "`Referred to Organisation Path`_ (referred_to_organisation_path)
 
 ",string,"—","A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation to which the intake referred the client."

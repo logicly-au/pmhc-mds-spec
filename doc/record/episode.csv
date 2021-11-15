@@ -236,7 +236,7 @@ METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
 ",string,yes,":1: Yes
 :2: No
 :9: Not stated/inadequately described"
-"`Organisation type referred to at Intake conclusion`_ (organisation_type_referred_to_at_episode_conclusion)
+"`Organisation type referred to at Episode conclusion`_ (organisation_type_referred_to_at_episode_conclusion)
 
 ",string,yes,":0: None/Not applicable
 :1: General Practice
@@ -264,7 +264,9 @@ METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
 :23: Other PHN funded service
 :24: AMHC Hub
 :99: Not stated
-Multiple space separated values allowed"
+
+Multiple space separated values allowed
+"
 "`Episode - Tags`_ (episode_tags)
 
 ",string,"—","List of tags for the episode."

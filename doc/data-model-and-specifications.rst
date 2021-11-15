@@ -92,6 +92,13 @@ assessed to determine the appropriate level of care and referred to a
 service provider to provide clinical care. An Intake may include the
 collection of an IAR-DST measure.
 
+.. _key-concepts-intake-episode:
+
+Intake Episode
+^^^^^^^^^^^^^^
+
+:ref: Fill this in
+
 .. _key-concepts-episode:
 
 Episode
@@ -186,6 +193,21 @@ Attended Service Contact
 An attended service contact is one that is not marked as 'No show'.
 
 See :ref:`service-contact-data-elements` for the data elements for a service contact.
+
+.. _key-concepts-service-contact-practitioner:
+
+Service Contact Practitioner
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Service Contacts can have more than one practitioner. Practitioners are
+linked to Service Contacts through Service Contact Practitioner.
+
+One Practitioner can be specified as the Primary Practitioner for the
+Service Contact.
+
+See :ref:`service-contact-practitioner-data-elements` for the data
+elements for a service contact practitioner.
+
 
 .. _key-concepts-collection-occasion:
 
@@ -285,6 +307,36 @@ Clients are managed by the provider organisations via upload.
 
 ----------
 
+.. _intake-data-elements:
+
+Intake
+^^^^^^^
+
+See :ref:`key-concepts-intake` for definition of an intake.
+
+Intakes are managed by the provider organisations via upload.
+
+.. csv-table:: Intake record layout
+   :file: record/intake.csv
+   :header-rows: 1
+
+----------
+
+.. _intake-episode-data-elements:
+
+Intake Episode
+^^^^^^^^^^^^^^
+
+See :ref:`key-concepts-intake-episode` for definition of an intake episode.
+
+Intake Episodes are managed by the provider organisations via upload.
+
+.. csv-table:: Intake Episode record layout
+   :file: record/intake-episode.csv
+   :header-rows: 1
+
+----------
+
 .. _episode-data-elements:
 
 Episode
@@ -313,6 +365,22 @@ Service contacts are managed by the provider organisations via upload.
    :file: record/service-contact.csv
    :header-rows: 1
 
+----------
+
+.. _service-contact-practitioner-data-elements:
+
+Service Contact Practitioner
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+See :ref:`key-concepts-service-contact-practitioner` for definition of a
+service contact practitioner.
+
+Service contacts practitioners are managed by the provider organisations
+via upload.
+
+.. csv-table:: Service contact practitioner record layout
+   :file: record/service-contact-practitioner.csv
+   :header-rows: 1
 
 ----------
 
@@ -343,6 +411,15 @@ Measures at Intake
 
 PMHC MDS requires the use of the IAR-DST :ref:`iar-dst-data-elements` at intake.
 
+.. _iar-dst-data-elements:
+
+IAR-DST
+'''''''
+
+.. csv-table:: IAR-DST record layout
+   :file: record/iar-dst-measure.csv
+   :header-rows: 1
+
 .. _episode_measures:
 
 Measures during an Episode
@@ -371,7 +448,7 @@ In the short term, respondents can either report all 14 item scores or report
 the K10 total score as well as item scores for the 4 extra items in the K10+.
 
 .. csv-table:: K10+ record layout
-   :file: record/k10p-collection-occasion.csv
+   :file: record/k10p-measure.csv
    :header-rows: 1
 
 When the client’s responses to Q1-10 are all recorded as 1 'None of the time',
@@ -388,7 +465,7 @@ In the short term, respondents can either report all 5 item scores or report
 the K5 total score.
 
 .. csv-table:: K5 record layout
-   :file: record/k5-collection-occasion.csv
+   :file: record/k5-measure.csv
    :header-rows: 1
 
 .. _sdq-data-elements:
@@ -586,7 +663,7 @@ mapped to their Item Scores before adding up. This mapping is the same for all,
 namely: 0->0, 1->0, 2->1, 3->2.
 
 .. csv-table:: SDQ record layout
-   :file: record/sdq-collection-occasion.csv
+   :file: record/sdq-measure.csv
    :header-rows: 1
 
 -----

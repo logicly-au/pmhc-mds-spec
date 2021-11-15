@@ -25,7 +25,7 @@ Value,"Organisation Key","Practitioner Key","Client Key","Intake Key","Intake Ke
 ,,,,,,"Episode - Medication - Antidepressants (N06A)",,,,,,"SDQ - Question 20"
 ,,,,,,"Episode - Medication - Psychostimulants and nootropics (N06B)",,,,,,"SDQ - Question 21"
 ,,,,,,"Episode - Continuity of Support",,,,,,"SDQ - Question 22"
-,,,,,,"Organisation type referred to at Intake conclusion",,,,,,"SDQ - Question 23"
+,,,,,,"Organisation type referred to at Episode conclusion",,,,,,"SDQ - Question 23"
 ,,,,,,"Episode - Tags",,,,,,"SDQ - Question 24"
 ,,,,,,,,,,,,"SDQ - Question 25"
 ,,,,,,,,,,,,"SDQ - Question 26"

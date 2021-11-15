@@ -3,7 +3,7 @@
 Identifier management
 =====================
 
-.. include:: type/key.rst
+.. include:: shared/key.rst
 
 .. _PO_key:
 

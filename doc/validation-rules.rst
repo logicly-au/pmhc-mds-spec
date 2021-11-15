@@ -53,25 +53,27 @@ Intake
 ~~~~~~
 
   1. Refer to :ref:`key-current-validations` for Intake Key validations
-  2. The :ref:`dfn-referral_out_date` must not be before the :ref:`dfn-contact_date`
-  3. The :ref:`dfn-referral_out_date` must not be before the :ref:`dfn-referral_in_date`
-  4. :ref:`dfn-referrer_organisation_type` must be set to
+  2. The :ref:`dfn-date_referred_to_other_service_at_intake_conclusion` must not be before the :ref:`dfn-date_client_contacted_intake`
+  3. :ref:`dfn-referrer_organisation_type` must be set to
      '98: N/A - Self referral' if and only if :ref:`dfn-referrer_profession` is also
      '98: N/A - Self referral'
-  5. A maximum of one intake shall be open per client
-  6. The :ref:`dfn-referral_out_date`
+  4. A maximum of one intake shall be open per client
+  5. The :ref:`dfn-date_client_contacted_intake`
 
      * must not be before 1 January 2020
      * and must not be before `Provider Organisation - Start Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date>`_
      * and must not be after `Provider Organisation - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date>`_
      * and must not be in the future
 
-  7. The :ref:`dfn-referral_in_date`
+  6. The :ref:`dfn-date_referred_to_other_service_at_intake_conclusion`
 
      * must not be before 1 January 2020
      * and must not be before `Provider Organisation - Start Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date>`_
      * and must not be after `Provider Organisation - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date>`_
      * and must not be in the future
+
+  7. If a :ref:`dfn-referred_to_organisation_path` is specified, that
+     organisation must be an existing organisation within the PMHC MDS.
 
 .. _iar-dst-current-validations:
 
@@ -79,8 +81,7 @@ IAR-DST
 ~~~~~~~
 
   1. Refer to :ref:`key-current-validations` for Measure Key validations
-  2. :ref:`dfn-intake_collection_occasion_key` must be an existing Intake
-     Collection Occasion within the PMHC MDS.
+  2. :ref:`dfn-intake_key` must be an existing Intake within the PMHC MDS.
   3. Both all 8 domains and the level of care must be provided.
   4. The level of care must be consistent with the 8 domain scores provided.
 
@@ -247,20 +248,24 @@ Organisation
   1. The :ref:`dfn-organisation_start_date`
 
      * must not be before 1 January 2014
-       or before a commissioning organisation's start  date
+       or before a commissioning organisation's start date
+     * and must not be after the earliest :ref:`dfn-date_client_contacted_intake`
+     * and must not be after the earliest :ref:`dfn-date_referred_to_other_service_at_intake_conclusion`
      * and must not be after the earliest :ref:`dfn-referral_date`
      * and must not be after the earliest :ref:`dfn-service_contact_date`
-     * and must not be after the earliest :ref:`dfn-measure_date`
+     * and must not be after the earliest :ref:`dfn-collection_occasion_date`
      * and must not be in the future
 
   2. The :ref:`dfn-organisation_end_date`
 
      * must not be before 1 January 2014
        or after a commissioning organisation's end date
+     * and must not be before the latest :ref:`dfn-date_client_contacted_intake`
+     * and must not be before the latest :ref:`dfn-date_referred_to_other_service_at_intake_conclusion`
      * and must not be before the latest :ref:`dfn-referral_date`
      * and must not be before the latest :ref:`dfn-episode_end_date`
      * and must not be before the latest :ref:`dfn-service_contact_date`
-     * and must not be before the latest :ref:`dfn-measure_date`
+     * and must not be before the latest :ref:`dfn-collection_occasion_date`
      * can be in the future
 
  .. _future-validations:
