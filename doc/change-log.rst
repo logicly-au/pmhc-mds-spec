@@ -8,8 +8,16 @@ Data Specification Change log
 
 * :ref:`data-model-and-specifications`
 
-  * :ref:`dfn-k10p_score` - Updated the documentation to reflect the new
-    scoring formula that has been used since the the 1st of November 2021.
+  * :ref:`dfn-k10p_score`
+
+    * Updated the documentation to reflect the new scoring formula that has
+      been used since the the 1st of November 2021.
+
+* :ref:`validation-rules`
+
+  * :ref:`K10+ Current Validations <k10p-current-validations>`
+
+    * Added reference to the Total Score scoring formula
 
 9/9/2021
 --------

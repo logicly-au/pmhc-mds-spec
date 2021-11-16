@@ -146,6 +146,7 @@ K10+
      * and must not be more than 7 days after :ref:`dfn-episode_end_date`
      * and must not be after :ref:`dfn-organisation_end_date`
      * and must not be in the future
+  3. The K10+ Total Score is calculated as described at :ref:`dfn-k10p_score`
 
 .. _k5-current-validations:
 
@@ -212,8 +213,4 @@ Organisation
 Future Validations
 ------------------
 
-  1. K10+
-
-    * the K10+ scoring calculation will be changing in the last week of
-      October 2021. See  :ref:`Scoring the K10+ <dfn-k10p_score>` for more
-      details
+There are currently no planned future validations.
