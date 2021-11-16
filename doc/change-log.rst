@@ -3,6 +3,14 @@
 Data Specification Change log
 =============================
 
+16/11/2021
+----------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`dfn-k10p_score` - Updated the documentation to reflect the new
+    scoring formula that has been used since the the 1st of November 2021.
+
 9/9/2021
 --------
 
