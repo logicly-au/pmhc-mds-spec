@@ -16,9 +16,9 @@ The new tables are :ref:`intake-data-elements`,
 :ref:`intake-episode-data-elements`,
 :ref:`service-contact-practitioner-data-elements`.
 
-There are three contexts where data can be submitted using the version 4
-specification - Intake teams, Hubs and Service Providers where there is no
-intake process.
+There are four contexts where data can be submitted using the version 4
+specification - Intake teams, Hubs, Combined Intake/Hubs and Service Providers
+where there is no intake process.
 
 Different records in the specification are intended to be used in each of
 these contexts.
@@ -35,25 +35,38 @@ Intake Context
 ~~~~~~~~~~~~~~
 
 In the Intake context the following records will need to be provided:
-* `Client <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#client-data-elements>`_,
+
+* `Client <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#client-data-elements>`_
 * :ref:`intake-data-elements`
 * :ref:`iar-dst-data-elements`
 
 Episode and Service contact activity is not submitted in this context.
 
-.. _introducton-hub-context:
+.. _introduction-hub-context:
 
 Hub Service Provider Context
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In the hub context the specification works almost the same as a
-service reporting via the Version 2 core PMHC-MDS specification using the extension
-fields to identify additional detail regarding referrals in from the
+service reporting via the Version 2 core PMHC-MDS specification using the new
+:ref:`intake-episode-data-elements` record
+to identify additional detail regarding referrals in from the
 intake teams (:ref:`dfn-intake_organisation_path` and :ref:`dfn-intake_key`),
-referrals out to additional services (:ref:`dfn-referral_out_organisation_type`), and
-the involvement of additional practitioners involved in service
-contacts (:ref:`dfn-service_contact_practitioner_category`) which allows
+referrals out to additional services (:ref:`dfn-organisation_type_referred_to_at_episode_conclusion`), and
+the involvement of multiple practitioners in service
+contacts (:ref:`service-contact-practitioner-data-elements`) which allows
 multiple endorsements.
+
+.. _introduction-combined-context:
+
+Combined Intake/Hub Context
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In the combined context all the records dscribed in both the
+:ref:`introduction-intake-context` and :ref:`introduction-hub-context`
+can be submitted.
+
+.. _introduction-non-hub-context:
 
 Non Hub Service Provider Context
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -62,8 +75,12 @@ In the non hub context (this is where there is no intake and is analogous with
 the current Version 2 specification), the specification works almost the same
 as a service reporting via the Version 2 core PMHC-MDS specification.
 
-The :ref:`dfn-intake_organisation_path` and :ref:`dfn-intake-key` fields do
-not need to be provided as there is no intake.
+The :ref:`intake-data-elements` and :ref:`intake-episode-data-elements` do not
+need to be supplied where there is no Intake component.
+
+Version 4 allows for the involvement of multiple practitioners  in service
+contacts (:ref:`service-contact-practitioner-data-elements`) which allows
+multiple endorsements.
 
 .. _introduction-intake:
 
@@ -85,60 +102,6 @@ to the hub organisation where the hub organisation will use them to fill in
 then link the intake record at the intake organisation with the Episode
 record at the hub organisation.
 
-.. _introduction-episode:
-
-Episode
-~~~~~~~
-
-When the client is referred to a PMHC MDS reporting service (either a hub
-or a non-hub) a new :ref:`episode-data-elements` record is created like
-any other PMHC funded episode.
-
-Where the service is a hub an additional :ref:`intake-episode-data-elements`
-record is also created.
-
-The :ref:`episode-data-elements` table comprises a composite foreign key to link it
-back to a standard episode record on which all the standard information is
-recorded plus three new fields.
-
-1. The identifier of the intake team (:ref:`dfn-intake_organisation_path`)
-2. The episode identifier of the intake team (:ref:`dfn-intake_key`)
-3. The organisation(s) to which the organisation (intake team or hub) refers
-   the client (:ref:`dfn-referral_out_organisation_type`)
-
-.. _introduction-service-contact:
-
-Service Contact
-~~~~~~~~~~~~~~~
-
-The Service Contact record has been expanded with two new fields:
-
-1. The time that the contact started (:ref:`dfn-service_contact_start_time`)
-2. The funding source for the service contact (:ref:`dfn-funding_source`)
-
-The
-This new record type is pertinent only to hub activity.
-The :ref:`dfn-service-contact-data-elements`
-extends the existing Service Contact record with two new fields:
-
-1. A multi choice :ref:`dfn-service_contact_practitioner_category`, which
-   allows the type of professionals used in multidisciplinary teams to be
-   recorded against a contact
-2.
-
-The :ref:`dfn-service_contact_practitioner_category` field is in addition to
-the standard PHMC MDS field for identifying a specific practitioner. The
-standard model only allows a single practitioner to be recorded against a
-contact. The extended process still requires identification of a single
-practitioner (intended to be the ‘main’ one) but also allows capturing
-the discipline(s) of other practitioners who might be involved. The
-discipline (practitioner type) of the main practitioner is already stored
-on an existing table and does not need to be added to the new practitioner
-categories field.
-
-:ref:`dfn-service_contact_start_time` is intended to enable identification of
-activity undertaken during extended hours.
-
 .. _introduction-iar-dst:
 
 IAR-DST Measure
@@ -159,6 +122,44 @@ both domain scores and recommended level of care is to:
   scoring algorithm performs in real world environments supporting ongoing
   improvement of the tool.
 
+.. _introduction-episode:
+
+Episode
+~~~~~~~
+
+When the client is referred to a PMHC MDS reporting service (either a hub
+or a non-hub) a new :ref:`episode-data-elements` record is created.
+
+Where the service is a hub an additional :ref:`intake-episode-data-elements`
+record is also created.
+
+The :ref:`intake-episode-data-elements` table comprises a composite foreign key to link it
+back to a standard episode record on which all the standard information is
+recorded. This linkage is done via two fields:
+
+1. The identifier of the intake team (:ref:`dfn-intake_organisation_path`)
+2. The episode identifier of the intake team (:ref:`dfn-intake_key`)
+
+The Service Contact record has been expanded with one new field - the
+organisation(s) to which the organisation (intake team or hub) refers
+the client (:ref:`dfn-organisation_type_referred_to_at_episode_conclusion`)
+
+.. _introduction-service-contact:
+
+Service Contact
+~~~~~~~~~~~~~~~
+
+The Service Contact record has been expanded with two new fields:
+
+1. The time that the contact started (:ref:`dfn-service_contact_start_time`).
+   This is intended to enable identification of activity undertaken during extended hours.
+2. The funding source for the service contact (:ref:`dfn-funding_source`)
+
+A new record - :ref:`service-contact-practitioner-data-elements` replaces the
+Practitioner Key field from Version 2.
+:ref:`service-contact-practitioner-data-elements` acknowledges the involvement
+of multiple practitioners in a service contact. One practitioner must be
+identified as the primary practitioner.
 
 Data release and confidentiality
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

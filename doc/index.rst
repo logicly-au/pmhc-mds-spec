@@ -28,6 +28,7 @@ Version |version|
    :caption: Table of contents
    :maxdepth: 3
 
+   introduction
    reporting-arrangements
    identifier-management
    data-model-and-specifications
