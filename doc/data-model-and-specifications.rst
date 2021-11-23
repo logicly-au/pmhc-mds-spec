@@ -10,7 +10,7 @@ Data model
 
 .. _data-model-diagram:
 
-.. figure:: figures/data-model-v4.svg
+.. figure:: figures/data-model-v4-combined.svg
    :alt: PMHC data model
 
    PMHC data model
@@ -97,7 +97,8 @@ collection of an IAR-DST measure.
 Intake Episode
 ^^^^^^^^^^^^^^
 
-:ref: Fill this in
+The Intake Episode record links an Intake record and an Episode record. It
+must be provided by the organisation that delivers the episode, not the intake.
 
 .. _key-concepts-episode:
 
@@ -246,13 +247,7 @@ the type and version of the uploaded data.
 For this version of the specification the required content is shown in the
 following table:
 
-+--------------+------------+
-| key          | value      |
-+--------------+------------+
-| type         | PMHC       |
-+--------------+------------+
-| version      | 2          |
-+--------------+------------+
+.. include:: shared/metadata-content.rst
 
 ----------
 

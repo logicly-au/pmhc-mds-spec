@@ -16,6 +16,11 @@ The new tables are :ref:`intake-data-elements`,
 :ref:`intake-episode-data-elements`,
 :ref:`service-contact-practitioner-data-elements`.
 
+.. _introduction-contexts:
+
+Contexts
+--------
+
 There are four contexts where data can be submitted using the version 4
 specification - Intake teams, Hubs, Combined Intake/Hubs and Service Providers
 where there is no intake process.
@@ -32,7 +37,10 @@ with this reality.
 .. _introduction-intake-context:
 
 Intake Context
-~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^
+
+.. figure:: figures/data-model-v4-intake.svg
+   :alt: PMHC MDS v4.0 Intake Only Data Model
 
 In the Intake context the following records will need to be provided:
 
@@ -45,7 +53,10 @@ Episode and Service contact activity is not submitted in this context.
 .. _introduction-hub-context:
 
 Hub Service Provider Context
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. figure:: figures/data-model-v4-hub.svg
+   :alt: PMHC MDS v4.0 Hub Service Provider Data Model
 
 In the hub context the specification works almost the same as a
 service reporting via the Version 2 core PMHC-MDS specification using the new
@@ -60,16 +71,22 @@ multiple endorsements.
 .. _introduction-combined-context:
 
 Combined Intake/Hub Context
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In the combined context all the records dscribed in both the
+.. figure:: figures/data-model-v4-combined.svg
+   :alt: PMHC MDS v4.0 Combined Intake/Hub Service Provider Data Model
+
+In the combined context all the records described in both the
 :ref:`introduction-intake-context` and :ref:`introduction-hub-context`
 can be submitted.
 
 .. _introduction-non-hub-context:
 
 Non Hub Service Provider Context
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. figure:: figures/data-model-v4-non-hub.svg
+   :alt: PMHC MDS v4.0 Non Hub Service Provider Data Model
 
 In the non hub context (this is where there is no intake and is analogous with
 the current Version 2 specification), the specification works almost the same
@@ -82,10 +99,13 @@ Version 4 allows for the involvement of multiple practitioners  in service
 contacts (:ref:`service-contact-practitioner-data-elements`) which allows
 multiple endorsements.
 
+New Records and Fields in Version 4
+-----------------------------------
+
 .. _introduction-intake:
 
 Intake
-~~~~~~
+^^^^^^
 
 The model requires a new :ref:`intake-data-elements` record for every intake process.
 
@@ -105,7 +125,7 @@ record at the hub organisation.
 .. _introduction-iar-dst:
 
 IAR-DST Measure
-~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^
 
 A new record type is required to capture the domains and the recommended
 level of care pertinent to the IAR-DST that clients have completed for them
@@ -124,8 +144,8 @@ both domain scores and recommended level of care is to:
 
 .. _introduction-episode:
 
-Episode
-~~~~~~~
+Episode and Intake Episode
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 When the client is referred to a PMHC MDS reporting service (either a hub
 or a non-hub) a new :ref:`episode-data-elements` record is created.
@@ -140,14 +160,14 @@ recorded. This linkage is done via two fields:
 1. The identifier of the intake team (:ref:`dfn-intake_organisation_path`)
 2. The episode identifier of the intake team (:ref:`dfn-intake_key`)
 
-The Service Contact record has been expanded with one new field - the
-organisation(s) to which the organisation (intake team or hub) refers
+The Episode record has been expanded with one new field - the
+organisation(s) to which the organisation refers
 the client (:ref:`dfn-organisation_type_referred_to_at_episode_conclusion`)
 
 .. _introduction-service-contact:
 
 Service Contact
-~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^
 
 The Service Contact record has been expanded with two new fields:
 
@@ -155,18 +175,24 @@ The Service Contact record has been expanded with two new fields:
    This is intended to enable identification of activity undertaken during extended hours.
 2. The funding source for the service contact (:ref:`dfn-funding_source`)
 
+.. _introduction-service-contact-practitioner:
+
+Service Contact Practitioner
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 A new record - :ref:`service-contact-practitioner-data-elements` replaces the
-Practitioner Key field from Version 2.
+Practitioner Key field on the Version 2 Service Contact record.
+
 :ref:`service-contact-practitioner-data-elements` acknowledges the involvement
 of multiple practitioners in a service contact. One practitioner must be
 identified as the primary practitioner.
 
 Data release and confidentiality
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------
 
 All data collection and reporting requirements are required to comply with
 relevant Commonwealth, State and Territory Information Privacy and Health
 Records regulations. Clients will be informed that some de-identified portions of the
-information collected through the AMHC Service will be utilised
+information collected through the PMHC MDS Service will be utilised
 for Commonwealth, State and Territory planning and statistical purposes.
 Appropriate consent and ethics approval processes will be adhered to.

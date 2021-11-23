@@ -63,10 +63,35 @@ if this limit causes issues for anyone and adjust it if necessary.
 
 Files or worksheets to upload
 -----------------------------
-The following files/worksheets can be uploaded to the PMHC MDS:
+Version 4 allows for different following files/worksheets to be uploaded in
+different contexts.
 
-.. csv-table:: Summary of files to upload
-  :file: upload-file-types.csv
+Intake
+^^^^^^
+
+.. csv-table:: Summary of files to upload in Intake context
+  :file: upload-file-types-intake.csv
+  :header-rows: 1
+
+Hub Service Provider
+^^^^^^^^^^^^^^^^^^^^
+
+.. csv-table:: Summary of files to upload in Hub Service Provider context
+  :file: upload-file-types-hub-only.csv
+  :header-rows: 1
+
+Combined Intake/Hub Service Provider
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. csv-table:: Summary of files to upload in Combinded Intake/Hub Service Provider context
+  :file: upload-file-types-combined.csv
+  :header-rows: 1
+
+Non Hub Service Provider
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. csv-table:: Summary of files to upload in Non Hub Service Provider context
+  :file: upload-file-types-non-hub.csv
   :header-rows: 1
 
 Each of the example files assumes the following organisation structure:
@@ -107,13 +132,7 @@ All version 2.0 data uploads must include a Metadata file/worksheet.
 
 i.e.:
 
-+--------------+------------+
-| key          | value      |
-+--------------+------------+
-| type         | PMHC       |
-+--------------+------------+
-| version      | 2.0        |
-+--------------+------------+
+.. include:: shared/metadata-content.rst
 
 Data elements for the metadata upload file/worksheet are defined at
 :ref:`metadata-data-elements`.
@@ -122,8 +141,10 @@ Example metadata data:
 
 .. This is a comment. metadata validation rules required!
 
-- `CSV metadata file <_static/metadata.csv>`_.
-- `XLSX metadata worksheet <_static/pmhc-upload.xlsx>`_.
+- To be provided when specification finalised
+
+.. - `CSV metadata file <_static/metadata.csv>`_.
+.. - `XLSX metadata worksheet <_static/pmhc-upload.xlsx>`_.
 
 .. _client-format:
 
@@ -136,78 +157,180 @@ Data elements for the client upload file/worksheet are defined at
 
 Example client data:
 
-- `CSV client file <_static/clients.csv>`_.
-- `XLSX client worksheet <_static/pmhc-upload.xlsx>`_.
+- To be provided when specification finalised
+
+.. - `CSV client file <_static/clients.csv>`_.
+.. - `XLSX client worksheet <_static/pmhc-upload.xlsx>`_.
+
+.. _intake-format:
+
+Intake format
+^^^^^^^^^^^^^
+The intake file/worksheet is required to be uploaded each time in the intake
+or combined intake/hub service provider contexts.
+
+Data elements for the intake upload file/worksheet are defined at
+:ref:`intake-data-elements`.
+
+Example intake data:
+
+- To be provided when specification finalised
+
+.. - `CSV intake file <_static/intakes.csv>`_.
+.. - `XLSX intake worksheet <_static/pmhc-upload.xlsx>`_.
+
+.. _iar-dst-format:
+
+IAR-DST format
+^^^^^^^^^^^^^^
+The IAR-DST file/worksheet is required to be uploaded each time in the intake
+or combined intake/hub service provider contexts.
+
+Data elements for the IAR-DST upload file/worksheet are defined at
+:ref:`iar-dst-data-elements`.
+
+Example IAR-DST data:
+
+- To be provided when specification finalised
+
+.. - `CSV IAR-DST file <_static/iar-dst.csv>`_.
+.. - `XLSX IAR-DST worksheet <_static/pmhc-upload.xlsx>`_.
+
+.. _intake-episode-format:
+
+Intake Episode format
+^^^^^^^^^^^^^^^^^^^^^
+The intake episode file/worksheet is required to be uploaded each time in the
+hub service provider or combined contexts.
+
+Data elements for the intake episode upload file/worksheet are defined at
+:ref:`intake-episode-data-elements`.
+
+Example intake episode data:
+
+- To be provided when specification finalised
+
+.. - `CSV intake epsiode file <_static/intake-episode.csv>`_.
+.. - `XLSX intake episode worksheet <_static/pmhc-upload.xlsx>`_.
 
 .. _episode-format:
 
 Episode file format
 ^^^^^^^^^^^^^^^^^^^
-The episode file/worksheet is required to be uploaded each time.
+The episode file/worksheet is required to be uploaded each time in the
+hub/non hub service provider or combined contexts.
 
 Data elements for the episode upload file/worksheet are defined at
 :ref:`episode-data-elements`.
 
 Example episode data:
 
-- `CSV episode file <_static/episodes.csv>`_.
-- `XLSX episode worksheet <_static/pmhc-upload.xlsx>`_.
+- To be provided when specification finalised
+
+.. - `CSV episode file <_static/episodes.csv>`_.
+.. - `XLSX episode worksheet <_static/pmhc-upload.xlsx>`_.
 
 .. _service-contact-format:
 
 Service Contact file format
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The service contact file/worksheet is required to be uploaded each time.
+The service contact file/worksheet is required to be uploaded each time in the
+hub/non hub service provider or combined contexts.
 
 Data elements for the service contact upload file/worksheet are defined at
 :ref:`service-contact-data-elements`.
 
 Example service contact data:
 
-- `CSV service contact file <_static/service-contacts.csv>`_.
-- `XLSX service contact worksheet <_static/pmhc-upload.xlsx>`_.
+- To be provided when specification finalised
+
+.. - `CSV service contact file <_static/service-contacts.csv>`_.
+.. - `XLSX service contact worksheet <_static/pmhc-upload.xlsx>`_.
+
+.. _service-contact-practitioner-format:
+
+Service Contact Practitioner file format
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The service contact practitioner file/worksheet is required to be uploaded
+each time in the hub/non hub service provider or combined contexts.
+
+Data elements for the service contact practitioner upload file/worksheet are defined at
+:ref:`service-contact-practitioner-data-elements`.
+
+Example service contact practitioner data:
+
+- To be provided when specification finalised
+
+.. - `CSV service contact practitioner file <_static/service-contact-practitioners.csv>`_.
+.. - `XLSX service contact practitioner worksheet <_static/pmhc-upload.xlsx>`_.
+
+.. _collection-occasion-format:
+
+Collection Occasion file format
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The collection occasion file/worksheet is required to be uploaded
+each time in the hub/non hub service provider or combined contexts.
+
+Data elements for the collection occasion upload file/worksheet are defined at
+:ref:`collection-occasion-data-elements`.
+
+Example collection occasion data:
+
+- To be provided when specification finalised
+
+.. - `CSV collection occasion file <_static/collection-occasions.csv>`_.
+.. - `XLSX collection occasion worksheet <_static/pmhc-upload.xlsx>`_.
 
 .. _k10p-format:
 
 K10+ Collection Occasion file format
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The K10+ file/worksheet is required to be uploaded each time.
+The K10+ file/worksheet is required to be uploaded each time in the hub/non hub
+service provider or combined contexts.
 
 Data elements for the K10+ collection occasion upload file/worksheet are defined
 at :ref:`k10p-data-elements`.
 
 Example K10+ data:
 
-- `CSV K10+ file <_static/k10p.csv>`_.
-- `XLSX K10+ worksheet <_static/pmhc-upload.xlsx>`_.
+- To be provided when specification finalised
+
+.. - `CSV K10+ file <_static/k10p.csv>`_.
+.. - `XLSX K10+ worksheet <_static/pmhc-upload.xlsx>`_.
 
 .. _k5-format:
 
 K5 Collection Occasion file format
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The K5 file/worksheet is required to be uploaded each time.
+The K5 file/worksheet is required to be uploaded each time in the hub/non hub
+service provider or combined contexts.
 
 Data elements for the K5 collection occasion upload file/worksheet are defined
 at :ref:`k5-data-elements`.
 
 Example K5 data:
 
-- `CSV K5 file <_static/k5.csv>`_.
-- `XLSX K5 worksheet <_static/pmhc-upload.xlsx>`_.
+- To be provided when specification finalised
+
+.. - `CSV K5 file <_static/k5.csv>`_.
+.. - `XLSX K5 worksheet <_static/pmhc-upload.xlsx>`_.
 
 .. _sdq-format:
 
 SDQ Collection Occasion file format
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The SDQ file/worksheet is required to be uploaded each time.
+The SDQ file/worksheet is required to be uploaded each time in the hub/non hub
+service provider or combined contexts.
 
 Data elements for the SDQ collection occasion upload file/worksheet are defined
 at :ref:`sdq-data-elements`.
 
 Example SDQ data:
 
-- `CSV SDQ file <_static/sdq.csv>`_.
-- `XLSX SDQ worksheet <_static/pmhc-upload.xlsx>`_.
+- To be provided when specification finalised
+
+.. - `CSV SDQ file <_static/sdq.csv>`_.
+.. - `XLSX SDQ worksheet <_static/pmhc-upload.xlsx>`_.
 
 .. _practitioner-format:
 
@@ -222,8 +345,10 @@ Data elements for the practitioner upload file/worksheet are defined at
 
 Example practitioner data:
 
-- `CSV practitioner file <_static/practitioners.csv>`_.
-- `XLSX practitioner worksheet <_static/pmhc-upload.xlsx>`_.
+- To be provided when specification finalised
+
+.. - `CSV practitioner file <_static/practitioners.csv>`_.
+.. - `XLSX practitioner worksheet <_static/pmhc-upload.xlsx>`_.
 
 .. _organisation-format:
 
@@ -238,8 +363,10 @@ Data elements for the Provider Organisation upload file/worksheet are defined at
 
 Example organisation data:
 
-- `CSV organisation file <_static/organisations.csv>`_.
-- `XLSX organisation worksheet <_static/pmhc-upload.xlsx>`_.
+- To be provided when specification finalised
+
+.. - `CSV organisation file <_static/organisations.csv>`_.
+.. - `XLSX organisation worksheet <_static/pmhc-upload.xlsx>`_.
 
 .. _deleting-records:
 
@@ -280,14 +407,16 @@ Deleting records
 
 Example files showing how to delete via upload:
 
-- `XLSX file containing all the worksheets <_static/pmhc-upload-delete.xlsx>`_.
-- `CSV delete client file <_static/clients-delete.csv>`_.
-- `CSV delete episode file <_static/episodes-delete.csv>`_.
-- `CSV delete service contact file <_static/service-contacts-delete.csv>`_.
-- `CSV delete K10+ file <_static/k10p-delete.csv>`_.
-- `CSV detete K5 file <_static/k5-delete.csv>`_.
-- `CSV delete SDQ file <_static/sdq-delete.csv>`_.
-- `CSV delete practitioner file <_static/practitioners-delete.csv>`_.
+- To be provided when specification finalised
+
+.. - `XLSX file containing all the worksheets <_static/pmhc-upload-delete.xlsx>`_.
+.. - `CSV delete client file <_static/clients-delete.csv>`_.
+.. - `CSV delete episode file <_static/episodes-delete.csv>`_.
+.. - `CSV delete service contact file <_static/service-contacts-delete.csv>`_.
+.. - `CSV delete K10+ file <_static/k10p-delete.csv>`_.
+.. - `CSV detete K5 file <_static/k5-delete.csv>`_.
+.. - `CSV delete SDQ file <_static/sdq-delete.csv>`_.
+.. - `CSV delete practitioner file <_static/practitioners-delete.csv>`_.
 
 Frequently Asked Questions
 --------------------------
