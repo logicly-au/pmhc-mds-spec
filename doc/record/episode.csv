@@ -26,6 +26,11 @@ METeOR: `614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__
 :4: Episode closed administratively - client moved out of area
 :5: Episode closed administratively - client referred elsewhere
 :6: Episode closed administratively - other reason"
+"`Episode - Continuity of Support`_ (continuity_of_support)
+
+",string,yes,":1: Yes
+:2: No
+:9: Not stated/inadequately described"
 "`Referral Date`_ (referral_date)
 
 ",date,"—","The date the referrer made the referral."
@@ -231,11 +236,12 @@ METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
 ",string,yes,":1: Yes
 :2: No
 :9: Unknown"
-"`Episode - Continuity of Support`_ (continuity_of_support)
+"`Referrer Profession`_ (referrer_profession)
 
-",string,yes,":1: Yes
-:2: No
-:9: Not stated/inadequately described"
+",string,yes,"Profession of the provider who referred the client."
+"`Referrer Organisation Type`_ (referrer_organisation_type)
+
+",string,yes,"Type of organisation in which the referring professional is based."
 "`Organisation type referred to at Episode conclusion`_ (organisation_type_referred_to_at_episode_conclusion)
 
 ",string,yes,":0: None/Not applicable

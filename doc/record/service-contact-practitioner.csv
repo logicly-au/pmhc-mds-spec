@@ -11,7 +11,7 @@
 "`Practitioner Key`_ (practitioner_key)
 
 ","string (2,50)",yes,"A unique identifier for a practitioner within the provider organisation."
-"`Primary Practitionner Indicator`_ (primary_practitioner_indicator)
+"`Primary Practitioner Indicator`_ (primary_practitioner_indicator)
 
 ",string,yes,":1: Yes
 :2: No"

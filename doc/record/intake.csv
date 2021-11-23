@@ -8,6 +8,9 @@
 "`Client Key`_ (client_key)
 
 ","string (2,50)",yes,"This is a number or code assigned to each individual client referred to the intake organisation. The client identifier must be unique and stable for each individual within the intake organisation. Assigned by either the PHN or intake organisation depending on local procedures."
+"`Referral Date`_ (referral_date)
+
+",date,yes,"The date the referrer made the referral."
 "`Referrer Profession`_ (referrer_profession)
 
 ",string,yes,":1: General Practitioner
@@ -54,7 +57,12 @@
 :99: Not stated"
 "`Intake - Date client contacted Intake`_ (date_client_contacted_intake)
 
-",date,"—","The date on which the client first contacted the intake service"
+",date,yes,"The date on which the client first contacted the intake service"
+"`Intake - Funding Source`_ (intake_funding_source)
+
+",string,yes,":1: HeadtoHelp
+:2: AMHC
+:3: Other / Flexible Funding Pool"
 "`Intake - Date referred to other service at Intake conclusion`_ (date_referred_to_other_service_at_intake_conclusion)
 
 ",date,"—","The date the client was referred to another organisation at Intake conclusion."
@@ -92,11 +100,6 @@ Multiple space separated values allowed
 "`Referred to Organisation Path`_ (referred_to_organisation_path)
 
 ",string,"—","A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation to which the intake referred the client."
-"`Intake - Funding Source`_ (intake_funding_source)
-
-",string,yes,":1: HeadtoHelp
-:2: AMHC
-:3: Other / Flexible Funding Pool"
 "`Intake - Tags`_ (intake_tags)
 
 ",string,"—","List of tags for the intake."

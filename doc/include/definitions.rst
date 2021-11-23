@@ -2711,7 +2711,7 @@ The date on which the client first contacted the intake service
 
 :Data type: date
 
-:Required: no
+:Required: yes
 
 :Notes:
   For Date fields, data must be recorded in compliance with the standard format
@@ -3957,8 +3957,8 @@ The year the practitioner was born.
 
 .. _dfn-primary_practitioner_indicator:
 
-Primary Practitionner Indicator
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Primary Practitioner Indicator
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 An indicator of whether the practitioner was the primary practitioner responsible for the service contact.
 
@@ -4252,7 +4252,7 @@ The date the referrer made the referral.
 
 :Data type: date
 
-:Required: no
+:Required: yes
 
 :Notes:
   For Date fields, data must be recorded in compliance with the standard format
