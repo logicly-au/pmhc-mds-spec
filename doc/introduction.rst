@@ -184,8 +184,8 @@ A new record - :ref:`service-contact-practitioner-data-elements` replaces the
 Practitioner Key field on the Version 2 Service Contact record.
 
 :ref:`service-contact-practitioner-data-elements` acknowledges the involvement
-of multiple practitioners in a service contact. One practitioner must be
-identified as the primary practitioner.
+of multiple practitioners in a service contact. One practitioner (and only one)
+must be identified as the primary practitioner.
 
 Data release and confidentiality
 --------------------------------

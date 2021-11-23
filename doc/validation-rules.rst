@@ -201,7 +201,7 @@ Service Contact Practitioner
      within the PMHC MDS
   3. :ref:`dfn-practitioner_key` must be an existing PMHC practitioner
      within the PMHC MDS
-  4. One and only one Service Contact Practitioner per service contact must be
+  4. One, and only one, Service Contact Practitioner per service contact must be
      flagged as the Primary Practitioner
 
 .. _collection-occasion-current-validations:

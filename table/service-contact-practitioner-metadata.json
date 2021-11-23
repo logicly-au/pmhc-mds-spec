@@ -53,7 +53,7 @@
   },{
     "name": "primary_practitioner_indicator",
     "titles": [ "primary_practitioner_indicator" ],
-    "dc:title": "Primary Practitionner Indicator",
+    "dc:title": "Primary Practitioner Indicator",
     "schema:description": "An indicator of whether the practitioner was the primary practitioner responsible for the service contact.",
     "schema:dateCreated": "2021-08-23",
     "datatype": {
@@ -61,7 +61,8 @@
     },
     "required": true
   }],
-  "primaryKey": [ "organisation_path", "service_contact_practitioner_key"],
+  "primaryKey": [ "organisation_path", "service_contact_organisation_path",
+    "service_contact_key", "practitioner_organisation_path", "practitioner_key"],
   "foreignKeys": [{
     "columnReference": "primary_practitioner_indicator",
     "reference": {

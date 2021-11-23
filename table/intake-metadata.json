@@ -41,6 +41,21 @@
       },
     "required": true
   },{
+    "name": "referral_date",
+    "titles": [ "referral_date" ],
+    "dc:title": "Referral Date",
+    "schema:description": "The date the referrer made the referral.",
+    "schema:disambiguatingDescription": "table/episode/referral-date.rst",
+    "schema:whenToCollect": "Intake start",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateModified": "2018-01-02",
+    "datatype": {
+      "base": "date",
+      "format": "dMMyyyy",
+      "minimum": "2013-01-01"
+  },
+  "required": true
+  },{
     "name": "referrer_profession",
     "titles": [ "referrer_profession" ],
     "dc:title": "Referrer Profession",
@@ -76,7 +91,19 @@
       "base": "date",
       "format": "dMMyyyy",
       "minimum": "2020-01-01"
-    }
+    },
+    "required": true
+  },{
+    "name": "intake_funding_source",
+    "titles": [ "intake_funding_source" ],
+    "dc:title": "Intake - Funding Source",
+    "schema:description": "The source of funding for the intake",
+    "schema:whenToCollect": "Intake start",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
   },{
     "name": "date_referred_to_other_service_at_intake_conclusion",
     "titles": [ "date_referred_to_other_service_at_intake_conclusion" ],
@@ -115,17 +142,6 @@
       "base": "string"
     },
     "required": false
-  },{
-    "name": "intake_funding_source",
-    "titles": [ "intake_funding_source" ],
-    "dc:title": "Intake - Funding Source",
-    "schema:description": "The source of funding for the intake",
-    "schema:whenToCollect": "Intake start",
-    "schema:dateCreated": "2021-08-23",
-    "datatype": {
-      "base": "string"
-    },
-    "required": true
   },{
     "name": "intake_tags",
     "titles": [ "intake_tags" ],

@@ -203,12 +203,11 @@ Service Contact Practitioner
 Service Contacts can have more than one practitioner. Practitioners are
 linked to Service Contacts through Service Contact Practitioner.
 
-One Practitioner can be specified as the Primary Practitioner for the
-Service Contact.
+One (and only one) practitioner must be specified as the Primary Practitioner
+for each Service Contact.
 
 See :ref:`service-contact-practitioner-data-elements` for the data
 elements for a service contact practitioner.
-
 
 .. _key-concepts-collection-occasion:
 
