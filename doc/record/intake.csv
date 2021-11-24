@@ -8,6 +8,9 @@
 "`Client Key`_ (client_key)
 
 ","string (2,50)",yes,"This is a number or code assigned to each individual client referred to the intake organisation. The client identifier must be unique and stable for each individual within the intake organisation. Assigned by either the PHN or intake organisation depending on local procedures."
+"`Client Consent to Anonymised Data`_ (client_consent)
+
+",string,yes,"An indication that the client has consented to their anonymised data being provided to the Department of Health for statistical purposes in planning and improving mental health services."
 "`Referral Date`_ (referral_date)
 
 ",date,yes,"The date the referrer made the referral."
@@ -68,32 +71,53 @@
 ",date,"—","The date the client was referred to another organisation at Intake conclusion."
 "`Organisation type referred to at Intake conclusion`_ (organisation_type_referred_to_at_intake_conclusion)
 
-",string,yes,":0: None/Not applicable
-:1: General Practice
-:2: Medical Specialist Consulting Rooms
-:3: Private practice
-:4: Public mental health service
-:5: Public Hospital
-:6: Private Hospital
-:7: Emergency Department
-:8: Community Health Centre
-:9: Drug and Alcohol Service
-:10: Community Support Organisation NFP
-:11: Indigenous Health Organisation
-:12: Child and Maternal Health
-:13: Nursing Service
-:14: Telephone helpline
-:15: Digital health service
-:16: Family Support Service
-:17: School
-:18: Tertiary Education institution
-:19: Housing service
-:20: Centrelink
-:21: Other
-:22: HeadtoHelp Hub
-:23: Other PHN funded service
-:24: AMHC Hub
-:99: Not stated
+",string,yes,":1: GP/Medical Practitioner
+:2: Hospital
+:3: Psychiatric/mental health service or facility
+:4: Alcohol and other drug treatment service
+:5: Other community/health care service
+:6: Correctional service
+:7: Police diversion
+:8: Court diversion
+:9: Legal service
+:10: Child protection agency
+:11: Community support groups/agencies
+:12: Centrelink or employment service
+:13: Housing and homelessness service
+:14: Telephone & online services/referral agency e.g. direct line
+:15: Disability support service
+:16: Aged care facility/service
+:17: Immigration department or asylum seeker/refugee support service
+:18: School/other education or training institution
+:19: Community based Drug and Alcohol Service
+:20: Youth service (non-AOD)
+:21: Indigenous service (non-AOD)
+:22: Extended care/rehabilitation facility
+:23: Palliative care service
+:24: Police (not diversion)
+:25: Public dental provider - community dental agency
+:26: Dental Hospital
+:27: Private Dental Provider
+:28: Early childhood service
+:29: Maternal and Child Health Service
+:30: Community nursing service
+:31: Emergency relief
+:32: Family support service (excl family violence)
+:33: Family violence service
+:34: Gambling support service
+:35: Maternity services
+:36: Peer support/self-help group
+:37: Private allied health provider
+:38: Sexual Assault service
+:39: Financial counsellor
+:40: Sexual health service
+:41: Medical specialist
+:42: AMHC
+:43: Other PHN funded service
+:44: HeadtoHelp / HeathtoHealth
+:97: No Referral
+:98: Other
+:99: Not stated/Inadequately described
 
 Multiple space separated values allowed
 "

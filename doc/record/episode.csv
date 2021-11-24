@@ -13,7 +13,7 @@
 
 
 METeOR: `614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__",date,"—","The date on which an *Episode of Care* is formally or administratively ended"
-"`Episode - Client Consent to Anonymised Data`_ (client_consent)
+"`Client Consent to Anonymised Data`_ (client_consent)
 
 ",string,yes,":1: Yes
 :2: No"
@@ -266,9 +266,9 @@ METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
 :19: Housing service
 :20: Centrelink
 :21: Other
-:22: HeadtoHelp Hub
+:22: HeadtoHelp / HeadtoHealth Hub
 :23: Other PHN funded service
-:24: AMHC Hub
+:24: AMHC
 :99: Not stated
 
 Multiple space separated values allowed
