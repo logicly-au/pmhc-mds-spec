@@ -113,8 +113,8 @@ The :ref:`intake-data-elements` table comprises records information about the
 intake.
 
 :ref:`dfn-organisation_path` and :ref:`dfn-intake_key` are the
-two fields required to link the hub episode at the hub provider organisation
-back to the intake record at the intake organisation.
+two fields required to link the hub intake at the intake provider organisation
+to the episode record at the hub organisation.
 
 The values of these fields should be passed along by the intake organisation
 to the hub organisation where the hub organisation will use them to fill in
@@ -154,7 +154,7 @@ Where the service is a hub an additional :ref:`intake-episode-data-elements`
 record is also created.
 
 The :ref:`intake-episode-data-elements` table comprises a composite foreign key to link it
-back to a standard episode record on which all the standard information is
+back to an episode record on which all the episode information is
 recorded. This linkage is done via two fields:
 
 1. The identifier of the intake team (:ref:`dfn-intake_organisation_path`)
