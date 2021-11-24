@@ -1,0 +1,6 @@
+id,description
+0,"No prior treatment history"
+1,"Full recovery with previous treatment"
+2,"Moderate recovery with previous treatment"
+3,"Minor recovery with previous treatment"
+4,"Negligible recovery with previous treatment"

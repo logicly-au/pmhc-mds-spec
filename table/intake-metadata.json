@@ -1,0 +1,189 @@
+{
+  "@id": "intake-metadata.json",
+  "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
+  "columns": [{
+    "name": "organisation_path",
+    "titles": [ "organisation_path" ],
+    "dc:title": "Organisation Path",
+    "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
+    "schema:disambiguatingDescription": "type/organisation-path.rst",
+    "schema:whenToCollect": "Intake start",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "intake_key",
+    "titles": [ "intake_key" ],
+    "dc:title": "Intake Key",
+    "schema:description": "This is a number or code assigned to each intake. The Intake Key is unique and stable for each intake at the level of the organisation.",
+    "schema:disambiguatingDescription": "table/intake/key.rst",
+    "schema:whenToCollect": "Intake start",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "required": true
+  },{
+     "name": "client_key",
+    "titles": [ "client_key" ],
+    "dc:title": "Client Key",
+    "schema:description": "This is a number or code assigned to each individual client referred to the intake organisation. The client identifier must be unique and stable for each individual within the intake organisation. Assigned by either the PHN or intake organisation depending on local procedures.",
+    "schema:dateCreated": "2021-08-23",
+    "schema:whenToCollect": "Intake start",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+      },
+    "required": true
+  },{
+    "name": "referral_date",
+    "titles": [ "referral_date" ],
+    "dc:title": "Referral Date",
+    "schema:description": "The date the referrer made the referral.",
+    "schema:disambiguatingDescription": "table/episode/referral-date.rst",
+    "schema:whenToCollect": "Intake start",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateModified": "2018-01-02",
+    "datatype": {
+      "base": "date",
+      "format": "dMMyyyy",
+      "minimum": "2013-01-01"
+  },
+  "required": true
+  },{
+    "name": "referrer_profession",
+    "titles": [ "referrer_profession" ],
+    "dc:title": "Referrer Profession",
+    "schema:description": "Profession of the provider who referred the client.",
+    "schema:disambiguatingDescription": "type/referrer-profession.rst",
+    "schema:whenToCollect": "Intake start",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "referrer_organisation_type",
+    "titles": [ "referrer_organisation_type" ],
+    "dc:title": "Referrer Organisation Type",
+    "schema:description": "Type of organisation in which the referring professional is based.",
+    "schema:disambiguatingDescription": "type/referrer-organisation-type.rst",
+    "schema:whenToCollect": "Intake start",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "date_client_contacted_intake",
+    "titles": [ "date_client_contacted_intake" ],
+    "dc:title": "Intake - Date client contacted Intake",
+    "schema:description": "The date on which the client first contacted the intake service",
+    "schema:disambiguatingDescription": "table/intake/contact-date.rst",
+    "schema:whenToCollect": "Intake start",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "date",
+      "format": "dMMyyyy",
+      "minimum": "2020-01-01"
+    },
+    "required": true
+  },{
+    "name": "intake_funding_source",
+    "titles": [ "intake_funding_source" ],
+    "dc:title": "Intake - Funding Source",
+    "schema:description": "The source of funding for the intake",
+    "schema:whenToCollect": "Intake start",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "date_referred_to_other_service_at_intake_conclusion",
+    "titles": [ "date_referred_to_other_service_at_intake_conclusion" ],
+    "dc:title": "Intake - Date referred to other service at Intake conclusion",
+    "schema:description": "The date the client was referred to another organisation at Intake conclusion.",
+    "schema:disambiguatingDescription": "table/intake/referral-out-date.rst",
+    "schema:whenToCollect": "Intake conclusion",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "date",
+      "format": "dMMyyyy",
+      "minimum": "2020-01-01"
+    }
+  },{
+    "name": "organisation_type_referred_to_at_intake_conclusion",
+    "titles": [ "organisation_type_referred_to_at_intake_conclusion" ],
+    "dc:title": "Organisation type referred to at Intake conclusion",
+    "schema:description": "Type of organisation to which the the client was referred at the Intake conclusion.",
+    "schema:disambiguatingDescription": "type/referrer-organisation-type.rst",
+    "schema:whenToCollect": "Intake conclusion",
+    "schema:dateCreated": "2021-08-23",
+    "separator": " ",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "referred_to_organisation_path",
+    "titles": [ "referred_to_organisation_path" ],
+    "dc:title": "Referred to Organisation Path",
+    "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation to which the intake referred the client.",
+    "schema:disambiguatingDescription": "type/referred-to-organisation-path.rst",
+    "schema:whenToCollect": "Intake conclusion",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string"
+    },
+    "required": false
+  },{
+    "name": "intake_tags",
+    "titles": [ "intake_tags" ],
+    "dc:title" : "Intake - Tags",
+    "schema:description": "List of tags for the intake.",
+    "schema:disambiguatingDescription": "type/tags.rst",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string"
+      },
+    "required": false
+  }],
+  "primaryKey": [ "organisation_path", "intake_key" ],
+  "foreignKeys": [{
+    "columnReference": [ "organisation_path", "client_key" ],
+    "reference": {
+      "resource": "data/clients.csv",
+      "columnReference": [ "organisation_path", "client_key" ]
+    }
+  }, {
+    "columnReference": "referrer_profession",
+    "reference": {
+      "resource": "type/referrer-profession.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "referrer_organisation_type",
+    "reference": {
+      "resource": "type/referrer-organisation-type.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "organisation_type_referred_to_at_intake_conclusion",
+    "reference": {
+      "resource": "table/intake/organisation-type-referred-to-at-intake-conclusion.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "intake_funding_source",
+    "reference": {
+      "resource": "table/intake/intake-funding-source.csv",
+      "columnReference": "id"
+    }
+  }]
+}

@@ -1,0 +1,3 @@
+organisation_path,service_contact_key,episode_key,practitioner_key,service_contact_date,service_contact_type,service_contact_postcode,service_contact_modality,service_contact_participants,service_contact_venue,service_contact_duration,service_contact_copayment,service_contact_participation_indicator,service_contact_interpreter,service_contact_no_show,service_contact_final,service_contact_tags
+PHN999:Hub01,AB01CD-E01-SC01,AB01CD-E01,P01,20102020,0,9999,2,3,2,1,0,1,2,1,3,tag1
+PHN999:Hub01,AB01CE-E01-SC01,AB01CE-E01,P02,15102020,1,3065,1,1,2,4,0,1,2,2,2,

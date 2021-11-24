@@ -1,0 +1,1 @@
+../doc/shared/key.rst

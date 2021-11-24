@@ -20,6 +20,7 @@ Whether a person identifies as being of Aboriginal and/or Torres Strait Islander
   :3: Both Aboriginal and Torres Strait Islander origin
   :4: Neither Aboriginal or Torres Strait Islander origin
   :9: Not stated/inadequately described
+
 :Notes:
   Code 9 is not to be available as a valid answer to the questions but is
     intended for use:
@@ -306,6 +307,7 @@ The country in which the client was born, as represented by a code.
   :9232: Zimbabwe
   :9299: Southern and East Africa, nec
   :9999: Unknown
+
 :Notes:
   `Standard Australian Classification of Countries (SACC), 2016 4-digit
   code (ABS Catalogue No. 1269.0)
@@ -337,6 +339,7 @@ The date on which an individual was born.
 :Data type: date
 
 :Required: yes
+
 :Notes:
   - The date of birth must not be before January 1st 1900.
   
@@ -399,6 +402,7 @@ The term 'gender' refers to the way in which a person identifies their masculine
   :1: Male
   :2: Female
   :3: Other
+
 :Notes:
   1 - M - Male
     Adults who identify themselves as men, and children who identify themselves
@@ -429,6 +433,7 @@ This is a number or code assigned to each individual client referred to the comm
 :Data type: string (2,50)
 
 :Required: yes
+
 :Notes:
   Client keys must be unique within each Provider Organisation. The Client Key
   will be managed by the Provider Organisation, however, the PHN may decide to
@@ -892,6 +897,7 @@ The language reported by a client as the main language other than English spoken
   :9702: Key Word Sign Australia
   :9799: Sign Languages, nec
   :9999: Unknown
+
 :Notes:
   `Australian Standard Classification of Languages (ASCL), 2016 4-digit code (ABS
   Catalogue No. 1267.0) <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1267.0>`_
@@ -932,6 +938,7 @@ The self-assessed level of ability to speak English, asked of people whose first
   :3: Not well
   :4: Not at all
   :9: Not stated/inadequately described
+
 :Notes:
   0 - Not applicable (persons under 5 years of age or who speak only English)
     Not applicable, is to be used for people under 5 years of age and people
@@ -959,6 +966,7 @@ A key that enables two or more records belonging to the same individual to be br
 :Data type: string (14,40)
 
 :Required: yes
+
 :Notes:
   System generated non-identifiable alphanumeric code derived from information
   held by the PMHC organisation.
@@ -990,6 +998,7 @@ List of tags for the client.
 :Data type: string
 
 :Required: no
+
 :Notes:
   A comma separated list of tags.
   
@@ -1006,18 +1015,19 @@ List of tags for the client.
 
 ----------
 
-.. _dfn-measure_date:
+.. _dfn-collection_occasion_date:
 
-Collection Occasion - Measure Date
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Collection Occasion - Date
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The date the measure was given.
+The date of the collection occasion.
 
-:Field name: measure_date
+:Field name: collection_occasion_date
 
 :Data type: date
 
 :Required: yes
+
 :Notes:
   For Date fields, data must be recorded in compliance with the standard format
   used across the National Health Data Dictionary; specifically, dates must be
@@ -1025,15 +1035,13 @@ The date the measure was given.
   necessary to pad out a value. For instance, 13th March 2008 would appear as
   13032008.
   
-  If the date the measure was given is unknown, 09099999 should be used.
+  If the date the activity was performed is unknown, 09099999 should be used.
   
-  - The measure date must not be before 1st January 2016.
+  - For an intake collection occasion, the collection date must not be
+    before 1st January 2020, otherwise, the collection date must not be before
+    1st January 2016.
   
-  - The measure date must not be before :ref:`dfn-referral_date`
-  
-  - The measure date must not be after :ref:`dfn-episode_end_date`
-  
-  - The measure date must not be in the future.
+  - The collection date must not be in the future.
   
 
 ----------
@@ -1043,7 +1051,7 @@ The date the measure was given.
 Collection Occasion - Reason
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The reason for the collection of the outcome measures on the identified Outcome Collection Occasion.
+The reason for the collection of the service activities on the identified Collection Occasion.
 
 :Field name: reason_for_collection
 
@@ -1055,6 +1063,7 @@ The reason for the collection of the outcome measures on the identified Outcome 
   :1: Episode start
   :2: Review
   :3: Episode end
+
 :Notes:
   1 - Episode start
     Refers to an outcome measure undertaken at the beginning of an Episode of Care. For the purposes of the PMHC MDS protocol, episodes may start at the point of first Service Contact with a new client who has not been seen previously by the organisation, or a first contact for a new Episode of Care for a client who has received services from the organisation in a previous Episode of Care that has been completed.
@@ -1075,26 +1084,52 @@ The reason for the collection of the outcome measures on the identified Outcome 
 
 ----------
 
+.. _dfn-collection_occasion_tags:
+
+Collection Occasion - Tags
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+List of tags for the collection occasion.
+
+:Field name: collection_occasion_tags
+
+:Data type: string
+
+:Required: no
+
+:Notes:
+  A comma separated list of tags.
+  
+  Organisations can use this field to tag records in order to partition them as
+  per local requirements.
+  
+  Tags can contain lower case letters (or will get lowercased), numbers, dashes,
+  spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
+  nurse required, pending-outcome-1`` would all be legitimate.
+  
+  Tags beginning with an exclamation mark (!) are reserved for future use by the
+  Department. e.g. ``!reserved, ! reserved, !department-use-only``.
+  
+
+----------
+
 .. _dfn-collection_occasion_key:
 
 Collection Occasion Key
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-This is a number or code assigned to each collection occasion of outcome measures. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation.
+This is a number or code assigned to each collection occasion of service activities. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation.
 
 :Field name: collection_occasion_key
 
 :Data type: string (2,50)
 
 :Required: yes
+
 :Notes:
   Collection Occasion Keys must be generated by the organisation to be unique at the Provider
-  Organisation level and must persist across time. Collection Occasion keys are allowed to be
-  duplicated if different measures are collected on the same day for the same reason
-  and episode. You cannot have the same collection occasion key for different
-  collection occasions with the same measure. See :ref:`Managing Collection Occasion Keys <collection_occasion_keys>`
-  
-  Collection Occasion Keys are case sensitive and must be valid unicode characters.
+  Organisation level and must persist across time.  See
+  :ref:`Identifier Management <identifier_management>`
   
 
 ----------
@@ -1158,6 +1193,7 @@ The main additional condition or complaint co-existing with the Principal Diagno
   :904: Stress related
   :905: Other
   :999: Missing
+
 :Notes:
   Additional Diagnosis gives information on conditions that are significant in
   terms of treatment required and resources used during the episode of care.
@@ -1207,6 +1243,7 @@ The Australian postcode of the client.
 :Data type: string
 
 :Required: yes
+
 :Notes:
   A valid Australian postcode or 9999 if the postcode is unknown or the client
   has not provided sufficient information to confirm their current residential
@@ -1244,6 +1281,7 @@ An indication that the client has consented to their anonymised data being provi
 :Domain:
   :1: Yes
   :2: No
+
 :Notes:
   1 - Yes
       The client has consented to their anonymised data being provided to the
@@ -1285,6 +1323,7 @@ An indication of the completion status of an *Episode of Care*.
   :4: Episode closed administratively - client moved out of area
   :5: Episode closed administratively - client referred elsewhere
   :6: Episode closed administratively - other reason
+
 :Notes:
   In order to use code 1 (Episode closed - treatment concluded) the client must have at least one service contact. All other codes may be applicable even when the client has no service contacts.
   
@@ -1356,6 +1395,7 @@ Is the client a Continuity of Support Client?
   :1: Yes
   :2: No
   :9: Not stated/inadequately described
+
 :Notes:
   *Introduced 1 July 2019*
   
@@ -1426,6 +1466,7 @@ Whether a person in paid employment is employed full-time or part-time, as repre
   :2: Part-time
   :3: Not applicable - not in the labour force
   :9: Not stated/inadequately described
+
 :Notes:
   Applies only to people whose labour force status is employed. (See metadata
   item Labour Force Status, for a definition of 'employed'). Paid employment
@@ -1466,6 +1507,7 @@ The date on which an *Episode of Care* is formally or administratively ended
 :Data type: date
 
 :Required: no
+
 :Notes:
   - The episode end date must not be before 1st January 2016.
   
@@ -1543,6 +1585,7 @@ An indication of whether the person is a current holder of a Health Care Card th
   :2: No
   :3: Not Known
   :9: Not stated
+
 :Notes:
   Details on the Australian Government Health Care Card are available at:
   https://www.humanservices.gov.au/customer/services/centrelink/health-care-card
@@ -1570,6 +1613,7 @@ An indication of whether the client has been homeless in the 4 weeks prior to th
   :2: Short-term or emergency accommodation
   :3: Not homeless
   :9: Not stated / Missing
+
 :Notes:
   1	- Sleeping rough or in non-conventional accommodation
     Includes sleeping on the streets, in a park, in cars or railway carriages,
@@ -1606,13 +1650,14 @@ An indication of whether the client has been homeless in the 4 weeks prior to th
 Episode Key
 ^^^^^^^^^^^
 
-This is a number or code assigned to each episode. The Episode Key is unique and stable for each episode at the level of the Provider Organisation.
+This is a number or code assigned to each PMHC MDS episode. The Episode Key is unique and stable for each episode at the level of the organisation. This key must link to an existing episode within the PMHC MDS.
 
 :Field name: episode_key
 
 :Data type: string (2,50)
 
 :Required: yes
+
 :Notes:
   Episode Keys must be generated by the organisation to be unique at the Provider
   Organisation level and must persist across time. Creation of episode keys in
@@ -1646,6 +1691,7 @@ The self-reported status the person currently has in being either in the labour 
   :2: Unemployed
   :3: Not in the Labour Force
   :9: Not stated/inadequately described
+
 :Notes:
   1 - Employed
     Employed persons are those aged 15 years and over who met one of the following
@@ -1726,6 +1772,7 @@ A person's current relationship status in terms of a couple relationship or, for
   :4: Separated
   :5: Married (registered and de facto)
   :6: Not stated/inadequately described
+
 :Notes:
   Refers to the current marital status of a person.
   
@@ -1769,6 +1816,7 @@ Whether the client is taking prescribed antidepressants for a mental health cond
   :1: Yes
   :2: No
   :9: Unknown
+
 :Notes:
   The N06A class of drugs a therapeutic subgroup of the Anatomical Therapeutic
   Chemical Classification System, a system of alphanumeric codes developed by the
@@ -1798,6 +1846,7 @@ Whether the client is taking prescribed antipsychotics for a mental health condi
   :1: Yes
   :2: No
   :9: Unknown
+
 :Notes:
   The N05A class of drugs a therapeutic subgroup of the Anatomical Therapeutic
   Chemical Classification System, a system of alphanumeric codes developed by the
@@ -1828,6 +1877,7 @@ Whether the client is taking prescribed anxiolytics for a mental health conditio
   :1: Yes
   :2: No
   :9: Unknown
+
 :Notes:
   The N05B class of drugs a therapeutic subgroup of the Anatomical Therapeutic
   Chemical Classification System, a system of alphanumeric codes developed by the
@@ -1858,6 +1908,7 @@ Whether the client is taking prescribed hypnotics and sedatives for a mental hea
   :1: Yes
   :2: No
   :9: Unknown
+
 :Notes:
   The N05C class of drugs a therapeutic subgroup of the Anatomical Therapeutic
   Chemical Classification System, a system of alphanumeric codes developed by the
@@ -1889,6 +1940,7 @@ Whether the client is taking prescribed psychostimulants and nootropics for a me
   :1: Yes
   :2: No
   :9: Unknown
+
 :Notes:
   The N06B class of drugs a therapeutic subgroup of the Anatomical Therapeutic
   Chemical Classification System, a system of alphanumeric codes developed by the
@@ -1919,6 +1971,28 @@ Is the client a participant in the National Disability Insurance Scheme?, as rep
   :1: Yes
   :2: No
   :9: Not stated/inadequately described
+
+----------
+
+.. _dfn-episode_organisation_path:
+
+Episode Organisation Path
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing the clinical service to the client.
+
+:Field name: episode_organisation_path
+
+:Data type: string
+
+:Required: yes
+
+:Notes:
+  A combination of the Primary Health Network's (PHN's) Organisation Key and the
+  Provider Organisation's Organisation Key separated by a colon.
+  
+  .. include:: shared/example-organisation-path.rst
+  
 
 ----------
 
@@ -1980,6 +2054,7 @@ The Principal Diagnosis is the diagnosis established after study to be chiefly r
   :904: Stress related
   :905: Other
   :999: Missing
+
 :Notes:
   Diagnoses are grouped into 8 major categories (9 for Additional Diagnosis):
   
@@ -2078,6 +2153,7 @@ The range of activities that best describes the overall services intended to be 
   :6: Indigenous-specific mental health services
   :7: Other
   :8: Psychosocial Support
+
 :Notes:
   Describes the main focus of the services to be delivered to the client for the
   current Episode of Care, selected from a defined list of categories.
@@ -2231,122 +2307,6 @@ The range of activities that best describes the overall services intended to be 
 
 ----------
 
-.. _dfn-referral_date:
-
-Episode - Referral Date
-^^^^^^^^^^^^^^^^^^^^^^^
-
-The date the referrer made the referral.
-
-:Field name: referral_date
-
-:Data type: date
-
-:Required: no
-:Notes:
-  For Date fields, data must be recorded in compliance with the standard format
-  used across the National Health Data Dictionary; specifically, dates must be
-  of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
-  necessary to pad out a value. For instance, 13th March 2008 would appear as
-  13032008.
-  
-  - The referral date must not be before 1st January 2014.
-  
-  - The referral date must not be in the future.
-  
-
-----------
-
-.. _dfn-referrer_organisation_type:
-
-Episode - Referrer Organisation Type
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Type of organisation in which the referring professional is based.
-
-:Field name: referrer_organisation_type
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: General Practice
-  :2: Medical Specialist Consulting Rooms
-  :3: Private practice
-  :4: Public mental health service
-  :5: Public Hospital
-  :6: Private Hospital
-  :7: Emergency Department
-  :8: Community Health Centre
-  :9: Drug and Alcohol Service
-  :10: Community Support Organisation NFP
-  :11: Indigenous Health Organisation
-  :12: Child and Maternal Health
-  :13: Nursing Service
-  :14: Telephone helpline
-  :15: Digital health service
-  :16: Family Support Service
-  :17: School
-  :18: Tertiary Education institution
-  :19: Housing service
-  :20: Centrelink
-  :21: Other
-  :98: N/A - Self referral
-  :99: Not stated
-:Notes:
-  Medical Specialist Consulting Rooms includes private medical practitioner rooms
-  in public or private hospital or other settings.
-  
-  Public mental health service refers to a state- or territory-funded specialised
-  mental health services (i.e., specialised mental health care delivered in
-  public acute and psychiatric hospital settings, community mental health care
-  services, and s specialised residential mental health care services).
-  
-  Not applicable should only be selected in instances of Self referral.
-  
-
-----------
-
-.. _dfn-referrer_profession:
-
-Episode - Referrer Profession
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Profession of the provider who referred the client.
-
-:Field name: referrer_profession
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: General Practitioner
-  :2: Psychiatrist
-  :3: Obstetrician
-  :4: Paediatrician
-  :5: Other Medical Specialist
-  :6: Midwife
-  :7: Maternal Health Nurse
-  :8: Psychologist
-  :9: Mental Health Nurse
-  :10: Social Worker
-  :11: Occupational therapist
-  :12: Aboriginal Health Worker
-  :13: Educational professional
-  :14: Early childhood service worker
-  :15: Other
-  :98: N/A - Self referral
-  :99: Not stated
-:Notes:
-  New arrangements for some services delivered in primary mental health care
-  allows clients to refer themselves for treatment. Therefore, 'Self'
-  is a response option included within 'Referrer profession'.
-  
-
-----------
-
 .. _dfn-income_source:
 
 Episode - Source of Cash Income
@@ -2370,6 +2330,7 @@ The source from which a person derives the greatest proportion of his/her income
   :6: Nil income
   :7: Not known
   :9: Not stated/inadequately described
+
 :Notes:
   This data standard is not applicable to person's aged less than 16 years.
   
@@ -2424,6 +2385,450 @@ List of tags for the episode.
 :Data type: string
 
 :Required: no
+
+:Notes:
+  A comma separated list of tags.
+  
+  Organisations can use this field to tag records in order to partition them as
+  per local requirements.
+  
+  Tags can contain lower case letters (or will get lowercased), numbers, dashes,
+  spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
+  nurse required, pending-outcome-1`` would all be legitimate.
+  
+  Tags beginning with an exclamation mark (!) are reserved for future use by the
+  Department. e.g. ``!reserved, ! reserved, !department-use-only``.
+  
+
+----------
+
+.. _dfn-iar_dst_domain_1:
+
+IAR-DST - Domain 1 - Symptom Severity and Distress (Primary Domain)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+An initial assessment should examine severity of symptoms, distress and previous history of mental illness. Severity of current symptoms and associated levels of distress are important factors in assigning a level of care and making a referral decision. Assessing changes in symptom severity and distress also forms an important part of outcome monitoring.
+
+:Field name: iar_dst_domain_1
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :0: No problem in this domain
+  :1: Mild or sub diagnostic
+  :2: Moderate
+  :3: Severe
+  :4: Very severe
+
+:Notes:
+  Please refer to `IAR-DST Domain 1 - Symptom Severity and Distress (Primary Domain) <https://docs.iar-dst.online/en/latest/domains/domain-1.html>`_
+  
+
+----------
+
+.. _dfn-iar_dst_domain_2:
+
+IAR-DST - Domain 2 - Risk of Harm (Primary Domain)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+An initial assessment should include an evaluation of risk to determine a person’s potential for harm to self or others. Results from this assessment are of fundamental importance in deciding the appropriate level of care required.
+
+:Field name: iar_dst_domain_2
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :0: No identified risk in this domain
+  :1: Low risk of harm
+  :2: Moderate risk of harm
+  :3: High risk of harm
+  :4: Very high risk of harm
+
+:Notes:
+  Please refer to `IAR-DST Domain 2 - Risk of Harm (Primary Domain) <https://docs.iar-dst.online/en/latest/domains/domain-2.html>`_
+  
+
+----------
+
+.. _dfn-iar_dst_domain_3:
+
+IAR-DST - Domain 3 - Functioning (Primary Domain)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+An initial assessment should consider functional impairment caused by or exacerbated by the mental health condition. While other types of disabilities may play a role in determining what types of support services may be required, they should generally not be considered in determining mental health intervention intensity within a stepped care continuum.
+
+:Field name: iar_dst_domain_3
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :0: No problems in this domain
+  :1: Mild impact
+  :2: Moderate impact
+  :3: Severe impact
+  :4: Very severe to extreme impact
+
+:Notes:
+  Please refer to `IAR-DST Domain 3 - Functioning (Primary Domain) <https://docs.iar-dst.online/en/latest/domains/domain-3.html>`_
+  
+
+----------
+
+.. _dfn-iar_dst_domain_4:
+
+IAR-DST - Domain 4 - Impact of Co-existing Conditions (Primary Domain)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Increasingly, individuals are experiencing and managing multi-morbidity (coexistence of multiple conditions including chronic disease). An initial assessment should specifically examine the presence of other concurrent health conditions that contribute to (or have the potential to contribute to) increased severity of mental health problems and/or compromises the person’s ability to participate in the recommended treatment.
+
+:Field name: iar_dst_domain_4
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :0: No problem in this domain
+  :1: Minor impact
+  :2: Moderate impact
+  :3: Severe impact
+  :4: Very severe impact
+
+:Notes:
+  Please refer to `IAR-DST Domain 4 - Impact of Co-existing Conditions (Primary Domain) <https://docs.iar-dst.online/en/latest/domains/domain-4.html>`_
+  
+
+----------
+
+.. _dfn-iar_dst_domain_5:
+
+IAR-DST - Domain 5 - Treatment and Recovery History (Contextual Domain)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This initial assessment domain should explore the individual’s relevant treatment history and their response to previous treatment. Response to previous treatment is a reasonable predictor of future treatment need and is particularly important when determining appropriateness of lower intensity services.
+
+:Field name: iar_dst_domain_5
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :0: No prior treatment history
+  :1: Full recovery with previous treatment
+  :2: Moderate recovery with previous treatment
+  :3: Minor recovery with previous treatment
+  :4: Negligible recovery with previous treatment
+
+:Notes:
+  Please refer to `IAR-DST Domain 5 - Treatment and Recovery History (Contextual Domain) <https://docs.iar-dst.online/en/latest/domains/domain-5.html>`_
+  
+
+----------
+
+.. _dfn-iar_dst_domain_6:
+
+IAR-DST - Domain 6 - Social and Environmental Stressors (Contextual Domain)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This initial assessment domain should consider how the person’s environment might contribute to the onset or maintenance of a mental health condition. Significant situational or social complexities can lead to increased condition severity and/or compromise ability to participate in the recommended treatment. Unresolved situational or social complexities can limit the likely benefit of treatment. Furthermore, understanding the complexities experienced by the individual (with carer/support person perspectives if available), may alter the type of service offered, or indicate that additional service referrals may be required (e.g., a referral to an emergency housing provider).
+
+:Field name: iar_dst_domain_6
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :0: No problem in this domain
+  :1: Mildly stressful environment
+  :2: Moderately stressful environment
+  :3: Highly stressful environment
+  :4: Extremely stressful environment
+
+:Notes:
+  Please refer to `IAR-DST Domain 6 - Social and Environmental Stressors (Contextual Domain) <https://docs.iar-dst.online/en/latest/domains/domain-6.html>`_
+  
+
+----------
+
+.. _dfn-iar_dst_domain_7:
+
+IAR-DST - Domain 7 - Family and Other Supports (Contextual Domain)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This initial assessment domain should consider whether informal supports are present and their potential to contribute to recovery. A lack of supports might contribute to the onset or maintenance of the mental health condition and/or compromise ability to participate in the recommended treatment.
+
+:Field name: iar_dst_domain_7
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :0: Highly supported
+  :1: Well supported
+  :2: Limited supports
+  :3: Minimal supports
+  :4: No supports
+
+:Notes:
+  Please refer to `IAR-DST Domain 7 - Family and Other Supports (Contextual Domain) <https://docs.iar-dst.online/en/latest/domains/domain-7.html>`_
+  
+
+----------
+
+.. _dfn-iar_dst_domain_8:
+
+IAR-DST - Domain 8 - Engagement and Motivation (Contextual Domain)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This initial assessment domain should explore the person’s understanding of the mental health condition and their willingness to engage in or accept treatment.
+
+:Field name: iar_dst_domain_8
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :0: Optimal
+  :1: Positive
+  :2: Limited
+  :3: Minimal
+  :4: Disengaged
+
+:Notes:
+  Please refer to `IAR-DST Domain 8 - Engagement and Motivation (Contextual Domain) <https://docs.iar-dst.online/en/latest/domains/domain-8.html>`_
+  
+
+----------
+
+.. _dfn-iar_dst_practitioner_level_of_care:
+
+IAR-DST - Practitioner Level of Care
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The individualised level of care assessed by the practitioner for the referral
+
+:Field name: iar_dst_practitioner_level_of_care
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Level 1 - Self Management
+  :2: Level 2 - Low Intensity Services
+  :3: Level 3 - Moderate Intensity Services
+  :4: Level 4 - High Intensity Services
+  :5: Level 5 - Acute and Specialist Community Mental Health Services
+  :9: Not stated
+
+:Notes:
+  Please refer to `IAR-DST Levels of Care <https://docs.iar-dst.online/en/latest/level-of-care/index.html>`_
+  
+  This field was added on 25/2/2021. IAR-DST data entered into the PMHC-MDS
+  before 25/2/2021 will have the Practitioner Level of Care set to 9: Missing.
+  All data entered after 25/2/2021 must use responses 1-5.
+  
+
+----------
+
+.. _dfn-iar_dst_recommended_level_of_care:
+
+IAR-DST - Recommended Level of Care
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The information gathered through the initial assessment is used to assign a recommended level of care and inform a referral decision. The levels of care are not intended to replace individualised assessment and care - rather to provide information to guide decision making.
+
+:Field name: iar_dst_recommended_level_of_care
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Level 1 - Self Management
+  :1+: Level 1 or above - Review assessment on Contextual Domains to determine most appropriate placement
+  :2: Level 2 - Low Intensity Services
+  :2+: Level 2 or above - Review assessment on Contextual Domains to determine most appropriate placement
+  :3: Level 3 - Moderate Intensity Services
+  :3+: Level 3 or above - Review assessment on Contextual Domains to determine most appropriate placement
+  :4: Level 4 - High Intensity Services
+  :4+: Level 4 or above - Review assessment on Contextual Domains to determine most appropriate placement
+  :5: Level 5 - Acute and Specialist Community Mental Health Services
+
+:Notes:
+  Please refer to `IAR-DST Levels of Care <https://docs.iar-dst.online/en/latest/level-of-care/index.html>`_
+  
+
+----------
+
+.. _dfn-iar_dst_tags:
+
+IAR-DST - Tags
+^^^^^^^^^^^^^^
+
+List of tags for the measure.
+
+:Field name: iar_dst_tags
+
+:Data type: string
+
+:Required: no
+
+:Notes:
+  A comma separated list of tags.
+  
+  Organisations can use this field to tag records in order to partition them as
+  per local requirements.
+  
+  Tags can contain lower case letters (or will get lowercased), numbers, dashes,
+  spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
+  nurse required, pending-outcome-1`` would all be legitimate.
+  
+  Tags beginning with an exclamation mark (!) are reserved for future use by the
+  Department. e.g. ``!reserved, ! reserved, !department-use-only``.
+  
+
+----------
+
+.. _dfn-date_client_contacted_intake:
+
+Intake - Date client contacted Intake
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The date on which the client first contacted the intake service
+
+:Field name: date_client_contacted_intake
+
+:Data type: date
+
+:Required: yes
+
+:Notes:
+  For Date fields, data must be recorded in compliance with the standard format
+  used across the National Health Data Dictionary; specifically, dates must be
+  of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
+  necessary to pad out a value. For instance, 13th March 2008 would appear as
+  13032008.
+  
+  - The contact date must not be before 1st January 2020.
+  
+  - The contact date must not be in the future.
+  
+
+----------
+
+.. _dfn-date_referred_to_other_service_at_intake_conclusion:
+
+Intake - Date referred to other service at Intake conclusion
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The date the client was referred to another organisation at Intake conclusion.
+
+:Field name: date_referred_to_other_service_at_intake_conclusion
+
+:Data type: date
+
+:Required: no
+
+:Notes:
+  - The referral out date must not be before 1st January 2020.
+  
+  - The referral out end date must not be in the future.
+  
+
+----------
+
+.. _dfn-intake_funding_source:
+
+Intake - Funding Source
+^^^^^^^^^^^^^^^^^^^^^^^
+
+The source of funding for the intake
+
+:Field name: intake_funding_source
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: HeadtoHelp
+  :2: AMHC
+  :3: Other / Flexible Funding Pool
+
+----------
+
+.. _dfn-intake_key:
+
+Intake Key
+^^^^^^^^^^
+
+This is a number or code assigned to each intake. The Intake Key is unique and stable for each intake at the level of the organisation.
+
+:Field name: intake_key
+
+:Data type: string (2,50)
+
+:Required: yes
+
+:Notes:
+  Intake Keys must be generated by the organisation to be unique at the provider
+  organisation level and must persist across time. Creation of intake keys in
+  this way allows clients to be merged (where duplicate Client Keys have been
+  identified) without having to re-allocate intake identifiers since they can
+  never clash.
+  
+  A recommended approach for the creation of Intake Keys is to compute `random
+  UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
+  
+
+----------
+
+.. _dfn-intake_organisation_path:
+
+Intake Organisation Path
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing the intake to the client.
+
+:Field name: intake_organisation_path
+
+:Data type: string
+
+:Required: yes
+
+:Notes:
+  A combination of the Primary Health Network's (PHN's) Organisation Key and the
+  Provider Organisation's Organisation Key separated by a colon.
+  
+  .. include:: shared/example-organisation-path.rst
+  
+
+----------
+
+.. _dfn-intake_tags:
+
+Intake - Tags
+^^^^^^^^^^^^^
+
+List of tags for the intake.
+
+:Field name: intake_tags
+
+:Data type: string
+
+:Required: no
+
 :Notes:
   A comma separated list of tags.
   
@@ -2475,6 +2880,7 @@ In the last 4 weeks, about how often did you feel nervous?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2501,6 +2907,7 @@ In the last 4 weeks, about how often did you feel without hope?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2527,6 +2934,7 @@ In the last 4 weeks, about how often did you feel restless or jumpy?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2553,6 +2961,7 @@ In the last 4 weeks, about how often did you feel everything was an effort?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2579,6 +2988,7 @@ In the last 4 weeks, about how often did you feel so sad that nothing could chee
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2600,6 +3010,7 @@ The overall K5 score.
 
 :Domain:
   5 - 25, 99 = Not stated / Missing
+
 :Notes:
   The K5 Total score is based on the sum of K5 item 1 through 5 (range: 5-25).
   
@@ -2620,13 +3031,14 @@ The overall K5 score.
 K5 - Tags
 ^^^^^^^^^
 
-List of tags for the collection occasion.
+List of tags for the measure.
 
 :Field name: k5_tags
 
 :Data type: string
 
 :Required: no
+
 :Notes:
   A comma separated list of tags.
   
@@ -2663,6 +3075,7 @@ In the past 4 weeks, about how often did you feel tired out for no good reason?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2689,6 +3102,7 @@ In the past 4 weeks, about how often did you feel nervous?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2715,6 +3129,7 @@ In the past 4 weeks, about how often did you feel so nervous that nothing could 
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2741,6 +3156,7 @@ In the past 4 weeks, how often did you feel hopeless?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2767,6 +3183,7 @@ In the past 4 weeks, how often did you feel restless or fidgety?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2793,6 +3210,7 @@ In the past 4 weeks, how often did you feel so restless you could not sit still?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2819,6 +3237,7 @@ In the past 4 weeks, how often did you feel depressed?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2845,6 +3264,7 @@ In the past 4 weeks, how often did you feel that everything was an effort?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2871,6 +3291,7 @@ In the past 4 weeks, how often did you feel so sad that nothing could cheer you 
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2897,6 +3318,7 @@ In the past 4 weeks, how often did you feel worthless?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2918,6 +3340,7 @@ In the past four weeks, how many days were you totally unable to work, study or 
 
 :Domain:
   0 - 28, 99 = Not stated / Missing
+
 :Notes:
   When the client's responses to Q1-10 are all recorded as 1 'None of the time', 
   they are not required to answer questions 11-14. Where this question has not been
@@ -2941,6 +3364,7 @@ Aside from those days, in the past four weeks, how many days were you able to wo
 
 :Domain:
   0 - 28, 99 = Not stated / Missing
+
 :Notes:
   When the client's responses to Q1-10 are all recorded as 1 'None of the time',
   they are not required to answer questions 11-14. Where this question has not been
@@ -2964,6 +3388,7 @@ In the past four weeks, how many times have you seen a doctor or any other healt
 
 :Domain:
   0 - 89, 99 = Not stated / Missing
+
 :Notes:
   When the client's responses to Q1-10 are all recorded as 1 'None of the time',
   they are not required to answer questions 11-14. Where this question has not been
@@ -2992,6 +3417,7 @@ In the past four weeks, how often have physical health problems been the main ca
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When the client's responses to Q1-10 are all recorded as 1 'None of the time',
   they are not required to answer questions 11-14. Where this question has not been
@@ -3015,6 +3441,7 @@ The overall K10 score.
 
 :Domain:
   10 - 50, 99 = Not stated / Missing
+
 :Notes:
   The K10 Total score is based on the sum of K10 item 01 through 10 (range: 10-50).
   Items 11 through 14 are excluded from the total because they are separate
@@ -3039,13 +3466,14 @@ The overall K10 score.
 K10+ - Tags
 ^^^^^^^^^^^
 
-List of tags for the collection occasion.
+List of tags for the measure.
 
 :Field name: k10p_tags
 
 :Data type: string
 
 :Required: no
+
 :Notes:
   A comma separated list of tags.
   
@@ -3062,6 +3490,25 @@ List of tags for the collection occasion.
 
 ----------
 
+.. _dfn-measure_key:
+
+Measure Key
+^^^^^^^^^^^
+
+This is a number or code assigned to each instance of a measure. The Measure Key is unique and stable for each instance of a measure at the level of the organisation.
+
+:Field name: measure_key
+
+:Data type: string (2,50)
+
+:Required: yes
+
+:Notes:
+  Measure keys are case sensitive and must be valid unicode characters.
+  
+
+----------
+
 .. _dfn-organisation_key:
 
 Organisation Key
@@ -3074,6 +3521,7 @@ A sequence of characters which uniquely identifies the provider organisation to 
 :Data type: string (2,50)
 
 :Required: yes
+
 :Notes:
   Organisation Keys must be generated by the PHN to be unique and must persist
   across time. See :ref:`PO_key`
@@ -3095,19 +3543,128 @@ A sequence of colon separated Organisation Keys that fully specifies the Provide
 :Data type: string
 
 :Required: yes
+
 :Notes:
   A combination of the Primary Health Network's (PHN's) Organisation Key and the
   Provider Organisation's Organisation Key separated by a colon.
   
-  Here is an example organisation structure showing the Organisation Path for each organisation:
+  .. include:: shared/example-organisation-path.rst
   
-  +------------------+-------------------------------+---------------------------------------------+----------------------------+-------------------+
-  | Organisation Key | Organisation Name             | Organisation Type                           | Commissioning Organisation | Organisation Path |
-  +==================+===============================+=============================================+============================+===================+
-  | PHN999           | Test PHN                      | Primary Health Network                      | None                       | PHN999            |
-  +------------------+-------------------------------+---------------------------------------------+----------------------------+-------------------+
-  | PO101            | Test Provider Organisation    | Private Allied Health Professional Practice | PHN999                     | PHN999:PO101      |
-  +------------------+-------------------------------+---------------------------------------------+----------------------------+-------------------+
+
+----------
+
+.. _dfn-organisation_type_referred_to_at_episode_conclusion:
+
+Organisation type referred to at Episode conclusion
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Type of organisation to which the the client was referred at the Episode conclusion.
+
+:Field name: organisation_type_referred_to_at_episode_conclusion
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :0: None/Not applicable
+  :1: General Practice
+  :2: Medical Specialist Consulting Rooms
+  :3: Private practice
+  :4: Public mental health service
+  :5: Public Hospital
+  :6: Private Hospital
+  :7: Emergency Department
+  :8: Community Health Centre
+  :9: Drug and Alcohol Service
+  :10: Community Support Organisation NFP
+  :11: Indigenous Health Organisation
+  :12: Child and Maternal Health
+  :13: Nursing Service
+  :14: Telephone helpline
+  :15: Digital health service
+  :16: Family Support Service
+  :17: School
+  :18: Tertiary Education institution
+  :19: Housing service
+  :20: Centrelink
+  :21: Other
+  :22: HeadtoHelp Hub
+  :23: Other PHN funded service
+  :24: AMHC Hub
+  :99: Not stated
+  
+  Multiple space separated values allowed
+  
+
+:Notes:
+  Medical Specialist Consulting Rooms includes private medical practitioner rooms
+  in public or private hospital or other settings.
+  
+  Public mental health service refers to a state- or territory-funded specialised
+  mental health services (i.e., specialised mental health care delivered in
+  public acute and psychiatric hospital settings, community mental health care
+  services, and s specialised residential mental health care services).
+  
+  Not applicable should only be selected in instances of Self referral.
+  
+
+----------
+
+.. _dfn-organisation_type_referred_to_at_intake_conclusion:
+
+Organisation type referred to at Intake conclusion
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Type of organisation to which the the client was referred at the Intake conclusion.
+
+:Field name: organisation_type_referred_to_at_intake_conclusion
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :0: None/Not applicable
+  :1: General Practice
+  :2: Medical Specialist Consulting Rooms
+  :3: Private practice
+  :4: Public mental health service
+  :5: Public Hospital
+  :6: Private Hospital
+  :7: Emergency Department
+  :8: Community Health Centre
+  :9: Drug and Alcohol Service
+  :10: Community Support Organisation NFP
+  :11: Indigenous Health Organisation
+  :12: Child and Maternal Health
+  :13: Nursing Service
+  :14: Telephone helpline
+  :15: Digital health service
+  :16: Family Support Service
+  :17: School
+  :18: Tertiary Education institution
+  :19: Housing service
+  :20: Centrelink
+  :21: Other
+  :22: HeadtoHelp Hub
+  :23: Other PHN funded service
+  :24: AMHC Hub
+  :99: Not stated
+  
+  Multiple space separated values allowed
+  
+
+:Notes:
+  Medical Specialist Consulting Rooms includes private medical practitioner rooms
+  in public or private hospital or other settings.
+  
+  Public mental health service refers to a state- or territory-funded specialised
+  mental health services (i.e., specialised mental health care delivered in
+  public acute and psychiatric hospital settings, community mental health care
+  services, and s specialised residential mental health care services).
+  
+  Not applicable should only be selected in instances of Self referral.
   
 
 ----------
@@ -3131,6 +3688,7 @@ Whether a person identifies as being of Aboriginal and/or Torres Strait Islander
   :3: Both Aboriginal and Torres Strait Islander origin
   :4: Neither Aboriginal or Torres Strait Islander origin
   :9: Not stated/inadequately described
+
 :Notes:
   Code 9 is not to be available as a valid answer to the questions but is
     intended for use:
@@ -3184,6 +3742,7 @@ Indicates whether a practitioner has completed a recognised training programme i
   :2: No
   :3: Not required
   :9: Missing / Not recorded
+
 :Notes:
   This item is reported by the practitioner and applies to service providers who are either:
   
@@ -3245,6 +3804,7 @@ The type or category of the practitioner, as represented by a code.
   :12: Psychosocial Support Worker
   :13: Peer Support Worker
   :99: Not stated
+
 :Notes:
   Practitioner category refers to the labour classification of the service
   provider delivering the Service Contact.  Practitioners should be assigned to
@@ -3316,11 +3876,22 @@ A unique identifier for a practitioner within the responsible provider organisat
 :Data type: string (2,50)
 
 :Required: yes
+
 :Notes:
-  Practitioner Keys must be generated by the organisation to be unique at the Provider
-  Organisation level and must persist across time. See :ref:`Managing Practitioner Keys <unique_keys>`
+  PMHC MDS keys are case sensitive and must have between 2-50 valid unicode characters.
+  Keys must start with A-Za-z0-9 (POSIX :alnum:).
   
-  Practitioner Keys are case sensitive and must be valid unicode characters.
+  Where data is being exported from client systems, these keys can be auto generated,
+  providing that a key does not change once it is assigned.
+  
+  Keys must be generated by the organisation to be unique at the Provider
+  Organisation level and must persist across time. Creation of keys in
+  this way allows records to be merged (where duplicate keys of the same record type have been
+  identified) without having to re-allocate keys since they can
+  never clash.
+  
+  A recommended approach for the creation of keys is to compute `random
+  UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
   
 
 ----------
@@ -3337,6 +3908,7 @@ List of tags for the practitioner.
 :Data type: string
 
 :Required: no
+
 :Notes:
   A comma separated list of tags.
   
@@ -3368,6 +3940,7 @@ The year the practitioner was born.
 
 :Domain:
   gYear
+
 :Notes:
   - The year of birth must not be in the future.
   - The year of birth must be after 1900.
@@ -3379,6 +3952,25 @@ The year the practitioner was born.
       be used to estimate a year of birth
     - If the date of birth is totally unknown, use 9999.
   
+
+----------
+
+.. _dfn-primary_practitioner_indicator:
+
+Primary Practitioner Indicator
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+An indicator of whether the practitioner was the primary practitioner responsible for the service contact.
+
+:Field name: primary_practitioner_indicator
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Yes
+  :2: No
 
 ----------
 
@@ -3409,6 +4001,7 @@ The date on which a provider organisation stopped delivering services.
 :Data type: date
 
 :Required: yes
+
 :Notes:
   For Date fields, data must be recorded in compliance with the standard format
   used across the National Health Data Dictionary; specifically, dates must be
@@ -3465,6 +4058,7 @@ The date on which a provider organisation started delivering services.
 :Data type: date
 
 :Required: yes
+
 :Notes:
   For Date fields, data must be recorded in compliance with the standard format
   used across the National Health Data Dictionary; specifically, dates must be
@@ -3500,6 +4094,7 @@ The state that the provider organisation operates in.
   :7: Northern Territory
   :8: Australian Capital Territory
   :9: Other Territories
+
 :Notes:
   - Name is taken from Australian `Statistical Geography Standard (ASGS) July
     2011
@@ -3524,6 +4119,7 @@ List of tags for the provider organisation.
 :Data type: string
 
 :Required: no
+
 :Notes:
   A comma separated list of tags.
   
@@ -3569,6 +4165,7 @@ The category that best describes the provider organisation.
   :13: Division of General Practice
   :98: Other
   :99: Missing
+
 :Notes:
   1 - Private Allied Health Professional Practice
     The provider organisation is a group of single- or multi-discipline allied
@@ -3644,6 +4241,147 @@ The category that best describes the provider organisation.
 
 ----------
 
+.. _dfn-referral_date:
+
+Referral Date
+^^^^^^^^^^^^^
+
+The date the referrer made the referral.
+
+:Field name: referral_date
+
+:Data type: date
+
+:Required: yes
+
+:Notes:
+  For Date fields, data must be recorded in compliance with the standard format
+  used across the National Health Data Dictionary; specifically, dates must be
+  of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
+  necessary to pad out a value. For instance, 13th March 2008 would appear as
+  13032008.
+  
+  - The referral date must not be before 1st January 2014.
+  
+  - The referral date must not be in the future.
+  
+
+----------
+
+.. _dfn-referred_to_organisation_path:
+
+Referred to Organisation Path
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation to which the intake referred the client.
+
+:Field name: referred_to_organisation_path
+
+:Data type: string
+
+:Required: no
+
+:Notes:
+  A combination of the referred to Primary Health Network's (PHN's) Organisation Key and the
+  referred to Provider Organisation's Organisation Key separated by a colon.
+  
+  .. include:: shared/example-organisation-path.rst
+  
+
+----------
+
+.. _dfn-referrer_organisation_type:
+
+Referrer Organisation Type
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Type of organisation in which the referring professional is based.
+
+:Field name: referrer_organisation_type
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: General Practice
+  :2: Medical Specialist Consulting Rooms
+  :3: Private practice
+  :4: Public mental health service
+  :5: Public Hospital
+  :6: Private Hospital
+  :7: Emergency Department
+  :8: Community Health Centre
+  :9: Drug and Alcohol Service
+  :10: Community Support Organisation NFP
+  :11: Indigenous Health Organisation
+  :12: Child and Maternal Health
+  :13: Nursing Service
+  :14: Telephone helpline
+  :15: Digital health service
+  :16: Family Support Service
+  :17: School
+  :18: Tertiary Education institution
+  :19: Housing service
+  :20: Centrelink
+  :21: Other
+  :98: N/A - Self referral
+  :99: Not stated
+
+:Notes:
+  Medical Specialist Consulting Rooms includes private medical practitioner rooms
+  in public or private hospital or other settings.
+  
+  Public mental health service refers to a state- or territory-funded specialised
+  mental health services (i.e., specialised mental health care delivered in
+  public acute and psychiatric hospital settings, community mental health care
+  services, and s specialised residential mental health care services).
+  
+  Not applicable should only be selected in instances of Self referral.
+  
+
+----------
+
+.. _dfn-referrer_profession:
+
+Referrer Profession
+^^^^^^^^^^^^^^^^^^^
+
+Profession of the provider who referred the client.
+
+:Field name: referrer_profession
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: General Practitioner
+  :2: Psychiatrist
+  :3: Obstetrician
+  :4: Paediatrician
+  :5: Other Medical Specialist
+  :6: Midwife
+  :7: Maternal Health Nurse
+  :8: Psychologist
+  :9: Mental Health Nurse
+  :10: Social Worker
+  :11: Occupational therapist
+  :12: Aboriginal Health Worker
+  :13: Educational professional
+  :14: Early childhood service worker
+  :15: Other
+  :98: N/A - Self referral
+  :99: Not stated
+
+:Notes:
+  New arrangements for some services delivered in primary mental health care
+  allows clients to refer themselves for treatment. Therefore, 'Self'
+  is a response option included within 'Referrer profession'.
+  
+
+----------
+
 .. _dfn-sdq_version:
 
 SDQ Collection Occasion - Version
@@ -3664,6 +4402,7 @@ The version of the SDQ collected.
   :PY201: Parent Report Measure 11-17 yrs, Follow Up version, Australian Version 1
   :YR101: Self report Version, 11-17 years, Baseline version, Australian Version 1
   :YR201: Self report Version, 11-17 years, Follow Up version, Australian Version 1
+
 :Notes:
   Domain values align with those collected in the NOCC dataset as defined at
   https://webval.validator.com.au/spec/NOCC/current/SDQ/SDQVer
@@ -3685,8 +4424,9 @@ SDQ - Conduct Problem Scale
 
 :Domain:
   0 - 10, 99 = Not stated / Missing
+
 :Notes:
-  See :ref:`scoring-the-sdq` for instructions on scoring the Conduct Problem Scale.
+  See `SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#scoring-the-sdq>`_ for instructions on scoring the Conduct Problem Scale.
   
   When reporting individual item scores use ‘99 - Not stated / Missing’.
   
@@ -3707,8 +4447,9 @@ SDQ - Emotional Symptoms Scale
 
 :Domain:
   0 - 10, 99 = Not stated / Missing
+
 :Notes:
-  See :ref:`scoring-the-sdq` for instructions on scoring the Emotional Symptoms Scale.
+  See `SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#scoring-the-sdq>`_ for instructions on scoring the Emotional Symptoms Scale.
   
   When reporting individual item scores use ‘99 - Not stated / Missing’.
   
@@ -3729,8 +4470,9 @@ SDQ - Hyperactivity Scale
 
 :Domain:
   0 - 10, 99 = Not stated / Missing
+
 :Notes:
-  See :ref:`scoring-the-sdq` for instructions on scoring the Hyperactivity Scale.
+  See `SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#scoring-the-sdq>`_ for instructions on scoring the Hyperactivity Scale.
   
   When reporting individual item scores use ‘99 - Not stated / Missing’.
   
@@ -3751,8 +4493,9 @@ SDQ - Impact Score
 
 :Domain:
   0 - 10, 99 = Not stated / Missing
+
 :Notes:
-  See :ref:`scoring-the-sdq` for instructions on scoring the Impact Score.
+  See `SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#scoring-the-sdq>`_ for instructions on scoring the Impact Score.
   
   When reporting individual item scores use ‘99 - Not stated / Missing’.
   
@@ -3773,8 +4516,9 @@ SDQ - Peer Problem Scale
 
 :Domain:
   0 - 10, 99 = Not stated / Missing
+
 :Notes:
-  See :ref:`scoring-the-sdq` for instructions on scoring the Peer Problem Scale.
+  See `SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#scoring-the-sdq>`_ for instructions on scoring the Peer Problem Scale.
   
   When reporting individual item scores use ‘99 - Not stated / Missing’.
   
@@ -3795,8 +4539,9 @@ SDQ - Prosocial Scale
 
 :Domain:
   0 - 10, 99 = Not stated / Missing
+
 :Notes:
-  See :ref:`scoring-the-sdq` for instructions on scoring the Prosocial Scale.
+  See `SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#scoring-the-sdq>`_ for instructions on scoring the Prosocial Scale.
   
   When reporting individual item scores use ‘99 - Not stated / Missing’.
   
@@ -3824,6 +4569,7 @@ Youth Self Report: I try to be nice to other people. I care about their feelings
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -3853,6 +4599,7 @@ Youth Self Report: I am restless, I cannot stay still for long.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -3882,6 +4629,7 @@ Youth Self Report: I get a lot of headaches, stomach-aches or sickness.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -3911,6 +4659,7 @@ Youth Self Report: I usually share with others, for examples CDs, games, food.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -3940,6 +4689,7 @@ Youth Self Report: I get very angry and often lose my temper.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -3969,6 +4719,7 @@ Youth Self Report: I would rather be alone than with people of my age.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -3998,6 +4749,7 @@ Youth Self Report: I usually do as I am told.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4027,6 +4779,7 @@ Youth Self Report: I worry a lot.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4056,6 +4809,7 @@ Youth Self Report: I am helpful if someone is hurt, upset or feeling ill.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4085,6 +4839,7 @@ Youth Self Report: I am constantly fidgeting or squirming.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4114,6 +4869,7 @@ Youth Self Report: I have one good friend or more.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4143,6 +4899,7 @@ Youth Self Report: I fight a lot. I can make other people do what I want.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4172,6 +4929,7 @@ Youth Self Report: I am often unhappy, depressed or tearful.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4201,6 +4959,7 @@ Youth Self Report: Other people my age generally like me.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4230,6 +4989,7 @@ Youth Self Report: I am easily distracted, I find it difficult to concentrate.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4259,6 +5019,7 @@ Youth Self Report: I am nervous in new situations. I easily lose confidence.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4288,6 +5049,7 @@ Youth Self Report: I am kind to younger people.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4317,6 +5079,7 @@ Youth Self Report: I am often accused of lying or cheating.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4346,6 +5109,7 @@ Youth Self Report: Other children or young people pick on me or bully me.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4375,6 +5139,7 @@ Youth Self Report: I often volunteer to help others (parents, teachers, children
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4404,6 +5169,7 @@ Youth Self Report: I think before I do things.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4433,6 +5199,7 @@ Youth Self Report: I take things that are not mine from home, school or elsewher
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4462,6 +5229,7 @@ Youth Self Report: I get along better with adults than with people my own age.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4491,6 +5259,7 @@ Youth Self Report: I have many fears, I am easily scared.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4520,6 +5289,7 @@ Youth Self Report: I finish the work I'm doing. My attention is good.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4550,6 +5320,7 @@ Youth Self Report: Overall, do you think that you have difficulties in any of th
   :3: Yes - severe difficulties
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4581,6 +5352,7 @@ Youth Self Report: How long have these difficulties been present?
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   - PC101
@@ -4615,6 +5387,7 @@ Youth Self Report: Do the difficulties upset or distress you?
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4646,6 +5419,7 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4677,6 +5451,7 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4708,6 +5483,7 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4739,6 +5515,7 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4770,6 +5547,7 @@ Youth Self Report: Do the difficulties make it harder for those around you (fami
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4802,6 +5580,7 @@ Youth Self Report: 'Since coming to the service, are your problems:
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   
@@ -4835,6 +5614,7 @@ Has coming to the service been helpful in other ways eg. providing information o
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   
@@ -4867,6 +5647,7 @@ Over the last 6 months have your child's teachers complained of fidgetiness, res
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   
@@ -4898,6 +5679,7 @@ Over the last 6 months have your child's teachers complained of poor concentrati
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   
@@ -4929,6 +5711,7 @@ Over the last 6 months have your child's teachers complained of acting without t
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   
@@ -4960,6 +5743,7 @@ Does your family complain about you having problems with overactivity or poor co
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   
@@ -4990,6 +5774,7 @@ Do your teachers complain about you having problems with overactivity or poor co
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   
@@ -5020,6 +5805,7 @@ Does your family complain about you being awkward or troublesome?
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   
@@ -5050,6 +5836,7 @@ Do your teachers complain about you being awkward or troublesome?
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   
@@ -5065,13 +5852,14 @@ Do your teachers complain about you being awkward or troublesome?
 SDQ - Tags
 ^^^^^^^^^^
 
-List of tags for the collection occasion.
+List of tags for the measure.
 
 :Field name: sdq_tags
 
 :Data type: string
 
 :Required: no
+
 :Notes:
   A comma separated list of tags.
   
@@ -5102,8 +5890,9 @@ SDQ - Total Difficulties Score
 
 :Domain:
   0 - 40, 99 = Not stated / Missing
+
 :Notes:
-  See :ref:`scoring-the-sdq` for instructions on scoring the Total Difficulties Score.
+  See `SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#scoring-the-sdq>`_ for instructions on scoring the Total Difficulties Score.
   
   When reporting individual item scores use ‘99 - Not stated / Missing’.
   
@@ -5126,6 +5915,7 @@ An indicator of whether the client participated, or intended to participate, in 
 :Domain:
   :1: Yes
   :2: No
+
 :Notes:
   Service contacts are not restricted to in-person communication but can include
   telephone, video link or other forms of direct communication.
@@ -5166,6 +5956,7 @@ The co-payment is the amount paid by the client per session.
 
 :Domain:
   0 - 999999.99
+
 :Notes:
   Up to 6 digits before the decimal point; up to 2 digits after the decimal
   point.
@@ -5191,6 +5982,7 @@ The date of each mental health service contact between a health service provider
 :Data type: date
 
 :Required: yes
+
 :Notes:
   For Date fields, data must be recorded in compliance with the standard format
   used across the National Health Data Dictionary; specifically, dates must be
@@ -5231,6 +6023,7 @@ The time from the start to finish of a service contact.
   :7: 91-105 mins
   :8: 106-120 mins
   :9: over 120 mins
+
 :Notes:
   For group sessions the time for client spent in the session is recorded for
   each client, regardless of the number of clients or third parties participating
@@ -5264,6 +6057,7 @@ An indication of whether the Service Contact is the final for the current Episod
   :1: No further services are planned for the client in the current episode
   :2: Further services are planned for the client in the current episode
   :3: Not known at this stage
+
 :Notes:
   Service providers should report this item on the basis of future planned or
   scheduled contacts with the client. Where this item is recorded as 1 (No
@@ -5279,6 +6073,21 @@ An indication of whether the Service Contact is the final for the current Episod
   completed prematurely, the Episode End Date can be manually corrected to allow
   additional activity to be recorded.
   
+
+----------
+
+.. _dfn-funding_source:
+
+Service Contact - Funding Source
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The source of funding for a service contact
+
+:Field name: funding_source
+
+:Data type: string
+
+:Required: yes
 
 ----------
 
@@ -5299,6 +6108,7 @@ Whether an interpreter service was used during the Service Contact
   :1: Yes
   :2: No
   :9: Not stated
+
 :Notes:
   Interpreter services includes verbal language, non-verbal language and
   languages other than English.
@@ -5338,6 +6148,7 @@ How the service contact was delivered, as represented by a code.
   :2: Telephone
   :3: Video
   :4: Internet-based
+
 :Notes:
   0 - No contact took place
     Only use this code where the service contact is recorded as a no show.
@@ -5387,6 +6198,7 @@ Where an appointment was made for an intended participant(s), but the intended p
 :Domain:
   :1: Yes
   :2: No
+
 :Notes:
   1 - Yes
     The intended participant(s) failed to attend the appointment.
@@ -5416,6 +6228,7 @@ An indication of who participated in the Service Contact.
   :4: Other health professional or service provider
   :5: Other
   :9: Not stated
+
 :Notes:
   1 - Individual
     Code applies for Service Contacts delivered individually to a single client
@@ -5459,6 +6272,7 @@ The Australian postcode where the service contact took place.
 :Data type: string
 
 :Required: yes
+
 :Notes:
   A valid Australian postcode or 9999 if the postcode is unknown. The full list
   of Australian Postcodes can be found at `Australia Post
@@ -5476,6 +6290,28 @@ The Australian postcode where the service contact took place.
 
 ----------
 
+.. _dfn-service_contact_start_time:
+
+Service Contact - Start Time
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The start time of each mental health service contact between a health service provider and patient/client.
+
+:Field name: service_contact_start_time
+
+:Data type: time
+
+:Required: yes
+
+:Notes:
+  Notes: Indicates the time at which the Service Contact began. Time should be
+  recorded in 24-hour time in the format HH:MM. Leading zeroes are accepted but
+  not required. For example, 8:30 in the morning could be 8:30 or 08:30 and 3:45
+  in the afternoon would be 15:45.
+  
+
+----------
+
 .. _dfn-service_contact_tags:
 
 Service Contact - Tags
@@ -5488,6 +6324,7 @@ List of tags for the service contact.
 :Data type: string
 
 :Required: no
+
 :Notes:
   A comma separated list of tags.
   
@@ -5529,6 +6366,7 @@ The main type of service provided in the service contact, as represented by the 
   :8: Cultural specific assistance NEC
   :9: Psychosocial support
   :98: ATAPS
+
 :Notes:
   
   
@@ -5714,6 +6552,7 @@ Where the service contact was delivered, as represented by a code.
   :12: Aged care centre - non-residential
   :98: Not applicable (Service Contact Modality is not face to face)
   :99: Not stated
+
 :Notes:
   Note that this data item concerns only where the service contact took place.
   It is not about where the client lives. Thus, if a resident of an aged care
@@ -5760,11 +6599,54 @@ This is a number or code assigned to each service contact. The Service Contact K
 :Data type: string (2,50)
 
 :Required: yes
+
 :Notes:
-  Service Contact Keys must be generated by the organisation to be unique at the Provider
-  Organisation level and must persist across time. See :ref:`Managing Service Contact Keys <unique_keys>`
+  PMHC MDS keys are case sensitive and must have between 2-50 valid unicode characters.
+  Keys must start with A-Za-z0-9 (POSIX :alnum:).
   
-  Service Contact Keys are case sensitive and must be valid unicode characters.
+  Where data is being exported from client systems, these keys can be auto generated,
+  providing that a key does not change once it is assigned.
+  
+  Keys must be generated by the organisation to be unique at the Provider
+  Organisation level and must persist across time. Creation of keys in
+  this way allows records to be merged (where duplicate keys of the same record type have been
+  identified) without having to re-allocate keys since they can
+  never clash.
+  
+  A recommended approach for the creation of keys is to compute `random
+  UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
+  
+
+----------
+
+.. _dfn-service_contact_practitioner_key:
+
+Service Contact Practitioner Key
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This is a number or code assigned to each service contact practitioner. The Service Contact Practitioner Key is unique and stable for each service contact practitioner at the level of the Provider Organisation.
+
+:Field name: service_contact_practitioner_key
+
+:Data type: string (2,50)
+
+:Required: yes
+
+:Notes:
+  PMHC MDS keys are case sensitive and must have between 2-50 valid unicode characters.
+  Keys must start with A-Za-z0-9 (POSIX :alnum:).
+  
+  Where data is being exported from client systems, these keys can be auto generated,
+  providing that a key does not change once it is assigned.
+  
+  Keys must be generated by the organisation to be unique at the Provider
+  Organisation level and must persist across time. Creation of keys in
+  this way allows records to be merged (where duplicate keys of the same record type have been
+  identified) without having to re-allocate keys since they can
+  never clash.
+  
+  A recommended approach for the creation of keys is to compute `random
+  UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
   
 
 ----------

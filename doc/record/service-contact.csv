@@ -100,6 +100,12 @@ METeOR: `494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__
 ",string,yes,":1: No further services are planned for the client in the current episode
 :2: Further services are planned for the client in the current episode
 :3: Not known at this stage"
+"`Service Contact - Start Time`_ (service_contact_start_time)
+
+",time,yes,"The start time of each mental health service contact between a health service provider and patient/client."
+"`Service Contact - Funding Source`_ (funding_source)
+
+",string,yes,"The source of funding for a service contact"
 "`Service Contact - Tags`_ (service_contact_tags)
 
 ",string,"—","List of tags for the service contact."

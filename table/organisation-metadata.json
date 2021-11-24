@@ -6,10 +6,8 @@
     "titles": [ "organisation_path" ],
     "dc:title": "Organisation Path",
     "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
-    "schema:disambiguatingDescription": "type/organisation_path.rst",
+    "schema:disambiguatingDescription": "type/organisation-path.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
       },
@@ -21,8 +19,6 @@
     "schema:description": "A sequence of characters which uniquely identifies the provider organisation to the Primary Health Network. Assigned by the Primary Health Network.",
     "schema:disambiguatingDescription": "table/organisation/key.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string",
       "minLength": 2,
@@ -35,8 +31,6 @@
     "dc:title" : "Provider Organisation - Name",
     "schema:description": "The name of the provider organisation.",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string",
       "minLength": 2,
@@ -49,8 +43,6 @@
       "dc:title" : "Provider Organisation - Legal Name",
       "schema:description": "The legal name of the provider organisation.",
       "schema:dateCreated": "2017-04-26",
-      "schema:dateDeleted": "2017-04-26",
-      "schema:dateModified": "2017-04-26",
       "datatype": {
         "base": "string"
       },
@@ -61,7 +53,6 @@
     "dc:title" : "Provider Organisation - ABN",
     "schema:description": "The Australian Business Number of the provider organisation.",
     "schema:dateCreated": "2016-07-08",
-    "schema:dateModified": "2016-07-08",
     "datatype": {
       "base": "string",
       "length": 11
@@ -74,8 +65,6 @@
     "schema:description": "The category that best describes the provider organisation.",
     "schema:disambiguatingDescription": "table/organisation/type.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -88,8 +77,6 @@
     "schema:disambiguatingDescription": "table/organisation/state.rst",
     "schema:meteorItem": "613718",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
     },
@@ -101,7 +88,6 @@
     "schema:description": "The date on which a provider organisation started delivering services.",
     "schema:disambiguatingDescription": "table/organisation/start-date.rst",
     "schema:dateCreated": "2019-03-13",
-    "schema:dateDeleted": "2019-03-13",
     "schema:dateModified": "2019-06-17",
     "datatype": {
       "base": "date",
@@ -116,7 +102,6 @@
     "schema:description": "The date on which a provider organisation stopped delivering services.",
     "schema:disambiguatingDescription": "table/organisation/end-date.rst",
     "schema:dateCreated": "2019-03-13",
-    "schema:dateDeleted": "2019-03-13",
     "schema:dateModified": "2019-06-17",
     "datatype": {
       "base": "date",
@@ -131,8 +116,6 @@
     "schema:description": "List of tags for the provider organisation.",
     "schema:disambiguatingDescription": "type/tags.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
       },

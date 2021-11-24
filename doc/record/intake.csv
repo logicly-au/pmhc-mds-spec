@@ -1,0 +1,105 @@
+"Data Element (Field Name)","Type (min,max)",Required,"Format / Values"
+"`Organisation Path`_ (organisation_path)
+
+",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client."
+"`Intake Key`_ (intake_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each intake. The Intake Key is unique and stable for each intake at the level of the organisation."
+"`Client Key`_ (client_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each individual client referred to the intake organisation. The client identifier must be unique and stable for each individual within the intake organisation. Assigned by either the PHN or intake organisation depending on local procedures."
+"`Referral Date`_ (referral_date)
+
+",date,yes,"The date the referrer made the referral."
+"`Referrer Profession`_ (referrer_profession)
+
+",string,yes,":1: General Practitioner
+:2: Psychiatrist
+:3: Obstetrician
+:4: Paediatrician
+:5: Other Medical Specialist
+:6: Midwife
+:7: Maternal Health Nurse
+:8: Psychologist
+:9: Mental Health Nurse
+:10: Social Worker
+:11: Occupational therapist
+:12: Aboriginal Health Worker
+:13: Educational professional
+:14: Early childhood service worker
+:15: Other
+:98: N/A - Self referral
+:99: Not stated"
+"`Referrer Organisation Type`_ (referrer_organisation_type)
+
+",string,yes,":1: General Practice
+:2: Medical Specialist Consulting Rooms
+:3: Private practice
+:4: Public mental health service
+:5: Public Hospital
+:6: Private Hospital
+:7: Emergency Department
+:8: Community Health Centre
+:9: Drug and Alcohol Service
+:10: Community Support Organisation NFP
+:11: Indigenous Health Organisation
+:12: Child and Maternal Health
+:13: Nursing Service
+:14: Telephone helpline
+:15: Digital health service
+:16: Family Support Service
+:17: School
+:18: Tertiary Education institution
+:19: Housing service
+:20: Centrelink
+:21: Other
+:98: N/A - Self referral
+:99: Not stated"
+"`Intake - Date client contacted Intake`_ (date_client_contacted_intake)
+
+",date,yes,"The date on which the client first contacted the intake service"
+"`Intake - Funding Source`_ (intake_funding_source)
+
+",string,yes,":1: HeadtoHelp
+:2: AMHC
+:3: Other / Flexible Funding Pool"
+"`Intake - Date referred to other service at Intake conclusion`_ (date_referred_to_other_service_at_intake_conclusion)
+
+",date,"—","The date the client was referred to another organisation at Intake conclusion."
+"`Organisation type referred to at Intake conclusion`_ (organisation_type_referred_to_at_intake_conclusion)
+
+",string,yes,":0: None/Not applicable
+:1: General Practice
+:2: Medical Specialist Consulting Rooms
+:3: Private practice
+:4: Public mental health service
+:5: Public Hospital
+:6: Private Hospital
+:7: Emergency Department
+:8: Community Health Centre
+:9: Drug and Alcohol Service
+:10: Community Support Organisation NFP
+:11: Indigenous Health Organisation
+:12: Child and Maternal Health
+:13: Nursing Service
+:14: Telephone helpline
+:15: Digital health service
+:16: Family Support Service
+:17: School
+:18: Tertiary Education institution
+:19: Housing service
+:20: Centrelink
+:21: Other
+:22: HeadtoHelp Hub
+:23: Other PHN funded service
+:24: AMHC Hub
+:99: Not stated
+
+Multiple space separated values allowed
+"
+"`Referred to Organisation Path`_ (referred_to_organisation_path)
+
+",string,"—","A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation to which the intake referred the client."
+"`Intake - Tags`_ (intake_tags)
+
+",string,"—","List of tags for the intake."

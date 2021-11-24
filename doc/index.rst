@@ -8,10 +8,9 @@ Version |version|
 
 .. only:: builder_html or builder_readthedocs
 
-   As of 1 July 2019, the PMHC MDS will accept uploads in both the current version 2
-   format and the old version 1 format. (`read more... <https://pmhc-mds.com/2019/06/04/Contunity-of-Support-PMHC-Spec-v2-0/>`__)
-   The old version 1 format has been marked for end-of-life on 30th June 2020.
-   After this date uploads will no longer be accepted in this format.
+   This is a draft of the PMHC MDS 4.0.0 data specification. It it being
+   made available for feedback and discussion. Changes could be made. It should
+   not be used as the basis for any development.
 
    Getting Help
    ------------
@@ -29,6 +28,7 @@ Version |version|
    :caption: Table of contents
    :maxdepth: 3
 
+   introduction
    reporting-arrangements
    identifier-management
    data-model-and-specifications

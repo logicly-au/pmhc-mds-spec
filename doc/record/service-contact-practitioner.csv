@@ -1,0 +1,17 @@
+"Data Element (Field Name)","Type (min,max)",Required,"Format / Values"
+"`Organisation Path`_ (organisation_path)
+
+",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client."
+"`Service Contact Practitioner Key`_ (service_contact_practitioner_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each service contact practitioner. The Service Contact Practitioner Key is unique and stable for each service contact practitioner at the level of the Provider Organisation."
+"`Service Contact Key`_ (service_contact_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each service contact. The Service Contact Key is unique and stable for each service contact at the level of the Provider Organisation."
+"`Practitioner Key`_ (practitioner_key)
+
+","string (2,50)",yes,"A unique identifier for a practitioner within the provider organisation."
+"`Primary Practitioner Indicator`_ (primary_practitioner_indicator)
+
+",string,yes,":1: Yes
+:2: No"

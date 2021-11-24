@@ -59,7 +59,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'PMHC MDS Data Specification'
-copyright = u'2019, Australian Government - Department of Health'
+copyright = u'2021, Australian Government - Department of Health'
 author = u'PMHC MDS Working Group'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -312,7 +312,7 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
 # For substitutions in docs
 # see https://github.com/hoccleve-archive/hocl.tk/blob/70b71b5a265d0b1d64c5cb6e43b686d03ead4078/docs/conf.py#L48
 
-copyright = str(2019) + ", " + author
+copyright = str(2021) + ", " + author
 download_pdf = ":download:`PDF </_static/" + spec_name + "-" + version + ".pdf>`"
 
 rst_epilog = """

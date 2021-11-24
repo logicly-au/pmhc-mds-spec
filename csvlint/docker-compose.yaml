@@ -1,0 +1,10 @@
+version: "2.2"
+
+services:
+  csvlint:
+    build:
+      context: ../
+      dockerfile: ./csvlint/Dockerfile
+    image: docker.sdlocal.net/pmhc/csvlint:master
+    volumes:
+      - ${DATA_DIR:-../data}:/spec/data

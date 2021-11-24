@@ -1,6 +1,0 @@
-Version,1
-organisation_path,collection_occasion_key,delete,episode_key,measure_date,reason_for_collection,k10p_item1,k10p_item2,k10p_item3,k10p_item4,k10p_item5,k10p_item6,k10p_item7,k10p_item8,k10p_item9,k10p_item10,k10p_item11,k10p_item12,k10p_item13,k10p_item14,k10p_score,k10p_tags
-PHN999:NFP01,CO01,,E01,12022016,1,9,2,3,3,5,1,2,3,4,5,1,28,3,4,99,
-PHN999:NFP01,CO02,,E01,25042016,2,3,1,1,1,2,4,1,2,1,5,2,4,2,3,99,tag1
-PHN999:NFP01,CO03,,E01,20052016,2,9,9,9,9,9,9,9,9,9,9,99,99,99,2,25,tag1
-PHN999:NFP01,CO04,,E01,18062016,3,1,1,1,1,1,1,1,1,1,1,1,3,1,9,99,tag1

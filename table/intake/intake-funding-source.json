@@ -1,0 +1,18 @@
+{
+  "@id": "table/intake/intake-funding-source.json",
+  "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
+  "columns": [{
+    "name": "id",
+    "titles": [ "id" ],
+    "schema:dateCreated": "2021-05-14",
+    "datatype": "string"
+  },{
+    "name": "description",
+    "titles": [ "description" ],
+    "schema:dateCreated": "2021-05-14",
+    "datatype": {
+      "base": "string"
+    }
+  }],
+  "primaryKey": "id"
+}

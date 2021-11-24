@@ -1,0 +1,363 @@
+"Data Element (Field Name)","Type (min,max)",Required,"Format / Values"
+"`Organisation Path`_ (organisation_path)
+
+",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client."
+"`Measure Key`_ (measure_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each instance of a measure. The Measure Key is unique and stable for each instance of a measure at the level of the organisation."
+"`Collection Occasion Key`_ (collection_occasion_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each collection occasion of service activity. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation."
+"`SDQ Collection Occasion - Version`_ (sdq_version)
+
+",string,yes,":PC101: Parent Report Measure 4-10 yrs, Baseline version, Australian Version 1
+:PC201: Parent Report Measure 4-10 yrs, Follow Up version, Australian Version 1
+:PY101: Parent Report Measure 11-17 yrs, Baseline version, Australian Version 1
+:PY201: Parent Report Measure 11-17 yrs, Follow Up version, Australian Version 1
+:YR101: Self report Version, 11-17 years, Baseline version, Australian Version 1
+:YR201: Self report Version, 11-17 years, Follow Up version, Australian Version 1"
+"`SDQ - Question 1`_ (sdq_item1)
+
+",string,yes,":0: Not True
+:1: Somewhat True
+:2: Certainly True
+:7: Unable to rate (insufficient information)
+:9: Not stated / Missing"
+"`SDQ - Question 2`_ (sdq_item2)
+
+",string,yes,":0: Not True
+:1: Somewhat True
+:2: Certainly True
+:7: Unable to rate (insufficient information)
+:9: Not stated / Missing"
+"`SDQ - Question 3`_ (sdq_item3)
+
+",string,yes,":0: Not True
+:1: Somewhat True
+:2: Certainly True
+:7: Unable to rate (insufficient information)
+:9: Not stated / Missing"
+"`SDQ - Question 4`_ (sdq_item4)
+
+",string,yes,":0: Not True
+:1: Somewhat True
+:2: Certainly True
+:7: Unable to rate (insufficient information)
+:9: Not stated / Missing"
+"`SDQ - Question 5`_ (sdq_item5)
+
+",string,yes,":0: Not True
+:1: Somewhat True
+:2: Certainly True
+:7: Unable to rate (insufficient information)
+:9: Not stated / Missing"
+"`SDQ - Question 6`_ (sdq_item6)
+
+",string,yes,":0: Not True
+:1: Somewhat True
+:2: Certainly True
+:7: Unable to rate (insufficient information)
+:9: Not stated / Missing"
+"`SDQ - Question 7`_ (sdq_item7)
+
+",string,yes,":0: Not True
+:1: Somewhat True
+:2: Certainly True
+:7: Unable to rate (insufficient information)
+:9: Not stated / Missing"
+"`SDQ - Question 8`_ (sdq_item8)
+
+",string,yes,":0: Not True
+:1: Somewhat True
+:2: Certainly True
+:7: Unable to rate (insufficient information)
+:9: Not stated / Missing"
+"`SDQ - Question 9`_ (sdq_item9)
+
+",string,yes,":0: Not True
+:1: Somewhat True
+:2: Certainly True
+:7: Unable to rate (insufficient information)
+:9: Not stated / Missing"
+"`SDQ - Question 10`_ (sdq_item10)
+
+",string,yes,":0: Not True
+:1: Somewhat True
+:2: Certainly True
+:7: Unable to rate (insufficient information)
+:9: Not stated / Missing"
+"`SDQ - Question 11`_ (sdq_item11)
+
+",string,yes,":0: Not True
+:1: Somewhat True
+:2: Certainly True
+:7: Unable to rate (insufficient information)
+:9: Not stated / Missing"
+"`SDQ - Question 12`_ (sdq_item12)
+
+",string,yes,":0: Not True
+:1: Somewhat True
+:2: Certainly True
+:7: Unable to rate (insufficient information)
+:9: Not stated / Missing"
+"`SDQ - Question 13`_ (sdq_item13)
+
+",string,yes,":0: Not True
+:1: Somewhat True
+:2: Certainly True
+:7: Unable to rate (insufficient information)
+:9: Not stated / Missing"
+"`SDQ - Question 14`_ (sdq_item14)
+
+",string,yes,":0: Not True
+:1: Somewhat True
+:2: Certainly True
+:7: Unable to rate (insufficient information)
+:9: Not stated / Missing"
+"`SDQ - Question 15`_ (sdq_item15)
+
+",string,yes,":0: Not True
+:1: Somewhat True
+:2: Certainly True
+:7: Unable to rate (insufficient information)
+:9: Not stated / Missing"
+"`SDQ - Question 16`_ (sdq_item16)
+
+",string,yes,":0: Not True
+:1: Somewhat True
+:2: Certainly True
+:7: Unable to rate (insufficient information)
+:9: Not stated / Missing"
+"`SDQ - Question 17`_ (sdq_item17)
+
+",string,yes,":0: Not True
+:1: Somewhat True
+:2: Certainly True
+:7: Unable to rate (insufficient information)
+:9: Not stated / Missing"
+"`SDQ - Question 18`_ (sdq_item18)
+
+",string,yes,":0: Not True
+:1: Somewhat True
+:2: Certainly True
+:7: Unable to rate (insufficient information)
+:9: Not stated / Missing"
+"`SDQ - Question 19`_ (sdq_item19)
+
+",string,yes,":0: Not True
+:1: Somewhat True
+:2: Certainly True
+:7: Unable to rate (insufficient information)
+:9: Not stated / Missing"
+"`SDQ - Question 20`_ (sdq_item20)
+
+",string,yes,":0: Not True
+:1: Somewhat True
+:2: Certainly True
+:7: Unable to rate (insufficient information)
+:9: Not stated / Missing"
+"`SDQ - Question 21`_ (sdq_item21)
+
+",string,yes,":0: Not True
+:1: Somewhat True
+:2: Certainly True
+:7: Unable to rate (insufficient information)
+:9: Not stated / Missing"
+"`SDQ - Question 22`_ (sdq_item22)
+
+",string,yes,":0: Not True
+:1: Somewhat True
+:2: Certainly True
+:7: Unable to rate (insufficient information)
+:9: Not stated / Missing"
+"`SDQ - Question 23`_ (sdq_item23)
+
+",string,yes,":0: Not True
+:1: Somewhat True
+:2: Certainly True
+:7: Unable to rate (insufficient information)
+:9: Not stated / Missing"
+"`SDQ - Question 24`_ (sdq_item24)
+
+",string,yes,":0: Not True
+:1: Somewhat True
+:2: Certainly True
+:7: Unable to rate (insufficient information)
+:9: Not stated / Missing"
+"`SDQ - Question 25`_ (sdq_item25)
+
+",string,yes,":0: Not True
+:1: Somewhat True
+:2: Certainly True
+:7: Unable to rate (insufficient information)
+:9: Not stated / Missing"
+"`SDQ - Question 26`_ (sdq_item26)
+
+",string,yes,":0: No
+:1: Yes - minor difficulties
+:2: Yes - definite difficulties
+:3: Yes - severe difficulties
+:7: Unable to rate (insufficient information)
+:9: Not stated / Missing"
+"`SDQ - Question 27`_ (sdq_item27)
+
+",string,yes,":0: Less than a month
+:1: 1-5 months
+:2: 6-12 months
+:3: Over a year
+:7: Unable to rate (insufficient information)
+:8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+:9: Not stated / Missing"
+"`SDQ - Question 28`_ (sdq_item28)
+
+",string,yes,":0: Not at all
+:1: A little
+:2: A medium amount
+:3: A great deal
+:7: Unable to rate (insufficient information)
+:8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+:9: Not stated / Missing"
+"`SDQ - Question 29`_ (sdq_item29)
+
+",string,yes,":0: Not at all
+:1: A little
+:2: A medium amount
+:3: A great deal
+:7: Unable to rate (insufficient information)
+:8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+:9: Not stated / Missing"
+"`SDQ - Question 30`_ (sdq_item30)
+
+",string,yes,":0: Not at all
+:1: A little
+:2: A medium amount
+:3: A great deal
+:7: Unable to rate (insufficient information)
+:8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+:9: Not stated / Missing"
+"`SDQ - Question 31`_ (sdq_item31)
+
+",string,yes,":0: Not at all
+:1: A little
+:2: A medium amount
+:3: A great deal
+:7: Unable to rate (insufficient information)
+:8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+:9: Not stated / Missing"
+"`SDQ - Question 32`_ (sdq_item32)
+
+",string,yes,":0: Not at all
+:1: A little
+:2: A medium amount
+:3: A great deal
+:7: Unable to rate (insufficient information)
+:8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+:9: Not stated / Missing"
+"`SDQ - Question 33`_ (sdq_item33)
+
+",string,yes,":0: Not at all
+:1: A little
+:2: A medium amount
+:3: A great deal
+:7: Unable to rate (insufficient information)
+:8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+:9: Not stated / Missing"
+"`SDQ - Question 34`_ (sdq_item34)
+
+",string,yes,":0: Much worse
+:1: A bit worse
+:2: About the same
+:3: A bit better
+:4: Much better
+:7: Unable to rate (insufficient information)
+:8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+:9: Not stated / Missing"
+"`SDQ - Question 35`_ (sdq_item35)
+
+",string,yes,":0: Not at all
+:1: A little
+:2: A medium amount
+:3: A great deal
+:7: Unable to rate (insufficient information)
+:8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+:9: Not stated / Missing"
+"`SDQ - Question 36`_ (sdq_item36)
+
+",string,yes,":0: No
+:1: A little
+:2: A lot
+:7: Unable to rate (insufficient information)
+:8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+:9: Not stated / Missing"
+"`SDQ - Question 37`_ (sdq_item37)
+
+",string,yes,":0: No
+:1: A little
+:2: A lot
+:7: Unable to rate (insufficient information)
+:8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+:9: Not stated / Missing"
+"`SDQ - Question 38`_ (sdq_item38)
+
+",string,yes,":0: No
+:1: A little
+:2: A lot
+:7: Unable to rate (insufficient information)
+:8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+:9: Not stated / Missing"
+"`SDQ - Question 39`_ (sdq_item39)
+
+",string,yes,":0: No
+:1: A little
+:2: A lot
+:7: Unable to rate (insufficient information)
+:8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+:9: Not stated / Missing"
+"`SDQ - Question 40`_ (sdq_item40)
+
+",string,yes,":0: No
+:1: A little
+:2: A lot
+:7: Unable to rate (insufficient information)
+:8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+:9: Not stated / Missing"
+"`SDQ - Question 41`_ (sdq_item41)
+
+",string,yes,":0: No
+:1: A little
+:2: A lot
+:7: Unable to rate (insufficient information)
+:8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+:9: Not stated / Missing"
+"`SDQ - Question 42`_ (sdq_item42)
+
+",string,yes,":0: No
+:1: A little
+:2: A lot
+:7: Unable to rate (insufficient information)
+:8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+:9: Not stated / Missing"
+"`SDQ - Emotional Symptoms Scale`_ (sdq_emotional_symptoms)
+
+",integer,yes,"0 - 10, 99 = Not stated / Missing"
+"`SDQ - Conduct Problem Scale`_ (sdq_conduct_problem)
+
+",integer,yes,"0 - 10, 99 = Not stated / Missing"
+"`SDQ - Hyperactivity Scale`_ (sdq_hyperactivity)
+
+",integer,yes,"0 - 10, 99 = Not stated / Missing"
+"`SDQ - Peer Problem Scale`_ (sdq_peer_problem)
+
+",integer,yes,"0 - 10, 99 = Not stated / Missing"
+"`SDQ - Prosocial Scale`_ (sdq_prosocial)
+
+",integer,yes,"0 - 10, 99 = Not stated / Missing"
+"`SDQ - Total Difficulties Score`_ (sdq_total)
+
+",integer,yes,"0 - 40, 99 = Not stated / Missing"
+"`SDQ - Impact Score`_ (sdq_impact)
+
+",integer,yes,"0 - 10, 99 = Not stated / Missing"
+"`SDQ - Tags`_ (sdq_tags)
+
+",string,"—","List of tags for the measure."

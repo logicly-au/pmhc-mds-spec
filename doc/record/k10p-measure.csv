@@ -1,0 +1,113 @@
+"Data Element (Field Name)","Type (min,max)",Required,"Format / Values"
+"`Organisation Path`_ (organisation_path)
+
+",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client."
+"`Measure Key`_ (measure_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each instance of a measure. The Measure Key is unique and stable for each instance of a measure at the level of the organisation."
+"`Collection Occasion Key`_ (collection_occasion_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each collection occasion of service activity. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation."
+"`K10+ - Question 1`_ (k10p_item1)
+
+",string,yes,":1: None of the time
+:2: A little of the time
+:3: Some of the time
+:4: Most of the time
+:5: All of the time
+:9: Not stated / Missing"
+"`K10+ - Question 2`_ (k10p_item2)
+
+",string,yes,":1: None of the time
+:2: A little of the time
+:3: Some of the time
+:4: Most of the time
+:5: All of the time
+:9: Not stated / Missing"
+"`K10+ - Question 3`_ (k10p_item3)
+
+",string,yes,":1: None of the time
+:2: A little of the time
+:3: Some of the time
+:4: Most of the time
+:5: All of the time
+:9: Not stated / Missing"
+"`K10+ - Question 4`_ (k10p_item4)
+
+",string,yes,":1: None of the time
+:2: A little of the time
+:3: Some of the time
+:4: Most of the time
+:5: All of the time
+:9: Not stated / Missing"
+"`K10+ - Question 5`_ (k10p_item5)
+
+",string,yes,":1: None of the time
+:2: A little of the time
+:3: Some of the time
+:4: Most of the time
+:5: All of the time
+:9: Not stated / Missing"
+"`K10+ - Question 6`_ (k10p_item6)
+
+",string,yes,":1: None of the time
+:2: A little of the time
+:3: Some of the time
+:4: Most of the time
+:5: All of the time
+:9: Not stated / Missing"
+"`K10+ - Question 7`_ (k10p_item7)
+
+",string,yes,":1: None of the time
+:2: A little of the time
+:3: Some of the time
+:4: Most of the time
+:5: All of the time
+:9: Not stated / Missing"
+"`K10+ - Question 8`_ (k10p_item8)
+
+",string,yes,":1: None of the time
+:2: A little of the time
+:3: Some of the time
+:4: Most of the time
+:5: All of the time
+:9: Not stated / Missing"
+"`K10+ - Question 9`_ (k10p_item9)
+
+",string,yes,":1: None of the time
+:2: A little of the time
+:3: Some of the time
+:4: Most of the time
+:5: All of the time
+:9: Not stated / Missing"
+"`K10+ - Question 10`_ (k10p_item10)
+
+",string,yes,":1: None of the time
+:2: A little of the time
+:3: Some of the time
+:4: Most of the time
+:5: All of the time
+:9: Not stated / Missing"
+"`K10+ - Question 11`_ (k10p_item11)
+
+",integer,yes,"0 - 28, 99 = Not stated / Missing"
+"`K10+ - Question 12`_ (k10p_item12)
+
+",integer,yes,"0 - 28, 99 = Not stated / Missing"
+"`K10+ - Question 13`_ (k10p_item13)
+
+",integer,yes,"0 - 89, 99 = Not stated / Missing"
+"`K10+ - Question 14`_ (k10p_item14)
+
+",string,yes,":1: None of the time
+:2: A little of the time
+:3: Some of the time
+:4: Most of the time
+:5: All of the time
+:9: Not stated / Missing"
+"`K10+ - Score`_ (k10p_score)
+
+",integer,yes,"10 - 50, 99 = Not stated / Missing"
+"`K10+ - Tags`_ (k10p_tags)
+
+",string,"—","List of tags for the measure."

@@ -10,7 +10,7 @@ Data model
 
 .. _data-model-diagram:
 
-.. figure:: figures/data-model-v3.svg
+.. figure:: figures/data-model-v4-combined.svg
    :alt: PMHC data model
 
    PMHC data model
@@ -59,7 +59,8 @@ See :ref:`provider-organisation-data-elements` for the data elements for a provi
 Practitioner
 ^^^^^^^^^^^^
 
-The Practitioner is the person who is delivering the service.
+The Practitioner is the person who is delivering the service. Multiple
+practitioners can deliver a service.
 
 See :ref:`practitioner-data-elements` for the data elements for a practitioner.
 
@@ -80,6 +81,25 @@ Active Client
 An **active client** is a client who has had  one or more Service Contacts
 in a reference reporting period.
 
+.. _key-concepts-intake:
+
+Intake
+^^^^^^
+
+For the purpose of the PMHC MDS, an *Intake* is defined as a point of contact
+between a client and a PHN-commissioned organisation where the client is
+assessed to determine the appropriate level of care and referred to a
+service provider to provide clinical care. An Intake may include the
+collection of an IAR-DST measure.
+
+.. _key-concepts-intake-episode:
+
+Intake Episode
+^^^^^^^^^^^^^^
+
+The Intake Episode record links an Intake record and an Episode record. It
+must be provided by the organisation that delivers the episode, not the intake.
+
 .. _key-concepts-episode:
 
 Episode
@@ -95,11 +115,14 @@ items are collected at various points in the client’s engagement with the
 provider organisation. Some items are only collected once at the episode level,
 while others are collected at each *Service Contact*.
 
-Three business rules apply to how the *Episode of Care* concept is implemented
+Four business rules apply to how the *Episode of Care* concept is implemented
 across PHN-commissioned services:
 
+- **One Intake may be associated with each episode.** An episode is not
+  required to be associated with an Intake.
+
 - **One episode at a time for each client, defined at the level of the provider
-  organisation**
+  organisation.**
 
   While an individual may have multiple *Episodes of Care* over the course of
   their illness, they may be considered as being in only one episode at any
@@ -142,8 +165,8 @@ in a reference reporting period.
 Service Contact
 ^^^^^^^^^^^^^^^
 
-- Service contacts are defined as the provision of a service by a PHN
-  commissioned mental health service provider for a client where the nature of
+- Service contacts are defined as the provision of a service by one or more PHN
+  commissioned mental health service provider(s) for a client where the nature of
   the service would normally warrant a dated entry in the clinical record of
   the client.
 - A service contact must involve at least two persons, one of whom must be a
@@ -172,21 +195,35 @@ An attended service contact is one that is not marked as 'No show'.
 
 See :ref:`service-contact-data-elements` for the data elements for a service contact.
 
-.. _key-concepts-outcome-collection-occasion:
+.. _key-concepts-service-contact-practitioner:
 
-Outcome Collection Occasion
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Service Contact Practitioner
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Service Contacts can have more than one practitioner. Practitioners are
+linked to Service Contacts through Service Contact Practitioner.
+
+One (and only one) practitioner must be specified as the Primary Practitioner
+for each Service Contact.
+
+See :ref:`service-contact-practitioner-data-elements` for the data
+elements for a service contact practitioner.
+
+.. _key-concepts-collection-occasion:
+
+Collection Occasion
+^^^^^^^^^^^^^^^^^^^
 
 A Collection Occasion is defined as an occasion during an Episode of Care when
-the required outcome measure is to be collected. At a minimum, collection of
-outcome data is required at both Episode Start and Episode End, but may be more
+specific Service Activities are required to be collected. At a minimum,
+collection is required at both Episode Start and Episode End, but may be more
 frequent if clinically indicated and agreed by the client.
 
 Measures will be the Kessler Psychological Distress Scale K10+ (in the case of
 Aboriginal and Torres Strait Islander clients, the K5) as well as the Strengths
 & Difficulties Questionnaires.
 
-See :ref:`outcome-collection-occasion-data-elements` for the data elements for an outcome
+See :ref:`collection-occasion-data-elements` for the data elements for a
 collection occasion.
 
 .. _record-formats:
@@ -209,13 +246,7 @@ the type and version of the uploaded data.
 For this version of the specification the required content is shown in the
 following table:
 
-+--------------+------------+
-| key          | value      |
-+--------------+------------+
-| type         | PMHC       |
-+--------------+------------+
-| version      | 2          |
-+--------------+------------+
+.. include:: shared/metadata-content.rst
 
 ----------
 
@@ -270,6 +301,36 @@ Clients are managed by the provider organisations via upload.
 
 ----------
 
+.. _intake-data-elements:
+
+Intake
+^^^^^^^
+
+See :ref:`key-concepts-intake` for definition of an intake.
+
+Intakes are managed by the provider organisations via upload.
+
+.. csv-table:: Intake record layout
+   :file: record/intake.csv
+   :header-rows: 1
+
+----------
+
+.. _intake-episode-data-elements:
+
+Intake Episode
+^^^^^^^^^^^^^^
+
+See :ref:`key-concepts-intake-episode` for definition of an intake episode.
+
+Intake Episodes are managed by the provider organisations via upload.
+
+.. csv-table:: Intake Episode record layout
+   :file: record/intake-episode.csv
+   :header-rows: 1
+
+----------
+
 .. _episode-data-elements:
 
 Episode
@@ -298,15 +359,31 @@ Service contacts are managed by the provider organisations via upload.
    :file: record/service-contact.csv
    :header-rows: 1
 
+----------
+
+.. _service-contact-practitioner-data-elements:
+
+Service Contact Practitioner
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+See :ref:`key-concepts-service-contact-practitioner` for definition of a
+service contact practitioner.
+
+Service contacts practitioners are managed by the provider organisations
+via upload.
+
+.. csv-table:: Service contact practitioner record layout
+   :file: record/service-contact-practitioner.csv
+   :header-rows: 1
 
 ----------
 
-.. _outcome-collection-occasion-data-elements:
+.. _collection-occasion-data-elements:
 
-Outcome Collection Occasion
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Collection Occasion
+^^^^^^^^^^^^^^^^^^^
 
-See :ref:`key-concepts-outcome-collection-occasion` for definition of an outcome
+See :ref:`key-concepts-collection-occasion` for definition of a
 collection occasion.
 
 Individual item scores will eventually be required, however, it is noted that
@@ -314,51 +391,58 @@ in the short term there are issues with collecting individual item scores.
 Therefore, as a transitional phase, reporting overall scores/subscales will be
 allowed.
 
-Outcome collection occasions are managed by the provider organisations via upload.
+Collection occasions are managed by the provider organisations via upload.
 
-PMHC MDS requires the use of one of the following three required outcome collection occasions measures, as follows:
+.. _measure-data-elements:
 
-* **For adults (18+ years)** - Kessler Psychological Distress Scale :ref:`k10p-data-elements`
+Measures
+^^^^^^^^
+
+.. _intake_measures:
+
+Measures at Intake
+""""""""""""""""""
+
+PMHC MDS requires the use of the IAR-DST :ref:`iar-dst-data-elements` at intake.
+
+.. _iar-dst-data-elements:
+
+IAR-DST
+'''''''
+
+.. csv-table:: IAR-DST record layout
+   :file: record/iar-dst-measure.csv
+   :header-rows: 1
+
+.. _episode_measures:
+
+Measures during an Episode
+""""""""""""""""""""""""""
+
+PMHC MDS requires the use of one of the following three required measures, as follows:
+
+* **For adults (18+ years)** - :ref:`Kessler Psychological Distress Scale (K10+) <k10p-data-elements>`
   is the prescribed measure, with the option to use the :ref:`k5-data-elements` for
   Aboriginal and Torres Strait Islander people if that is considered more appropriate.
 * **For children and young people (up to and including 17 years)** - the
-  Strengths & Difficulties Questionnaires (:ref:`sdq-data-elements`) is the
+  :ref:`Strengths & Difficulties Questionnaires (SDQ) <sdq-data-elements>` is the
   prescribed tool.  The specified versions include the parent-report for 4-10
   years and 11-17 years; and the self-report for 11-17 years.
 
-*Please note: For adolescents, clinician-discretion is allowed, and that the K10+ or K5 may be used, even though the person is under 18 years*
-
-.. _collection-occasion-tags:
-
-Collection Occasion - Tags
-""""""""""""""""""""""""""
-
-The PMHC data entry interface has been updated to support multiple measures
-collected at each collection occasion. For this reason a Collection Occasion - Tags
-field exists in the data entry interface but not in the data specification.
-
-Please refer to the Tags field for the measure type that you are collecting:
-
-* :ref:`dfn-k10p_tags`
-
-* :ref:`dfn-k5_tags`
-
-* :ref:`dfn-sdq_tags`
-
-For Wayback measures please refer to the Wayback data specification at
-`Collection Occasion - Tags <https://docs.pmhc-mds.com/projects/data-specification-wayback/en/v3/data-specification/data-model-and-specifications.html#collection-occasion-tags>`_
+*Please note: For adolescents, clinician-discretion is allowed, and that the
+K10+ or K5 may be used, even though the person is under 18 years*
 
 .. _k10p-data-elements:
 
 K10+
-""""
+''''
 
 As noted above, reporting individual item scores will eventually be required.
 In the short term, respondents can either report all 14 item scores or report
 the K10 total score as well as item scores for the 4 extra items in the K10+.
 
 .. csv-table:: K10+ record layout
-   :file: record/k10p-collection-occasion.csv
+   :file: record/k10p-measure.csv
    :header-rows: 1
 
 When the client’s responses to Q1-10 are all recorded as 1 'None of the time',
@@ -368,20 +452,20 @@ answered please select a response of 'Not stated / missing'.
 .. _k5-data-elements:
 
 K5
-""
+''
 
 As noted above, reporting individual item scores will eventually be required.
 In the short term, respondents can either report all 5 item scores or report
 the K5 total score.
 
 .. csv-table:: K5 record layout
-   :file: record/k5-collection-occasion.csv
+   :file: record/k5-measure.csv
    :header-rows: 1
 
 .. _sdq-data-elements:
 
 SDQ
-"""
+'''
 
 Extensive support materials are available on the SDQ developers' website,
 including copies of the various versions of the instrument, background
@@ -446,7 +530,8 @@ the SDQ subscale scores.
 .. _scoring-the-sdq:
 
 SDQ items and Scale Summary scores
-''''''''''''''''''''''''''''''''''
+::::::::::::::::::::::::::::::::::
+
 The first 25 items in the SDQ comprise 5 scales of 5 items each. It is usually easiest to score all 5 scales before working out the Total Difficulties score.  For data entry, the responses to items should always be entered the same way (see below), but they are not all scored the same way.  Somewhat True is always scored as 1, but the scoring of Not True and Certainly True varies with each item (see Table 5). For each of the 5 scales the score can range from 0-10 if all 5 items were completed. Scale scores can be prorated if at least 3 items were completed.
 
 +------------------+------------------------------------------------+----------------+----------------------+-----------------------+-----------------+
@@ -530,7 +615,7 @@ The first 25 items in the SDQ comprise 5 scales of 5 items each. It is usually e
 - *NB. Bold items indicate reverse scoring*
 
 Scoring the SDQ
-'''''''''''''''
+:::::::::::::::
 
 The standard values for coding individual Item responses are 0 (Not True),
 1 (Somewhat True), 2 (Certainly True) and 9 (Missing data).
@@ -572,7 +657,7 @@ mapped to their Item Scores before adding up. This mapping is the same for all,
 namely: 0->0, 1->0, 2->1, 3->2.
 
 .. csv-table:: SDQ record layout
-   :file: record/sdq-collection-occasion.csv
+   :file: record/sdq-measure.csv
    :header-rows: 1
 
 -----
