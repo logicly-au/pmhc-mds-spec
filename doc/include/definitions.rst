@@ -37,6 +37,39 @@ Whether a person identifies as being of Aboriginal and/or Torres Strait Islander
 
 ----------
 
+.. _dfn-client_consent:
+
+Client Consent to Anonymised Data
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+An indication that the client has consented to their anonymised data being provided to the Department of Health for statistical purposes in planning and improving mental health services.
+
+:Field name: client_consent
+
+:Data type: string
+
+:Required: yes
+
+:Notes:
+  1 - Yes
+      The client has consented to their anonymised data being provided to the
+      Department of Health for statistical purposes in planning and improving
+      mental health services. The client's data will be included in reports and
+      extracts accessible by the Department of Health.
+  
+  2 - No
+      The client has not consented to their anonymised data being provided to the
+      Department of Health for statistical purposes in planning and improving
+      mental health services. The client's data will be excluded from reports and
+      extracts accessible by the Department of Health.
+  
+  All data can be uploaded, regardless of consent flag.
+  
+  All data will be available to PHNs to extract for their own internal data evaluation purposes.
+  
+
+----------
+
 .. _dfn-country_of_birth:
 
 Client - Country of Birth
@@ -1262,43 +1295,6 @@ The Australian postcode of the client.
   
 
 :METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
-
-----------
-
-.. _dfn-client_consent:
-
-Episode - Client Consent to Anonymised Data
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-An indication that the client has consented to their anonymised data being provided to the Department of Health for statistical purposes in planning and improving mental health services.
-
-:Field name: client_consent
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: Yes
-  :2: No
-
-:Notes:
-  1 - Yes
-      The client has consented to their anonymised data being provided to the
-      Department of Health for statistical purposes in planning and improving
-      mental health services. The client's data will be included in reports and
-      extracts accessible by the Department of Health.
-  
-  2 - No
-      The client has not consented to their anonymised data being provided to the
-      Department of Health for statistical purposes in planning and improving
-      mental health services. The client's data will be excluded from reports and
-      extracts accessible by the Department of Health.
-  
-  All data can be uploaded, regardless of consent flag.
-  
-  All data will be available to PHNs to extract for their own internal data evaluation purposes.
-  
 
 ----------
 
@@ -3589,9 +3585,9 @@ Type of organisation to which the the client was referred at the Episode conclus
   :19: Housing service
   :20: Centrelink
   :21: Other
-  :22: HeadtoHelp Hub
+  :22: HeadtoHelp / HeadtoHealth Hub
   :23: Other PHN funded service
-  :24: AMHC Hub
+  :24: AMHC
   :99: Not stated
   
   Multiple space separated values allowed
@@ -3625,32 +3621,53 @@ Type of organisation to which the the client was referred at the Intake conclusi
 :Required: yes
 
 :Domain:
-  :0: None/Not applicable
-  :1: General Practice
-  :2: Medical Specialist Consulting Rooms
-  :3: Private practice
-  :4: Public mental health service
-  :5: Public Hospital
-  :6: Private Hospital
-  :7: Emergency Department
-  :8: Community Health Centre
-  :9: Drug and Alcohol Service
-  :10: Community Support Organisation NFP
-  :11: Indigenous Health Organisation
-  :12: Child and Maternal Health
-  :13: Nursing Service
-  :14: Telephone helpline
-  :15: Digital health service
-  :16: Family Support Service
-  :17: School
-  :18: Tertiary Education institution
-  :19: Housing service
-  :20: Centrelink
-  :21: Other
-  :22: HeadtoHelp Hub
-  :23: Other PHN funded service
-  :24: AMHC Hub
-  :99: Not stated
+  :1: GP/Medical Practitioner
+  :2: Hospital
+  :3: Psychiatric/mental health service or facility
+  :4: Alcohol and other drug treatment service
+  :5: Other community/health care service
+  :6: Correctional service
+  :7: Police diversion
+  :8: Court diversion
+  :9: Legal service
+  :10: Child protection agency
+  :11: Community support groups/agencies
+  :12: Centrelink or employment service
+  :13: Housing and homelessness service
+  :14: Telephone & online services/referral agency e.g. direct line
+  :15: Disability support service
+  :16: Aged care facility/service
+  :17: Immigration department or asylum seeker/refugee support service
+  :18: School/other education or training institution
+  :19: Community based Drug and Alcohol Service
+  :20: Youth service (non-AOD)
+  :21: Indigenous service (non-AOD)
+  :22: Extended care/rehabilitation facility
+  :23: Palliative care service
+  :24: Police (not diversion)
+  :25: Public dental provider - community dental agency
+  :26: Dental Hospital
+  :27: Private Dental Provider
+  :28: Early childhood service
+  :29: Maternal and Child Health Service
+  :30: Community nursing service
+  :31: Emergency relief
+  :32: Family support service (excl family violence)
+  :33: Family violence service
+  :34: Gambling support service
+  :35: Maternity services
+  :36: Peer support/self-help group
+  :37: Private allied health provider
+  :38: Sexual Assault service
+  :39: Financial counsellor
+  :40: Sexual health service
+  :41: Medical specialist
+  :42: AMHC
+  :43: Other PHN funded service
+  :44: HeadtoHelp / HeathtoHealth
+  :97: No Referral
+  :98: Other
+  :99: Not stated/Inadequately described
   
   Multiple space separated values allowed
   
@@ -6088,6 +6105,39 @@ The source of funding for a service contact
 :Data type: string
 
 :Required: yes
+
+:Domain:
+  :7: PHN flexible funding NOS
+  :8: Low intensity
+  :9: Child and youth specific services NOS
+  :10: Youth enhanced services
+  :11: Psychological therapies
+  :12: Care coordination for severe and complex
+  :13: Suicide prevention NOS
+  :14: Suicide prevention - Indigenous
+  :15: Suicide Prevention - General
+  :16: Indigenous MH
+  :17: Psychosocial NOS
+  :18: Psychosocial NPS
+  :19: Psychosocial COS
+  :20: Other Commonwealth flexible funding NOS
+  :21: Drought measure
+  :22: Psychological treatment services for people with mental illness living in RACFs
+  :23: Co-funded – Commonwealth and state
+  :24: Co-funded – Commonwealth and other Quarantined
+  :25: Quarantined funding NOS
+  :26: PFAS response (retired)
+  :27: Natural Disaster Response
+  :28: HeadtoHelp
+  :29: AMHC
+  :30: Eating disorders trial
+  :31: Norfolk Island
+  :32: Other funding source – no Commonwealth Funding
+  :33: COVID Response NOS
+  :34: COVID Response Head To Help
+  :35: COVID Response Head To Health
+  :98: Unknown/Not stated
+  :99: Missing
 
 ----------
 

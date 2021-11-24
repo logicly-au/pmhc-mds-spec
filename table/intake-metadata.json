@@ -41,6 +41,19 @@
       },
     "required": true
   },{
+    "name": "client_consent",
+    "titles": [ "client_consent" ],
+    "dc:title": "Client Consent to Anonymised Data",
+    "schema:description": "An indication that the client has consented to their anonymised data being provided to the Department of Health for statistical purposes in planning and improving mental health services.",
+    "schema:disambiguatingDescription": "table/episode/client-consent.rst",
+    "schema:whenToCollect": "Intake start",
+    "schema:dateCreated": "2016-07-08",
+    "datatype": {
+      "base": "string",
+      "format": "^(1|2)$"
+    },
+    "required": true
+  },{
     "name": "referral_date",
     "titles": [ "referral_date" ],
     "dc:title": "Referral Date",

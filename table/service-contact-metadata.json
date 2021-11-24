@@ -293,5 +293,11 @@
       "resource": "table/service-contact/final.csv",
       "columnReference": "id"
     }
+  }, {
+    "columnReference": "funding_source",
+    "reference": {
+    "resource": "table/service-contact/funding-source.csv",
+    "columnReference": "id"
+    }
   }]
 }
