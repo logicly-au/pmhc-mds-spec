@@ -3,7 +3,7 @@
 Data Specification Change log
 =============================
 
-16/11/2021
+25/11/2021
 ----------
 
 * :ref:`data-model-and-specifications`
@@ -18,6 +18,10 @@ Data Specification Change log
   * :ref:`K10+ Current Validations <k10p-current-validations>`
 
     * Added reference to the Total Score scoring formula
+
+* :ref:`reserved-tags`
+
+  * Added :ref:`amhc`
 
 9/9/2021
 --------
