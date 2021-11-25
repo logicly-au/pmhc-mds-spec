@@ -208,39 +208,123 @@ Considerations for applying the !covid19 tag in data uploads
 
 Please refer to :ref:`reserved_tags_upload`
 
+.. _amhc:
+
+!amhc - Australian Government Mental Health Centres
+---------------------------------------------------
+
+Scope of new interim data collection requirements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Australian Government is providing funding to a number of PHNs who are
+responsible for the operation of the AMHC trial sites.
+
+The department is implementing a new tag in the PMHC MDS to capture activity
+associated with AMHCs from December 2021, until the new version 4 data model
+is available in March 2022.
+
+This change only applies to the following PHNs implementing AMHCs from
+December 2021:
+
+*	West Victoria PHN
+*	Northern Territory PHN
+*	ACT PHN
+*	North Perth PHN
+*	Nepean Blue Mountains PHN
+*	North Queensland PHN
+*	Tasmania PHN
+
+The department will provide further advice to these PHNs regarding new version
+4 data collection requirements in a future circular. PHNs implementing AMHCs
+will still be expected to retrospectively update AMHC data when the version
+4 data model is introduced. The department will work with PHNs and Strategic
+Data to ensure that PHNs have sufficient time to make these retrospective
+data updates.
+
+New ‘Australian Government Adult Mental Health Centre’ tag (!amhc)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The department is introducing an ‘Australian Government Adult Mental Health Centre’ tag to the PMHC MDS. It will be available before December 2021.
+
+The PHN must apply ‘Australian Government Adult Mental Health Centre’ tag (!amhc) to episodes of care initiated for clients who have been referred to the AMHC hub through the IAR process and are receiving services funded through the AMHC hubs contracts.
+
+A tick box will be added to the PMHC MDS interface to simplify data entry.
+
+How to apply the tag in the PMHC MDS data entry interface
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The AMHC tag is available for use on an episode record and is
+denoted ``!amhc``.
+
+There are two ways to apply the tag through the PMHC MDS data entry interface:
+
+  1. Manual data entry by typing the tag ``!amhc`` to the Episode tag field.
+
+      * When entering data directly, episodes will need to be tagged with the
+        string ``!amhc``. The data entry system already allows for the tagging
+        of records and therefore it is possible to implement this immediately
+        by communicating the instructions to users.
+      * Please note the free text nature of the tag system increases the
+        opportunity for errors because it is easy to mistype a tag. This should
+        be emphasised in communications with users.
+
+  2. Tick the box labelled ‘Australian Government Adult Mental Health Centre (!amhc)’.
+
+      * This tick box automatically adds/removes the tag when ticked/unticked.
+
+The checkbox is on the Episode add and edit screen:
+
+  * Ticking the checkbox will add the ``!amhc`` tag to the tag field
+  * Typing the ``!amhc`` tag into the tag box will also tick the checkbox
+  * Unticking the ``!amhc`` checkbox will remove the ``!amhc`` tag
+  * Deleting the ``!amhc`` tag from the tag field will also untick the checkbox
+
+.. _amhc-Upload:
+
+Considerations for applying the !amhc tag in data uploads
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Please refer to :ref:`reserved_tags_upload`
+
 .. _reserved_tags_upload:
 
 Considerations for applying reserved tags in data uploads
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------------------------------
 
-Users of local third-party or in-house developed systems will need to address
+Reserved tags have been used for multiple programs including
+bushfire, COVID-19 and AMHC support. Local third-party or in-house developed
+systems may have already been updated to support the application of these tags.
+
+Where local third-party or in-house developed systems do not already support
+the application of reserved tags, users of these systems will need to address
 varying issues depending on the capability of the system. When considering
-options please be aware the PMHC MDS specification does not require that data
-is captured in the same manner as it is supplied during upload.
+options, please be aware the PMHC MDS specification does not require that
+data is captured in the same manner as it is supplied during upload.
 
 For example, an ideal solution could be to add an extensible multiple choice
-“Tags” field to local episode data entry screens. This could initially include
-an “Australian Government Mental Health Response to Bushfire” option thereby
+‘Tags’ field to local episode data entry screens. This could include, for
+example, an ‘Australian Government Adult Mental Health Centre’ option thereby
 providing the organisation control over the possible tags that can be captured.
-By ensuring that additional options were easily added in the future such a
-field would support future special access programs without significant changes,
-as well as other purposes local or as requested by the Department.
+We previously advised that by ensuring additional options were easily added
+in the future, such a field would support future special access programs
+without significant changes, as well as other purposes local or as requested
+by the Department.
 
 An alternative approach, requiring less development, would be to extend an
-existing local field at the episode level with an “Australian Government Mental
-Health Response to Bushfire” option. This gives the organisation control over
-the values that may be selected.
+existing local field at the episode level with an
+‘Australian Government Adult Mental Health Centre’ option. This gives the
+organisation control over the values that may be selected.
 
 In both of the above examples, development work would also be required in the
 data extraction process used to produce PMHC MDS compliant upload files. An
-endorsement of “Australian Government Mental Health Response to Bushfire” via
-either method would be converted to the tag !br20 on the extracted episode
-records where appropriate.
+endorsement of ‘Australian Government Adult Mental Health Centre’ via either
+method would be converted to the tag !amhc on the extracted episode records
+where appropriate.
 
 An alternative but not preferred option is that episode records could be
 uploaded and then subsequently manually tagged via the data entry interface.
-This would require significant manual processes and double handling but it is a
-use case supported by the PMHC MDS.
+This would require significant manual processes and double handling but it
+is a use case supported by the PMHC MDS.
 
 If you have queries about managing data upload processes please contact the
 PMHC MDS helpdesk at support@pmhc-mds.com.
