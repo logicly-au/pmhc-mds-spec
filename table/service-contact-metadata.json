@@ -209,6 +209,7 @@
     "titles": [ "funding_source" ],
     "dc:title": "Service Contact - Funding Source",
     "schema:description": "The source of funding for a service contact",
+    "schema:disambiguatingDescription": "table/service-contact/funding-source.rst",
     "schema:dateCreated": "2021-08-23",
     "datatype": {
       "base": "string"
