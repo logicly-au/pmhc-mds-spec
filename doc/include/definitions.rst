@@ -6107,37 +6107,42 @@ The source of funding for a service contact
 :Required: yes
 
 :Domain:
-  :7: PHN flexible funding NOS
-  :8: Low intensity
-  :9: Child and youth specific services NOS
-  :10: Youth enhanced services
-  :11: Psychological therapies
-  :12: Care coordination for severe and complex
-  :13: Suicide prevention NOS
-  :14: Suicide prevention - Indigenous
-  :15: Suicide Prevention - General
-  :16: Indigenous MH
-  :17: Psychosocial NOS
-  :18: Psychosocial NPS
-  :19: Psychosocial COS
-  :20: Other Commonwealth flexible funding NOS
-  :21: Drought measure
-  :22: Psychological treatment services for people with mental illness living in RACFs
-  :23: Co-funded – Commonwealth and state
-  :24: Co-funded – Commonwealth and other Quarantined
-  :25: Quarantined funding NOS
-  :26: PFAS response (retired)
-  :27: Natural Disaster Response
-  :28: HeadtoHelp
-  :29: AMHC
-  :30: Eating disorders trial
-  :31: Norfolk Island
-  :32: Other funding source – no Commonwealth Funding
-  :33: COVID Response NOS
-  :34: COVID Response Head To Help
-  :35: COVID Response Head To Health
+  :8: PHN flexible funding NOS
+  :9: Low intensity
+  :10: Child and youth specific services NOS
+  :11: Youth enhanced services
+  :12: Psychological therapies
+  :13: Care coordination for severe and complex
+  :14: Suicide prevention NOS
+  :15: Suicide prevention - Indigenous
+  :16: Suicide Prevention - General
+  :17: Indigenous MH
+  :18: Psychosocial NOS
+  :19: Psychosocial NPS
+  :20: Psychosocial COS
+  :21: Other Commonwealth flexible funding NOS
+  :22: Drought measure
+  :23: Psychological treatment services for people with mental illness living in RACFs
+  :24: Co-funded – Commonwealth and state
+  :25: Co-funded – Commonwealth and other Quarantined
+  :26: Quarantined funding NOS
+  :27: PFAS response (retired)
+  :28: Natural Disaster Response
+  :29: HeadtoHelp
+  :30: AMHC
+  :31: Eating disorders trial
+  :32: Norfolk Island
+  :33: Other funding source – no Commonwealth Funding
+  :34: COVID Response NOS
+  :35: COVID Response Head To Help
+  :36: COVID Response Head To Health
   :98: Unknown/Not stated
   :99: Missing
+
+:Notes:
+  Response codes 0-7 are used in the headspace and Wayback specifications. They
+  are not valid response codes when submitting under the Version 4 specification.
+  
 
 ----------
 
