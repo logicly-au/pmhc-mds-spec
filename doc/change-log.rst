@@ -3,6 +3,18 @@
 Data Specification Change log
 =============================
 
+1/12/2021 - 4.0.0-draft.1
+-------------------------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    * Added :ref:`dfn-suicide_referral_flag` to :ref:`intake-data-elements`
+    * :ref:`dfn-referral_date` is required on :ref:`episode-data-elements`
+    * Updated :ref:`dfn-funding_source` - Response codes designed to allow
+      heirarchy and grouping of the funding sources
+
 30/11/2021
 ----------
 

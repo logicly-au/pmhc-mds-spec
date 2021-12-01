@@ -1,2 +1,2 @@
-Response codes 0-7 are used in the headspace and Wayback specifications. They
-are not valid response codes when submitting under the Version 4 specification.
+The response codes published in this draft are not finalised. They may be
+changed before the final specification is published.

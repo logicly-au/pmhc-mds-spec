@@ -33,7 +33,7 @@ METeOR: `614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__
 :9: Not stated/inadequately described"
 "`Referral Date`_ (referral_date)
 
-",date,"—","The date the referrer made the referral."
+",date,yes,"The date the referrer made the referral."
 "`Episode - Principal Focus of Treatment Plan`_ (principal_focus)
 
 ",string,yes,":1: Psychological therapy
@@ -113,7 +113,7 @@ METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
 :4: Separated
 :5: Married (registered and de facto)
 :6: Not stated/inadequately described"
-"`Episode - Suicide Referral Flag`_ (suicide_referral_flag)
+"`Suicide Referral Flag`_ (suicide_referral_flag)
 
 ",string,yes,":1: Yes
 :2: No
