@@ -3,8 +3,8 @@
 Data Specification Change log
 =============================
 
-1/12/2021
----------
+1/12/2021 - 4.0.0-draft.1
+-------------------------
 
 * :ref:`data-model-and-specifications`
 

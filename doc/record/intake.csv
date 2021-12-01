@@ -66,6 +66,9 @@
 ",string,yes,":1: HeadtoHelp
 :2: AMHC
 :3: Other / Flexible Funding Pool"
+"`Suicide Referral Flag`_ (suicide_referral_flag)
+
+",string,yes,"Identifies those individuals where a recent history of suicide attempt, or suicide risk, was a factor noted in the referral that underpinned the person's needs for assistance at intake or entry to the episode, as represented by a code."
 "`Intake - Date referred to other service at Intake conclusion`_ (date_referred_to_other_service_at_intake_conclusion)
 
 ",date,"—","The date the client was referred to another organisation at Intake conclusion."

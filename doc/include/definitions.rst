@@ -2349,26 +2349,6 @@ The source from which a person derives the greatest proportion of his/her income
 
 ----------
 
-.. _dfn-suicide_referral_flag:
-
-Episode - Suicide Referral Flag
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Identifies those individuals where a recent history of suicide attempt, or suicide risk, was a factor noted in the referral that underpinned the person's needs for assistance at entry to the episode, as represented by a code.
-
-:Field name: suicide_referral_flag
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: Yes
-  :2: No
-  :9: Unknown
-
-----------
-
 .. _dfn-episode_tags:
 
 Episode - Tags
@@ -6107,41 +6087,39 @@ The source of funding for a service contact
 :Required: yes
 
 :Domain:
-  :8: PHN flexible funding NOS
-  :9: Low intensity
-  :10: Child and youth specific services NOS
-  :11: Youth enhanced services
-  :12: Psychological therapies
-  :13: Care coordination for severe and complex
-  :14: Suicide prevention NOS
-  :15: Suicide prevention - Indigenous
-  :16: Suicide Prevention - General
-  :17: Indigenous MH
-  :18: Psychosocial NOS
-  :19: Psychosocial NPS
-  :20: Psychosocial COS
-  :21: Other Commonwealth flexible funding NOS
-  :22: Drought measure
-  :23: Psychological treatment services for people with mental illness living in RACFs
-  :24: Co-funded – Commonwealth and state
-  :25: Co-funded – Commonwealth and other Quarantined
-  :26: Quarantined funding NOS
-  :27: PFAS response (retired)
-  :28: Natural Disaster Response
-  :29: HeadtoHelp
-  :30: AMHC
-  :31: Eating disorders trial
-  :32: Norfolk Island
-  :33: Other funding source – no Commonwealth Funding
-  :34: COVID Response NOS
-  :35: COVID Response Head To Help
-  :36: COVID Response Head To Health
-  :98: Unknown/Not stated
-  :99: Missing
+  :100: PHN flexible funding NOS
+  :110: Low intensity
+  :120: Child and youth specific services NOS
+  :121: Youth enhanced services
+  :130: Psychological therapies
+  :140: Care coordination for severe and complex
+  :150: Suicide prevention NOS
+  :151: Suicide prevention - Indigenous
+  :152: Suicide Prevention - General
+  :160: Indigenous MH
+  :200: Psychosocial NOS
+  :210: Psychosocial NPS
+  :220: Psychosocial COS
+  :300: Other Commonwealth flexible funding NOS
+  :310: Drought measure
+  :320: Psychological treatment services for people with mental illness living in RACFs
+  :400: Co-funded – Commonwealth and state
+  :500: Co-funded – Commonwealth and other Quarantined
+  :800: Quarantined funding NOS
+  :810: PFAS response (retired)
+  :820: Natural Disaster Response
+  :830: COVID Response NOS
+  :831: COVID Response Head To Help
+  :832: COVID Response Head To Health
+  :840: AMHC
+  :850: Eating disorders trial
+  :860: Norfolk Island
+  :900: Other funding source – no Commonwealth Funding
+  :999: Unknown/Not stated
 
 :Notes:
-  Response codes 0-7 are used in the headspace and Wayback specifications. They
-  are not valid response codes when submitting under the Version 4 specification.
+  The response codes published in this draft are not finalised. They may be
+  changed before the final specification is published.
   
 
 ----------
@@ -6703,6 +6681,21 @@ This is a number or code assigned to each service contact practitioner. The Serv
   A recommended approach for the creation of keys is to compute `random
   UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
   
+
+----------
+
+.. _dfn-suicide_referral_flag:
+
+Suicide Referral Flag
+^^^^^^^^^^^^^^^^^^^^^
+
+Identifies those individuals where a recent history of suicide attempt, or suicide risk, was a factor noted in the referral that underpinned the person's needs for assistance at intake or entry to the episode, as represented by a code.
+
+:Field name: suicide_referral_flag
+
+:Data type: string
+
+:Required: yes
 
 ----------
 
