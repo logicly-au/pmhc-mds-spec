@@ -237,8 +237,8 @@ December 2021:
 The department will provide further advice to these PHNs regarding new version
 4 data collection requirements in a future circular. PHNs implementing AMHCs
 will still be expected to retrospectively update AMHC data when the version
-4 data model is introduced. The department will work with PHNs and Strategic
-Data to ensure that PHNs have sufficient time to make these retrospective
+4 data model is introduced. The department will work with PHNs and Logicly
+to ensure that PHNs have sufficient time to make these retrospective
 data updates.
 
 New ‘Australian Government Adult Mental Health Centre’ tag (!amhc)
