@@ -3,6 +3,11 @@
 Data Specification Change log
 =============================
 
+7/12/2021
+---------
+
+Rebranded Strategic Data to `Logicly <https://logicly.com.au>`_.
+
 25/11/2021
 ----------
 

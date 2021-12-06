@@ -3,8 +3,8 @@
   "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
   "dc:title": "PMHC MDS Data Elements",
   "dc:publisher": {
-    "schema:name": "Strategic Data Pty Ltd",
-    "schema:url": { "@id": "http://www.strategicdata.com.au" }
+    "schema:name": "Logicly Pty Ltd",
+    "schema:url": { "@id": "http://logicly.com.au" }
   },
   "dc:modified": { "@value": "2016-06-22", "@type": "xsd:date"},
   "tables": [{
