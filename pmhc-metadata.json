@@ -4,7 +4,7 @@
   "dc:title": "PMHC MDS Data Elements",
   "dc:publisher": {
     "schema:name": "Logicly",
-    "schema:url": { "@id": "http://logicly.com.au" }
+    "schema:url": { "@id": "https://logicly.com.au" }
   },
   "dc:modified": { "@value": "2016-06-22", "@type": "xsd:date"},
   "tables": [{
