@@ -39,6 +39,16 @@
     },
     "required": true
   },{
+    "name": "iar_dst_version",
+    "titles": [ "iar_dst_version" ],
+    "dc:title": "IAR-DST - Version",
+    "schema:description": "The version of the IAR-DST collected.",
+    "schema:dateCreated": "2022-01-14",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
     "name": "iar_dst_domain_1",
     "titles": [ "iar_dst_domain_1" ],
     "dc:title": "IAR-DST - Domain 1 - Symptom Severity and Distress (Primary Domain)",
@@ -165,6 +175,12 @@
     "reference": {
       "resource": "data/intakes.csv",
       "columnReference": [ "organisation_path", "intake_key" ]
+    }
+  }, {
+    "columnReference": "iar_dst_version",
+    "reference": {
+      "resource": "table/measure/iar-dst/iar-dst-version.csv",
+      "columnReference": "id"
     }
   }, {
     "columnReference": "iar_dst_domain_1",
