@@ -385,7 +385,7 @@ SDQ
 
 Extensive support materials are available on the SDQ developers' website,
 including copies of the various versions of the instrument, background
-information and scoring instructions. See http://www.sdqinfo.com. There are
+information and scoring instructions. See https://www.sdqinfo.org. There are
 six versions (parent-report and youth-self report) currently specified format
 PMHC MDS reporting.
 
