@@ -10,7 +10,7 @@
 ","string (2,50)",yes,"This is a number or code assigned to each intake. The Intake Key is unique and stable for each intake at the level of the organisation."
 "`IAR-DST - Version`_ (iar_dst_version)
 
-",string,yes,":1: 1.5.0"
+",string,yes,":1.5.0: National PHN Guidance Initial Assessment and Referral for Mental Healthcare – version 1.05"
 "`IAR-DST - Domain 1 - Symptom Severity and Distress (Primary Domain)`_ (iar_dst_domain_1)
 
 ",string,yes,":0: No problem in this domain
