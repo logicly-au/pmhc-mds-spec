@@ -2690,7 +2690,7 @@ The version of the IAR-DST collected.
 :Required: yes
 
 :Domain:
-  :1.5.0: National PHN Guidance Initial Assessment and Referral for Mental Healthcare – version 1.05
+  :1.5.0: DST specified by National PHN Guidance Initial Assessment and Referral for Mental Healthcare version 1.05
 
 ----------
 
