@@ -1,0 +1,18 @@
+{
+  "@id": "table/collection-occasion/iar-dst/iar-dst-version.json",
+  "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
+  "columns": [{
+    "name": "id",
+    "titles": [ "id" ],
+    "schema:dateCreated": "2022-01-14",
+    "datatype": "string"
+  },{
+    "name": "description",
+    "titles": [ "description" ],
+    "schema:dateCreated": "2022-01-14",
+    "datatype": {
+      "base": "string"
+    }
+  }],
+  "primaryKey": "id"
+}

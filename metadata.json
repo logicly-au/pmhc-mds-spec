@@ -243,6 +243,9 @@
     "url": "table/measure/sdq/sdq-version.csv",
     "tableSchema": "table/measure/sdq/sdq-version.json"
   }, {
+    "url": "table/measure/iar-dst/iar-dst-version.csv",
+    "tableSchema": "table/measure/iar-dst/iar-dst-version.json"
+  }, {
     "url": "table/measure/iar-dst/domain-1.csv",
     "tableSchema": "table/measure/iar-dst/iar-dst.json"
   }, {

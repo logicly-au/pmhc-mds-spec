@@ -2676,6 +2676,24 @@ List of tags for the measure.
 
 ----------
 
+.. _dfn-iar_dst_version:
+
+IAR-DST - Version
+^^^^^^^^^^^^^^^^^
+
+The version of the IAR-DST collected.
+
+:Field name: iar_dst_version
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1.5.0: DST specified by National PHN Guidance Initial Assessment and Referral for Mental Healthcare version 1.05
+
+----------
+
 .. _dfn-date_client_contacted_intake:
 
 Intake - Date client contacted Intake

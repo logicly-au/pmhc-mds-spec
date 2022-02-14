@@ -3,10 +3,9 @@ FROM ruby:2.5 as gembuilder
 RUN git clone https://github.com/strategicdata/csvlint.rb.git /build
 WORKDIR build
 
-RUN gem install activesupport -v 5.2 \
-    && gem install contracts -v 0.16.1
-
-RUN gem install --conservative -g && gem build csvlint.gemspec
+# No need to combine these to a single line while building the gem
+RUN gem install activesupport -v 5.2
+RUN gem build csvlint.gemspec
 
 
 FROM ruby:2.5
@@ -21,8 +20,7 @@ WORKDIR /spec
 
 # Install csvlint gem + dependencies
 ENV LANG C.UTF-8
-RUN gem install ffi \
-    && gem install activesupport -v 5.2 \
+RUN gem install activesupport -v 5.2 \
     && gem install ./csvlint-0.4.0.4.gem
 
 CMD ["csvlint", "--schema=metadata.json"]
