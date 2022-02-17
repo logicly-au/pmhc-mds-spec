@@ -65,7 +65,7 @@
   "foreignKeys": [{
     "columnReference": [ "organisation_path", "service_contact_key" ],
     "reference": {
-      "resource": "data/service_contacts.csv",
+      "resource": "data/service-contacts.csv",
       "columnReference": [ "organisation_path", "service_contact_key" ]
     }
   },{

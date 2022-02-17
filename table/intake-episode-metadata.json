@@ -55,8 +55,8 @@
   "foreignKeys": [{
     "columnReference": [ "episode_organisation_path", "episode_key" ],
     "reference": {
-      "resource": "data/episode.csv",
-      "columnReference": [ "episode_organisation_path", "episode_key" ]
+      "resource": "data/episodes.csv",
+      "columnReference": [ "organisation_path", "episode_key" ]
     }
   }]
 }
