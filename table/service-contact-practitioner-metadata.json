@@ -61,9 +61,20 @@
     },
     "required": true
   }],
-  "primaryKey": [ "organisation_path", "service_contact_organisation_path",
-    "service_contact_key", "practitioner_organisation_path", "practitioner_key"],
+  "primaryKey": [ "organisation_path", "service_contact_organisation_path" ],
   "foreignKeys": [{
+    "columnReference": [ "organisation_path", "service_contact_key" ],
+    "reference": {
+      "resource": "data/service_contacts.csv",
+      "columnReference": [ "organisation_path", "service_contact_key" ]
+    }
+  },{
+    "columnReference": [ "organisation_path", "practitioner_key" ],
+    "reference": {
+      "resource": "data/practitioners.csv",
+      "columnReference": [ "organisation_path", "practitioner_key" ]
+    }
+  },{
     "columnReference": "primary_practitioner_indicator",
     "reference": {
       "resource": "type/boolean.csv",
