@@ -229,12 +229,6 @@
       "columnReference": [ "organisation_path", "episode_key" ]
     }
   }, {
-    "columnReference": [ "organisation_path", "practitioner_key" ],
-    "reference": {
-      "resource": "data/practitioners.csv",
-      "columnReference": [ "organisation_path", "practitioner_key" ]
-    }
-  }, {
     "columnReference": "service_contact_modality",
     "reference": {
       "resource": "table/service-contact/modality.csv",
