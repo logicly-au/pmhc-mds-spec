@@ -38,18 +38,6 @@
     },
     "required": true
   },{
-    "name": "practitioner_key",
-    "titles": [ "practitioner_key" ],
-    "dc:title": "Practitioner Key",
-    "schema:description": "A unique identifier for a practitioner within the provider organisation.",
-    "schema:dateCreated": "2016-06-22",
-    "datatype": {
-      "base": "string",
-      "minLength": 2,
-      "maxLength": 50
-      },
-    "required": true
-  },{
     "name": "service_contact_date",
     "titles": [ "service_contact_date" ],
     "dc:title": "Service Contact - Date",
