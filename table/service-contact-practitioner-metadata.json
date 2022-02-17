@@ -61,7 +61,7 @@
     },
     "required": true
   }],
-  "primaryKey": [ "organisation_path", "service_contact_organisation_path" ],
+  "primaryKey": [ "organisation_path", "service_contact_practitioner_key" ],
   "foreignKeys": [{
     "columnReference": [ "organisation_path", "service_contact_key" ],
     "reference": {
