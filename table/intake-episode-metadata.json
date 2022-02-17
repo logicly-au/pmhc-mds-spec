@@ -51,5 +51,12 @@
     },
     "required": true
   }],
-  "primaryKey": [ "intake_organisation_path", "intake_key", "episode_organisation_path", "episode_key" ]
+  "primaryKey": [ "intake_organisation_path", "intake_key", "episode_organisation_path", "episode_key" ],
+  "foreignKeys": [{
+    "columnReference": [ "episode_organisation_path", "episode_key" ],
+    "reference": {
+      "resource": "data/episode.csv",
+      "columnReference": [ "episode_organisation_path", "episode_key" ]
+    }
+  }]
 }
