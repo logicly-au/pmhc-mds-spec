@@ -2,6 +2,30 @@
   "@id": "intake-episode-metadata.json",
   "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
   "columns": [{
+    "name": "episode_organisation_path",
+    "titles": [ "episode_organisation_path" ],
+    "dc:title": "Episode Organisation Path",
+    "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing the clinical service to the client.",
+    "schema:disambiguatingDescription": "type/organisation-path.rst",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+     "name": "episode_key",
+    "titles": [ "episode_key" ],
+    "dc:title": "Episode Key",
+    "schema:description": "This is a number or code assigned to each PMHC MDS episode. The Episode Key is unique and stable for each episode at the level of the organisation. This key must link to an existing episode within the PMHC MDS.",
+    "schema:disambiguatingDescription": "table/episode/key.rst",
+    "schema:dateCreated": "2021-08-23",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "required": true
+    },{
     "name": "intake_organisation_path",
     "titles": [ "intake_organisation_path" ],
     "dc:title": "Intake Organisation Path",
@@ -26,32 +50,8 @@
       "maxLength": 50
     },
     "required": true
-  },{
-    "name": "episode_organisation_path",
-    "titles": [ "episode_organisation_path" ],
-    "dc:title": "Episode Organisation Path",
-    "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing the clinical service to the client.",
-    "schema:disambiguatingDescription": "type/organisation-path.rst",
-    "schema:dateCreated": "2021-08-23",
-    "datatype": {
-      "base": "string"
-    },
-    "required": true
-  },{
-     "name": "episode_key",
-    "titles": [ "episode_key" ],
-    "dc:title": "Episode Key",
-    "schema:description": "This is a number or code assigned to each PMHC MDS episode. The Episode Key is unique and stable for each episode at the level of the organisation. This key must link to an existing episode within the PMHC MDS.",
-    "schema:disambiguatingDescription": "table/episode/key.rst",
-    "schema:dateCreated": "2021-08-23",
-    "datatype": {
-      "base": "string",
-      "minLength": 2,
-      "maxLength": 50
-    },
-    "required": true
   }],
-  "primaryKey": [ "intake_organisation_path", "intake_key", "episode_organisation_path", "episode_key" ],
+  "primaryKey": [ "episode_organisation_path", "episode_key", "intake_organisation_path", "intake_key" ],
   "foreignKeys": [{
     "columnReference": [ "episode_organisation_path", "episode_key" ],
     "reference": {
