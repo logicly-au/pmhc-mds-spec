@@ -536,7 +536,7 @@ The standard values for coding individual Item responses are 0 (Not True),
 1 (Somewhat True), 2 (Certainly True) and 9 (Missing data).
 
 For completed items (response coded 0,1,2) the Item scores are usually the same
-as the standard values. Them exceptions are item 07, 11, 14, 21 and 25. These
+as the standard values. The exceptions are item 07, 11, 14, 21 and 25. These
 items are "reverse-scored", that is, the standard value is mapped to Item scores
 as follows: 0->2, 1->1, 2->0.
 
