@@ -3,7 +3,11 @@
 Identifier management
 =====================
 
-PMHC MDS keys are case sensitive and must have between 2- 50 valid unicode characters.
+PMHC MDS keys are case sensitive and must:
+
+* have between 2- 50 valid unicode characters
+* start with a POSIX alphanumeric character (A-Za-z0-9)
+
 Where data is being exported from client systems, these keys can be auto generated,
 providing that a key does not change once it is assigned.
 
@@ -62,7 +66,7 @@ will be created and managed by Provider Organisations.
 The PMHC MDS specification requires each of these keys to be unique and stable
 at the Provider Organisation level. Collection Occasion keys are allowed to be
 duplicated if different measures are collected on the same day for the same reason
-and episode. You cannot have the same collection occasion key for different 
+and episode. You cannot have the same collection occasion key for different
 collection occasions with the same measure.
 
 This requirement has been implemented to allow a future version of the specification
