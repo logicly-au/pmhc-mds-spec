@@ -3,6 +3,19 @@
 Data Specification Change log
 =============================
 
+29/3/2022
+---------
+
+* :ref:`identifier_management`
+
+  * Updated the validation on entity keys so that they must start with
+    a POSIX alphanumeric character (A-Za-z0-9)
+
+* :ref:`validation-rules`
+
+  * Updated the validation on entity keys so that they must start with 
+    a POSIX alphanumeric character (A-Za-z0-9)
+
 7/12/2021
 ---------
 

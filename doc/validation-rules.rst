@@ -15,6 +15,16 @@ Current Validations
    :local:
    :depth: 1
 
+.. _key-current-validations:
+
+Keys
+~~~~
+
+The following rules apply to the key fields in all records:
+
+  1. All key fields are case sensitive
+  2. All key fields must be valid unicode characters
+  3. All key fields start with a POSIX alphanumeric character (A-Za-z0-9)
 
 .. _practitioner-current-validations:
 
