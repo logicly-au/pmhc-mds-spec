@@ -4,6 +4,6 @@ of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
 necessary to pad out a value. For instance, 13th March 2008 would appear as
 13032008.
 
-- The referral date must not be before 1st January 2014.
+- The referral date must not be before 1st January 2020.
 
 - The referral date must not be in the future.

@@ -58,21 +58,28 @@ Intake
      '98: N/A - Self referral' if and only if :ref:`dfn-referrer_profession` is also
      '98: N/A - Self referral'
   4. A maximum of one intake shall be open per client
-  5. The :ref:`dfn-date_client_contacted_intake`
+  5. The :ref:`dfn-referral_date`
+
+     * must not be before 1 January 2020
+     * and must not be before :ref:`dfn-organisation_start_date`
+     * and must not be after :ref:`dfn-organisation_end_date`
+     * and must not be in the future
+
+  6. The :ref:`dfn-date_client_contacted_intake`
 
      * must not be before 1 January 2020
      * and must not be before `Provider Organisation - Start Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date>`_
      * and must not be after `Provider Organisation - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date>`_
      * and must not be in the future
 
-  6. The :ref:`dfn-date_referred_to_other_service_at_intake_conclusion`
+  7. The :ref:`dfn-date_referred_to_other_service_at_intake_conclusion`
 
      * must not be before 1 January 2020
      * and must not be before `Provider Organisation - Start Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date>`_
      * and must not be after `Provider Organisation - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date>`_
      * and must not be in the future
 
-  7. If a :ref:`dfn-referred_to_organisation_path` is specified, that
+  8. If a :ref:`dfn-referred_to_organisation_path` is specified, that
      organisation must be an existing organisation within the PMHC MDS
 
 .. _iar-dst-current-validations:

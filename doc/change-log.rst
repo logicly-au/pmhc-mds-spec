@@ -3,6 +3,13 @@
 Data Specification Change log
 =============================
 
+31/5/2022 - 4.0.0-draft.2
+-------------------------
+
+* :ref:`validation-rules`
+
+  * Added validation for Intake - Referral Date
+
 1/12/2021 - 4.0.0-draft.1
 -------------------------
 
