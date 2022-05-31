@@ -2690,7 +2690,7 @@ The version of the IAR-DST collected.
 :Required: yes
 
 :Domain:
-  :1.5.0: DST specified by National PHN Guidance Initial Assessment and Referral for Mental Healthcare version 1.05
+  :1: DST specified by National PHN Guidance Initial Assessment and Referral for Mental Healthcare version 1.05
 
 ----------
 
@@ -4276,8 +4276,8 @@ The date the referrer made the referral.
   necessary to pad out a value. For instance, 13th March 2008 would appear as
   13032008.
   
-  - The referral date must not be before 1st January 2014.
-  
+  - The referral date for Intakes must not be before 1st January 2020.
+  - The referral date for Episodes must not be before 1st January 2014.
   - The referral date must not be in the future.
   
 
