@@ -54,7 +54,7 @@
   government or non-government sector, and where the latter, may be for-profit
   or not-for-profit.
 
-11 - Primary Heath Network
+11 - Primary Health Network
   The PHN is the provider organisation and employs the service delivery
   practitioners. This may occur during the transition period as the PHN moves to
   a full commissioning role, or in cases of market failure where there is no

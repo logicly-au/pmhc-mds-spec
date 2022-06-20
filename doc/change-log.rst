@@ -3,6 +3,17 @@
 Data Specification Change log
 =============================
 
+??/?/2022 - 4.0.0-draft.3
+-------------------------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    * Renamed 'Intake - Funding Source' :ref:`dfn-program_type` on :ref:`intake-data-elements`
+    * Added :ref:`dfn-program_type` to :ref:`episode-data-elements`
+    * Removed Continuity of Support from :ref:`episode-data-elements`
+
 31/5/2022 - 4.0.0-draft.2
 -------------------------
 

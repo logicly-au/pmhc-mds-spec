@@ -82,18 +82,6 @@
     },
     "default": "0"
   },{
-    "name": "continuity_of_support",
-    "titles": [ "continuity_of_support" ],
-    "dc:title": "Episode - Continuity of Support",
-    "schema:description": "Is the client a Continuity of Support Client?",
-    "schema:disambiguatingDescription": "table/episode/continuity-of-support.rst",
-    "schema:whenToCollect": "Episode start",
-    "schema:dateCreated": "2019-07-01",
-    "datatype": {
-      "base": "string"
-    },
-    "required": true
-  },{
     "name": "referral_date",
     "titles": [ "referral_date" ],
     "dc:title": "Referral Date",
@@ -106,6 +94,18 @@
       "base": "date",
       "format": "dMMyyyy",
       "minimum": "2013-01-01"
+    },
+    "required": true
+  },{
+    "name": "program_type",
+    "titles": [ "program_type" ],
+    "dc:title": "Program Type",
+    "schema:description": "The overarching program area that an Intake or Episode record is associated with.",
+    "schema:whenToCollect": "Episode start",
+    "schema:dateCreated": "2022-06-20",
+    "schema:dateModified": "2022-06-20",
+    "datatype": {
+      "base": "string"
     },
     "required": true
   },{
@@ -403,6 +403,12 @@
       "columnReference": "id"
     }
   }, {
+    "columnReference": "program_type",
+    "reference": {
+      "resource": "type/program-type.csv",
+      "columnReference": "id"
+    }
+  }, {
     "columnReference": "principal_focus",
     "reference": {
       "resource": "table/episode/principal-focus.csv",
@@ -505,9 +511,15 @@
       "columnReference": "id"
     }
   }, {
-    "columnReference": "continuity_of_support",
+    "columnReference": "referrer_profession",
     "reference": {
-      "resource": "table/episode/continuity-of-support.csv",
+      "resource": "type/referrer-profession.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "referrer_organisation_type",
+    "reference": {
+      "resource": "type/referrer-organisation-type.csv",
       "columnReference": "id"
     }
   }, {

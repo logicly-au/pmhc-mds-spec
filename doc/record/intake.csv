@@ -14,6 +14,13 @@
 "`Referral Date`_ (referral_date)
 
 ",date,yes,"The date the referrer made the referral."
+"`Program Type`_ (program_type)
+
+",string,yes,":1: Flexible Funding Pool
+:2: Head to Health
+:3: AMHC
+:4: Psychosocial Support
+:5: Bushfire 20"
 "`Referrer Profession`_ (referrer_profession)
 
 ",string,yes,":1: General Practitioner
@@ -117,7 +124,7 @@
 :41: Medical specialist
 :42: AMHC
 :43: Other PHN funded service
-:44: HeadtoHelp / HeathtoHealth
+:44: HeadtoHelp / HeadtoHealth
 :97: No Referral
 :98: Other
 :99: Not stated/Inadequately described

@@ -143,6 +143,3 @@ each Service Contact.
   Support guidance material states explicitly that these services are designed
   for individuals who have significant psychosocial disability but do not meet
   NDIS eligibility criteria.
-
-  Episodes of care delivered to individuals who are recorded as Continuity of
-  Support clients (see below) may be reported as Psychosocial Support.

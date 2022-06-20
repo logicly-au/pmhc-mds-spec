@@ -393,6 +393,10 @@ allowed.
 
 Collection occasions are managed by the provider organisations via upload.
 
+.. csv-table:: Collection Occasion record layout
+   :file: record/collection-occasion.csv
+   :header-rows: 1
+   
 .. _measure-data-elements:
 
 Measures

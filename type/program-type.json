@@ -1,15 +1,15 @@
 {
-  "@id": "table/episode/continuity-of-support.json",
+  "@id": "type/program-type.json",
   "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
   "columns": [{
     "name": "id",
     "titles": [ "id" ],
-    "schema:dateCreated": "2019-07-01",
+    "schema:dateCreated": "2022-06-20",
     "datatype": "string"
   },{
     "name": "description",
     "titles": [ "description" ],
-    "schema:dateCreated": "2019-07-01",
+    "schema:dateCreated": "2022-06-20",
     "datatype": {
       "base": "string"
     }
