@@ -26,14 +26,16 @@ METeOR: `614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__
 :4: Episode closed administratively - client moved out of area
 :5: Episode closed administratively - client referred elsewhere
 :6: Episode closed administratively - other reason"
-"`Episode - Continuity of Support`_ (continuity_of_support)
-
-",string,yes,":1: Yes
-:2: No
-:9: Not stated/inadequately described"
 "`Referral Date`_ (referral_date)
 
 ",date,yes,"The date the referrer made the referral."
+"`Program Type`_ (program_type)
+
+",string,yes,":1: Flexible Funding Pool
+:2: Head to Health
+:3: AMHC
+:4: Psychosocial Support
+:5: Bushfire 20"
 "`Episode - Principal Focus of Treatment Plan`_ (principal_focus)
 
 ",string,yes,":1: Psychological therapy
@@ -238,10 +240,48 @@ METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
 :9: Unknown"
 "`Referrer Profession`_ (referrer_profession)
 
-",string,yes,"Profession of the provider who referred the client."
+",string,yes,":1: General Practitioner
+:2: Psychiatrist
+:3: Obstetrician
+:4: Paediatrician
+:5: Other Medical Specialist
+:6: Midwife
+:7: Maternal Health Nurse
+:8: Psychologist
+:9: Mental Health Nurse
+:10: Social Worker
+:11: Occupational therapist
+:12: Aboriginal Health Worker
+:13: Educational professional
+:14: Early childhood service worker
+:15: Other
+:98: N/A - Self referral
+:99: Not stated"
 "`Referrer Organisation Type`_ (referrer_organisation_type)
 
-",string,yes,"Type of organisation in which the referring professional is based."
+",string,yes,":1: General Practice
+:2: Medical Specialist Consulting Rooms
+:3: Private practice
+:4: Public mental health service
+:5: Public Hospital
+:6: Private Hospital
+:7: Emergency Department
+:8: Community Health Centre
+:9: Drug and Alcohol Service
+:10: Community Support Organisation NFP
+:11: Indigenous Health Organisation
+:12: Child and Maternal Health
+:13: Nursing Service
+:14: Telephone helpline
+:15: Digital health service
+:16: Family Support Service
+:17: School
+:18: Tertiary Education institution
+:19: Housing service
+:20: Centrelink
+:21: Other
+:98: N/A - Self referral
+:99: Not stated"
 "`Organisation type referred to at Episode conclusion`_ (organisation_type_referred_to_at_episode_conclusion)
 
 ",string,yes,":0: None/Not applicable
