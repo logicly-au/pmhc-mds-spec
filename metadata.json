@@ -150,6 +150,9 @@
     "url": "table/episode/completion-status.csv",
     "tableSchema": "table/episode/completion-status.json"
   }, {
+    "url": "type/program-type.csv",
+    "tableSchema": "type/program-type.json"
+  }, {
     "url": "table/episode/principal-focus.csv",
     "tableSchema": "table/episode/principal-focus.json"
   }, {

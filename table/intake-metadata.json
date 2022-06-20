@@ -69,6 +69,18 @@
     },
     "required": true
   },{
+    "name": "program_type",
+    "titles": [ "program_type" ],
+    "dc:title": "Program Type",
+    "schema:description": "The overarching program area that an Intake or Episode record is associated with.",
+    "schema:whenToCollect": "Intake start",
+    "schema:dateCreated": "2022-06-20",
+    "schema:dateModified": "2022-06-20",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
     "name": "referrer_profession",
     "titles": [ "referrer_profession" ],
     "dc:title": "Referrer Profession",
@@ -184,6 +196,12 @@
     "reference": {
       "resource": "data/clients.csv",
       "columnReference": [ "organisation_path", "client_key" ]
+    }
+  }, {
+    "columnReference": "program_type",
+    "reference": {
+      "resource": "type/program-type.csv",
+      "columnReference": "id"
     }
   }, {
     "columnReference": "referrer_profession",
