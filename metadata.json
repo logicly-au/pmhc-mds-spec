@@ -189,9 +189,6 @@
     "url": "table/episode/marital-status.csv",
     "tableSchema": "table/episode/marital-status.json"
   }, {
-    "url": "table/episode/continuity-of-support.csv",
-    "tableSchema": "table/episode/continuity-of-support.json"
-  }, {
     "url": "table/episode/organisation-type-referred-to-at-episode-conclusion.csv",
     "tableSchema": "table/episode/organisation-type-referred-to-at-episode-conclusion.json"
   }, {
