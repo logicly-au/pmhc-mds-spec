@@ -395,12 +395,12 @@ and discharge and are rated on the basis of the previous 1 month period.
 
 The versions specified for PMHC MDS reporting are:
 
-- PC1 - Parent Report Measure for Children aged 4-10, Baseline version;
-- PC2 - Parent Report Measure for Children and Adolescents aged 4-10, Follow up version;
-- PY1 - Parent Report Measure for Youth aged 11-17, Baseline version;
-- PY2 - Parent Report Measure for Youth aged 11-17, Follow up version;
-- YR1 - Youth self report measure (11-17), Baseline version; and
-- YR2 - Youth self report measure (11-17), Follow up version.
+- PC1 - SDQ Parent Report: 4-10 years (Baseline version);
+- PC2 - SDQ Parent Report: 4-10 years (Follow up version);
+- PY1 - SDQ Parent Report: 11-17 years (Baseline version);
+- PY2 - SDQ Parent Report: 11-17 years (Follow up version);
+- YR1 - SDQ Youth Report: 11-17 years (Baseline version); and
+- YR2 - SDQ Youth Report: 11-17 years (Follow up version).
 
 *We acknowledge that there is also a parent-report for 2-4 years; and teacher versions for all the years (2-4; 4-10 and 11-17) but that these are not to be reported the PMHC-MDS.*
 
