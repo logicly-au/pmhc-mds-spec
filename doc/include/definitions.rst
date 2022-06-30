@@ -4415,6 +4415,11 @@ The overarching program area that an Intake or Episode record is associated with
   :4: Psychosocial Support
   :5: Bushfire 20
 
+:Notes:
+  The response codes published in this draft are not finalised. They may be
+  changed before the final specification is published.
+  
+
 ----------
 
 .. _dfn-referral_date:
