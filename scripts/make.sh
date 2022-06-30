@@ -6,17 +6,30 @@ set -e
 source doc/version.conf
 export SPEC_VERSION
 
+source config.sh
+
 docker pull docker.sdlocal.net/csvw/metadata2rst:release
 docker pull stratdat/sphinx:production
 docker pull stratdat/sphinx-html2pdf:production
 
 docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst:release \
-  --meta=metadata.json
+  --meta=${METADATA_FILE}
+
+# make example zip and xlsx Files
+echo "Making example files"
+pushd .
+cd doc/_static/example-files
+rm -fv *.zip
+zip PMHC-4-0-combined.zip combined/*
+zip PMHC-4-0-intake.zip intake/*
+zip PMHC-4-0-treatment.zip treatment/*
+zip PMHC-4-0-combined-delete.zip combined-delete/*
+popd
 
 # make zip file
-scripts/metadata2zip.sh
+scripts/metadata2zip.sh ${SPEC_ZIP_FILE}
 # mv new zip to data-specification folder
-mv pmhcmds-spec-meta.zip doc/_static/
+mv ${SPEC_ZIP_FILE} doc/_static/
 
 pushd .
 cd doc

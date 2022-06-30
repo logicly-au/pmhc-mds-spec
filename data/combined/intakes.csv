@@ -1,7 +1,0 @@
-organisation_path,intake_key,client_key,referrer_profession,referrer_organisation_type,date_client_contacted_intake,date_referred_to_other_service_at_intake_conclusion,organisation_type_referred_to_at_intake_conclusion,referred_to_organisation_path,intake_funding_source,intake_tags
-PHN999:Intake01,IN04-1,CL0001,1,1,09082021,10082021,1,PHN999:Hub01,1,
-PHN999:Intake01,IN05-1,CL0002,1,2,06082021,06082021,1,PHN999:Combined,1,
-PHN999:Intake01,IN06-1,CL0003,2,3,07082021,09099999,1,,1,
-PHN999:Combined,IN07-1,CL0007,1,1,1082021,10082021,1,PHN999:Hub01,1,
-PHN999:Combined,IN08-1,CL0008,1,2,05082021,06082021,1,PHN999:Combined,1,
-PHN999:Combined,IN09-1,CL0009,2,3,02082021,09099999,1,,1,

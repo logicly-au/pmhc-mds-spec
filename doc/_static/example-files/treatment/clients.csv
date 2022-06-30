@@ -1,0 +1,6 @@
+organisation_path,client_key,slk,date_of_birth,est_date_of_birth,client_gender,client_atsi_status,country_of_birth,main_lang_at_home,prof_english,client_tags
+PHN999:Treatment01,C400,BBBBB010119409,01011940,1,3,1,9999,1201,0,
+PHN999:Treatment01,C401,BBBBC140119401,14011940,1,0,3,8417,1201,0,
+PHN999:Treatment01,C402,BBBBD270119402,27011940,1,0,9,1404,6104,2,
+PHN999:Treatment01,C403,BBBBF090219403,09021940,1,3,9,8422,2301,3,
+PHN999:Treatment01,C404,BBBBG220219409,22021940,1,0,9,9999,6104,1,

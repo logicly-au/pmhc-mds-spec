@@ -28,7 +28,7 @@
   },{
     "name": "organisation_name",
     "titles": [ "organisation_name" ],
-    "dc:title" : "Provider Organisation - Name",
+    "dc:title" : "Name",
     "schema:description": "The name of the provider organisation.",
     "schema:dateCreated": "2016-06-22",
     "datatype": {
@@ -40,7 +40,7 @@
     },{
       "name": "organisation_legal_name",
       "titles": [ "organisation_legal_name" ],
-      "dc:title" : "Provider Organisation - Legal Name",
+      "dc:title" : "Legal Name",
       "schema:description": "The legal name of the provider organisation.",
       "schema:dateCreated": "2017-04-26",
       "datatype": {
@@ -50,7 +50,7 @@
   },{
     "name": "organisation_abn",
     "titles": [ "organisation_abn" ],
-    "dc:title" : "Provider Organisation - ABN",
+    "dc:title" : "ABN",
     "schema:description": "The Australian Business Number of the provider organisation.",
     "schema:dateCreated": "2016-07-08",
     "datatype": {
@@ -61,7 +61,7 @@
   },{
      "name": "organisation_type",
     "titles": [ "organisation_type" ],
-    "dc:title" : "Provider Organisation - Type",
+    "dc:title" : "Organisation Type",
     "schema:description": "The category that best describes the provider organisation.",
     "schema:disambiguatingDescription": "table/organisation/type.rst",
     "schema:dateCreated": "2016-06-22",
@@ -72,7 +72,7 @@
   },{
     "name": "organisation_state",
     "titles": [ "organisation_state" ],
-    "dc:title" : "Provider Organisation - State",
+    "dc:title" : "State",
     "schema:description": "The state that the provider organisation operates in.",
     "schema:disambiguatingDescription": "table/organisation/state.rst",
     "schema:meteorItem": "613718",
@@ -84,7 +84,7 @@
   },{
     "name": "organisation_start_date",
     "titles": [ "organisation_start_date" ],
-    "dc:title" : "Provider Organisation - Start Date",
+    "dc:title" : "Organisation Start Date",
     "schema:description": "The date on which a provider organisation started delivering services.",
     "schema:disambiguatingDescription": "table/organisation/start-date.rst",
     "schema:dateCreated": "2019-03-13",
@@ -98,7 +98,7 @@
   },{
     "name": "organisation_end_date",
     "titles": [ "organisation_end_date" ],
-    "dc:title" : "Provider Organisation - End Date",
+    "dc:title" : "Organisation End Date",
     "schema:description": "The date on which a provider organisation stopped delivering services.",
     "schema:disambiguatingDescription": "table/organisation/end-date.rst",
     "schema:dateCreated": "2019-03-13",
@@ -112,7 +112,7 @@
   },{
     "name": "organisation_tags",
     "titles": [ "organisation_tags" ],
-    "dc:title" : "Provider Organisation - Tags",
+    "dc:title" : "Organisation Tags",
     "schema:description": "List of tags for the provider organisation.",
     "schema:disambiguatingDescription": "type/tags.rst",
     "schema:dateCreated": "2016-06-22",

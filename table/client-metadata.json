@@ -30,7 +30,7 @@
   },{
     "name": "slk",
     "titles": [ "slk" ],
-    "dc:title": "Client - Statistical Linkage Key",
+    "dc:title": "Statistical Linkage Key",
     "schema:description": "A key that enables two or more records belonging to the same individual to be brought together.",
     "schema:disambiguatingDescription": "table/client/slk.rst",
     "schema:meteorItem": "349510",
@@ -45,7 +45,7 @@
   },{
     "name": "date_of_birth",
     "titles": [ "date_of_birth" ],
-    "dc:title": "Client - Date of Birth",
+    "dc:title": "Date of Birth",
     "schema:description": "The date on which an individual was born.",
     "schema:disambiguatingDescription": "table/client/date-of-birth.rst",
     "schema:meteorItem": "287007",
@@ -62,7 +62,7 @@
   },{
     "name": "est_date_of_birth",
     "titles": [ "est_date_of_birth" ],
-    "dc:title": "Client - Estimated Date of Birth Flag",
+    "dc:title": "Estimated Date of Birth Flag",
     "schema:description": "The date of birth estimate flag records whether or not the client's date of birth has been estimated.",
     "schema:dateCreated": "2016-06-22",
     "datatype": {
@@ -73,7 +73,7 @@
   },{
     "name": "client_gender",
     "titles": [ "client_gender" ],
-    "dc:title": "Client - Gender",
+    "dc:title": "Client Gender",
     "schema:description": "The term 'gender' refers to the way in which a person identifies their masculine or feminine characteristics. A persons gender relates to their deeply held internal and individual sense of gender and is not always exclusively male or female. It may or may not correspond to their sex assigned at birth.",
     "schema:absItem": "http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=",
     "schema:disambiguatingDescription": "type/gender.rst",
@@ -84,9 +84,9 @@
     "required": true,
     "schema:formOrder": "5"
   },{
-    "name": "client_atsi_status",
-    "titles": [ "client_atsi_status" ],
-    "dc:title": "Client - Aboriginal and Torres Strait Islander Status",
+    "name": "practitioner_atsi_status",
+    "titles": [ "practitioner_atsi_status" ],
+    "dc:title": "Practitioner Aboriginal and Torres Strait Islander Status",
     "schema:description": "Whether a person identifies as being of Aboriginal and/or Torres Strait Islander origin, as represented by a code.",
     "schema:disambiguatingDescription": "type/atsi-status.rst",
     "schema:meteorItem": "291036",
@@ -99,7 +99,7 @@
   },{
     "name": "country_of_birth",
     "titles": [ "country_of_birth" ],
-    "dc:title": "Client - Country of Birth",
+    "dc:title": "Country of Birth",
     "schema:description": "The country in which the client was born, as represented by a code.",
     "schema:disambiguatingDescription": "table/client/country-of-birth.rst",
     "schema:meteorItem": "459973",
@@ -114,7 +114,7 @@
   },{
     "name": "main_lang_at_home",
     "titles": [ "main_lang_at_home" ],
-    "dc:title": "Client - Main Language Spoken at Home",
+    "dc:title": "Main Language Spoken at Home",
     "schema:description": "The language reported by a client as the main language other than English spoken by that client in his/her home (or most recent private residential setting occupied by the client) to communicate with other residents of the home or setting and regular visitors, as represented by a code.",
     "schema:disambiguatingDescription": "table/client/main-lang-at-home.rst",
     "schema:meteorItem": "460125",
@@ -129,7 +129,7 @@
   },{
     "name": "prof_english",
     "titles": [ "prof_english" ],
-    "dc:title": "Client - Proficiency in Spoken English",
+    "dc:title": "Proficiency in Spoken English",
     "schema:description": "The self-assessed level of ability to speak English, asked of people whose first language is a language other than English or who speak a language other than English at home.",
     "schema:disambiguatingDescription": "table/client/prof-english.rst",
     "schema:meteorItem": "270203",
@@ -142,7 +142,7 @@
   },{
     "name": "client_tags",
     "titles": [ "client_tags" ],
-    "dc:title" : "Client - Tags",
+    "dc:title" : "Client Tags",
     "schema:description": "List of tags for the client.",
     "schema:disambiguatingDescription": "type/tags.rst",
     "schema:dateCreated": "2016-06-22",

@@ -1,0 +1,11 @@
+organisation_path,service_contact_key,delete,episode_key,service_contact_date,service_contact_type,service_contact_postcode,service_contact_modality,service_contact_participants,service_contact_venue,service_contact_duration,service_contact_copayment,service_contact_participation_indicator,service_contact_interpreter,service_contact_no_show,service_contact_final,service_contact_start_time,funding_source,service_contact_tags
+PHN999:IntakeTreatment01,S400,delete,,,,,,,,,,,,,,,,
+PHN999:IntakeTreatment01,S401,delete,,,,,,,,,,,,,,,,
+PHN999:IntakeTreatment01,S402,delete,,,,,,,,,,,,,,,,
+PHN999:IntakeTreatment01,S403,delete,,,,,,,,,,,,,,,,
+PHN999:IntakeTreatment01,S404,delete,,,,,,,,,,,,,,,,
+PHN999:IntakeTreatment01,S405,delete,,,,,,,,,,,,,,,,
+PHN999:IntakeTreatment01,S406,delete,,,,,,,,,,,,,,,,
+PHN999:IntakeTreatment01,S407,delete,,,,,,,,,,,,,,,,
+PHN999:IntakeTreatment01,S408,delete,,,,,,,,,,,,,,,,
+PHN999:IntakeTreatment01,S409,delete,,,,,,,,,,,,,,,,

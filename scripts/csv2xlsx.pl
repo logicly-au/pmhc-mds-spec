@@ -7,28 +7,31 @@ use Text::CSV_XS;
 use Tie::IxHash;
 
 use constant usage => <<'EOT'
-csv2xlsx.pl [options] [csv_directory]
+csv2xlsx.pl [options] [example_file_directory]
 
-Automatically generate Excel XLSX file from CSV files stored in <csv_directory>.
+Automatically generate Excel XLSX file from CSV files stored in <example_file_directory>.
 
   --help                  Show this text
 
 EOT
     ;
-our ($csv_dir, $help, $delete);
+our ($example_dir, $help, $delete, $context);
+
+my $version = "4-0";
 
 GetOptions(
   'help|?|h'  => \$help,
-  'delete'    => \$delete
+  'delete'    => \$delete,
+  'context=s' => \$context
 ) or do { print usage; exit 1; };
 
 if ($help) { print usage; exit 0; }
 
 # Now, we can also specify the spec and version on the command line.
-$csv_dir ||= shift;
+$example_dir ||= shift;
 
 # Check usage...
-unless (defined($csv_dir)) {
+unless (defined($example_dir)) {
     print usage;
     exit 1;
 }
@@ -37,32 +40,76 @@ my %csvfiles;
 my $t = tie( %csvfiles, 'Tie::IxHash' );
 my $workbook;
 if ($delete) {
-  %csvfiles = (
-      'Clients'          => "$csv_dir/clients-delete.csv",
-      'Episodes'         => "$csv_dir/episodes-delete.csv",
-      'Service Contacts' => "$csv_dir/service-contacts-delete.csv",
-      'K10+'             => "$csv_dir/k10p-delete.csv",
-      'K5'               => "$csv_dir/k5-delete.csv",
-      'SDQ'              => "$csv_dir/sdq-delete.csv",
-      'Practitioners'    => "$csv_dir/practitioners-delete.csv",
-  );
-
-  # Create a new Excel workbook
-  $workbook  = Excel::Writer::XLSX->new( "$csv_dir/pmhc-upload-delete.xlsx" );
+    $context = 'combined-delete';
+    %csvfiles = (
+        'Metadata'                      => "$example_dir/$context/metadata.csv",
+        'Organisations'                 => "$example_dir/$context/organisations.csv",
+        'Clients'                       => "$example_dir/$context/clients.csv",
+        'Intakes'                       => "$example_dir/$context/intakes.csv",
+        'IAR-DST'                       => "$example_dir/$context/iar-dst.csv",
+        'Episodes'                      => "$example_dir/$context/episodes.csv",
+        'Intake Episodes'               => "$example_dir/$context/intake-episodes.csv",
+        'Collection Occasions'          => "$example_dir/$context/collection-occasions.csv",
+        'K10+'                          => "$example_dir/$context/k10p.csv",
+        'K5'                            => "$example_dir/$context/k5.csv",
+        'SDQ'                           => "$example_dir/$context/sdq.csv",
+        'Service Contacts'              => "$example_dir/$context/service-contacts.csv",
+        'Service Contact Practitioners' => "$example_dir/$context/service-contact-practitioners.csv",
+        'Practitioners'                 => "$example_dir/$context/practitioners.csv"
+    );
 } else {
-  %csvfiles = (
-      'Clients'          => "$csv_dir/clients.csv",
-      'Episodes'         => "$csv_dir/episodes.csv",
-      'Service Contacts' => "$csv_dir/service-contacts.csv",
-      'K10+'             => "$csv_dir/k10p.csv",
-      'K5'               => "$csv_dir/k5.csv",
-      'SDQ'              => "$csv_dir/sdq.csv",
-      'Practitioners'    => "$csv_dir/practitioners.csv",
-  );
+  if ( $context eq "intake" ) {
+      %csvfiles = (
+          'Metadata'      => "$example_dir/$context/metadata.csv",
+          'Organisations' => "$example_dir/$context/organisations.csv",
+          'Clients'       => "$example_dir/$context/clients.csv",
+          'Intakes'       => "$example_dir/$context/intakes.csv",
+          'IAR-DST'       => "$example_dir/$context/iar-dst.csv"
+      );
+  } elsif ( $context eq "treatment" ) {
+      %csvfiles = (
+          'Metadata'                      => "$example_dir/$context/metadata.csv",
+          'Organisations'                 => "$example_dir/$context/organisations.csv",
+          'Clients'                       => "$example_dir/$context/clients.csv",
+          'Episodes'                      => "$example_dir/$context/episodes.csv",
+          'Intake Episodes'               => "$example_dir/$context/intake-episodes.csv",
+          'Collection Occasions'          => "$example_dir/$context/collection-occasions.csv",
+          'K10+'                          => "$example_dir/$context/k10p.csv",
+          'K5'                            => "$example_dir/$context/k5.csv",
+          'SDQ'                           => "$example_dir/$context/sdq.csv",
+          'Service Contacts'              => "$example_dir/$context/service-contacts.csv",
+          'Service Contact Practitioners' => "$example_dir/$context/service-contact-practitioners.csv",
+          'Practitioners'                 => "$example_dir/$context/practitioners.csv"
+      );
+  } elsif ( $context eq "combined" ) {
+      %csvfiles = (
+          'Metadata'                      => "$example_dir/$context/metadata.csv",
+          'Organisations'                 => "$example_dir/$context/organisations.csv",
+          'Clients'                       => "$example_dir/$context/clients.csv",
+          'Intakes'                       => "$example_dir/$context/intakes.csv",
+          'IAR-DST'                       => "$example_dir/$context/iar-dst.csv",
+          'Episodes'                      => "$example_dir/$context/episodes.csv",
+          'Intake Episodes'               => "$example_dir/$context/intake-episodes.csv",
+          'Collection Occasions'          => "$example_dir/$context/collection-occasions.csv",
+          'K10+'                          => "$example_dir/$context/k10p.csv",
+          'K5'                            => "$example_dir/$context/k5.csv",
+          'SDQ'                           => "$example_dir/$context/sdq.csv",
+          'Service Contacts'              => "$example_dir/$context/service-contacts.csv",
+          'Service Contact Practitioners' => "$example_dir/$context/service-contact-practitioners.csv",
+          'Practitioners'                 => "$example_dir/$context/practitioners.csv"
+      );
+  } else {
+    print "Unknown context: $context. Context must be  one of [intake, treatment, combined]\n";
+    print usage; exit 0;
+  }
 
   # Create a new Excel workbook
-  $workbook  = Excel::Writer::XLSX->new( "$csv_dir/pmhc-upload.xlsx" );
+
+
 }
+
+my $filename = "PMHC-$version-$context.xlsx";
+$workbook  = Excel::Writer::XLSX->new( "$example_dir/$filename" );
 
 # Create a new CSV parsing object
 my $csv = Text::CSV_XS->new;

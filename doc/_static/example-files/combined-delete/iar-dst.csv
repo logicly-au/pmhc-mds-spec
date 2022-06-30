@@ -1,0 +1,11 @@
+organisation_path,measure_key,delete,intake_key,iar_dst_version,iar_dst_domain_1,iar_dst_domain_2,iar_dst_domain_3,iar_dst_domain_4,iar_dst_domain_5,iar_dst_domain_6,iar_dst_domain_7,iar_dst_domain_8,iar_dst_recommended_level_of_care,iar_dst_practitioner_level_of_care,iar_dst_tags
+PHN999:IntakeTreatment01,IarDstIM00,delete,,,,,,,,,,,,,
+PHN999:IntakeTreatment01,IarDstIM01,delete,,,,,,,,,,,,,
+PHN999:IntakeTreatment01,IarDstIM02,delete,,,,,,,,,,,,,
+PHN999:IntakeTreatment01,IarDstIM03,delete,,,,,,,,,,,,,
+PHN999:IntakeTreatment01,IarDstIM04,delete,,,,,,,,,,,,,
+PHN999:IntakeTreatment01,IarDstIM05,delete,,,,,,,,,,,,,
+PHN999:IntakeTreatment01,IarDstIM06,delete,,,,,,,,,,,,,
+PHN999:IntakeTreatment01,IarDstIM07,delete,,,,,,,,,,,,,
+PHN999:IntakeTreatment01,IarDstIM08,delete,,,,,,,,,,,,,
+PHN999:IntakeTreatment01,IarDstIM09,delete,,,,,,,,,,,,,

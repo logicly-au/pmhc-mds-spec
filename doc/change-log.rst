@@ -10,7 +10,7 @@ Data Specification Change log
 
   * :ref:`record-formats`
 
-    * Renamed 'Intake - Funding Source' :ref:`dfn-program_type` on :ref:`intake-data-elements`
+    * Renamed 'Intake - Funding Source' to :ref:`dfn-program_type` on :ref:`intake-data-elements`
     * Added :ref:`dfn-program_type` to :ref:`episode-data-elements`
     * Removed Continuity of Support from :ref:`episode-data-elements`
 
