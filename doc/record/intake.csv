@@ -65,18 +65,13 @@
 :21: Other
 :98: N/A - Self referral
 :99: Not stated"
-"`Intake - Date client contacted Intake`_ (date_client_contacted_intake)
+"`Date client contacted Intake`_ (date_client_contacted_intake)
 
 ",date,yes,"The date on which the client first contacted the intake service"
-"`Intake - Funding Source`_ (intake_funding_source)
-
-",string,yes,":1: HeadtoHelp
-:2: AMHC
-:3: Other / Flexible Funding Pool"
 "`Suicide Referral Flag`_ (suicide_referral_flag)
 
 ",string,yes,"Identifies those individuals where a recent history of suicide attempt, or suicide risk, was a factor noted in the referral that underpinned the person's needs for assistance at intake or entry to the episode, as represented by a code."
-"`Intake - Date referred to other service at Intake conclusion`_ (date_referred_to_other_service_at_intake_conclusion)
+"`Date referred to other service at Intake conclusion`_ (date_referred_to_other_service_at_intake_conclusion)
 
 ",date,"—","The date the client was referred to another organisation at Intake conclusion."
 "`Organisation type referred to at Intake conclusion`_ (organisation_type_referred_to_at_intake_conclusion)
@@ -134,6 +129,6 @@ Multiple space separated values allowed
 "`Referred to Organisation Path`_ (referred_to_organisation_path)
 
 ",string,"—","A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation to which the intake referred the client."
-"`Intake - Tags`_ (intake_tags)
+"`Intake Tags`_ (intake_tags)
 
 ",string,"—","List of tags for the intake."

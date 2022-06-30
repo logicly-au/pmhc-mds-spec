@@ -8,12 +8,12 @@
 "`Episode Key`_ (episode_key)
 
 ","string (2,50)",yes,"This is a number or code assigned to each episode. The Episode Key is unique and stable for each episode at the level of the organisation."
-"`Service Contact - Date`_ (service_contact_date)
+"`Service Contact Date`_ (service_contact_date)
 
 
 
 METeOR: `494356 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494356>`__",date,yes,"The date of each mental health service contact between a health service provider and patient/client."
-"`Service Contact - Type`_ (service_contact_type)
+"`Service Contact Type`_ (service_contact_type)
 
 ",string,yes,":0: No contact took place
 :1: Assessment
@@ -26,19 +26,19 @@ METeOR: `494356 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494356>`__
 :8: Cultural specific assistance NEC
 :9: Psychosocial support
 :98: ATAPS"
-"`Service Contact - Postcode`_ (service_contact_postcode)
+"`Postcode`_ (service_contact_postcode)
 
 
 
 METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__",string,yes,"The Australian postcode where the service contact took place."
-"`Service Contact - Modality`_ (service_contact_modality)
+"`Modality`_ (service_contact_modality)
 
 ",string,yes,":0: No contact took place
 :1: Face to Face
 :2: Telephone
 :3: Video
 :4: Internet-based"
-"`Service Contact - Participants`_ (service_contact_participants)
+"`Participants`_ (service_contact_participants)
 
 ",string,yes,":1: Individual client
 :2: Client group
@@ -46,7 +46,7 @@ METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
 :4: Other health professional or service provider
 :5: Other
 :9: Not stated"
-"`Service Contact - Venue`_ (service_contact_venue)
+"`Venue`_ (service_contact_venue)
 
 ",string,yes,":1: Client's Home
 :2: Service provider's office
@@ -62,7 +62,7 @@ METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
 :12: Aged care centre - non-residential
 :98: Not applicable (Service Contact Modality is not face to face)
 :99: Not stated"
-"`Service Contact - Duration`_ (service_contact_duration)
+"`Duration`_ (service_contact_duration)
 
 ",string,yes,":0: No contact took place
 :1: 1-15 mins
@@ -74,33 +74,33 @@ METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
 :7: 91-105 mins
 :8: 106-120 mins
 :9: over 120 mins"
-"`Service Contact - Copayment`_ (service_contact_copayment)
+"`Copayment`_ (service_contact_copayment)
 
 ",number,yes,"0 - 999999.99"
-"`Service Contact - Client Participation Indicator`_ (service_contact_participation_indicator)
+"`Client Participation Indicator`_ (service_contact_participation_indicator)
 
 
 
 METeOR: `494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__",string,yes,":1: Yes
 :2: No"
-"`Service Contact - Interpreter Used`_ (service_contact_interpreter)
+"`Interpreter Used`_ (service_contact_interpreter)
 
 ",string,yes,":1: Yes
 :2: No
 :9: Not stated"
-"`Service Contact - No Show`_ (service_contact_no_show)
+"`No Show`_ (service_contact_no_show)
 
 ",string,yes,":1: Yes
 :2: No"
-"`Service Contact - Final`_ (service_contact_final)
+"`Final Service Contact`_ (service_contact_final)
 
 ",string,yes,":1: No further services are planned for the client in the current episode
 :2: Further services are planned for the client in the current episode
 :3: Not known at this stage"
-"`Service Contact - Start Time`_ (service_contact_start_time)
+"`Start Time`_ (service_contact_start_time)
 
 ",time,yes,"The start time of each mental health service contact between a health service provider and patient/client."
-"`Service Contact - Funding Source`_ (funding_source)
+"`Funding Source`_ (funding_source)
 
 ",string,yes,":100: PHN flexible funding NOS
 :110: Low intensity
@@ -131,6 +131,6 @@ METeOR: `494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__
 :860: Norfolk Island
 :900: Other funding source – no Commonwealth Funding
 :999: Unknown/Not stated"
-"`Service Contact - Tags`_ (service_contact_tags)
+"`Service Contact Tags`_ (service_contact_tags)
 
 ",string,"—","List of tags for the service contact."

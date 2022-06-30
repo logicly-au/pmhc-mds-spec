@@ -8,7 +8,7 @@
 "`Client Key`_ (client_key)
 
 ","string (2,50)",yes,"This is a number or code assigned to each individual client referred to the commissioned organisation. The client identifier is unique and stable for each individual within the Provider Organisation."
-"`Episode - End Date`_ (episode_end_date)
+"`Episode End Date`_ (episode_end_date)
 
 
 
@@ -17,7 +17,7 @@ METeOR: `614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__
 
 ",string,yes,":1: Yes
 :2: No"
-"`Episode - Completion Status`_ (episode_completion_status)
+"`Episode Completion Status`_ (episode_completion_status)
 
 ",string,"—",":0: Episode open
 :1: Episode closed - treatment concluded
@@ -36,7 +36,7 @@ METeOR: `614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__
 :3: AMHC
 :4: Psychosocial Support
 :5: Bushfire 20"
-"`Episode - Principal Focus of Treatment Plan`_ (principal_focus)
+"`Principal Focus of Treatment Plan`_ (principal_focus)
 
 ",string,yes,":1: Psychological therapy
 :2: Low intensity psychological intervention
@@ -46,24 +46,24 @@ METeOR: `614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__
 :6: Indigenous-specific mental health services
 :7: Other
 :8: Psychosocial Support"
-"`Episode - GP Mental Health Treatment Plan Flag`_ (mental_health_treatment_plan)
+"`GP Mental Health Treatment Plan Flag`_ (mental_health_treatment_plan)
 
 ",string,yes,":1: Yes
 :2: No
 :3: Unknown
 :9: Not stated/inadequately described"
-"`Episode - Homelessness Flag`_ (homelessness)
+"`Homelessness Flag`_ (homelessness)
 
 ",string,yes,":1: Sleeping rough or in non-conventional accommodation
 :2: Short-term or emergency accommodation
 :3: Not homeless
 :9: Not stated / Missing"
-"`Episode - Area of usual residence, postcode`_ (client_postcode)
+"`Area of usual residence, postcode`_ (client_postcode)
 
 
 
 METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__",string,yes,"The Australian postcode of the client."
-"`Episode - Labour Force Status`_ (labour_force_status)
+"`Labour Force Status`_ (labour_force_status)
 
 
 
@@ -71,7 +71,7 @@ METeOR: `621450 <http://meteor.aihw.gov.au/content/index.phtml/itemId/621450>`__
 :2: Unemployed
 :3: Not in the Labour Force
 :9: Not stated/inadequately described"
-"`Episode - Employment Participation`_ (employment_participation)
+"`Employment Participation`_ (employment_participation)
 
 
 
@@ -79,7 +79,7 @@ METeOR: `269950 <http://meteor.aihw.gov.au/content/index.phtml/itemId/269950>`__
 :2: Part-time
 :3: Not applicable - not in the labour force
 :9: Not stated/inadequately described"
-"`Episode - Source of Cash Income`_ (income_source)
+"`Source of Cash Income`_ (income_source)
 
 
 
@@ -92,7 +92,7 @@ METeOR: `386449 <http://meteor.aihw.gov.au/content/index.phtml/itemId/386449>`__
 :6: Nil income
 :7: Not known
 :9: Not stated/inadequately described"
-"`Episode - Health Care Card`_ (health_care_card)
+"`Health Care Card`_ (health_care_card)
 
 
 
@@ -100,12 +100,12 @@ METeOR: `605149 <http://meteor.aihw.gov.au/content/index.phtml/itemId/605149>`__
 :2: No
 :3: Not Known
 :9: Not stated"
-"`Episode - NDIS Participant`_ (ndis_participant)
+"`NDIS Participant`_ (ndis_participant)
 
 ",string,yes,":1: Yes
 :2: No
 :9: Not stated/inadequately described"
-"`Episode - Marital Status`_ (marital_status)
+"`Marital Status`_ (marital_status)
 
 
 
@@ -120,7 +120,7 @@ METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
 ",string,yes,":1: Yes
 :2: No
 :9: Unknown"
-"`Episode - Principal Diagnosis`_ (principal_diagnosis)
+"`Principal Diagnosis`_ (principal_diagnosis)
 
 ",string,yes,":100: Anxiety disorders (ATAPS)
 :101: Panic disorder
@@ -166,7 +166,7 @@ METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
 :904: Stress related
 :905: Other
 :999: Missing"
-"`Episode - Additional Diagnosis`_ (additional_diagnosis)
+"`Additional Diagnosis`_ (additional_diagnosis)
 
 ",string,yes,":000: No additional diagnosis
 :100: Anxiety disorders (ATAPS)
@@ -213,27 +213,27 @@ METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
 :904: Stress related
 :905: Other
 :999: Missing"
-"`Episode - Medication - Antipsychotics (N05A)`_ (medication_antipsychotics)
+"`Medication - Antipsychotics (N05A)`_ (medication_antipsychotics)
 
 ",string,yes,":1: Yes
 :2: No
 :9: Unknown"
-"`Episode - Medication - Anxiolytics (N05B)`_ (medication_anxiolytics)
+"`Medication - Anxiolytics (N05B)`_ (medication_anxiolytics)
 
 ",string,yes,":1: Yes
 :2: No
 :9: Unknown"
-"`Episode - Medication - Hypnotics and sedatives (N05C)`_ (medication_hypnotics)
+"`Medication - Hypnotics and sedatives (N05C)`_ (medication_hypnotics)
 
 ",string,yes,":1: Yes
 :2: No
 :9: Unknown"
-"`Episode - Medication - Antidepressants (N06A)`_ (medication_antidepressants)
+"`Medication - Antidepressants (N06A)`_ (medication_antidepressants)
 
 ",string,yes,":1: Yes
 :2: No
 :9: Unknown"
-"`Episode - Medication - Psychostimulants and nootropics (N06B)`_ (medication_psychostimulants)
+"`Medication - Psychostimulants and nootropics (N06B)`_ (medication_psychostimulants)
 
 ",string,yes,":1: Yes
 :2: No
@@ -313,6 +313,6 @@ METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
 
 Multiple space separated values allowed
 "
-"`Episode - Tags`_ (episode_tags)
+"`Episode Tags`_ (episode_tags)
 
 ",string,"—","List of tags for the episode."
