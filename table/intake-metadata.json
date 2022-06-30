@@ -73,6 +73,7 @@
     "titles": [ "program_type" ],
     "dc:title": "Program Type",
     "schema:description": "The overarching program area that an Intake or Episode record is associated with.",
+    "schema:disambiguatingDescription": "type/program-type.rst",
     "schema:whenToCollect": "Intake start",
     "schema:dateCreated": "2022-06-20",
     "schema:dateModified": "2022-06-20",
