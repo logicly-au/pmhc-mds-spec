@@ -1,4 +1,0 @@
-organisation_path,measure_key,delete,collection_occasion_key,iar_dst_domain_1,iar_dst_domain_2,iar_dst_domain_3,iar_dst_domain_4,iar_dst_domain_5,iar_dst_domain_6,iar_dst_domain_7,iar_dst_domain_8,iar_dst_recommended_level_of_care,iar_dst_tags
-PHN999:Intake01,M04,CO04-1,delete,,,,,,,,,
-PHN999:Intake01,M05,CO05-1,,1,2,1,2,1,2,1,2,"3+"
-PHN999:Intake01,M06,CO06-1,,3,3,1,1,0,0,1,1,"4+"
