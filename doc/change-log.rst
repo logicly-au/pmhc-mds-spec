@@ -3,16 +3,28 @@
 Data Specification Change log
 =============================
 
-??/?/2022 - 4.0.0-draft.3
--------------------------
+12/7/2022 - 4.0.0
+-----------------
+
+* :ref:`introduction`
+
+  * Changed terminology to use **treatment organisation** instead of **hub**
 
 * :ref:`data-model-and-specifications`
+
+  * :ref:`data-model`
+
+    * Updated data model diagrams
 
   * :ref:`record-formats`
 
     * Renamed 'Intake - Funding Source' to :ref:`dfn-program_type` on :ref:`intake-data-elements`
     * Added :ref:`dfn-program_type` to :ref:`episode-data-elements`
     * Removed Continuity of Support from :ref:`episode-data-elements`
+
+* :ref:`upload_specification`
+
+  * Updated example upload files
 
 31/5/2022 - 4.0.0-draft.2
 -------------------------
