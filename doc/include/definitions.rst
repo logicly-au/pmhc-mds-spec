@@ -16,6 +16,42 @@ The Australian Business Number of the provider organisation.
 
 ----------
 
+.. _dfn-client_atsi_status:
+
+Aboriginal and Torres Strait Islander Status
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Whether a person identifies as being of Aboriginal and/or Torres Strait Islander origin, as represented by a code.
+
+:Field name: client_atsi_status
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Aboriginal but not Torres Strait Islander origin
+  :2: Torres Strait Islander but not Aboriginal origin
+  :3: Both Aboriginal and Torres Strait Islander origin
+  :4: Neither Aboriginal or Torres Strait Islander origin
+  :9: Not stated/inadequately described
+
+:Notes:
+  Code 9 is not to be available as a valid answer to the questions but is
+    intended for use:
+  
+    - Primarily when importing data from other data collections that do not
+      contain mappable data.
+    - Where an answer was refused.
+    - Where the question was not able to be asked prior to completion of
+      assistance because the client was unable to communicate or a person who
+      knows the client was not available.
+  
+
+:METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__
+
+----------
+
 .. _dfn-practitioner_active:
 
 Active
@@ -4412,7 +4448,7 @@ The overarching program area that an Intake or Episode record is associated with
   :1: Flexible Funding Pool
   :2: Head to Health
   :3: AMHC
-  :4: Psychosocial Support
+  :4: Psychosocial
   :5: Bushfire 20
 
 :Notes:
