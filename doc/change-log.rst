@@ -3,8 +3,8 @@
 Data Specification Change log
 =============================
 
-12/7/2022 - 4.0.0
------------------
+12/7/2022 - 4.0.0-draft.2
+-------------------------
 
 * :ref:`introduction`
 
@@ -25,9 +25,6 @@ Data Specification Change log
 * :ref:`upload_specification`
 
   * Updated example upload files
-
-31/5/2022 - 4.0.0-draft.2
--------------------------
 
 * :ref:`validation-rules`
 

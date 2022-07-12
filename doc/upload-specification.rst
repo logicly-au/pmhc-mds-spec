@@ -67,7 +67,7 @@ a combined Intake/Treatment Service Provider. Please refer to
 All files must be internally consistent. An example of what this means
 is that for every HeadtoHelp episode, service contact and measures in an upload file,
 there must be a corresponding episode in the episodes file/worksheet.
-It also means that or every row in the episodes file/worksheet, there must be a
+It also means that for every row in the episodes file/worksheet, there must be a
 corresponding client in the clients file/worksheet.
 
 Files/worksheets for the Intake context
