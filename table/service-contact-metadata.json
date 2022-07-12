@@ -40,7 +40,7 @@
   },{
     "name": "service_contact_date",
     "titles": [ "service_contact_date" ],
-    "dc:title": "Service Contact - Date",
+    "dc:title": "Service Contact Date",
     "schema:description": "The date of each mental health service contact between a health service provider and patient/client.",
     "schema:disambiguatingDescription": "table/service-contact/date.rst",
     "schema:meteorItem": "494356",
@@ -55,7 +55,7 @@
   },{
     "name": "service_contact_type",
     "titles": [ "service_contact_type" ],
-    "dc:title": "Service Contact - Type",
+    "dc:title": "Service Contact Type",
     "schema:description": "The main type of service provided in the service contact, as represented by the service type that accounted for most provider time.",
     "schema:disambiguatingDescription": "table/service-contact/type.rst",
     "schema:dateCreated": "2016-06-22",
@@ -66,7 +66,7 @@
   },{
     "name": "service_contact_postcode",
     "titles": [ "service_contact_postcode" ],
-    "dc:title": "Service Contact - Postcode",
+    "dc:title": "Postcode",
     "schema:description": "The Australian postcode where the service contact took place.",
     "schema:disambiguatingDescription": "table/service-contact/postcode.rst",
     "schema:meteorItem": "429894",
@@ -79,7 +79,7 @@
   },{
     "name": "service_contact_modality",
     "titles": [ "service_contact_modality" ],
-    "dc:title": "Service Contact - Modality",
+    "dc:title": "Modality",
     "schema:description": "How the service contact was delivered, as represented by a code.",
     "schema:disambiguatingDescription": "table/service-contact/modality.rst",
     "schema:dateCreated": "2016-06-22",
@@ -90,7 +90,7 @@
   },{
     "name": "service_contact_participants",
     "titles": [ "service_contact_participants" ],
-    "dc:title": "Service Contact - Participants",
+    "dc:title": "Participants",
     "schema:description": "An indication of who participated in the Service Contact.",
     "schema:disambiguatingDescription": "table/service-contact/participants.rst",
     "schema:dateCreated": "2016-06-22",
@@ -101,7 +101,7 @@
   },{
     "name": "service_contact_venue",
     "titles": [ "service_contact_venue" ],
-    "dc:title": "Service Contact - Venue",
+    "dc:title": "Venue",
     "schema:description": "Where the service contact was delivered, as represented by a code.",
     "schema:disambiguatingDescription": "table/service-contact/venue.rst",
     "schema:dateCreated": "2016-06-22",
@@ -112,7 +112,7 @@
   },{
     "name": "service_contact_duration",
     "titles": [ "service_contact_duration" ],
-    "dc:title": "Service Contact - Duration",
+    "dc:title": "Duration",
     "schema:description": "The time from the start to finish of a service contact.",
     "schema:disambiguatingDescription": "table/service-contact/duration.rst",
     "schema:dateCreated": "2016-06-22",
@@ -123,7 +123,7 @@
   },{
     "name": "service_contact_copayment",
     "titles": [ "service_contact_copayment" ],
-    "dc:title": "Service Contact - Copayment",
+    "dc:title": "Copayment",
     "schema:description": "The co-payment is the amount paid by the client per session.",
     "schema:disambiguatingDescription": "table/service-contact/copayment.rst",
     "schema:dateCreated": "2016-06-22",
@@ -137,7 +137,7 @@
   },{
     "name": "service_contact_participation_indicator",
     "titles": [ "service_contact_participation_indicator" ],
-    "dc:title": "Service Contact - Client Participation Indicator",
+    "dc:title": "Client Participation Indicator",
     "schema:description": "An indicator of whether the client participated, or intended to participate, in the service contact, as represented by a code.",
     "schema:disambiguatingDescription": "table/service-contact/participation-indicator.rst",
     "schema:meteorItem": "494341",
@@ -149,7 +149,7 @@
   },{
     "name": "service_contact_interpreter",
     "titles": [ "service_contact_interpreter" ],
-    "dc:title": "Service Contact - Interpreter Used",
+    "dc:title": "Interpreter Used",
     "schema:description": "Whether an interpreter service was used during the Service Contact",
     "schema:disambiguatingDescription": "table/service-contact/interpreter.rst",
     "schema:dateCreated": "2016-07-08",
@@ -160,7 +160,7 @@
   },{
     "name": "service_contact_no_show",
     "titles": [ "service_contact_no_show" ],
-    "dc:title": "Service Contact - No Show",
+    "dc:title": "No Show",
     "schema:description": "Where an appointment was made for an intended participant(s), but the intended participant(s) failed to attend the appointment, as represented by a code.",
     "schema:disambiguatingDescription": "table/service-contact/no-show.rst",
     "schema:dateCreated": "2016-06-22",
@@ -171,7 +171,7 @@
   },{
     "name": "service_contact_final",
     "titles": "service_contact_final",
-    "dc:title": "Service Contact - Final",
+    "dc:title": "Final Service Contact",
     "schema:description": "An indication of whether the Service Contact is the final for the current Episode of Care",
     "schema:disambiguatingDescription": "table/service-contact/final.rst",
     "schema:dateCreated": "2016-07-08",
@@ -182,7 +182,7 @@
   },{
     "name": "service_contact_start_time",
     "titles": [ "service_contact_start_time" ],
-    "dc:title": "Service Contact - Start Time",
+    "dc:title": "Start Time",
     "schema:description": "The start time of each mental health service contact between a health service provider and patient/client.",
     "schema:disambiguatingDescription": "table/service-contact/start-time.rst",
     "schema:dateCreated": "2021-08-23",
@@ -195,7 +195,7 @@
   },{
     "name": "funding_source",
     "titles": [ "funding_source" ],
-    "dc:title": "Service Contact - Funding Source",
+    "dc:title": "Funding Source",
     "schema:description": "The source of funding for a service contact",
     "schema:disambiguatingDescription": "table/service-contact/funding-source.rst",
     "schema:dateCreated": "2021-08-23",
@@ -206,7 +206,7 @@
   },{
     "name": "service_contact_tags",
     "titles": [ "service_contact_tags" ],
-    "dc:title" : "Service Contact - Tags",
+    "dc:title" : "Service Contact Tags",
     "schema:description": "List of tags for the service contact.",
     "schema:disambiguatingDescription": "type/tags.rst",
     "schema:dateCreated": "2016-06-22",

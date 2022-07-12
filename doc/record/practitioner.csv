@@ -5,7 +5,7 @@
 "`Practitioner Key`_ (practitioner_key)
 
 ","string (2,50)",yes,"A unique identifier for a practitioner within the responsible provider organisation. Assigned by either the PHN or Provider Organisation depending on local procedures."
-"`Practitioner - Category`_ (practitioner_category)
+"`Practitioner Category`_ (practitioner_category)
 
 ",string,yes,":1: Clinical Psychologist
 :2: General Psychologist
@@ -21,16 +21,16 @@
 :12: Psychosocial Support Worker
 :13: Peer Support Worker
 :99: Not stated"
-"`Practitioner - ATSI Cultural Training`_ (atsi_cultural_training)
+"`ATSI Cultural Training`_ (atsi_cultural_training)
 
 ",string,yes,":1: Yes
 :2: No
 :3: Not required
 :9: Missing / Not recorded"
-"`Practitioner - Year of Birth`_ (practitioner_year_of_birth)
+"`Year of Birth`_ (practitioner_year_of_birth)
 
 ",gYear,yes,gYear
-"`Practitioner - Gender`_ (practitioner_gender)
+"`Practitioner Gender`_ (practitioner_gender)
 
 
 
@@ -38,7 +38,7 @@
 :1: Male
 :2: Female
 :3: Other"
-"`Practitioner - Aboriginal and Torres Strait Islander Status`_ (practitioner_atsi_status)
+"`Practitioner Aboriginal and Torres Strait Islander Status`_ (practitioner_atsi_status)
 
 
 
@@ -47,10 +47,10 @@ METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__
 :3: Both Aboriginal and Torres Strait Islander origin
 :4: Neither Aboriginal or Torres Strait Islander origin
 :9: Not stated/inadequately described"
-"`Practitioner - Active`_ (practitioner_active)
+"`Active`_ (practitioner_active)
 
 ",string,yes,":0: Inactive
 :1: Active"
-"`Practitioner - Tags`_ (practitioner_tags)
+"`Practitioner Tags`_ (practitioner_tags)
 
 ",string,"—","List of tags for the practitioner."

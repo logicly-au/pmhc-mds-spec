@@ -11,10 +11,19 @@ the Department.
 Tags field definitions for each record type are available in
 :ref:`record-formats`.
 
+.. current-reserved-tags:
+
+Reserved tags currently in use
+------------------------------
+
+The following tags can currently be used in PMHC MDS uploads and data entry:
+
+* :ref:`br20`
+
 .. _br20:
 
 !br20 - Australian Government Mental Health Response to Bushfire
-----------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 PHNs in fire affected communities are funded through the *Australian Government
 Mental Health Response to Bushfire Trauma* to deliver services including:
@@ -135,10 +144,28 @@ Considerations for applying the !br20 tag in data uploads
 
 Please refer to :ref:`reserved_tags_upload`
 
+.. _historical-reserved-tags:
+
+Reserved tags no longer in use
+------------------------------
+
+The following tags have previously available to be used in PMHC MDS uploads and
+data entry. They still remain on existing data but must not be used for new
+data uploaded after their retirement date. The following information is
+provided for historical reference only.
+
++----------------+-----------------+
+| Tag            | Retirement Date |
++================+=================+
+| :ref:`covid19` | 1 August 2022   |
++----------------+-----------------+
+| :ref:`amhc`    | 1 August 2022   |
++----------------+-----------------+
+
 .. _covid19:
 
 !covid19 - Australian Government HeadtoHelp hubs
-------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The Australian Government is providing funding to Victorian PHNs to deliver
 services through HeadtoHelp hubs as part of its response to the mental health
@@ -208,10 +235,88 @@ Considerations for applying the !covid19 tag in data uploads
 
 Please refer to :ref:`reserved_tags_upload`
 
+.. _amhc:
+
+!amhc - Australian Government Mental Health Centres
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Scope of new interim data collection requirements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Australian Government is providing funding to a number of PHNs who are
+responsible for the operation of the AMHC trial sites.
+
+The department is implementing a new tag in the PMHC MDS to capture activity
+associated with AMHCs from December 2021, until the new version 4 data model
+is available in March 2022.
+
+This change only applies to the following PHNs implementing AMHCs from
+December 2021:
+
+*	West Victoria PHN
+*	Northern Territory PHN
+*	ACT PHN
+*	North Perth PHN
+*	Nepean Blue Mountains PHN
+*	North Queensland PHN
+*	Tasmania PHN
+
+The department will provide further advice to these PHNs regarding new version
+4 data collection requirements in a future circular. PHNs implementing AMHCs
+will still be expected to retrospectively update AMHC data when the version
+4 data model is introduced. The department will work with PHNs and Logicly
+to ensure that PHNs have sufficient time to make these retrospective
+data updates.
+
+New ‘Australian Government Adult Mental Health Centre’ tag (!amhc)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The department is introducing an ‘Australian Government Adult Mental Health Centre’ tag to the PMHC MDS. It will be available before December 2021.
+
+The PHN must apply ‘Australian Government Adult Mental Health Centre’ tag (!amhc) to episodes of care initiated for clients who have been referred to the AMHC hub through the IAR process and are receiving services funded through the AMHC hubs contracts.
+
+A tick box will be added to the PMHC MDS interface to simplify data entry.
+
+How to apply the tag in the PMHC MDS data entry interface
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The AMHC tag is available for use on an episode record and is
+denoted ``!amhc``.
+
+There are two ways to apply the tag through the PMHC MDS data entry interface:
+
+  1. Manual data entry by typing the tag ``!amhc`` to the Episode tag field.
+
+      * When entering data directly, episodes will need to be tagged with the
+        string ``!amhc``. The data entry system already allows for the tagging
+        of records and therefore it is possible to implement this immediately
+        by communicating the instructions to users.
+      * Please note the free text nature of the tag system increases the
+        opportunity for errors because it is easy to mistype a tag. This should
+        be emphasised in communications with users.
+
+  2. Tick the box labelled ‘Australian Government Adult Mental Health Centre (!amhc)’.
+
+      * This tick box automatically adds/removes the tag when ticked/unticked.
+
+The checkbox is on the Episode add and edit screen:
+
+  * Ticking the checkbox will add the ``!amhc`` tag to the tag field
+  * Typing the ``!amhc`` tag into the tag box will also tick the checkbox
+  * Unticking the ``!amhc`` checkbox will remove the ``!amhc`` tag
+  * Deleting the ``!amhc`` tag from the tag field will also untick the checkbox
+
+.. _amhc-Upload:
+
+Considerations for applying the !amhc tag in data uploads
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Please refer to :ref:`reserved_tags_upload`
+
 .. _reserved_tags_upload:
 
 Considerations for applying reserved tags in data uploads
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------------------------------
 
 Users of local third-party or in-house developed systems will need to address
 varying issues depending on the capability of the system. When considering

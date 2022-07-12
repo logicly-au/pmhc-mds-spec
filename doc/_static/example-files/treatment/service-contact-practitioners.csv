@@ -1,0 +1,13 @@
+organisation_path,service_contact_practitioner_key,service_contact_key,practitioner_key,primary_practitioner_indicator
+PHN999:Treatment01,SCPK400,S400,P400,1
+PHN999:Treatment01,SCPK401,S401,P401,1
+PHN999:Treatment01,SCPK402,S402,P402,1
+PHN999:Treatment01,SCPK403,S403,P403,1
+PHN999:Treatment01,SCPK404,S404,P404,1
+PHN999:Treatment01,SCPK405,S405,P405,1
+PHN999:Treatment01,SCPK406,S406,P406,1
+PHN999:Treatment01,SCPK407,S407,P407,1
+PHN999:Treatment01,SCPK408,S408,P408,1
+PHN999:Treatment01,SCPK409,S409,P409,1
+PHN999:Treatment01,SCPK410,S400,P401,2
+PHN999:Treatment01,SCPK411,S409,P408,2

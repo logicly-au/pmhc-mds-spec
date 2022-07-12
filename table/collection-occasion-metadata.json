@@ -41,7 +41,7 @@
   },{
     "name": "collection_occasion_date",
     "titles": [ "collection_occasion_date" ],
-    "dc:title": "Collection Occasion - Date",
+    "dc:title": "Collection Occasion Date",
     "schema:description": "The date of the collection occasion.",
     "schema:disambiguatingDescription": "type/collection-occasion-date.rst",
     "schema:dateCreated": "2021-08-23",
@@ -55,7 +55,7 @@
   },{
     "name": "reason_for_collection",
     "titles": [ "reason_for_collection" ],
-    "dc:title": "Collection Occasion - Reason",
+    "dc:title": "Collection Occasion Reason",
     "schema:description": "The reason for the collection of the service activities on the identified Collection Occasion.",
     "schema:disambiguatingDescription": "table/collection-occasion/reason.rst",
     "schema:dateCreated": "2021-08-23",
@@ -66,7 +66,7 @@
   },{
     "name": "collection_occasion_tags",
     "titles": [ "collection_occasion_tags" ],
-    "dc:title" : "Collection Occasion - Tags",
+    "dc:title" : "Collection Occasion Tags",
     "schema:description": "List of tags for the collection occasion.",
     "schema:disambiguatingDescription": "type/tags.rst",
     "schema:dateCreated": "2021-08-23",

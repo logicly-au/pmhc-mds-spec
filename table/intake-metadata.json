@@ -73,6 +73,7 @@
     "titles": [ "program_type" ],
     "dc:title": "Program Type",
     "schema:description": "The overarching program area that an Intake or Episode record is associated with.",
+    "schema:disambiguatingDescription": "type/program-type.rst",
     "schema:whenToCollect": "Intake start",
     "schema:dateCreated": "2022-06-20",
     "schema:dateModified": "2022-06-20",
@@ -107,7 +108,7 @@
   },{
     "name": "date_client_contacted_intake",
     "titles": [ "date_client_contacted_intake" ],
-    "dc:title": "Intake - Date client contacted Intake",
+    "dc:title": "Date client contacted Intake",
     "schema:description": "The date on which the client first contacted the intake service",
     "schema:disambiguatingDescription": "table/intake/contact-date.rst",
     "schema:whenToCollect": "Intake start",
@@ -116,17 +117,6 @@
       "base": "date",
       "format": "dMMyyyy",
       "minimum": "2020-01-01"
-    },
-    "required": true
-  },{
-    "name": "intake_funding_source",
-    "titles": [ "intake_funding_source" ],
-    "dc:title": "Intake - Funding Source",
-    "schema:description": "The source of funding for the intake",
-    "schema:whenToCollect": "Intake start",
-    "schema:dateCreated": "2021-08-23",
-    "datatype": {
-      "base": "string"
     },
     "required": true
   },{
@@ -143,7 +133,7 @@
   },{
     "name": "date_referred_to_other_service_at_intake_conclusion",
     "titles": [ "date_referred_to_other_service_at_intake_conclusion" ],
-    "dc:title": "Intake - Date referred to other service at Intake conclusion",
+    "dc:title": "Date referred to other service at Intake conclusion",
     "schema:description": "The date the client was referred to another organisation at Intake conclusion.",
     "schema:disambiguatingDescription": "table/intake/referral-out-date.rst",
     "schema:whenToCollect": "Intake conclusion",
@@ -181,7 +171,7 @@
   },{
     "name": "intake_tags",
     "titles": [ "intake_tags" ],
-    "dc:title" : "Intake - Tags",
+    "dc:title" : "Intake Tags",
     "schema:description": "List of tags for the intake.",
     "schema:disambiguatingDescription": "type/tags.rst",
     "schema:dateCreated": "2021-08-23",

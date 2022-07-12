@@ -1,0 +1,11 @@
+organisation_path,service_contact_key,episode_key,service_contact_date,service_contact_type,service_contact_postcode,service_contact_modality,service_contact_participants,service_contact_venue,service_contact_duration,service_contact_copayment,service_contact_participation_indicator,service_contact_interpreter,service_contact_no_show,service_contact_final,service_contact_start_time,funding_source,service_contact_tags
+PHN999:IntakeTreatment01,S400,E400,17052021,6,9999,2,1,98,8,1,1,2,2,1,10:30,400,
+PHN999:IntakeTreatment01,S401,E401,17122021,7,3065,1,5,2,8,2,1,2,2,1,15:20,100,
+PHN999:IntakeTreatment01,S402,E402,28032021,3,9999,2,1,98,1,3,1,9,2,2,16:20,200,
+PHN999:IntakeTreatment01,S403,E402,17052021,3,9999,2,9,98,6,4,1,2,2,2,09:20,100,
+PHN999:IntakeTreatment01,S404,E402,03082021,5,9999,3,9,98,2,5,1,2,2,1,11:20,400,
+PHN999:IntakeTreatment01,S405,E403,17112021,2,9999,3,1,98,6,6,1,9,2,1,15:00,100,
+PHN999:IntakeTreatment01,S406,E404,12082021,1,3088,1,1,10,9,7,1,1,2,1,09:20,100,
+PHN999:IntakeTreatment01,S407,E405,11012022,2,9999,4,3,98,9,8,1,1,2,2,11:10,300,
+PHN999:IntakeTreatment01,S408,E406,28062021,1,3139,1,1,8,9,9,1,9,2,2,13:50,200,
+PHN999:IntakeTreatment01,S409,E406,17082021,3,9998,1,5,3,8,10,1,2,2,1,13:50,200,

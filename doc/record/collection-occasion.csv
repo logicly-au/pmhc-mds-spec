@@ -8,14 +8,14 @@
 "`Episode Key`_ (episode_key)
 
 ","string (2,50)",yes,"This is a number or code assigned to each PMHC MDS episode. The Episode Key is unique and stable for each episode at the level of the organisation. This key must link to an existing episode within the PMHC MDS."
-"`Collection Occasion - Date`_ (collection_occasion_date)
+"`Collection Occasion Date`_ (collection_occasion_date)
 
 ",date,yes,"The date of the collection occasion."
-"`Collection Occasion - Reason`_ (reason_for_collection)
+"`Collection Occasion Reason`_ (reason_for_collection)
 
 ",string,yes,":1: Episode start
 :2: Review
 :3: Episode end"
-"`Collection Occasion - Tags`_ (collection_occasion_tags)
+"`Collection Occasion Tags`_ (collection_occasion_tags)
 
 ",string,"—","List of tags for the collection occasion."

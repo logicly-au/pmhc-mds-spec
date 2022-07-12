@@ -1,0 +1,4 @@
+Context,CSV zip,XLSX
+Intake,`PMHC-4-0-intake.zip <_static/example-files/PMHC-4-0-intake.zip>`_,`PMHC-4-0-intake.xlsx <_static/example-files/PMHC-4-0-intake.xlsx>`_
+Treatment,`PMHC-4-0-treatment.zip <_static/example-files/PMHC-4-0-treatment.zip>`_,`PMHC-4-0-treatment.xlsx <_static/example-files/PMHC-4-0-treatment.xlsx>`_
+Combined,`PMHC-4-0-combined.zip <_static/example-files/PMHC-4-0-combined.zip>`_,`PMHC-4-0-combined.xlsx <_static/example-files/PMHC-4-0-combined.xlsx>`_

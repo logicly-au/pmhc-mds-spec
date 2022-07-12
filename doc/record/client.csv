@@ -5,23 +5,23 @@
 "`Client Key`_ (client_key)
 
 ","string (2,50)",yes,"This is a number or code assigned to each individual client referred to the commissioned organisation. The client identifier must be unique and stable for each individual within the Provider Organisation. Assigned by either the PHN or Provider Organisation depending on local procedures."
-"`Client - Statistical Linkage Key`_ (slk)
+"`Statistical Linkage Key`_ (slk)
 
 
 
 METeOR: `349510 <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`__","string (14,40)",yes,"A key that enables two or more records belonging to the same individual to be brought together."
-"`Client - Date of Birth`_ (date_of_birth)
+"`Date of Birth`_ (date_of_birth)
 
 
 
 METeOR: `287007 <http://meteor.aihw.gov.au/content/index.phtml/itemId/287007>`__",date,yes,"The date on which an individual was born."
-"`Client - Estimated Date of Birth Flag`_ (est_date_of_birth)
+"`Estimated Date of Birth Flag`_ (est_date_of_birth)
 
 ",string,yes,":1: Date of birth is accurate
 :2: Date of birth is an estimate
 :8: Date of birth is a 'dummy' date (ie, 09099999)
 :9: Accuracy of stated date of birth is not known"
-"`Client - Gender`_ (client_gender)
+"`Client Gender`_ (client_gender)
 
 
 
@@ -29,7 +29,7 @@ METeOR: `287007 <http://meteor.aihw.gov.au/content/index.phtml/itemId/287007>`__
 :1: Male
 :2: Female
 :3: Other"
-"`Client - Aboriginal and Torres Strait Islander Status`_ (client_atsi_status)
+"`Aboriginal and Torres Strait Islander Status`_ (client_atsi_status)
 
 
 
@@ -38,7 +38,7 @@ METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__
 :3: Both Aboriginal and Torres Strait Islander origin
 :4: Neither Aboriginal or Torres Strait Islander origin
 :9: Not stated/inadequately described"
-"`Client - Country of Birth`_ (country_of_birth)
+"`Country of Birth`_ (country_of_birth)
 
 
 
@@ -300,7 +300,7 @@ METeOR: `459973 <http://meteor.aihw.gov.au/content/index.phtml/itemId/459973>`__
 :9232: Zimbabwe
 :9299: Southern and East Africa, nec
 :9999: Unknown"
-"`Client - Main Language Spoken at Home`_ (main_lang_at_home)
+"`Main Language Spoken at Home`_ (main_lang_at_home)
 
 
 
@@ -742,7 +742,7 @@ METeOR: `460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__
 :9702: Key Word Sign Australia
 :9799: Sign Languages, nec
 :9999: Unknown"
-"`Client - Proficiency in Spoken English`_ (prof_english)
+"`Proficiency in Spoken English`_ (prof_english)
 
 
 
@@ -752,6 +752,6 @@ METeOR: `270203 <http://meteor.aihw.gov.au/content/index.phtml/itemId/270203>`__
 :3: Not well
 :4: Not at all
 :9: Not stated/inadequately described"
-"`Client - Tags`_ (client_tags)
+"`Client Tags`_ (client_tags)
 
 ",string,"—","List of tags for the client."

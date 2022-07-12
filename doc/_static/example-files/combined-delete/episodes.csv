@@ -1,0 +1,11 @@
+organisation_path,episode_key,delete,client_key,episode_end_date,client_consent,episode_completion_status,referral_date,program_type,principal_focus,mental_health_treatment_plan,homelessness,client_postcode,labour_force_status,employment_participation,income_source,health_care_card,ndis_participant,marital_status,suicide_referral_flag,principal_diagnosis,additional_diagnosis,medication_antipsychotics,medication_anxiolytics,medication_hypnotics,medication_antidepressants,medication_psychostimulants,referrer_profession,referrer_organisation_type,organisation_type_referred_to_at_episode_conclusion,episode_tags
+PHN999:IntakeTreatment01,E400,delete,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PHN999:IntakeTreatment01,E401,delete,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PHN999:IntakeTreatment01,E402,delete,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PHN999:IntakeTreatment01,E403,delete,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PHN999:IntakeTreatment01,E404,delete,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PHN999:IntakeTreatment01,E405,delete,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PHN999:IntakeTreatment01,E406,delete,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PHN999:IntakeTreatment01,E407,delete,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PHN999:IntakeTreatment01,E408,delete,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PHN999:IntakeTreatment01,E409,delete,,,,,,,,,,,,,,,,,,,,,,,,,,,,

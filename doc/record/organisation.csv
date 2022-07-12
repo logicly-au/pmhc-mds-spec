@@ -5,16 +5,16 @@
 "`Organisation Key`_ (organisation_key)
 
 ","string (2,50)",yes,"A sequence of characters which uniquely identifies the provider organisation to the Primary Health Network. Assigned by the Primary Health Network."
-"`Provider Organisation - Name`_ (organisation_name)
+"`Name`_ (organisation_name)
 
 ","string (2,100)",yes,"The name of the provider organisation."
-"`Provider Organisation - Legal Name`_ (organisation_legal_name)
+"`Legal Name`_ (organisation_legal_name)
 
 ",string,"—","The legal name of the provider organisation."
-"`Provider Organisation - ABN`_ (organisation_abn)
+"`ABN`_ (organisation_abn)
 
 ","string (11)",yes,"The Australian Business Number of the provider organisation."
-"`Provider Organisation - Type`_ (organisation_type)
+"`Organisation Type`_ (organisation_type)
 
 ",string,yes,":1: Private Allied Health Professional Practice
 :2: Private Psychiatry Practice
@@ -31,7 +31,7 @@
 :13: Division of General Practice
 :98: Other
 :99: Missing"
-"`Provider Organisation - State`_ (organisation_state)
+"`State`_ (organisation_state)
 
 
 
@@ -44,12 +44,12 @@ METeOR: `613718 <http://meteor.aihw.gov.au/content/index.phtml/itemId/613718>`__
 :7: Northern Territory
 :8: Australian Capital Territory
 :9: Other Territories"
-"`Provider Organisation - Start Date`_ (organisation_start_date)
+"`Organisation Start Date`_ (organisation_start_date)
 
 ",date,yes,"The date on which a provider organisation started delivering services."
-"`Provider Organisation - End Date`_ (organisation_end_date)
+"`Organisation End Date`_ (organisation_end_date)
 
 ",date,yes,"The date on which a provider organisation stopped delivering services."
-"`Provider Organisation - Tags`_ (organisation_tags)
+"`Organisation Tags`_ (organisation_tags)
 
 ",string,"—","List of tags for the provider organisation."

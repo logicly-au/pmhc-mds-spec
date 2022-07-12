@@ -4,7 +4,7 @@ Introduction
 ============
 
 The recording of intake related activity (including activity for the
-HeadtoHelp/HeadtoHealth and AMHC programmes) in the PMHC MDS will be
+Head to Health and AMHC programmes) in the PMHC MDS will be
 implemented as a core PMHC-MDS version 4 specification.
 
 The new version 4 specification will comprise 4 entirely new tables, and the
@@ -21,25 +21,30 @@ The new tables are :ref:`intake-data-elements`,
 Contexts
 --------
 
-There are four contexts where data can be submitted using the version 4
-specification - Intake teams, Hubs, Combined Intake/Hubs and Service Providers
-where there is no intake process.
+There are three contexts where data can be submitted using the version 4
+specification:
+
+1. Intake teams
+2. Treatment organisations
+3. Combined Intake/Treatment organisations
 
 Different records in the specification are intended to be used in each of
 these contexts.
 
-Within the PMHC-MDS system a single intake team and individual service providers/hubs
-will each have their own organisation path and report data against those
-organisations. It is noted that some service providers/hubs may be existing provider
-organisations within the PMHC-MDS. The version 4 specification is compatible
-with this reality.
+Within the PMHC-MDS system a single intake team and individual
+service providers/treatment organisations will each have their own organisation
+path and report data against those organisations.
 
 .. _introduction-intake-context:
 
 Intake Context
 ^^^^^^^^^^^^^^
 
-.. figure:: figures/data-model-v4-intake.svg
+Where an organisation is only providing intake services and not providing any
+treatment services, they can use the following data model to submit data to
+the PMHC MDS:
+
+.. figure:: figures/data-model-v4.0-intake.svg
    :alt: PMHC MDS v4.0 Intake Only Data Model
 
 In the Intake context the following records will need to be provided:
@@ -50,15 +55,19 @@ In the Intake context the following records will need to be provided:
 
 Episode and Service contact activity is not submitted in this context.
 
-.. _introduction-hub-context:
+.. _introduction-treatment-context:
 
-Hub Service Provider Context
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Treatment Service Provider Context
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: figures/data-model-v4-hub.svg
-   :alt: PMHC MDS v4.0 Hub Service Provider Data Model
+Where an organisation is only providing treatment services and not providing any
+intake services, they can use the following data model to submit data to
+the PMHC MDS:
 
-In the hub context the specification works almost the same as a
+.. figure:: figures/data-model-v4.0-treatment.svg
+   :alt: PMHC MDS v4.0 Treatment Service Provider Data Model
+
+In the treatment context the specification works almost the same as a
 service reporting via the Version 2 core PMHC-MDS specification using the new
 :ref:`intake-episode-data-elements` record
 to identify additional detail regarding referrals in from the
@@ -68,36 +77,23 @@ the involvement of multiple practitioners in service
 contacts (:ref:`service-contact-practitioner-data-elements`) which allows
 multiple endorsements.
 
+Intake and IAR-DST activity is not submitted in this context.
+
 .. _introduction-combined-context:
 
-Combined Intake/Hub Context
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Combined Intake/Treatment Context
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: figures/data-model-v4-combined.svg
-   :alt: PMHC MDS v4.0 Combined Intake/Hub Service Provider Data Model
+Where an organisation is providing both intake services and
+treatment services, they can use the full data model to submit data to
+the PMHC MDS:
+
+.. figure:: figures/data-model-v4.0-combined.svg
+   :alt: PMHC MDS v4.0 Combined Intake/Treatment Service Provider Data Model
 
 In the combined context all the records described in both the
-:ref:`introduction-intake-context` and :ref:`introduction-hub-context`
+:ref:`introduction-intake-context` and :ref:`introduction-treatment-context`
 can be submitted.
-
-.. _introduction-non-hub-context:
-
-Non Hub Service Provider Context
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. figure:: figures/data-model-v4-non-hub.svg
-   :alt: PMHC MDS v4.0 Non Hub Service Provider Data Model
-
-In the non hub context (this is where there is no intake and is analogous with
-the current Version 2 specification), the specification works almost the same
-as a service reporting via the Version 2 core PMHC-MDS specification.
-
-The :ref:`intake-data-elements` and :ref:`intake-episode-data-elements` do not
-need to be supplied where there is no Intake component.
-
-Version 4 allows for the involvement of multiple practitioners  in service
-contacts (:ref:`service-contact-practitioner-data-elements`) which allows
-multiple endorsements.
 
 New Records and Fields in Version 4
 -----------------------------------
@@ -113,14 +109,14 @@ The :ref:`intake-data-elements` table comprises records information about the
 intake.
 
 :ref:`dfn-organisation_path` and :ref:`dfn-intake_key` are the
-two fields required to link the hub intake at the intake provider organisation
-to the episode record at the hub organisation.
+two fields required to link the Intake record at the intake provider organisation
+to the Episode record at the treatment organisation.
 
 The values of these fields should be passed along by the intake organisation
-to the hub organisation where the hub organisation will use them to fill in
-:ref:`dfn-intake_organisation_path` and :ref:`dfn-intake_key`. This will
-then link the intake record at the intake organisation with the Episode
-record at the hub organisation.
+to the treatment organisation where the treatment  organisation will use them
+to fill in :ref:`dfn-intake_organisation_path` and :ref:`dfn-intake_key`. This will
+then link the Intake record at the intake organisation with the Episode
+record at the treatment organisation.
 
 .. _introduction-iar-dst:
 
@@ -147,11 +143,11 @@ both domain scores and recommended level of care is to:
 Episode and Intake Episode
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-When the client is referred to a PMHC MDS reporting service (either a hub
-or a non-hub) a new :ref:`episode-data-elements` record is created.
+When the client is referred to a PMHC MDS reporting treatment service
+ a new :ref:`episode-data-elements` record is created.
 
-Where the service is a hub an additional :ref:`intake-episode-data-elements`
-record is also created.
+Where the client has been referred via an intake process, an
+additional :ref:`intake-episode-data-elements` record is also created.
 
 The :ref:`intake-episode-data-elements` table comprises a composite foreign key to link it
 back to an episode record on which all the episode information is

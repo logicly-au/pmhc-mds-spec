@@ -8,22 +8,41 @@ Data model and specifications
 Data model
 ----------
 
+There are three contexts where data can be submitted using the version 4
+specification:
+
+1. Intake teams
+2. Treatment organisations
+3. Combined Intake/Treatment organisations
+
+Different records in the specification are intended to be used in each of
+these contexts.
+
+Within the PMHC-MDS system a single intake team and individual
+service providers/treatment organisations will each have their own organisation
+path and report data against those organisations.
+
+Below is the combined Intake/Treatment data model. If an Intake only or
+Treatment only organisation is submitting data, a sub set of this data model
+may be submitted. Please refer to :ref:`introduction-contexts` for data models
+of the different contexts that may be submitted.
+
 .. _data-model-diagram:
 
-.. figure:: figures/data-model-v4-combined.svg
-   :alt: PMHC data model
+.. figure:: figures/data-model-v4.0-combined.svg
+   :alt: PMHC MDS Version 4.0 combined data model
 
-   PMHC data model
+   PMHC MDS Version 4.0 combined data model
 
 **Note:** :ref:`collection-occasion-diagram` for more details about
 Collection Occasion records.
 
 .. _collection-occasion-diagram:
 
-.. figure:: figures/collection-occasion-data-model-v3.svg
-   :alt: PMHC Collection Occasion data model
+.. figure:: figures/collection-occasion-data-model-v4.0.svg
+   :alt: PMHC MDS Version 4.0 Collection Occasion data model
 
-   PMHC Collection Occasion data model
+   PMHC MDS Version 4.0 Collection Occasion data model
 
 **Note:** See :ref:`data-model-diagram` for more details about how
 Collection Occasion records fit into the overall structure.
@@ -396,7 +415,7 @@ Collection occasions are managed by the provider organisations via upload.
 .. csv-table:: Collection Occasion record layout
    :file: record/collection-occasion.csv
    :header-rows: 1
-   
+
 .. _measure-data-elements:
 
 Measures
@@ -483,12 +502,12 @@ and discharge and are rated on the basis of the previous 1 month period.
 
 The versions specified for PMHC MDS reporting are:
 
-- PC1 - Parent Report Measure for Children aged 4-10, Baseline version;
-- PC2 - Parent Report Measure for Children and Adolescents aged 4-10, Follow up version;
-- PY1 - Parent Report Measure for Youth aged 11-17, Baseline version;
-- PY2 - Parent Report Measure for Youth aged 11-17, Follow up version;
-- YR1 - Youth self report measure (11-17), Baseline version; and
-- YR2 - Youth self report measure (11-17), Follow up version.
+- PC1 - SDQ Parent Report: 4-10 years (Baseline version);
+- PC2 - SDQ Parent Report: 4-10 years (Follow up version);
+- PY1 - SDQ Parent Report: 11-17 years (Baseline version);
+- PY2 - SDQ Parent Report: 11-17 years (Follow up version);
+- YR1 - SDQ Youth Report: 11-17 years (Baseline version); and
+- YR2 - SDQ Youth Report: 11-17 years (Follow up version).
 
 *We acknowledge that there is also a parent-report for 2-4 years; and teacher versions for all the years (2-4; 4-10 and 11-17) but that these are not to be reported the PMHC-MDS.*
 
