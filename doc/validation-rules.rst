@@ -197,6 +197,8 @@ Service Contact
       * and must not be before :ref:`dfn-organisation_start_date`
       * and must not be after :ref:`dfn-organisation_end_date`
       * and must not be in the future
+  15. :ref:`dfn-service_contact_start_time` value of '24:00' cannot be used on new records.
+  16. Existing records already containing a :ref:`dfn-service_contact_start_time` that is not '24:00' may not be updated to '24:00'.
 
 .. _service-contact-practitioner-current-validations:
 

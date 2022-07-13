@@ -50,7 +50,7 @@
       "format": "dMMyyyy",
       "minimum": "2014-01-01"
     },
-    "schema:dateMissingUnknown": "9999-09-09",
+    "schema:timeMissingUnknown": "24:00",
     "required": true
   },{
     "name": "service_contact_type",
