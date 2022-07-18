@@ -3,10 +3,14 @@
 Data Specification Change log
 =============================
 
-19/7/2022 - 4.0.0-draft.4
--------------------------
+19/7/2022
+---------
 
 * Added :ref:`changes-from-v2`
+
+* :ref:`upload_specification`
+
+  * Removed Funding Source from Intake example upload files
 
 18/7/2022 - 4.0.0-draft.3
 -------------------------
