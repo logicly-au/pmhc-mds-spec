@@ -3,14 +3,19 @@
 Data Specification Change log
 =============================
 
+19/7/2022 - 4.0.0-draft.4
+-------------------------
+
+* Added :ref:`changes-from-v2`
+
 18/7/2022 - 4.0.0-draft.3
 -------------------------
 
 * :ref:`data-model-and-specifications`
 
-* :ref:`record-formats`
+  * :ref:`record-formats`
 
-  * Removed Psychosocial Support from :ref:`dfn-principal_focus`
+    * Removed Psychosocial Support from :ref:`dfn-principal_focus`
 
 12/7/2022 - 4.0.0-draft.2
 -------------------------

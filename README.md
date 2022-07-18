@@ -79,3 +79,11 @@ Find files referenced files that don't exist:
 ```
 cat metadata.json | grep tableSchema | cut -d: -f2 | sort | uniq | xargs -n1 -I{} cat {} > /dev/null
 ```
+
+## Commands useful for creating xlsx Files
+```
+./scripts/csv2xlsx.pl --context=intake doc/_static/example-files/
+./scripts/csv2xlsx.pl --context=treatment doc/_static/example-files/
+./scripts/csv2xlsx.pl --context=combined doc/_static/example-files/
+./scripts/csv2xlsx.pl --delete doc/_static/example-files/
+```
