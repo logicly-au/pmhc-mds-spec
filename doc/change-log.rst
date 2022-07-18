@@ -3,6 +3,15 @@
 Data Specification Change log
 =============================
 
+18/7/2022 - 4.0.0-draft.3
+-------------------------
+
+* :ref:`data-model-and-specifications`
+
+* :ref:`record-formats`
+
+  * Removed Psychosocial Support from :ref:`dfn-principal_focus`
+
 12/7/2022 - 4.0.0-draft.2
 -------------------------
 
