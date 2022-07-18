@@ -3,6 +3,14 @@
 Data Specification Change log
 =============================
 
+18/7/2022
+---------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`sdq-data-elements` - Removed references to `Children` and
+    `Adolescents` in descriptions of SDQ versions.
+
 29/3/2022
 ---------
 
@@ -13,7 +21,7 @@ Data Specification Change log
 
 * :ref:`validation-rules`
 
-  * Updated the validation on entity keys so that they must start with 
+  * Updated the validation on entity keys so that they must start with
     a POSIX alphanumeric character (A-Za-z0-9)
 
 7/12/2021
