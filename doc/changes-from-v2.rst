@@ -3,6 +3,19 @@
 Changes and Upgrading from Version 2
 ====================================
 
+Version 4.0 introduces the recording of intake related activity (including
+activity for the Head to Health and AMHC programmes) in the PMHC MDS as part
+of the core  specification.
+
+There are three contexts where data can be submitted using the version 4 specification:
+
+* Intake teams
+* Treatment organisations
+* Combined Intake/Treatment organisations
+
+Please refer to
+:ref:`introduction-contexts` for further information about these contexts.
+
 .. _data-specification-changes:
 
 Data Specification Changes
@@ -11,10 +24,11 @@ Data Specification Changes
 A summary of the changes between the PMHC MDS Version 2.0 and
 PMHC MDS Version 4.0 data specifications are as follows:
 
-* Version 4.0 introduces the concept of an :ref:`key-concepts-intake`.
-* In order to support the Intake concept three records have been added -
-  :ref:`intake-data-elements`, :ref:`iar-dst-data-elements` and
-  :ref:`intake-episode-data-elements`.
+* Version 4.0 introduces the concept of an :ref:`key-concepts-intake`
+* In order to support the Intake concept three records have been added:
+
+  * For the Intake context - :ref:`intake-data-elements`, :ref:`iar-dst-data-elements`
+  * For the Treatment context - :ref:`intake-episode-data-elements`
 * The data model has been upgraded to allow multiple practitioners to be
   associated with a :ref:`service-contact-data-elements`. To support this an
   extra record, :ref:`service-contact-practitioner-data-elements` has been
