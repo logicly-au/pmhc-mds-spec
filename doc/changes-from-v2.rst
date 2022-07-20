@@ -29,6 +29,7 @@ PMHC MDS Version 4.0 data specifications are as follows:
 
   * For the Intake context - :ref:`intake-data-elements`, :ref:`iar-dst-data-elements`
   * For the Treatment context - :ref:`intake-episode-data-elements`
+  * All three records are required in the combined Intake/Treatment context
 * The data model has been upgraded to allow multiple practitioners to be
   associated with a :ref:`service-contact-data-elements`. To support this an
   extra record, :ref:`service-contact-practitioner-data-elements` has been
@@ -55,15 +56,16 @@ PMHC MDS Version 4.0 data specifications are as follows:
   * :ref:`dfn-funding_source`
 
 
-* Collection occasion and measures data has been separated into separate
-  Collection occasion and measures records and upload files/worksheets so
+* Version 4 uses the same collection occasion and measures model as the
+  Version 3 HeadtoHelp and Wayback extensions.
+
+  Collection occasion and measures data has been separated into separate
+  collection occasion and measures records and upload files/worksheets so
   that multiple measures can be collected at a single collection occasion.
   The Collection Occasion record retains the Episode Key, Date and Reason for
   Collection. Separate records exist for the K10+, K5 and SDQ measures.
   Each of these measures records contain the Collection Occasion Key, a
   Measure Key, and item/subscale/total scores for the particular measure.
-  This model is the same as that used for the Version 3 HeadtoHelp and
-  Wayback extensions.
 
   In order to support both Version 2 and Version 3 data specifications, the
   PMHC MDS has been converting data uploaded using the Version 2 upload format
@@ -72,6 +74,12 @@ PMHC MDS Version 4.0 data specifications are as follows:
   random uuid strings and can be viewed through the Data Entry interface or
   by downloading the data in a non Version 2 format.
 
+  *As the PMHC MDS has been auto creating Measure Keys, in order to upgrade
+  from Version 2 uploads to Version 4 uploads some work will be involved to
+  ensure that, for existing data, the Measure Keys supplied in the Version 4
+  upload, matches the Measure Keys already stored in the PMHC MDS. Please
+  refer to* :ref:`steps-required-to-upgrade` *below for an explanation of the
+  different options available.*
 
 
 .. _upload-specification-changes:
@@ -99,6 +107,8 @@ specification:
    :alt: PMHC MDS Version 4.0.0 combined context upload columns
 
    PMHC MDS Version 4.0.0 combined context upload columns
+
+.. _steps-required-to-upgrade:
 
 Steps required to upgrade from Version 2 to Version 4 uploads
 -------------------------------------------------------------
