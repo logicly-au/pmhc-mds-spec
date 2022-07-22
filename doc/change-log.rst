@@ -3,6 +3,22 @@
 Data Specification Change log
 =============================
 
+??/7/2022 - 4.0.0-draft.4
+-------------------------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    * :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` is no longer required
+    * :ref:`dfn-organisation_type_referred_to_at_episode_conclusion` is no longer required
+
+
+* :ref:`validation-rules`
+
+  * Added validation for :ref:`dfn-organisation_type_referred_to_at_intake_conclusion`
+  * Added validation for :ref:`dfn-organisation_type_referred_to_at_episode_conclusion`
+
 19/7/2022
 ---------
 

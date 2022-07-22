@@ -155,7 +155,7 @@
     "datatype": {
       "base": "string"
     },
-    "required": true
+    "required": false
   },{
     "name": "referred_to_organisation_path",
     "titles": [ "referred_to_organisation_path" ],
