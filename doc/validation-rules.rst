@@ -96,6 +96,10 @@ Intake
 
          * :ref:`dfn-date_referred_to_other_service_at_intake_conclusion` must NOT be blank
 
+     #. If :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` contains ONLY `98: Other`, then:
+
+         * :ref:`dfn-referred_to_organisation_path` must be blank
+
      #. If :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` is `99: Not stated/Inadequately described`, then:
 
          * :ref:`dfn-date_referred_to_other_service_at_intake_conclusion` must NOT be blank
