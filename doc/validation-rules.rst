@@ -139,20 +139,25 @@ Intake - Episode
 Episode
 ~~~~~~~
 
-  1. Refer to :ref:`key-current-validations` for Episode Key validations
-  2. The :ref:`dfn-episode_end_date` must not be before the :ref:`dfn-referral_date`
-  3. :ref:`dfn-referrer_organisation_type` must be set to
+  #. Refer to :ref:`key-current-validations` for Episode Key validations
+  #. The :ref:`dfn-episode_end_date` must not be before the :ref:`dfn-referral_date`
+  #. :ref:`dfn-referrer_organisation_type` must be set to
      '98: N/A - Self referral' if and only if :ref:`dfn-referrer_profession` is also
      '98: N/A - Self referral'
-  4. A maximum of one episode shall be open per client
-  5. Where the
-     :ref:`dfn-episode_completion_status` has been recorded using one of the
-     'Episode closed' responses (Response items 1-6), the episode must have
-     an :ref:`dfn-episode_end_date` and an :ref:`dfn-organisation_type_referred_to_at_episode_conclusion`,
-     and/or episodes that have an :ref:`dfn-episode_end_date` must have an
-     :ref:`dfn-episode_completion_status`
-     recorded using one of the 'Episode closed' responses (Response items 1-6)
-  6. On :ref:`dfn-principal_diagnosis` and :ref:`dfn-additional_diagnosis`
+  #. A maximum of one episode shall be open per client
+  #. **Open episodes** are those with :ref:`dfn-episode_completion_status` recorded
+     as open (Response item 0).
+
+     Open episodes must NOT have a response to both :ref:`dfn-episode_end_date`
+     and :ref:`dfn-organisation_type_referred_to_at_episode_conclusion`.
+
+  #. **Closed episodes** are those with :ref:`dfn-episode_completion_status`
+     recorded using one of the 'Episode closed' responses (Response items 1-6).
+
+     Closed episodes must have a response to both :ref:`dfn-episode_end_date`
+     and :ref:`dfn-organisation_type_referred_to_at_episode_conclusion`.
+
+  #. On :ref:`dfn-principal_diagnosis` and :ref:`dfn-additional_diagnosis`
      the values:
 
      * '100: Anxiety disorders (ATAPS)'
@@ -165,18 +170,18 @@ Episode
 
      * The :ref:`dfn-referral_date` was before 1 July 2017
      * The :ref:`dfn-episode_tags` field must contain the ``!ATAPS`` flag
-  7. The '4: Complex care package' response for :ref:`dfn-principal_focus` must
+  #. The '4: Complex care package' response for :ref:`dfn-principal_focus` must
      only be used by selected PHN Lead Sites
-  8. The ``!ATAPS`` tag must only be included in the :ref:`dfn-episode_tags` field
+  #. The ``!ATAPS`` tag must only be included in the :ref:`dfn-episode_tags` field
      where the :ref:`dfn-referral_date` was before 1 July 2017
-  9. The :ref:`dfn-episode_end_date`
+  #. The :ref:`dfn-episode_end_date`
 
      * must not be before 1 January 2016
      * and must not be before :ref:`dfn-organisation_start_date`
      * and must not be after :ref:`dfn-organisation_end_date`
      * and must not be in the future
 
-  10. The :ref:`dfn-referral_date`
+  #. The :ref:`dfn-referral_date`
 
      * must not be before 1 January 2014
      * and must not be before :ref:`dfn-organisation_start_date`

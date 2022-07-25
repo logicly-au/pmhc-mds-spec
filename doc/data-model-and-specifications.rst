@@ -171,13 +171,30 @@ across PHN-commissioned services:
 
 See :ref:`episode-data-elements` for the data elements for a episode.
 
+.. _open-episode:
+
+Open Episode
+""""""""""""
+
+Open episodes are those with :ref:`dfn-episode_completion_status` recorded
+as open (Response item 0).
+
+.. _closed-episode:
+
+Closed Episode
+""""""""""""""
+
+Closed episodes are those with :ref:`dfn-episode_completion_status`
+recorded using one of the 'Episode closed' responses (Response items 1-6).
+
 .. _active-episode:
 
 Active Episode
 """"""""""""""
 
-An **active episode** is an episode with one or more :ref:`Attended Service Contacts <attended-contact>` recorded
-in a reference reporting period.
+An **active episode** is an episode with one or more
+:ref:`Attended Service Contacts <attended-contact>` recorded in a reference
+reporting period.
 
 .. _key-concepts-service-contact:
 
