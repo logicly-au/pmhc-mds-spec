@@ -8,6 +8,13 @@ Data Specification Change log
 
 * :ref:`data-model-and-specifications`
 
+  * :ref:`data-model`
+
+    * Updated data model diagrams to make to make Episode Organisation Path and
+      Episode Key the primary key for Intake Episode
+
+* :ref:`data-model-and-specifications`
+
   * :ref:`record-formats`
 
     * :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` is no longer required
