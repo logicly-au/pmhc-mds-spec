@@ -13,6 +13,10 @@ Data Specification Change log
     * Finalised domain of :ref:`dfn-program_type`
     * Finalised domain of :ref:`dfn-funding_source`
 
+* :ref:`validation-rules`
+
+    * Added validation for response '27: Way Back Support Service' for :ref:`dfn-funding_source`
+
 19/7/2022
 ---------
 

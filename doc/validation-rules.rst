@@ -197,6 +197,8 @@ Service Contact
       * and must not be before :ref:`dfn-organisation_start_date`
       * and must not be after :ref:`dfn-organisation_end_date`
       * and must not be in the future
+  15. On :ref:`dfn-funding_source` the value '27: Way Back Support Service' must
+      only be used in conjunction with the Wayback Extension.
 
 .. _service-contact-practitioner-current-validations:
 
