@@ -142,7 +142,8 @@
       "base": "date",
       "format": "dMMyyyy",
       "minimum": "2020-01-01"
-    }
+    },
+    "required": false
   },{
     "name": "organisation_type_referred_to_at_intake_conclusion",
     "titles": [ "organisation_type_referred_to_at_intake_conclusion" ],

@@ -51,7 +51,7 @@
     },
     "required": true
   }],
-  "primaryKey": [ "episode_organisation_path", "episode_key", "intake_organisation_path", "intake_key" ],
+  "primaryKey": [ "episode_organisation_path", "episode_key" ],
   "foreignKeys": [{
     "columnReference": [ "episode_organisation_path", "episode_key" ],
     "reference": {

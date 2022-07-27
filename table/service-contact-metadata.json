@@ -196,7 +196,7 @@
     "name": "funding_source",
     "titles": [ "funding_source" ],
     "dc:title": "Funding Source",
-    "schema:description": "The source of funding for a service contact",
+    "schema:description": "The source of PHN Mental Health funds that are wholly or primarily funding the Service Contact.",
     "schema:disambiguatingDescription": "table/service-contact/funding-source.rst",
     "schema:dateCreated": "2021-08-23",
     "datatype": {

@@ -3,8 +3,8 @@
 Data Specification Change log
 =============================
 
-??/7/2022 - 4.0.0-draft.4
--------------------------
+??/7/2022 - 4.0.0
+-----------------
 
 * :ref:`data-model-and-specifications`
 
@@ -12,19 +12,20 @@ Data Specification Change log
 
     * Updated data model diagrams to make to make Episode Organisation Path and
       Episode Key the primary key for Intake Episode
-
-* :ref:`data-model-and-specifications`
-
+      
   * :ref:`record-formats`
 
     * :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` is no longer required
     * :ref:`dfn-organisation_type_referred_to_at_episode_conclusion` is no longer required
 
+    * Finalised domain of :ref:`dfn-program_type`
+    * Finalised domain of :ref:`dfn-funding_source`
 
 * :ref:`validation-rules`
 
   * Added validation for :ref:`dfn-organisation_type_referred_to_at_intake_conclusion`
   * Added validation for :ref:`dfn-organisation_type_referred_to_at_episode_conclusion`
+  * Added validation for response '27: Way Back Support Service' for :ref:`dfn-funding_source`
 
 19/7/2022
 ---------
