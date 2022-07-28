@@ -8,10 +8,6 @@ Version |version|
 
 .. only:: builder_html or builder_readthedocs
 
-   This is a draft of the PMHC MDS 4.0.0 data specification. It it being
-   made available for feedback and discussion. Changes could be made. It should
-   not be used as the basis for any development.
-
    Getting Help
    ------------
 
