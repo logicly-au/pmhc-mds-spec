@@ -184,6 +184,10 @@ Episode
      * and must not be after :ref:`dfn-organisation_end_date`
      * and must not be in the future
 
+  11. :ref:`dfn-referral_date` value of '09099999' cannot be used on new records.
+  12. Existing records already containing a :ref:`dfn-referral_date` that is
+      not '09099999' may not be updated to '09099999'.
+
 .. _service-contact-current-validations:
 
 Service Contact
@@ -228,8 +232,12 @@ Service Contact
       * and must not be before :ref:`dfn-organisation_start_date`
       * and must not be after :ref:`dfn-organisation_end_date`
       * and must not be in the future
-  15. On :ref:`dfn-funding_source` the value '27: Way Back Support Service' must
+
+  15. :ref:`dfn-service_contact_start_time` value of '24:00' cannot be used on new records.
+  16. Existing records already containing a :ref:`dfn-service_contact_start_time` that is not '24:00' may not be updated to '24:00'.
+  17. On :ref:`dfn-funding_source` the value '27: Way Back Support Service' must
       only be used in conjunction with the Wayback Extension.
+
 
 .. _service-contact-practitioner-current-validations:
 
