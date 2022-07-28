@@ -110,23 +110,29 @@ specification:
 
 .. _steps-required-to-upgrade:
 
-Steps required to upgrade from Version 2 to Version 4 uploads
--------------------------------------------------------------
+Steps required to upgrade to Version 4 uploads
+----------------------------------------------
 
 1. Upgrade your Client Management System to export files in the new Version 4 format
 2. As explained above, in order to support both Version 2 and Version 3 uploads
    the PMHC MDS has been auto creating measure keys where data is supplied in
-   the Version 2 format. In order to update existing measure data, when
-   uploading in Version 4 the existing measure key will
-   need to be supplied, otherwise a separate measure record will be created.
-   Where data has been uploaded using the Version 2 specification organisations will
+   the Version 2 format. Also, during the migration to Version 4,
+   Service Contact Practitioner Keys will be auto generated.
+
+   In order to update existing measure data and Service Contact Practitioner data, when
+   uploading in Version 4, the existing measure key or service contact practitioner
+   key will need to be supplied, otherwise a separate measure or service
+   contact practitioner record will be created.
+
+   Where data has been uploaded using a previous specification organisations will
    need to do one of the following:
 
-  * Download their data from the PMHC MDS and sync their local measure keys
-    with the measure keys that were auto created by the PMHC mds
-  * Download their data from the PMHC MDS, delete the existing measures records,
-    re-upload with new measure keys
+  * Download their data from the PMHC MDS and sync their local
+    measure/service contact practitioner keys
+    with the keys that were auto created by the PMHC MDS
+  * Download their data from the PMHC MDS, delete the existing
+    measures/service contact practitioner records, re-upload with new keys
   * Download their data from the PMHC MDS, create a mapping document containing
-    the measure key as stored in the PMHC MDS and the local measure key.
-    Email support@pmhc-mds.com and request that the measure keys are updated
+    the measure/service contact practitioner key as stored in the PMHC MDS and the local key.
+    Email support@pmhc-mds.com and request that the keys are updated
     according to the mapping.
