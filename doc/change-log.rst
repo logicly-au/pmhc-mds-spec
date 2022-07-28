@@ -3,16 +3,20 @@
 Data Specification Change log
 =============================
 
-??/7/2022 - 4.0.0
+29/7/2022 - 4.0.0
 -----------------
+
+* :ref:`changes-from-v2`
+
+  * Added further information to :ref:`steps-required-to-upgrade`
 
 * :ref:`data-model-and-specifications`
 
   * :ref:`data-model`
 
-    * Updated data model diagrams to make to make Episode Organisation Path and
+    * Updated data model diagrams to make Episode Organisation Path and
       Episode Key the primary key for Intake Episode
-      
+
   * :ref:`record-formats`
 
     * :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` is no longer required
@@ -20,12 +24,21 @@ Data Specification Change log
 
     * Finalised domain of :ref:`dfn-program_type`
     * Finalised domain of :ref:`dfn-funding_source`
+    * Added notes to :ref:`dfn-service_contact_start_time` about use of an
+      end of day flag for service contacts uploaded in specifications prior to Version 4
+    * Added notes to :ref:`dfn-referral_date` about use of a missing value
+      for episodes uploaded in specifications prior to Version 4
+
 
 * :ref:`validation-rules`
 
   * Added validation for :ref:`dfn-organisation_type_referred_to_at_intake_conclusion`
   * Added validation for :ref:`dfn-organisation_type_referred_to_at_episode_conclusion`
   * Added validation for response '27: Way Back Support Service' for :ref:`dfn-funding_source`
+  * Added validation for :ref:`dfn-service_contact_start_time` about use of an
+    end of day flag for service contacts uploaded in specifications prior to Version 4
+  * Added validation for :ref:`dfn-referral_date` about use of a missing value
+    for episodes uploaded in specifications prior to Version 4
 
 19/7/2022
 ---------

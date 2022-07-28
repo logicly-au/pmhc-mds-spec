@@ -184,9 +184,9 @@ Episode
      * and must not be after :ref:`dfn-organisation_end_date`
      * and must not be in the future
 
-  11. :ref:`dfn-referral_date` value of '09099999' cannot be used on new records.
-  12. Existing records already containing a :ref:`dfn-referral_date` that is
-      not '09099999' may not be updated to '09099999'.
+  #. :ref:`dfn-referral_date` value of '09099999' cannot be used on new records.
+  #. Existing records already containing a :ref:`dfn-referral_date` that is
+     not '09099999' may not be updated to '09099999'.
 
 .. _service-contact-current-validations:
 
