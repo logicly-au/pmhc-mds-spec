@@ -70,6 +70,8 @@ there must be a corresponding episode in the episodes file/worksheet.
 It also means that for every row in the episodes file/worksheet, there must be a
 corresponding client in the clients file/worksheet.
 
+.. _intake-files:
+
 Files/worksheets for the Intake context
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -82,6 +84,8 @@ files/worksheets need to be uploaded to the PMHC MDS:
 
 Example Intake Upload files can be found at :ref:`example-upload-files`.
 
+.. _treatment-files:
+
 Files/worksheets for the Treatment Service Provider context
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -93,6 +97,8 @@ the following files/worksheets need to be uploaded to the PMHC MDS:
   :header-rows: 1
 
 Example Treatment Upload files can be found at :ref:`example-upload-files`.
+
+.. _combined-files:
 
 Files/worksheets for the Combined Intake/Treatment Service Provider context
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

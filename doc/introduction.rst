@@ -3,11 +3,11 @@
 Introduction
 ============
 
-The recording of intake related activity (including activity for the
-Head to Health and AMHC programmes) in the PMHC MDS will be
-implemented as a core PMHC-MDS version 4 specification.
+Version 4.0 introduces the recording of intake related activity (including
+activity for the Head to Health and AMHC programmes) in the PMHC MDS as part
+of the core  specification.
 
-The new version 4 specification will comprise 4 entirely new tables, and the
+The new version 4 specification comprises 4 entirely new tables, and the
 revised collection occasion/measure tables that have been included in the
 the Wayback and HeadtoHelp extension specifications.
 

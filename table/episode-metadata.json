@@ -371,7 +371,7 @@
     "datatype": {
       "base": "string"
     },
-    "required": true
+    "required": false
   },{
     "name": "episode_tags",
     "titles": [ "episode_tags" ],

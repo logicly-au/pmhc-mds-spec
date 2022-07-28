@@ -38,6 +38,7 @@ Practitioner
 
      The organisation to which the practitioner belongs has
      :ref:`dfn-organisation_type` set to '8: Aboriginal Health/Medical Service'
+  3. :ref:`dfn-practitioner_year_of_birth` must not be before 1 January 1900 and must not be in the future
 
 .. _client-current-validations:
 
@@ -52,35 +53,59 @@ Client
 Intake
 ~~~~~~
 
-  1. Refer to :ref:`key-current-validations` for Intake Key validations
-  2. The :ref:`dfn-date_referred_to_other_service_at_intake_conclusion` must not be before the :ref:`dfn-date_client_contacted_intake`
-  3. :ref:`dfn-referrer_organisation_type` must be set to
+  #. Refer to :ref:`key-current-validations` for Intake Key validations
+  #. The :ref:`dfn-date_referred_to_other_service_at_intake_conclusion` must not be before the :ref:`dfn-date_client_contacted_intake`
+  #. :ref:`dfn-referrer_organisation_type` must be set to
      '98: N/A - Self referral' if and only if :ref:`dfn-referrer_profession` is also
      '98: N/A - Self referral'
-  4. A maximum of one intake shall be open per client
-  5. The :ref:`dfn-referral_date`
+  #. A maximum of one intake shall be open per client
+  #. The :ref:`dfn-referral_date`
 
      * must not be before 1 January 2020
      * and must not be before :ref:`dfn-organisation_start_date`
      * and must not be after :ref:`dfn-organisation_end_date`
      * and must not be in the future
 
-  6. The :ref:`dfn-date_client_contacted_intake`
+  #. The :ref:`dfn-date_client_contacted_intake`
 
      * must not be before 1 January 2020
      * and must not be before `Provider Organisation - Start Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date>`_
      * and must not be after `Provider Organisation - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date>`_
      * and must not be in the future
 
-  7. The :ref:`dfn-date_referred_to_other_service_at_intake_conclusion`
+  #. The :ref:`dfn-date_referred_to_other_service_at_intake_conclusion`
 
      * must not be before 1 January 2020
      * and must not be before `Provider Organisation - Start Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date>`_
      * and must not be after `Provider Organisation - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date>`_
      * and must not be in the future
 
-  8. If a :ref:`dfn-referred_to_organisation_path` is specified, that
+  #. If a :ref:`dfn-referred_to_organisation_path` is specified, that
      organisation must be an existing organisation within the PMHC MDS
+
+  #. :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` will be validated as follows:
+
+     #. If :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` is one of `97: No Referral` or `99: Not stated/Inadequately described`, then no other responses can be selected
+
+     #. If :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` is blank or `97: No Referral`, then:
+
+         * :ref:`dfn-date_referred_to_other_service_at_intake_conclusion` must be blank
+         * :ref:`dfn-referred_to_organisation_path` must be blank
+
+     #. If :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` contains `98: Other`, then:
+
+         * :ref:`dfn-date_referred_to_other_service_at_intake_conclusion` must NOT be blank
+
+     #. If :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` is `99: Not stated/Inadequately described`, then:
+
+         * :ref:`dfn-date_referred_to_other_service_at_intake_conclusion` must NOT be blank
+         * :ref:`dfn-referred_to_organisation_path` must be blank
+
+     #. Any other values for :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` require both
+
+         * :ref:`dfn-date_referred_to_other_service_at_intake_conclusion` and
+         * :ref:`dfn-referred_to_organisation_path`
+
 
 .. _iar-dst-current-validations:
 
@@ -110,19 +135,25 @@ Intake - Episode
 Episode
 ~~~~~~~
 
-  1. Refer to :ref:`key-current-validations` for Episode Key validations
-  2. The :ref:`dfn-episode_end_date` must not be before the :ref:`dfn-referral_date`
-  3. :ref:`dfn-referrer_organisation_type` must be set to
+  #. Refer to :ref:`key-current-validations` for Episode Key validations
+  #. The :ref:`dfn-episode_end_date` must not be before the :ref:`dfn-referral_date`
+  #. :ref:`dfn-referrer_organisation_type` must be set to
      '98: N/A - Self referral' if and only if :ref:`dfn-referrer_profession` is also
      '98: N/A - Self referral'
-  4. A maximum of one episode shall be open per client
-  5. Where the
-     :ref:`dfn-episode_completion_status` has been recorded using one of the
-     'Episode closed' responses (Response items 1-6), the episode must have
-     an :ref:`dfn-episode_end_date`, and/or episodes that have an
-     :ref:`dfn-episode_end_date` must have an :ref:`dfn-episode_completion_status`
-     recorded using one of the 'Episode closed' responses (Response items 1-6)
-  6. On :ref:`dfn-principal_diagnosis` and :ref:`dfn-additional_diagnosis`
+  #. A maximum of one episode shall be open per client
+  #. **Open episodes** are those with :ref:`dfn-episode_completion_status` recorded
+     as open (Response item 0).
+
+     Open episodes must NOT have a response to both :ref:`dfn-episode_end_date`
+     and :ref:`dfn-organisation_type_referred_to_at_episode_conclusion`.
+
+  #. **Closed episodes** are those with :ref:`dfn-episode_completion_status`
+     recorded using one of the 'Episode closed' responses (Response items 1-6).
+
+     Closed episodes must have a response to both :ref:`dfn-episode_end_date`
+     and :ref:`dfn-organisation_type_referred_to_at_episode_conclusion`.
+
+  #. On :ref:`dfn-principal_diagnosis` and :ref:`dfn-additional_diagnosis`
      the values:
 
      * '100: Anxiety disorders (ATAPS)'
@@ -135,18 +166,18 @@ Episode
 
      * The :ref:`dfn-referral_date` was before 1 July 2017
      * The :ref:`dfn-episode_tags` field must contain the ``!ATAPS`` flag
-  7. The '4: Complex care package' response for :ref:`dfn-principal_focus` must
+  #. The '4: Complex care package' response for :ref:`dfn-principal_focus` must
      only be used by selected PHN Lead Sites
-  8. The ``!ATAPS`` tag must only be included in the :ref:`dfn-episode_tags` field
+  #. The ``!ATAPS`` tag must only be included in the :ref:`dfn-episode_tags` field
      where the :ref:`dfn-referral_date` was before 1 July 2017
-  9. The :ref:`dfn-episode_end_date`
+  #. The :ref:`dfn-episode_end_date`
 
      * must not be before 1 January 2016
      * and must not be before :ref:`dfn-organisation_start_date`
      * and must not be after :ref:`dfn-organisation_end_date`
      * and must not be in the future
 
-  10. The :ref:`dfn-referral_date`
+  #. The :ref:`dfn-referral_date`
 
      * must not be before 1 January 2014
      * and must not be before :ref:`dfn-organisation_start_date`
@@ -201,8 +232,12 @@ Service Contact
       * and must not be before :ref:`dfn-organisation_start_date`
       * and must not be after :ref:`dfn-organisation_end_date`
       * and must not be in the future
+
   15. :ref:`dfn-service_contact_start_time` value of '24:00' cannot be used on new records.
   16. Existing records already containing a :ref:`dfn-service_contact_start_time` that is not '24:00' may not be updated to '24:00'.
+  17. On :ref:`dfn-funding_source` the value '27: Way Back Support Service' must
+      only be used in conjunction with the Wayback Extension.
+
 
 .. _service-contact-practitioner-current-validations:
 

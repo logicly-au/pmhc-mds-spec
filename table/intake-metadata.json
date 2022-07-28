@@ -142,7 +142,8 @@
       "base": "date",
       "format": "dMMyyyy",
       "minimum": "2020-01-01"
-    }
+    },
+    "required": false
   },{
     "name": "organisation_type_referred_to_at_intake_conclusion",
     "titles": [ "organisation_type_referred_to_at_intake_conclusion" ],
@@ -155,7 +156,7 @@
     "datatype": {
       "base": "string"
     },
-    "required": true
+    "required": false
   },{
     "name": "referred_to_organisation_path",
     "titles": [ "referred_to_organisation_path" ],
@@ -209,12 +210,6 @@
     "columnReference": "organisation_type_referred_to_at_intake_conclusion",
     "reference": {
       "resource": "table/intake/organisation-type-referred-to-at-intake-conclusion.csv",
-      "columnReference": "id"
-    }
-  }, {
-    "columnReference": "intake_funding_source",
-    "reference": {
-      "resource": "table/intake/intake-funding-source.csv",
       "columnReference": "id"
     }
   }]
