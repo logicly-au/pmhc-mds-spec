@@ -1299,7 +1299,7 @@ An indication of whether the Service Contact is the final for the current Episod
 Funding Source
 ^^^^^^^^^^^^^^
 
-The source of funding for a service contact
+The source of PHN Mental Health funds that are wholly or primarily funding the Service Contact.
 
 :Field name: funding_source
 
@@ -1308,39 +1308,54 @@ The source of funding for a service contact
 :Required: yes
 
 :Domain:
-  :100: PHN flexible funding NOS
-  :110: Low intensity
-  :120: Child and youth specific services NOS
-  :121: Youth enhanced services
-  :130: Psychological therapies
-  :140: Care coordination for severe and complex
-  :150: Suicide prevention NOS
-  :151: Suicide prevention - Indigenous
-  :152: Suicide Prevention - General
-  :160: Indigenous MH
-  :200: Psychosocial NOS
-  :210: Psychosocial NPS
-  :220: Psychosocial COS
-  :300: Other Commonwealth flexible funding NOS
-  :310: Drought measure
-  :320: Psychological treatment services for people with mental illness living in RACFs
-  :400: Co-funded – Commonwealth and state
-  :500: Co-funded – Commonwealth and other Quarantined
-  :800: Quarantined funding NOS
-  :810: PFAS response (retired)
-  :820: Natural Disaster Response
-  :830: COVID Response NOS
-  :831: COVID Response Head To Help
-  :832: COVID Response Head To Health
-  :840: AMHC
-  :850: Eating disorders trial
-  :860: Norfolk Island
-  :900: Other funding source – no Commonwealth Funding
-  :999: Unknown/Not stated
+  :0: Flexible funding pool - Not Otherwise Stated
+  :11: Flexible funding pool - Low intensity
+  :12: Flexible funding pool - Youth Severe
+  :13: Flexible funding pool - Child and Youth
+  :14: Flexible funding pool - Psychological therapies for hard to reach
+  :15: Flexible funding pool - Services for People with Severe Mental Illness
+  :16: Flexible funding pool - Suicide Prevention - Indigenous
+  :17: Flexible funding pool - Suicide Prevention - General
+  :18: Indigenous Mental Health
+  :19: Commonwealth Psychosocial Support
+  :20: Psychological Treatment in Residential Aged Care Facilities
+  :21: Emergency Response - Bushfire Recovery 2020
+  :22: Emergency Response - Flood 2022
+  :23: Head to Health program
+  :24: Head to Health Kids Hubs
+  :25: Norfolk Island
+  :26: National Suicide Prevention Trial
+  :27: Way Back Support Service
+  :97: Other funding source – no Commonwealth Funding
+  :98: Unknown/Not stated
 
 :Notes:
-  The response codes published in this draft are not finalised. They may be
-  changed before the final specification is published.
+  Organisations must record this information for all new Service Contacts
+  under the Version 4 specification.
+  
+  0 - Flexible funding pool - Not Otherwise Stated
+    This response is only to be used for existing data entered under a Version 2
+    or HeadtoHelp Version 3 specification.
+  
+  23 - Head to Health program
+    This includes Head to Health Adult Centres and Satellites, and pop-up clinics.
+  
+  25 - Norfolk Island
+    This category only applies to services commissioned through the
+    Central and Eastern Sydney PHN.
+  
+  27 - Way Back Support Service
+    This category must only to be used in conjunction with the Wayback Extension.
+  
+  97 - Other funding source - no Commonwealth Funding
+    This category can only to be used where a service is wholly funded by a
+    non-PHN funding source such as State/Territory jurisdictional funds.
+  
+    Where a service is co-funded by both PHN funds and State/Territory
+    jurisdictional funds, the appropriate Funding Source category for PHN
+    funding used to pay for the service should be selected unless otherwise
+    advised by relevant guidance from the Department. Tags and/or other
+    reporting measures can be used to differentiate co-funded arrangements.
   
 
 ----------
@@ -3661,7 +3676,7 @@ Type of organisation to which the the client was referred at the Episode conclus
 
 :Data type: string
 
-:Required: yes
+:Required: no
 
 :Domain:
   :0: None/Not applicable
@@ -3719,7 +3734,7 @@ Type of organisation to which the the client was referred at the Intake conclusi
 
 :Data type: string
 
-:Required: yes
+:Required: no
 
 :Domain:
   :1: GP/Medical Practitioner
@@ -4409,11 +4424,82 @@ The overarching program area that an Intake or Episode record is associated with
   :2: Head to Health
   :3: AMHC
   :4: Psychosocial
-  :5: Bushfire 20
+  :5: Bushfire Recovery 20
 
 :Notes:
-  The response codes published in this draft are not finalised. They may be
-  changed before the final specification is published.
+  1 - Flexible Funding Pool
+    Organisations can use this field for episodes being delivered through all
+    other Programs commissioned through Primary Mental Health Care Schedule
+    that are not otherwise described by another category. This may include but
+    is not limited to general Stepped Care, Mental Health in Residential Aged
+    Care Facilities, and Indigenous Mental Health.
+  
+  2 - Head to Health
+    Organisations can use this field for episodes delivered through the Head to
+    Health Program. This includes Head to Health Adult Centres and Satellites
+    and pop-up clinics.
+  
+    NSW and Victorian pop-up clinics data have been identified using the Head
+    to Help Version 3 extension and !covid19 tag. Any historical or new records
+    that are identified this way will be mapped to this Program Type field
+    under the Version 4 specification. The !covid19 tag will remain as a
+    reserved tag for the original purpose of indicating that an episode has
+    occurred as result of the COVID-19 pandemic once Head to Help Version 3
+    extension reaches it’s end of life date.
+  
+  3 - AMHC
+    Organisations can use this field for episodes delivered through the Head to
+    Health Program by organisations that were already delivering the Adult
+    Mental Health Centre (AMHC) trial sites.
+  
+    This change only applies to the following PHNs implementing AMHCs from
+    December 2021:
+  
+    * West Victoria PHN
+    * Northern Territory PHN
+    * ACT PHN
+    * North Perth PHN
+    * Nepean Blue Mountains PHN
+    * North Queensland PHN
+    * Tasmania PHN
+  
+    AMHC data has been identified using the !amhc tag. Any historical records
+    created on or before 30 June 2022 that use this tag will be mapped to this
+    Program Type under the Version 4 specification. The !amhc tag will be
+    removed from future use once PMHC MDS Version 2 specification reaches
+    it’s end of life date.
+  
+    From July 1 2022 the AMHC trial sites were consolidated under the Head to
+    Health program. For data collection purposes, organisations delivering
+    Head to Health services that were already delivering AMHC trial sites can
+    use either the AMHC or Head to Health program type for records created
+    on or after 1 July 2022.
+  
+  4 - Psychosocial
+    Organisations can use this field for episodes delivered through the National
+    Psychosocial Support Services Program.
+  
+    Psychosocial data has been identified using the Principal Focus of Treatment
+    Plan (PFOT) “Psychosocial” category. Any historical or new records that
+    utilise the Psychosocial PFOT will be mapped to this Program Type field
+    under the Version 4 specification.  The Psychosocial PFOT category will
+    no longer be available under the Version 4 specification and further
+    guidance will be provided by the Department to support the management
+    of this change in data collection requirements.
+  
+    Any records that have the Psychosocial PFOT but also have a !covid19,
+    !amhc, or !br20 tag will be mapped to the respective Program Type associated
+    with those tags rather than the Psychosocial Program Type.
+  
+  5 - Bushfire Recovery 2020
+    Organisations in fire affected communities can use this field for episodes
+    delivered through the Australian Government Mental Health Response to
+    Bushfire Trauma.
+  
+    This data has been identified using the !br20 tag. Any historical or new
+    records using this tag will be mapped to this Program Type field under
+    the Version 4 specification. The !br20 tag will be removed from future
+    use once the Bushfire Program is concluded.
   
 
 ----------
@@ -4441,6 +4527,13 @@ The date the referrer made the referral.
   - The referral date for Intakes must not be before 1st January 2020.
   - The referral date for Episodes must not be before 1st January 2014.
   - The referral date must not be in the future.
+  
+  Referral date was optional in specifications prior to Version 4. In Version 4
+  referral date has been made mandatory. In order to export and re-upload episode data
+  that was uploaded or entered prior to Version 4 the value '09099999' will be
+  used in data exports and allowed for existing episode data without a referral date.
+  See :ref:`episode-current-validations` for rules on
+  how this value may be used.
   
 
 ----------
@@ -6445,6 +6538,11 @@ The start time of each mental health service contact between a health service pr
   recorded in 24-hour time in the format HH:MM. Leading zeroes are accepted but
   not required. For example, 8:30 in the morning could be 8:30 or 08:30 and 3:45
   in the afternoon would be 15:45.
+  
+  The end-of-day flag "24:00" may be used as a missing time value for any
+  existing Service Contacts that have previously been added to the MDS without
+  a start time. See :ref:`service-contact-current-validations` for rules on
+  how the end-of-day value may be used.
   
 
 ----------

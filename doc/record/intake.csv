@@ -20,7 +20,7 @@
 :2: Head to Health
 :3: AMHC
 :4: Psychosocial
-:5: Bushfire 20"
+:5: Bushfire Recovery 20"
 "`Referrer Profession`_ (referrer_profession)
 
 ",string,yes,":1: General Practitioner
@@ -76,7 +76,7 @@
 ",date,"—","The date the client was referred to another organisation at Intake conclusion."
 "`Organisation type referred to at Intake conclusion`_ (organisation_type_referred_to_at_intake_conclusion)
 
-",string,yes,":1: GP/Medical Practitioner
+",string,"—",":1: GP/Medical Practitioner
 :2: Hospital
 :3: Psychiatric/mental health service or facility
 :4: Alcohol and other drug treatment service

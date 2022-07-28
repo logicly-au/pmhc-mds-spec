@@ -35,7 +35,7 @@ METeOR: `614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__
 :2: Head to Health
 :3: AMHC
 :4: Psychosocial
-:5: Bushfire 20"
+:5: Bushfire Recovery 20"
 "`Principal Focus of Treatment Plan`_ (principal_focus)
 
 ",string,yes,":1: Psychological therapy
@@ -283,7 +283,7 @@ METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
 :99: Not stated"
 "`Organisation type referred to at Episode conclusion`_ (organisation_type_referred_to_at_episode_conclusion)
 
-",string,yes,":0: None/Not applicable
+",string,"—",":0: None/Not applicable
 :1: General Practice
 :2: Medical Specialist Consulting Rooms
 :3: Private practice
