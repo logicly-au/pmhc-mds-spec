@@ -82,6 +82,10 @@ Intake
   8. If a :ref:`dfn-referred_to_organisation_path` is specified, that
      organisation must be an existing organisation within the PMHC MDS
 
+  9. :ref:`dfn-referral_date` value of '09099999' cannot be used on new records.
+  10. Existing records already containing a :ref:`dfn-referral_date` that is
+      not '09099999' may not be updated to '09099999'.
+
 .. _iar-dst-current-validations:
 
 IAR-DST
@@ -152,6 +156,10 @@ Episode
      * and must not be before :ref:`dfn-organisation_start_date`
      * and must not be after :ref:`dfn-organisation_end_date`
      * and must not be in the future
+
+  11. :ref:`dfn-referral_date` value of '09099999' cannot be used on new records.
+  12. Existing records already containing a :ref:`dfn-referral_date` that is
+      not '09099999' may not be updated to '09099999'.
 
 .. _service-contact-current-validations:
 
