@@ -19,6 +19,7 @@ Reserved tags currently in use
 The following tags can currently be used in PMHC MDS uploads and data entry:
 
 * :ref:`br20`
+* :ref:`covid19`
 
 .. _br20:
 
@@ -144,28 +145,52 @@ Considerations for applying the !br20 tag in data uploads
 
 Please refer to :ref:`reserved_tags_upload`
 
+.. _covid19:
+
+!covid19 - Episode occurred as result of COVID-19 pandemic
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The !covid19 tag was originally used for indicating that an episode
+occurred as a result of the COVID-19 pandemic.
+
+It's use was then changed for the purpose of implementing the
+Head to Help Version 3 specification as documented at :ref:`covid19_hth`.
+
+When migrating data during the Version 4 rollout,
+NSW and Victorian pop-up clinics data was identified using the
+Head to Help Version 3 extension and !covid19 tag. Any historical or new
+records that are identified this way will be mapped to this to the `2: Head to Health`
+Program Type field under the Version 4 specification.
+
+The !covid19 tag will remain as a reserved tag for the original purpose of
+indicating that an episode has occurred as result of the COVID-19 pandemic
+once the Head to Help Version 3 extension reaches it’s end of life date.
+
 .. _historical-reserved-tags:
 
 Reserved tags no longer in use
 ------------------------------
 
-The following tags have previously available to be used in PMHC MDS uploads and
+The following tags have previously been available to be used in PMHC MDS uploads and
 data entry. They still remain on existing data but must not be used for new
 data uploaded after their retirement date. The following information is
 provided for historical reference only.
 
-+----------------+-----------------+
-| Tag            | Retirement Date |
-+================+=================+
-| :ref:`covid19` | 1 August 2022   |
-+----------------+-----------------+
-| :ref:`amhc`    | 1 August 2022   |
-+----------------+-----------------+
++----------------+---------------------------+
+| Tag            | Retirement Date           |
++================+===========================+
+| :ref:`amhc`    | Week of 1st August 2022   |
++----------------+---------------------------+
 
-.. _covid19:
+.. _covid19_hth:
 
 !covid19 - Australian Government HeadtoHelp hubs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**The usage for the !covid19 tag is changing when the Head to Help Version 3
+specification is phased out. The ongoing use for the !covid19 tag is
+documented at** :ref:`covid19` **. The following documentation is being maintained
+for historical purposes.**
 
 The Australian Government is providing funding to Victorian PHNs to deliver
 services through HeadtoHelp hubs as part of its response to the mental health

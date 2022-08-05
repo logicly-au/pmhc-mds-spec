@@ -3,6 +3,17 @@
 Data Specification Change log
 =============================
 
+5/8/2022
+--------
+
+* :ref:`upload_specification`
+
+  * Updated example upload files
+
+* :ref:`reserved-tags`
+
+  * Updated guidance for use of the `!covid19` tag
+
 29/7/2022 - 4.0.0
 -----------------
 
