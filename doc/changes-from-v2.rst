@@ -108,6 +108,70 @@ specification:
 
    PMHC MDS Version 4.0.0 combined context upload columns
 
+.. _mapping-refer-out-org-types-to-intakes:
+
+Mapping HeadtoHelp Episode - Referral Out Organisation Type to Organisation Type Referred to at Intake Conclusion
+-----------------------------------------------------------------------------------------------------------------
+
+During the migration to Version 4 and when HeadtoHelp specifcation files are
+uploaded during the period when both HeadtoHelp and Version 4 specification files
+are accepted by the PMHC MDS, the `HeadtoHelp Episode - Referral Out Organisation Type <https://docs.pmhc-mds.com/projects/data-specification-headtohelp/en/v3/data-specification/data-model-and-specifications.html#headtohelp-episode-referral-out-organisation-type>`__
+will be mapped to :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` as follows:
+
++----+-----------------------------------------------------+----+--------------------------------------------------------------+
+|    | HeadtoHelp Episode - Referral Out Organisation Type |    | Organisation Type Referred to at Intake Conclusion           |
++====+=====================================================+====+==============================================================+
+| 0  | None/Not applicable                                 | 97 | No Referral                                                  |
++----+-----------------------------------------------------+----+--------------------------------------------------------------+
+| 1  | General Practice                                    | 1  | GP/Medical Practitioner                                      |
++----+-----------------------------------------------------+----+--------------------------------------------------------------+
+| 2  | Medical Specialist Consulting Rooms                 | 41 | Medical specialist                                           |
++----+-----------------------------------------------------+----+--------------------------------------------------------------+
+| 3  | Private practice                                    | 3  | Psychiatric/mental health service or facility                |
++----+-----------------------------------------------------+    |                                                              |
+| 4  | Public mental health service                        |    |                                                              |
++----+-----------------------------------------------------+----+--------------------------------------------------------------+
+| 5  | Public Hospital                                     | 2  | Hospital                                                     |
++----+-----------------------------------------------------+    |                                                              |
+| 6  | Private Hospital                                    |    |                                                              |
++----+-----------------------------------------------------+    |                                                              |
+| 7  | Emergency Department                                |    |                                                              |
++----+-----------------------------------------------------+----+--------------------------------------------------------------+
+| 8  | Community Health Centre                             | 5  | Other community/health care service                          |
++----+-----------------------------------------------------+----+--------------------------------------------------------------+
+| 9  | Drug and Alcohol Service                            | 4  | Alcohol and other drug treatment service                     |
++----+-----------------------------------------------------+----+--------------------------------------------------------------+
+| 10 | Community Support Organisation NFP                  | 11 | Community support groups/agencies                            |
++----+-----------------------------------------------------+----+--------------------------------------------------------------+
+| 11 | Indigenous Health Organisation                      | 21 | Indigenous service (non-AOD)                                 |
++----+-----------------------------------------------------+----+--------------------------------------------------------------+
+| 12 | Child and Maternal Health                           | 29 | Maternal and Child Health Service                            |
++----+-----------------------------------------------------+----+--------------------------------------------------------------+
+| 13 | Nursing Service                                     | 30 | Community nursing service                                    |
++----+-----------------------------------------------------+----+--------------------------------------------------------------+
+| 14 | Telephone helpline                                  | 14 | Telephone & online services/referral agency e.g. direct line |
++----+-----------------------------------------------------+    |                                                              |
+| 15 | Digital health service                              |    |                                                              |
++----+-----------------------------------------------------+----+--------------------------------------------------------------+
+| 16 | Family Support Service                              | 32 | Family support service (excl family violence)                |
++----+-----------------------------------------------------+----+--------------------------------------------------------------+
+| 17 | School                                              | 18 | School/other education or training institution               |
++----+-----------------------------------------------------+    |                                                              |
+| 18 | Tertiary Education institution                      |    |                                                              |
++----+-----------------------------------------------------+----+--------------------------------------------------------------+
+| 19 | Housing service                                     | 13 | Housing and homelessness service                             |
++----+-----------------------------------------------------+----+--------------------------------------------------------------+
+| 20 | Centrelink                                          | 12 | Centrelink or employment service                             |
++----+-----------------------------------------------------+----+--------------------------------------------------------------+
+| 21 | Other                                               | 98 | Other                                                        |
++----+-----------------------------------------------------+----+--------------------------------------------------------------+
+| 22 | HeadtoHelp Hub                                      | 44 | HeadtoHelp / HeadtoHealth                                    |
++----+-----------------------------------------------------+----+--------------------------------------------------------------+
+| 23 | Non HeadtoHelp Hub PHN funded service               | 43 | Other PHN funded service                                     |
++----+-----------------------------------------------------+----+--------------------------------------------------------------+
+| 99 | Not stated                                          | 99 | Not stated/Inadequately described                            |
++----+-----------------------------------------------------+----+--------------------------------------------------------------+
+
 .. _steps-required-to-upgrade:
 
 Steps required to upgrade to Version 4 uploads
