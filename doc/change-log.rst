@@ -3,6 +3,13 @@
 Data Specification Change log
 =============================
 
+8/8/2022
+--------
+
+* :ref:`changes-from-v2`
+
+  * Added :ref:`mapping-refer-out-org-types-to-intakes`
+
 5/8/2022
 --------
 
