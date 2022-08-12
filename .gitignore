@@ -5,3 +5,4 @@ _doc
 doc/build/
 doc/__pycache__/
 version.txt
+doc/_static/example-files/scratch/
