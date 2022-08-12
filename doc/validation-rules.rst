@@ -172,13 +172,13 @@ Episode
   #. The :ref:`dfn-episode_end_date`
 
      * must not be before 1 January 2016
+     * and must not be before :ref:`dfn-organisation_start_date`
      * and must not be after :ref:`dfn-organisation_end_date`
      * and must not be in the future
 
   #. The :ref:`dfn-referral_date`
 
      * must not be before 1 January 2014
-     * and must not be before :ref:`dfn-organisation_start_date`
      * and must not be after :ref:`dfn-organisation_end_date`
      * and must not be in the future
 

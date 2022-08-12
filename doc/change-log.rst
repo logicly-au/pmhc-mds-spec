@@ -3,6 +3,14 @@
 Data Specification Change log
 =============================
 
+12/8/2022 - 4.0.1
+-----------------
+
+* :ref:`validation-rules`
+
+  * Removed the validation on Intakes and Episodes enforcing that the :ref:`dfn-referral_date`
+    must not be before :ref:`dfn-organisation_start_date`
+
 8/8/2022
 --------
 
