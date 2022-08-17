@@ -16,7 +16,21 @@ This will:
 * create zip of spec metadata (csv + json files) inside data-specification
 * run sphinx to generate the html output in doc/build/html
 
-### Update the specification version
+## Update which version latest points to on Read the Docs
+
+Go to https://readthedocs.com/dashboard/strategic-data-pty-ltd-pmhc-mds-spec/
+
+* Versions -> Edit button for the version you are wanting to make latest
+* Ensure that ‘Active’ is selected and ‘Hidden’ is not selected
+* Privacy level should be ‘Public’
+
+* Admin -> Advanced Settings
+* Set Default version to the version you are wanting to make latest
+* Set Default branch to the version you are wanting to make latest
+
+* Builds -> Build Version: latest
+
+## Update the specification version
 
 If the specification version has been changed:
 
