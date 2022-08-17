@@ -8,9 +8,9 @@ Version |version|
 
 .. only:: builder_html or builder_readthedocs
 
-   As of 1 July 2019, the PMHC MDS will accept uploads in both the current version 2
-   format and the old version 1 format. (`read more... <https://pmhc-mds.com/2019/06/04/Contunity-of-Support-PMHC-Spec-v2-0/>`__)
-   The old version 1 format has been marked for end-of-life on 30th June 2020.
+   As of 14 August 2022, the PMHC MDS will accept uploads in both the current version 4
+   format and the old version 2 format. (`read more... <https://pmhc-mds.com/communications/#/2022/08/15/PMHC-MDS-Release-of-Version-4-for-Upload-and-Data-Entry/>`__)
+   The old version 2 format has been marked for end-of-life on 31 January 2023.
    After this date uploads will no longer be accepted in this format.
 
    Getting Help
