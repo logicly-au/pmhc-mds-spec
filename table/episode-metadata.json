@@ -352,7 +352,7 @@
     "titles": [ "referrer_organisation_type" ],
     "dc:title": "Referrer Organisation Type",
     "schema:description": "Type of organisation in which the referring professional is based.",
-    "schema:disambiguatingDescription": "type/referrer-organisation-type.rst",
+    "schema:disambiguatingDescription": "type/referrer-in-organisation-type.rst",
     "schema:whenToCollect": "Episode start",
     "schema:dateCreated": "2021-08-23",
     "datatype": {
@@ -364,7 +364,7 @@
     "titles": [ "organisation_type_referred_to_at_episode_conclusion" ],
     "dc:title": "Organisation type referred to at Episode conclusion",
     "schema:description": "Type of organisation to which the the client was referred at the Episode conclusion.",
-    "schema:disambiguatingDescription": "type/referrer-organisation-type.rst",
+    "schema:disambiguatingDescription": "type/referrer-out-organisation-type.rst",
     "schema:whenToCollect": "Episode conclusion",
     "schema:dateCreated": "2021-08-23",
     "separator": " ",

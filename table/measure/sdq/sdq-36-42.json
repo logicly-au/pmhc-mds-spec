@@ -5,7 +5,6 @@
     "name": "id",
     "titles": [ "id" ],
     "schema:dateCreated": "2016-06-22",
-
     "datatype": "string"
   },{
     "name": "description",
