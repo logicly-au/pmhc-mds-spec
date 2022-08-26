@@ -3,6 +3,16 @@
 Data Specification Change log
 =============================
 
+26/8/2022
+---------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    * Corrected some typos in :ref:`dfn-organisation_type_referred_to_at_episode_conclusion`
+      and :ref:`dfn-referrer_organisation_type`
+
 12/8/2022 - 4.0.1
 -----------------
 
