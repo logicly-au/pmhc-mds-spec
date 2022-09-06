@@ -42,7 +42,7 @@ PMHC MDS Version 4.0 data specifications are as follows:
 
 * The following field has been retired from the Episode record:
 
-  * Continuity of Service
+  * Continuity of Support
 
 * The `8: Psychosocial Support` response has been removed from the
   :ref:`dfn-principal_focus`. Psychosocial intakes and episodes should now be
