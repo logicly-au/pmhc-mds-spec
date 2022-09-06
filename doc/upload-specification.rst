@@ -116,6 +116,7 @@ Example Combined Upload files can be found at :ref:`example-upload-files`.
 
 File format
 -----------
+
 Requirements for file formats:
 
 - The first row must contain the column headings as defined for each file type.
@@ -127,6 +128,8 @@ Requirements for file formats:
 - All files must be internally consistent. An example of what this means is
   that for every row in the episode file/worksheet, there must be a
   corresponding client in the client file/worksheet.
+- For data elements that allow multiple values, each value should be separated
+  by a space; for example: `1 3 6`.
 - All version 4.0 data uploads must include a Metadata file/worksheet.
   See :ref:`metadata-format`.
 
@@ -267,8 +270,8 @@ example files at :ref:`example-upload-files`.
 
 .. _k10p-format:
 
-K10+ Collection Occasion file format
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+K10+ file format
+^^^^^^^^^^^^^^^^
 The K10+ file/worksheet is required to be uploaded each time in the treatment
 service provider or combined contexts.
 
@@ -280,8 +283,8 @@ example files at :ref:`example-upload-files`.
 
 .. _k5-format:
 
-K5 Collection Occasion file format
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+K5 file format
+^^^^^^^^^^^^^^
 The K5 file/worksheet is required to be uploaded each time in the treatment
 service provider or combined contexts.
 
@@ -293,8 +296,8 @@ example files at :ref:`example-upload-files`.
 
 .. _sdq-format:
 
-SDQ Collection Occasion file format
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SDQ file format
+^^^^^^^^^^^^^^^
 The SDQ file/worksheet is required to be uploaded each time in the treatment
 service provider or combined contexts.
 

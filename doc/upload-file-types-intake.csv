@@ -2,5 +2,5 @@ File Type,CSV filename,Excel worksheet name,Required
 :ref:`Clients <client-format>`,clients.csv,Clients,Required
 :ref:`Intakes <intake-format>`,intakes.csv,Intakes,Required
 :ref:`IAR-DST Measures <iar-dst-format>`,iar-dst.csv,IAR-DST,Required
-:ref:`Organisations <organisation-format>`,organisations.csv,Organisations,Optional only if the user has Organisation Management role
+:ref:`Organisations <organisation-format>`,organisations.csv,Organisations,"Optional, may only be included if the user has Organisation Management Role"
 :ref:`Metadata <metadata-format>`,metadata.csv,Metadata,Required

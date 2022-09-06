@@ -11,5 +11,5 @@ File Type,CSV filename,Excel worksheet name,Required
 :ref:`K5 Measures <k5-format>`,k5.csv,K5,Required
 :ref:`SDQ Measures <sdq-format>`,sdq.csv,SDQ,Required
 :ref:`Practitioners <practitioner-format>`,practitioners.csv,Practitioners,Required for first upload and when practitioner information changes. Optional otherwise
-:ref:`Organisations <organisation-format>`,organisations.csv,Organisations,Optional only if the user has Organisation Management role
+:ref:`Organisations <organisation-format>`,organisations.csv,Organisations,"Optional, may only be included if the user has Organisation Management Role"
 :ref:`Metadata <metadata-format>`,metadata.csv,Metadata,Required
