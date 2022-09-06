@@ -3,6 +3,13 @@
 Data Specification Change log
 =============================
 
+5/9/2022
+--------
+
+* :ref:`changes-from-v2`
+
+  * Corrected typo for Continuity of Support
+
 26/8/2022
 ---------
 
