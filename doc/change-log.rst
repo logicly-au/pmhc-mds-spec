@@ -3,6 +3,15 @@
 Data Specification Change log
 =============================
 
+7/9/2022
+--------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    * Corrected `Bushfire Recovery 2020` from `Bushfire Recovery 20` in :ref:`dfn-program_type`.
+
 5/9/2022
 --------
 
