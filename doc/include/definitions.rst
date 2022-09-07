@@ -39,14 +39,14 @@ Whether a person identifies as being of Aboriginal and/or Torres Strait Islander
 :Notes:
   Code 9 is not to be available as a valid answer to the questions but is
     intended for use:
-
+  
     - Primarily when importing data from other data collections that do not
       contain mappable data.
     - Where an answer was refused.
     - Where the question was not able to be asked prior to completion of
       assistance because the client was unable to communicate or a person who
       knows the client was not available.
-
+  
 
 :METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__
 
@@ -136,35 +136,35 @@ The main additional condition or complaint co-existing with the Principal Diagno
   terms of treatment required and resources used during the episode of care.
   Additional diagnoses should be interpreted as conditions that affect client
   management in terms of requiring any of the following:
-
+  
   -	Commencement, alteration or adjustment of therapeutic treatment
   -	Diagnostic procedures
   -	Increased clinical care and/or monitoring
-
+  
   Where the client one or more comorbid mental health conditions in addition to
   the condition coded as the Principal Diagnosis, record the main condition as
-  the Additional Diagnosis.
-
+  the Additional Diagnosis. 
+  
   The following responses have been added to allow mapping of ATAPS data to PMHC
   format.
-
+  
   - 100: Anxiety disorders (ATAPS)
   - 200: Affective (Mood) disorders (ATAPS)
   - 300: Substance use disorders (ATAPS)
   - 400: Psychotic disorders (ATAPS)
-
+  
   *Note: These four codes should only be used for Episodes that are migrated
   from ATAPS MDS sources that cannot be described by any other Diagnosis.
   It is expected that the majority of Episodes delivered to clients
   from 1st July, 2017 can be assigned to other diagnoses.*
-
+  
   These responses will only be allowed on episodes where the original
   ATAPS referral date was before 1 July 2017
-
+  
   These responses will only be allowed on episodes with the !ATAPS flag.
-
+  
   For further notes on the recording of diagnosis codes see Principal Diagnosis.
-
+  
 
 ----------
 
@@ -185,18 +185,18 @@ The Australian postcode of the client.
   A valid Australian postcode or 9999 if the postcode is unknown or the client
   has not provided sufficient information to confirm their current residential
   address.
-
+  
   The full list of Australian Postcodes can be found at `Australia Post
   <http://www.auspost.com.au/>`_.
-
+  
   When collecting the postcode of a person's usual place of residence, the ABS
   recommends that 'usual' be defined as: 'the place where the person has or
   intends to live for 6 months or more, or the place that the person regards as
   their main residence, or where the person has no other residence, the place
   they currently reside.'
-
+  
   Postcodes are deemed valid if they are in the range 0200-0299, 0800-9999.
-
+  
 
 :METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
 
@@ -223,13 +223,13 @@ Indicates whether a practitioner has completed a recognised training programme i
 
 :Notes:
   This item is reported by the practitioner and applies to service providers who are either:
-
+  
   -	not of Aboriginal or Torres Strait Islander status; or
   -	are not employed by an Aboriginal Community Controlled Health Service.
-
+  
   1	- Yes
     The practitioner has:
-
+  
     - undertaken specific training in the delivery of culturally appropriate
       mental health /health services for Aboriginal and Torres Strait Islander
       peoples. As a guide, recognised training programs include those endorsed by
@@ -238,19 +238,19 @@ Indicates whether a practitioner has completed a recognised training programme i
     - undertaken local cultural awareness training in the community in which they
       are practising, as delivered or endorsed by the elders of that community or
       the local Aboriginal Community Controlled Health Service.
-
+  
   2 - No
     The practitioner has not met the requirements stated above.
-
+  
   3 - Not required
     This option is reserved only for practitioners who are of Aboriginal and
     Torres Strait Islander descent, or employed by an Aboriginal Community
     Controlled Health Service.
-
+  
   4 - Missing/Not recorded
     This is a system code for missing data and not a valid response option for
     practitioners.
-
+  
 
 ----------
 
@@ -273,17 +273,17 @@ An indication that the client has consented to their anonymised data being provi
       Department of Health for statistical purposes in planning and improving
       mental health services. The client's data will be included in reports and
       extracts accessible by the Department of Health.
-
+  
   2 - No
       The client has not consented to their anonymised data being provided to the
       Department of Health for statistical purposes in planning and improving
       mental health services. The client's data will be excluded from reports and
       extracts accessible by the Department of Health.
-
+  
   All data can be uploaded, regardless of consent flag.
-
+  
   All data will be available to PHNs to extract for their own internal data evaluation purposes.
-
+  
 
 ----------
 
@@ -310,15 +310,15 @@ The term 'gender' refers to the way in which a person identifies their masculine
   1 - M - Male
     Adults who identify themselves as men, and children who identify themselves
     as boys.
-
+  
   2 - F - Female
     Adults who identify themselves as women, and children who identify themselves
     as girls.
-
+  
   3 - X- Other
     Adults and children who identify as non-binary, gender diverse, or with
     descriptors other than man/boy or woman/girl.
-
+  
 
 :ABS: `http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view= <http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=>`__
 
@@ -342,11 +342,11 @@ This is a number or code assigned to each individual client referred to the comm
   will be managed by the Provider Organisation, however, the PHN may decide to
   play a role in coordinating assignment and management of these client keys.
   Clients should not be assigned multiple keys within the same Provider Organisation.
-
+  
   Client keys are case sensitive and must be valid unicode characters.
-
+  
   See :ref:`client_keys`
-
+  
 
 ----------
 
@@ -370,23 +370,23 @@ An indicator of whether the client participated, or intended to participate, in 
 :Notes:
   Service contacts are not restricted to in-person communication but can include
   telephone, video link or other forms of direct communication.
-
+  
   1 - Yes
     This code is to be used for service contacts between a mental health service
     provider and the patient/client in whose clinical record the service contact
     would normally warrant a dated entry, where the patient/client is
     participating.
-
+  
   2 - No
     This code is to be used for service contacts between a mental health service
     provider and a third party(ies) where the patient/client, in whose clinical
     record the service contact would normally warrant a dated entry, is not
     participating.
-
+  
   *Note:* Where a client intended to participate in a service contact but failed
   to attend, :ref:`dfn-service_contact_participation_indicator` should be recorded
   as '1: Yes' and :ref:`dfn-service_contact_no_show` should be recorded as '1: Yes'.
-
+  
 
 :METeOR: `494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__
 
@@ -407,17 +407,17 @@ List of tags for the client.
 
 :Notes:
   A comma separated list of tags.
-
+  
   Organisations can use this field to tag records in order to partition them as
   per local requirements.
-
+  
   Tags can contain lower case letters (or will get lowercased), numbers, dashes,
   spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
   nurse required, pending-outcome-1`` would all be legitimate.
-
+  
   Tags beginning with an exclamation mark (!) are reserved for future use by the
   Department. e.g. ``!reserved, ! reserved, !department-use-only``.
-
+  
 
 ----------
 
@@ -440,15 +440,15 @@ The date of the collection occasion.
   of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
   necessary to pad out a value. For instance, 13th March 2008 would appear as
   13032008.
-
+  
   If the date the activity was performed is unknown, 09099999 should be used.
-
+  
   - For an intake collection occasion, the collection date must not be
     before 1st January 2020, otherwise, the collection date must not be before
     1st January 2016.
-
+  
   - The collection date must not be in the future.
-
+  
 
 ----------
 
@@ -469,7 +469,7 @@ This is a number or code assigned to each collection occasion of service activit
   Collection Occasion Keys must be generated by the organisation to be unique at the Provider
   Organisation level and must persist across time.  See
   :ref:`Identifier Management <identifier_management>`
-
+  
 
 ----------
 
@@ -494,20 +494,20 @@ The reason for the collection of the service activities on the identified Collec
 :Notes:
   1 - Episode start
     Refers to an outcome measure undertaken at the beginning of an Episode of Care. For the purposes of the PMHC MDS protocol, episodes may start at the point of first Service Contact with a new client who has not been seen previously by the organisation, or a first contact for a new Episode of Care for a client who has received services from the organisation in a previous Episode of Care that has been completed.
-
+  
   2 - Review
     Refers to an outcome measure undertaken during the course of an Episode of
     Care that post-dates Episode Start and pre-dates Episode End. An outcome
     measure may be undertaken at Review for a number of reasons including:
-
+  
     - in response to critical clinical events or changes in the client’s mental
       health status;
     - following a client-requested review; or
     - other situations where a review may be indicated.
-
+  
   3 - Episode end
     Refers to the outcome measures collected at the end of an Episode of Care.
-
+  
 
 ----------
 
@@ -526,17 +526,17 @@ List of tags for the collection occasion.
 
 :Notes:
   A comma separated list of tags.
-
+  
   Organisations can use this field to tag records in order to partition them as
   per local requirements.
-
+  
   Tags can contain lower case letters (or will get lowercased), numbers, dashes,
   spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
   nurse required, pending-outcome-1`` would all be legitimate.
-
+  
   Tags beginning with an exclamation mark (!) are reserved for future use by the
   Department. e.g. ``!reserved, ! reserved, !department-use-only``.
-
+  
 
 ----------
 
@@ -559,13 +559,13 @@ The co-payment is the amount paid by the client per session.
 :Notes:
   Up to 6 digits before the decimal point; up to 2 digits after the decimal
   point.
-
+  
   The co-payment is the amount paid by the client per service contact, not the
   fee paid by the project to the practitioner or the fee paid by the project to the
   practitioner plus the client contribution. In many cases, there will not be a
   co-payment charged and therefore zero should be entered. Where a co-payment
   is charged it should be minimal and based on an individual's capacity to pay.
-
+  
 
 ----------
 
@@ -708,11 +708,11 @@ The country in which the client was born, as represented by a code.
   :5204: Philippines
   :5205: Singapore
   :5206: Timor-Leste
-  :6101: China (excludes SARs and Taiwan)
+  :6101: China (excludes SARs and Taiwan) 
   :6102: Hong Kong (SAR of China)
   :6103: Macau (SAR of China)
   :6104: Mongolia
-  :6105: Taiwan
+  :6105: Taiwan 
   :6201: Japan
   :6202: Korea, Democratic People's Republic of (North)
   :6203: Korea, Republic of (South)
@@ -780,7 +780,7 @@ The country in which the client was born, as represented by a code.
   :8424: St Vincent and the Grenadines
   :8425: Trinidad and Tobago
   :8426: Turks and Caicos Islands
-  :8427: Virgin Islands, British
+  :8427: Virgin Islands, British 
   :8428: Virgin Islands, United States
   :8431: St Barthelemy
   :8432: St Martin (French part)
@@ -847,11 +847,11 @@ The country in which the client was born, as represented by a code.
   four-digit, three-level hierarchical structure specifying major group, minor
   group and country. 9999 is used when the information is not known or the
   client has refused to provide the information.
-
+  
   Organisations are encouraged to produce customised lists of the most common
   languages in use by their local populations from the above resource. Please
   refer to :ref:`form_country_of_birth` for help on designing forms.
-
+  
 
 :METeOR: `459973 <http://meteor.aihw.gov.au/content/index.phtml/itemId/459973>`__
 
@@ -878,11 +878,11 @@ The date on which the client first contacted the intake service
   of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
   necessary to pad out a value. For instance, 13th March 2008 would appear as
   13032008.
-
+  
   - The contact date must not be before 1st January 2020.
-
+  
   - The contact date must not be in the future.
-
+  
 
 ----------
 
@@ -901,11 +901,11 @@ The date on which an individual was born.
 
 :Notes:
   - The date of birth must not be before January 1st 1900.
-
+  
   - The date of birth must not be in the future.
-
+  
   - If the date of birth is unknown, the following approaches should be used:
-
+  
     - If the age of the person is known, the age should be used to derive the
       year of birth
     - If the age of the person is unknown, an estimated age of the person should
@@ -916,7 +916,7 @@ The date on which an individual was born.
     - If the date of birth is totally unknown, use 09099999.
     - If you have estimated the year of birth make sure you record this in the
       'Estimated date of birth flag'
-
+  
 
 :METeOR: `287007 <http://meteor.aihw.gov.au/content/index.phtml/itemId/287007>`__
 
@@ -937,9 +937,9 @@ The date the client was referred to another organisation at Intake conclusion.
 
 :Notes:
   - The referral out date must not be before 1st January 2020.
-
+  
   - The referral out end date must not be in the future.
-
+  
 
 ----------
 
@@ -977,10 +977,10 @@ The time from the start to finish of a service contact.
   Travel to or from the location at which the service is provided, for example to
   or from outreach facilities or private homes, is not to be reported as part of
   the duration of the service contact.
-
+  
   0 - No contact took place
     Only use this code where the service contact is recorded as a no show.
-
+  
 
 ----------
 
@@ -1009,23 +1009,23 @@ Whether a person in paid employment is employed full-time or part-time, as repre
   includes persons who performed some work for wages or salary, in cash or in
   kind, and persons temporarily absent from a paid employment job but who
   retained a formal attachment to that job.
-
+  
   1 - Full-time
     Employed persons are working full-time if they:
     (a) usually work 35 hours or more in a week (in all paid jobs) or
     (b) although usually working less than 35 hours a week, actually worked 35
     hours or more during the reference period.
-
+  
   2 - Part-time
     Employed persons are working part-time if they usually work less than 35
     hours a week (in all paid jobs) and either did so during the reference
     period, or were not at work in the reference period.
-
+  
   9 - Not stated / inadequately described
     Is not to be used on primary collection forms. It is primarily for use in
     administrative collections when transferring data from data sets where the
     item has not been collected.
-
+  
 
 :METeOR: `269950 <http://meteor.aihw.gov.au/content/index.phtml/itemId/269950>`__
 
@@ -1055,40 +1055,40 @@ An indication of the completion status of an *Episode of Care*.
 
 :Notes:
   In order to use code 1 (Episode closed - treatment concluded) the client must have at least one service contact. All other codes may be applicable even when the client has no service contacts.
-
+  
   0 or Blank - Episode open
     The client still requires treatment and further service contacts are
     required.
-
+  
   1 - Episode closed - treatment concluded
     No further service contacts are planned as the client no longer requires
     treatment.
-
+  
   2 - Episode closed administratively - client could not be contacted
     Further service contacts were planned but the client could no longer be
     contacted.
-
+  
   3 - Episode closed administratively - client declined further contact
     Further service contacts were planned but the client declined further treatment.
-
+  
   4 - Episode closed administratively - client moved out of area
     Further service contacts were planned but the client moved out of the area
     without a referral elsewhere. Where a client was referred somewhere else
     *Episode Completion Status* should be recorded as code 5 (Episode closed
     administratively - client referred elsewhere).
-
+  
   5 - Episode closed administratively - client referred elsewhere
     Where a client still requires treatment, but a different service has been
     deemed appropriate or a client has moved out of the area so has moved to a
     different provider.
-
+  
   6 - Episode closed administratively - other reason
     Where a client is no longer being given treatment but the reason for
     conclusion is not covered above.
-
+  
   *Episode Completion Status* interacts with two other data items in the PMHC MDS
   - *Service Contact - Final*, and *Episode End Date*.
-
+  
   *Service Contact - Final*
     Collection of data for *Service Contacts* includes a *Service Contact -
     Final* item that requires the service provider to indicate whether further
@@ -1099,11 +1099,11 @@ An indication of the completion status of an *Episode of Care*.
     administratively - client moved out of area), or code 5 (Episode closed
     administratively - client referred elsewhere). Selection of coding option
     should be that which best describes the circumstances of the episode ending.
-
+  
   *Episode End Date*
     Where a Final Service Contact is recorded *Episode End Date* should be
     recorded as the date of the final Service Contact.
-
+  
 
 ----------
 
@@ -1122,28 +1122,28 @@ The date on which an *Episode of Care* is formally or administratively ended
 
 :Notes:
   - The episode end date must not be before 1st January 2016.
-
+  
   - The episode end date must not be in the future.
-
+  
   An *Episode of Care* may be ended in one of two ways:
-
+  
   - clinically, consequent upon conclusion of treatment for the client and
     discharge from care; or
-
+  
   - administratively (statistically), where contact with the client has been lost
     by the organisation prior to completion of treatment or other factors
     prevented treatment being completed.
-
+  
   *Episode End Date* interacts with two other data items in the PMHC MDS - *Service
   Contact - Final*, and *Episode Completion Status*.
-
+  
   *Service Contact - Final*
     Collection of data for *Service Contacts* includes a *Service Contact - Final*
     item that requires the service provider to indicate whether further *Service
     Contacts* are planned. Where this item is recorded as ‘no further services
     planned’, the date of the final *Service Contact* should be recorded as the
     *Episode End Date*.
-
+  
   *Episode Completion Status*
     This field should be recorded as 'Episode closed treatment concluded' when a
     *Service Contact - Final* is recorded. The *Episode Completion Status* field
@@ -1152,7 +1152,7 @@ The date on which an *Episode of Care* is formally or administratively ended
     *Episode Completion Status* for additional guidance). Where an episode is
     closed administratively, the *Episode End Date* should be recorded as the
     date on which the organisation made the decision to close episode.
-
+  
 
 :METeOR: `614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__
 
@@ -1177,12 +1177,12 @@ This is a number or code assigned to each PMHC MDS episode. The Episode Key is u
   this way allows clients to be merged (where duplicate Client Keys have been
   identified) without having to re-allocate episode identifiers since they can
   never clash. See :ref:`Managing Episode Keys <unique_keys>`
-
+  
   Episode Keys are case sensitive and must be valid unicode characters.
-
+  
   A recommended approach for the creation of Episode Keys is to compute `random
   UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
-
+  
 
 ----------
 
@@ -1202,9 +1202,9 @@ A sequence of colon separated Organisation Keys that fully specifies the Provide
 :Notes:
   A combination of the Primary Health Network's (PHN's) Organisation Key and the
   Provider Organisation's Organisation Key separated by a colon.
-
+  
   .. include:: shared/example-organisation-path.rst
-
+  
 
 ----------
 
@@ -1223,17 +1223,17 @@ List of tags for the episode.
 
 :Notes:
   A comma separated list of tags.
-
+  
   Organisations can use this field to tag records in order to partition them as
   per local requirements.
-
+  
   Tags can contain lower case letters (or will get lowercased), numbers, dashes,
   spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
   nurse required, pending-outcome-1`` would all be legitimate.
-
+  
   Tags beginning with an exclamation mark (!) are reserved for future use by the
   Department. e.g. ``!reserved, ! reserved, !department-use-only``.
-
+  
 
 ----------
 
@@ -1280,17 +1280,17 @@ An indication of whether the Service Contact is the final for the current Episod
   Service providers should report this item on the basis of future planned or
   scheduled contacts with the client. Where this item is recorded as 1 (No
   further services planned), the episode should be recorded as completed by:
-
+  
   - the date of the final Service Contact should be recorded as the Episode End
     Date
   - the Episode Completion Status field should be recorded as ‘Treatment
     concluded.
-
+  
   Note that no further Service Contacts can be recorded against an
   episode once it is marked as completed. Where an episode has been marked as
   completed prematurely, the Episode End Date can be manually corrected to allow
   additional activity to be recorded.
-
+  
 
 ----------
 
@@ -1332,31 +1332,31 @@ The source of PHN Mental Health funds that are wholly or primarily funding the S
 :Notes:
   Organisations must record this information for all new Service Contacts
   under the Version 4 specification.
-
+  
   0 - Flexible funding pool - Not Otherwise Stated
     This response is only to be used for existing data entered under a Version 2
     or HeadtoHelp Version 3 specification.
-
+  
   23 - Head to Health program
     This includes Head to Health Adult Centres and Satellites, and pop-up clinics.
-
+  
   25 - Norfolk Island
     This category only applies to services commissioned through the
     Central and Eastern Sydney PHN.
-
+  
   27 - Way Back Support Service
     This category must only to be used in conjunction with the Wayback Extension.
-
+  
   97 - Other funding source - no Commonwealth Funding
     This category can only to be used where a service is wholly funded by a
     non-PHN funding source such as State/Territory jurisdictional funds.
-
+  
     Where a service is co-funded by both PHN funds and State/Territory
     jurisdictional funds, the appropriate Funding Source category for PHN
     funding used to pay for the service should be selected unless otherwise
     advised by relevant guidance from the Department. Tags and/or other
     reporting measures can be used to differentiate co-funded arrangements.
-
+  
 
 ----------
 
@@ -1403,7 +1403,7 @@ An indication of whether the person is a current holder of a Health Care Card th
 :Notes:
   Details on the Australian Government Health Care Card are available at:
   https://www.humanservices.gov.au/customer/services/centrelink/health-care-card
-
+  
 
 :METeOR: `605149 <http://meteor.aihw.gov.au/content/index.phtml/itemId/605149>`__
 
@@ -1432,30 +1432,30 @@ An indication of whether the client has been homeless in the 4 weeks prior to th
   1	- Sleeping rough or in non-conventional accommodation
     Includes sleeping on the streets, in a park, in cars or railway carriages,
     under bridges or other similar ‘rough’ accommodation
-
+  
   2	- Short-term or emergency accommodation
     Includes sleeping in short-term accommodation, emergency accommodation, due
     to a lack of other options. This may include refuges; crisis shelters; couch
     surfing; living temporarily with friends and relatives; insecure
     accommodation on a short term basis; emergency accommodation arranged in
     hotels, motels etc by a specialist homelessness agency.
-
+  
   3	- Not homeless
     Includes sleeping in own accommodation/rental accommodation or living with
     friends or relatives on a stable, long term basis
-
+  
   9	- Not stated / Missing
     Not stated / Missing
-
+  
   Select the code that best fits the client’s sleeping arrangements over the
   preceding 4 weeks. Where multiple options apply (e.g., client has experienced
   more than one of the sleeping arrangements over the previous 4 weeks) the
   following coding hierarchy should be followed:
-
+  
   - If code 1 applied at any time over the 4 week period, code 1
   - If code 2 but not code 1 applied at any time over the 4 week period, code 2
   - Otherwise Code 3 applies
-
+  
 
 ----------
 
@@ -1481,7 +1481,7 @@ An initial assessment should examine severity of symptoms, distress and previous
 
 :Notes:
   Please refer to `IAR-DST Domain 1 - Symptom Severity and Distress (Primary Domain) <https://docs.iar-dst.online/en/latest/domains/domain-1.html>`_
-
+  
 
 ----------
 
@@ -1507,7 +1507,7 @@ An initial assessment should include an evaluation of risk to determine a person
 
 :Notes:
   Please refer to `IAR-DST Domain 2 - Risk of Harm (Primary Domain) <https://docs.iar-dst.online/en/latest/domains/domain-2.html>`_
-
+  
 
 ----------
 
@@ -1533,7 +1533,7 @@ An initial assessment should consider functional impairment caused by or exacerb
 
 :Notes:
   Please refer to `IAR-DST Domain 3 - Functioning (Primary Domain) <https://docs.iar-dst.online/en/latest/domains/domain-3.html>`_
-
+  
 
 ----------
 
@@ -1559,7 +1559,7 @@ Increasingly, individuals are experiencing and managing multi-morbidity (coexist
 
 :Notes:
   Please refer to `IAR-DST Domain 4 - Impact of Co-existing Conditions (Primary Domain) <https://docs.iar-dst.online/en/latest/domains/domain-4.html>`_
-
+  
 
 ----------
 
@@ -1585,7 +1585,7 @@ This initial assessment domain should explore the individual’s relevant treatm
 
 :Notes:
   Please refer to `IAR-DST Domain 5 - Treatment and Recovery History (Contextual Domain) <https://docs.iar-dst.online/en/latest/domains/domain-5.html>`_
-
+  
 
 ----------
 
@@ -1611,7 +1611,7 @@ This initial assessment domain should consider how the person’s environment mi
 
 :Notes:
   Please refer to `IAR-DST Domain 6 - Social and Environmental Stressors (Contextual Domain) <https://docs.iar-dst.online/en/latest/domains/domain-6.html>`_
-
+  
 
 ----------
 
@@ -1637,7 +1637,7 @@ This initial assessment domain should consider whether informal supports are pre
 
 :Notes:
   Please refer to `IAR-DST Domain 7 - Family and Other Supports (Contextual Domain) <https://docs.iar-dst.online/en/latest/domains/domain-7.html>`_
-
+  
 
 ----------
 
@@ -1663,7 +1663,7 @@ This initial assessment domain should explore the person’s understanding of th
 
 :Notes:
   Please refer to `IAR-DST Domain 8 - Engagement and Motivation (Contextual Domain) <https://docs.iar-dst.online/en/latest/domains/domain-8.html>`_
-
+  
 
 ----------
 
@@ -1690,11 +1690,11 @@ The individualised level of care assessed by the practitioner for the referral
 
 :Notes:
   Please refer to `IAR-DST Levels of Care <https://docs.iar-dst.online/en/latest/level-of-care/index.html>`_
-
+  
   This field was added on 25/2/2021. IAR-DST data entered into the PMHC-MDS
   before 25/2/2021 will have the Practitioner Level of Care set to 9: Missing.
   All data entered after 25/2/2021 must use responses 1-5.
-
+  
 
 ----------
 
@@ -1724,7 +1724,7 @@ The information gathered through the initial assessment is used to assign a reco
 
 :Notes:
   Please refer to `IAR-DST Levels of Care <https://docs.iar-dst.online/en/latest/level-of-care/index.html>`_
-
+  
 
 ----------
 
@@ -1743,17 +1743,17 @@ List of tags for the measure.
 
 :Notes:
   A comma separated list of tags.
-
+  
   Organisations can use this field to tag records in order to partition them as
   per local requirements.
-
+  
   Tags can contain lower case letters (or will get lowercased), numbers, dashes,
   spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
   nurse required, pending-outcome-1`` would all be legitimate.
-
+  
   Tags beginning with an exclamation mark (!) are reserved for future use by the
   Department. e.g. ``!reserved, ! reserved, !department-use-only``.
-
+  
 
 ----------
 
@@ -1794,10 +1794,10 @@ This is a number or code assigned to each intake. The Intake Key is unique and s
   this way allows clients to be merged (where duplicate Client Keys have been
   identified) without having to re-allocate intake identifiers since they can
   never clash.
-
+  
   A recommended approach for the creation of Intake Keys is to compute `random
   UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
-
+  
 
 ----------
 
@@ -1817,9 +1817,9 @@ A sequence of colon separated Organisation Keys that fully specifies the Provide
 :Notes:
   A combination of the Primary Health Network's (PHN's) Organisation Key and the
   Provider Organisation's Organisation Key separated by a colon.
-
+  
   .. include:: shared/example-organisation-path.rst
-
+  
 
 ----------
 
@@ -1838,17 +1838,17 @@ List of tags for the intake.
 
 :Notes:
   A comma separated list of tags.
-
+  
   Organisations can use this field to tag records in order to partition them as
   per local requirements.
-
+  
   Tags can contain lower case letters (or will get lowercased), numbers, dashes,
   spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
   nurse required, pending-outcome-1`` would all be legitimate.
-
+  
   Tags beginning with an exclamation mark (!) are reserved for future use by the
   Department. e.g. ``!reserved, ! reserved, !department-use-only``.
-
+  
 
 ----------
 
@@ -1873,20 +1873,20 @@ Whether an interpreter service was used during the Service Contact
 :Notes:
   Interpreter services includes verbal language, non-verbal language and
   languages other than English.
-
+  
   1 - Yes
     Use this code where interpreter services were used during the Service
     Contact. Use of interpreter services for any form of sign language or other
     forms of non-verbal communication should be coded as Yes.
-
+  
   2 - No
     Use this code where interpreter services were not used during the Service
     Contact.
-
+  
   9 - Not stated
     Indicates that the item was not collected. This item should not appear as an
     option for clinicians, it is for administrative use only.
-
+  
 
 ----------
 
@@ -1927,8 +1927,8 @@ In the last 4 weeks, about how often did you feel nervous?
   :9: Not stated / Missing
 
 :Notes:
-  When reporting total score use ‘9 - Not stated / Missing’
-
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -1954,8 +1954,8 @@ In the last 4 weeks, about how often did you feel without hope?
   :9: Not stated / Missing
 
 :Notes:
-  When reporting total score use ‘9 - Not stated / Missing’
-
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -1981,8 +1981,8 @@ In the last 4 weeks, about how often did you feel restless or jumpy?
   :9: Not stated / Missing
 
 :Notes:
-  When reporting total score use ‘9 - Not stated / Missing’
-
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2008,8 +2008,8 @@ In the last 4 weeks, about how often did you feel everything was an effort?
   :9: Not stated / Missing
 
 :Notes:
-  When reporting total score use ‘9 - Not stated / Missing’
-
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2035,8 +2035,8 @@ In the last 4 weeks, about how often did you feel so sad that nothing could chee
   :9: Not stated / Missing
 
 :Notes:
-  When reporting total score use ‘9 - Not stated / Missing’
-
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2058,16 +2058,16 @@ The overall K5 score.
 
 :Notes:
   The K5 Total score is based on the sum of K5 item 1 through 5 (range: 5-25).
-
+  
   The Total score is computed as the sum of the item scores. If any item has not
   been completed (that is, has not been coded 1, 2, 3, 4, 5), it is excluded from
   the calculation and not counted as a valid item. If any item is missing, the
   Total Score is set as missing.
-
+  
   For the Total score, the missing value used should be 99.
-
+  
   When reporting individual item scores use ‘99 - Not stated / Missing’
-
+  
 
 ----------
 
@@ -2086,17 +2086,17 @@ List of tags for the measure.
 
 :Notes:
   A comma separated list of tags.
-
+  
   Organisations can use this field to tag records in order to partition them as
   per local requirements.
-
+  
   Tags can contain lower case letters (or will get lowercased), numbers, dashes,
   spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
   nurse required, pending-outcome-1`` would all be legitimate.
-
+  
   Tags beginning with an exclamation mark (!) are reserved for future use by the
   Department. e.g. ``!reserved, ! reserved, !department-use-only``.
-
+  
 
 ----------
 
@@ -2122,8 +2122,8 @@ In the past 4 weeks, about how often did you feel tired out for no good reason?
   :9: Not stated / Missing
 
 :Notes:
-  When reporting total score use ‘9 - Not stated / Missing’
-
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2149,8 +2149,8 @@ In the past 4 weeks, about how often did you feel nervous?
   :9: Not stated / Missing
 
 :Notes:
-  When reporting total score use ‘9 - Not stated / Missing’
-
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2176,8 +2176,8 @@ In the past 4 weeks, about how often did you feel so nervous that nothing could 
   :9: Not stated / Missing
 
 :Notes:
-  When reporting total score use ‘9 - Not stated / Missing’
-
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2203,8 +2203,8 @@ In the past 4 weeks, how often did you feel hopeless?
   :9: Not stated / Missing
 
 :Notes:
-  When reporting total score use ‘9 - Not stated / Missing’
-
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2230,8 +2230,8 @@ In the past 4 weeks, how often did you feel restless or fidgety?
   :9: Not stated / Missing
 
 :Notes:
-  When reporting total score use ‘9 - Not stated / Missing’
-
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2257,8 +2257,8 @@ In the past 4 weeks, how often did you feel so restless you could not sit still?
   :9: Not stated / Missing
 
 :Notes:
-  When reporting total score use ‘9 - Not stated / Missing’
-
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2284,8 +2284,8 @@ In the past 4 weeks, how often did you feel depressed?
   :9: Not stated / Missing
 
 :Notes:
-  When reporting total score use ‘9 - Not stated / Missing’
-
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2311,8 +2311,8 @@ In the past 4 weeks, how often did you feel that everything was an effort?
   :9: Not stated / Missing
 
 :Notes:
-  When reporting total score use ‘9 - Not stated / Missing’
-
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2338,8 +2338,8 @@ In the past 4 weeks, how often did you feel so sad that nothing could cheer you 
   :9: Not stated / Missing
 
 :Notes:
-  When reporting total score use ‘9 - Not stated / Missing’
-
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2365,8 +2365,8 @@ In the past 4 weeks, how often did you feel worthless?
   :9: Not stated / Missing
 
 :Notes:
-  When reporting total score use ‘9 - Not stated / Missing’
-
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2387,10 +2387,10 @@ In the past four weeks, how many days were you totally unable to work, study or 
   0 - 28, 99 = Not stated / Missing
 
 :Notes:
-  When the client's responses to Q1-10 are all recorded as 1 'None of the time',
+  When the client's responses to Q1-10 are all recorded as 1 'None of the time', 
   they are not required to answer questions 11-14. Where this question has not been
   answered a response of '99 - Not stated / Missing' should be selected.
-
+  
 
 ----------
 
@@ -2414,7 +2414,7 @@ Aside from those days, in the past four weeks, how many days were you able to wo
   When the client's responses to Q1-10 are all recorded as 1 'None of the time',
   they are not required to answer questions 11-14. Where this question has not been
   answered a response of '99 - Not stated / Missing' should be selected.
-
+  
 
 ----------
 
@@ -2438,7 +2438,7 @@ In the past four weeks, how many times have you seen a doctor or any other healt
   When the client's responses to Q1-10 are all recorded as 1 'None of the time',
   they are not required to answer questions 11-14. Where this question has not been
   answered a response of '99 - Not stated / Missing' should be selected.
-
+  
 
 ----------
 
@@ -2467,7 +2467,7 @@ In the past four weeks, how often have physical health problems been the main ca
   When the client's responses to Q1-10 are all recorded as 1 'None of the time',
   they are not required to answer questions 11-14. Where this question has not been
   answered a response of '99 - Not stated / Missing' should be selected.
-
+  
 
 ----------
 
@@ -2492,17 +2492,17 @@ The overall K10 score.
   Items 11 through 14 are excluded from the total because they are separate
   measures of disability associated with the problems referred to in the preceding
   ten items.
-
+  
   The Total score is computed as the sum of the scores for items 1 to 10. If any
   item has not been completed (that is, has not been coded 1, 2, 3, 4, 5), it is
   excluded from the total with the proviso that a competed K10 with more than one
   missing item is regarded as invalid.
-
+  
   If more than one item of items 1 to 10 are missing, the Total Score is set as
   missing. Where this is the case, the missing value used should be 99.
-
+  
   When reporting individual item scores use ‘99 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -2521,17 +2521,17 @@ List of tags for the measure.
 
 :Notes:
   A comma separated list of tags.
-
+  
   Organisations can use this field to tag records in order to partition them as
   per local requirements.
-
+  
   Tags can contain lower case letters (or will get lowercased), numbers, dashes,
   spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
   nurse required, pending-outcome-1`` would all be legitimate.
-
+  
   Tags beginning with an exclamation mark (!) are reserved for future use by the
   Department. e.g. ``!reserved, ! reserved, !department-use-only``.
-
+  
 
 ----------
 
@@ -2558,14 +2558,14 @@ The self-reported status the person currently has in being either in the labour 
   1 - Employed
     Employed persons are those aged 15 years and over who met one of the following
     criteria during the reference week:
-
+  
     - Worked for one hour or more for pay, profit, commission or payment in kind,
       in a job or business or son a farm (employees and owner managers of
       incorporated or unincorporated enterprises).
     - Worked for one hour or more without pay in a family business or on a farm
       (contributing family workers).
     - Were employees who had a job but were not at work and were:
-
+  
       - away from work for less than four weeks up to the end of the reference
         week; or
       - away from work for more than four weeks up to the end of the reference
@@ -2576,20 +2576,20 @@ The self-reported status the person currently has in being either in the labour 
       - on strike or locked out; or
       - on workers’ compensation and expected to return to their job.
     - Were owner managers who had a job, business or farm, but were not at work.
-
+  
   2 - Unemployed
     Unemployed persons are those aged 15 years and over who were not employed
     during the reference week, and:
-
+  
     - had actively looked for full time or part time work at any time in the
       four weeks up to the end of the reference week and were available for
       work in the reference week; or
     - were waiting to start a new job within four weeks from the end of the
       reference week and could have started in the reference week if the job
       had been available then.
-
+  
   Actively looked for work includes:
-
+  
     - written, telephoned or applied to an employer for work;
     - had an interview with an employer for work;
     - answered an advertisement for a job;
@@ -2598,17 +2598,17 @@ The self-reported status the person currently has in being either in the labour 
     - taken steps to purchase or start your own business;
     - advertised or tendered for work; and
     - contacted friends or relatives in order to obtain work.
-
+  
   3 - Not in the labour force
     Persons not in the labour force are those aged 15 years and over who were
     not in the categories employed or unemployed, as defined, during the
     reference week. They include people who undertook unpaid household duties
     or other voluntary work only, were retired, voluntarily inactive and those
     permanently unable to work.
-
+  
   9 - Not stated/inadequately described
     Includes children under 15 (0-14 years)
-
+  
 
 :METeOR: `621450 <http://meteor.aihw.gov.au/content/index.phtml/itemId/621450>`__
 
@@ -3084,15 +3084,15 @@ The language reported by a client as the main language other than English spoken
   `Australian Standard Classification of Languages (ASCL), 2016 4-digit code (ABS
   Catalogue No. 1267.0) <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1267.0>`_
   or 9999 if info is not known or client refuses to supply.
-
+  
   The ABS recommends the following question in order to collect this data:
   Which language does the client mainly speak at home? (If more than one
   language, indicate the one that is spoken most often.)
-
+  
   Organisations are encouraged to produce customised lists of the most common
   countries based on their local populations from the above resource. Please
   refer to :ref:`form_main_lang_at_home` for help on designing forms.
-
+  
 
 :METeOR: `460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__
 
@@ -3123,25 +3123,25 @@ A person's current relationship status in terms of a couple relationship or, for
 
 :Notes:
   Refers to the current marital status of a person.
-
+  
   2 - Widowed
     This code usually refers to registered marriages but when self-reported may
     also refer to de facto marriages.
-
+  
   4 - Separated
     This code refers to registered marriages but when self-reported may also
     refer to de facto marriages.
-
+  
   5 - Married (registered and de facto)
     Includes people who have been divorced or widowed but have since
     re-married, and should be generally accepted as applicable to all de facto
     couples, including of the same sex.
-
+  
   6 - Not stated/inadequately described
     This code is not for use on primary collection forms. It is primarily for
     use in administrative collections when transferring data from data sets
     where the item has not been collected.
-
+  
 
 :METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
 
@@ -3162,7 +3162,7 @@ This is a number or code assigned to each instance of a measure. The Measure Key
 
 :Notes:
   Measure keys are case sensitive and must be valid unicode characters.
-
+  
 
 ----------
 
@@ -3189,10 +3189,10 @@ Whether the client is taking prescribed antidepressants for a mental health cond
   Chemical Classification System, a system of alphanumeric codes developed by the
   World Health Organisation (WHO) for the classification of drugs and other
   medical products. It covers drugs designed for the depressive disorders.
-
+  
   Details of drugs included in the category can be found here:
   http://www.whocc.no/atc_ddd_index/?code=N06A
-
+  
 
 ----------
 
@@ -3220,10 +3220,10 @@ Whether the client is taking prescribed antipsychotics for a mental health condi
   World Health Organisation (WHO) for the classification of drugs and other
   medical products. It covers drugs designed for the treatment of psychotic
   disorders.
-
+  
   Details of drugs included in the category can be found here:
   http://www.whocc.no/atc_ddd_index/?code=N05A
-
+  
 
 ----------
 
@@ -3251,10 +3251,10 @@ Whether the client is taking prescribed anxiolytics for a mental health conditio
   World Health Organisation (WHO) for the classification of drugs and other
   medical products. It covers drugs designed for the treatment of disorders
   associated with anxiety and tension.
-
+  
   Details of drugs included in the category can be found here:
   http://www.whocc.no/atc_ddd_index/?code=N05B
-
+  
 
 ----------
 
@@ -3283,10 +3283,10 @@ Whether the client is taking prescribed hypnotics and sedatives for a mental hea
   medical products. It covers drugs designed to have mainly sedative or hypnotic
   actions. Hypnotic drugs are used to induce sleep and treat severe insomnia.
   Sedative drugs are prescribed to reduce excitability or anxiety.
-
+  
   Details of drugs included in the category can be found here:
   http://www.whocc.no/atc_ddd_index/?code=N05C
-
+  
 
 ----------
 
@@ -3314,10 +3314,10 @@ Whether the client is taking prescribed psychostimulants and nootropics for a me
   World Health Organisation (WHO) for the classification of drugs and other
   medical products. It covers drugs designed to attention-deficit hyperactivity
   disorder (ADHD) and to improve impaired cognitive abilities.
-
+  
   Details of drugs included in the category can be found here:
   http://www.whocc.no/atc_ddd_index/?code=N06B
-
+  
 
 ----------
 
@@ -3344,22 +3344,22 @@ How the service contact was delivered, as represented by a code.
 :Notes:
   0 - No contact took place
     Only use this code where the service contact is recorded as a no show.
-
+  
   1 - Face to Face
     - If 'Face to Face' is selected, a value other than 'Not applicable' must
       be selected for Service Contact Venue
     - If 'Face to Face' is selected a valid Australian
       postcode must be entered for Service Contact Postcode. The unknown postcode is not valid.
-
+  
   2 - Telephone
       Includes any voice based communication that does not use video,
       regardless of the technology used to provide the voice communication.
       For example, this could either be over land line telephone, mobile
       telephone, VoIP.
-
+  
   3 - Video
       Includes any video based communication.
-
+  
   4 - Internet-based
       Any internet based communications that do not fall into the
       2 - Telephone or 3 - Video categories. This includes email communication,
@@ -3367,10 +3367,10 @@ How the service contact was delivered, as represented by a code.
       clinical record of the client, involving a third party, such as a
       carer or family member, and/or other professional or mental health worker,
       or other service provider.
-
+  
   Note: If Service Contact Modality is not 'Face to Face' the postcode must
   be entered as unknown 9999.
-
+  
 
 ----------
 
@@ -3431,7 +3431,7 @@ Where an appointment was made for an intended participant(s), but the intended p
     The intended participant(s) failed to attend the appointment.
   2 - No
     The intended participant(s) attended the appointment.
-
+  
 
 ----------
 
@@ -3454,11 +3454,11 @@ The date on which a provider organisation stopped delivering services.
   of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
   necessary to pad out a value. For instance, 13th March 2008 would appear as
   13032008.
-
+  
     - If the organisation end date is unknown, use 09099999.
-
+  
   For validation rules please refer to :ref:`organisation-current-validations`.
-
+  
 
 ----------
 
@@ -3478,9 +3478,9 @@ A sequence of characters which uniquely identifies the provider organisation to 
 :Notes:
   Organisation Keys must be generated by the PHN to be unique and must persist
   across time. See :ref:`PO_key`
-
+  
   Organisation keys are case sensitive and must be valid unicode characters.
-
+  
 
 ----------
 
@@ -3500,9 +3500,9 @@ A sequence of colon separated Organisation Keys that fully specifies the Provide
 :Notes:
   A combination of the Primary Health Network's (PHN's) Organisation Key and the
   Provider Organisation's Organisation Key separated by a colon.
-
+  
   .. include:: shared/example-organisation-path.rst
-
+  
 
 ----------
 
@@ -3525,9 +3525,9 @@ The date on which a provider organisation started delivering services.
   of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
   necessary to pad out a value. For instance, 13th March 2008 would appear as
   13032008.
-
+  
   For validation rules please refer to :ref:`organisation-current-validations`.
-
+  
 
 ----------
 
@@ -3546,17 +3546,17 @@ List of tags for the provider organisation.
 
 :Notes:
   A comma separated list of tags.
-
+  
   Organisations can use this field to tag records in order to partition them as
   per local requirements.
-
+  
   Tags can contain lower case letters (or will get lowercased), numbers, dashes,
   spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
   nurse required, pending-outcome-1`` would all be legitimate.
-
+  
   Tags beginning with an exclamation mark (!) are reserved for future use by the
   Department. e.g. ``!reserved, ! reserved, !department-use-only``.
-
+  
 
 ----------
 
@@ -3595,23 +3595,23 @@ The category that best describes the provider organisation.
     The provider organisation is a group of single- or multi-discipline allied
     health practitioners operating as private service providers. This includes
     both group and solo practitioner entities.
-
+  
   2 - Private Psychiatry practice
     The provider organisation is a Private Psychiatry practice. This includes both
     group and solo practitioner entities.
-
+  
   3 - General Medical Practice
     The provider organisation is a General Medical Practice. This includes both
     group and solo practitioner entities.
-
+  
   4 - Private Hospital
     The provider organisation is a private hospital.  This includes for-profit and
     not-for-profit hospitals.
-
+  
   5 - Headspace Centre
     The provider organisation is a Headspace centre, delivering services funded by
     the PHN.
-
+  
     Note: Headspace and Early Psychosis Youth Centres currently collect and report
     a standardised dataset to headspace National Office.  Pending the future of
     these arrangements, reporting of the PMHC minimum data set is not required by
@@ -3621,47 +3621,47 @@ The category that best describes the provider organisation.
     local decisions will be required as to whether these services can be captured
     through headspace National Office sustem or are better reported through the
     PMHC MDS.
-
+  
   6 - Early Youth Psychosis Centre
     The provider organisation is a Early Youth Psychosis Centre, delivering
     services funded by the PHN.
-
+  
     Note: See Note above re Headspace.
-
+  
   7 - Community-managed Community Support Organisation
     The provider organisation is a community-managed (non-government) organisation
     that primarily delivers disability-related or social support services.
-
+  
   8 - Aboriginal Health/Medical Service
     The provider organisation is an Aboriginal or Torres Strait Islander-controlled
     health service organisation.
-
+  
   9 - State/Territory Health Service Organisation
     The provider organisation is a health service entity principally funded by a
     state or territory government.  This includes all services delivered through
     Local Hospital Networks (variously named across jurisdictions).
-
+  
   10 - Drug and/or Alcohol Service Organisation
     The provider organisation is an organisation that provides specialised drug
     and alcohol treatment services. The organisation may be operating in the
     government or non-government sector, and where the latter, may be for-profit
     or not-for-profit.
-
+  
   11 - Primary Health Network
     The PHN is the provider organisation and employs the service delivery
     practitioners. This may occur during the transition period as the PHN moves to
     a full commissioning role, or in cases of market failure where there is no
     option to commission external providers.
-
+  
   12 - Medicare Local
     The provider organisation is a former Medicare Local entity.
-
+  
   13 - Division of General Practice
     The provider organisation is a former Division of General Practice entity.
-
+  
   98 - Other
     The provider organisation cannot be described by any of the available options.
-
+  
 
 ----------
 
@@ -3705,21 +3705,13 @@ Type of organisation to which the the client was referred at the Episode conclus
   :23: Other PHN funded service
   :24: AMHC
   :99: Not stated
-
+  
   Multiple space separated values allowed
-
+  
 
 :Notes:
-  Medical Specialist Consulting Rooms includes private medical practitioner rooms
-  in public or private hospital or other settings.
-
-  Public mental health service refers to a state- or territory-funded specialised
-  mental health services (i.e., specialised mental health care delivered in
-  public acute and psychiatric hospital settings, community mental health care
-  services, and s specialised residential mental health care services).
-
-  Not applicable should only be selected in instances of Self referral.
-
+  .. include:: shared/referrer-organisation-type.rst
+  
 
 ----------
 
@@ -3784,19 +3776,21 @@ Type of organisation to which the the client was referred at the Intake conclusi
   :97: No Referral
   :98: Other
   :99: Not stated/Inadequately described
-
+  
   Multiple space separated values allowed
-
+  
 
 :Notes:
   Medical Specialist Consulting Rooms includes private medical practitioner rooms
   in public or private hospital or other settings.
-
+  
   Public mental health service refers to a state- or territory-funded specialised
   mental health services (i.e., specialised mental health care delivered in
   public acute and psychiatric hospital settings, community mental health care
-  services, and specialised residential mental health care services).
-
+  services, and s specialised residential mental health care services).
+  
+  Not applicable should only be selected in instances of Self referral.
+  
 
 ----------
 
@@ -3825,30 +3819,30 @@ An indication of who participated in the Service Contact.
   1 - Individual
     Code applies for Service Contacts delivered individually to a single client
     without third party participants. Please refer to the Note below.
-
+  
   2 - Client group
     Code applies for Service Contacts delivered on a group basis to two or more
     clients.
-
+  
   3 - Family / Client Support Network
     Code applies to Service Contacts delivered to the family/social support
     persons of the client, with or without the participation of the client.
-
+  
   4 - Other health professional or service provider
     Code applies for Service Contacts that involve another health professional or
     service provider (in addition to the Practitioner), with or without the
     participation of the client.
-
+  
   5 - Other
     Code applies to Service Contacts delivered to other third parties
     (e.g., teachers, employer), with or without the participation of the client.
-
+  
   *Note:* This item interacts with :ref:`dfn-service_contact_participation_indicator`.
   Where :ref:`dfn-service_contact_participants` has a value of
   '1: Individual', :ref:`dfn-service_contact_participation_indicator` must
   have a value of '1: Yes'. :ref:`dfn-service_contact_no_show` is used to record if the
   patient failed to attend the appointment.
-
+  
 
 ----------
 
@@ -3869,14 +3863,14 @@ The Australian postcode where the service contact took place.
   A valid Australian postcode or 9999 if the postcode is unknown. The full list
   of Australian Postcodes can be found at `Australia Post
   <http://www.auspost.com.au/>`_.
-
+  
   - If Service Contact Modality is not 'Face to Face' enter 9999
   - If Service Contact Modality is 'Face to Face' a valid Australian postcode must be
     entered
-
+  
   - As of 1 November 2016, PMHC MDS currently validates that postcodes are in the
     range 0200-0299 or 0800-9999.
-
+  
 
 :METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
 
@@ -3905,14 +3899,14 @@ Whether a person identifies as being of Aboriginal and/or Torres Strait Islander
 :Notes:
   Code 9 is not to be available as a valid answer to the questions but is
     intended for use:
-
+  
     - Primarily when importing data from other data collections that do not
       contain mappable data.
     - Where an answer was refused.
     - Where the question was not able to be asked prior to completion of
       assistance because the client was unable to communicate or a person who
       knows the client was not available.
-
+  
 
 :METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__
 
@@ -3954,7 +3948,7 @@ The type or category of the practitioner, as represented by a code.
   services to clients. Practitioners are registered in the PMHC MDS by Provider
   Organisations, with each practitioner assigned a code that is unique within the
   organisation.
-
+  
   In most cases, Practitioner Category will be determined by the training
   and qualifications of the practitioner. However, in some instances, a
   practitioner may be employed in a capacity that does not necessarily reflect
@@ -3962,24 +3956,24 @@ The type or category of the practitioner, as represented by a code.
   qualification may be employed primarily as a peer support worker on the basis
   of their lived experience of a mental illness.  In such instances, the
   practitioner should be classified as a peer support worker.
-
+  
   12 - Psychosocial Support Worker
     Refers to practitioners who are principally employed to provide psychosocial
     support services to clients where the practitioner has specific training in
     the area (e.g., Cert 4 qualification) and cannot be better described by
     another category.
-
+  
   13 - Peer Support Worker
     Refers to practitioners who are principally employed to provide support to
     clients on the basis of the practitioner’s lived experience of mental illness.
-
-
+  
+  
   **Changes in effect from 1 January 2019**
-
+  
   - Two new codes have been added to the existing Practitioner Category data item,
     to allow for Psychosocial Support Workers (new code 12) and Peer Support
     Workers (new code 13) who are typically employed in psychosocial support programs.
-
+  
 
 ----------
 
@@ -4006,15 +4000,15 @@ The term 'gender' refers to the way in which a person identifies their masculine
   1 - M - Male
     Adults who identify themselves as men, and children who identify themselves
     as boys.
-
+  
   2 - F - Female
     Adults who identify themselves as women, and children who identify themselves
     as girls.
-
+  
   3 - X- Other
     Adults and children who identify as non-binary, gender diverse, or with
     descriptors other than man/boy or woman/girl.
-
+  
 
 :ABS: `http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view= <http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=>`__
 
@@ -4036,19 +4030,19 @@ A unique identifier for a practitioner within the responsible provider organisat
 :Notes:
   PMHC MDS keys are case sensitive and must have between 2-50 valid unicode characters.
   Keys must start with A-Za-z0-9 (POSIX :alnum:).
-
+  
   Where data is being exported from client systems, these keys can be auto generated,
   providing that a key does not change once it is assigned.
-
+  
   Keys must be generated by the organisation to be unique at the Provider
   Organisation level and must persist across time. Creation of keys in
   this way allows records to be merged (where duplicate keys of the same record type have been
   identified) without having to re-allocate keys since they can
   never clash.
-
+  
   A recommended approach for the creation of keys is to compute `random
   UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
-
+  
 
 ----------
 
@@ -4067,17 +4061,17 @@ List of tags for the practitioner.
 
 :Notes:
   A comma separated list of tags.
-
+  
   Organisations can use this field to tag records in order to partition them as
   per local requirements.
-
+  
   Tags can contain lower case letters (or will get lowercased), numbers, dashes,
   spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
   nurse required, pending-outcome-1`` would all be legitimate.
-
+  
   Tags beginning with an exclamation mark (!) are reserved for future use by the
   Department. e.g. ``!reserved, ! reserved, !department-use-only``.
-
+  
 
 ----------
 
@@ -4161,7 +4155,7 @@ The Principal Diagnosis is the diagnosis established after study to be chiefly r
 
 :Notes:
   Diagnoses are grouped into 8 major categories (9 for Additional Diagnosis):
-
+  
   - 000 - No additional diagnosis (Additional Diagnosis only)
   - 1xx - Anxiety disorders
   - 2xx - Affective (Mood) disorders
@@ -4171,7 +4165,7 @@ The Principal Diagnosis is the diagnosis established after study to be chiefly r
   - 6xx - Other mental disorders
   - 9xx except 999 - No formal mental disorder but subsyndromal problems
   - 999 - Missing or Unknown
-
+  
   The Principal Diagnosis should be determined by the treating or supervising
   clinical practitioner who is responsible for providing, or overseeing, services
   delivered to the client during their current episode of care. Each episode of
@@ -4181,7 +4175,7 @@ The Principal Diagnosis is the diagnosis established after study to be chiefly r
   can be made. If a client has more than one diagnosis, the Principal Diagnosis
   should reflect the main presenting problem. Any secondary diagnosis should be
   recorded under the Additional Diagnosis field.
-
+  
   The coding options developed for the PMHC MDS have been selected to balance
   comprehensiveness and brevity. They comprise a mix of the most prevalent mental
   disorders in the Australian adult, child and adolescent population,
@@ -4194,14 +4188,14 @@ The Principal Diagnosis is the diagnosis established after study to be chiefly r
   are grouped under higher level categories, based on the DSM-IV. Code numbers
   have been assigned specifically for the PMHC MDS to create a logical ordering
   but are capable of being mapped to both DSM-IV and ICD-10 codes.
-
+  
   Options for recording Principal Diagnosis include the broad category ‘No formal
   mental disorder but subsyndromal problems’ (codes commencing with 9). These
   codes should be used for clients who present with problems that do not meet
   threshold criteria for a formal diagnosis - for example, people experiencing
   subsyndromal symptoms who may be at risk of progressing to a more severe
   symptom level.
-
+  
   Each category has a final entry for capturing other conditions that don’t meet
   the more specific entries in the category. This includes the ‘No formal mental
   disorder but subsyndromal problems’ category. Code 905 (‘Other symptoms’)
@@ -4210,28 +4204,28 @@ The Principal Diagnosis is the diagnosis established after study to be chiefly r
   entries. The 905 code should not be used where there is a formal but unlisted
   mental disorder. In such a situation code 605 (‘Other mental disorder’)
   should be used.
-
+  
   Reference: Diagnostic and Statistical Manual of Mental Disorders, Fourth
   Edition, Text Revision. Copyright 2000 American Psychiatric Association.
-
+  
   The following responses have been added to allow mapping of ATAPS data to PMHC
   format.
-
+  
   - 100: Anxiety disorders (ATAPS)
   - 200: Affective (Mood) disorders (ATAPS)
   - 300: Substance use disorders (ATAPS)
   - 400: Psychotic disorders (ATAPS)
-
+  
   *Note: These four codes should only be used for Episodes that are migrated
   from ATAPS MDS sources that cannot be described by any other Diagnosis.
   It is expected that the majority of Episodes delivered to clients
   from 1st July, 2017 can be assigned to other diagnoses.*
-
+  
   These responses will only be allowed on episodes where the original
   ATAPS referral date was before 1 July 2017
-
+  
   These responses will only be allowed on episodes with the !ATAPS flag.
-
+  
 
 ----------
 
@@ -4260,7 +4254,7 @@ The range of activities that best describes the overall services intended to be 
 :Notes:
   Describes the main focus of the services to be delivered to the client for the
   current Episode of Care, selected from a defined list of categories.
-
+  
   Service providers are required to report on the 'Principal Focus of Treatment
   Plan' for all accepted referrals. This requires a judgement to be made about
   the main focus of the services to be delivered to the client for the current
@@ -4268,13 +4262,13 @@ The range of activities that best describes the overall services intended to be 
   stage. It is chosen from a defined list of categories, with the provider
   required to select the category that best fits the treatment plan designed for
   the client.
-
+  
   Principal Focus of Treatment Plan is necessarily a judgement made by the
   provider at the outset of service delivery but consistent with good practice,
   should be made on the basis of a treatment plan developed in collaboration with
   the client. It should not be confused with Service Type which is collected at
   each Service Contact.
-
+  
   1 - Psychological therapy
     The treatment plan for the client is primarily based around the delivery of
     psychological therapy by one or more mental health professionals. This
@@ -4282,13 +4276,13 @@ The range of activities that best describes the overall services intended to be 
     previous ATAPS program where up to 12 individual treatment sessions, and 18
     in exceptional circumstances, could be provided. These sessions could be
     supplemented by up to 10 group-based sessions.
-
+  
     The concept of 'mental health professionals' has a specific meaning defined
     in the various guidance documentation prepared to support PHNs in
     implementation of reforms. It refers to service providers who meet the
     requirements for registration, credentialing or recognition as a qualified
     mental health professional and includes:
-
+  
     - Psychiatrists
     - Registered Psychologists
     - Clinical Psychologists
@@ -4296,7 +4290,7 @@ The range of activities that best describes the overall services intended to be 
     - Occupational Therapists;
     - Social Workers
     - Aboriginal and Torres Strait Islander health workers.
-
+  
   2 - Low intensity psychological intervention
     The treatment plan for the client is primarily based around delivery of
     time-limited, structured psychological interventions that are aimed at
@@ -4305,14 +4299,14 @@ The range of activities that best describes the overall services intended to be 
     or relatively little qualified mental health professional time and are
     targeted at people with, or at risk of, mild mental illness. Low intensity
     episodes can be delivered through a range of mechanisms including:
-
+  
     - use of individuals with appropriate competencies but who do not meet the
       requirements for registration, credentialing or recognition as a mental
       health professional;
     - delivery of services principally through group-based programs; and
     - delivery of brief or low cost forms of treatment by mental health
       professionals.
-
+  
   3 - Clinical care coordination
     The treatment plan for the client is primarily based around delivery of a
     range of services where the overarching aim is to coordinate and better
@@ -4323,7 +4317,7 @@ The range of activities that best describes the overall services intended to be 
     the client’s clinical outcomes. These clinical care coordination and liaison
     activities are expected to account for a significant proportion of service
     contacts delivered throughout these episodes.
-
+  
     Activities focused on working in partnership and liaison with other health
     care and service providers and other individuals to coordinate and integrate
     service delivery to the client with the aim of improving their clinical
@@ -4332,7 +4326,7 @@ The range of activities that best describes the overall services intended to be 
     services, family, friends, other support people and carers and other agencies
     that have some level of responsibility for the client’s treatment and/or
     well-being.
-
+  
   4 - Complex Care Package
     The treatment plan for the client is primarily based around the delivery of an
     individually tailored ‘package’ of services for a client with severe and
@@ -4345,7 +4339,7 @@ The range of activities that best describes the overall services intended to be 
     PHN Lead Sites with responsibilities for trialling work in this area are
     expected to deliver complex care packages. A wider roll-out may be undertaken
     in the future pending results of the trial.
-
+  
   5 - Child and youth-specific mental health services
     The treatment plan for the client is primarily based around the delivery of a
     range of services for children (0-11 years) or youth (aged 12-24 years) who
@@ -4355,16 +4349,16 @@ The range of activities that best describes the overall services intended to be 
     non-clinical services and may include a significant component of clinical
     care coordination and liaison. Child and youth-specific mental health
     episodes have substantial flexibility in types of services actually delivered.
-
+  
   6 - Indigenous-specific services
     The treatment plan for the client is primarily based around delivery of
     mental health services that are specifically designed to provide culturally
     appropriate services for Aboriginal and Torres Strait Islander peoples.
-
+  
   7 - Other
      The treatment plan for the client is primarily based around services
      that cannot be described by other categories.
-
+  
 
 ----------
 
@@ -4393,12 +4387,12 @@ The self-assessed level of ability to speak English, asked of people whose first
   0 - Not applicable (persons under 5 years of age or who speak only English)
     Not applicable, is to be used for people under 5 years of age and people
     who speak only English.
-
+  
   9 - Not stated/inadequately described
     Not stated/inadequately described, is not to be used on primary collection
     forms. It is primarily for use in administrative collections when
     transferring data from data sets where the item has not been collected.
-
+  
 
 :METeOR: `270203 <http://meteor.aihw.gov.au/content/index.phtml/itemId/270203>`__
 
@@ -4422,7 +4416,7 @@ The overarching program area that an Intake or Episode record is associated with
   :2: Head to Health
   :3: AMHC
   :4: Psychosocial
-  :5: Bushfire Recovery 20
+  :5: Bushfire Recovery 2020
 
 :Notes:
   1 - Flexible Funding Pool
@@ -4431,12 +4425,12 @@ The overarching program area that an Intake or Episode record is associated with
     that are not otherwise described by another category. This may include but
     is not limited to general Stepped Care, Mental Health in Residential Aged
     Care Facilities, and Indigenous Mental Health.
-
+  
   2 - Head to Health
     Organisations can use this field for episodes delivered through the Head to
     Health Program. This includes Head to Health Adult Centres and Satellites
     and pop-up clinics.
-
+  
     NSW and Victorian pop-up clinics data have been identified using the Head
     to Help Version 3 extension and !covid19 tag. Any historical or new records
     that are identified this way will be mapped to this Program Type field
@@ -4444,15 +4438,15 @@ The overarching program area that an Intake or Episode record is associated with
     reserved tag for the original purpose of indicating that an episode has
     occurred as result of the COVID-19 pandemic once Head to Help Version 3
     extension reaches it’s end of life date.
-
+  
   3 - AMHC
     Organisations can use this field for episodes delivered through the Head to
     Health Program by organisations that were already delivering the Adult
     Mental Health Centre (AMHC) trial sites.
-
+  
     This change only applies to the following PHNs implementing AMHCs from
     December 2021:
-
+  
     * West Victoria PHN
     * Northern Territory PHN
     * ACT PHN
@@ -4460,23 +4454,23 @@ The overarching program area that an Intake or Episode record is associated with
     * Nepean Blue Mountains PHN
     * North Queensland PHN
     * Tasmania PHN
-
+  
     AMHC data has been identified using the !amhc tag. Any historical records
     created on or before 30 June 2022 that use this tag will be mapped to this
     Program Type under the Version 4 specification. The !amhc tag will be
     removed from future use once PMHC MDS Version 2 specification reaches
     it’s end of life date.
-
+  
     From July 1 2022 the AMHC trial sites were consolidated under the Head to
     Health program. For data collection purposes, organisations delivering
     Head to Health services that were already delivering AMHC trial sites can
     use either the AMHC or Head to Health program type for records created
     on or after 1 July 2022.
-
+  
   4 - Psychosocial
     Organisations can use this field for episodes delivered through the National
     Psychosocial Support Services Program.
-
+  
     Psychosocial data has been identified using the Principal Focus of Treatment
     Plan (PFOT) “Psychosocial” category. Any historical or new records that
     utilise the Psychosocial PFOT will be mapped to this Program Type field
@@ -4484,21 +4478,21 @@ The overarching program area that an Intake or Episode record is associated with
     no longer be available under the Version 4 specification and further
     guidance will be provided by the Department to support the management
     of this change in data collection requirements.
-
+  
     Any records that have the Psychosocial PFOT but also have a !covid19,
     !amhc, or !br20 tag will be mapped to the respective Program Type associated
     with those tags rather than the Psychosocial Program Type.
-
+  
   5 - Bushfire Recovery 2020
     Organisations in fire affected communities can use this field for episodes
     delivered through the Australian Government Mental Health Response to
     Bushfire Trauma.
-
+  
     This data has been identified using the !br20 tag. Any historical or new
     records using this tag will be mapped to this Program Type field under
     the Version 4 specification. The !br20 tag will be removed from future
     use once the Bushfire Program is concluded.
-
+  
 
 ----------
 
@@ -4521,18 +4515,18 @@ The date the referrer made the referral.
   of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
   necessary to pad out a value. For instance, 13th March 2008 would appear as
   13032008.
-
+  
   - The referral date for Intakes must not be before 1st January 2020.
   - The referral date for Episodes must not be before 1st January 2014.
   - The referral date must not be in the future.
-
+  
   Referral date was optional in specifications prior to Version 4. In Version 4
   referral date has been made mandatory. In order to export and re-upload episode data
   that was uploaded or entered prior to Version 4 the value '09099999' will be
   used in data exports and allowed for existing episode data without a referral date.
   See :ref:`episode-current-validations` for rules on
   how this value may be used.
-
+  
 
 ----------
 
@@ -4552,9 +4546,9 @@ A sequence of colon separated Organisation Keys that fully specifies the Provide
 :Notes:
   A combination of the referred to Primary Health Network's (PHN's) Organisation Key and the
   referred to Provider Organisation's Organisation Key separated by a colon.
-
+  
   .. include:: shared/example-organisation-path.rst
-
+  
 
 ----------
 
@@ -4599,14 +4593,14 @@ Type of organisation in which the referring professional is based.
 :Notes:
   Medical Specialist Consulting Rooms includes private medical practitioner rooms
   in public or private hospital or other settings.
-
+  
   Public mental health service refers to a state- or territory-funded specialised
   mental health services (i.e., specialised mental health care delivered in
   public acute and psychiatric hospital settings, community mental health care
   services, and s specialised residential mental health care services).
-
+  
   Not applicable should only be selected in instances of Self referral.
-
+  
 
 ----------
 
@@ -4646,7 +4640,7 @@ Profession of the provider who referred the client.
   New arrangements for some services delivered in primary mental health care
   allows clients to refer themselves for treatment. Therefore, 'Self'
   is a response option included within 'Referrer profession'.
-
+  
 
 ----------
 
@@ -4674,7 +4668,7 @@ The version of the SDQ collected.
 :Notes:
   Domain values align with those collected in the NOCC dataset as defined at
   https://webval.validator.com.au/spec/NOCC/current/SDQ/SDQVer
-
+  
 
 ----------
 
@@ -4695,9 +4689,9 @@ SDQ - Conduct Problem Scale
 
 :Notes:
   See `SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#scoring-the-sdq>`_ for instructions on scoring the Conduct Problem Scale.
-
+  
   When reporting individual item scores use ‘99 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -4718,9 +4712,9 @@ SDQ - Emotional Symptoms Scale
 
 :Notes:
   See `SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#scoring-the-sdq>`_ for instructions on scoring the Emotional Symptoms Scale.
-
+  
   When reporting individual item scores use ‘99 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -4741,9 +4735,9 @@ SDQ - Hyperactivity Scale
 
 :Notes:
   See `SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#scoring-the-sdq>`_ for instructions on scoring the Hyperactivity Scale.
-
+  
   When reporting individual item scores use ‘99 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -4764,9 +4758,9 @@ SDQ - Impact Score
 
 :Notes:
   See `SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#scoring-the-sdq>`_ for instructions on scoring the Impact Score.
-
+  
   When reporting individual item scores use ‘99 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -4787,9 +4781,9 @@ SDQ - Peer Problem Scale
 
 :Notes:
   See `SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#scoring-the-sdq>`_ for instructions on scoring the Peer Problem Scale.
-
+  
   When reporting individual item scores use ‘99 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -4810,9 +4804,9 @@ SDQ - Prosocial Scale
 
 :Notes:
   See `SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#scoring-the-sdq>`_ for instructions on scoring the Prosocial Scale.
-
+  
   When reporting individual item scores use ‘99 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -4840,9 +4834,9 @@ Youth Self Report: I try to be nice to other people. I care about their feelings
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -4870,9 +4864,9 @@ Youth Self Report: I am restless, I cannot stay still for long.
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -4900,9 +4894,9 @@ Youth Self Report: I get a lot of headaches, stomach-aches or sickness.
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -4930,9 +4924,9 @@ Youth Self Report: I usually share with others, for examples CDs, games, food.
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -4960,9 +4954,9 @@ Youth Self Report: I get very angry and often lose my temper.
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -4990,9 +4984,9 @@ Youth Self Report: I would rather be alone than with people of my age.
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5020,9 +5014,9 @@ Youth Self Report: I usually do as I am told.
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5050,9 +5044,9 @@ Youth Self Report: I worry a lot.
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5080,9 +5074,9 @@ Youth Self Report: I am helpful if someone is hurt, upset or feeling ill.
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5110,9 +5104,9 @@ Youth Self Report: I am constantly fidgeting or squirming.
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5140,9 +5134,9 @@ Youth Self Report: I have one good friend or more.
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5170,9 +5164,9 @@ Youth Self Report: I fight a lot. I can make other people do what I want.
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5200,9 +5194,9 @@ Youth Self Report: I am often unhappy, depressed or tearful.
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5230,9 +5224,9 @@ Youth Self Report: Other people my age generally like me.
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5260,9 +5254,9 @@ Youth Self Report: I am easily distracted, I find it difficult to concentrate.
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5290,9 +5284,9 @@ Youth Self Report: I am nervous in new situations. I easily lose confidence.
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5320,9 +5314,9 @@ Youth Self Report: I am kind to younger people.
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5350,9 +5344,9 @@ Youth Self Report: I am often accused of lying or cheating.
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5380,9 +5374,9 @@ Youth Self Report: Other children or young people pick on me or bully me.
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5410,9 +5404,9 @@ Youth Self Report: I often volunteer to help others (parents, teachers, children
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5440,9 +5434,9 @@ Youth Self Report: I think before I do things.
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5470,9 +5464,9 @@ Youth Self Report: I take things that are not mine from home, school or elsewher
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5500,9 +5494,9 @@ Youth Self Report: I get along better with adults than with people my own age.
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5530,9 +5524,9 @@ Youth Self Report: I have many fears, I am easily scared.
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5560,9 +5554,9 @@ Youth Self Report: I finish the work I'm doing. My attention is good.
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5591,9 +5585,9 @@ Youth Self Report: Overall, do you think that you have difficulties in any of th
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5626,9 +5620,9 @@ Youth Self Report: How long have these difficulties been present?
   - PC101
   - PY101
   - YR101
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5658,9 +5652,9 @@ Youth Self Report: Do the difficulties upset or distress you?
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5690,9 +5684,9 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5722,9 +5716,9 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5754,9 +5748,9 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5786,9 +5780,9 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5818,9 +5812,9 @@ Youth Self Report: Do the difficulties make it harder for those around you (fami
 
 :Notes:
   Required Versions: All
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5851,13 +5845,13 @@ Youth Self Report: 'Since coming to the service, are your problems:
 
 :Notes:
   Required Versions:
-
+  
   - PC201
   - PY201
   - YR201
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5885,13 +5879,13 @@ Has coming to the service been helpful in other ways eg. providing information o
 
 :Notes:
   Required Versions:
-
+  
   - PC201
   - PY201
   - YR201
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5918,12 +5912,12 @@ Over the last 6 months have your child's teachers complained of fidgetiness, res
 
 :Notes:
   Required Versions:
-
+  
   - PC101
   - PY101
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5950,12 +5944,12 @@ Over the last 6 months have your child's teachers complained of poor concentrati
 
 :Notes:
   Required Versions:
-
+  
   - PC101
   - PY101
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -5982,12 +5976,12 @@ Over the last 6 months have your child's teachers complained of acting without t
 
 :Notes:
   Required Versions:
-
+  
   - PC101
   - PY101
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -6014,11 +6008,11 @@ Does your family complain about you having problems with overactivity or poor co
 
 :Notes:
   Required Versions:
-
+  
   - YR101
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -6045,11 +6039,11 @@ Do your teachers complain about you having problems with overactivity or poor co
 
 :Notes:
   Required Versions:
-
+  
   - YR101
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -6076,11 +6070,11 @@ Does your family complain about you being awkward or troublesome?
 
 :Notes:
   Required Versions:
-
+  
   - YR101
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -6107,11 +6101,11 @@ Do your teachers complain about you being awkward or troublesome?
 
 :Notes:
   Required Versions:
-
+  
   - YR101
-
+  
   When reporting subscale and total scores use ‘9 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -6130,17 +6124,17 @@ List of tags for the measure.
 
 :Notes:
   A comma separated list of tags.
-
+  
   Organisations can use this field to tag records in order to partition them as
   per local requirements.
-
+  
   Tags can contain lower case letters (or will get lowercased), numbers, dashes,
   spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
   nurse required, pending-outcome-1`` would all be legitimate.
-
+  
   Tags beginning with an exclamation mark (!) are reserved for future use by the
   Department. e.g. ``!reserved, ! reserved, !department-use-only``.
-
+  
 
 ----------
 
@@ -6161,9 +6155,9 @@ SDQ - Total Difficulties Score
 
 :Notes:
   See `SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#scoring-the-sdq>`_ for instructions on scoring the Total Difficulties Score.
-
+  
   When reporting individual item scores use ‘99 - Not stated / Missing’.
-
+  
 
 ----------
 
@@ -6186,11 +6180,11 @@ The date of each mental health service contact between a health service provider
   of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
   necessary to pad out a value. For instance, 13th March 2008 would appear as
   13032008.
-
+  
   - The service contact date must not be before 1st January 2014.
-
+  
   - The service contact date must not be in the future.
-
+  
 
 :METeOR: `494356 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494356>`__
 
@@ -6212,19 +6206,19 @@ This is a number or code assigned to each service contact. The Service Contact K
 :Notes:
   PMHC MDS keys are case sensitive and must have between 2-50 valid unicode characters.
   Keys must start with A-Za-z0-9 (POSIX :alnum:).
-
+  
   Where data is being exported from client systems, these keys can be auto generated,
   providing that a key does not change once it is assigned.
-
+  
   Keys must be generated by the organisation to be unique at the Provider
   Organisation level and must persist across time. Creation of keys in
   this way allows records to be merged (where duplicate keys of the same record type have been
   identified) without having to re-allocate keys since they can
   never clash.
-
+  
   A recommended approach for the creation of keys is to compute `random
   UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
-
+  
 
 ----------
 
@@ -6244,19 +6238,19 @@ This is a number or code assigned to each service contact practitioner. The Serv
 :Notes:
   PMHC MDS keys are case sensitive and must have between 2-50 valid unicode characters.
   Keys must start with A-Za-z0-9 (POSIX :alnum:).
-
+  
   Where data is being exported from client systems, these keys can be auto generated,
   providing that a key does not change once it is assigned.
-
+  
   Keys must be generated by the organisation to be unique at the Provider
   Organisation level and must persist across time. Creation of keys in
   this way allows records to be merged (where duplicate keys of the same record type have been
   identified) without having to re-allocate keys since they can
   never clash.
-
+  
   A recommended approach for the creation of keys is to compute `random
   UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
-
+  
 
 ----------
 
@@ -6275,17 +6269,17 @@ List of tags for the service contact.
 
 :Notes:
   A comma separated list of tags.
-
+  
   Organisations can use this field to tag records in order to partition them as
   per local requirements.
-
+  
   Tags can contain lower case letters (or will get lowercased), numbers, dashes,
   spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
   nurse required, pending-outcome-1`` would all be legitimate.
-
+  
   Tags beginning with an exclamation mark (!) are reserved for future use by the
   Department. e.g. ``!reserved, ! reserved, !department-use-only``.
-
+  
 
 ----------
 
@@ -6316,18 +6310,18 @@ The main type of service provided in the service contact, as represented by the 
   :98: ATAPS
 
 :Notes:
-
-
+  
+  
   Describes the main type of service delivered in the contact, selected from a
   defined list of categories.  Where more than service type was provided select
   that which accounted for most provider time. Service providers are required
   to report on Service Type for all Service Contacts.
-
+  
   *Note: NEC is used for 'Not Elsewhere Classified'. For these records, only use these service types if they cannot be classified by any of the other service options.*
-
+  
   0 - No contact took place
     Only use this code where the service contact is recorded as a no show.
-
+  
   1 - Assessment
     Determination of a person's mental health status and need for mental
     health services, made by a suitably trained mental health professional,
@@ -6336,7 +6330,7 @@ The main type of service provided in the service contact, as represented by the 
     Assessment may include consultation with the person's family and concludes
     with formation of problems/issues, documentation of a preliminary
     diagnosis, and a treatment plan.
-
+  
   2 - Structured psychological intervention
     Those interventions which include a structured interaction between a
     client and a service provider using a recognised, psychological method,
@@ -6352,17 +6346,17 @@ The main type of service provided in the service contact, as represented by the 
     requirements for registration, credentialing or recognition as a mental
     health professional. Structured Psychological Therapies include but are
     not limited to:
-
+  
     - Psycho-education (including motivational interviewing)
     - Cognitive-behavioural therapies
     - Relaxation strategies
     - Skills training
     - Interpersonal therapy
-
+  
   3 - Other psychological intervention
      Psychological interventions that do not meet criteria for structured
      psychological intervention.
-
+  
   4 - Clinical care coordination/liaison
      Activities focused on working in partnership and liaison with other
      health care and service providers and other individuals to coordinate
@@ -6372,13 +6366,13 @@ The main type of service provided in the service contact, as represented by the 
      and support services, family, friends, other support people and carers
      and other agencies that have some level of responsibility for the
      client's treatment and/or well being.
-
+  
   5 - Clinical nursing services
     Services delivered by mental health nurses that cannot be described
     elsewhere.  Typically, these aim to provide clinical support to clients
     to effectively manage their symptoms and avoid unnecessary hospitalisation.
     Clinical nursing services include:
-
+  
     - monitoring a client's mental state;
     - liaising closely with family and carers as appropriate;
     - administering and monitoring compliance with medication;
@@ -6386,19 +6380,19 @@ The main type of service provided in the service contact, as represented by the 
       where appropriate, assist in addressing the physical health inequities
       of people with mental illness; and
     - improving links to other health professionals/clinical service providers.
-
+  
   6 - Child or youth-specific assistance NEC
     Services delivered to, or on behalf, of a child or young person that cannot
     be described elsewhere. These can include, for example, working with a
     child’s teacher to provide advice on assisting the child in their educational
     environment; working with a young person's employer to assist the young
     person to their work environment.
-
+  
     *Note: This code should only be used for
     Service Contacts that cannot be described by any other Service Type. It is
     expected that the majority of Service Contacts delivered to children and
     young people can be assigned to other categories.*
-
+  
   7 - Suicide prevention specific assistance NEC
     Services delivered to, or on behalf, of a client who presents with risk of
     suicide that cannot be described elsewhere. These can include, for example,
@@ -6406,24 +6400,24 @@ The main type of service provided in the service contact, as represented by the 
     working with a young person's teacher to assist the child in their school
     environment; or working with relevant community-based groups to assist the
     client to participate in their activities.
-
+  
     *Note: This code should only be used for Service Contacts that cannot be
     described by any other Service Type. It is expected that the majority of
     Service Contacts delivered to client’s who have a risk of suicide can be
     assigned to other categories.*
-
+  
   8 - Cultural specific assistance NEC
     Culturally appropriate services delivered to, or on behalf, of an Aboriginal
     or Torres Strait Islander client that cannot be described elsewhere.  These
     can include, for example, working with the client’s community support network
     including family and carers, men’s and women’s groups, traditional healers,
     interpreters and social and emotional wellbeing counsellors.
-
+  
     *Note: This code should only be used for Service Contacts that cannot be
     described by any other Service Type. It is expected that the majority of
     Service Contacts (see domains below) delivered to Aboriginal or Torres Strait
     Islander clients can be assigned to other categories.*
-
+  
   9 - Psychosocial support
     Service providers are required to report on Service Contact Type for every
     contact with a client. This requires a judgement about the main service
@@ -6431,13 +6425,13 @@ The main type of service provided in the service contact, as represented by the 
     on the activity that accounted for most provider time. Service Contact Type
     complements Principal Focus of Treatment Plan by capturing information to
     understand the mix of services provided within an individual episode of care.
-
+  
     Service Contact Type should be coded as Psychosocial Support (code 9) where
     the main services delivered during the contact involved the delivery of
     psychosocial support services. Psychosocial support services are defined for
     PMHC MDS purposes as services that focus on building capacity and stability
     in one or more of the following areas:
-
+  
     * social skills and friendships, family connections;
     * managing daily living needs;
     * financial management and budgeting;
@@ -6446,29 +6440,29 @@ The main type of service provided in the service contact, as represented by the 
     * educational and training goals;
     * maintaining physical wellbeing, including exercise;
     * building broader life skills including confidence and resilience.
-
+  
     These services are usually delivered by a range of non-clinical providers
     including peer support workers with lived experience of mental illness.
-
+  
     Service Contacts recorded as psychosocial support may be delivered in all
     episodes of care, regardless of episode type.  However, it is expected that
     they will be mainly associated with episodes where the Principal Focus of
     Treatment Plan is classified as Psychosocial Support.
-
+  
   98 - ATAPS
     Services delivered as part of ATAPS funded referrals that are recorded and/or
     migrated into the PMHC MDS.
-
+  
     *Note: This code should only be used for Service Contacts that are migrated
     from ATAPS MDS sources that cannot be described by any other Service Type.
     It is expected that the majority of Service Contacts delivered to clients
     from 1st July, 2017 can be assigned to other categories.*
-
+  
     This response will not be allowed on service contacts delivered after
     30 June 2018. (All ATAPS referrals should have concluded by that date).
-
+  
     This response will only be allowed on service contacts with the !ATAPS flag.
-
+  
 
 ----------
 
@@ -6498,21 +6492,21 @@ The source from which a person derives the greatest proportion of his/her income
 
 :Notes:
   This data standard is not applicable to person's aged less than 16 years.
-
+  
   This item refers to the source by which a person derives most (equal to or
   greater than 50%) of his/her income. If the person has multiple sources of
   income and none are equal to or greater than 50%, the one which contributes
   the largest percentage should be counted.
-
+  
   This item refers to a person's own main source of income, not that of a
   partner or of other household members. If it is difficult to determine a
   'main source of income' over the reporting period (i.e. it may vary over
   time) please report the main source of income during the reference week.
-
+  
   Code 7 'Not known' should only be recorded when it has not been possible for
   the service user or their carer/family/advocate to provide the information
   (i.e. they have been asked but do not know).
-
+  
 
 :METeOR: `386449 <http://meteor.aihw.gov.au/content/index.phtml/itemId/386449>`__
 
@@ -6536,12 +6530,12 @@ The start time of each mental health service contact between a health service pr
   recorded in 24-hour time in the format HH:MM. Leading zeroes are accepted but
   not required. For example, 8:30 in the morning could be 8:30 or 08:30 and 3:45
   in the afternoon would be 15:45.
-
+  
   The end-of-day flag "24:00" may be used as a missing time value for any
   existing Service Contacts that have previously been added to the MDS without
   a start time. See :ref:`service-contact-current-validations` for rules on
   how the end-of-day value may be used.
-
+  
 
 ----------
 
@@ -6575,7 +6569,7 @@ The state that the provider organisation operates in.
     <http://www.abs.gov.au/ausstats/abs@.nsf/0/871A7FF33DF471FBCA257801000DCD5
     F?Opendocument>`_.
   - Code is from Meteor with the addition of code for Other Territories.
-
+  
 
 :METeOR: `613718 <http://meteor.aihw.gov.au/content/index.phtml/itemId/613718>`__
 
@@ -6597,7 +6591,7 @@ A key that enables two or more records belonging to the same individual to be br
 :Notes:
   System generated non-identifiable alphanumeric code derived from information
   held by the PMHC organisation.
-
+  
   Supported formats:
     - 14 character `SLK
       <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`_
@@ -6605,9 +6599,9 @@ A key that enables two or more records belonging to the same individual to be br
       hash of a 14 character SLK. This must be 32 characters in length.
     - a hex encoded sha1 hash of a 14 character SLK. This must be 40 characters
       in length.
-
+  
   SLK values are stored in sha1_hex format.
-
+  
 
 :METeOR: `349510 <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`__
 
@@ -6678,31 +6672,31 @@ Where the service contact was delivered, as represented by a code.
   residential facility is seen at another venue (e.g., at a GP Clinic), then
   the Service Contact Venue should be recorded as ‘GP Practice’ (code 3) to
   accurately reflect where the contact took place.
-
+  
   Values other than ‘98 - Not applicable’ only to be specified when Service Contact
   Modality is ‘Face to Face’.
-
+  
   6 - Other primary care setting
     This code is suitable for primary care settings such as community health centres.
-
+  
   8 - Residential aged care facility
     Use this code when the client is seen at an aged care residential facility.
-
+  
   12 - Aged care centre - non-residential
     Use this code when the client is seen at a non-residential aged care centre
     (e.g., community day program centre for older people).
-
+  
   98 - Not applicable (Service Contact Modality is not face to face)
     This code must only to be used where the Service Contact Modality is not
     face to face
-
+  
   All other data items would be recorded as per the guidelines that apply to
   those items – there are no special requirements specific to delivery of
   services to residents of aged care facilities.  For example, any of the
   episode of care types recorded under the Principal Focus of Treatment Plan
   may apply; similarly, service contacts delivered to aged care residents may
   be any of the options available in Service Contact Type field.
-
+  
 
 ----------
 
@@ -6726,12 +6720,13 @@ The year the practitioner was born.
   - The year of birth must not be in the future.
   - The year of birth must be after 1900.
   - If the year of birth is unknown, the following approaches should be used:
-
+  
     - If the age of the practitioner is known, the age should be used to derive the
       year of birth
     - If the age of the practitioner is unknown, an estimated age of the practitioner should
       be used to estimate a year of birth
     - If the date of birth is totally unknown, use 9999.
-
+  
 
 ----------
+
