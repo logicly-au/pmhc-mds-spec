@@ -6,6 +6,7 @@
     "titles": [ "key" ],
     "dc:title": "Key",
     "schema:description": "A metadata key name.",
+    "schema:disambiguatingDescription": "type/metadata-key.rst",
     "schema:dateCreated": "2018-08-24",
     "datatype": {
       "base": "string"
@@ -16,6 +17,7 @@
     "titles": [ "value" ],
     "dc:title": "Value",
     "schema:description": "The metadata value.",
+    "schema:disambiguatingDescription": "type/metadata-value.rst",
     "schema:dateCreated": "2018-08-24",
     "datatype": {
       "base": "string"
