@@ -1903,6 +1903,13 @@ A metadata key name.
 
 :Required: yes
 
+:Notes:
+  Current allowed metadata keys are `type` and `version`.
+  
+  Please refer to :ref:`metadata-format` for an example of the metadata file/worksheet that
+  must be used with this specification.
+  
+
 ----------
 
 .. _dfn-k5_item1:
@@ -4416,7 +4423,7 @@ The overarching program area that an Intake or Episode record is associated with
   :2: Head to Health
   :3: AMHC
   :4: Psychosocial
-  :5: Bushfire Recovery 20
+  :5: Bushfire Recovery 2020
 
 :Notes:
   1 - Flexible Funding Pool
@@ -6634,6 +6641,11 @@ The metadata value.
 :Data type: string
 
 :Required: yes
+
+:Notes:
+  Please refer to :ref:`metadata-format` for an example of the metadata file/worksheet that
+  must be used with this specification.
+  
 
 ----------
 
