@@ -207,6 +207,12 @@
       "columnReference": "id"
     }
   }, {
+    "columnReference": "suicide_referral_flag",
+    "reference": {
+      "resource": "type/boolean-unknown.csv",
+      "columnReference": "id"
+    }
+  }, {
     "columnReference": "organisation_type_referred_to_at_intake_conclusion",
     "reference": {
       "resource": "table/intake/organisation-type-referred-to-at-intake-conclusion.csv",
