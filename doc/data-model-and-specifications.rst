@@ -349,8 +349,8 @@ See :ref:`key-concepts-intake` for definition of an intake.
 
 The collection of Intake and IAR data is a requirement for Head to Health
 programs. This includes the Head to Health Phone Service, centres, satellites
-and Pop-Up clinics PHNs may choose to collect Intake and IAR data for other
-non-Head to Health programs using the v4 specification, however reporting of
+and Pop-Up clinics. PHNs may choose to collect Intake and IAR data for other
+non-Head to Health programs using the PMHC-MDS v4 specification, however reporting of
 this data remains optional subject to further guidance from the department.
 
 Intakes are managed by the provider organisations via upload.

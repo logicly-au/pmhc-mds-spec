@@ -110,7 +110,7 @@ The model now records a new :ref:`intake-data-elements` record where an
 episode has undertaken an Intake process. The collection of Intake and IAR
 data may not be required for all programs. Please see :ref:`intake-data-elements`.
 
-The :ref:`intake-data-elements` table comprises records information about the
+The :ref:`intake-data-elements` table records information about the
 intake.
 
 :ref:`dfn-organisation_path` and :ref:`dfn-intake_key` are the

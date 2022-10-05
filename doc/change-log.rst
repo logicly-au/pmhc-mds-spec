@@ -3,7 +3,7 @@
 Data Specification Change log
 =============================
 
-??/9/2022
+27/9/2022
 ---------
 
 * :ref:`data-model-and-specifications`
