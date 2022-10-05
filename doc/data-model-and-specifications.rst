@@ -111,6 +111,9 @@ assessed to determine the appropriate level of care and referred to a
 service provider to provide clinical care. An Intake may include the
 collection of an IAR-DST measure.
 
+The collection of Intake and IAR data may not be required for all programs.
+Please see :ref:`intake-data-elements`.
+
 .. _key-concepts-intake-episode:
 
 Intake Episode
@@ -344,6 +347,12 @@ Intake
 
 See :ref:`key-concepts-intake` for definition of an intake.
 
+The collection of Intake and IAR data is a requirement for Head to Health
+programs. This includes the Head to Health Phone Service, centres, satellites
+and Pop-Up clinics. PHNs may choose to collect Intake and IAR data for other
+non-Head to Health programs using the PMHC-MDS v4 specification, however reporting of
+this data remains optional subject to further guidance from the department.
+
 Intakes are managed by the provider organisations via upload.
 
 .. csv-table:: Intake record layout
@@ -443,7 +452,11 @@ Measures
 Measures at Intake
 """"""""""""""""""
 
-PMHC MDS requires the use of the IAR-DST :ref:`iar-dst-data-elements` at intake.
+Where an Intake is recorded, the PMHC MDS requires the use of the
+IAR-DST :ref:`iar-dst-data-elements`.
+
+The collection of Intake and IAR data may not be required for all programs.
+Please see :ref:`intake-data-elements`.
 
 .. _iar-dst-data-elements:
 

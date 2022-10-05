@@ -3,6 +3,17 @@
 Data Specification Change log
 =============================
 
+27/9/2022
+---------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    * An Intake and IAR-DST is only required for certain Program Types. Updated
+      :ref:`intake-data-elements` and :ref:`intake_measures` to specify which
+      Program Types require an Intake and IAR-DST.
+
 7/9/2022
 --------
 

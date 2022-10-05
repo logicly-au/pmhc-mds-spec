@@ -55,6 +55,9 @@ In the Intake context the following records will need to be provided:
 
 Episode and Service contact activity is not submitted in this context.
 
+The collection of Intake and IAR data may not be required for all programs.
+Please see :ref:`intake-data-elements`.
+
 .. _introduction-treatment-context:
 
 Treatment Service Provider Context
@@ -103,9 +106,11 @@ New Records and Fields in Version 4
 Intake
 ^^^^^^
 
-The model requires a new :ref:`intake-data-elements` record for every intake process.
+The model now records a new :ref:`intake-data-elements` record where an
+episode has undertaken an Intake process. The collection of Intake and IAR
+data may not be required for all programs. Please see :ref:`intake-data-elements`.
 
-The :ref:`intake-data-elements` table comprises records information about the
+The :ref:`intake-data-elements` table records information about the
 intake.
 
 :ref:`dfn-organisation_path` and :ref:`dfn-intake_key` are the
@@ -123,7 +128,7 @@ record at the treatment organisation.
 IAR-DST Measure
 ^^^^^^^^^^^^^^^
 
-A new record type is required to capture the domains and the recommended
+The model now captures the domains and the recommended
 level of care pertinent to the IAR-DST that clients have completed for them
 as part of the intake process. A new :ref:`iar-dst-data-elements` record
 will be created for each intake process.
@@ -137,6 +142,9 @@ both domain scores and recommended level of care is to:
 * provide a resource that can be used to better understand how the IAR-DST
   scoring algorithm performs in real world environments supporting ongoing
   improvement of the tool.
+
+The collection of Intake and IAR data may not be required for all programs.
+Please see :ref:`intake-data-elements`.
 
 .. _introduction-episode:
 
@@ -159,6 +167,9 @@ recorded. This linkage is done via two fields:
 The Episode record has been expanded with one new field - the
 organisation(s) to which the organisation refers
 the client (:ref:`dfn-organisation_type_referred_to_at_episode_conclusion`)
+
+The collection of Intake and IAR data may not be required for all programs.
+Please see :ref:`intake-data-elements`.
 
 .. _introduction-service-contact:
 
