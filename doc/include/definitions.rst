@@ -6627,6 +6627,11 @@ Identifies those individuals where a recent history of suicide attempt, or suici
 
 :Required: yes
 
+:Domain:
+  :1: Yes
+  :2: No
+  :9: Unknown
+
 ----------
 
 .. _dfn-value:
