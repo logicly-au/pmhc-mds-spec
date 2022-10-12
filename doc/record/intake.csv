@@ -70,7 +70,9 @@
 ",date,yes,"The date on which the client first contacted the intake service"
 "`Suicide Referral Flag`_ (suicide_referral_flag)
 
-",string,yes,"Identifies those individuals where a recent history of suicide attempt, or suicide risk, was a factor noted in the referral that underpinned the person's needs for assistance at intake or entry to the episode, as represented by a code."
+",string,yes,":1: Yes
+:2: No
+:9: Unknown"
 "`Date referred to other service at Intake conclusion`_ (date_referred_to_other_service_at_intake_conclusion)
 
 ",date,"—","The date the client was referred to another organisation at Intake conclusion."
