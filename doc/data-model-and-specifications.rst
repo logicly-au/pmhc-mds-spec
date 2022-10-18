@@ -715,6 +715,8 @@ namely: 0->0, 1->0, 2->1, 3->2.
 
 -----
 
+.. _definitions:
+
 .. include:: include/definitions.rst
 
 
@@ -727,3 +729,10 @@ Available for software developers designing extracts for the PMHC MDS, please
 click the link below to download the PMHC MDS Specification files:
 
 * `Specification zip <_static/pmhcmds-spec-meta.zip>`_
+
+These files conform to the CSV on the Web (CSVW) standard that is defined at https://csvw.org/. 
+
+They are used:
+
+* to generate the :ref:`record-formats` and :ref:`definitions` sections of the data specification documentation
+* in the first pass of upload validations 
