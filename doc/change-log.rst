@@ -3,6 +3,15 @@
 Data Specification Change log
 =============================
 
+18/10/2022
+----------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`data-specifications-download`
+
+    * Added information about the format of the data specification files that are available for download.
+
 27/9/2022
 ---------
 
