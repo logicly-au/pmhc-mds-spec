@@ -58,7 +58,8 @@ Intake
   #. :ref:`dfn-referrer_organisation_type` must be set to
      '98: N/A - Self referral' if and only if :ref:`dfn-referrer_profession` is also
      '98: N/A - Self referral'
-  #. A maximum of one intake shall be open per client
+  #. A maximum of one intake that is **not concluded** shall be allowed per client
+  #. An intake is **concluded** where :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` is **not** blank.
   #. The :ref:`dfn-referral_date`
 
      * must not be before 1 January 2020

@@ -34,8 +34,9 @@ of the different contexts that may be submitted.
 
    PMHC MDS Version 4.0 combined data model
 
-**Note:** :ref:`collection-occasion-diagram` for more details about
-Collection Occasion records.
+.. note::
+  * The above data model diagram is in the SVG format and can be enlarged 
+    or zoomed by opening in a new tab or window or by downloading it.
 
 .. _collection-occasion-diagram:
 
@@ -44,8 +45,8 @@ Collection Occasion records.
 
    PMHC MDS Version 4.0 Collection Occasion data model
 
-**Note:** See :ref:`data-model-diagram` for more details about how
-Collection Occasion records fit into the overall structure.
+.. note:: See :ref:`data-model-diagram` for more details about how
+   Collection Occasion records fit into the overall structure.
 
 .. _key-concepts:
 
@@ -113,6 +114,14 @@ collection of an IAR-DST measure.
 
 The collection of Intake and IAR data may not be required for all programs.
 Please see :ref:`intake-data-elements`.
+
+.. _concluded-intake:
+
+Concluded Intake
+"""""""""""""""""
+
+Concluded intakes are intakes where
+:ref:`dfn-organisation_type_referred_to_at_intake_conclusion` is **not** blank.
 
 .. _key-concepts-intake-episode:
 
@@ -730,9 +739,9 @@ click the link below to download the PMHC MDS Specification files:
 
 * `Specification zip <_static/pmhcmds-spec-meta.zip>`_
 
-These files conform to the CSV on the Web (CSVW) standard that is defined at https://csvw.org/. 
+These files conform to the CSV on the Web (CSVW) standard that is defined at https://csvw.org/.
 
 They are used:
 
 * to generate the :ref:`record-formats` and :ref:`definitions` sections of the data specification documentation
-* in the first pass of upload validations 
+* in the first pass of upload validations
