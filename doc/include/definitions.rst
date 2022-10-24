@@ -14,6 +14,12 @@ The Australian Business Number of the provider organisation.
 
 :Required: yes
 
+:Notes:
+  The Australian Business Registry maintains ABN search and technical 
+  docs. The PMHC MDS does not check the if ABN is registered, only that 
+  it satisfies the algorithm documented at https://abr.business.gov.au/Help/AbnFormat
+  
+
 ----------
 
 .. _dfn-client_atsi_status:
@@ -3788,16 +3794,12 @@ Type of organisation to which the the client was referred at the Intake conclusi
   
 
 :Notes:
-  Medical Specialist Consulting Rooms includes private medical practitioner rooms
-  in public or private hospital or other settings.
+  .. include:: shared/referrer-organisation-type.rst
   
-  Public mental health service refers to a state- or territory-funded specialised
-  mental health services (i.e., specialised mental health care delivered in
-  public acute and psychiatric hospital settings, community mental health care
-  services, and s specialised residential mental health care services).
-  
-  Not applicable should only be selected in instances of Self referral.
-  
+  The intent is that each referral out only has one organisation type 
+  and that multiple organisation types imples multiple referrals. 
+  Where an organisation could belong to multiple types, the type that
+  best suits the reason for the referral should be selected.
 
 ----------
 
@@ -4598,13 +4600,7 @@ Type of organisation in which the referring professional is based.
   :99: Not stated
 
 :Notes:
-  Medical Specialist Consulting Rooms includes private medical practitioner rooms
-  in public or private hospital or other settings.
-  
-  Public mental health service refers to a state- or territory-funded specialised
-  mental health services (i.e., specialised mental health care delivered in
-  public acute and psychiatric hospital settings, community mental health care
-  services, and s specialised residential mental health care services).
+  .. include:: shared/referrer-organisation-type.rst
   
   Not applicable should only be selected in instances of Self referral.
   

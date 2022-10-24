@@ -52,6 +52,7 @@
     "titles": [ "organisation_abn" ],
     "dc:title" : "ABN",
     "schema:description": "The Australian Business Number of the provider organisation.",
+    "schema:disambiguatingDescription": "table/organisation/abn.rst",
     "schema:dateCreated": "2016-07-08",
     "datatype": {
       "base": "string",

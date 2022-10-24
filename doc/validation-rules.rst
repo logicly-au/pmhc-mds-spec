@@ -58,7 +58,7 @@ Intake
   #. :ref:`dfn-referrer_organisation_type` must be set to
      '98: N/A - Self referral' if and only if :ref:`dfn-referrer_profession` is also
      '98: N/A - Self referral'
-  #. A maximum of one intake shall be open per client
+  #. A maximum of one intake that is NOT :ref:`concluded <concluded-intake>` shall be allowed per client
   #. The :ref:`dfn-referral_date`
 
      * must not be before 1 January 2020
@@ -139,18 +139,12 @@ Episode
   #. :ref:`dfn-referrer_organisation_type` must be set to
      '98: N/A - Self referral' if and only if :ref:`dfn-referrer_profession` is also
      '98: N/A - Self referral'
-  #. A maximum of one episode shall be open per client
-  #. **Open episodes** are those with :ref:`dfn-episode_completion_status` recorded
-     as open (Response item 0).
+  #. A maximum of one episode shall be :ref:`open <open-episode>` per client
+  #. :ref:`Open episodes <open-episode>` must NOT have a response to both :ref:`dfn-episode_end_date`
+     and :ref:`dfn-organisation_type_referred_to_at_episode_conclusion`
 
-     Open episodes must NOT have a response to both :ref:`dfn-episode_end_date`
-     and :ref:`dfn-organisation_type_referred_to_at_episode_conclusion`.
-
-  #. **Closed episodes** are those with :ref:`dfn-episode_completion_status`
-     recorded using one of the 'Episode closed' responses (Response items 1-6).
-
-     Closed episodes must have a response to both :ref:`dfn-episode_end_date`
-     and :ref:`dfn-organisation_type_referred_to_at_episode_conclusion`.
+  #. :ref:`Closed episodes <closed-episode>` must have a response to both :ref:`dfn-episode_end_date`
+     and :ref:`dfn-organisation_type_referred_to_at_episode_conclusion`
 
   #. On :ref:`dfn-principal_diagnosis` and :ref:`dfn-additional_diagnosis`
      the values:
