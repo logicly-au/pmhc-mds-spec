@@ -98,7 +98,7 @@
     "titles": [ "referrer_organisation_type" ],
     "dc:title": "Referrer Organisation Type",
     "schema:description": "Type of organisation in which the referring professional is based.",
-    "schema:disambiguatingDescription": "type/referrer-organisation-type.rst",
+    "schema:disambiguatingDescription": "type/referrer-in-organisation-type.rst",
     "schema:whenToCollect": "Intake start",
     "schema:dateCreated": "2021-08-23",
     "datatype": {
@@ -149,7 +149,7 @@
     "titles": [ "organisation_type_referred_to_at_intake_conclusion" ],
     "dc:title": "Organisation type referred to at Intake conclusion",
     "schema:description": "Type of organisation to which the the client was referred at the Intake conclusion.",
-    "schema:disambiguatingDescription": "type/referrer-organisation-type.rst",
+    "schema:disambiguatingDescription": "table/intake/organisation-type-referred-to-at-intake-conclusion.rst",
     "schema:whenToCollect": "Intake conclusion",
     "schema:dateCreated": "2021-08-23",
     "separator": " ",

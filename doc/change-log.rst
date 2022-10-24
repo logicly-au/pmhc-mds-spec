@@ -12,6 +12,10 @@ Data Specification Change log
 
     * Added :ref:`concluded-intake`
 
+* :ref:`record-formats`
+
+  * Added Notes to :ref:`dfn-organisation_abn` pointing to documenation of the algorithm used to validate an ABN.
+
 * :ref:`validation-rules`
 
   * Updated Intake validation rules to change wording from 'open intake' to 'intake that is not concluded'
