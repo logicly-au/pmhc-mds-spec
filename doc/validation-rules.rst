@@ -114,7 +114,7 @@ IAR-DST
   1. Refer to :ref:`key-current-validations` for Measure Key validations
   2. :ref:`dfn-intake_key` must be an existing Intake within the PMHC MDS
   3. Both all 8 domains and the level of care must be provided
-  4. The level of care must be consistent with the 8 domain scores provided
+  4. The :ref:`dfn-iar_dst_recommended_level_of_care` must be consistent with the 8 domain scores provided
 
 .. _intake-episode-current-validations:
 
@@ -128,6 +128,10 @@ Intake - Episode
   3. If an :ref:`dfn-episode_organisation_path` is specified, that organisation must
      be an existing organisation within the PMHC MDS
   4. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC MDS
+
+  **Note:** Intake Episode records can be submitted indepentantly of Intake records.
+  The PMHC MDS does not validate that the :ref:`dfn-intake_key` referenced in an 
+  Intake Episode record exists, only that the :ref:`dfn-intake_organisation_path` exists.
 
 .. _episode-current-validations:
 

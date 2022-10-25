@@ -341,7 +341,8 @@ Client
 
 See :ref:`key-concepts-client` for definition of a client.
 
-Clients are managed by the provider organisations via upload.
+Clients are managed by the provider organisations via either the PMHC MDS 
+administrative interface or upload.
 
 .. csv-table:: Client record layout
    :file: record/client.csv
@@ -362,7 +363,8 @@ and Pop-Up clinics. PHNs may choose to collect Intake and IAR data for other
 non-Head to Health programs using the PMHC-MDS v4 specification, however reporting of
 this data remains optional subject to further guidance from the department.
 
-Intakes are managed by the provider organisations via upload.
+Intakes are managed by the provider organisations via either the PMHC MDS 
+administrative interface or upload.
 
 .. csv-table:: Intake record layout
    :file: record/intake.csv
@@ -377,7 +379,8 @@ Intake Episode
 
 See :ref:`key-concepts-intake-episode` for definition of an intake episode.
 
-Intake Episodes are managed by the provider organisations via upload.
+Intake Episodes are managed by the provider organisations via either the PMHC MDS 
+administrative interface or upload.
 
 .. csv-table:: Intake Episode record layout
    :file: record/intake-episode.csv
@@ -392,7 +395,8 @@ Episode
 
 See :ref:`key-concepts-episode` for definition of an episode.
 
-Episodes are managed by the provider organisations via upload.
+Episodes are managed by the provider organisations via either the PMHC MDS 
+administrative interface or upload.
 
 .. csv-table:: Episode record layout
    :file: record/episode.csv
@@ -407,7 +411,8 @@ Service Contact
 
 See :ref:`key-concepts-service-contact` for definition of a service contact.
 
-Service contacts are managed by the provider organisations via upload.
+Service contacts are managed by the provider organisations via either the PMHC MDS 
+administrative interface or upload.
 
 .. csv-table:: Service contact record layout
    :file: record/service-contact.csv
@@ -424,7 +429,7 @@ See :ref:`key-concepts-service-contact-practitioner` for definition of a
 service contact practitioner.
 
 Service contacts practitioners are managed by the provider organisations
-via upload.
+via either the PMHC MDS administrative interface or upload.
 
 .. csv-table:: Service contact practitioner record layout
    :file: record/service-contact-practitioner.csv
@@ -445,7 +450,8 @@ in the short term there are issues with collecting individual item scores.
 Therefore, as a transitional phase, reporting overall scores/subscales will be
 allowed.
 
-Collection occasions are managed by the provider organisations via upload.
+Collection occasions are managed by the provider organisations via either the PMHC MDS 
+administrative interface or upload.
 
 .. csv-table:: Collection Occasion record layout
    :file: record/collection-occasion.csv
@@ -461,16 +467,17 @@ Measures
 Measures at Intake
 """"""""""""""""""
 
-Where an Intake is recorded, the PMHC MDS requires the use of the
-IAR-DST :ref:`iar-dst-data-elements`.
-
-The collection of Intake and IAR data may not be required for all programs.
-Please see :ref:`intake-data-elements`.
-
 .. _iar-dst-data-elements:
 
 IAR-DST
 '''''''
+
+The collection of Intake and IAR DST data may not be required for all programs.
+Please see :ref:`intake-data-elements`.
+
+Where an Intake is recorded, an associated :ref:`iar-dst-data-elements` should
+also be recorded. However, this is not enforced by the PMHC MDS as Intake data
+could be collected separately from IAR DST data.
 
 .. csv-table:: IAR-DST record layout
    :file: record/iar-dst-measure.csv

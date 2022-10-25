@@ -171,6 +171,16 @@ the client (:ref:`dfn-organisation_type_referred_to_at_episode_conclusion`)
 The collection of Intake and IAR data may not be required for all programs.
 Please see :ref:`intake-data-elements`.
 
+.. _entering-intake-episode-data:
+
+Entering/Uploading Intake and Episode data
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+When entering or uploading Intake and Episode data, the PMHC MDS does not validate
+that an Intake record exists when an Intake Episode record is uploaded. They can be
+uploaded independently of each other. There is a planned suite of reports that will
+allow organisations to identify Intake and Episode records that are not linked.
+
 .. _introduction-service-contact:
 
 Service Contact
