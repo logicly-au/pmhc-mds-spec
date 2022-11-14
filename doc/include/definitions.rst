@@ -4522,7 +4522,9 @@ The date the referrer made the referral.
   The referral date is the date the client was originally referred to an MDS
   reporting service. Typically the referral is made by an external (non-MDS)
   provider - such as a general practitioner, but it may be another MDS reporting
-  service or the client themselves.  The referral date is NOT the date that an
+  service or the client themselves.
+  
+  The referral date is NOT the date that an
   intake service refers a client to a treatment organisation. Where there is a
   linked intake and treatment both the Intake and Episode records must use the
   same date - ie. the date the client was originally referred.
