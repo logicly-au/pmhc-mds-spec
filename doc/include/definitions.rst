@@ -4519,19 +4519,17 @@ The date the referrer made the referral.
 :Required: yes
 
 :Notes:
-  The referral date is the date the client was originally referred at the start of
-  the process that led them into a PMHC MDS funded service. Where both
-  an Intake and an Episode are recorded for a client, the referral date on the Intake
-  and the referral date on the Epsiode should be the same date.
+  The referral date is the date the client was originally referred to an MDS
+  reporting service. Typically the referral is made by an external (non-MDS)
+  provider - such as a general practitioner, but it may be another MDS reporting
+  service or the client themselves.  The referral date is NOT the date that an
+  intake service refers a client to a treatment organisation. Where there is a
+  linked intake and treatment both the Intake and Episode records must use the
+  same date - ie. the date the client was originally referred.
   
-  It is acknowledged that collecting the same data item on two records is not ideal,
-  however, Intakes may not lead to a PMHC MDS funded Episode, and, for some
-  Program Types, it is not compulsory for Intakes to be collected. It therefore
-  becomes necessary to collect the referral date at both Intake and Episode to
-  ensure that it is captured.
-  
-  For clients who self refer at Intake, the referral date should be the date
-  the client first contacted the provider organisation. In this instance the referral date
+  For clients who self refer,  the referral date should be the date
+  the client first contacted the intake service or provider organisation.
+  For the intake of a client who self referred, the referral date
   will be the same as the :ref:`dfn-date_client_contacted_intake`.
   
   For Date fields, data must be recorded in compliance with the standard format
