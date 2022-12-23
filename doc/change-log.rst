@@ -3,6 +3,19 @@
 Data Specification Change log
 =============================
 
+22/12/2022
+----------
+
+* :ref:`changes-from-v2`
+
+  * :ref:`upload-specification-changes`
+
+    * Corrections to `Fig. 2.1 PMHC MDS Version 2.0.0 upload columns`:
+
+      * Added service_contact_no_show
+      * Added iar_dst_domain_3
+      * Corrected service_contact_duration from service_contact_duraction
+
 24/10/2022
 ----------
 
