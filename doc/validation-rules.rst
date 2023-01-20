@@ -330,6 +330,9 @@ Organisation
      * and must not be before the latest :ref:`dfn-collection_occasion_date`
      * can be in the future
 
+   4. The :ref:`dfn-organisation_abn` must adhere to the format defined by the Australian Business 
+      Register at https://abr.business.gov.au/Help/AbnFormat
+
  .. _future-validations:
 
  .. Future Validations
