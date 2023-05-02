@@ -243,6 +243,7 @@
     "titles": [ "suicide_referral_flag" ],
     "dc:title": "Suicide Referral Flag",
     "schema:description": "Identifies those individuals where a recent history of suicide attempt, or suicide risk, was a factor noted in the referral that underpinned the person's needs for assistance at intake or entry to the episode, as represented by a code.",
+    "schema:disambiguatingDescription": "type/suicide-referral-flag.rst",
     "schema:whenToCollect": "Episode start",
     "schema:dateCreated": "2016-06-22",
     "datatype": {

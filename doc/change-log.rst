@@ -3,6 +3,23 @@
 Data Specification Change log
 =============================
 
+2/5/2023
+--------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    * Confirmed that where there is a linked intake and treatment, both the Intake and Episode records
+      must use the same:
+     
+      * :ref:`dfn-referral_date`
+      * :ref:`dfn-referrer_profession`
+      * :ref:`dfn-referrer_organisation_type`
+      * :ref:`dfn-suicide_referral_flag`
+     
+      ie. the intake service is NOT the referrer for an episode record.
+
 22/12/2022
 ----------
 
@@ -12,9 +29,9 @@ Data Specification Change log
 
     * Corrections to `Fig. 2.1 PMHC MDS Version 2.0.0 upload columns`:
 
-      * Added service_contact_no_show
-      * Added iar_dst_domain_3
-      * Corrected service_contact_duration from service_contact_duraction
+      * Added :ref:`dfn-service_contact_no_show`
+      * Added :ref:`dfn-iar_dst_domain_3`
+      * Corrected duration from duraction
 
 24/10/2022
 ----------

@@ -4620,6 +4620,9 @@ Type of organisation in which the referring professional is based.
   
   Not applicable should only be selected in instances of Self referral.
   
+  Where there is a linked intake and treatment, both the Intake and Episode records
+  must use the same referrer organisation type - ie the intake service is NOT the referrer.
+  
 
 ----------
 
@@ -4660,6 +4663,8 @@ Profession of the provider who referred the client.
   allows clients to refer themselves for treatment. Therefore, 'Self'
   is a response option included within 'Referrer profession'.
   
+  Where there is a linked intake and treatment, both the Intake and Episode records
+  must use the same referrer profession - ie the intake service is not the referrer.
 
 ----------
 
@@ -6643,6 +6648,11 @@ Identifies those individuals where a recent history of suicide attempt, or suici
   :1: Yes
   :2: No
   :9: Unknown
+
+:Notes:
+  Where there is a linked intake and treatment, both the Intake and Episode records
+  must use the same suicide referral flag.
+  
 
 ----------
 
