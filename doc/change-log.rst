@@ -3,7 +3,7 @@
 Data Specification Change log
 =============================
 
-2/5/2023
+3/5/2023
 --------
 
 * :ref:`data-model-and-specifications`
@@ -19,6 +19,8 @@ Data Specification Change log
       * :ref:`dfn-suicide_referral_flag`
      
       ie. the intake service is NOT the referrer for an episode record.
+
+    * Updated the :ref:`dfn-k10p_score` scoring algorithm in line with https://pmhc-mds.com/communications/#/2021/08/30/notification-of-planned-K10-scoring-change/
 
 22/12/2022
 ----------
