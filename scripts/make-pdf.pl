@@ -46,17 +46,33 @@ createTOC( $tree );
 fixLinks( $tree );
 #fixExternalLinks( $tree ); Turned off as sometimes we need the URL contextually
 
-write_file( $src . '/index_pdf.html', $tree->as_HTML());
+write_file( $src . '/index-pdf.html', $tree->as_HTML());
 
-
+say "Altering CSS font references";
 # Fix the font references in CSS
-foreach my $file ( read_dir( $src . '/_static/css/' ) ) {
-    my $css_file = $src . '/_static/css/' . $file;
+
+# prince does not like path separators in added files
+#  we remove the leading ../ and replace any others with a dash
+my $replacement = 'my $a = $1; $a =~ s|\.\./||g; $a =~ s|/|-|g; "url(" . $a . ")";';
+
+foreach my $css_file ( read_dir( $src . '/_static/css/', prefix => 1 ) ) {
+
+    next if -d $css_file; # skip fonts dir
+
+    say "  $css_file";
+
     my $css_src = read_file( $css_file );
-    $css_src =~ s|../fonts/||g;
+
+    # Heads up! The double e operator is doing an eval
+    #  on $replacement
+    my $replacement_count =
+        $css_src =~ s|url\((fonts/.*?)\)|$replacement|gee;
+
+    die "No paths to fonts in the CSS files were altered for prince. Perhaps the templates have changed."
+        unless $replacement_count;
+
     write_file( $css_file, $css_src );
 }
-
 
 #=======================================================================
 # Send the data to Prince for rendering
@@ -67,17 +83,11 @@ say "Sending to Prince";
 my $client = SD::PrinceXML::Client->new(
     webservice       => $webservice,
     send_literal_url => 0,
-    url              => 'file://' . $src . '/index_pdf.html'
+    url              => 'file://' . $src . '/index-pdf.html'
 );
 
-
 # Send the fonts
-
-foreach my $font ( read_dir( $src . '/_static/fonts' ) ) {
-    my $full_path = $src . '/_static/fonts/' . $font;
-    next if -d $full_path;
-    $client->add_extra_file( $full_path );
-}
+addFontDir($client, $src . '/_static/css', 'fonts' );
 
 # Retrieve the PDF
 my $output_pdf = $client->pdf;
@@ -86,6 +96,32 @@ my $output_pdf = $client->pdf;
 say "Writing to $output_file";
 write_file( $output_file, $output_pdf );
 
+
+sub addFontDir {
+    my $client       = shift;
+    my $base_dir     = shift;
+    my $relative_dir = shift;
+    my $intro        = shift // "Adding fonts ...\n";
+
+    foreach my $font_path ( read_dir( "$base_dir/$relative_dir", prefix => 1 ) ) {
+
+        my $relative_font_path = $font_path;
+        $relative_font_path =~ s{^$base_dir/(.*)$}{$1};
+
+        if ( -d $font_path ) {
+            addFontDir($client, $base_dir, $relative_font_path, $intro);
+        }
+        else {
+            print "$intro  $relative_font_path";
+            $relative_font_path =~ s|/|-|g;
+            say " as $relative_font_path";
+            # prince does not like path separators in added files
+            $client->add_extra_file( "/$relative_font_path", read_file($font_path) );
+            $intro = '';
+        }
+    }
+
+}
 
 #=======================================================================
 # Content utility methods

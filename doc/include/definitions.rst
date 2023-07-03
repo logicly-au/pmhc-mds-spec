@@ -20,6 +20,7 @@ Whether a person identifies as being of Aboriginal and/or Torres Strait Islander
   :3: Both Aboriginal and Torres Strait Islander origin
   :4: Neither Aboriginal or Torres Strait Islander origin
   :9: Not stated/inadequately described
+
 :Notes:
   Code 9 is not to be available as a valid answer to the questions but is
     intended for use:
@@ -306,6 +307,7 @@ The country in which the client was born, as represented by a code.
   :9232: Zimbabwe
   :9299: Southern and East Africa, nec
   :9999: Unknown
+
 :Notes:
   `Standard Australian Classification of Countries (SACC), 2016 4-digit
   code (ABS Catalogue No. 1269.0)
@@ -337,6 +339,7 @@ The date on which an individual was born.
 :Data type: date
 
 :Required: yes
+
 :Notes:
   - The date of birth must not be before January 1st 1900.
   
@@ -399,6 +402,7 @@ The term 'gender' refers to the way in which a person identifies their masculine
   :1: Male
   :2: Female
   :3: Other
+
 :Notes:
   1 - M - Male
     Adults who identify themselves as men, and children who identify themselves
@@ -429,6 +433,7 @@ This is a number or code assigned to each individual referred to the commissione
 :Data type: string (2,50)
 
 :Required: yes
+
 :Notes:
   Client keys must be unique within each PHN independent of the treating
   organisation. It is the responsibility of PHNs and Provider Organisations to
@@ -890,6 +895,7 @@ The language reported by a client as the main language other than English spoken
   :9702: Key Word Sign Australia
   :9799: Sign Languages, nec
   :9999: Unknown
+
 :Notes:
   `Australian Standard Classification of Languages (ASCL), 2016 4-digit code (ABS
   Catalogue No. 1267.0) <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1267.0>`_
@@ -930,6 +936,7 @@ The self-assessed level of ability to speak English, asked of people whose first
   :3: Not well
   :4: Not at all
   :9: Not stated/inadequately described
+
 :Notes:
   0 - Not applicable (persons under 5 years of age or who speak only English)
     Not applicable, is to be used for people under 5 years of age and people
@@ -957,6 +964,7 @@ A key that enables two or more records belonging to the same individual to be br
 :Data type: string (14,40)
 
 :Required: yes
+
 :Notes:
   System generated non-identifiable alphanumeric code derived from information
   held by the PMHC organisation.
@@ -988,6 +996,7 @@ List of tags for the client.
 :Data type: string
 
 :Required: no
+
 :Notes:
   A comma separated list of tags.
   
@@ -1016,6 +1025,7 @@ The date the measure was given.
 :Data type: date
 
 :Required: yes
+
 :Notes:
   For Date fields, data must be recorded in compliance with the standard format
   used across the National Health Data Dictionary; specifically, dates must be
@@ -1053,6 +1063,7 @@ The reason for the collection of the outcome measures on the identified Outcome 
   :1: Episode start
   :2: Review
   :3: Episode end
+
 :Notes:
   1 - Episode start
     Refers to an outcome measure undertaken at the beginning of an Episode of Care. For the purposes of the PMHC MDS protocol, episodes may start at the point of first Service Contact with a new client who has not been seen previously by the organisation, or a first contact for a new Episode of Care for a client who has received services from the organisation in a previous Episode of Care that has been completed.
@@ -1085,6 +1096,7 @@ This is a number or code assigned to each collection occasion of outcome measure
 :Data type: string (2,50)
 
 :Required: yes
+
 :Notes:
   Collection occasion keys are case sensitive and must be valid unicode characters.
   
@@ -1150,6 +1162,7 @@ The main additional condition or complaint co-existing with the Principal Diagno
   :904: Stress related
   :905: Other
   :999: Missing
+
 :Notes:
   Additional Diagnosis gives information on conditions that are significant in
   terms of treatment required and resources used during the episode of care.
@@ -1199,6 +1212,7 @@ The Australian postcode of the client.
 :Data type: string
 
 :Required: yes
+
 :Notes:
   A valid Australian postcode or 9999 if the postcode is unknown or the client
   has not provided sufficient information to confirm their current residential
@@ -1236,6 +1250,7 @@ An indication that the client has consented to their anonymised data being provi
 :Domain:
   :1: Yes
   :2: No
+
 :Notes:
   1 - Yes
       The client has consented to their anonymised data being provided to the
@@ -1277,6 +1292,7 @@ An indication of the completion status of an *Episode of Care*.
   :4: Episode closed administratively - client moved out of area
   :5: Episode closed administratively - client referred elsewhere
   :6: Episode closed administratively - other reason
+
 :Notes:
   In order to use code 1 (Episode closed - treatment concluded) the client must have at least one service contact. All other codes may be applicable even when the client has no service contacts.
   
@@ -1349,6 +1365,7 @@ Whether a person in paid employment is employed full-time or part-time, as repre
   :2: Part-time
   :3: Not applicable - not in the labour force
   :9: Not stated/inadequately described
+
 :Notes:
   Applies only to people whose labour force status is employed. (See metadata
   item Labour Force Status, for a definition of 'employed'). Paid employment
@@ -1389,6 +1406,7 @@ The date on which an *Episode of Care* is formally or administratively ended
 :Data type: date
 
 :Required: no
+
 :Notes:
   - The episode end date must not be before 1st January 2016.
   
@@ -1466,6 +1484,7 @@ An indication of whether the person is a current holder of a Health Care Card th
   :2: No
   :3: Not Known
   :9: Not stated
+
 :Notes:
   Details on the Australian Government Health Care Card are available at:
   https://www.humanservices.gov.au/customer/services/centrelink/health-care-card
@@ -1493,6 +1512,7 @@ An indication of whether the client has been homeless in the 4 weeks prior to th
   :2: Short-term or emergency accommodation
   :3: Not homeless
   :9: Not stated / Missing
+
 :Notes:
   1	- Sleeping rough or in non-conventional accommodation
     Includes sleeping on the streets, in a park, in cars or railway carriages,
@@ -1536,6 +1556,7 @@ This is a number or code assigned to each episode. The Episode Key is unique and
 :Data type: string (2,50)
 
 :Required: yes
+
 :Notes:
   Episode Keys must be generated by the organisation to be unique at the provider
   organisation level and must persist across time. Creation of episode keys in
@@ -1569,6 +1590,7 @@ The self-reported status the person currently has in being either in the labour 
   :2: Unemployed
   :3: Not in the Labour Force
   :9: Not stated/inadequately described
+
 :Notes:
   1 - Employed
     Employed persons are those aged 15 years and over who met one of the following
@@ -1649,6 +1671,7 @@ A person's current relationship status in terms of a couple relationship or, for
   :4: Separated
   :5: Married (registered and de facto)
   :6: Not stated/inadequately described
+
 :Notes:
   Refers to the current marital status of a person.
   
@@ -1692,6 +1715,7 @@ Whether the client is taking prescribed antidepressants for a mental health cond
   :1: Yes
   :2: No
   :9: Unknown
+
 :Notes:
   The N06A class of drugs a therapeutic subgroup of the Anatomical Therapeutic
   Chemical Classification System, a system of alphanumeric codes developed by the
@@ -1721,6 +1745,7 @@ Whether the client is taking prescribed antipsychotics for a mental health condi
   :1: Yes
   :2: No
   :9: Unknown
+
 :Notes:
   The N05A class of drugs a therapeutic subgroup of the Anatomical Therapeutic
   Chemical Classification System, a system of alphanumeric codes developed by the
@@ -1751,6 +1776,7 @@ Whether the client is taking prescribed anxiolytics for a mental health conditio
   :1: Yes
   :2: No
   :9: Unknown
+
 :Notes:
   The N05B class of drugs a therapeutic subgroup of the Anatomical Therapeutic
   Chemical Classification System, a system of alphanumeric codes developed by the
@@ -1781,6 +1807,7 @@ Whether the client is taking prescribed hypnotics and sedatives for a mental hea
   :1: Yes
   :2: No
   :9: Unknown
+
 :Notes:
   The N05C class of drugs a therapeutic subgroup of the Anatomical Therapeutic
   Chemical Classification System, a system of alphanumeric codes developed by the
@@ -1812,6 +1839,7 @@ Whether the client is taking prescribed psychostimulants and nootropics for a me
   :1: Yes
   :2: No
   :9: Unknown
+
 :Notes:
   The N06B class of drugs a therapeutic subgroup of the Anatomical Therapeutic
   Chemical Classification System, a system of alphanumeric codes developed by the
@@ -1903,6 +1931,7 @@ The Principal Diagnosis is the diagnosis established after study to be chiefly r
   :904: Stress related
   :905: Other
   :999: Missing
+
 :Notes:
   Diagnoses are grouped into 8 major categories (9 for Additional Diagnosis):
   
@@ -2001,6 +2030,7 @@ The range of activities that best describes the overall services intended to be 
   :6: Indigenous-specific mental health services
   :7: Other
   :8: Psychosocial Support
+
 :Notes:
   Describes the main focus of the services to be delivered to the client for the
   current Episode of Care, selected from a defined list of categories.
@@ -2171,6 +2201,7 @@ The date the referrer made the referral.
 :Data type: date
 
 :Required: no
+
 :Notes:
   For Date fields, data must be recorded in compliance with the standard format
   used across the National Health Data Dictionary; specifically, dates must be
@@ -2222,6 +2253,7 @@ Type of organisation in which the referring professional is based.
   :21: Other
   :98: N/A - Self referral
   :99: Not stated
+
 :Notes:
   Medical Specialist Consulting Rooms includes private medical practitioner rooms
   in public or private hospital or other settings.
@@ -2267,6 +2299,7 @@ Profession of the provider who referred the client.
   :15: Other
   :98: N/A - Self referral
   :99: Not stated
+
 :Notes:
   New arrangements for some services delivered in primary mental health care
   allows clients to refer themselves for treatment. Therefore, 'Self'
@@ -2298,6 +2331,7 @@ The source from which a person derives the greatest proportion of his/her income
   :6: Nil income
   :7: Not known
   :9: Not stated/inadequately described
+
 :Notes:
   This data standard is not applicable to person's aged less than 16 years.
   
@@ -2352,6 +2386,7 @@ List of tags for the episode.
 :Data type: string
 
 :Required: no
+
 :Notes:
   A comma separated list of tags.
   
@@ -2388,6 +2423,7 @@ In the last 4 weeks, about how often did you feel nervous?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2414,6 +2450,7 @@ In the last 4 weeks, about how often did you feel without hope?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2440,6 +2477,7 @@ In the last 4 weeks, about how often did you feel restless or jumpy?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2466,6 +2504,7 @@ In the last 4 weeks, about how often did you feel everything was an effort?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2492,6 +2531,7 @@ In the last 4 weeks, about how often did you feel so sad that nothing could chee
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2513,6 +2553,7 @@ The overall K5 score.
 
 :Domain:
   5 - 25, 99 = Not stated / Missing
+
 :Notes:
   The K5 Total score is based on the sum of K5 item 1 through 5 (range: 5-25).
   
@@ -2540,6 +2581,7 @@ List of tags for the collection occasion.
 :Data type: string
 
 :Required: no
+
 :Notes:
   A comma separated list of tags.
   
@@ -2576,6 +2618,7 @@ In the past 4 weeks, about how often did you feel tired out for no good reason?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2602,6 +2645,7 @@ In the past 4 weeks, about how often did you feel nervous?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2628,6 +2672,7 @@ In the past 4 weeks, about how often did you feel so nervous that nothing could 
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2654,6 +2699,7 @@ In the past 4 weeks, how often did you feel hopeless?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2680,6 +2726,7 @@ In the past 4 weeks, how often did you feel restless or fidgety?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2706,6 +2753,7 @@ In the past 4 weeks, how often did you feel so restless you could not sit still?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2732,6 +2780,7 @@ In the past 4 weeks, how often did you feel depressed?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2758,6 +2807,7 @@ In the past 4 weeks, how often did you feel that everything was an effort?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2784,6 +2834,7 @@ In the past 4 weeks, how often did you feel so sad that nothing could cheer you 
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2810,6 +2861,7 @@ In the past 4 weeks, how often did you feel worthless?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -2831,6 +2883,7 @@ In the past four weeks, how many days were you totally unable to work, study or 
 
 :Domain:
   0 - 28, 99 = Not stated / Missing
+
 :Notes:
   When the client's responses to Q1-10 are all recorded as 1 'None of the time', 
   they are not required to answer questions 11-14. Where this question has not been
@@ -2854,6 +2907,7 @@ Aside from those days, in the past four weeks, how many days were you able to wo
 
 :Domain:
   0 - 28, 99 = Not stated / Missing
+
 :Notes:
   When the client's responses to Q1-10 are all recorded as 1 'None of the time',
   they are not required to answer questions 11-14. Where this question has not been
@@ -2877,6 +2931,7 @@ In the past four weeks, how many times have you seen a doctor or any other healt
 
 :Domain:
   0 - 89, 99 = Not stated / Missing
+
 :Notes:
   When the client's responses to Q1-10 are all recorded as 1 'None of the time',
   they are not required to answer questions 11-14. Where this question has not been
@@ -2905,6 +2960,7 @@ In the past four weeks, how often have physical health problems been the main ca
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When the client's responses to Q1-10 are all recorded as 1 'None of the time',
   they are not required to answer questions 11-14. Where this question has not been
@@ -2928,6 +2984,7 @@ The overall K10 score.
 
 :Domain:
   10 - 50, 99 = Not stated / Missing
+
 :Notes:
   The K10 Total score is based on the sum of K10 item 01 through 10 (range: 10-50).
   Items 11 through 14 are excluded from the total because they are separate
@@ -2959,6 +3016,7 @@ List of tags for the collection occasion.
 :Data type: string
 
 :Required: no
+
 :Notes:
   A comma separated list of tags.
   
@@ -2987,6 +3045,7 @@ A sequence of characters which uniquely identifies the provider organisation to 
 :Data type: string (2,50)
 
 :Required: yes
+
 :Notes:
   Organisation keys are case sensitive and must be valid unicode characters.
   
@@ -3005,6 +3064,7 @@ A sequence of colon separated Organisation Keys that fully specifies the Provide
 :Data type: string
 
 :Required: yes
+
 :Notes:
   A combination of the Primary Health Network's (PHN's) Organisation Key and the
   Provider Organisation's Organisation Key separated by a colon.
@@ -3041,6 +3101,7 @@ Whether a person identifies as being of Aboriginal and/or Torres Strait Islander
   :3: Both Aboriginal and Torres Strait Islander origin
   :4: Neither Aboriginal or Torres Strait Islander origin
   :9: Not stated/inadequately described
+
 :Notes:
   Code 9 is not to be available as a valid answer to the questions but is
     intended for use:
@@ -3094,6 +3155,7 @@ Indicates whether a practitioner has completed a recognised training programme i
   :2: No
   :3: Not required
   :9: Missing / Not recorded
+
 :Notes:
   This item is reported by the practitioner and applies to service providers who are either:
   
@@ -3155,6 +3217,7 @@ The type or category of the practitioner, as represented by a code.
   :12: Psychosocial Support Worker
   :13: Peer Support Worker
   :99: Not stated
+
 :Notes:
   Practitioner category refers to the labour classification of the service
   provider delivering the Service Contact.  Practitioners should be assigned to
@@ -3226,6 +3289,7 @@ A unique identifier for a practitioner within the responsible provider organisat
 :Data type: string (2,50)
 
 :Required: yes
+
 :Notes:
   Practitioner keys are case sensitive and must be valid unicode characters.
   
@@ -3244,6 +3308,7 @@ List of tags for the practitioner.
 :Data type: string
 
 :Required: no
+
 :Notes:
   A comma separated list of tags.
   
@@ -3275,6 +3340,7 @@ The year the practitioner was born.
 
 :Domain:
   gYear
+
 :Notes:
   - The year of birth must not be in the future.
   - The year of birth must be after 1900.
@@ -3357,6 +3423,7 @@ The state that the provider organisation operates in.
   :7: Northern Territory
   :8: Australian Capital Territory
   :9: Other Territories
+
 :Notes:
   - Name is taken from Australian `Statistical Geography Standard (ASGS) July
     2011
@@ -3400,6 +3467,7 @@ List of tags for the provider organisation.
 :Data type: string
 
 :Required: no
+
 :Notes:
   A comma separated list of tags.
   
@@ -3445,6 +3513,7 @@ The category that best describes the provider organisation.
   :13: Division of General Practice
   :98: Other
   :99: Missing
+
 :Notes:
   1 - Private Allied Health Professional Practice
     The provider organisation is a group of single- or multi-discipline allied
@@ -3540,6 +3609,7 @@ The version of the SDQ collected.
   :PY201: Parent Report Measure 11-17 yrs, Follow Up version, Australian Version 1
   :YR101: Self report Version, 11-17 years, Baseline version, Australian Version 1
   :YR201: Self report Version, 11-17 years, Follow Up version, Australian Version 1
+
 :Notes:
   Domain values align with those collected in the NOCC dataset as defined at
   https://webval.validator.com.au/spec/NOCC/current/SDQ/SDQVer
@@ -3561,6 +3631,7 @@ SDQ - Conduct Problem Scale
 
 :Domain:
   0 - 10, 99 = Not stated / Missing
+
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Conduct Problem Scale.
   
@@ -3583,6 +3654,7 @@ SDQ - Emotional Symptoms Scale
 
 :Domain:
   0 - 10, 99 = Not stated / Missing
+
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Emotional Symptoms Scale.
   
@@ -3605,6 +3677,7 @@ SDQ - Hyperactivity Scale
 
 :Domain:
   0 - 10, 99 = Not stated / Missing
+
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Hyperactivity Scale.
   
@@ -3627,6 +3700,7 @@ SDQ - Impact Score
 
 :Domain:
   0 - 10, 99 = Not stated / Missing
+
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Impact Score.
   
@@ -3649,6 +3723,7 @@ SDQ - Peer Problem Scale
 
 :Domain:
   0 - 10, 99 = Not stated / Missing
+
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Peer Problem Scale.
   
@@ -3671,6 +3746,7 @@ SDQ - Prosocial Scale
 
 :Domain:
   0 - 10, 99 = Not stated / Missing
+
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Prosocial Scale.
   
@@ -3700,6 +3776,7 @@ Youth Self Report: I try to be nice to other people. I care about their feelings
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -3729,6 +3806,7 @@ Youth Self Report: I am restless, I cannot stay still for long.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -3758,6 +3836,7 @@ Youth Self Report: I get a lot of headaches, stomach-aches or sickness.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -3787,6 +3866,7 @@ Youth Self Report: I usually share with others, for examples CDs, games, food.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -3816,6 +3896,7 @@ Youth Self Report: I get very angry and often lose my temper.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -3845,6 +3926,7 @@ Youth Self Report: I would rather be alone than with people of my age.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -3874,6 +3956,7 @@ Youth Self Report: I usually do as I am told.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -3903,6 +3986,7 @@ Youth Self Report: I worry a lot.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -3932,6 +4016,7 @@ Youth Self Report: I am helpful if someone is hurt, upset or feeling ill.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -3961,6 +4046,7 @@ Youth Self Report: I am constantly fidgeting or squirming.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -3990,6 +4076,7 @@ Youth Self Report: I have one good friend or more.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4019,6 +4106,7 @@ Youth Self Report: I fight a lot. I can make other people do what I want.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4048,6 +4136,7 @@ Youth Self Report: I am often unhappy, depressed or tearful.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4077,6 +4166,7 @@ Youth Self Report: Other people my age generally like me.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4106,6 +4196,7 @@ Youth Self Report: I am easily distracted, I find it difficult to concentrate.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4135,6 +4226,7 @@ Youth Self Report: I am nervous in new situations. I easily lose confidence.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4164,6 +4256,7 @@ Youth Self Report: I am kind to younger people.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4193,6 +4286,7 @@ Youth Self Report: I am often accused of lying or cheating.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4222,6 +4316,7 @@ Youth Self Report: Other children or young people pick on me or bully me.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4251,6 +4346,7 @@ Youth Self Report: I often volunteer to help others (parents, teachers, children
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4280,6 +4376,7 @@ Youth Self Report: I think before I do things.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4309,6 +4406,7 @@ Youth Self Report: I take things that are not mine from home, school or elsewher
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4338,6 +4436,7 @@ Youth Self Report: I get along better with adults than with people my own age.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4367,6 +4466,7 @@ Youth Self Report: I have many fears, I am easily scared.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4396,6 +4496,7 @@ Youth Self Report: I finish the work I'm doing. My attention is good.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4426,6 +4527,7 @@ Youth Self Report: Overall, do you think that you have difficulties in any of th
   :3: Yes - severe difficulties
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4457,6 +4559,7 @@ Youth Self Report: How long have these difficulties been present?
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   - PC101
@@ -4491,6 +4594,7 @@ Youth Self Report: Do the difficulties upset or distress you?
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4522,6 +4626,7 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4553,6 +4658,7 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4584,6 +4690,7 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4615,6 +4722,7 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4646,6 +4754,7 @@ Youth Self Report: Do the difficulties make it harder for those around you (fami
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -4678,6 +4787,7 @@ Youth Self Report: 'Since coming to the service, are your problems:
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   
@@ -4711,6 +4821,7 @@ Has coming to the service been helpful in other ways eg. providing information o
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   
@@ -4743,6 +4854,7 @@ Over the last 6 months have your child's teachers complained of fidgetiness, res
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   
@@ -4774,6 +4886,7 @@ Over the last 6 months have your child's teachers complained of poor concentrati
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   
@@ -4805,6 +4918,7 @@ Over the last 6 months have your child's teachers complained of acting without t
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   
@@ -4836,6 +4950,7 @@ Does your family complain about you having problems with overactivity or poor co
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   
@@ -4866,6 +4981,7 @@ Do your teachers complain about you having problems with overactivity or poor co
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   
@@ -4896,6 +5012,7 @@ Does your family complain about you being awkward or troublesome?
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   
@@ -4926,6 +5043,7 @@ Do your teachers complain about you being awkward or troublesome?
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   
@@ -4948,6 +5066,7 @@ List of tags for the collection occasion.
 :Data type: string
 
 :Required: no
+
 :Notes:
   A comma separated list of tags.
   
@@ -4978,6 +5097,7 @@ SDQ - Total Difficulties Score
 
 :Domain:
   0 - 40, 99 = Not stated / Missing
+
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Total Difficulties Score.
   
@@ -5002,6 +5122,7 @@ An indicator of whether the client participated, or intended to participate, in 
 :Domain:
   :1: Yes
   :2: No
+
 :Notes:
   Service contacts are not restricted to in-person communication but can include
   telephone, video link or other forms of direct communication.
@@ -5042,6 +5163,7 @@ The co-payment is the amount paid by the client per session.
 
 :Domain:
   0 - 999999.99
+
 :Notes:
   Up to 6 digits before the decimal point; up to 2 digits after the decimal
   point.
@@ -5067,6 +5189,7 @@ The date of each mental health service contact between a health service provider
 :Data type: date
 
 :Required: yes
+
 :Notes:
   For Date fields, data must be recorded in compliance with the standard format
   used across the National Health Data Dictionary; specifically, dates must be
@@ -5107,6 +5230,7 @@ The time from the start to finish of a service contact.
   :7: 91-105 mins
   :8: 106-120 mins
   :9: over 120 mins
+
 :Notes:
   For group sessions the time for client spent in the session is recorded for
   each client, regardless of the number of clients or third parties participating
@@ -5140,6 +5264,7 @@ An indication of whether the Service Contact is the final for the current Episod
   :1: No further services are planned for the client in the current episode
   :2: Further services are planned for the client in the current episode
   :3: Not known at this stage
+
 :Notes:
   Service providers should report this item on the basis of future planned or
   scheduled contacts with the client. Where this item is recorded as 1 (No
@@ -5175,6 +5300,7 @@ Whether an interpreter service was used during the Service Contact
   :1: Yes
   :2: No
   :9: Not stated
+
 :Notes:
   Interpreter services includes verbal language, non-verbal language and
   languages other than English.
@@ -5214,6 +5340,7 @@ How the service contact was delivered, as represented by a code.
   :2: Telephone
   :3: Video
   :4: Internet-based
+
 :Notes:
   0 - No contact took place
     Only use this code where the service contact is recorded as a no show.
@@ -5251,6 +5378,7 @@ Where an appointment was made for an intended participant(s), but the intended p
 :Domain:
   :1: Yes
   :2: No
+
 :Notes:
   1 - Yes
     The intended participant(s) failed to attend the appointment.
@@ -5280,6 +5408,7 @@ An indication of who participated in the Service Contact.
   :4: Other health professional or service provider
   :5: Other
   :9: Not stated
+
 :Notes:
   1 - Individual
     Code applies for Service Contacts delivered individually to a single client
@@ -5323,6 +5452,7 @@ The Australian postcode where the service contact took place.
 :Data type: string
 
 :Required: yes
+
 :Notes:
   A valid Australian postcode or 9999 if the postcode is unknown. The full list
   of Australian Postcodes can be found at `Australia Post
@@ -5352,6 +5482,7 @@ List of tags for the service contact.
 :Data type: string
 
 :Required: no
+
 :Notes:
   A comma separated list of tags.
   
@@ -5393,6 +5524,7 @@ The main type of service provided in the service contact, as represented by the 
   :8: Cultural specific assistance NEC
   :9: Psychosocial support
   :98: ATAPS
+
 :Notes:
   
   
@@ -5583,6 +5715,7 @@ Where the service contact was delivered, as represented by a code.
   :12: Aged care centre - non-residential
   :98: Not applicable (Service Contact Modality is not face to face)
   :99: Not stated
+
 :Notes:
   Note that this data item concerns only where the service contact took place.
   It is not about where the client lives. Thus, if a resident of an aged care
@@ -5645,6 +5778,7 @@ This is a number or code assigned to each service contact. The Service Contact K
 :Data type: string (2,50)
 
 :Required: yes
+
 :Notes:
   Service contact keys are case sensitive and must be valid unicode characters.
   
