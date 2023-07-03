@@ -24,14 +24,8 @@ import imp
 
 # -- Read important params from environment
 
-#on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
-#if on_rtd:
-    # stuff
-
-f = open('./version.conf')
 global ddict_conf
-ddict_conf = imp.load_source('ddict_conf', '', f)
-f.close()
+ddict_conf = imp.load_source('ddict_conf','./version.conf')
 
 spec_name = ddict_conf.SPEC_NAME
 version   = ddict_conf.SPEC_VERSION
@@ -64,7 +58,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'PMHC MDS'
+project = u'PMHC MDS Data Specification'
 copyright = u'2019, Australian Government - Department of Health'
 author = u'PMHC MDS Working Group'
 
@@ -131,7 +125,9 @@ html_theme = 'sphinx_rtd_theme'
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-html_theme_options = {}
+html_theme_options = {
+    'analytics_id': 'UA-84023505-2',
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
@@ -156,6 +152,12 @@ html_theme_options = {}
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static', '_data/_orig']
+
+# These paths are either relative to html_static_path
+# or fully qualified paths (eg. https://...)
+html_css_files = [
+    'css/custom.css',
+]
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
@@ -218,7 +220,7 @@ html_extra_path = ['CNAME', '.nojekyll']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'PMHC'
+htmlhelp_basename = 'PMHC-MDS-Data-Specification'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -240,7 +242,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'PMHC.tex', u'Primary Mental Health Care Minimum Dataset specification',
+  (master_doc, 'PMHC-MDS-data-spec.tex', u'Primary Mental Health Care Minimum Dataset specification',
    author, 'manual'),
 ]
 
@@ -270,7 +272,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'PMHC MDS Specification', u'Primary Mental Health Care Minimum Dataset specification',
+    (master_doc, 'PMHC MDS Data Specification', u'Primary Mental Health Care Minimum Dataset specification',
      [author], 1)
 ]
 
@@ -284,8 +286,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'PMHC', u'Primary Mental Health Care Minimum Dataset specification',
-   author, 'PMHC', 'Primary Mental Health Care Minimum Dataset specification',
+  (master_doc, 'PMHC-MDS-data-spec', u'Primary Mental Health Care Minimum Dataset specification',
+   author, 'PMHC-MDS-data-spec', 'Primary Mental Health Care Minimum Dataset specification',
    'Miscellaneous'),
 ]
 
@@ -319,8 +321,3 @@ rst_epilog = """
 """ % dict(download_pdf=download_pdf)
 
 numfig = True
-
-# CSS overides
-def setup(app):
-#   app.add_javascript('https://hypothes.is/embed.js')
-   app.add_stylesheet("custom.css")
