@@ -3,4 +3,5 @@
 _doc
 .doctree
 doc/build/
+doc/__pycache__/
 version.txt
