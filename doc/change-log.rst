@@ -3,6 +3,15 @@
 Data Specification Change log
 =============================
 
+26/9/2023
+---------
+
+* :ref:`reporting_arrangements`
+
+  * :ref:`reporting_inputs`
+
+    * :ref:`standard-deviations` - Added Outcome Measure Standard Deviations for 2023.
+
 3/5/2023
 --------
 
