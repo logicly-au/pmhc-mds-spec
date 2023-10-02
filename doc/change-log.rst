@@ -55,7 +55,7 @@ Data Specification Change log
 
 * :ref:`record-formats`
 
-  * Added Notes to :ref:`dfn-organisation_abn` pointing to documenation of the algorithm used to validate an ABN.
+  * Added Notes to :ref:`dfn-organisation_abn` pointing to documentation of the algorithm used to validate an ABN.
 
 * :ref:`validation-rules`
 
