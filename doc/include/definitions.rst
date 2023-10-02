@@ -3848,8 +3848,8 @@ An indication of who participated in the Service Contact.
   
   4 - Other health professional or service provider
     Code applies for Service Contacts that involve another health professional or
-    service provider (in addition to the Practitioner), with or without the
-    participation of the client.
+    service provider (in addition to the Practitioner/s), without the
+    participation of the client or family support network.
   
   5 - Other
     Code applies to Service Contacts delivered to other third parties
