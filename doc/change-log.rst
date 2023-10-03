@@ -12,6 +12,16 @@ Data Specification Change log
 
     * Updated :ref:`dfn-service_contact_participants` that code 4 should only be used if there is no client/family support network involved in the session
 
+26/9/2023
+---------
+
+* :ref:`reporting_arrangements`
+
+  * :ref:`reporting_inputs`
+
+    * :ref:`standard-deviations` - Added Outcome Measure Standard Deviations for 2023.
+
+
 3/5/2023
 --------
 
