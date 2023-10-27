@@ -3,6 +3,25 @@
 Data Specification Change log
 =============================
 
+2/10/2023
+---------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    * Updated :ref:`dfn-service_contact_participants` that code 4 should only be used if there is no client/family support network involved in the session
+
+26/9/2023
+---------
+
+* :ref:`reporting_arrangements`
+
+  * :ref:`reporting_inputs`
+
+    * :ref:`standard-deviations` - Added Outcome Measure Standard Deviations for 2023.
+
+
 3/5/2023
 --------
 
@@ -12,12 +31,12 @@ Data Specification Change log
 
     * Confirmed that where there is a linked intake and treatment, both the Intake and Episode records
       must use the same:
-     
+
       * :ref:`dfn-referral_date`
       * :ref:`dfn-referrer_profession`
       * :ref:`dfn-referrer_organisation_type`
       * :ref:`dfn-suicide_referral_flag`
-     
+
       ie. the intake service is NOT the referrer for an episode record.
 
     * Updated the :ref:`dfn-k10p_score` scoring algorithm in line with https://pmhc-mds.com/communications/#/2021/08/30/notification-of-planned-K10-scoring-change/
@@ -46,7 +65,7 @@ Data Specification Change log
 
 * :ref:`record-formats`
 
-  * Added Notes to :ref:`dfn-organisation_abn` pointing to documenation of the algorithm used to validate an ABN.
+  * Added Notes to :ref:`dfn-organisation_abn` pointing to documentation of the algorithm used to validate an ABN.
 
 * :ref:`validation-rules`
 

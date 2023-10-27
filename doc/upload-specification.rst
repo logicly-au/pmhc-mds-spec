@@ -3,6 +3,9 @@
 Upload specification
 ====================
 
+Files can be uploaded to the PMHC MDS manually via the web interface at https://pmhc-mds.net/ or
+by using the API which is available at https://api.pmhc-mds.net/.
+
 .. _file-requirements:
 
 File requirements
