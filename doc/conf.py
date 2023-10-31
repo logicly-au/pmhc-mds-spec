@@ -15,7 +15,7 @@
 import sys
 import os
 import shlex
-import imp
+import configparser
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -24,11 +24,12 @@ import imp
 
 # -- Read important params from environment
 
-global ddict_conf
-ddict_conf = imp.load_source('ddict_conf','./version.conf')
+global spec_conf
+spec_conf = configparser.ConfigParser()
+spec_conf.read('./version.conf')
 
-spec_name = ddict_conf.SPEC_NAME
-version   = ddict_conf.SPEC_VERSION
+spec_name = spec_conf['DEFAULT']['SPEC_NAME']
+version   = spec_conf['DEFAULT']['SPEC_VERSION']
 
 # -- General configuration ------------------------------------------------
 
