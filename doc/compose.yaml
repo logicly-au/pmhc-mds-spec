@@ -1,0 +1,7 @@
+services:
+  sphinx:
+    build:
+      context: .
+    volumes:
+      - .:/docs
+

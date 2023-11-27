@@ -1,19 +1,18 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Exit if anything errors
 set -e
 
-source doc/version.conf
+source doc/version.env
 export SPEC_VERSION
 
 source config.sh
 
 docker pull docker.sdlocal.net/csvw/metadata2rst:release
-docker pull stratdat/sphinx:production
 docker pull stratdat/sphinx-html2pdf:production
 
-docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst:release \
-  --meta=${METADATA_FILE}
+docker run --rm -v "$(pwd):/mnt/cwd" docker.sdlocal.net/csvw/metadata2rst:release \
+  --meta="${METADATA_FILE}"
 
 # make example zip and xlsx Files
 echo "Making example files"
@@ -27,9 +26,9 @@ zip PMHC-4-0-combined-delete.zip combined-delete/*
 popd
 
 # make zip file
-scripts/metadata2zip.sh ${SPEC_ZIP_FILE}
+scripts/metadata2zip.sh "${SPEC_ZIP_FILE}"
 # mv new zip to data-specification folder
-mv ${SPEC_ZIP_FILE} doc/_static/
+mv "${SPEC_ZIP_FILE}" doc/_static/
 
 pushd .
 cd doc
@@ -40,8 +39,11 @@ rm -rf _data build
 GIT_VERSION=$(git describe --tags --always)
 
 echo "Building PDF"
-docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
-  stratdat/sphinx:production make singlehtml
+docker compose run \
+  --build \
+  -e GIT_VERSION \
+  --rm sphinx \
+  make singlehtml
 
 popd
 
@@ -60,7 +62,9 @@ docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
 pushd .
 cd doc
 
-docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
-  stratdat/sphinx:production make html
+docker compose run \
+  -e GIT_VERSION \
+  --rm sphinx \
+  make html
 
 popd
