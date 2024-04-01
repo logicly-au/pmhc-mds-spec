@@ -236,7 +236,7 @@ Service Contact
   18. Where :ref:`dfn-program_type` is recorded as '7: Supporting Recovery', 
       :ref:`dfn-funding_source` must be recorded as '73: Other Government Funding - Commonwealth: Other Commonwealth'
   19. Where :ref:`dfn-funding_source` is recorded as '73: Other Government Funding - Commonwealth: Other Commonwealth',
-      :ref:`dfn-program_type` must be either '6: headspace' or '7: Supporting Recovery'
+      :ref:`dfn-program_type` must be '7: Supporting Recovery'
 
 
 .. _service-contact-practitioner-current-validations:
