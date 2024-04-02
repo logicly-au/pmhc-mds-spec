@@ -1332,6 +1332,7 @@ The source of PHN Mental Health funds that are wholly or primarily funding the S
   :25: Norfolk Island
   :26: National Suicide Prevention Trial
   :27: Way Back Support Service
+  :73: Other Government Funding - Commonwealth: Other Commonwealth
   :97: Other funding source – no Commonwealth Funding
   :98: Unknown/Not stated
 
@@ -4435,6 +4436,7 @@ The overarching program area that an Intake or Episode record is associated with
   :3: AMHC
   :4: Psychosocial
   :5: Bushfire Recovery 2020
+  :7: Supporting Recovery
 
 :Notes:
   1 - Flexible Funding Pool

@@ -3,6 +3,16 @@
 Data Specification Change log
 =============================
 
+??/??/2024 - 4.0.2
+------------------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    *  :ref:`dfn-program_type` - Added '7: Supporting Recovery'
+    *  :ref:`dfn-funding_source` - Added '73: Other Government Funding - Commonwealth: Other Commonwealth'
+
 2/10/2023
 ---------
 

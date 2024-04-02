@@ -222,7 +222,7 @@ Service Contact
       :ref:`dfn-service_contact_participation_indicator` must be '1: Yes'
   13. The ``!ATAPS`` tag must only be included in the :ref:`dfn-service_contact_tags`
       field where the :ref:`dfn-service_contact_date` was before 30 June 2018
-  14. The :ref:`dfn-service_contact_date`
+  14. The :ref:`dfn-service_contact_date` 
 
       * must not be before 1 January 2016
       * and must not be before :ref:`dfn-organisation_start_date`
@@ -233,6 +233,10 @@ Service Contact
   16. Existing records already containing a :ref:`dfn-service_contact_start_time` that is not '24:00' may not be updated to '24:00'.
   17. On :ref:`dfn-funding_source` the value '27: Way Back Support Service' must
       only be used in conjunction with the Wayback Extension.
+  18. Where :ref:`dfn-program_type` is recorded as '7: Supporting Recovery', 
+      :ref:`dfn-funding_source` must be recorded as '73: Other Government Funding - Commonwealth: Other Commonwealth'
+  19. Where :ref:`dfn-funding_source` is recorded as '73: Other Government Funding - Commonwealth: Other Commonwealth',
+      :ref:`dfn-program_type` must be '7: Supporting Recovery'
 
 
 .. _service-contact-practitioner-current-validations:
