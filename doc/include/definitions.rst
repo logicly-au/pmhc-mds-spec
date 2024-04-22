@@ -265,7 +265,7 @@ Indicates whether a practitioner has completed a recognised training programme i
 Client Consent to Anonymised Data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-An indication that the client has consented to their anonymised data being provided to the Department of Health for statistical purposes in planning and improving mental health services.
+An indication that the client has consented to their anonymised data being provided to the Department of Health and Aged Care for statistical purposes in planning and improving mental health services.
 
 :Field name: client_consent
 
@@ -273,23 +273,31 @@ An indication that the client has consented to their anonymised data being provi
 
 :Required: yes
 
+:Domain:
+  :1: Yes
+  :2: No
+
 :Notes:
   1 - Yes
       The client has consented to their anonymised data being provided to the
-      Department of Health for statistical purposes in planning and improving
+      Department of Health and Aged Care for statistical purposes in planning and improving
       mental health services. The client's data will be included in reports and
-      extracts accessible by the Department of Health.
+      extracts accessible by the Department of Health and Aged Care. 
   
   2 - No
       The client has not consented to their anonymised data being provided to the
-      Department of Health for statistical purposes in planning and improving
+      Department of Health and Aged Care for statistical purposes in planning and improving
       mental health services. The client's data will be excluded from reports and
-      extracts accessible by the Department of Health.
+      extracts accessible by the Department of Health and Aged Care.
   
   All data can be uploaded, regardless of consent flag.
   
   All data will be available to PHNs to extract for their own internal data evaluation purposes.
   
+  .. note:: 
+     From May 2024 onward consent collection notices were updated to include that anonymised client data may 
+     be shared with relevant state and territory departments/agencies in addition to the 
+     Department of Health and Aged Care, if the client consents.
 
 ----------
 
@@ -4512,6 +4520,21 @@ The overarching program area that an Intake or Episode record is associated with
     records using this tag will be mapped to this Program Type field under
     the Version 4 specification. The !br20 tag will be removed from future
     use once the Bushfire Program is concluded.
+  
+    7 - Supporting Recovery
+      Valid as of May 2024. Organisations can use this field for supports 
+      being provided under the Supporting Recovery pilot. The Supporting 
+      Recovery pilot provides case management services and trauma-informed 
+      mental health services to victim-survivors of family, domestic and 
+      sexual violence. As at April 2024, only the following PHNs are 
+      able to provide services under this pilot:
+  
+      * Gippsland PHN
+      * Hunter New England and Central Coast PHN
+      * Southwestern Sydney PHN
+      * Brisbane South PHN
+      * Northern Territory PHN, and
+      * Country Western Australia PHN.
   
 
 ----------
