@@ -44,7 +44,7 @@
     "name": "client_consent",
     "titles": [ "client_consent" ],
     "dc:title": "Client Consent to Anonymised Data",
-    "schema:description": "An indication that the client has consented to their anonymised data being provided to the Department of Health for statistical purposes in planning and improving mental health services.",
+    "schema:description": "An indication that the client has consented to their anonymised data being provided to the Department of Health and Aged Care for statistical purposes in planning and improving mental health services.",
     "schema:disambiguatingDescription": "table/episode/client-consent.rst",
     "schema:whenToCollect": "Intake start",
     "schema:dateCreated": "2016-07-08",
@@ -188,6 +188,12 @@
     "reference": {
       "resource": "data/clients.csv",
       "columnReference": [ "organisation_path", "client_key" ]
+    }
+  }, {
+    "columnReference": "client_consent",
+    "reference": {
+      "resource": "table/episode/client-consent.csv",
+      "columnReference": "id"
     }
   }, {
     "columnReference": "program_type",

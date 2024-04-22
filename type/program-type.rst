@@ -71,3 +71,18 @@
   records using this tag will be mapped to this Program Type field under
   the Version 4 specification. The !br20 tag will be removed from future
   use once the Bushfire Program is concluded.
+
+  7 - Supporting Recovery
+    Valid as of May 2024. Organisations can use this field for supports 
+    being provided under the Supporting Recovery pilot. The Supporting 
+    Recovery pilot provides case management services and trauma-informed 
+    mental health services to victim-survivors of family, domestic and 
+    sexual violence. As at April 2024, only the following PHNs are 
+    able to provide services under this pilot:
+
+    * Gippsland PHN
+    * Hunter New England and Central Coast PHN
+    * Southwestern Sydney PHN
+    * Brisbane South PHN
+    * Northern Territory PHN, and
+    * Country Western Australia PHN.
