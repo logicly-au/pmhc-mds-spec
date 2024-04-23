@@ -10,7 +10,8 @@
 ","string (2,50)",yes,"This is a number or code assigned to each individual client referred to the intake organisation. The client identifier must be unique and stable for each individual within the intake organisation. Assigned by either the PHN or intake organisation depending on local procedures."
 "`Client Consent to Anonymised Data`_ (client_consent)
 
-",string,yes,"An indication that the client has consented to their anonymised data being provided to the Department of Health for statistical purposes in planning and improving mental health services."
+",string,yes,":1: Yes
+:2: No"
 "`Referral Date`_ (referral_date)
 
 ",date,yes,"The date the referrer made the referral."
