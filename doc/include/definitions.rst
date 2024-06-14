@@ -1476,10 +1476,13 @@ An indication of whether the client has been homeless in the 4 weeks prior to th
 
 .. _dfn-iar_dst_domain_1:
 
-IAR-DST - Domain 1 - Symptom Severity and Distress (Primary Domain)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IAR-DST - Domain 1
+^^^^^^^^^^^^^^^^^^
 
-An initial assessment should examine severity of symptoms, distress and previous history of mental illness. Severity of current symptoms and associated levels of distress are important factors in assigning a level of care and making a referral decision. Assessing changes in symptom severity and distress also forms an important part of outcome monitoring.
+For details about values of this field, please **refer to the relevant IAR-DST specification** for the version of the IAR-DST that you are using:
+
+* `Version 1 <https://docs.iar-dst.online/en/v1/>`_ or,
+* `Version 2 <https://docs.iar-dst.online/en/v2/>`_
 
 :Field name: iar_dst_domain_1
 
@@ -1488,24 +1491,23 @@ An initial assessment should examine severity of symptoms, distress and previous
 :Required: yes
 
 :Domain:
-  :0: No problem in this domain
-  :1: Mild or sub diagnostic
-  :2: Moderate
-  :3: Severe
-  :4: Very severe
-
-:Notes:
-  Please refer to `IAR-DST Domain 1 - Symptom Severity and Distress (Primary Domain) <https://docs.iar-dst.online/en/latest/domains/domain-1.html>`_
-  
+  :0: *Refer to the relevant IAR-DST specification* linked above
+  :1: *Refer to the relevant IAR-DST specification* linked above
+  :2: *Refer to the relevant IAR-DST specification* linked above
+  :3: *Refer to the relevant IAR-DST specification* linked above
+  :4: *Refer to the relevant IAR-DST specification* linked above
 
 ----------
 
 .. _dfn-iar_dst_domain_2:
 
-IAR-DST - Domain 2 - Risk of Harm (Primary Domain)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IAR-DST - Domain 2
+^^^^^^^^^^^^^^^^^^
 
-An initial assessment should include an evaluation of risk to determine a person’s potential for harm to self or others. Results from this assessment are of fundamental importance in deciding the appropriate level of care required.
+For details about values of this field, please **refer to the relevant IAR-DST specification** for the version of the IAR-DST that you are using:
+
+* `Version 1 <https://docs.iar-dst.online/en/v1/>`_ or,
+* `Version 2 <https://docs.iar-dst.online/en/v2/>`_
 
 :Field name: iar_dst_domain_2
 
@@ -1514,24 +1516,23 @@ An initial assessment should include an evaluation of risk to determine a person
 :Required: yes
 
 :Domain:
-  :0: No identified risk in this domain
-  :1: Low risk of harm
-  :2: Moderate risk of harm
-  :3: High risk of harm
-  :4: Very high risk of harm
-
-:Notes:
-  Please refer to `IAR-DST Domain 2 - Risk of Harm (Primary Domain) <https://docs.iar-dst.online/en/latest/domains/domain-2.html>`_
-  
+  :0: *Refer to the relevant IAR-DST specification* linked above
+  :1: *Refer to the relevant IAR-DST specification* linked above
+  :2: *Refer to the relevant IAR-DST specification* linked above
+  :3: *Refer to the relevant IAR-DST specification* linked above
+  :4: *Refer to the relevant IAR-DST specification* linked above
 
 ----------
 
 .. _dfn-iar_dst_domain_3:
 
-IAR-DST - Domain 3 - Functioning (Primary Domain)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IAR-DST - Domain 3
+^^^^^^^^^^^^^^^^^^
 
-An initial assessment should consider functional impairment caused by or exacerbated by the mental health condition. While other types of disabilities may play a role in determining what types of support services may be required, they should generally not be considered in determining mental health intervention intensity within a stepped care continuum.
+For details about values of this field, please **refer to the relevant IAR-DST specification** for the version of the IAR-DST that you are using:
+
+* `Version 1 <https://docs.iar-dst.online/en/v1/>`_ or,
+* `Version 2 <https://docs.iar-dst.online/en/v2/>`_
 
 :Field name: iar_dst_domain_3
 
@@ -1540,24 +1541,23 @@ An initial assessment should consider functional impairment caused by or exacerb
 :Required: yes
 
 :Domain:
-  :0: No problems in this domain
-  :1: Mild impact
-  :2: Moderate impact
-  :3: Severe impact
-  :4: Very severe to extreme impact
-
-:Notes:
-  Please refer to `IAR-DST Domain 3 - Functioning (Primary Domain) <https://docs.iar-dst.online/en/latest/domains/domain-3.html>`_
-  
+  :0: *Refer to the relevant IAR-DST specification* linked above
+  :1: *Refer to the relevant IAR-DST specification* linked above
+  :2: *Refer to the relevant IAR-DST specification* linked above
+  :3: *Refer to the relevant IAR-DST specification* linked above
+  :4: *Refer to the relevant IAR-DST specification* linked above
 
 ----------
 
 .. _dfn-iar_dst_domain_4:
 
-IAR-DST - Domain 4 - Impact of Co-existing Conditions (Primary Domain)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IAR-DST - Domain 4
+^^^^^^^^^^^^^^^^^^
 
-Increasingly, individuals are experiencing and managing multi-morbidity (coexistence of multiple conditions including chronic disease). An initial assessment should specifically examine the presence of other concurrent health conditions that contribute to (or have the potential to contribute to) increased severity of mental health problems and/or compromises the person’s ability to participate in the recommended treatment.
+For details about values of this field, please **refer to the relevant IAR-DST specification** for the version of the IAR-DST that you are using:
+
+* `Version 1 <https://docs.iar-dst.online/en/v1/>`_ or,
+* `Version 2 <https://docs.iar-dst.online/en/v2/>`_
 
 :Field name: iar_dst_domain_4
 
@@ -1566,24 +1566,23 @@ Increasingly, individuals are experiencing and managing multi-morbidity (coexist
 :Required: yes
 
 :Domain:
-  :0: No problem in this domain
-  :1: Minor impact
-  :2: Moderate impact
-  :3: Severe impact
-  :4: Very severe impact
-
-:Notes:
-  Please refer to `IAR-DST Domain 4 - Impact of Co-existing Conditions (Primary Domain) <https://docs.iar-dst.online/en/latest/domains/domain-4.html>`_
-  
+  :0: *Refer to the relevant IAR-DST specification* linked above
+  :1: *Refer to the relevant IAR-DST specification* linked above
+  :2: *Refer to the relevant IAR-DST specification* linked above
+  :3: *Refer to the relevant IAR-DST specification* linked above
+  :4: *Refer to the relevant IAR-DST specification* linked above
 
 ----------
 
 .. _dfn-iar_dst_domain_5:
 
-IAR-DST - Domain 5 - Treatment and Recovery History (Contextual Domain)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IAR-DST - Domain 5
+^^^^^^^^^^^^^^^^^^
 
-This initial assessment domain should explore the individual’s relevant treatment history and their response to previous treatment. Response to previous treatment is a reasonable predictor of future treatment need and is particularly important when determining appropriateness of lower intensity services.
+For details about values of this field, please **refer to the relevant IAR-DST specification** for the version of the IAR-DST that you are using:
+
+* `Version 1 <https://docs.iar-dst.online/en/v1/>`_ or,
+* `Version 2 <https://docs.iar-dst.online/en/v2/>`_
 
 :Field name: iar_dst_domain_5
 
@@ -1592,24 +1591,23 @@ This initial assessment domain should explore the individual’s relevant treatm
 :Required: yes
 
 :Domain:
-  :0: No prior treatment history
-  :1: Full recovery with previous treatment
-  :2: Moderate recovery with previous treatment
-  :3: Minor recovery with previous treatment
-  :4: Negligible recovery with previous treatment
-
-:Notes:
-  Please refer to `IAR-DST Domain 5 - Treatment and Recovery History (Contextual Domain) <https://docs.iar-dst.online/en/latest/domains/domain-5.html>`_
-  
+  :0: *Refer to the relevant IAR-DST specification* linked above
+  :1: *Refer to the relevant IAR-DST specification* linked above
+  :2: *Refer to the relevant IAR-DST specification* linked above
+  :3: *Refer to the relevant IAR-DST specification* linked above
+  :4: *Refer to the relevant IAR-DST specification* linked above
 
 ----------
 
 .. _dfn-iar_dst_domain_6:
 
-IAR-DST - Domain 6 - Social and Environmental Stressors (Contextual Domain)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IAR-DST - Domain 6
+^^^^^^^^^^^^^^^^^^
 
-This initial assessment domain should consider how the person’s environment might contribute to the onset or maintenance of a mental health condition. Significant situational or social complexities can lead to increased condition severity and/or compromise ability to participate in the recommended treatment. Unresolved situational or social complexities can limit the likely benefit of treatment. Furthermore, understanding the complexities experienced by the individual (with carer/support person perspectives if available), may alter the type of service offered, or indicate that additional service referrals may be required (e.g., a referral to an emergency housing provider).
+For details about values of this field, please **refer to the relevant IAR-DST specification** for the version of the IAR-DST that you are using:
+
+* `Version 1 <https://docs.iar-dst.online/en/v1/>`_ or,
+* `Version 2 <https://docs.iar-dst.online/en/v2/>`_
 
 :Field name: iar_dst_domain_6
 
@@ -1618,24 +1616,23 @@ This initial assessment domain should consider how the person’s environment mi
 :Required: yes
 
 :Domain:
-  :0: No problem in this domain
-  :1: Mildly stressful environment
-  :2: Moderately stressful environment
-  :3: Highly stressful environment
-  :4: Extremely stressful environment
-
-:Notes:
-  Please refer to `IAR-DST Domain 6 - Social and Environmental Stressors (Contextual Domain) <https://docs.iar-dst.online/en/latest/domains/domain-6.html>`_
-  
+  :0: *Refer to the relevant IAR-DST specification* linked above
+  :1: *Refer to the relevant IAR-DST specification* linked above
+  :2: *Refer to the relevant IAR-DST specification* linked above
+  :3: *Refer to the relevant IAR-DST specification* linked above
+  :4: *Refer to the relevant IAR-DST specification* linked above
 
 ----------
 
 .. _dfn-iar_dst_domain_7:
 
-IAR-DST - Domain 7 - Family and Other Supports (Contextual Domain)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IAR-DST - Domain 7
+^^^^^^^^^^^^^^^^^^
 
-This initial assessment domain should consider whether informal supports are present and their potential to contribute to recovery. A lack of supports might contribute to the onset or maintenance of the mental health condition and/or compromise ability to participate in the recommended treatment.
+For details about values of this field, please **refer to the relevant IAR-DST specification** for the version of the IAR-DST that you are using:
+
+* `Version 1 <https://docs.iar-dst.online/en/v1/>`_ or,
+* `Version 2 <https://docs.iar-dst.online/en/v2/>`_
 
 :Field name: iar_dst_domain_7
 
@@ -1644,24 +1641,23 @@ This initial assessment domain should consider whether informal supports are pre
 :Required: yes
 
 :Domain:
-  :0: Highly supported
-  :1: Well supported
-  :2: Limited supports
-  :3: Minimal supports
-  :4: No supports
-
-:Notes:
-  Please refer to `IAR-DST Domain 7 - Family and Other Supports (Contextual Domain) <https://docs.iar-dst.online/en/latest/domains/domain-7.html>`_
-  
+  :0: *Refer to the relevant IAR-DST specification* linked above
+  :1: *Refer to the relevant IAR-DST specification* linked above
+  :2: *Refer to the relevant IAR-DST specification* linked above
+  :3: *Refer to the relevant IAR-DST specification* linked above
+  :4: *Refer to the relevant IAR-DST specification* linked above
 
 ----------
 
 .. _dfn-iar_dst_domain_8:
 
-IAR-DST - Domain 8 - Engagement and Motivation (Contextual Domain)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IAR-DST - Domain 8
+^^^^^^^^^^^^^^^^^^
 
-This initial assessment domain should explore the person’s understanding of the mental health condition and their willingness to engage in or accept treatment.
+For details about values of this field, please **refer to the relevant IAR-DST specification** for the version of the IAR-DST that you are using:
+
+* `Version 1 <https://docs.iar-dst.online/en/v1/>`_ or,
+* `Version 2 <https://docs.iar-dst.online/en/v2/>`_
 
 :Field name: iar_dst_domain_8
 
@@ -1670,15 +1666,11 @@ This initial assessment domain should explore the person’s understanding of th
 :Required: yes
 
 :Domain:
-  :0: Optimal
-  :1: Positive
-  :2: Limited
-  :3: Minimal
-  :4: Disengaged
-
-:Notes:
-  Please refer to `IAR-DST Domain 8 - Engagement and Motivation (Contextual Domain) <https://docs.iar-dst.online/en/latest/domains/domain-8.html>`_
-  
+  :0: *Refer to the relevant IAR-DST specification* linked above
+  :1: *Refer to the relevant IAR-DST specification* linked above
+  :2: *Refer to the relevant IAR-DST specification* linked above
+  :3: *Refer to the relevant IAR-DST specification* linked above
+  :4: *Refer to the relevant IAR-DST specification* linked above
 
 ----------
 
@@ -1704,7 +1696,9 @@ The individualised level of care assessed by the practitioner for the referral
   :9: Not stated
 
 :Notes:
-  Please refer to `IAR-DST Levels of Care <https://docs.iar-dst.online/en/latest/level-of-care/index.html>`_
+  Please refer to the Levels of Care section in the documentation for the version of the IAR-DST that you are using.
+  
+  `Version 1 <https://docs.iar-dst.online/en/v1/>`_ or `Version 2 <https://docs.iar-dst.online/en/v2/>`_
   
   This field was added on 25/2/2021. IAR-DST data entered into the PMHC-MDS
   before 25/2/2021 will have the Practitioner Level of Care set to 9: Missing.
@@ -1738,7 +1732,9 @@ The information gathered through the initial assessment is used to assign a reco
   :5: Level 5 - Acute and Specialist Community Mental Health Services
 
 :Notes:
-  Please refer to `IAR-DST Levels of Care <https://docs.iar-dst.online/en/latest/level-of-care/index.html>`_
+  Please refer to the Levels of Care section in the documentation for the version of the IAR-DST that you are using.
+  
+  `Version 1 <https://docs.iar-dst.online/en/v1/>`_ or `Version 2 <https://docs.iar-dst.online/en/v2/>`_
   
 
 ----------
@@ -1786,7 +1782,11 @@ The version of the IAR-DST collected.
 :Required: yes
 
 :Domain:
-  :1: DST specified by National PHN Guidance Initial Assessment and Referral for Mental Healthcare version 1.05
+  :1: `IAR-DST version 1.05 <https://docs.iar-dst.online/en/v1/>`_
+  :2.child: `IAR-DST Children (5-11 years) version 2.00 <https://docs.iar-dst.online/en/v2/child/index.html>`_
+  :2.adolescent: `IAR-DST Adolescent (12-17 years) version 2.00 <https://docs.iar-dst.online/en/v2/adolescent/index.html>`_
+  :2.adult: `IAR-DST Adult (18-64 years) version 2.00 <https://docs.iar-dst.online/en/v2/adult/index.html>`_
+  :2.older: `IAR-DST Older (65 years and over) version 2.00 <https://docs.iar-dst.online/en/v2/older-adult/index.html>`_
 
 ----------
 
