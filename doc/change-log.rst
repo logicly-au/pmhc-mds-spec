@@ -3,6 +3,22 @@
 Data Specification Change log
 =============================
 
+14/6/2024 - 4.0.3
+-----------------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    *  :ref:`dfn-iar_dst_version` - Added:
+
+      * 2.child: IAR-DST Children (5-11 years) version 2.00
+      * 2.adolescent: IAR-DST Adolescent (12-17 years) version 2.00
+      * 2.adult: IAR-DST Adult (18-64 years) version 2.00
+      * 2.older: IAR-DST Older (65 years and over) version 2.00
+
+    * :ref:`dfn-iar_dst_domain_1` - :ref:`dfn-iar_dst_domain_8` - Changed the description of the values to refer to the relevant IAR-DST specification
+
 22/04/2024 - 4.0.2
 ------------------
 
