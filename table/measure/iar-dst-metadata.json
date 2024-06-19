@@ -177,49 +177,49 @@
   }, {
     "columnReference": "iar_dst_domain_1",
     "reference": {
-      "resource": "type/iar-dst-domain.csv",
+      "resource": "table/measure/iar-dst/iar-dst-domain.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "iar_dst_domain_2",
     "reference": {
-      "resource": "type/iar-dst-domain.csv",
+      "resource": "table/measure/iar-dst/iar-dst-domain.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "iar_dst_domain_3",
     "reference": {
-      "resource": "type/iar-dst-domain.csv",
+      "resource": "table/measure/iar-dst/iar-dst-domain.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "iar_dst_domain_4",
     "reference": {
-      "resource": "type/iar-dst-domain.csv",
+      "resource": "table/measure/iar-dst/iar-dst-domain.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "iar_dst_domain_5",
     "reference": {
-      "resource": "type/iar-dst-domain.csv",
+      "resource": "table/measure/iar-dst/iar-dst-domain.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "iar_dst_domain_6",
     "reference": {
-      "resource": "type/iar-dst-domain.csv",
+      "resource": "table/measure/iar-dst/iar-dst-domain.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "iar_dst_domain_7",
     "reference": {
-      "resource": "type/iar-dst-domain.csv",
+      "resource": "table/measure/iar-dst/iar-dst-domain.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "iar_dst_domain_8",
     "reference": {
-      "resource": "type/iar-dst-domain.csv",
+      "resource": "table/measure/iar-dst/iar-dst-domain.csv",
       "columnReference": "id"
     }
   }, {
