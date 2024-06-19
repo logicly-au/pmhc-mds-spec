@@ -101,3 +101,9 @@ cat metadata.json | grep tableSchema | cut -d: -f2 | sort | uniq | xargs -n1 -I{
 ./scripts/csv2xlsx.pl --context=combined doc/_static/example-files/
 ./scripts/csv2xlsx.pl --delete doc/_static/example-files/
 ```
+
+## Commands useful for validating example data
+
+```
+csvlint/README.md
+```
