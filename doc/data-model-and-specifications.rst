@@ -484,7 +484,7 @@ could be collected separately from IAR DST data.
    version 1 of the IAR DST. This version was to be used only for Adults.
    As of PMHC-MDS specification v4.0.3 you may supply either v1 or v2 IAR-DST
    versions. Version 2 adds child, adolescent, and older adult adaptions.
-   The PMHC-MDS implemenation of this change is backward compatible with the
+   The PMHC-MDS implementation of this change is backward compatible with the
    existing v1 format as the only difference is the extension of the `IAR-DST
    - Version`_ domain with v2 specific values.
    
