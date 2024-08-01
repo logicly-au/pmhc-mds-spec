@@ -295,7 +295,7 @@ An indication that the client has consented to their anonymised data being provi
   All data will be available to PHNs to extract for their own internal data evaluation purposes.
   
   .. note:: 
-     From May 2024 onward consent collection notices were updated to include that anonymised client data may 
+     From June 2024 onward consent collection notices were updated to include that anonymised client data may 
      be shared with relevant state and territory departments/agencies in addition to the 
      Department of Health and Aged Care, if the client consents.
 
