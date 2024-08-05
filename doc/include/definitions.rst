@@ -1495,7 +1495,7 @@ An initial assessment should examine severity of symptoms, distress and previous
   :4: Very severe
 
 :Notes:
-  Please refer to `IAR-DST Domain 1 - Symptom Severity and Distress (Primary Domain) <https://docs.iar-dst.online/en/latest/domains/domain-1.html>`_
+  Please refer to `IAR-DST Domain 1 - Symptom Severity and Distress (Primary Domain) <https://docs.iar-dst.online/en/v1/domains/domain-1.html>`_
   
 
 ----------
@@ -1521,7 +1521,7 @@ An initial assessment should include an evaluation of risk to determine a person
   :4: Very high risk of harm
 
 :Notes:
-  Please refer to `IAR-DST Domain 2 - Risk of Harm (Primary Domain) <https://docs.iar-dst.online/en/latest/domains/domain-2.html>`_
+  Please refer to `IAR-DST Domain 2 - Risk of Harm (Primary Domain) <https://docs.iar-dst.online/en/v1/domains/domain-2.html>`_
   
 
 ----------
@@ -1547,7 +1547,7 @@ An initial assessment should consider functional impairment caused by or exacerb
   :4: Very severe to extreme impact
 
 :Notes:
-  Please refer to `IAR-DST Domain 3 - Functioning (Primary Domain) <https://docs.iar-dst.online/en/latest/domains/domain-3.html>`_
+  Please refer to `IAR-DST Domain 3 - Functioning (Primary Domain) <https://docs.iar-dst.online/en/v1/domains/domain-3.html>`_
   
 
 ----------
@@ -1573,7 +1573,7 @@ Increasingly, individuals are experiencing and managing multi-morbidity (coexist
   :4: Very severe impact
 
 :Notes:
-  Please refer to `IAR-DST Domain 4 - Impact of Co-existing Conditions (Primary Domain) <https://docs.iar-dst.online/en/latest/domains/domain-4.html>`_
+  Please refer to `IAR-DST Domain 4 - Impact of Co-existing Conditions (Primary Domain) <https://docs.iar-dst.online/en/v1/domains/domain-4.html>`_
   
 
 ----------
@@ -1599,7 +1599,7 @@ This initial assessment domain should explore the individual’s relevant treatm
   :4: Negligible recovery with previous treatment
 
 :Notes:
-  Please refer to `IAR-DST Domain 5 - Treatment and Recovery History (Contextual Domain) <https://docs.iar-dst.online/en/latest/domains/domain-5.html>`_
+  Please refer to `IAR-DST Domain 5 - Treatment and Recovery History (Contextual Domain) <https://docs.iar-dst.online/en/v1/domains/domain-5.html>`_
   
 
 ----------
@@ -1625,7 +1625,7 @@ This initial assessment domain should consider how the person’s environment mi
   :4: Extremely stressful environment
 
 :Notes:
-  Please refer to `IAR-DST Domain 6 - Social and Environmental Stressors (Contextual Domain) <https://docs.iar-dst.online/en/latest/domains/domain-6.html>`_
+  Please refer to `IAR-DST Domain 6 - Social and Environmental Stressors (Contextual Domain) <https://docs.iar-dst.online/en/v1/domains/domain-6.html>`_
   
 
 ----------
@@ -1651,7 +1651,7 @@ This initial assessment domain should consider whether informal supports are pre
   :4: No supports
 
 :Notes:
-  Please refer to `IAR-DST Domain 7 - Family and Other Supports (Contextual Domain) <https://docs.iar-dst.online/en/latest/domains/domain-7.html>`_
+  Please refer to `IAR-DST Domain 7 - Family and Other Supports (Contextual Domain) <https://docs.iar-dst.online/en/v1/domains/domain-7.html>`_
   
 
 ----------
@@ -1677,7 +1677,7 @@ This initial assessment domain should explore the person’s understanding of th
   :4: Disengaged
 
 :Notes:
-  Please refer to `IAR-DST Domain 8 - Engagement and Motivation (Contextual Domain) <https://docs.iar-dst.online/en/latest/domains/domain-8.html>`_
+  Please refer to `IAR-DST Domain 8 - Engagement and Motivation (Contextual Domain) <https://docs.iar-dst.online/en/v1/domains/domain-8.html>`_
   
 
 ----------
@@ -1704,7 +1704,7 @@ The individualised level of care assessed by the practitioner for the referral
   :9: Not stated
 
 :Notes:
-  Please refer to `IAR-DST Levels of Care <https://docs.iar-dst.online/en/latest/level-of-care/index.html>`_
+  Please refer to `IAR-DST Levels of Care <https://docs.iar-dst.online/en/v1/level-of-care/index.html>`_
   
   This field was added on 25/2/2021. IAR-DST data entered into the PMHC-MDS
   before 25/2/2021 will have the Practitioner Level of Care set to 9: Missing.
@@ -1738,7 +1738,7 @@ The information gathered through the initial assessment is used to assign a reco
   :5: Level 5 - Acute and Specialist Community Mental Health Services
 
 :Notes:
-  Please refer to `IAR-DST Levels of Care <https://docs.iar-dst.online/en/latest/level-of-care/index.html>`_
+  Please refer to `IAR-DST Levels of Care <https://docs.iar-dst.online/en/v1/level-of-care/index.html>`_
   
 
 ----------
