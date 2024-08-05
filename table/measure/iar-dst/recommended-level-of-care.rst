@@ -1,1 +1,1 @@
-Please refer to `IAR-DST Levels of Care <https://docs.iar-dst.online/en/latest/level-of-care/index.html>`_
+Please refer to `IAR-DST Levels of Care <https://docs.iar-dst.online/en/v1/level-of-care/index.html>`_
