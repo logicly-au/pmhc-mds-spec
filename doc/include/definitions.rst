@@ -1786,7 +1786,7 @@ The version of the IAR-DST collected.
   :2.child: `IAR-DST Children (5-11 years) version 2.00 <https://docs.iar-dst.online/en/v2/child/index.html>`_
   :2.adolescent: `IAR-DST Adolescent (12-17 years) version 2.00 <https://docs.iar-dst.online/en/v2/adolescent/index.html>`_
   :2.adult: `IAR-DST Adult (18-64 years) version 2.00 <https://docs.iar-dst.online/en/v2/adult/index.html>`_
-  :2.older: `IAR-DST Older (65 years and over) version 2.00 <https://docs.iar-dst.online/en/v2/older-adult/index.html>`_
+  :2.older-adult: `IAR-DST Older Adult (65 years and over) version 2.00 <https://docs.iar-dst.online/en/v2/older-adult/index.html>`_
 
 ----------
 
