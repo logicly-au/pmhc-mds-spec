@@ -1,4 +1,7 @@
-FROM ruby:3.1 as gembuilder
+# Specify the ruby version is use only once
+FROM ruby:3.1 AS ruby
+
+FROM ruby AS gembuilder
 
 RUN git clone https://github.com/strategicdata/csvlint.rb.git /build
 WORKDIR build
@@ -6,7 +9,7 @@ WORKDIR build
 RUN gem build csvlint.gemspec
 
 
-FROM ruby:3.1
+FROM ruby
 
 # copy spec tables + types to /spec
 COPY table/ /spec/table
