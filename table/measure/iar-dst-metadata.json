@@ -51,9 +51,8 @@
   },{
     "name": "iar_dst_domain_1",
     "titles": [ "iar_dst_domain_1" ],
-    "dc:title": "IAR-DST - Domain 1 - Symptom Severity and Distress (Primary Domain)",
-    "schema:description": "An initial assessment should examine severity of symptoms, distress and previous history of mental illness. Severity of current symptoms and associated levels of distress are important factors in assigning a level of care and making a referral decision. Assessing changes in symptom severity and distress also forms an important part of outcome monitoring.",
-    "schema:disambiguatingDescription": "table/measure/iar-dst/domain-1.rst",
+    "dc:title": "IAR-DST - Domain 1",
+    "schema:description": "For details about values of this field, please **refer to the relevant IAR-DST specification** for the version of the IAR-DST that you are using:\n\n* `Version 1 <https://docs.iar-dst.online/en/v1/>`_ or,\n* `Version 2 <https://docs.iar-dst.online/en/v2/>`_",
     "schema:dateCreated": "2021-08-23",
     "datatype": {
       "base": "string"
@@ -62,9 +61,8 @@
   },{
     "name": "iar_dst_domain_2",
     "titles": [ "iar_dst_domain_2" ],
-    "dc:title": "IAR-DST - Domain 2 - Risk of Harm (Primary Domain)",
-    "schema:description": "An initial assessment should include an evaluation of risk to determine a person’s potential for harm to self or others. Results from this assessment are of fundamental importance in deciding the appropriate level of care required.",
-    "schema:disambiguatingDescription": "table/measure/iar-dst/domain-2.rst",
+    "dc:title": "IAR-DST - Domain 2",
+    "schema:description": "For details about values of this field, please **refer to the relevant IAR-DST specification** for the version of the IAR-DST that you are using:\n\n* `Version 1 <https://docs.iar-dst.online/en/v1/>`_ or,\n* `Version 2 <https://docs.iar-dst.online/en/v2/>`_",
     "schema:dateCreated": "2021-08-23",
     "datatype": {
       "base": "string"
@@ -73,9 +71,8 @@
   },{
     "name": "iar_dst_domain_3",
     "titles": [ "iar_dst_domain_3" ],
-    "dc:title": "IAR-DST - Domain 3 - Functioning (Primary Domain)",
-    "schema:description": "An initial assessment should consider functional impairment caused by or exacerbated by the mental health condition. While other types of disabilities may play a role in determining what types of support services may be required, they should generally not be considered in determining mental health intervention intensity within a stepped care continuum.",
-    "schema:disambiguatingDescription": "table/measure/iar-dst/domain-3.rst",
+    "dc:title": "IAR-DST - Domain 3",
+    "schema:description": "For details about values of this field, please **refer to the relevant IAR-DST specification** for the version of the IAR-DST that you are using:\n\n* `Version 1 <https://docs.iar-dst.online/en/v1/>`_ or,\n* `Version 2 <https://docs.iar-dst.online/en/v2/>`_",
     "schema:dateCreated": "2021-08-23",
     "datatype": {
       "base": "string"
@@ -84,9 +81,8 @@
   },{
     "name": "iar_dst_domain_4",
     "titles": [ "iar_dst_domain_4" ],
-    "dc:title": "IAR-DST - Domain 4 - Impact of Co-existing Conditions (Primary Domain)",
-    "schema:description": "Increasingly, individuals are experiencing and managing multi-morbidity (coexistence of multiple conditions including chronic disease). An initial assessment should specifically examine the presence of other concurrent health conditions that contribute to (or have the potential to contribute to) increased severity of mental health problems and/or compromises the person’s ability to participate in the recommended treatment.",
-    "schema:disambiguatingDescription": "table/measure/iar-dst/domain-4.rst",
+    "dc:title": "IAR-DST - Domain 4",
+    "schema:description": "For details about values of this field, please **refer to the relevant IAR-DST specification** for the version of the IAR-DST that you are using:\n\n* `Version 1 <https://docs.iar-dst.online/en/v1/>`_ or,\n* `Version 2 <https://docs.iar-dst.online/en/v2/>`_",
     "schema:dateCreated": "2021-08-23",
     "datatype": {
       "base": "string"
@@ -95,9 +91,8 @@
   },{
     "name": "iar_dst_domain_5",
     "titles": [ "iar_dst_domain_5" ],
-    "dc:title": "IAR-DST - Domain 5 - Treatment and Recovery History (Contextual Domain)",
-    "schema:description": "This initial assessment domain should explore the individual’s relevant treatment history and their response to previous treatment. Response to previous treatment is a reasonable predictor of future treatment need and is particularly important when determining appropriateness of lower intensity services.",
-    "schema:disambiguatingDescription": "table/measure/iar-dst/domain-5.rst",
+    "dc:title": "IAR-DST - Domain 5",
+    "schema:description": "For details about values of this field, please **refer to the relevant IAR-DST specification** for the version of the IAR-DST that you are using:\n\n* `Version 1 <https://docs.iar-dst.online/en/v1/>`_ or,\n* `Version 2 <https://docs.iar-dst.online/en/v2/>`_",
     "schema:dateCreated": "2021-08-23",
     "datatype": {
       "base": "string"
@@ -106,9 +101,8 @@
   },{
     "name": "iar_dst_domain_6",
     "titles": [ "iar_dst_domain_6" ],
-    "dc:title": "IAR-DST - Domain 6 - Social and Environmental Stressors (Contextual Domain)",
-    "schema:description": "This initial assessment domain should consider how the person’s environment might contribute to the onset or maintenance of a mental health condition. Significant situational or social complexities can lead to increased condition severity and/or compromise ability to participate in the recommended treatment. Unresolved situational or social complexities can limit the likely benefit of treatment. Furthermore, understanding the complexities experienced by the individual (with carer/support person perspectives if available), may alter the type of service offered, or indicate that additional service referrals may be required (e.g., a referral to an emergency housing provider).",
-    "schema:disambiguatingDescription": "table/measure/iar-dst/domain-6.rst",
+    "dc:title": "IAR-DST - Domain 6",
+    "schema:description": "For details about values of this field, please **refer to the relevant IAR-DST specification** for the version of the IAR-DST that you are using:\n\n* `Version 1 <https://docs.iar-dst.online/en/v1/>`_ or,\n* `Version 2 <https://docs.iar-dst.online/en/v2/>`_",
     "schema:dateCreated": "2021-08-23",
     "datatype": {
       "base": "string"
@@ -117,9 +111,8 @@
   },{
     "name": "iar_dst_domain_7",
     "titles": [ "iar_dst_domain_7" ],
-    "dc:title": "IAR-DST - Domain 7 - Family and Other Supports (Contextual Domain)",
-    "schema:description": "This initial assessment domain should consider whether informal supports are present and their potential to contribute to recovery. A lack of supports might contribute to the onset or maintenance of the mental health condition and/or compromise ability to participate in the recommended treatment.",
-    "schema:disambiguatingDescription": "table/measure/iar-dst/domain-7.rst",
+    "dc:title": "IAR-DST - Domain 7",
+    "schema:description": "For details about values of this field, please **refer to the relevant IAR-DST specification** for the version of the IAR-DST that you are using:\n\n* `Version 1 <https://docs.iar-dst.online/en/v1/>`_ or,\n* `Version 2 <https://docs.iar-dst.online/en/v2/>`_",
     "schema:dateCreated": "2021-08-23",
     "datatype": {
       "base": "string"
@@ -128,9 +121,8 @@
   },{
     "name": "iar_dst_domain_8",
     "titles": [ "iar_dst_domain_8" ],
-    "dc:title": "IAR-DST - Domain 8 - Engagement and Motivation (Contextual Domain)",
-    "schema:description": "This initial assessment domain should explore the person’s understanding of the mental health condition and their willingness to engage in or accept treatment.",
-    "schema:disambiguatingDescription": "table/measure/iar-dst/domain-8.rst",
+    "dc:title": "IAR-DST - Domain 8",
+    "schema:description": "For details about values of this field, please **refer to the relevant IAR-DST specification** for the version of the IAR-DST that you are using:\n\n* `Version 1 <https://docs.iar-dst.online/en/v1/>`_ or,\n* `Version 2 <https://docs.iar-dst.online/en/v2/>`_",
     "schema:dateCreated": "2021-08-23",
     "datatype": {
       "base": "string"
@@ -185,49 +177,49 @@
   }, {
     "columnReference": "iar_dst_domain_1",
     "reference": {
-      "resource": "table/measure/iar-dst/domain-1.csv",
+      "resource": "table/measure/iar-dst/iar-dst-domain.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "iar_dst_domain_2",
     "reference": {
-      "resource": "table/measure/iar-dst/domain-2.csv",
+      "resource": "table/measure/iar-dst/iar-dst-domain.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "iar_dst_domain_3",
     "reference": {
-      "resource": "table/measure/iar-dst/domain-3.csv",
+      "resource": "table/measure/iar-dst/iar-dst-domain.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "iar_dst_domain_4",
     "reference": {
-      "resource": "table/measure/iar-dst/domain-4.csv",
+      "resource": "table/measure/iar-dst/iar-dst-domain.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "iar_dst_domain_5",
     "reference": {
-      "resource": "table/measure/iar-dst/domain-5.csv",
+      "resource": "table/measure/iar-dst/iar-dst-domain.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "iar_dst_domain_6",
     "reference": {
-      "resource": "table/measure/iar-dst/domain-6.csv",
+      "resource": "table/measure/iar-dst/iar-dst-domain.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "iar_dst_domain_7",
     "reference": {
-      "resource": "table/measure/iar-dst/domain-7.csv",
+      "resource": "table/measure/iar-dst/iar-dst-domain.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "iar_dst_domain_8",
     "reference": {
-      "resource": "table/measure/iar-dst/domain-8.csv",
+      "resource": "table/measure/iar-dst/iar-dst-domain.csv",
       "columnReference": "id"
     }
   }, {

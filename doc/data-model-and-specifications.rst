@@ -479,6 +479,36 @@ Where an Intake is recorded, an associated :ref:`iar-dst-data-elements` should
 also be recorded. However, this is not enforced by the PMHC MDS as Intake data
 could be collected separately from IAR DST data.
 
+.. note::
+   Versions 4.0.0 through 4.0.2 of the PMHC MDS specifiction only described
+   version 1 of the IAR DST. This version was to be used only for adults.
+   As of PMHC-MDS specification v4.0.3 you may supply either v1 or v2 IAR-DST
+   versions. Version 2 adds child, adolescent, and older adult adaptions.
+   The PMHC-MDS implementation of this change is backward compatible with the
+   existing v1 format as the only difference is the extension of the `IAR-DST
+   - Version`_ domain with v2 specific values.
+   
+   For more information regarding IAR-DST v2 see the `official IAR-DST v2
+   specification documentation <https://docs.iar-dst.online/en/v2/>`_.
+
+.. note::
+   **Technical implementation guidance**
+
+   The version data element now contains both the version (``1`` or ``2``) and,
+   in the case of version 2, a sub-version indicating the age-group specific form
+   of the IAR-DST used. i.e. ``child``, ``adolescent``, ``adult``, and ``older``.
+   For example a rating generated using the child form must have the version
+   set to ``2.child``.
+
+   This approach has been taken for backwards compatibility with v1 to minimise
+   the changes required by data providers to extract and supply v2 data to the
+   PMHC-MDS for reporting.
+   
+   Carefully consider how these two related but separate data items are stored
+   within local systems. Analysis and reporting of future IAR-DST data may be
+   simplified if they are recorded separately in local systems and only combined
+   for use during data supply.
+   
 .. csv-table:: IAR-DST record layout
    :file: record/iar-dst-measure.csv
    :header-rows: 1

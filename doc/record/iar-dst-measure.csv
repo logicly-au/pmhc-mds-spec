@@ -10,63 +10,67 @@
 ","string (2,50)",yes,"This is a number or code assigned to each intake. The Intake Key is unique and stable for each intake at the level of the organisation."
 "`IAR-DST - Version`_ (iar_dst_version)
 
-",string,yes,":1: DST specified by National PHN Guidance Initial Assessment and Referral for Mental Healthcare version 1.05"
-"`IAR-DST - Domain 1 - Symptom Severity and Distress (Primary Domain)`_ (iar_dst_domain_1)
+",string,yes,":1: `IAR-DST version 1.05 <https://docs.iar-dst.online/en/v1/>`_
+:2.child: `IAR-DST Children (5-11 years) version 2.00 <https://docs.iar-dst.online/en/v2/child/index.html>`_
+:2.adolescent: `IAR-DST Adolescent (12-17 years) version 2.00 <https://docs.iar-dst.online/en/v2/adolescent/index.html>`_
+:2.adult: `IAR-DST Adult (18-64 years) version 2.00 <https://docs.iar-dst.online/en/v2/adult/index.html>`_
+:2.older: `IAR-DST Older (65 years and over) version 2.00 <https://docs.iar-dst.online/en/v2/older-adult/index.html>`_"
+"`IAR-DST - Domain 1`_ (iar_dst_domain_1)
 
-",string,yes,":0: No problem in this domain
-:1: Mild or sub diagnostic
-:2: Moderate
-:3: Severe
-:4: Very severe"
-"`IAR-DST - Domain 2 - Risk of Harm (Primary Domain)`_ (iar_dst_domain_2)
+",string,yes,":0: *Refer to the relevant IAR-DST specification* linked above
+:1: *Refer to the relevant IAR-DST specification* linked above
+:2: *Refer to the relevant IAR-DST specification* linked above
+:3: *Refer to the relevant IAR-DST specification* linked above
+:4: *Refer to the relevant IAR-DST specification* linked above"
+"`IAR-DST - Domain 2`_ (iar_dst_domain_2)
 
-",string,yes,":0: No identified risk in this domain
-:1: Low risk of harm
-:2: Moderate risk of harm
-:3: High risk of harm
-:4: Very high risk of harm"
-"`IAR-DST - Domain 3 - Functioning (Primary Domain)`_ (iar_dst_domain_3)
+",string,yes,":0: *Refer to the relevant IAR-DST specification* linked above
+:1: *Refer to the relevant IAR-DST specification* linked above
+:2: *Refer to the relevant IAR-DST specification* linked above
+:3: *Refer to the relevant IAR-DST specification* linked above
+:4: *Refer to the relevant IAR-DST specification* linked above"
+"`IAR-DST - Domain 3`_ (iar_dst_domain_3)
 
-",string,yes,":0: No problems in this domain
-:1: Mild impact
-:2: Moderate impact
-:3: Severe impact
-:4: Very severe to extreme impact"
-"`IAR-DST - Domain 4 - Impact of Co-existing Conditions (Primary Domain)`_ (iar_dst_domain_4)
+",string,yes,":0: *Refer to the relevant IAR-DST specification* linked above
+:1: *Refer to the relevant IAR-DST specification* linked above
+:2: *Refer to the relevant IAR-DST specification* linked above
+:3: *Refer to the relevant IAR-DST specification* linked above
+:4: *Refer to the relevant IAR-DST specification* linked above"
+"`IAR-DST - Domain 4`_ (iar_dst_domain_4)
 
-",string,yes,":0: No problem in this domain
-:1: Minor impact
-:2: Moderate impact
-:3: Severe impact
-:4: Very severe impact"
-"`IAR-DST - Domain 5 - Treatment and Recovery History (Contextual Domain)`_ (iar_dst_domain_5)
+",string,yes,":0: *Refer to the relevant IAR-DST specification* linked above
+:1: *Refer to the relevant IAR-DST specification* linked above
+:2: *Refer to the relevant IAR-DST specification* linked above
+:3: *Refer to the relevant IAR-DST specification* linked above
+:4: *Refer to the relevant IAR-DST specification* linked above"
+"`IAR-DST - Domain 5`_ (iar_dst_domain_5)
 
-",string,yes,":0: No prior treatment history
-:1: Full recovery with previous treatment
-:2: Moderate recovery with previous treatment
-:3: Minor recovery with previous treatment
-:4: Negligible recovery with previous treatment"
-"`IAR-DST - Domain 6 - Social and Environmental Stressors (Contextual Domain)`_ (iar_dst_domain_6)
+",string,yes,":0: *Refer to the relevant IAR-DST specification* linked above
+:1: *Refer to the relevant IAR-DST specification* linked above
+:2: *Refer to the relevant IAR-DST specification* linked above
+:3: *Refer to the relevant IAR-DST specification* linked above
+:4: *Refer to the relevant IAR-DST specification* linked above"
+"`IAR-DST - Domain 6`_ (iar_dst_domain_6)
 
-",string,yes,":0: No problem in this domain
-:1: Mildly stressful environment
-:2: Moderately stressful environment
-:3: Highly stressful environment
-:4: Extremely stressful environment"
-"`IAR-DST - Domain 7 - Family and Other Supports (Contextual Domain)`_ (iar_dst_domain_7)
+",string,yes,":0: *Refer to the relevant IAR-DST specification* linked above
+:1: *Refer to the relevant IAR-DST specification* linked above
+:2: *Refer to the relevant IAR-DST specification* linked above
+:3: *Refer to the relevant IAR-DST specification* linked above
+:4: *Refer to the relevant IAR-DST specification* linked above"
+"`IAR-DST - Domain 7`_ (iar_dst_domain_7)
 
-",string,yes,":0: Highly supported
-:1: Well supported
-:2: Limited supports
-:3: Minimal supports
-:4: No supports"
-"`IAR-DST - Domain 8 - Engagement and Motivation (Contextual Domain)`_ (iar_dst_domain_8)
+",string,yes,":0: *Refer to the relevant IAR-DST specification* linked above
+:1: *Refer to the relevant IAR-DST specification* linked above
+:2: *Refer to the relevant IAR-DST specification* linked above
+:3: *Refer to the relevant IAR-DST specification* linked above
+:4: *Refer to the relevant IAR-DST specification* linked above"
+"`IAR-DST - Domain 8`_ (iar_dst_domain_8)
 
-",string,yes,":0: Optimal
-:1: Positive
-:2: Limited
-:3: Minimal
-:4: Disengaged"
+",string,yes,":0: *Refer to the relevant IAR-DST specification* linked above
+:1: *Refer to the relevant IAR-DST specification* linked above
+:2: *Refer to the relevant IAR-DST specification* linked above
+:3: *Refer to the relevant IAR-DST specification* linked above
+:4: *Refer to the relevant IAR-DST specification* linked above"
 "`IAR-DST - Recommended Level of Care`_ (iar_dst_recommended_level_of_care)
 
 ",string,yes,":1: Level 1 - Self Management

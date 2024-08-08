@@ -246,28 +246,7 @@
     "url": "table/measure/iar-dst/iar-dst-version.csv",
     "tableSchema": "table/measure/iar-dst/iar-dst-version.json"
   }, {
-    "url": "table/measure/iar-dst/domain-1.csv",
-    "tableSchema": "table/measure/iar-dst/iar-dst.json"
-  }, {
-    "url": "table/measure/iar-dst/domain-2.csv",
-    "tableSchema": "table/measure/iar-dst/iar-dst.json"
-  }, {
-    "url": "table/measure/iar-dst/domain-3.csv",
-    "tableSchema": "table/measure/iar-dst/iar-dst.json"
-  }, {
-    "url": "table/measure/iar-dst/domain-4.csv",
-    "tableSchema": "table/measure/iar-dst/iar-dst.json"
-  }, {
-    "url": "table/measure/iar-dst/domain-5.csv",
-    "tableSchema": "table/measure/iar-dst/iar-dst.json"
-  }, {
-    "url": "table/measure/iar-dst/domain-6.csv",
-    "tableSchema": "table/measure/iar-dst/iar-dst.json"
-  }, {
-    "url": "table/measure/iar-dst/domain-7.csv",
-    "tableSchema": "table/measure/iar-dst/iar-dst.json"
-  }, {
-    "url": "table/measure/iar-dst/domain-8.csv",
+    "url": "table/measure/iar-dst/iar-dst-domain.csv",
     "tableSchema": "table/measure/iar-dst/iar-dst.json"
   }, {
     "url": "table/measure/iar-dst/recommended-level-of-care.csv",
