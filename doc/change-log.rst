@@ -14,6 +14,12 @@ Data Specification Change log
 
       * 2.older to 2.older-adult to be consistent with the IAR-DST usage
 
+* :ref:`reporting_arrangements`
+
+  * :ref:`reporting_inputs`
+
+    * :ref:`standard-deviations` - Added Outcome Measure Standard Deviations for 2024
+
 14/6/2024 - 4.0.3
 -----------------
 
