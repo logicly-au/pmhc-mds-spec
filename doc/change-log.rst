@@ -3,6 +3,16 @@
 Data Specification Change log
 =============================
 
+22/8/2024
+---------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`data-model`
+
+    * Updated :ref:`data-model-diagram` to fix the direction of the relationship
+      between Intake Episode and Intake
+
 8/8/2024 - 4.0.4
 ----------------
 
