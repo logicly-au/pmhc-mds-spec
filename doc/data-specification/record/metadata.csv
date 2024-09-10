@@ -1,0 +1,7 @@
+"Data Element (Field Name)","Type (min,max)",Required,"Format / Values"
+"`Key`_ (key)
+
+",string,yes,"A metadata key name."
+"`Value`_ (value)
+
+",string,yes,"The metadata value."

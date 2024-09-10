@@ -1,0 +1,52 @@
+"Data Element (Field Name)","Type (min,max)",Required,"Format / Values"
+"`Organisation Path`_ (organisation_path)
+
+",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client."
+"`Organisation Key`_ (organisation_key)
+
+","string [2,50]",yes,"A sequence of characters which uniquely identifies the provider organisation to the Primary Health Network. Assigned by the Primary Health Network."
+"`Name`_ (organisation_name)
+
+","string [2,100]",yes,"The name of the provider organisation."
+"`Legal Name`_ (organisation_legal_name)
+
+",string,"—","The legal name of the provider organisation."
+"`ABN`_ (organisation_abn)
+
+","string [11]",yes,"The Australian Business Number of the provider organisation."
+"`Organisation Type`_ (organisation_type)
+
+",string,yes,":1: Private Allied Health Professional Practice
+:2: Private Psychiatry Practice
+:3: General Medical Practice
+:4: Private Hospital
+:5: Headspace Centre
+:6: Early Youth Psychosis Centre
+:7: Community-managed Community Support Organisation
+:8: Aboriginal Health/Medical Service
+:9: State/Territory Health Service Organisation
+:10: Drug and/or Alcohol Service
+:11: Primary Health Network
+:12: Medicare Local
+:13: Division of General Practice
+:98: Other
+:99: Missing"
+"`State`_ (organisation_state)
+
+
+
+`METeOR ID 613718 <http://meteor.aihw.gov.au/content/index.phtml/itemId/613718>`__",string,yes,":1: New South Wales
+:2: Victoria
+:3: Queensland
+:4: South Australia
+:5: Western Australia
+:6: Tasmania
+:7: Northern Territory
+:8: Australian Capital Territory
+:9: Other Territories"
+"`Organisation Start Date`_ (organisation_start_date)
+
+","date [dMMyyyy]",yes,"The date on which a provider organisation started delivering services."
+"`Organisation End Date`_ (organisation_end_date)
+
+","date [dMMyyyy]",yes,"The date on which a provider organisation stopped delivering services."
