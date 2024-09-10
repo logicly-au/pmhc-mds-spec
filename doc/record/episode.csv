@@ -12,7 +12,7 @@
 
 
 
-METeOR: `730859 <http://meteor.aihw.gov.au/content/index.phtml/itemId/730859>`__",date,"—","The date on which an *Episode of Care* is formally or administratively ended"
+METEOR: `730859 <https://meteor.aihw.gov.au/content/730859>`__",date,"—","The date on which an *Episode of Care* is formally or administratively ended"
 "`Client Consent to Anonymised Data`_ (client_consent)
 
 ",string,yes,":1: Yes
@@ -62,12 +62,12 @@ METeOR: `730859 <http://meteor.aihw.gov.au/content/index.phtml/itemId/730859>`__
 
 
 
-METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__",string,yes,"The Australian postcode of the client."
+METEOR: `429894 <https://meteor.aihw.gov.au/content/429894>`__",string,yes,"The Australian postcode of the client."
 "`Labour Force Status`_ (labour_force_status)
 
 
 
-METeOR: `621450 <http://meteor.aihw.gov.au/content/index.phtml/itemId/621450>`__",string,yes,":1: Employed
+METEOR: `621450 <https://meteor.aihw.gov.au/content/621450>`__",string,yes,":1: Employed
 :2: Unemployed
 :3: Not in the Labour Force
 :9: Not stated/inadequately described"
@@ -75,7 +75,7 @@ METeOR: `621450 <http://meteor.aihw.gov.au/content/index.phtml/itemId/621450>`__
 
 
 
-METeOR: `269950 <http://meteor.aihw.gov.au/content/index.phtml/itemId/269950>`__",string,yes,":1: Full-time
+METEOR: `269950 <https://meteor.aihw.gov.au/content/269950>`__",string,yes,":1: Full-time
 :2: Part-time
 :3: Not applicable - not in the labour force
 :9: Not stated/inadequately described"
@@ -83,7 +83,7 @@ METeOR: `269950 <http://meteor.aihw.gov.au/content/index.phtml/itemId/269950>`__
 
 
 
-METeOR: `386449 <http://meteor.aihw.gov.au/content/index.phtml/itemId/386449>`__",string,yes,":0: N/A - Client aged less than 16 years
+METEOR: `386449 <https://meteor.aihw.gov.au/content/386449>`__",string,yes,":0: N/A - Client aged less than 16 years
 :1: Disability Support Pension
 :2: Other pension or benefit (not superannuation)
 :3: Paid employment
@@ -96,7 +96,7 @@ METeOR: `386449 <http://meteor.aihw.gov.au/content/index.phtml/itemId/386449>`__
 
 
 
-METeOR: `605149 <http://meteor.aihw.gov.au/content/index.phtml/itemId/605149>`__",string,yes,":1: Yes
+METEOR: `605149 <https://meteor.aihw.gov.au/content/605149>`__",string,yes,":1: Yes
 :2: No
 :3: Not Known
 :9: Not stated"
@@ -109,7 +109,7 @@ METeOR: `605149 <http://meteor.aihw.gov.au/content/index.phtml/itemId/605149>`__
 
 
 
-METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__",string,yes,":1: Never married
+METEOR: `291045 <https://meteor.aihw.gov.au/content/291045>`__",string,yes,":1: Never married
 :2: Widowed
 :3: Divorced
 :4: Separated

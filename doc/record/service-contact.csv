@@ -12,7 +12,7 @@
 
 
 
-METeOR: `494356 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494356>`__",date,yes,"The date of each mental health service contact between a health service provider and patient/client."
+METEOR: `494356 <https://meteor.aihw.gov.au/content/494356>`__",date,yes,"The date of each mental health service contact between a health service provider and patient/client."
 "`Service Contact Type`_ (service_contact_type)
 
 ",string,yes,":0: No contact took place
@@ -30,7 +30,7 @@ METeOR: `494356 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494356>`__
 
 
 
-METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__",string,yes,"The Australian postcode where the service contact took place."
+METEOR: `429894 <https://meteor.aihw.gov.au/content/429894>`__",string,yes,"The Australian postcode where the service contact took place."
 "`Modality`_ (service_contact_modality)
 
 ",string,yes,":0: No contact took place
@@ -81,7 +81,7 @@ METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
 
 
 
-METeOR: `494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__",string,yes,":1: Yes
+METEOR: `494341 <https://meteor.aihw.gov.au/content/494341>`__",string,yes,":1: Yes
 :2: No"
 "`Interpreter Used`_ (service_contact_interpreter)
 
@@ -123,6 +123,9 @@ METeOR: `494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__
 :73: Other Government Funding - Commonwealth: Other Commonwealth
 :97: Other funding source – no Commonwealth Funding
 :98: Unknown/Not stated"
+"`Service Contact Site`_ (service_contact_site)
+
+","string (2,50)","—","The site at which an Organisation provides services to clients."
 "`Service Contact Tags`_ (service_contact_tags)
 
 ",string,"—","List of tags for the service contact."

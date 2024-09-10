@@ -9,12 +9,12 @@
 
 
 
-METeOR: `349510 <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`__","string (14,40)",yes,"A key that enables two or more records belonging to the same individual to be brought together."
+METEOR: `349510 <https://meteor.aihw.gov.au/content/349510>`__","string (14,40)",yes,"A key that enables two or more records belonging to the same individual to be brought together."
 "`Date of Birth`_ (date_of_birth)
 
 
 
-METeOR: `287007 <http://meteor.aihw.gov.au/content/index.phtml/itemId/287007>`__",date,yes,"The date on which an individual was born."
+METEOR: `287007 <https://meteor.aihw.gov.au/content/287007>`__",date,yes,"The date on which an individual was born."
 "`Estimated Date of Birth Flag`_ (est_date_of_birth)
 
 ",string,yes,":1: Date of birth is accurate
@@ -33,7 +33,7 @@ METeOR: `287007 <http://meteor.aihw.gov.au/content/index.phtml/itemId/287007>`__
 
 
 
-METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__",string,yes,":1: Aboriginal but not Torres Strait Islander origin
+METEOR: `291036 <https://meteor.aihw.gov.au/content/291036>`__",string,yes,":1: Aboriginal but not Torres Strait Islander origin
 :2: Torres Strait Islander but not Aboriginal origin
 :3: Both Aboriginal and Torres Strait Islander origin
 :4: Neither Aboriginal or Torres Strait Islander origin
@@ -42,7 +42,7 @@ METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__
 
 
 
-METeOR: `459973 <http://meteor.aihw.gov.au/content/index.phtml/itemId/459973>`__
+METEOR: `459973 <https://meteor.aihw.gov.au/content/459973>`__
 
 `ABS <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1269.0>`__","string (4)",yes,":1101: Australia
 :1102: Norfolk Island
@@ -304,7 +304,7 @@ METeOR: `459973 <http://meteor.aihw.gov.au/content/index.phtml/itemId/459973>`__
 
 
 
-METeOR: `460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__
+METEOR: `460125 <https://meteor.aihw.gov.au/content/460125>`__
 
 `ABS <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1267.0>`__","string (4)",yes,":1101: Gaelic (Scotland)
 :1102: Irish
@@ -746,7 +746,7 @@ METeOR: `460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__
 
 
 
-METeOR: `270203 <http://meteor.aihw.gov.au/content/index.phtml/itemId/270203>`__",string,yes,":0: Not applicable (persons under 5 years of age or who speak only English)
+METEOR: `270203 <https://meteor.aihw.gov.au/content/270203>`__",string,yes,":0: Not applicable (persons under 5 years of age or who speak only English)
 :1: Very well
 :2: Well
 :3: Not well

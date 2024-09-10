@@ -8,10 +8,10 @@ export SPEC_VERSION
 
 source config.sh
 
-docker pull docker.sdlocal.net/csvw/metadata2rst:release
+docker pull docker.sdlocal.net/csvw/metadata2rst:multiplatform
 docker pull stratdat/sphinx-html2pdf:production
 
-docker run --rm -v "$(pwd):/mnt/cwd" docker.sdlocal.net/csvw/metadata2rst:release \
+docker run --rm -v "$(pwd):/mnt/cwd" docker.sdlocal.net/csvw/metadata2rst:multiplatform \
   --meta="${METADATA_FILE}"
 
 # make example zip and xlsx Files

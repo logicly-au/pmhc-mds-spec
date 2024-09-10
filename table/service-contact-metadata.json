@@ -204,6 +204,19 @@
     },
     "required": true
   },{
+    "name": "service_contact_site",
+    "titles": [ "service_contact_site" ],
+    "dc:title": "Service Contact Site",
+    "schema:description": "The site at which an Organisation provides services to clients.",
+    "schema:disambiguatingDescription": "table/service-contact/site.rst",
+    "schema:dateCreated": "2024-09-06",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "required": false
+  },{
     "name": "service_contact_tags",
     "titles": [ "service_contact_tags" ],
     "dc:title" : "Service Contact Tags",

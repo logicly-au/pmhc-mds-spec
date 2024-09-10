@@ -35,7 +35,7 @@
 
 
 
-METeOR: `613718 <http://meteor.aihw.gov.au/content/index.phtml/itemId/613718>`__",string,yes,":1: New South Wales
+METEOR: `613718 <https://meteor.aihw.gov.au/content/613718>`__",string,yes,":1: New South Wales
 :2: Victoria
 :3: Queensland
 :4: South Australia
@@ -50,6 +50,12 @@ METeOR: `613718 <http://meteor.aihw.gov.au/content/index.phtml/itemId/613718>`__
 "`Organisation End Date`_ (organisation_end_date)
 
 ",date,yes,"The date on which a provider organisation stopped delivering services."
+"`Sites`_ (sites)
+
+",string,"—","
+
+Multiple comma separated values allowed
+"
 "`Organisation Tags`_ (organisation_tags)
 
 ",string,"—","List of tags for the provider organisation."

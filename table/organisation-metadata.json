@@ -111,6 +111,19 @@
     },
     "required": true
   },{
+    "name": "sites",
+    "titles": [ "sites" ],
+    "dc:title" : "Sites",
+    "schema:description": "The sites at which an Organisation provides services to clients.",
+    "schema:disambiguatingDescription": "table/organisation/sites.rst",
+    "schema:dateCreated": "2024-09-06",
+    "schema:dateModified": "2024-09-06",
+    "separator": ",",
+    "datatype": {
+      "base": "string"
+    },
+    "required": false
+  },{
     "name": "organisation_tags",
     "titles": [ "organisation_tags" ],
     "dc:title" : "Organisation Tags",

@@ -29,10 +29,10 @@ of the different contexts that may be submitted.
 
 .. _data-model-diagram:
 
-.. figure:: figures/data-model-v4.0-combined.svg
-   :alt: PMHC MDS Version 4.0 combined data model
+.. figure:: figures/data-model-v4.1-combined.svg
+   :alt: PMHC MDS Version 4.1 combined data model
 
-   PMHC MDS Version 4.0 combined data model
+   PMHC MDS Version 4.1 combined data model
 
 .. note::
   * The above data model diagram is in the SVG format and can be enlarged 
@@ -73,6 +73,14 @@ The Provider Organisation is the business entity that the PHN has commissioned
 to provide the service.
 
 See :ref:`provider-organisation-data-elements` for the data elements for a provider organisation.
+
+.. _key-concepts-site:
+
+Site
+^^^^
+
+Some Provider Organisations provide services to clients at multiple locations. In the PMHC MDS a site
+is a particular location at which a Provider Organisation provides a service to a client.
 
 .. _key-concepts-practitioner:
 

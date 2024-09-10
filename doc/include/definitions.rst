@@ -54,7 +54,7 @@ Whether a person identifies as being of Aboriginal and/or Torres Strait Islander
       knows the client was not available.
   
 
-:METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__
+:METEOR: `291036 <https://meteor.aihw.gov.au/content/291036>`__
 
 ----------
 
@@ -204,7 +204,7 @@ The Australian postcode of the client.
   Postcodes are deemed valid if they are in the range 0200-0299, 0800-9999.
   
 
-:METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
+:METEOR: `429894 <https://meteor.aihw.gov.au/content/429894>`__
 
 ----------
 
@@ -402,7 +402,7 @@ An indicator of whether the client participated, or intended to participate, in 
   as '1: Yes' and :ref:`dfn-service_contact_no_show` should be recorded as '1: Yes'.
   
 
-:METeOR: `494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__
+:METEOR: `494341 <https://meteor.aihw.gov.au/content/494341>`__
 
 ----------
 
@@ -867,7 +867,7 @@ The country in which the client was born, as represented by a code.
   refer to :ref:`form_country_of_birth` for help on designing forms.
   
 
-:METeOR: `459973 <http://meteor.aihw.gov.au/content/index.phtml/itemId/459973>`__
+:METEOR: `459973 <https://meteor.aihw.gov.au/content/459973>`__
 
 :ABS: `http://www.abs.gov.au/ausstats/abs@.nsf/mf/1269.0 <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1269.0>`__
 
@@ -932,7 +932,7 @@ The date on which an individual was born.
       'Estimated date of birth flag'
   
 
-:METeOR: `287007 <http://meteor.aihw.gov.au/content/index.phtml/itemId/287007>`__
+:METEOR: `287007 <https://meteor.aihw.gov.au/content/287007>`__
 
 ----------
 
@@ -1041,7 +1041,7 @@ Whether a person in paid employment is employed full-time or part-time, as repre
     item has not been collected.
   
 
-:METeOR: `269950 <http://meteor.aihw.gov.au/content/index.phtml/itemId/269950>`__
+:METEOR: `269950 <https://meteor.aihw.gov.au/content/269950>`__
 
 ----------
 
@@ -1168,7 +1168,7 @@ The date on which an *Episode of Care* is formally or administratively ended
     date on which the organisation made the decision to close episode.
   
 
-:METeOR: `730859 <http://meteor.aihw.gov.au/content/index.phtml/itemId/730859>`__
+:METEOR: `730859 <https://meteor.aihw.gov.au/content/730859>`__
 
 ----------
 
@@ -1420,7 +1420,7 @@ An indication of whether the person is a current holder of a Health Care Card th
   https://www.humanservices.gov.au/customer/services/centrelink/health-care-card
   
 
-:METeOR: `605149 <http://meteor.aihw.gov.au/content/index.phtml/itemId/605149>`__
+:METEOR: `605149 <https://meteor.aihw.gov.au/content/605149>`__
 
 ----------
 
@@ -2641,7 +2641,7 @@ The self-reported status the person currently has in being either in the labour 
     Includes children under 15 (0-14 years)
   
 
-:METeOR: `621450 <http://meteor.aihw.gov.au/content/index.phtml/itemId/621450>`__
+:METEOR: `621450 <https://meteor.aihw.gov.au/content/621450>`__
 
 ----------
 
@@ -3125,7 +3125,7 @@ The language reported by a client as the main language other than English spoken
   refer to :ref:`form_main_lang_at_home` for help on designing forms.
   
 
-:METeOR: `460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__
+:METEOR: `460125 <https://meteor.aihw.gov.au/content/460125>`__
 
 :ABS: `http://www.abs.gov.au/ausstats/abs@.nsf/mf/1267.0 <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1267.0>`__
 
@@ -3174,7 +3174,7 @@ A person's current relationship status in terms of a couple relationship or, for
     where the item has not been collected.
   
 
-:METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
+:METEOR: `291045 <https://meteor.aihw.gov.au/content/291045>`__
 
 ----------
 
@@ -3899,7 +3899,7 @@ The Australian postcode where the service contact took place.
     range 0200-0299 or 0800-9999.
   
 
-:METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
+:METEOR: `429894 <https://meteor.aihw.gov.au/content/429894>`__
 
 ----------
 
@@ -3935,7 +3935,7 @@ Whether a person identifies as being of Aboriginal and/or Torres Strait Islander
       knows the client was not available.
   
 
-:METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__
+:METEOR: `291036 <https://meteor.aihw.gov.au/content/291036>`__
 
 ----------
 
@@ -4421,7 +4421,7 @@ The self-assessed level of ability to speak English, asked of people whose first
     transferring data from data sets where the item has not been collected.
   
 
-:METeOR: `270203 <http://meteor.aihw.gov.au/content/index.phtml/itemId/270203>`__
+:METEOR: `270203 <https://meteor.aihw.gov.au/content/270203>`__
 
 ----------
 
@@ -6244,7 +6244,7 @@ The date of each mental health service contact between a health service provider
   - The service contact date must not be in the future.
   
 
-:METeOR: `494356 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494356>`__
+:METEOR: `494356 <https://meteor.aihw.gov.au/content/494356>`__
 
 ----------
 
@@ -6309,6 +6309,29 @@ This is a number or code assigned to each service contact practitioner. The Serv
   A recommended approach for the creation of keys is to compute `random
   UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
   
+
+----------
+
+.. _dfn-service_contact_site:
+
+Service Contact Site
+^^^^^^^^^^^^^^^^^^^^
+
+The site at which an Organisation provides services to clients.
+
+:Field name: service_contact_site
+
+:Data type: string (2,50)
+
+:Required: no
+
+:Notes:
+  Site names are case sensitive and must have between 2-50 valid unicode characters excluding commas (',').
+  Keys must start with A-Za-z0-9 (POSIX :alnum:).
+  
+  Leave blank if the organisation only has one site.
+  
+  The site name must match a site name that is defined in :ref:`dfn-sites` for the Provider Organisation providing the Service Contact.
 
 ----------
 
@@ -6524,6 +6547,37 @@ The main type of service provided in the service contact, as represented by the 
 
 ----------
 
+.. _dfn-sites:
+
+Sites
+^^^^^
+
+The sites at which an Organisation provides services to clients.
+
+:Field name: sites
+
+:Data type: string
+
+:Required: no
+
+:Domain:
+  
+  
+  Multiple comma separated values allowed
+  
+
+:Notes:
+  Site names are case sensitive and must have between 2-50 valid unicode characters excluding commas (',').
+  Names must start with A-Za-z0-9 (POSIX :alnum:).
+  
+  Leave blank if the organisation only has one site.
+  
+  Multiple site fields can be defined by comma separating each site name. For example:
+  
+  "Orange County, Deep Creek, Northern Side of the River"
+
+----------
+
 .. _dfn-income_source:
 
 Source of Cash Income
@@ -6566,7 +6620,7 @@ The source from which a person derives the greatest proportion of his/her income
   (i.e. they have been asked but do not know).
   
 
-:METeOR: `386449 <http://meteor.aihw.gov.au/content/index.phtml/itemId/386449>`__
+:METEOR: `386449 <https://meteor.aihw.gov.au/content/386449>`__
 
 ----------
 
@@ -6629,7 +6683,7 @@ The state that the provider organisation operates in.
   - Code is from Meteor with the addition of code for Other Territories.
   
 
-:METeOR: `613718 <http://meteor.aihw.gov.au/content/index.phtml/itemId/613718>`__
+:METEOR: `613718 <https://meteor.aihw.gov.au/content/613718>`__
 
 ----------
 
@@ -6661,7 +6715,7 @@ A key that enables two or more records belonging to the same individual to be br
   SLK values are stored in sha1_hex format.
   
 
-:METeOR: `349510 <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`__
+:METEOR: `349510 <https://meteor.aihw.gov.au/content/349510>`__
 
 ----------
 

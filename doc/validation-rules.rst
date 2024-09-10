@@ -237,6 +237,10 @@ Service Contact
       :ref:`dfn-funding_source` must be recorded as '73: Other Government Funding - Commonwealth: Other Commonwealth'
   19. Where :ref:`dfn-funding_source` is recorded as '73: Other Government Funding - Commonwealth: Other Commonwealth',
       :ref:`dfn-program_type` must be '7: Supporting Recovery'
+  20. The :ref:`dfn-service_contact_site`
+  
+      * must have between 2-50 valid unicode characters excluding commas (',')
+      * must match a site name that is defined in :ref:`dfn-sites` for the Provider Organisation providing the Service Contact
 
 
 .. _service-contact-practitioner-current-validations:
@@ -334,8 +338,15 @@ Organisation
      * and must not be before the latest :ref:`dfn-collection_occasion_date`
      * can be in the future
 
-   4. The :ref:`dfn-organisation_abn` must adhere to the format defined by the Australian Business 
-      Register at https://abr.business.gov.au/Help/AbnFormat
+  4. The :ref:`dfn-organisation_abn` must adhere to the format defined by the Australian Business 
+     Register at https://abr.business.gov.au/Help/AbnFormat
+
+  5. The :ref:`dfn-sites` fields
+
+     * is case sensitive
+     * must be blank or contain one or more comma separated site names
+     * must be enclosed in double quotes (")
+     * each site name must be valid as per :ref:`service-contact-current-validations`
 
  .. _future-validations:
 
