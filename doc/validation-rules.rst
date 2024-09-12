@@ -345,9 +345,10 @@ Organisation
 
      * is case sensitive
      * must be blank or contain one or more comma separated site names
-     * must be enclosed in double quotes (")
+     * must be enclosed in double quotes (") if there is more than one site listed
      * each site name must be valid as per :ref:`service-contact-current-validations`
      * a site cannot be deleted if it is used on at least one service contact
+
 
  .. _future-validations:
 
