@@ -17,7 +17,7 @@ Steps required to upgrade to Version 4.1 uploads
 ------------------------------------------------
 
 1. Upgrade your Client Management System to export files in the new Version 4.1 format
-   which adds a 'sites' column to the Provider Organisation worksheet and a 'service_contact-site'
+   which adds a 'sites' column to the Provider Organisation worksheet and a 'service_contact_site'
    column to the Service Contact worksheet.
 
 Changes from Version 2
