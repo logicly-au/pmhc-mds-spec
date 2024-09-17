@@ -29,7 +29,7 @@ Version |version|
    :maxdepth: 3
 
    introduction
-   changes-from-v2
+   upgrading-from-previous-versions
    reporting-arrangements
    identifier-management
    data-model-and-specifications
