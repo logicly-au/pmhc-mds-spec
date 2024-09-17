@@ -239,8 +239,8 @@ Service Contact
       :ref:`dfn-program_type` must be '7: Supporting Recovery'
   20. The :ref:`dfn-service_contact_site`
   
-      * must have between 2-50 valid unicode characters excluding commas (',')
-      * must match a site name that is defined in :ref:`dfn-sites` for the Provider Organisation providing the Service Contact
+      * When a Service Contact Site is provided, it must have between 2-50 valid unicode characters excluding commas (',')
+      * When a Service Contact Site is provided, it must match a site name that is defined in :ref:`dfn-sites` for the Provider Organisation providing the Service Contact
 
 
 .. _service-contact-practitioner-current-validations:
