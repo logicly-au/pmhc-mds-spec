@@ -57,7 +57,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'PMHC MDS Data Specification'
+project = u'Draft PMHC MDS Data Specification'
 copyright = u'2021, Australian Government - Department of Health'
 author = u'PMHC MDS Working Group'
 
