@@ -24,5 +24,12 @@
     carer or family member, and/or other professional or mental health worker,
     or other service provider.
 
+5 - SMS
+    Service contacts via SMS messaging can only be recorded as a service contact
+    if it is evident there is an exchange of messages, between the sender and 
+    receiver, relevant to the clinical condition of the client. SMS messaging 
+    will be counted as one service contact where the nature of the service would 
+    normally warrant a dated entry in the clinical record of the client.
+
 Note: If Service Contact Modality is not 'Face to Face' the postcode must
 be entered as unknown 9999.
