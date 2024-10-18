@@ -11,6 +11,7 @@ Data Specification Change log
   * :ref:`record-formats`
 
     * :ref:`dfn-service_contact_modality` - Added response '5: SMS'
+    * :ref:`dfn-client_gender` - Link to the ABS gender standard was linking to the lastest specification. This data item is based on a previous standard. Updated link to point to the ABS standard that this specification is based on.
 
 
 22/8/2024
