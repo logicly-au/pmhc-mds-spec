@@ -37,7 +37,8 @@ METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
 :1: Face to Face
 :2: Telephone
 :3: Video
-:4: Internet-based"
+:4: Internet-based
+:5: SMS"
 "`Participants`_ (service_contact_participants)
 
 ",string,yes,":1: Individual client

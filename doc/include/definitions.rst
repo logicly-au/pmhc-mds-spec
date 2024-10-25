@@ -334,7 +334,7 @@ The term 'gender' refers to the way in which a person identifies their masculine
     descriptors other than man/boy or woman/girl.
   
 
-:ABS: `http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view= <http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=>`__
+:ABS: `https://www.abs.gov.au/statistics/standards/standard-sex-gender-variations-sex-characteristics-and-sexual-orientation-variables/2016 <https://www.abs.gov.au/statistics/standards/standard-sex-gender-variations-sex-characteristics-and-sexual-orientation-variables/2016>`__
 
 ----------
 
@@ -3371,6 +3371,7 @@ How the service contact was delivered, as represented by a code.
   :2: Telephone
   :3: Video
   :4: Internet-based
+  :5: SMS
 
 :Notes:
   0 - No contact took place
@@ -3398,6 +3399,13 @@ How the service contact was delivered, as represented by a code.
       clinical record of the client, involving a third party, such as a
       carer or family member, and/or other professional or mental health worker,
       or other service provider.
+  
+  5 - SMS
+      Service contacts via SMS messaging can only be recorded as a service contact
+      if it is evident there is an exchange of messages, between the sender and 
+      receiver, relevant to the clinical condition of the client. SMS messaging 
+      will be counted as one service contact where the nature of the service would 
+      normally warrant a dated entry in the clinical record of the client.
   
   Note: If Service Contact Modality is not 'Face to Face' the postcode must
   be entered as unknown 9999.
