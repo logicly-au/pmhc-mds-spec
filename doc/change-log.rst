@@ -3,6 +3,15 @@
 Data Specification Change log
 =============================
 
+17/10/2024
+----------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    * :ref:`dfn-service_contact_modality` - Added response '5: SMS'
+
 6/9/2024 - Draft 4.1.0
 ----------------------
 
