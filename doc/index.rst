@@ -1,11 +1,7 @@
-Draft PMHC-MDS Data Specification
-=================================
+PMHC-MDS Data Specification
+===========================
 
 Version |version|
-
-.. warning::
-   This is a draft version of the proposed PMHC MDS 4.1 specification. The PMHC MDS does not currently
-   support this specification. It is being published for information and feedback purposes only.
 
 .. This INTRODUCTION will only appear in the online HTML version
    (make.sh html) and not in PDFs or any other renderings
