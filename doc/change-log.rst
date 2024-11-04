@@ -44,6 +44,9 @@ Data Specification Change log
 14/6/2024 - 4.0.3
 -----------------
 
+.. note::
+  This was a draft specification that was published for feedback. Version 4.0.4 was implemented based on the feedback received.
+
 * :ref:`data-model-and-specifications`
 
   * :ref:`record-formats`
