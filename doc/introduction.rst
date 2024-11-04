@@ -44,8 +44,8 @@ Where an organisation is only providing intake services and not providing any
 treatment services, they can use the following data model to submit data to
 the PMHC MDS:
 
-.. figure:: figures/data-model-v4.0-intake.svg
-   :alt: PMHC MDS v4.0 Intake Only Data Model
+.. figure:: figures/data-model-v4.1-intake.svg
+   :alt: PMHC MDS v4.1 Intake Only Data Model
 
 In the Intake context the following records will need to be provided:
 
@@ -67,8 +67,8 @@ Where an organisation is only providing treatment services and not providing any
 intake services, they can use the following data model to submit data to
 the PMHC MDS:
 
-.. figure:: figures/data-model-v4.0-treatment.svg
-   :alt: PMHC MDS v4.0 Treatment Service Provider Data Model
+.. figure:: figures/data-model-v4.1-treatment.svg
+   :alt: PMHC MDS v4.1 Treatment Service Provider Data Model
 
 In the treatment context the specification works almost the same as a
 service reporting via the Version 2 core PMHC-MDS specification using the new
@@ -91,8 +91,8 @@ Where an organisation is providing both intake services and
 treatment services, they can use the full data model to submit data to
 the PMHC MDS:
 
-.. figure:: figures/data-model-v4.0-combined.svg
-   :alt: PMHC MDS v4.0 Combined Intake/Treatment Service Provider Data Model
+.. figure:: figures/data-model-v4.1-combined.svg
+   :alt: PMHC MDS v4.1 Combined Intake/Treatment Service Provider Data Model
 
 In the combined context all the records described in both the
 :ref:`introduction-intake-context` and :ref:`introduction-treatment-context`

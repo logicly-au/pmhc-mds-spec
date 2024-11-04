@@ -40,10 +40,10 @@ of the different contexts that may be submitted.
 
 .. _collection-occasion-diagram:
 
-.. figure:: figures/collection-occasion-data-model-v4.0.svg
-   :alt: PMHC MDS Version 4.0 Collection Occasion data model
+.. figure:: figures/collection-occasion-data-model-v4.1.svg
+   :alt: PMHC MDS Version 4.1 Collection Occasion data model
 
-   PMHC MDS Version 4.0 Collection Occasion data model
+   PMHC MDS Version 4.1 Collection Occasion data model
 
 .. note:: See :ref:`data-model-diagram` for more details about how
    Collection Occasion records fit into the overall structure.
