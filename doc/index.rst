@@ -3,6 +3,13 @@ PMHC-MDS Data Specification
 
 Version |version|
 
+.. warning::
+   
+   As of 1 November 2024, the PMHC MDS will accept uploads in both the newer (`version 4.1 <https://docs.pmhc-mds.com/projects/data-specification/en/v4.1/>`__)
+   format and this version 4.0 format. (`read more... <https://pmhc-mds.com/communications/#/2024/11/01/Update-to-the-PMHC-MDS-and-Data-Specifications-v-2-14-2/>`__)
+   This version 4.0 format has been marked for end-of-life on 1 May 2025.
+   After this date uploads will no longer be accepted in the version 4.0 format.
+
 .. This INTRODUCTION will only appear in the online HTML version
    (make.sh html) and not in PDFs or any other renderings
 
