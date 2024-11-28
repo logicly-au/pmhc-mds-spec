@@ -75,7 +75,7 @@
     "titles": [ "client_gender" ],
     "dc:title": "Client Gender",
     "schema:description": "The term 'gender' refers to the way in which a person identifies their masculine or feminine characteristics. A persons gender relates to their deeply held internal and individual sense of gender and is not always exclusively male or female. It may or may not correspond to their sex assigned at birth.",
-    "schema:absItem": "http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=",
+    "schema:absItem": "https://www.abs.gov.au/statistics/standards/standard-sex-gender-variations-sex-characteristics-and-sexual-orientation-variables/2016",
     "schema:disambiguatingDescription": "type/gender.rst",
     "schema:dateCreated": "2016-06-22",
     "datatype": {
