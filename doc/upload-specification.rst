@@ -133,7 +133,7 @@ Requirements for file formats:
   corresponding client in the client file/worksheet.
 - For data elements that allow multiple values, each value should be separated
   by a space; for example: `1 3 6`.
-- All version 4.0 data uploads must include a Metadata file/worksheet.
+- All version 4.1 data uploads must include a Metadata file/worksheet.
   See :ref:`metadata-format`.
 
 
@@ -142,10 +142,10 @@ Requirements for file formats:
 Metadata file
 ^^^^^^^^^^^^^
 
-All version 4.0 data uploads must include a Metadata file/worksheet.
+All version 1 data uploads must include a Metadata file/worksheet.
 - In the first row, the first cell must contain 'key' and the second cell must contain 'value'
 - In the second row, the first cell must contain 'type' and the second cell must contain 'PMHC'
-- In the third row, the first cell must contain 'version' and the second cell must contain '4.0'
+- In the third row, the first cell must contain 'version' and the second cell must contain '4.1'
 
 i.e.:
 

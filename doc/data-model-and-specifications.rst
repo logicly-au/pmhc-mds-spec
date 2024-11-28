@@ -586,12 +586,21 @@ and discharge and are rated on the basis of the previous 1 month period.
 
 The versions specified for PMHC MDS reporting are:
 
-- PC1 - SDQ Parent Report: 4-10 years (Baseline version);
-- PC2 - SDQ Parent Report: 4-10 years (Follow up version);
-- PY1 - SDQ Parent Report: 11-17 years (Baseline version);
-- PY2 - SDQ Parent Report: 11-17 years (Follow up version);
-- YR1 - SDQ Youth Report: 11-17 years (Baseline version); and
-- YR2 - SDQ Youth Report: 11-17 years (Follow up version).
++---------+-------------------+-----------+-------------+---------------+
+| Version | Informant         | Age Range | Application | Rating Period |
++=========+===================+===========+=============+===============+
+| PC1     | Parent Report     | 4-10      | Baseline    | 6 months      |
++---------+-------------------+-----------+-------------+---------------+
+| PC2     | Parent Report     | 4-10      | Followup    | 1 month       |
++---------+-------------------+-----------+-------------+---------------+
+| PY1     | Parent Report     | 11-17     | Baseline    | 6 months      |
++---------+-------------------+-----------+-------------+---------------+
+| PY2     | Parent Report     | 11-17     | Followup    | 1 month       |
++---------+-------------------+-----------+-------------+---------------+
+| YR1     | Youth Self Report | 11-17     | Baseline    | 6 months      |
++---------+-------------------+-----------+-------------+---------------+
+| YR2     | Youth Self Report | 11-17     | Followup    | 1 month       |
++---------+-------------------+-----------+-------------+---------------+
 
 *We acknowledge that there is also a parent-report for 2-4 years; and teacher versions for all the years (2-4; 4-10 and 11-17) but that these are not to be reported the PMHC-MDS.*
 
@@ -602,14 +611,6 @@ translated versions. The table below indicates the items that are included in
 each version, the rating periods used and the broad content covered by each
 item.
 
-+-------+-----------------------------+-------------------------------------------+---------------------+
-|       | Informant                   | Parent                                    | Young Person        |
-+       +-----------------------------+---------------------+----------+----------+---------------------+
-|       | Age range                   | 4-10                | 11-17               | 11 - 17             |
-+       +-----------------------------+----------+----------+----------+----------+----------+----------+
-|       | Application                 | Baseline | Followup | Baseline | Followup | Baseline | Followup |
-+       +-----------------------------+----------+----------+----------+----------+----------+----------+
-|       | Rating period               | 6 months | 1 month  | 6 months | 1 month  | 6 months | 1 month  |
 +-------+-----------------------------+----------+----------+----------+----------+----------+----------+
 | Items | Item Content                |                           Version                               |
 |       |                             +----------+----------+----------+----------+----------+----------+
@@ -619,7 +620,7 @@ item.
 +-------+-----------------------------+----------+----------+----------+----------+----------+----------+
 | 26    | Overall                     | ✓        | ✓        | ✓        | ✓        | ✓        | ✓        |
 +-------+-----------------------------+----------+----------+----------+----------+----------+----------+
-| 27    | Duration                    | ✓        | X        | ✓        | X        | ✓        |          |
+| 27    | Duration                    | ✓        | X        | ✓        | X        | ✓        | X        |
 +-------+-----------------------------+----------+----------+----------+----------+----------+----------+
 | 28-33 | Impact                      | ✓        | ✓        | ✓        | ✓        | ✓        | ✓        |
 +-------+-----------------------------+----------+----------+----------+----------+----------+----------+
@@ -643,7 +644,7 @@ The first 25 items in the SDQ comprise 5 scales of 5 items each. It is usually e
 
 +------------------+------------------------------------------------+----------------+----------------------+-----------------------+-----------------+
 |                                                                   | Not True       | Some-what True       | Certainly True        |                 |
-+-------------------------------------------------------------------+----------------+----------------------+-----------------------+                 |
++                                                                   +----------------+----------------------+-----------------------+                 |
 | Standard Values for Data Entry                                    | 0              | 1                    | 2                     |                 |
 +------------------+------------------------------------------------+----------------+----------------------+-----------------------+                 |
 | Data element     | SDQ Item number and description                | Item Score                                                    | Summary Score   |
