@@ -44,7 +44,7 @@ accuracy of the data produced for the Department.
 Inputs to help replicate system generated reports
 -------------------------------------------------
 
-This page has been moved to
+This section has been moved to
 `https://docs.pmhc-mds.com/data-specifications.html#inputs-to-help-replicate-system-generated-reports <https://docs.pmhc-mds.com/data-specifications.html#inputs-to-help-replicate-system-generated-reports>`_.
 
 Support arrangements
