@@ -1,8 +1,0 @@
-"Explanation","SLK","Valid/Invalid"
-"Every component valid","TEEOH070619541","Valid"
-"Valid with padded 2s","O22N2070619543","Valid"
-"Valid with unknown names","99999070619543","Valid"
-"Too short","TEEOH07061954","Invalid"
-"Too long","99999010119993x","Invalid"
-"Gender not valid","99999010119935","Invalid"
-"Invalid date","99999999999999","Invalid"

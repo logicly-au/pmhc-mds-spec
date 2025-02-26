@@ -44,33 +44,8 @@ accuracy of the data produced for the Department.
 Inputs to help replicate system generated reports
 -------------------------------------------------
 
-Organisations frequently replicate the system reports at a local level for their
-own auditing purposes.
-
-Some reports, such as the Out series reports, use extra inputs that cannot be
-generated locally.
-
-These inputs are being supplied here to assist organisations who wish to
-replicate the system reports.
-
-.. _standard-deviations:
-
-Outcome Measure Standard Deviations
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Outcome Measure Standard Deviations will be updated in the second
-half of August each year.
-
-Current version:
-
-`Download PMHC Outcome Measure Standard Deviations 2024 as XLSX <_static/2024-pmhc-outcome-measure-standard-deviations.xlsx>`_.
-
-Previous versions:
-
-* `Download PMHC Outcome Measure Standard Deviations 2023 as XLSX <_static/2023-pmhc-outcome-measure-standard-deviations.xlsx>`_.
-* `Download PMHC Outcome Measure Standard Deviations 2022 as XLSX <_static/2022-pmhc-outcome-measure-standard-deviations.xlsx>`_.
-* `Download PMHC Outcome Measure Standard Deviations 2021 as XLSX <_static/2021-pmhc-outcome-measure-standard-deviations.xlsx>`_.
-* `Download PMHC Outcome Measure Standard Deviations 2020 as XLSX <_static/2020-pmhc-outcome-measure-standard-deviations.xlsx>`_.
+This page has been moved to
+`https://docs.pmhc-mds.com/data-specifications.html#inputs-to-help-replicate-system-generated-reports <https://docs.pmhc-mds.com/data-specifications.html#inputs-to-help-replicate-system-generated-reports>`_.
 
 Support arrangements
 --------------------
