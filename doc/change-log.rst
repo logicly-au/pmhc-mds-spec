@@ -3,6 +3,23 @@
 Data Specification Change log
 =============================
 
+26/2/2025
+---------
+
+* :ref:`reporting_arrangements`
+
+  * :ref:`reporting_inputs`
+
+    * Moved to `https://docs.pmhc-mds.com/data-specifications.html#inputs-to-help-replicate-system-generated-reports <https://docs.pmhc-mds.com/data-specifications.html#inputs-to-help-replicate-system-generated-reports>`__
+
+* :ref:`reserved-tags`
+
+  * Moved to `https://docs.pmhc-mds.com/data-specifications.html#system-tags <https://docs.pmhc-mds.com/data-specifications.html#system-tags>`__
+
+* :ref:`test-data-sets`
+
+  * Moved to `https://docs.pmhc-mds.com/third-party-developers.html#test-data-sets <https://docs.pmhc-mds.com/third-party-developers.html#test-data-sets>`__
+
 17/10/2024 - 4.0.5
 ------------------
 
@@ -39,7 +56,7 @@ Data Specification Change log
 
   * :ref:`reporting_inputs`
 
-    * :ref:`standard-deviations` - Added Outcome Measure Standard Deviations for 2024
+    * Added Outcome Measure Standard Deviations for 2024
 
 14/6/2024 - 4.0.3
 -----------------
@@ -86,7 +103,7 @@ Data Specification Change log
 
   * :ref:`reporting_inputs`
 
-    * :ref:`standard-deviations` - Added Outcome Measure Standard Deviations for 2023.
+    * Added Outcome Measure Standard Deviations for 2023.
 
 
 3/5/2023
