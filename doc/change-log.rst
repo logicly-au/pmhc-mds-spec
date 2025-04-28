@@ -3,6 +3,16 @@
 Data Specification Change log
 =============================
 
+24/4/2025
+---------
+
+* :ref:`upload_specification`
+
+  * :ref:`example-upload-files`
+
+    * Corrected the Metadata worksheet in the example xlsx files so that the version is 4.1, not 4
+
+
 17/10/2024
 ----------
 
