@@ -3,6 +3,14 @@
 Data Specification Change log
 =============================
 
+?/7/2025 - 4.1.1
+----------------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+
 24/4/2025
 ---------
 

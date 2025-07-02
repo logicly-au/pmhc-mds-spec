@@ -1,6 +1,6 @@
 .. _changes-from-v4:
 
-Changes from Version 4.0
+Changes from Version 4.1
 ========================
 
 Version 4.1 introduces the recording of sites within a Provider Organisation.
