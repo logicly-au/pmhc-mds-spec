@@ -96,6 +96,48 @@
     "schema:description": "table/measure/iar-dst-measure.rst",
     "tableSchema": "table/measure/iar-dst-metadata.json"
   }, {
+    "dc:title": "UA Episode",
+    "url": "data/ua-episodes.csv",
+    "schema:name": "ua-episode",
+    "schema:description": "table/ua-episode.rst",
+    "tableSchema": "table/ua-episode-metadata.json"
+  }, {
+    "dc:title": "UA Critical Incident",
+    "url": "data/ua-critical-incidents.csv",
+    "schema:name": "ua-critical-incident",
+    "schema:description": "table/ua-critical-incident.rst",
+    "tableSchema": "table/ua-critical-incident-metadata.json"
+  }, {
+    "dc:title": "UA Recommendation Out",
+    "url": "data/ua-recommendation-outs.csv",
+    "schema:name": "ua-recommendation-out",
+    "schema:description": "table/ua-recommendation-out.rst",
+    "tableSchema": "table/ua-recommendation-out-metadata.json"
+  }, {
+    "dc:title": "UA Plan",
+    "url": "data/ua-plans.csv",
+    "schema:name": "ua-plan",
+    "schema:description": "table/measure/ua-plan.rst",
+    "tableSchema": "table/measure/ua-plan-metadata.json"
+  }, {
+    "dc:title": "UA Needs Identification",
+    "url": "data/ua-needs-identifications.csv",
+    "schema:name": "ua-needs-identification",
+    "schema:description": "table/measure/ua-needs-identification.rst",
+    "tableSchema": "table/measure/ua-needs-identification-metadata.json"
+  }, {
+    "dc:title": "WHO-5 Measure",
+    "url": "data/who5.csv",
+    "schema:name": "who5-measure",
+    "schema:description": "table/measure/who5-measure.rst",
+    "tableSchema": "table/measure/who5-metadata.json"
+  }, {
+    "dc:title": "SIDAS Measure",
+    "url": "data/sidas.csv",
+    "schema:name": "sidas-measure",
+    "schema:description": "table/measure/sidas-measure.rst",
+    "tableSchema": "table/measure/sidas-metadata.json"
+  }, {
     "url": "type/gender.csv",
     "tableSchema": "type/gender.json"
   }, {
@@ -189,6 +231,9 @@
     "url": "table/episode/marital-status.csv",
     "tableSchema": "table/episode/marital-status.json"
   }, {
+    "url": "table/episode/veteran.csv",
+    "tableSchema": "table/episode/veteran.json"
+  }, {
     "url": "table/episode/organisation-type-referred-to-at-episode-conclusion.csv",
     "tableSchema": "table/episode/organisation-type-referred-to-at-episode-conclusion.json"
   }, {
@@ -252,7 +297,49 @@
     "url": "table/measure/iar-dst/recommended-level-of-care.csv",
     "tableSchema": "table/measure/iar-dst/iar-dst.json"
   }, {
-    "url": "table/measure/iar-dst/practitioner-level-of-care.csv",
-    "tableSchema": "table/measure/iar-dst/iar-dst.json"
+    "url": "table/measure/iar-dst/practitioner-reason-for-override.csv",
+    "tableSchema": "table/measure/iar-dst/practitioner-reason-for-override.json"
+  }, {
+    "url": "table/ua-episode/ua-external-evaluator-contact-consent.csv",
+    "tableSchema": "table/ua-episode/ua-external-evaluator-contact-consent.json"
+  }, {
+    "url": "table/ua-episode/ua-eligibility-type.csv",
+    "tableSchema": "table/ua-episode/ua-eligibility-type.json"
+  }, {
+    "url": "table/ua-episode/primary-nominated-professional.csv",
+    "tableSchema": "table/ua-episode/primary-nominated-professional.json"
+  }, {
+    "url": "table/ua-episode/sexual-orientation.csv",
+    "tableSchema": "table/ua-episode/sexual-orientation.json"
+  }, {
+    "url": "table/ua-episode/transgender-status.csv",
+    "tableSchema": "table/ua-episode/transgender-status.json"
+  }, {
+    "url": "table/ua-episode/intersex-status.csv",
+    "tableSchema": "table/ua-episode/intersex-status.json"
+  }, {
+    "url": "table/ua-episode/previous-suicide-attempts.csv",
+    "tableSchema": "table/ua-episode/previous-suicide-attempts.json"
+  }, {
+    "url": "table/ua-episode/method-of-suicide-attempt.csv",
+    "tableSchema": "table/ua-episode/method-of-suicide-attempt.json"
+  }, {
+    "url": "table/ua-recommendation-out/recommendation-out-provider-type.csv",
+    "tableSchema": "table/ua-recommendation-out/recommendation-out-provider-type.json"
+  }, {
+    "url": "table/ua-recommendation-out/recommendation-out-status.csv",
+    "tableSchema": "table/ua-recommendation-out/recommendation-out-status.json"
+  }, {
+    "url": "table/ua-critical-incident/type.csv",
+    "tableSchema": "table/ua-critical-incident/type.json"
+  }, {
+    "url": "table/measure/ua-needs-identification/needs-identification-type.csv",
+    "tableSchema": "table/measure/ua-needs-identification/needs-identification-type.json"
+  }, {
+    "url": "table/measure/ua-plan/ua-plan-type.csv",
+    "tableSchema": "table/measure/ua-plan/ua-plan-type.json"
+  }, {
+    "url": "table/measure/who5.csv",
+    "tableSchema": "table/measure/who5.json"
   }]
 }

@@ -1,0 +1,8 @@
+id,description
+1,"Client declined to take up recommendation"
+2,"Service commenced"
+3,"Service completed"
+4,"Waitlisted"
+5,"Client deceased prior to service commencement"
+98,"Other"
+99,"Not stated/Inadequately described"

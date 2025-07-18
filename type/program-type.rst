@@ -5,7 +5,7 @@
   is not limited to general Stepped Care, Mental Health in Residential Aged
   Care Facilities, and Indigenous Mental Health.
 
-2 - Head to Health
+2 - Head to Health Clinic
   Organisations can use this field for episodes delivered through the Head to
   Health Program. This includes Head to Health Adult Centres and Satellites
   and pop-up clinics.
@@ -17,34 +17,6 @@
   reserved tag for the original purpose of indicating that an episode has
   occurred as result of the COVID-19 pandemic once Head to Help Version 3
   extension reaches it’s end of life date.
-
-3 - AMHC
-  Organisations can use this field for episodes delivered through the Head to
-  Health Program by organisations that were already delivering the Adult
-  Mental Health Centre (AMHC) trial sites.
-
-  This change only applies to the following PHNs implementing AMHCs from
-  December 2021:
-
-  * West Victoria PHN
-  * Northern Territory PHN
-  * ACT PHN
-  * North Perth PHN
-  * Nepean Blue Mountains PHN
-  * North Queensland PHN
-  * Tasmania PHN
-
-  AMHC data has been identified using the !amhc tag. Any historical records
-  created on or before 30 June 2022 that use this tag will be mapped to this
-  Program Type under the Version 4 specification. The !amhc tag will be
-  removed from future use once PMHC MDS Version 2 specification reaches
-  it’s end of life date.
-
-  From July 1 2022 the AMHC trial sites were consolidated under the Head to
-  Health program. For data collection purposes, organisations delivering
-  Head to Health services that were already delivering AMHC trial sites can
-  use either the AMHC or Head to Health program type for records created
-  on or after 1 July 2022.
 
 4 - Psychosocial
   Organisations can use this field for episodes delivered through the National
@@ -72,17 +44,23 @@
   the Version 4 specification. The !br20 tag will be removed from future
   use once the Bushfire Program is concluded.
 
-  7 - Supporting Recovery
-    Valid as of May 2024. Organisations can use this field for supports 
-    being provided under the Supporting Recovery pilot. The Supporting 
-    Recovery pilot provides case management services and trauma-informed 
-    mental health services to victim-survivors of family, domestic and 
-    sexual violence. As at April 2024, only the following PHNs are 
-    able to provide services under this pilot:
+7 - Supporting Recovery
+  Valid as of May 2024. Organisations can use this field for supports 
+  being provided under the Supporting Recovery pilot. The Supporting 
+  Recovery pilot provides case management services and trauma-informed 
+  mental health services to victim-survivors of family, domestic and 
+  sexual violence. As at April 2024, only the following PHNs are 
+  able to provide services under this pilot:
 
-    * Gippsland PHN
-    * Hunter New England and Central Coast PHN
-    * Southwestern Sydney PHN
-    * Brisbane South PHN
-    * Northern Territory PHN, and
-    * Country Western Australia PHN.
+  * Gippsland PHN
+  * Hunter New England and Central Coast PHN
+  * Southwestern Sydney PHN
+  * Brisbane South PHN
+  * Northern Territory PHN, and
+  * Country Western Australia PHN.
+
+8 - MMHC
+  Valid as of ?? 2025. *********DoHDA to provide text***********
+
+9 - Universal Aftercare
+  Valid as of ?? 2025. *********DoHDA to provide text***********

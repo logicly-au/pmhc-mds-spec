@@ -29,10 +29,10 @@ of the different contexts that may be submitted.
 
 .. _data-model-diagram:
 
-.. figure:: figures/data-model-v4.1-combined.svg
-   :alt: PMHC MDS Version 4.1 combined data model
+.. figure:: figures/data-model-v5.0-combined.svg
+   :alt: PMHC MDS Version 5.0 combined data model
 
-   PMHC MDS Version 4.1 combined data model
+   PMHC MDS Version 5.0 combined data model
 
 .. note::
   * The above data model diagram is in the SVG format and can be enlarged 
@@ -40,10 +40,10 @@ of the different contexts that may be submitted.
 
 .. _collection-occasion-diagram:
 
-.. figure:: figures/collection-occasion-data-model-v4.1.svg
-   :alt: PMHC MDS Version 4.1 Collection Occasion data model
+.. figure:: figures/collection-occasion-data-model-v5.0.svg
+   :alt: PMHC MDS Version 5.0 Collection Occasion data model
 
-   PMHC MDS Version 4.1 Collection Occasion data model
+   PMHC MDS Version 5.0 Collection Occasion data model
 
 .. note:: See :ref:`data-model-diagram` for more details about how
    Collection Occasion records fit into the overall structure.
@@ -216,6 +216,15 @@ An **active episode** is an episode with one or more
 :ref:`Attended Service Contacts <attended-contact>` recorded in a reference
 reporting period.
 
+.. _key-concepts-ua-episode:
+
+UA Episode
+^^^^^^^^^^
+
+UA Episode is the record format for collecting Universal Aftercare episode data.
+
+See :ref:`ua-episode-data-elements` for the data elements for UA Episode.
+
 .. _key-concepts-service-contact:
 
 Service Contact
@@ -281,6 +290,26 @@ Aboriginal and Torres Strait Islander clients, the K5) as well as the Strengths
 
 See :ref:`collection-occasion-data-elements` for the data elements for a
 collection occasion.
+
+.. _key-concepts-ua-critical-incident:
+
+UA Critical Incidents
+^^^^^^^^^^^^^^^^^^^^^
+
+A Critical Incident is a suicide attempt, suicide death or death by any
+other means of a client during the episode.
+
+.. _key-concepts-ua-needs-identification:
+
+UA Needs Identification
+^^^^^^^^^^^^^^^^^^^^^^^
+
+A Support Plan must be completed with a client within two weeks of their first
+attended Service Contact. Creating a support plan requires working with the
+client to identify their needs. This is to build an understanding of what
+will be of benefit and help form the goals of their Support Plan. These
+identified needs will fall into one of the categories listed. Multiple needs
+may be identified and therefore added.
 
 .. _record-formats:
 
@@ -409,6 +438,47 @@ administrative interface or upload.
 .. csv-table:: Episode record layout
    :file: record/episode.csv
    :header-rows: 1
+
+----------
+
+.. _ua-episode-data-elements:
+
+UA Episode
+^^^^^^^^^^
+
+See :ref:`key-concepts-episode` for definition of an episode.
+
+UA Episodes are managed by the provider organisations via upload or data entry.
+
+.. csv-table:: UA Episode record layout
+  :file: record/ua-episode.csv
+  :header-rows: 1
+
+----------
+
+.. _ua-critical-incident-data-elements:
+
+UA Critical Incident
+^^^^^^^^^^^^^^^^^^^^
+
+Critical Incidents are managed by the provider organisations via upload or data entry.
+
+.. csv-table:: Critical Incident record layout
+  :file: record/ua-critical-incident.csv
+  :header-rows: 1
+
+----------
+
+.. _ua-recommendation-out-data-elements:
+
+UA Recommendation Out
+^^^^^^^^^^^^^^^^^^^^^
+
+Recommendation Outs are managed by the provider organisations via upload or data entry.
+
+.. csv-table:: Recommendation Out record layout
+  :file: record/ua-recommendation-out.csv
+  :header-rows: 1
 
 ----------
 
@@ -635,6 +705,11 @@ As noted above, reporting individual item scores will eventually be required.
 In the short term, respondents can either report all 42 item scores or report
 the SDQ subscale scores.
 
+For Universal Aftercare only episodes the SDQ is not required.
+
+Where a client is being delivered Universal Aftercare services and accessing another
+support service within the same Service Provider an SDQ may be collected.
+
 .. _scoring-the-sdq:
 
 SDQ items and Scale Summary scores
@@ -767,6 +842,65 @@ namely: 0->0, 1->0, 2->1, 3->2.
 .. csv-table:: SDQ record layout
    :file: record/sdq-measure.csv
    :header-rows: 1
+
+----------
+
+.. _ua-plan-data-elements:
+
+UA Plan
+'''''''
+
+.. csv-table:: UA Plan record layout
+  :file: record/ua-plan.csv
+  :header-rows: 1
+
+----------
+
+.. _ua-needs-identification-data-elements:
+
+UA Needs Identification
+'''''''''''''''''''''''
+
+.. csv-table:: UA Needs Identification record layout
+  :file: record/ua-needs-identification.csv
+  :header-rows: 1
+
+----------
+
+.. _who5-data-elements:
+
+WHO-5
+'''''
+
+.. csv-table:: WHO-5 record layout
+  :file: record/who5-measure.csv
+  :header-rows: 1
+
+----------
+
+.. _sidas-data-elements:
+
+SIDAS
+'''''
+
+Scoring the SIDAS
+:::::::::::::::::
+
+Total SIDAS scores are calculated as the sum of the five items, with
+controllability (item 2) reverse scored (10=0, 9=1, …, 0=10).
+Total scores range from 0 to 50.
+
+Respondents who respond “0 – Never” to the first item skip all remaining items
+and score a total of zero. Refer to :ref:`SIDAS Current Validations <sidas-current-validations>`
+for information about how this is enforced in the PMHC MDS.
+
+If any item has not been completed, other than those who respond “0 – Never” to the
+first item (that is, has not been coded 0-10), it is excluded from the calculation and
+not counted as a valid item. If any item is missing, the Total Score is set as missing.
+
+.. csv-table:: SIDAS record layout
+  :file: record/sidas-measure.csv
+  :header-rows: 1
 
 -----
 

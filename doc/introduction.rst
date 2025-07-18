@@ -3,25 +3,36 @@
 Introduction
 ============
 
-Version 4.0 introduces the recording of intake related activity (including
-activity for the Head to Health and AMHC programmes) in the PMHC MDS as part
-of the core  specification.
+Version 5.0 rebrands The Way Back to Universal Aftercare and includes it
+as part of the default specification instead of an extension. Version 5.0
+also completes the rebranding of AMHC/HeadtoHealth to Medicare Mental Health Centre (MMHC) by
+retiring the AMHC Program Type and renaming the Head to Health Program Type to Head To Health Clinic. 
 
-The new version 4 specification comprises 4 entirely new tables, and the
-revised collection occasion/measure tables that have been included in the
-the Wayback and HeadtoHelp extension specifications.
+The new version 5 specification comprises 7 entirely new tables for Universal Aftercare. 
+These tables only need to be submitted where Episodes using the new '8: Universal Aftercare' Program Type are included.
 
-The new tables are :ref:`intake-data-elements`,
-:ref:`iar-dst-data-elements`,
-:ref:`intake-episode-data-elements`,
-:ref:`service-contact-practitioner-data-elements`.
+The new tables are :ref:`ua-episode-data-elements`,
+:ref:`ua-recommendation-out-data-elements`,
+:ref:`ua-critical-incident-data-elements`,
+:ref:`ua-plan-data-elements`,
+:ref:`ua-needs-identification-data-elements`,
+:ref:`sidas-data-elements`,
+:ref:`who5-data-elements`.
+
+
+********Flesh this out more***********
+New Veteran field on Episode table
+New Practitioner Reason for Override field on IAR-DST table
+
+AMHC Program Type retired
+Head to Health Program Type renamed to Head to Health Clinic
 
 .. _introduction-contexts:
 
 Contexts
 --------
 
-There are three contexts where data can be submitted using the version 4
+There are three contexts where data can be submitted using the version 5
 specification:
 
 1. Intake teams
@@ -44,8 +55,8 @@ Where an organisation is only providing intake services and not providing any
 treatment services, they can use the following data model to submit data to
 the PMHC MDS:
 
-.. figure:: figures/data-model-v4.1-intake.svg
-   :alt: PMHC MDS v4.1 Intake Only Data Model
+.. figure:: figures/data-model-v5.0-intake.svg
+   :alt: PMHC MDS v5.0 Intake Only Data Model
 
 In the Intake context the following records will need to be provided:
 
@@ -67,8 +78,8 @@ Where an organisation is only providing treatment services and not providing any
 intake services, they can use the following data model to submit data to
 the PMHC MDS:
 
-.. figure:: figures/data-model-v4.1-treatment.svg
-   :alt: PMHC MDS v4.1 Treatment Service Provider Data Model
+.. figure:: figures/data-model-v5.0-treatment.svg
+   :alt: PMHC MDS v5.0 Treatment Service Provider Data Model
 
 In the treatment context the specification works almost the same as a
 service reporting via the Version 2 core PMHC-MDS specification using the new
@@ -91,118 +102,57 @@ Where an organisation is providing both intake services and
 treatment services, they can use the full data model to submit data to
 the PMHC MDS:
 
-.. figure:: figures/data-model-v4.1-combined.svg
-   :alt: PMHC MDS v4.1 Combined Intake/Treatment Service Provider Data Model
+.. figure:: figures/data-model-v5.0-combined.svg
+   :alt: PMHC MDS v5.0 Combined Intake/Treatment Service Provider Data Model
 
 In the combined context all the records described in both the
 :ref:`introduction-intake-context` and :ref:`introduction-treatment-context`
 can be submitted.
 
-New Records and Fields in Version 4
+New Records and Fields in Version 5
 -----------------------------------
 
-.. _introduction-intake:
+.. _introduction-ua-episode:
 
-Intake
-^^^^^^
+UA Episode
+^^^^^^^^^^
 
-The model now records a new :ref:`intake-data-elements` record where an
-episode has undertaken an Intake process. The collection of Intake and IAR
-data may not be required for all programs. Please see :ref:`intake-data-elements`.
+*****Fill In*****
 
-The :ref:`intake-data-elements` table records information about the
-intake.
+.. _introduction-ua-recommendation-out:
 
-:ref:`dfn-organisation_path` and :ref:`dfn-intake_key` are the
-two fields required to link the Intake record at the intake provider organisation
-to the Episode record at the treatment organisation.
+UA Recommendation Out
+^^^^^^^^^^^^^^^^^^^^^
 
-The values of these fields should be passed along by the intake organisation
-to the treatment organisation where the treatment  organisation will use them
-to fill in :ref:`dfn-intake_organisation_path` and :ref:`dfn-intake_key`. This will
-then link the Intake record at the intake organisation with the Episode
-record at the treatment organisation.
+*****Fill In*****
 
-.. _introduction-iar-dst:
+.. _introduction-ua-critical-incident:
 
-IAR-DST Measure
-^^^^^^^^^^^^^^^
+UA Critical Incident
+^^^^^^^^^^^^^^^^^^^^
 
-The model now captures the domains and the recommended
-level of care pertinent to the IAR-DST that clients have completed for them
-as part of the intake process. A new :ref:`iar-dst-data-elements` record
-will be created for each intake process.
+*****Fill In*****
 
-Consistent with the existing measures in the MDS, the domain scores will be
-captured as well as the recommended level of care. The purpose of collecting
-both domain scores and recommended level of care is to:
+UA Plan
+^^^^^^^
 
-* allow verification of IAR-DST scoring processes, thereby catching scoring
-  implementation errors early should they arise, and
-* provide a resource that can be used to better understand how the IAR-DST
-  scoring algorithm performs in real world environments supporting ongoing
-  improvement of the tool.
+*****Fill In*****
 
-The collection of Intake and IAR data may not be required for all programs.
-Please see :ref:`intake-data-elements`.
+UA Needs Identification
+^^^^^^^^^^^^^^^^^^^^^^^
 
-.. _introduction-episode:
+*****Fill In*****
 
-Episode and Intake Episode
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+SIDAS
+^^^^^
 
-When the client is referred to a PMHC MDS reporting treatment service
- a new :ref:`episode-data-elements` record is created.
+*****Fill In*****
 
-Where the client has been referred via an intake process, an
-additional :ref:`intake-episode-data-elements` record is also created.
+WHO-5
+^^^^^
 
-The :ref:`intake-episode-data-elements` table comprises a composite foreign key to link it
-back to an episode record on which all the episode information is
-recorded. This linkage is done via two fields:
+*****Fill In*****
 
-1. The identifier of the intake team (:ref:`dfn-intake_organisation_path`)
-2. The episode identifier of the intake team (:ref:`dfn-intake_key`)
-
-The Episode record has been expanded with one new field - the
-organisation(s) to which the organisation refers
-the client (:ref:`dfn-organisation_type_referred_to_at_episode_conclusion`)
-
-The collection of Intake and IAR data may not be required for all programs.
-Please see :ref:`intake-data-elements`.
-
-.. _entering-intake-episode-data:
-
-Entering/Uploading Intake and Episode data
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-When entering or uploading Intake and Episode data, the PMHC MDS does not validate
-that an Intake record exists when an Intake Episode record is uploaded. They can be
-uploaded independently of each other. There is a planned suite of reports that will
-allow organisations to identify Intake and Episode records that are not linked.
-
-.. _introduction-service-contact:
-
-Service Contact
-^^^^^^^^^^^^^^^
-
-The Service Contact record has been expanded with two new fields:
-
-1. The time that the contact started (:ref:`dfn-service_contact_start_time`).
-   This is intended to enable identification of activity undertaken during extended hours.
-2. The funding source for the service contact (:ref:`dfn-funding_source`)
-
-.. _introduction-service-contact-practitioner:
-
-Service Contact Practitioner
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-A new record - :ref:`service-contact-practitioner-data-elements` replaces the
-Practitioner Key field on the Version 2 Service Contact record.
-
-:ref:`service-contact-practitioner-data-elements` acknowledges the involvement
-of multiple practitioners in a service contact. One practitioner (and only one)
-must be identified as the primary practitioner.
 
 Data release and confidentiality
 --------------------------------

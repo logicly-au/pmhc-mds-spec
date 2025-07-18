@@ -1,0 +1,1 @@
+0 = Not close at all, 10 = Made an attempt

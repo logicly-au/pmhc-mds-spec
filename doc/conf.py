@@ -58,7 +58,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'PMHC MDS Data Specification'
-copyright = u'2024, Australian Government - Department of Health and Aged Care'
+copyright = u'2025, Australian Government - Department of Health, Disability and Ageing'
 author = u'PMHC MDS Working Group'
 
 # The version info for the project you're documenting, acts as replacement for

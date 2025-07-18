@@ -7,9 +7,15 @@ management in terms of requiring any of the following:
 -	Diagnostic procedures
 -	Increased clinical care and/or monitoring
 
-Where the client one or more comorbid mental health conditions in addition to
+Where the client has one or more comorbid mental health conditions in addition to
 the condition coded as the Principal Diagnosis, record the main condition as
 the Additional Diagnosis. 
+
+For Universal Aftercare only episodes response `000: No additional Diagnosis` must be used.
+
+Where a client is being delivered Universal Aftercare services and accessing another
+support service within the same Service Provider the full range of Additional Diagnosis responses
+allowed for standard PMHC MDS episodes is available.
 
 The following responses have been added to allow mapping of ATAPS data to PMHC
 format.

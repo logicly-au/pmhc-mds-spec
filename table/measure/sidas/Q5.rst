@@ -1,0 +1,1 @@
+0 = Not at all, 10 = Extremely

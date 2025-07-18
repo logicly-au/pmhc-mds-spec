@@ -1,0 +1,81 @@
+{
+  "@id": "ua-critical-incident-metadata.json",
+  "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
+  "columns": [{
+    "name": "organisation_path",
+    "titles": [ "organisation_path" ],
+    "dc:title": "Organisation Path",
+    "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
+    "schema:disambiguatingDescription": "type/organisation_path.rst",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "ua_critical_incident_key",
+    "titles": [ "ua_critical_incident_key" ],
+    "dc:title": "UA Critical Incident Key",
+    "schema:description": "This is a number or code assigned to each critical incident. The Critical Incident Key is unique and stable for each Critical Incident at the level of the organisation.",
+    "schema:disambiguatingDescription": "table/ua-critical-incident/key.rst",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "required": true
+  },{
+    "name": "episode_key",
+    "titles": [ "episode_key" ],
+    "dc:title": "Episode Key",
+    "schema:description": "This is a number or code assigned to each PMHC MDS episode. The Episode Key is unique and stable for each episode at the level of the organisation. This key must link to an existing episode within the PMHC MDS.",
+    "schema:disambiguatingDescription": "table/episode/key.rst",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "required": true
+  },{
+    "name": "critical_incident_type",
+    "titles": [ "critical_incident_type" ],
+    "dc:title": "Critical Incident Type",
+    "schema:description": "The type of critical incident.",
+    "schema:disambiguatingDescription": "table/ua-critical-incident/type.rst",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "critical_incident_date",
+    "titles": [ "critical_incident_date" ],
+    "dc:title": "Critical Incident Date",
+    "schema:description": "The date the critical incident was reported to the Service Provider.",
+    "schema:disambiguatingDescription": "table/ua-critical-incident/ua-critical-incident-date.rst",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "date",
+      "format": "dMMyyyy",
+      "minimum": "2019-01-01"
+    },
+    "required": true,
+    "schema:dateMissingUnknown": "9999-09-09"
+  }],
+  "primaryKey": [ "organisation_path", "ua_critical_incident_key" ],
+  "foreignKeys": [{
+    "columnReference": [ "organisation_path", "episode_key" ],
+    "reference": {
+      "resource": "data/episodes.csv",
+      "columnReference": [ "organisation_path", "episode_key" ]
+    }
+  }, {
+    "columnReference": "critical_incident_type",
+    "reference": {
+      "resource": "table/ua-critical-incident/type.csv",
+      "columnReference": "id"
+    }
+  }]
+}

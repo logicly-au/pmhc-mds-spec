@@ -105,16 +105,19 @@ Intake
          * :ref:`dfn-date_referred_to_other_service_at_intake_conclusion` and
          * :ref:`dfn-referred_to_organisation_path`
 
+  #. On :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` the value '42: AMHC' must only be used on existing records. It is not allowed on new records.
+  #. On :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` the value '44: HeadtoHelp / HeadtoHealth' must only be used on existing records. It is not allowed on new records.
+
 
 .. _iar-dst-current-validations:
 
 IAR-DST
 ~~~~~~~
 
-  1. Refer to :ref:`key-current-validations` for Measure Key validations
-  2. :ref:`dfn-intake_key` must be an existing Intake within the PMHC MDS
-  3. Both all 8 domains and the level of care must be provided
-  4. The :ref:`dfn-iar_dst_recommended_level_of_care` must be consistent with the 8 domain scores provided
+  #. Refer to :ref:`key-current-validations` for Measure Key validations
+  #. :ref:`dfn-intake_key` must be an existing Intake within the PMHC MDS
+  #. Both all 8 domains and the level of care must be provided
+  #. The :ref:`dfn-iar_dst_recommended_level_of_care` must be consistent with the 8 domain scores provided
 
 .. _intake-episode-current-validations:
 
@@ -184,6 +187,10 @@ Episode
   #. Existing records already containing a :ref:`dfn-referral_date` that is
      not '09099999' may not be updated to '09099999'.
 
+  #. On :ref:`dfn-organisation_type_referred_to_at_episode_conclusion` the value '22: HeadtoHelp / HeadtoHealth' must only be used on existing records. It is not allowed on new records.
+  #. On :ref:`dfn-organisation_type_referred_to_at_episode_conclusion` the value '24: AMHC' must only be used on existing records. It is not allowed on new records.
+  #. On :ref:`dfn-program_type` only organisations commissioned by Victorian PHNs can use the value '2: Head to Health Clinc'
+
 .. _service-contact-current-validations:
 
 Service Contact
@@ -241,6 +248,7 @@ Service Contact
   
       * When a Service Contact Site is provided, it must have between 2-50 valid unicode characters excluding commas (',')
       * When a Service Contact Site is provided, it must match a site name that is defined in :ref:`dfn-sites` for the Provider Organisation providing the Service Contact
+  21. On :ref:`dfn-funding_source` the value '23: Head to Health program' must only be used on existing records. It is not allowed on new records.
 
 
 .. _service-contact-practitioner-current-validations:
@@ -266,10 +274,10 @@ Collection Occasion
   3. The :ref:`dfn-collection_occasion_date`
 
     * must not be before 1 January 2016
-    * and must not be before `Episode - Referral Date <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date>`_
-    * and must not be before `Provider Organisation - Start Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date>`_
-    * and must not be more than 7 days after `Episode - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#episode-end-date>`_
-    * and must not be after `Provider Organisation - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date>`_
+    * and must not be before :ref:`dfn-referral_date`
+    * and must not be before :ref:`dfn-organisation_start_date`
+    * and must not be more than 7 days after :ref:`dfn-episode_end_date`
+    * and must not be after :ref:`dfn-organisation_end_date`
     * and must not be in the future
 
 .. _k10p-current-validations:
@@ -349,6 +357,107 @@ Organisation
      * each site name must be valid as per :ref:`service-contact-current-validations`
      * a site cannot be deleted if it is used on at least one service contact
 
+.. _ua-episode-current-validations:
+
+UA Episode
+~~~~~~~~~~
+
+  1. Refer to :ref:`key-current-validations` for Episode Key validations
+  2. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC MDS.
+  3. The :ref:`dfn-primary_nominated_professional_consent_date`
+
+     * must not be before 1 January 2019
+     * and must not be before :ref:`dfn-referral_date`
+     * and must not be before :ref:`dfn-organisation_start_date`
+     * and must not be after :ref:`dfn-episode_end_date`
+     * and must not be after :ref:`dfn-organisation_end_date`
+     * and must not be in the future
+
+  4. The :ref:`dfn-primary_nominated_professional_contact_entry_date`
+
+     * must not be before 1 January 2019
+     * and must not be before :ref:`dfn-referral_date`
+     * and must not be before :ref:`dfn-organisation_start_date`
+     * and must not be after :ref:`dfn-episode_end_date`
+     * and must not be after :ref:`dfn-organisation_end_date`
+     * and must not be in the future
+
+  5. The :ref:`dfn-primary_nominated_professional_contact_exit_date`
+
+     * must not be before 1 January 2019
+     * and must not be before :ref:`dfn-referral_date`
+     * and must not be before :ref:`dfn-organisation_start_date`
+     * and must not be before :ref:`dfn-primary_nominated_professional_contact_entry_date`
+     * and must not be before :ref:`dfn-episode_end_date`
+     * and must not be after :ref:`dfn-organisation_end_date`
+     * and must not be in the future
+
+   6. Where :ref:`dfn-previous_suicide_attempts` is recorded as '1: No', 
+      :ref:`dfn-method_of_suicide_attempt` must be recorded as '0: Not applicable'
+
+.. _ua-critical-incident-current-validations:
+
+UA Critical Incident
+~~~~~~~~~~~~~~~~~~~~
+
+  1. Refer to :ref:`key-current-validations` for UA Critical Incident Key validations
+  2. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC MDS.
+  3. The :ref:`dfn-critical_incident_date`
+
+     * must not be before 1 January 2019
+     * and must not be before :ref:`dfn-referral_date`
+     * and must not be before :ref:`dfn-organisation_start_date`
+     * and must not be after :ref:`dfn-episode_end_date`
+     * and must not be after :ref:`dfn-organisation_end_date`
+     * and must not be in the future
+
+.. _ua-recommendation-out-current-validations:
+
+UA Recommendation Out
+~~~~~~~~~~~~~~~~~~~~~
+
+  1. Refer to :ref:`key-current-validations` for UA Recommendation Out Key validations
+  2. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC MDS.
+  3. UA Recommendation Outs for an Episode must have unique :ref:`dfn-recommendation_out_provider_type`.
+
+.. _who-5-current-validations:
+
+WHO-5
+~~~~~
+
+  1. Refer to :ref:`key-current-validations` for Measure Key validations
+  2. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
+     MDS.
+  3. If both item scores and a total score are specified, the item scores must
+     add up to the total score.
+
+.. _sidas-current-validations:
+
+SIDAS
+~~~~~
+
+  1. Refer to :ref:`key-current-validations` for Measure Key validations
+  2. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
+     MDS.
+  3. When item 1 has the value “0 - Never” all other items must be set to “98 - Not Required”
+
+.. _ua-plan-current-validations:
+
+UA Plan
+~~~~~~~~
+
+  1. Refer to :ref:`key-current-validations` for Measure Key validations
+  2. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
+     MDS.
+
+.. _ua-needs-identification-current-validations:
+
+UA Needs Identification
+~~~~~~~~~~~~~~~~~~~~~~~
+
+  1. Refer to :ref:`key-current-validations` for Measure Key validations
+  2. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
+     MDS.
 
  .. _future-validations:
 

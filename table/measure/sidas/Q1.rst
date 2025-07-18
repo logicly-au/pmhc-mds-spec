@@ -1,0 +1,5 @@
+0 = Never, 10 = Always
+
+Respondents who respond “0 – Never” to the first item skip all remaining items
+and score a total of zero. Refer to :ref:`SIDAS Current Validations <sidas-current-validations>`
+for information about how this is enforced in the PMHC MDS.

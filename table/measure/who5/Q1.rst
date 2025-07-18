@@ -1,0 +1,1 @@
+When reporting total score use ‘9 - Not stated / Missing’ 

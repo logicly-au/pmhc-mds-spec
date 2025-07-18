@@ -1,0 +1,214 @@
+{
+  "@id": "ua-episode-metadata.json",
+  "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
+  "columns": [{
+    "name": "organisation_path",
+    "titles": [ "organisation_path" ],
+    "dc:title": "Organisation Path",
+    "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
+    "schema:disambiguatingDescription": "type/organisation_path.rst",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "episode_key",
+    "titles": [ "episode_key" ],
+    "dc:title": "Episode Key",
+    "schema:description": "This is a number or code assigned to each PMHC MDS episode. The Episode Key is unique and stable for each episode at the level of the organisation. This key must link to an existing episode within the PMHC MDS.",
+    "schema:disambiguatingDescription": "table/episode/key.rst",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "required": true
+  },{
+    "name": "sexual_orientation",
+    "titles": [ "sexual_orientation" ],
+    "dc:title": "Sexual Orientation",
+    "schema:description": "Identifies how the client describes their sexual orientation, as represented by a code.",
+    "schema:disambiguatingDescription": "table/ua-episode/sexual-orientation.rst",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "transgender_status",
+    "titles": [ "transgender_status" ],
+    "dc:title": "Transgender Status",
+    "schema:description": "An indication of whether the client has a transgender history, experience or identity , as represented by a code.",
+    "schema:disambiguatingDescription": "table/ua-episode/transgender-status.rst",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "intersex_status",
+    "titles": [ "intersex_status" ],
+    "dc:title": "Intersex Status",
+    "schema:description": "An indication of whether the client has an intersex status, as represented by a code.",
+    "schema:disambiguatingDescription": "table/ua-episode/intersex-status.rst",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "eligibility_type",
+    "titles": [ "eligibility_type" ],
+    "dc:title": "Eligibility Type",
+    "schema:description": "The criteria by which a client is assessed as being eligible for the Universal Aftercare service, as represented by a code.",
+    "schema:disambiguatingDescription": "table/ua-episode/eligibility-type.rst",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "external_evaluator_contact_consent",
+    "titles": [ "external_evaluator_contact_consent" ],
+    "dc:title": "External Evaluator Contact Consent",
+    "schema:description": "The status of whether the client has consented to be contacted by external evaluators, as represented by a code.",
+    "schema:disambiguatingDescription": "table/ua-episode/external-evaluator-contact-consent.rst",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "primary_nominated_professional",
+    "titles": [ "primary_nominated_professional" ],
+    "dc:title": "Primary Nominated Professional",
+    "schema:description": "Identifies the profession of the primary professional nominated by the client, as represented by a code.",
+    "schema:disambiguatingDescription": "table/ua-episode/primary-nominated-professional.rst",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "primary_nominated_professional_consent_date",
+    "titles": [ "primary_nominated_professional_consent_date" ],
+    "dc:title": "Primary Nominated Professional Consent Date",
+    "schema:description": "The date that the client consented to having their Primary Nominated Professional contacted.",
+    "schema:disambiguatingDescription": "table/ua-episode/primary-nominated-professional-consent-date.rst",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "date",
+      "format": "dMMyyyy",
+      "minimum": "2019-01-01"
+    },
+    "required": true,
+    "schema:dateMissingUnknown": "9999-09-09"
+  },{
+    "name": "primary_nominated_professional_contact_entry_date",
+    "titles": [ "primary_nominated_professional_contact_entry_date" ],
+    "dc:title": "Primary Nominated Professional Contact Entry Date",
+    "schema:description": "The date that the client's Primary Nominated Professional was contacted after entry.",
+    "schema:disambiguatingDescription": "table/ua-episode/primary-nominated-professional-contact-entry-date.rst",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "date",
+      "format": "dMMyyyy",
+      "minimum": "2019-01-01"
+    },
+    "required": true,
+    "schema:dateMissingUnknown": "9999-09-09"
+  },{
+    "name": "primary_nominated_professional_contact_exit_date",
+    "titles": [ "primary_nominated_professional_contact_exit_date" ],
+    "dc:title": "Primary Nominated Professional Contact Exit Date",
+    "schema:description": "The date that the client's Primary Nominated Professional was contacted after client's exit.",
+    "schema:disambiguatingDescription": "table/ua-episode/primary-nominated-professional-contact-exit-date.rst",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "date",
+      "format": "dMMyyyy",
+      "minimum": "2019-01-01"
+    },
+    "required": true,
+    "schema:dateMissingUnknown": "9999-09-09"
+  },{
+    "name": "previous_suicide_attempts",
+    "titles": [ "previous_suicide_attempts" ],
+    "dc:title": "Previous suicide attempts",
+    "schema:description": "Indicates whether the client has attempted suicide prior to this episode, as represented by a code.",
+    "schema:disambiguatingDescription": "table/ua-episode/previous-suicide-attempts.rst",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "method_of_suicide_attempt",
+    "titles": [ "method_of_suicide_attempt" ],
+    "dc:title": "Method of suicide attempt",
+    "schema:description": "Identifies the method of the most recent suicide attempt, as represented by a code.",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  }],
+  "primaryKey": [ "organisation_path", "episode_key" ],
+  "foreignKeys": [{
+    "columnReference": [ "organisation_path", "episode_key" ],
+    "reference": {
+      "resource": "data/episodes.csv",
+      "columnReference": [ "organisation_path", "episode_key" ]
+    }
+  }, {
+    "columnReference": "eligibility_type",
+    "reference": {
+      "resource": "table/ua-episode/eligibility-type.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "primary_nominated_professional",
+    "reference": {
+      "resource": "table/ua-episode/primary-nominated-professional.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "sexual_orientation",
+    "reference": {
+      "resource": "table/ua-episode/sexual-orientation.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "transgender_status",
+    "reference": {
+      "resource": "table/ua-episode/transgender-status.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "intersex_status",
+    "reference": {
+      "resource": "table/ua-episode/intersex-status.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "previous_suicide_attempts",
+    "reference": {
+      "resource": "table/ua-episode/previous-suicide-attempts.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "method_of_suicide_attempt",
+    "reference": {
+      "resource": "table/ua-episode/method-of-suicide-attempt.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "external_evaluator_contact_consent",
+    "reference": {
+      "resource": "table/ua-episode/external-evaluator-contact-consent.csv",
+      "columnReference": "id"
+    }
+  }]
+}

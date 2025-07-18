@@ -1,0 +1,18 @@
+{
+  "@id": "table/ua-episode/sexual-orientation.json",
+  "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
+  "columns": [{
+    "name": "id",
+    "titles": [ "id" ],
+    "schema:dateCreated": "2025-07-16",
+    "datatype": "string"
+  },{
+    "name": "description",
+    "titles": [ "description" ],
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "string"
+    }
+  }],
+  "primaryKey": "id"
+}

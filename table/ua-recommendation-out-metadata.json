@@ -1,0 +1,86 @@
+{
+  "@id": "ua-recommendation-out-metadata.json",
+  "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
+  "columns": [{
+    "name": "organisation_path",
+    "titles": [ "organisation_path" ],
+    "dc:title": "Organisation Path",
+    "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
+    "schema:disambiguatingDescription": "type/organisation_path.rst",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true,
+    "schema:formOrder": "1"
+  },{
+     "name": "ua_recommendation_out_key",
+    "titles": [ "ua_recommendation_out_key" ],
+    "dc:title": "UA Recommendation Out Key",
+    "schema:description": "This is a number or code assigned to each recommendation out. The Recommendation Out Key is unique and stable for each recommendation out at the lvel of the organisation.",
+    "schema:disambiguatingDescription": "table/ua-recommendation-out/key.rst",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+      },
+    "required": true,
+    "schema:formOrder": "2"
+  },{
+    "name": "episode_key",
+    "titles": [ "episode_key" ],
+    "dc:title": "Episode Key",
+    "schema:description": "This is a number or code assigned to each PMHC MDS episode. The Episode Key is unique and stable for each episode at the level of the organisation. This key must link to an existing episode within the PMHC MDS.",
+    "schema:disambiguatingDescription": "table/episode/key.rst",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "required": true
+  },{
+    "name": "recommendation_out_provider_type",
+    "titles": [ "recommendation_out_provider_type" ],
+    "dc:title": "Recommendation Out Provider Type",
+    "schema:description": "Identifies the type of external service(s) that the client has been recommended to from the Universal Aftercare service during their Episode of care, as represented by a code.",
+    "schema:disambiguatingDescription": "table/ua-recommendation-out/recommendation-out-provider-type.rst",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "recommendation_out_status",
+    "titles": [ "recommendation_out_status" ],
+    "dc:title": "Recommendation Out Status",
+    "schema:description": "Identifies the final status of external service recommendations made to the client, as represented by a code.",
+    "schema:disambiguatingDescription": "table/ua-recommendation-out/recommendation-out-status.rst",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  }],
+  "primaryKey": [ "organisation_path", "ua_recommendation_out_key" ],
+  "foreignKeys": [{
+    "columnReference": [ "organisation_path", "episode_key" ],
+    "reference": {
+      "resource": "data/episodes.csv",
+      "columnReference": [ "organisation_path", "episode_key" ]
+    }
+  }, {
+    "columnReference": "recommendation_out_provider_type",
+    "reference": {
+      "resource": "table/ua-recommendation-out/recommendation-out-provider-type.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "recommendation_out_status",
+    "reference": {
+      "resource": "table/ua-recommendation-out/recommendation-out-status.csv",
+      "columnReference": "id"
+    }
+  }]
+}

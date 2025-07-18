@@ -9,5 +9,12 @@ File Type,CSV filename,Excel worksheet name,Required
 :ref:`K5 Measures <k5-format>`,k5.csv,K5,Required
 :ref:`SDQ Measures <sdq-format>`,sdq.csv,SDQ,Required
 :ref:`Practitioners <practitioner-format>`,practitioners.csv,Practitioners,Required for first upload and when practitioner information changes. Optional otherwise
+:ref:`UA Episodes <ua-episode-format>`,ua-episodes.csv,UA Episodes,Required where Episodes using the '8: Universal Aftercare' Program Type are included. Optional otherwise
+:ref:`UA Recommendation Outs <ua-recommendation-out-format>`,ua-erecommendation-outs.csv,UA Recommendation Outs,Required where Episodes using the '8: Universal Aftercare' Program Type are included. Optional otherwise
+:ref:`UA Critical Incidents <ua-critical-incident-format>`,ua-critical-incidents.csv,UA Critical Incidents,Required where Episodes using the '8: Universal Aftercare' Program Type are included. Optional otherwise
+:ref:`UA Plans <ua-plan-format>`,ua-plans.csv,UA Plans,Required where Episodes using the '8: Universal Aftercare' Program Type are included. Optional otherwise
+:ref:`UA Needs Identificationss <ua-needs-identification-format>`,ua-needs-identifications.csv,UA Needs Identifications,Required where Episodes using the '8: Universal Aftercare' Program Type are included. Optional otherwise
+:ref:`SIDAS <sidas-format>`,sidas.csv,SIDAS,Required where Episodes using the '8: Universal Aftercare' Program Type are included. Optional otherwise
+:ref:`WHO-5 <who-5-format>`,who-5.csv,WHO-5,Required where Episodes using the '8: Universal Aftercare' Program Type are included. Optional otherwise
 :ref:`Organisations <organisation-format>`,organisations.csv,Organisations,"Optional, may only be included if the user has Organisation Management Role"
 :ref:`Metadata <metadata-format>`,metadata.csv,Metadata,Required

@@ -6,3 +6,9 @@ disorder (ADHD) and to improve impaired cognitive abilities.
 
 Details of drugs included in the category can be found here:
 http://www.whocc.no/atc_ddd_index/?code=N06B
+
+For Universal Aftercare only episodes the response `9: Unknown` must be used.
+
+Where a client is being delivered Universal Aftercare services and accessing another
+support service within the same Service Provider the full range of Medication - Psychostimulants and nootropics (N06B) responses
+allowed for standard PMHC MDS episodes is available.

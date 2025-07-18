@@ -140,12 +140,12 @@
     },
     "required": true
   },{
-    "name": "iar_dst_practitioner_level_of_care",
-    "titles": [ "iar_dst_practitioner_level_of_care" ],
-    "dc:title" : "IAR-DST - Practitioner Level of Care",
-    "schema:description": "The individualised level of care assessed by the practitioner for the referral",
-    "schema:disambiguatingDescription": "table/measure/iar-dst/practitioner-level-of-care.rst",
-    "schema:dateCreated": "2021-08-23",
+    "name": "iar_dst_practitioner_reason_for_override",
+    "titles": [ "iar_dst_practitioner_reason_for_override" ],
+    "dc:title" : "IAR-DST - Practitioner Reason for Override",
+    "schema:description": "The reason the practitioner recommended a different level of care than the level calculated by the IAR Decision Support Tool",
+    "schema:disambiguatingDescription": "table/measure/iar-dst/practitioner-reason-for-override.rst",
+    "schema:dateCreated": "2025-07-17",
     "datatype": {
       "base": "string"
     },
@@ -232,6 +232,12 @@
     "columnReference": "iar_dst_practitioner_level_of_care",
     "reference": {
       "resource": "table/measure/iar-dst/practitioner-level-of-care.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "iar_dst_practitioner_reason_for_override",
+    "reference": {
+      "resource": "table/measure/iar-dst/practitioner-reason-for-override.csv",
       "columnReference": "id"
     }
   }]

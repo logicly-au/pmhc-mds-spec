@@ -1,0 +1,77 @@
+{
+  "@id": "ua-plan-metadata.json",
+  "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
+  "columns": [{
+    "name": "organisation_path",
+    "titles": [ "organisation_path" ],
+    "dc:title": "Organisation Path",
+    "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
+    "schema:disambiguatingDescription": "type/organisation_path.rst",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+     "name": "ua_plan_key",
+    "titles": [ "ua_plan_key" ],
+    "dc:title": "UA Plan Key",
+    "schema:description": "This is a number or code assigned to each instance of a UA Plan. The UA Plan Key is unique and stable for each instance of a measure at the level of the organisation.",
+    "schema:disambiguatingDescription": "table/measure/ua-plan/key.rst",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "required": true
+  },{
+    "name": "collection_occasion_key",
+    "titles": [ "collection_occasion_key" ],
+    "dc:title": "Collection Occasion Key",
+    "schema:description": "This is a number or code assigned to each collection occasion of service activity. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation.",
+    "schema:disambiguatingDescription": "table/collection-occasion/key.rst",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "required": true
+  },{
+    "name": "plan_type",
+    "titles": [ "plan_type" ],
+    "dc:title": "Plan Type",
+    "schema:description": "The type of plan.",
+    "schema:disambiguatingDescription": "table/measure/ua-plan/plan-type.rst",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "plan_tags",
+    "titles": [ "plan_tags" ],
+    "dc:title" : "Plan Tags",
+    "schema:description": "List of tags for the collection occasion.",
+    "schema:disambiguatingDescription": "type/tags.rst",
+    "schema:dateCreated": "2025-07-16",
+    "datatype": {
+      "base": "string"
+      }
+  }],
+  "primaryKey": [ "organisation_path", "ua_plan_key" ],
+  "foreignKeys": [{
+    "columnReference": [ "organisation_path", "collection_occasion_key" ],
+    "reference": {
+      "resource": "data/collection-occasions.csv",
+      "columnReference": [ "organisation_path", "collection_occasion_key" ]
+    }
+  }, {
+    "columnReference": "plan_type",
+    "reference": {
+      "resource": "table/measure/ua-plan/plan-type.csv",
+      "columnReference": "id"
+    }
+  }]
+}
