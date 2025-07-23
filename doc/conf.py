@@ -310,7 +310,7 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
 # For substitutions in docs
 # see https://github.com/hoccleve-archive/hocl.tk/blob/70b71b5a265d0b1d64c5cb6e43b686d03ead4078/docs/conf.py#L48
 
-copyright = str(2021) + ", " + author
+copyright = str(2025) + ", " + author
 download_pdf = ":download:`PDF </_static/" + spec_name + "-" + version + ".pdf>`"
 
 rst_epilog = """

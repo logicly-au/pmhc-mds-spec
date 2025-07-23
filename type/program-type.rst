@@ -6,6 +6,7 @@
   Care Facilities, and Indigenous Mental Health.
 
 2 - Head to Health Clinic
+  ******Update this with wording from DoHDA*******
   Organisations can use this field for episodes delivered through the Head to
   Health Program. This includes Head to Health Adult Centres and Satellites
   and pop-up clinics.

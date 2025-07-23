@@ -1,0 +1,6 @@
+organisation_path,ua_recommendation_out_key,episode_key,recommendation_out_provider_type,recommendation_out_status
+PHN999:IntakeTreatment01,RO001,E402,30,2
+PHN999:IntakeTreatment01,RO002,E402,37,4
+PHN999:IntakeTreatment01,RO003,E406,39,1
+PHN999:IntakeTreatment01,RO004,E406,30,1
+PHN999:IntakeTreatment01,RO005,E406,31,2

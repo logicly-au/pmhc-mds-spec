@@ -3,13 +3,16 @@
 Introduction
 ============
 
-Version 5.0 rebrands The Way Back to Universal Aftercare and includes it
-as part of the default specification instead of an extension. Version 5.0
+Version 5.0 rebrands The Way Back to Universal Aftercare and includes Universal Aftercare
+as part of the default specification. Version 5.0
 also completes the rebranding of AMHC/HeadtoHealth to Medicare Mental Health Centre (MMHC) by
 retiring the AMHC Program Type and renaming the Head to Health Program Type to Head To Health Clinic. 
 
-The new version 5 specification comprises 7 entirely new tables for Universal Aftercare. 
-These tables only need to be submitted where Episodes using the new '8: Universal Aftercare' Program Type are included.
+In order to support Universal Aftercare a '9: Universal Aftercare' response has been added to the
+:ref:`dfn-program_type` field on both the Intake and Episode tables.
+
+In addition, seven entirely new tables have been added specifically for Universal Aftercare. 
+These tables only need to be submitted where Episodes using the new '9: Universal Aftercare' Program Type are included.
 
 The new tables are :ref:`ua-episode-data-elements`,
 :ref:`ua-recommendation-out-data-elements`,
@@ -19,20 +22,25 @@ The new tables are :ref:`ua-episode-data-elements`,
 :ref:`sidas-data-elements`,
 :ref:`who5-data-elements`.
 
+A new :ref:`dfn-veteran` field has been added to the Episode table. This field was included in The Way Back specification. 
+There is a new IAR-DST varient in development for Veterans. Veterans has been included on the Episode table instead of 
+the new UA Episode table so that it can be used for monitoring both the IAR-DST and Univeral Aftercare.
 
-********Flesh this out more***********
-New Veteran field on Episode table
-New Practitioner Reason for Override field on IAR-DST table
+A new :ref:`dfn-iar_dst_practitioner_reason_for_override` has been added to the IAR-DST table.
 
-AMHC Program Type retired
-Head to Health Program Type renamed to Head to Health Clinic
+AMHC and Head to Health have been rebranded as Medicare Mental Health Centres (MMHC). Version 4.1.1 introduced the
+`8: MMHC` reponse for :ref:`dfn-program_type`. The following changes have been applied to the :ref:`dfn-program_type` field on both
+the Intake and Episode tables:
+
+* '2: Head to Health' renamed to `2: Head to Health Clinic`. This response is only to be used by organisations commissioned by Victorian PHNs. Please refer to :ref:`dfn-program_type` for more information.
+* '3: AMHC' has been retired. An error will be returned if this response is used.
 
 .. _introduction-contexts:
 
 Contexts
 --------
 
-There are three contexts where data can be submitted using the version 5
+As in the version 4 specification, there are three contexts where data can be submitted using the version 5
 specification:
 
 1. Intake teams
@@ -81,17 +89,14 @@ the PMHC MDS:
 .. figure:: figures/data-model-v5.0-treatment.svg
    :alt: PMHC MDS v5.0 Treatment Service Provider Data Model
 
-In the treatment context the specification works almost the same as a
-service reporting via the Version 2 core PMHC-MDS specification using the new
-:ref:`intake-episode-data-elements` record
-to identify additional detail regarding referrals in from the
-intake teams (:ref:`dfn-intake_organisation_path` and :ref:`dfn-intake_key`),
-referrals out to additional services (:ref:`dfn-organisation_type_referred_to_at_episode_conclusion`), and
-the involvement of multiple practitioners in service
-contacts (:ref:`service-contact-practitioner-data-elements`) which allows
-multiple endorsements.
+In the treatment context the 
+:ref:`intake-episode-data-elements` record is used
+to identify referrals in from
+intake teams (:ref:`dfn-intake_organisation_path` and :ref:`dfn-intake_key`).
 
 Intake and IAR-DST activity is not submitted in this context.
+
+The collection of Universal Aftercare data is only required where organisations are providing the Universal Aftercare program.
 
 .. _introduction-combined-context:
 
@@ -109,6 +114,8 @@ In the combined context all the records described in both the
 :ref:`introduction-intake-context` and :ref:`introduction-treatment-context`
 can be submitted.
 
+The collection of Universal Aftercare data is only required where organisations are providing the Universal Aftercare program.
+
 New Records and Fields in Version 5
 -----------------------------------
 
@@ -117,41 +124,41 @@ New Records and Fields in Version 5
 UA Episode
 ^^^^^^^^^^
 
-*****Fill In*****
+For information on the UA Episode record please refer to :ref:`key-concepts-ua-episode`.
 
 .. _introduction-ua-recommendation-out:
 
 UA Recommendation Out
 ^^^^^^^^^^^^^^^^^^^^^
 
-*****Fill In*****
+For information on the UA Recommendation Out record please refer to :ref:`ua-recommendation-out-data-elements`.
 
 .. _introduction-ua-critical-incident:
 
 UA Critical Incident
 ^^^^^^^^^^^^^^^^^^^^
 
-*****Fill In*****
+For information on the UA Critical Incident record please refer to :ref:`ua-critical-incident-data-elements`.
 
 UA Plan
 ^^^^^^^
 
-*****Fill In*****
+For information on the UA Plan record please refer to :ref:`ua-plan-data-elements`.
 
 UA Needs Identification
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-*****Fill In*****
+For information on the UA Needs Identification record please refer to :ref:`key-concepts-ua-needs-identification`.
 
 SIDAS
 ^^^^^
 
-*****Fill In*****
+For information on the UA Recommendation Out record please refer to :ref:`sidas-data-elements`.
 
 WHO-5
 ^^^^^
 
-*****Fill In*****
+For information on the UA Recommendation Out record please refer to :ref:`who5-data-elements`.
 
 
 Data release and confidentiality

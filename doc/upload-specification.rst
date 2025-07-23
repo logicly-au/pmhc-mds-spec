@@ -325,6 +325,111 @@ Data elements for the practitioner upload file/worksheet are defined at
 Example Practitioner files can be found in the Treatment or Combined
 example files at :ref:`example-upload-files`.
 
+.. _ua-episode-format:
+
+UA Episode file format
+^^^^^^^^^^^^^^^^^^^^^^
+The UA Episode file/worksheet is required where Episodes
+using the '9: Universal Aftercare' Program Type are included in the upload.
+It is optional otherwise. There is no harm in
+including it in every upload.
+
+Data elements for the UA Episode upload file/worksheet are defined at
+:ref:`ua-episode-data-elements`.
+
+Example UA Episode files can be found in the Treatment or Combined
+example files at :ref:`example-upload-files`.
+
+.. _ua-recommendation-out-format:
+
+UA Recommendation Out file format
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The UA Recommendation Out file/worksheet is required where Episodes
+using the '9: Universal Aftercare' Program Type are included in the upload.
+It is optional otherwise. There is no harm in
+including it in every upload.
+
+Data elements for the UA Recommendation Out upload file/worksheet are defined at
+:ref:`ua-recommendation-out-data-elements`.
+
+Example UA Recommendation Out files can be found in the Treatment or Combined
+example files at :ref:`example-upload-files`.
+
+.. _ua-critical-incident-format:
+
+UA Critical Incident file format
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The UA Critical Incident file/worksheet is required where Episodes
+using the '9: Universal Aftercare' Program Type are included in the upload.
+It is optional otherwise. There is no harm in
+including it in every upload.
+
+Data elements for the UA Critical Incident upload file/worksheet are defined at
+:ref:`ua-critical-incident-data-elements`.
+
+Example UA Critical Incident files can be found in the Treatment or Combined
+example files at :ref:`example-upload-files`.
+
+.. _ua-plan-format:
+
+UA Plan file format
+^^^^^^^^^^^^^^^^^^^
+The UA Plan file/worksheet is required where Episodes
+using the '9: Universal Aftercare' Program Type are included in the upload.
+It is optional otherwise. There is no harm in
+including it in every upload.
+
+Data elements for the UA Plan upload file/worksheet are defined at
+:ref:`ua-plan-data-elements`.
+
+Example UA Plan files can be found in the Treatment or Combined
+example files at :ref:`example-upload-files`.
+
+.. _ua-needs-identification-format:
+
+UA Needs Identification file format
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The UA Needs Identification file/worksheet is required where Episodes
+using the '9: Universal Aftercare' Program Type are included in the upload.
+It is optional otherwise. There is no harm in
+including it in every upload.
+
+Data elements for the UA Needs Identification upload file/worksheet are defined at
+:ref:`ua-needs-identification-data-elements`.
+
+Example UA Needs Identification files can be found in the Treatment or Combined
+example files at :ref:`example-upload-files`.
+
+.. _sidas-format:
+
+SIDAS file format
+^^^^^^^^^^^^^^^^^
+The SIDAS file/worksheet is required where Episodes
+using the '9: Universal Aftercare' Program Type are included in the upload.
+It is optional otherwise. There is no harm in
+including it in every upload.
+
+Data elements for the SIDAS upload file/worksheet are defined at
+:ref:`sidas-data-elements`.
+
+Example SIDAS files can be found in the Treatment or Combined
+example files at :ref:`example-upload-files`.
+
+.. _who5-format:
+
+WHO-5 file format
+^^^^^^^^^^^^^^^^^
+The WHO-5 file/worksheet is required where Episodes
+using the '9: Universal Aftercare' Program Type are included in the upload.
+It is optional otherwise. There is no harm in
+including it in every upload.
+
+Data elements for the WHO-5 upload file/worksheet are defined at
+:ref:`who5-data-elements`.
+
+Example WHO-5 files can be found in the Treatment or Combined
+example files at :ref:`example-upload-files`.
+
 .. _example-upload-files:
 
 Example Upload files
@@ -377,8 +482,8 @@ Please email support@pmhc-mds.com if you need to delete an organisation.
 
 Example files showing how to delete via upload:
 
-- `XLSX file containing all the worksheets <_static/example-files/PMHC-4-0-combined-delete.xlsx>`_.
-- `CSV zip containing all the csv files  <_static/example-files/PMHC-4-0-combined-delete.zip>`_.
+- `XLSX file containing all the worksheets <_static/example-files/PMHC-5-0-combined-delete.xlsx>`_.
+- `CSV zip containing all the csv files  <_static/example-files/PMHC-5-0-combined-delete.zip>`_.
 
 
 Frequently Asked Questions

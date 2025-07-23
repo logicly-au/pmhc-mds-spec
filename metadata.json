@@ -300,11 +300,11 @@
     "url": "table/measure/iar-dst/practitioner-reason-for-override.csv",
     "tableSchema": "table/measure/iar-dst/practitioner-reason-for-override.json"
   }, {
-    "url": "table/ua-episode/ua-external-evaluator-contact-consent.csv",
-    "tableSchema": "table/ua-episode/ua-external-evaluator-contact-consent.json"
+    "url": "table/ua-episode/external-evaluator-contact-consent.csv",
+    "tableSchema": "table/ua-episode/external-evaluator-contact-consent.json"
   }, {
-    "url": "table/ua-episode/ua-eligibility-type.csv",
-    "tableSchema": "table/ua-episode/ua-eligibility-type.json"
+    "url": "table/ua-episode/eligibility-type.csv",
+    "tableSchema": "table/ua-episode/eligibility-type.json"
   }, {
     "url": "table/ua-episode/primary-nominated-professional.csv",
     "tableSchema": "table/ua-episode/primary-nominated-professional.json"
@@ -336,8 +336,8 @@
     "url": "table/measure/ua-needs-identification/needs-identification-type.csv",
     "tableSchema": "table/measure/ua-needs-identification/needs-identification-type.json"
   }, {
-    "url": "table/measure/ua-plan/ua-plan-type.csv",
-    "tableSchema": "table/measure/ua-plan/ua-plan-type.json"
+    "url": "table/measure/ua-plan/plan-type.csv",
+    "tableSchema": "table/measure/ua-plan/plan-type.json"
   }, {
     "url": "table/measure/who5.csv",
     "tableSchema": "table/measure/who5.json"
