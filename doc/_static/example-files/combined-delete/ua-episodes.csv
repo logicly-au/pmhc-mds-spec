@@ -1,0 +1,3 @@
+organisation_path,episode_key,delete,sexual_orientation,transgender_status,intersex_status,eligibility_type,external_evaluator_contact_consent,primary_nominated_professional,primary_nominated_professional_consent_date,primary_nominated_professional_contact_entry_date,primary_nominated_professional_contact_exit_date,previous_suicide_attempts,method_of_suicide_attempt
+PHN999:IntakeTreatment01,E402,delete,,,,,,,,,,,
+PHN999:IntakeTreatment01,E406,delete,,,,,,,,,,,

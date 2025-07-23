@@ -51,10 +51,10 @@
     },
     "required": true
   },{
-    "name": "ua_needs_identification_tags",
-    "titles": [ "uua_needs_identification_tags" ],
-    "dc:title" : "UA Needs Identification Tags",
-    "schema:description": "List of tags for the collection occasion.",
+    "name": "needs_identification_tags",
+    "titles": [ "needs_identification_tags" ],
+    "dc:title" : "Needs Identification Tags",
+    "schema:description": "List of tags for the Needs Identification.",
     "schema:disambiguatingDescription": "type/tags.rst",
     "schema:dateCreated": "2025-07-16",
     "datatype": {
