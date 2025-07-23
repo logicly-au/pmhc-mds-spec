@@ -32,11 +32,12 @@ METEOR: `730859 <https://meteor.aihw.gov.au/content/730859>`__",date,"—","The 
 "`Program Type`_ (program_type)
 
 ",string,yes,":1: Flexible Funding Pool
-:2: Head to Health
-:3: AMHC
+:2: Head to Health Clinic
 :4: Psychosocial
 :5: Bushfire Recovery 2020
-:7: Supporting Recovery"
+:7: Supporting Recovery
+:8: MMHC
+:9: Universal Aftercare"
 "`Principal Focus of Treatment Plan`_ (principal_focus)
 
 ",string,yes,":1: Psychological therapy
@@ -115,6 +116,11 @@ METEOR: `291045 <https://meteor.aihw.gov.au/content/291045>`__",string,yes,":1: 
 :4: Separated
 :5: Married (registered and de facto)
 :6: Not stated/inadequately described"
+"`Veteran`_ (veteran)
+
+",string,yes,":1: Identifies as a veteran
+:2: Does not identify as a veteran
+:9: Not stated/Inadequately described"
 "`Suicide Referral Flag`_ (suicide_referral_flag)
 
 ",string,yes,":1: Yes
@@ -309,6 +315,7 @@ METEOR: `291045 <https://meteor.aihw.gov.au/content/291045>`__",string,yes,":1: 
 :22: HeadtoHelp / HeadtoHealth Hub
 :23: Other PHN funded service
 :24: AMHC
+:25: MMHC
 :99: Not stated
 
 Multiple space separated values allowed

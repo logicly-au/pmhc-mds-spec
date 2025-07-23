@@ -1,0 +1,65 @@
+"Data Element (Field Name)","Type (min,max)",Required,"Format / Values"
+"`Organisation Path`_ (organisation_path)
+
+",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client."
+"`UA Recommendation Out Key`_ (ua_recommendation_out_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each recommendation out. The Recommendation Out Key is unique and stable for each recommendation out at the lvel of the organisation."
+"`Episode Key`_ (episode_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each PMHC MDS episode. The Episode Key is unique and stable for each episode at the level of the organisation. This key must link to an existing episode within the PMHC MDS."
+"`Recommendation Out Provider Type`_ (recommendation_out_provider_type)
+
+",string,yes,":1: GP/Medical Practitioner
+:2: Hospital
+:3: Psychiatric/mental health service or facility
+:4: Alcohol and other drug treatment service
+:5: Other community/health care service
+:6: Correctional service
+:7: Police diversion
+:8: Court diversion
+:9: Legal service
+:10: Child protection agency
+:11: Community support groups/agencies
+:12: Centrelink or employment service
+:13: Housing and homelessness service
+:14: Telephone & online services/referral agency e.g. direct line
+:15: Disability support service
+:16: Aged care facility/service
+:17: Immigration department or asylum seeker/refugee support service
+:18: School/other education or training institution
+:19: Community based Drug and Alcohol Service
+:20: Youth service (non-AOD)
+:21: Indigenous service (non-AOD)
+:22: Extended care/rehabilitation facility
+:23: Palliative care service
+:24: Police (not diversion)
+:25: Public dental provider - community dental agency
+:26: Dental Hospital
+:27: Private Dental Provider
+:28: Early childhood service
+:29: Maternal and Child Health Service
+:30: Community nursing service
+:31: Emergency relief
+:32: Family support service (excl family violence)
+:33: Family violence service
+:34: Gambling support service
+:35: Maternity services
+:36: Peer support/self-help group
+:37: Private allied health provider
+:38: Sexual Assault service
+:39: Financial counsellor
+:40: Sexual health service
+:41: Medical specialist
+:97: No Recommendation
+:98: Other
+:99: Not stated/Inadequately described"
+"`Recommendation Out Status`_ (recommendation_out_status)
+
+",string,yes,":1: Client declined to take up recommendation
+:2: Service commenced
+:3: Service completed
+:4: Waitlisted
+:5: Client deceased prior to service commencement
+:98: Other
+:99: Not stated/Inadequately described"

@@ -1,0 +1,28 @@
+"Data Element (Field Name)","Type (min,max)",Required,"Format / Values"
+"`Organisation Path`_ (organisation_path)
+
+",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client."
+"`Measure Key`_ (measure_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each instance of a measure. The Measure Key is unique and stable for each instance of a measure at the level of the organisation."
+"`Collection Occasion Key`_ (collection_occasion_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each collection occasion of service activity. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation."
+"`SIDAS - Question 1`_ (sidas_item1)
+
+",string,yes,"0 - 10, 99 = Not stated / Missing"
+"`SIDAS - Question 2`_ (sidas_item2)
+
+",string,yes,"0 - 10, 98 = Not required, 99 = Not stated / Missing"
+"`SIDAS - Question 3`_ (sidas_item3)
+
+",string,yes,"0 - 10, 98 = Not required, 99 = Not stated / Missing"
+"`SIDAS - Question 4`_ (sidas_item4)
+
+",string,yes,"0 - 10, 98 = Not required, 99 = Not stated / Missing"
+"`SIDAS - Question 5`_ (sidas_item5)
+
+",string,yes,"0 - 10, 98 = Not required, 99 = Not stated / Missing"
+"`SIDAS - Tags`_ (sidas_tags)
+
+",string,"—","List of tags for the collection occasion."

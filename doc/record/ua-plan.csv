@@ -1,0 +1,17 @@
+"Data Element (Field Name)","Type (min,max)",Required,"Format / Values"
+"`Organisation Path`_ (organisation_path)
+
+",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client."
+"`UA Plan Key`_ (ua_plan_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each instance of a UA Plan. The UA Plan Key is unique and stable for each instance of a measure at the level of the organisation."
+"`Collection Occasion Key`_ (collection_occasion_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each collection occasion of service activity. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation."
+"`Plan Type`_ (plan_type)
+
+",string,yes,":1: Safety
+:2: Support"
+"`Plan Tags`_ (plan_tags)
+
+",string,"—","List of tags for the collection occasion."

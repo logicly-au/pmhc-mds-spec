@@ -18,11 +18,12 @@
 "`Program Type`_ (program_type)
 
 ",string,yes,":1: Flexible Funding Pool
-:2: Head to Health
-:3: AMHC
+:2: Head to Health Clinic
 :4: Psychosocial
 :5: Bushfire Recovery 2020
-:7: Supporting Recovery"
+:7: Supporting Recovery
+:8: MMHC
+:9: Universal Aftercare"
 "`Referrer Profession`_ (referrer_profession)
 
 ",string,yes,":1: General Practitioner
@@ -124,6 +125,7 @@
 :42: AMHC
 :43: Other PHN funded service
 :44: HeadtoHelp / HeadtoHealth
+:45: MMHC
 :97: No Referral
 :98: Other
 :99: Not stated/Inadequately described

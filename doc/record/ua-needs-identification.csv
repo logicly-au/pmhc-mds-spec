@@ -1,0 +1,44 @@
+"Data Element (Field Name)","Type (min,max)",Required,"Format / Values"
+"`Organisation Path`_ (organisation_path)
+
+",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client."
+"`UA Needs Identification Key`_ (ua_needs_identification_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each instance of a UA NI. The UA NI Key is unique and stable for each instance of a UA NI at the level of the organisation."
+"`Collection Occasion Key`_ (collection_occasion_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each collection occasion of service activity. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation."
+"`Needs Identification Type`_ (needs_identification_type)
+
+",string,yes,":1: Health (Physical)
+:2: Self-esteem
+:3: Mental Health Condition
+:4: Home
+:5: Education/Employment
+:6: Sexual/Physical/Emotional Abuse
+:7: Marital/De facto Relationship
+:8: Financial Problems
+:9: Sexual Identity/Orientation
+:10: Sense of Self
+:11: Loss of Hope
+:12: Drugs/Alcohol
+:13: Family History Mental Health Problems
+:14: Family History Suicide /Attempt
+:15: Other knowledge of suicide
+:16: Grief and Loss
+:17: Social support/sense of belonging
+:18: Coping/problem solving ability
+:19: Cultural identity
+:20: Child rearing or care taking responsibilities
+:21: Help-seeking behaviour
+:22: Religion
+:23: Self Care
+:24: Daily Structure
+:98: Other
+:99: Not stated/Inadequately described
+
+Multiple space separated values allowed
+"
+"`UA Needs Identification Tags`_ (ua_needs_identification_tags)
+
+",string,"—","List of tags for the collection occasion."

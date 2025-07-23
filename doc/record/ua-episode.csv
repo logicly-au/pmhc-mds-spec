@@ -1,0 +1,77 @@
+"Data Element (Field Name)","Type (min,max)",Required,"Format / Values"
+"`Organisation Path`_ (organisation_path)
+
+",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client."
+"`Episode Key`_ (episode_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each PMHC MDS episode. The Episode Key is unique and stable for each episode at the level of the organisation. This key must link to an existing episode within the PMHC MDS."
+"`Sexual Orientation`_ (sexual_orientation)
+
+",string,yes,":1: Straight or heterosexual
+:2: Lesbian, gay or homosexual
+:3: Bisexual or pansexual
+:4: Asexual
+:5: Questioning
+:6: Other
+:9: Not stated"
+"`Transgender Status`_ (transgender_status)
+
+",string,yes,":1: Yes
+:2: No
+:3: Does not want to disclose
+:9: Not stated / Unknown"
+"`Intersex Status`_ (intersex_status)
+
+",string,yes,":1: Yes
+:2: No
+:3: Does not want to disclose
+:9: Not stated / Unknown"
+"`Eligibility Type`_ (eligibility_type)
+
+",string,yes,":1: Primary Criteria
+:2: Secondary Criteria
+:98: Other
+:99: Not stated/Inadequately described"
+"`External Evaluator Contact Consent`_ (external_evaluator_contact_consent)
+
+",string,yes,":1: Consented to be contacted by external evaluators
+:2: Not consented to be contacted by external evaluators
+:9: Not stated/Inadequately described"
+"`Primary Nominated Professional`_ (primary_nominated_professional)
+
+",string,yes,":1: Aboriginal and Torres Strait Islander Health Practice
+:2: Medical
+:3: Nursing and Midwifery
+:4: Occupational Therapy
+:5: Psychology
+:6: Mental Health Social Worker
+:98: Other
+:99: No one nominated"
+"`Primary Nominated Professional Consent Date`_ (primary_nominated_professional_consent_date)
+
+",date,yes,"The date that the client consented to having their Primary Nominated Professional contacted."
+"`Primary Nominated Professional Contact Entry Date`_ (primary_nominated_professional_contact_entry_date)
+
+",date,yes,"The date that the client's Primary Nominated Professional was contacted after entry."
+"`Primary Nominated Professional Contact Exit Date`_ (primary_nominated_professional_contact_exit_date)
+
+",date,yes,"The date that the client's Primary Nominated Professional was contacted after client's exit."
+"`Previous suicide attempts`_ (previous_suicide_attempts)
+
+",string,yes,":1: No
+:2: Previous attempt(s) made in the past 12 months
+:3: Previous attempt(s) made prior to the last 12 months
+:4: Previous attempts made both within and prior to the last 12 months
+:7: Not known
+:9: Not stated/Inadequately described"
+"`Method of suicide attempt`_ (method_of_suicide_attempt)
+
+",string,yes,":0: Not applicable
+:1: Intentional self-poisoning
+:2: Intentional self-harm by hanging, strangulation and suffocation
+:3: Intentional self-harm by drowning and submersion
+:4: Intentional self-harm by sharp object
+:5: Intentional self-harm by Firearm
+:6: Intentional self-harm by jumping from a high place
+:98: Other
+:99: Not stated/Inadequately described"

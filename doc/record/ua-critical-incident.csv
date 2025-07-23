@@ -1,0 +1,19 @@
+"Data Element (Field Name)","Type (min,max)",Required,"Format / Values"
+"`Organisation Path`_ (organisation_path)
+
+",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client."
+"`UA Critical Incident Key`_ (ua_critical_incident_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each critical incident. The Critical Incident Key is unique and stable for each Critical Incident at the level of the organisation."
+"`Episode Key`_ (episode_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each PMHC MDS episode. The Episode Key is unique and stable for each episode at the level of the organisation. This key must link to an existing episode within the PMHC MDS."
+"`Critical Incident Type`_ (critical_incident_type)
+
+",string,yes,":1: Suicide attempt of an active client
+:2: Suicide death of an active client
+:3: Death by other cause of an active client
+:9: Not stated/Inadequately described"
+"`Critical Incident Date`_ (critical_incident_date)
+
+",date,yes,"The date the critical incident was reported to the Service Provider."

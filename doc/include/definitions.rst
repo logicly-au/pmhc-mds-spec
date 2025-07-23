@@ -147,9 +147,15 @@ The main additional condition or complaint co-existing with the Principal Diagno
   -	Diagnostic procedures
   -	Increased clinical care and/or monitoring
   
-  Where the client one or more comorbid mental health conditions in addition to
+  Where the client has one or more comorbid mental health conditions in addition to
   the condition coded as the Principal Diagnosis, record the main condition as
   the Additional Diagnosis. 
+  
+  For Universal Aftercare only episodes response `000: No additional Diagnosis` must be used.
+  
+  Where a client is being delivered Universal Aftercare services and accessing another
+  support service within the same Service Provider the full range of Additional Diagnosis responses
+  allowed for standard PMHC MDS episodes is available.
   
   The following responses have been added to allow mapping of ATAPS data to PMHC
   format.
@@ -873,6 +879,69 @@ The country in which the client was born, as represented by a code.
 
 ----------
 
+.. _dfn-critical_incident_date:
+
+Critical Incident Date
+^^^^^^^^^^^^^^^^^^^^^^
+
+The date the critical incident was reported to the Service Provider.
+
+:Field name: critical_incident_date
+
+:Data type: date
+
+:Required: yes
+
+:Notes:
+  For Date fields, data must be recorded in compliance with the standard format
+  used across the National Health Data Dictionary; specifically, dates must be
+  of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
+  necessary to pad out a value. For instance, 13th March 2008 would appear as
+  13032008.
+  
+  Requires services to record the date of when a critical incident was reported.
+  
+  If the reported date of the critical incident is unknown, 09099999 should be used.
+  
+  - The critical incident date must not be before 1st January 2019.
+  
+  - The critical incident date must not be in the future.
+  
+
+----------
+
+.. _dfn-critical_incident_type:
+
+Critical Incident Type
+^^^^^^^^^^^^^^^^^^^^^^
+
+The type of critical incident.
+
+:Field name: critical_incident_type
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Suicide attempt of an active client
+  :2: Suicide death of an active client
+  :3: Death by other cause of an active client
+  :9: Not stated/Inadequately described
+
+:Notes:
+  **Reporting requirements**
+  Mandatory where a critical incident is reported.
+  
+  **Guide for use**
+  It is acknowledged that due to the nature of the project and the reporting of
+  suicide, Beyond Blue and stakeholders may not be advised of all critical
+  incidents. It is also acknowledged that each Service Provider will have the
+  appropriate management strategies in place for handling Critical Incidents.
+  
+
+----------
+
 .. _dfn-date_client_contacted_intake:
 
 Date client contacted Intake
@@ -994,6 +1063,46 @@ The time from the start to finish of a service contact.
   
   0 - No contact took place
     Only use this code where the service contact is recorded as a no show.
+  
+
+----------
+
+.. _dfn-eligibility_type:
+
+Eligibility Type
+^^^^^^^^^^^^^^^^
+
+The criteria by which a client is assessed as being eligible for the Universal Aftercare service, as represented by a code.
+
+:Field name: eligibility_type
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Primary Criteria
+  :2: Secondary Criteria
+  :98: Other
+  :99: Not stated/Inadequately described
+
+:Notes:
+  1 - Primary Eligibility Criteria
+    The primary eligibility criteria are met when a person is referred to
+    Universal Aftercare after presenting to a hospital emergency department or
+    community mental health service following a suicide attempt. A suicide
+    attempt is defined as a “non-fatal self-directed potentially injurious
+    behaviour with any intent to die as a result of the behaviour”. A suicide
+    attempt may or may not result in physical injury and may or may not result
+    in a hospital admission.
+  
+  2 - Secondary Eligibility Criteria
+    The secondary eligibility criteria are met when a person is referred to Universal Aftercare
+    after presenting to a hospital emergency department or community
+    mental health service in or following a suicidal crisis and whose risk of
+    suicide is identified as imminent. A suicidal crisis is defined as a
+    person experiencing distress, suicidal thoughts and articulating an intent
+    to die. A suicidal crisis may or may not result in a hospital admission.
   
 
 ----------
@@ -1272,6 +1381,33 @@ The date of birth estimate flag records whether or not the client's date of birt
 
 ----------
 
+.. _dfn-external_evaluator_contact_consent:
+
+External Evaluator Contact Consent
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The status of whether the client has consented to be contacted by external evaluators, as represented by a code.
+
+:Field name: external_evaluator_contact_consent
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Consented to be contacted by external evaluators
+  :2: Not consented to be contacted by external evaluators
+  :9: Not stated/Inadequately described
+
+:Notes:
+  **Guide for use**
+  If the client consents to be contacted for the evaluation, this does not mean
+  they have to take part in any activities and can choose to withdraw their
+  consent at any time.
+  
+
+----------
+
 .. _dfn-service_contact_final:
 
 Final Service Contact
@@ -1336,10 +1472,11 @@ The source of PHN Mental Health funds that are wholly or primarily funding the S
   :21: Emergency Response - Bushfire Recovery 2020
   :22: Emergency Response - Flood 2022
   :23: Head to Health program
-  :24: Head to Health Kids Hubs
+  :24: Kids Hubs
   :25: Norfolk Island
   :26: National Suicide Prevention Trial
   :27: Way Back Support Service
+  :28: MMHC
   :73: Other Government Funding - Commonwealth: Other Commonwealth
   :97: Other funding source – no Commonwealth Funding
   :98: Unknown/Not stated
@@ -1707,6 +1844,43 @@ The individualised level of care assessed by the practitioner for the referral
 
 ----------
 
+.. _dfn-iar_dst_practitioner_reason_for_override:
+
+IAR-DST - Practitioner Reason for Override
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The reason the practitioner recommended a different level of care than the level calculated by the IAR Decision Support Tool
+
+:Field name: iar_dst_practitioner_reason_for_override
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Services availability
+  :2: Personal circumstances and preferences of the individual patient/consumer
+  :3: Clinical judgement
+  :4: Other
+  :9: Missing / Not specified
+
+:Notes:
+  The `Initial Assessment and Referral Decision Support Tool <https://iar-dst.online>`_ allows for the provision of a reason for a practitioner override of the IAR-DST level. 
+  
+  1 - Services availability
+    e.g. services at recommended level of care not available
+  
+  2 - Personal circumstances and preferences of the individual patient/consumer
+  
+  3 - Clinical judgement
+    e.g. concerns about other health, social or risk and safety issues
+  
+  4 - Other
+  
+  
+
+----------
+
 .. _dfn-iar_dst_recommended_level_of_care:
 
 IAR-DST - Recommended Level of Care
@@ -1901,6 +2075,34 @@ Whether an interpreter service was used during the Service Contact
   9 - Not stated
     Indicates that the item was not collected. This item should not appear as an
     option for clinicians, it is for administrative use only.
+  
+
+----------
+
+.. _dfn-intersex_status:
+
+Intersex Status
+^^^^^^^^^^^^^^^
+
+An indication of whether the client has an intersex status, as represented by a code.
+
+:Field name: intersex_status
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Yes
+  :2: No
+  :3: Does not want to disclose
+  :9: Not stated / Unknown
+
+:Notes:
+  **Guide for use**
+  The term intersex is used to describe people who are born with sex
+  characteristics, including genitals, gonads and chromosome patterns, that do
+  not fit typical binary notions of male and female bodies
   
 
 ----------
@@ -3224,6 +3426,11 @@ Whether the client is taking prescribed antidepressants for a mental health cond
   Details of drugs included in the category can be found here:
   http://www.whocc.no/atc_ddd_index/?code=N06A
   
+  For Universal Aftercare only episodes the response `9: Unknown` must be used.
+  
+  Where a client is being delivered Universal Aftercare services and accessing another
+  support service within the same Service Provider the full range of Medication - Antidepressants (N06A) responses
+  allowed for standard PMHC MDS episodes is available.
 
 ----------
 
@@ -3255,6 +3462,11 @@ Whether the client is taking prescribed antipsychotics for a mental health condi
   Details of drugs included in the category can be found here:
   http://www.whocc.no/atc_ddd_index/?code=N05A
   
+  For Universal Aftercare only episodes the response `9: Unknown` must be used.
+  
+  Where a client is being delivered Universal Aftercare services and accessing another
+  support service within the same Service Provider the full range of Medication - Antipsychotics (N05A) responses
+  allowed for standard PMHC MDS episodes is available.
 
 ----------
 
@@ -3286,6 +3498,11 @@ Whether the client is taking prescribed anxiolytics for a mental health conditio
   Details of drugs included in the category can be found here:
   http://www.whocc.no/atc_ddd_index/?code=N05B
   
+  For Universal Aftercare only episodes the response `9: Unknown` must be used.
+  
+  Where a client is being delivered Universal Aftercare services and accessing another
+  support service within the same Service Provider the full range of Medication - Anxiolytics (N05B) responses
+  allowed for standard PMHC MDS episodes is available.
 
 ----------
 
@@ -3318,6 +3535,11 @@ Whether the client is taking prescribed hypnotics and sedatives for a mental hea
   Details of drugs included in the category can be found here:
   http://www.whocc.no/atc_ddd_index/?code=N05C
   
+  For Universal Aftercare only episodes the response `9: Unknown` must be used.
+  
+  Where a client is being delivered Universal Aftercare services and accessing another
+  support service within the same Service Provider the full range of Medication - Hypnotics and sedatives (N05C) responses
+  allowed for standard PMHC MDS episodes is available.
 
 ----------
 
@@ -3349,6 +3571,37 @@ Whether the client is taking prescribed psychostimulants and nootropics for a me
   Details of drugs included in the category can be found here:
   http://www.whocc.no/atc_ddd_index/?code=N06B
   
+  For Universal Aftercare only episodes the response `9: Unknown` must be used.
+  
+  Where a client is being delivered Universal Aftercare services and accessing another
+  support service within the same Service Provider the full range of Medication - Psychostimulants and nootropics (N06B) responses
+  allowed for standard PMHC MDS episodes is available.
+
+----------
+
+.. _dfn-method_of_suicide_attempt:
+
+Method of suicide attempt
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Identifies the method of the most recent suicide attempt, as represented by a code.
+
+:Field name: method_of_suicide_attempt
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :0: Not applicable
+  :1: Intentional self-poisoning
+  :2: Intentional self-harm by hanging, strangulation and suffocation
+  :3: Intentional self-harm by drowning and submersion
+  :4: Intentional self-harm by sharp object
+  :5: Intentional self-harm by Firearm
+  :6: Intentional self-harm by jumping from a high place
+  :98: Other
+  :99: Not stated/Inadequately described
 
 ----------
 
@@ -3445,6 +3698,67 @@ Is the client a participant in the National Disability Insurance Scheme?, as rep
   :1: Yes
   :2: No
   :9: Not stated/inadequately described
+
+----------
+
+.. _dfn-needs_identification_type:
+
+Needs Identification Type
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The identified needs of the client at commencement or review of the service.
+
+:Field name: needs_identification_type
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Health (Physical)
+  :2: Self-esteem
+  :3: Mental Health Condition
+  :4: Home
+  :5: Education/Employment
+  :6: Sexual/Physical/Emotional Abuse
+  :7: Marital/De facto Relationship
+  :8: Financial Problems
+  :9: Sexual Identity/Orientation
+  :10: Sense of Self
+  :11: Loss of Hope
+  :12: Drugs/Alcohol
+  :13: Family History Mental Health Problems
+  :14: Family History Suicide /Attempt
+  :15: Other knowledge of suicide
+  :16: Grief and Loss
+  :17: Social support/sense of belonging
+  :18: Coping/problem solving ability
+  :19: Cultural identity
+  :20: Child rearing or care taking responsibilities
+  :21: Help-seeking behaviour
+  :22: Religion
+  :23: Self Care
+  :24: Daily Structure
+  :98: Other
+  :99: Not stated/Inadequately described
+  
+  Multiple space separated values allowed
+  
+
+:Notes:
+  **Reporting requirements**
+  The Needs Identification (NI) is a screening process where the psychosocial
+  needs of a client are identified. It provides the basis for the creation of a
+  Support Plan and is considered a useful way to help understand client support
+  needs and service goals.  The needs identified through this process should
+  inform the client’s goals and recommendations to community-based services.
+  
+  The NI must be administered at a minimum at the following points of service participation:
+  
+  * At the start of Universal Aftercare
+  * At the six-week or mid-point of the expected support period
+  * At exit from the service
+  
 
 ----------
 
@@ -3743,6 +4057,7 @@ Type of organisation to which the the client was referred at the Episode conclus
   :22: HeadtoHelp / HeadtoHealth Hub
   :23: Other PHN funded service
   :24: AMHC
+  :25: MMHC
   :99: Not stated
   
   Multiple space separated values allowed
@@ -3812,6 +4127,7 @@ Type of organisation to which the the client was referred at the Intake conclusi
   :42: AMHC
   :43: Other PHN funded service
   :44: HeadtoHelp / HeadtoHealth
+  :45: MMHC
   :97: No Referral
   :98: Other
   :99: Not stated/Inadequately described
@@ -3877,6 +4193,98 @@ An indication of who participated in the Service Contact.
   '1: Individual', :ref:`dfn-service_contact_participation_indicator` must
   have a value of '1: Yes'. :ref:`dfn-service_contact_no_show` is used to record if the
   patient failed to attend the appointment.
+  
+
+----------
+
+.. _dfn-plan_tags:
+
+Plan Tags
+^^^^^^^^^
+
+List of tags for the collection occasion.
+
+:Field name: plan_tags
+
+:Data type: string
+
+:Required: no
+
+:Notes:
+  A comma separated list of tags.
+  
+  Organisations can use this field to tag records in order to partition them as
+  per local requirements.
+  
+  Tags can contain lower case letters (or will get lowercased), numbers, dashes,
+  spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
+  nurse required, pending-outcome-1`` would all be legitimate.
+  
+  Tags beginning with an exclamation mark (!) are reserved for future use by the
+  Department. e.g. ``!reserved, ! reserved, !department-use-only``.
+  
+
+----------
+
+.. _dfn-plan_type:
+
+Plan Type
+^^^^^^^^^
+
+The type of plan.
+
+:Field name: plan_type
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Safety
+  :2: Support
+
+:Notes:
+  **1 - Safety Plan**
+  
+  Clients referred to Universal Aftercare may have commenced the process of safety
+  planning as part of their discussions with Emergency Department or Ward staff.
+  Any existing safety plans completed by hospital or staff should be shared with
+  or requested by the Universal Aftercare service provider and updated as part of
+  preliminary discussions with Universal Aftercare clients.
+  Where clients referred to Universal Aftercare have not completed any safety planning
+  prior to their referral this should be completed as a priority once the client
+  has consented to participate in Universal Aftercare.
+  
+  Safety Plans must be updated/developed within the first contact with the
+  client. Safety plans should be reviewed with a client as needed. Each instance of
+  the review and update of a safety plan should be recorded.
+  
+  Service Providers should choose the most appropriate Support Plan template for
+  their service. The TWB Tools and Templates provide a sample of one and there
+  is also the BeyondNow app.
+  
+  **2 - Support Plan**
+  
+  All Universal Aftercare service providers must work collaboratively with their clients
+  to develop a Support Plan that articulates:
+  
+  * the client’s **needs** as assessed using the Support Tools
+  * the client’s **goals** of participating in Universal Aftercare
+  * proposed **actions and interventions** planned to address identified needs
+    and goals including referrals to be made
+  
+  In developing a Support Plan, discussion with clients should consider warning
+  signs, strengths, support mechanisms and strategies that have enabled them to
+  take the next steps. Needs Identified in this process are to be grouped and
+  reported in the UA NI data collection.
+  
+  A Support Plan must be completed with a client within two weeks of their
+  consenting to participate in the service. To identify a client’s needs and
+  build an understanding of what support will be of benefit, all Support Tools
+  and Measures should be completed prior to completing the Support Plan.
+  Support Plans are also required to be reviewed at 6 weeks, or a regular basis
+  throughout the support period to ensure that strategies are current and upon
+  Service Exit. Each review must be documented.
   
 
 ----------
@@ -4106,6 +4514,171 @@ List of tags for the practitioner.
   
   Tags beginning with an exclamation mark (!) are reserved for future use by the
   Department. e.g. ``!reserved, ! reserved, !department-use-only``.
+  
+
+----------
+
+.. _dfn-previous_suicide_attempts:
+
+Previous suicide attempts
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Indicates whether the client has attempted suicide prior to this episode, as represented by a code.
+
+:Field name: previous_suicide_attempts
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: No
+  :2: Previous attempt(s) made in the past 12 months
+  :3: Previous attempt(s) made prior to the last 12 months
+  :4: Previous attempts made both within and prior to the last 12 months
+  :7: Not known
+  :9: Not stated/Inadequately described
+
+:Notes:
+  A suicide attempt is described as a non-fatal, self-directed, potentially
+  injurious behaviour with an intent to die as a result of the behaviour;
+  might not result in injury.
+  
+
+----------
+
+.. _dfn-primary_nominated_professional:
+
+Primary Nominated Professional
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Identifies the profession of the primary professional nominated by the client, as represented by a code.
+
+:Field name: primary_nominated_professional
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Aboriginal and Torres Strait Islander Health Practice
+  :2: Medical
+  :3: Nursing and Midwifery
+  :4: Occupational Therapy
+  :5: Psychology
+  :6: Mental Health Social Worker
+  :98: Other
+  :99: No one nominated
+
+:Notes:
+  The primary nominated professional of the client is the professional or
+  support worker that the client consents to be advised of their participation
+  in the Universal Aftercare Service.
+  
+  If a client does not wish for anyone to be advised then code 99 indicates no
+  consent in conjunction with 09099999 for :ref:`dfn-primary_nominated_professional_consent_date`
+  indicates no consent.
+  
+
+----------
+
+.. _dfn-primary_nominated_professional_consent_date:
+
+Primary Nominated Professional Consent Date
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The date that the client consented to having their Primary Nominated Professional contacted.
+
+:Field name: primary_nominated_professional_consent_date
+
+:Data type: date
+
+:Required: yes
+
+:Notes:
+  For Date fields, data must be recorded in compliance with the standard format
+  used across the National Health Data Dictionary; specifically, dates must be
+  of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
+  necessary to pad out a value. For instance, 13th March 2008 would appear as
+  13032008.
+  
+  If a client does not wish for anyone to be advised please use the date 09099999.
+  
+  - The consent date must not be before 1st January 2019.
+  
+  - The consent date must not be in the future.
+  
+
+----------
+
+.. _dfn-primary_nominated_professional_contact_entry_date:
+
+Primary Nominated Professional Contact Entry Date
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The date that the client's Primary Nominated Professional was contacted after entry.
+
+:Field name: primary_nominated_professional_contact_entry_date
+
+:Data type: date
+
+:Required: yes
+
+:Notes:
+  For Date fields, data must be recorded in compliance with the standard format
+  used across the National Health Data Dictionary; specifically, dates must be
+  of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
+  necessary to pad out a value. For instance, 13th March 2008 would appear as
+  13032008.
+  
+  If a client does not wish for anyone to be advised please use the date 09099999.
+  
+  - The entry date must not be before 1st January 2019.
+  
+  - The entry date must not be in the future.
+  
+  Written advice (email or letter) advising of the client’s participation in
+  The Way Back Support Service must be sent to the primary nominated professional
+  on commencement of the service. The Contact Entry Date is the date the service
+  provider initiates the communication with the primary nominated professional,
+  the date the email or letter is sent. There is a KPI requirement for this to
+  take place within 3 business days of client consent.
+  
+
+----------
+
+.. _dfn-primary_nominated_professional_contact_exit_date:
+
+Primary Nominated Professional Contact Exit Date
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The date that the client's Primary Nominated Professional was contacted after client's exit.
+
+:Field name: primary_nominated_professional_contact_exit_date
+
+:Data type: date
+
+:Required: yes
+
+:Notes:
+  For Date fields, data must be recorded in compliance with the standard format
+  used across the National Health Data Dictionary; specifically, dates must be
+  of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
+  necessary to pad out a value. For instance, 13th March 2008 would appear as
+  13032008.
+  
+  If a client does not wish for anyone to be advised please use the date 09099999.
+  
+  - The exit date must not be before 1st January 2019.
+  - The exit date must not be in the future.
+  - The exit date must not be before the entry date.
+  
+  Written advice (email or letter) advising of the client’s exit from The Way
+  Back Support Service must be sent to the primary nominated professional on exit
+  of the service. The Contact Exit Date is the date the service
+  provider sends this information to the primary nominated professional, the date
+  the email or letter is sent. There is a KPI requirement that this occurs within
+  3 business days of client exit.
   
 
 ----------
@@ -4394,6 +4967,54 @@ The range of activities that best describes the overall services intended to be 
      The treatment plan for the client is primarily based around services
      that cannot be described by other categories.
   
+  8 - Psychosocial support
+    For Universal Aftercare only episodes this value must be used.
+  
+    Episodes of care should be classified as Psychosocial Support (code 8) where
+    the treatment plan for the client is primarily based around the delivery of
+    psychosocial support services. Psychosocial support services are defined for
+    PMHC MDS purposes as services that focus on building capacity and stability
+    in one or more of the following areas:
+  
+    * social skills and friendships, family connections;
+    * managing daily living needs;
+    * financial management and budgeting;
+    * finding and maintaining a home;
+    * vocational skills and goals, including volunteering;
+    * educational and training goals;
+    * maintaining physical wellbeing, including exercise;
+    * building broader life skills including confidence and resilience.
+  
+    These services are usually delivered by a range of non-clinical providers
+    including peer support workers with lived experience of mental illness
+  
+    Services delivered to clients receiving episodes of care classified as
+    Psychosocial Support may receive the full range of services as described in
+    the Service Contact Type data item, for example, assessment,
+    care coordination and so forth.  However, in general, where the Principal
+    Focus of Treatment Plan is coded as Psychosocial Support there should be an
+    expectation that the majority of services provided will be of a psychosocial
+    support nature. Further details on the relationship between the episode of
+    care concept and service contacts is available at
+    https://docs.pmhc-mds.com/faqs/concepts-processes/data-definitions.html#episode-one-at-a-time
+  
+    PHNs may wish to advise specific commissioned organisations solely funded
+    from their Psychosocial Support Schedule that all episodes of care should be
+    coded as Psychosocial Support, or leave it to the discretion of service providers.
+  
+    Clients who are recorded as NDIS recipients would not usually be recorded as
+    receiving a Psychosocial Support episode of care.  The National Psychosocial
+    Support guidance material states explicitly that these services are designed
+    for individuals who have significant psychosocial disability but do not meet
+    NDIS eligibility criteria.
+  
+    Episodes of care delivered to individuals who are recorded as Continuity of
+    Support clients (see below) may be reported as Psychosocial Support.
+  
+  Where a client is being delivered Universal Aftercare services and accessing another
+  support service within the same Service Provider the
+  Principal Focus of Treatment Plan responses
+  allowed for standard PMHC MDS episodes is available.
 
 ----------
 
@@ -4448,11 +5069,12 @@ The overarching program area that an Intake or Episode record is associated with
 
 :Domain:
   :1: Flexible Funding Pool
-  :2: Head to Health
-  :3: AMHC
+  :2: Head to Health Clinic
   :4: Psychosocial
   :5: Bushfire Recovery 2020
   :7: Supporting Recovery
+  :8: MMHC
+  :9: Universal Aftercare
 
 :Notes:
   1 - Flexible Funding Pool
@@ -4462,7 +5084,8 @@ The overarching program area that an Intake or Episode record is associated with
     is not limited to general Stepped Care, Mental Health in Residential Aged
     Care Facilities, and Indigenous Mental Health.
   
-  2 - Head to Health
+  2 - Head to Health Clinic
+    ******Update this with wording from DoHDA*******
     Organisations can use this field for episodes delivered through the Head to
     Health Program. This includes Head to Health Adult Centres and Satellites
     and pop-up clinics.
@@ -4474,34 +5097,6 @@ The overarching program area that an Intake or Episode record is associated with
     reserved tag for the original purpose of indicating that an episode has
     occurred as result of the COVID-19 pandemic once Head to Help Version 3
     extension reaches it’s end of life date.
-  
-  3 - AMHC
-    Organisations can use this field for episodes delivered through the Head to
-    Health Program by organisations that were already delivering the Adult
-    Mental Health Centre (AMHC) trial sites.
-  
-    This change only applies to the following PHNs implementing AMHCs from
-    December 2021:
-  
-    * West Victoria PHN
-    * Northern Territory PHN
-    * ACT PHN
-    * North Perth PHN
-    * Nepean Blue Mountains PHN
-    * North Queensland PHN
-    * Tasmania PHN
-  
-    AMHC data has been identified using the !amhc tag. Any historical records
-    created on or before 30 June 2022 that use this tag will be mapped to this
-    Program Type under the Version 4 specification. The !amhc tag will be
-    removed from future use once PMHC MDS Version 2 specification reaches
-    it’s end of life date.
-  
-    From July 1 2022 the AMHC trial sites were consolidated under the Head to
-    Health program. For data collection purposes, organisations delivering
-    Head to Health services that were already delivering AMHC trial sites can
-    use either the AMHC or Head to Health program type for records created
-    on or after 1 July 2022.
   
   4 - Psychosocial
     Organisations can use this field for episodes delivered through the National
@@ -4529,20 +5124,127 @@ The overarching program area that an Intake or Episode record is associated with
     the Version 4 specification. The !br20 tag will be removed from future
     use once the Bushfire Program is concluded.
   
-    7 - Supporting Recovery
-      Valid as of May 2024. Organisations can use this field for supports 
-      being provided under the Supporting Recovery pilot. The Supporting 
-      Recovery pilot provides case management services and trauma-informed 
-      mental health services to victim-survivors of family, domestic and 
-      sexual violence. As at April 2024, only the following PHNs are 
-      able to provide services under this pilot:
+  7 - Supporting Recovery
+    Valid as of May 2024. Organisations can use this field for supports 
+    being provided under the Supporting Recovery pilot. The Supporting 
+    Recovery pilot provides case management services and trauma-informed 
+    mental health services to victim-survivors of family, domestic and 
+    sexual violence. As at April 2024, only the following PHNs are 
+    able to provide services under this pilot:
   
-      * Gippsland PHN
-      * Hunter New England and Central Coast PHN
-      * Southwestern Sydney PHN
-      * Brisbane South PHN
-      * Northern Territory PHN, and
-      * Country Western Australia PHN.
+    * Gippsland PHN
+    * Hunter New England and Central Coast PHN
+    * Southwestern Sydney PHN
+    * Brisbane South PHN
+    * Northern Territory PHN, and
+    * Country Western Australia PHN.
+  
+  8 - MMHC
+    Valid as of ?? 2025. *********DoHDA to provide text***********
+  
+  9 - Universal Aftercare
+    Valid as of ?? 2025. *********DoHDA to provide text***********
+
+----------
+
+.. _dfn-recommendation_out_provider_type:
+
+Recommendation Out Provider Type
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Identifies the type of external service(s) that the client has been recommended to from the Universal Aftercare service during their Episode of care, as represented by a code.
+
+:Field name: recommendation_out_provider_type
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: GP/Medical Practitioner
+  :2: Hospital
+  :3: Psychiatric/mental health service or facility
+  :4: Alcohol and other drug treatment service
+  :5: Other community/health care service
+  :6: Correctional service
+  :7: Police diversion
+  :8: Court diversion
+  :9: Legal service
+  :10: Child protection agency
+  :11: Community support groups/agencies
+  :12: Centrelink or employment service
+  :13: Housing and homelessness service
+  :14: Telephone & online services/referral agency e.g. direct line
+  :15: Disability support service
+  :16: Aged care facility/service
+  :17: Immigration department or asylum seeker/refugee support service
+  :18: School/other education or training institution
+  :19: Community based Drug and Alcohol Service
+  :20: Youth service (non-AOD)
+  :21: Indigenous service (non-AOD)
+  :22: Extended care/rehabilitation facility
+  :23: Palliative care service
+  :24: Police (not diversion)
+  :25: Public dental provider - community dental agency
+  :26: Dental Hospital
+  :27: Private Dental Provider
+  :28: Early childhood service
+  :29: Maternal and Child Health Service
+  :30: Community nursing service
+  :31: Emergency relief
+  :32: Family support service (excl family violence)
+  :33: Family violence service
+  :34: Gambling support service
+  :35: Maternity services
+  :36: Peer support/self-help group
+  :37: Private allied health provider
+  :38: Sexual Assault service
+  :39: Financial counsellor
+  :40: Sexual health service
+  :41: Medical specialist
+  :97: No Recommendation
+  :98: Other
+  :99: Not stated/Inadequately described
+
+:Notes:
+  It is best to record the recommendation information as soon as the client is
+  recommended to an agency/community service as it may be difficult to track this
+  information later.
+  
+  To assist staff, service providers may find it useful to make a list of the
+  agencies from which they most frequently send recommendations and note the
+  corresponding Source of Recommendation code.
+  Report the Recommendation starting with the most relevant or urgent one first.
+  
+
+----------
+
+.. _dfn-recommendation_out_status:
+
+Recommendation Out Status
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Identifies the final status of external service recommendations made to the client, as represented by a code.
+
+:Field name: recommendation_out_status
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Client declined to take up recommendation
+  :2: Service commenced
+  :3: Service completed
+  :4: Waitlisted
+  :5: Client deceased prior to service commencement
+  :98: Other
+  :99: Not stated/Inadequately described
+
+:Notes:
+  It is only necessary to complete this field when initially recommending and
+  again, when closing the episode. There is no requirement to keep it updated
+  as a recommendation progresses.
   
 
 ----------
@@ -6555,6 +7257,212 @@ The main type of service provided in the service contact, as represented by the 
 
 ----------
 
+.. _dfn-sexual_orientation:
+
+Sexual Orientation
+^^^^^^^^^^^^^^^^^^
+
+Identifies how the client describes their sexual orientation, as represented by a code.
+
+:Field name: sexual_orientation
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Straight or heterosexual
+  :2: Lesbian, gay or homosexual
+  :3: Bisexual or pansexual
+  :4: Asexual
+  :5: Questioning
+  :6: Other
+  :9: Not stated
+
+:Notes:
+  Sexual orientation encompasses several dimensions of sexuality including
+  sexual identity, attraction and behavior, and refers to a person’s
+  emotional, physical and/or sexual attraction to another person.
+  
+  **Definitions of terms**
+  
+  Lesbian
+    The term lesbian is used to describe a person identifying as a woman who
+    is romantically and/or sexually attracted to other women.
+  
+  Gay
+    The term gay is used to describe a person identifying as a man who is
+    romantically and/or sexually attracted to other men.
+  
+  Bisexual
+    The term bisexual is used to describe a person of any gender who is
+    romantically and/or sexually attracted to people or more than one gender.
+    Some people who fit this description prefer the terms ‘queer’ or
+    Pansexual, in recognition of more than two genders. It may also be
+    defined as romantic or sexual attraction to people of any sex or gender
+    identity, which is also known as pansexuality.
+  
+  Asexual
+    Asexual is a sexual orientation defined by a lack of sexual attraction to
+    any person of any gender.
+  
+  Questioning
+    Is a process of exploration by people who may be unsure, still exploring,
+    and concerned about applying a social label to themselves for various reasons.
+  
+  More information on collecting LGBTI inclusive data collection can be found
+  at: https://meridianact.org.au/wp-content/uploads/LGBTIQ-Inclusive-Data-Collection-a-Guide.pdf
+  
+
+----------
+
+.. _dfn-sidas_item1:
+
+SIDAS - Question 1
+^^^^^^^^^^^^^^^^^^
+
+In the past month, how often have you had thoughts about suicide?
+
+:Field name: sidas_item1
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  0 - 10, 99 = Not stated / Missing
+
+:Notes:
+  0 = Never, 10 = Always
+  
+  Respondents who respond “0 – Never” to the first item skip all remaining items
+  and score a total of zero. Refer to :ref:`SIDAS Current Validations <sidas-current-validations>`
+  for information about how this is enforced in the PMHC MDS.
+  
+
+----------
+
+.. _dfn-sidas_item2:
+
+SIDAS - Question 2
+^^^^^^^^^^^^^^^^^^
+
+In the past month, how much control have you had over these thoughts?
+
+:Field name: sidas_item2
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  0 - 10, 98 = Not required, 99 = Not stated / Missing
+
+:Notes:
+  0 = No control, 10 = Full control
+  
+  Controllability is reversed scored (10=0, 9=1, …, 0=10), however responses
+  must not be reversed before entering data into the PMHC MDS. The PMHC MDS will
+  reverse this item when calculating the total score.
+  
+
+----------
+
+.. _dfn-sidas_item3:
+
+SIDAS - Question 3
+^^^^^^^^^^^^^^^^^^
+
+In the past month, how close have you come to making an attempt?
+
+:Field name: sidas_item3
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  0 - 10, 98 = Not required, 99 = Not stated / Missing
+
+:Notes:
+  0 = Not close at all, 10 = Made an attempt
+  
+
+----------
+
+.. _dfn-sidas_item4:
+
+SIDAS - Question 4
+^^^^^^^^^^^^^^^^^^
+
+In the past month, to what extent have you felt tormented by thoughts about suicide?
+
+:Field name: sidas_item4
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  0 - 10, 98 = Not required, 99 = Not stated / Missing
+
+:Notes:
+  0 = Not at all, 10 = Extremely
+  
+
+----------
+
+.. _dfn-sidas_item5:
+
+SIDAS - Question 5
+^^^^^^^^^^^^^^^^^^
+
+In the past month, how much have thoughts about suicide interfered with your ability to carry out daily activities, such as work, household tasks or social activities?
+
+:Field name: sidas_item5
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  0 - 10, 98 = Not required, 99 = Not stated / Missing
+
+:Notes:
+  0 = Not at all, 10 = Extremely
+  
+
+----------
+
+.. _dfn-sidas_tags:
+
+SIDAS - Tags
+^^^^^^^^^^^^
+
+List of tags for the collection occasion.
+
+:Field name: sidas_tags
+
+:Data type: string
+
+:Required: no
+
+:Notes:
+  A comma separated list of tags.
+  
+  Organisations can use this field to tag records in order to partition them as
+  per local requirements.
+  
+  Tags can contain lower case letters (or will get lowercased), numbers, dashes,
+  spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
+  nurse required, pending-outcome-1`` would all be legitimate.
+  
+  Tags beginning with an exclamation mark (!) are reserved for future use by the
+  Department. e.g. ``!reserved, ! reserved, !department-use-only``.
+  
+
+----------
+
 .. _dfn-sites:
 
 Sites
@@ -6761,6 +7669,144 @@ Identifies those individuals where a recent history of suicide attempt, or suici
 
 ----------
 
+.. _dfn-transgender_status:
+
+Transgender Status
+^^^^^^^^^^^^^^^^^^
+
+An indication of whether the client has a transgender history, experience or identity , as represented by a code.
+
+:Field name: transgender_status
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Yes
+  :2: No
+  :3: Does not want to disclose
+  :9: Not stated / Unknown
+
+:Notes:
+  The term transgender is used to describe people whose gender
+  identity does not align with the sex they were assigned at birth.
+  
+  Non-binary genders also fit under this umbrella term, as well as under
+  the term gender diverse.
+  
+
+----------
+
+.. _dfn-ua_critical_incident_key:
+
+UA Critical Incident Key
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+This is a number or code assigned to each critical incident. The Critical Incident Key is unique and stable for each Critical Incident at the level of the organisation.
+
+:Field name: ua_critical_incident_key
+
+:Data type: string (2,50)
+
+:Required: yes
+
+:Notes:
+  UA Critical Incident Keys must be generated by the organisation to be unique at the Provider
+  Organisation level and must persist across time.  See
+  :ref:`Identifier Management <identifier_management>`
+
+----------
+
+.. _dfn-ua_needs_identification_key:
+
+UA Needs Identification Key
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This is a number or code assigned to each instance of a UA NI. The UA NI Key is unique and stable for each instance of a UA NI at the level of the organisation.
+
+:Field name: ua_needs_identification_key
+
+:Data type: string (2,50)
+
+:Required: yes
+
+:Notes:
+  Needs Identification Keys must be generated by the organisation to be unique at the Provider
+  Organisation level and must persist across time.  See
+  :ref:`Identifier Management <identifier_management>`
+
+----------
+
+.. _dfn-ua_needs_identification_tags:
+
+UA Needs Identification Tags
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+List of tags for the collection occasion.
+
+:Field name: ua_needs_identification_tags
+
+:Data type: string
+
+:Required: no
+
+:Notes:
+  A comma separated list of tags.
+  
+  Organisations can use this field to tag records in order to partition them as
+  per local requirements.
+  
+  Tags can contain lower case letters (or will get lowercased), numbers, dashes,
+  spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
+  nurse required, pending-outcome-1`` would all be legitimate.
+  
+  Tags beginning with an exclamation mark (!) are reserved for future use by the
+  Department. e.g. ``!reserved, ! reserved, !department-use-only``.
+  
+
+----------
+
+.. _dfn-ua_plan_key:
+
+UA Plan Key
+^^^^^^^^^^^
+
+This is a number or code assigned to each instance of a UA Plan. The UA Plan Key is unique and stable for each instance of a measure at the level of the organisation.
+
+:Field name: ua_plan_key
+
+:Data type: string (2,50)
+
+:Required: yes
+
+:Notes:
+  Plan Keys must be generated by the organisation to be unique at the Provider
+  Organisation level and must persist across time.  See
+  :ref:`Identifier Management <identifier_management>`
+
+----------
+
+.. _dfn-ua_recommendation_out_key:
+
+UA Recommendation Out Key
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This is a number or code assigned to each recommendation out. The Recommendation Out Key is unique and stable for each recommendation out at the lvel of the organisation.
+
+:Field name: ua_recommendation_out_key
+
+:Data type: string (2,50)
+
+:Required: yes
+
+:Notes:
+  UA Recommendation Out Keys must be generated by the organisation to be unique at the Provider
+  Organisation level and must persist across time.  See
+  :ref:`Identifier Management <identifier_management>`
+
+----------
+
 .. _dfn-value:
 
 Value
@@ -6840,6 +7886,195 @@ Where the service contact was delivered, as represented by a code.
   episode of care types recorded under the Principal Focus of Treatment Plan
   may apply; similarly, service contacts delivered to aged care residents may
   be any of the options available in Service Contact Type field.
+  
+
+----------
+
+.. _dfn-veteran:
+
+Veteran
+^^^^^^^
+
+An indication of whether the client identifies as a veteran, as represented by a code.
+
+:Field name: veteran
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Identifies as a veteran
+  :2: Does not identify as a veteran
+  :9: Not stated/Inadequately described
+
+----------
+
+.. _dfn-who5_item1:
+
+WHO-5 - Question 1
+^^^^^^^^^^^^^^^^^^
+
+I have felt cheerful and in good spirits
+
+:Field name: who5_item1
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :0: At no time
+  :1: Some of the time
+  :2: Less than half of the time
+  :3: More than half of the time
+  :4: Most of the time
+  :5: All of the time
+  :9: Not stated / Missing
+
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
+
+----------
+
+.. _dfn-who5_item2:
+
+WHO-5 - Question 2
+^^^^^^^^^^^^^^^^^^
+
+I have felt calm and relaxed
+
+:Field name: who5_item2
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :0: At no time
+  :1: Some of the time
+  :2: Less than half of the time
+  :3: More than half of the time
+  :4: Most of the time
+  :5: All of the time
+  :9: Not stated / Missing
+
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
+
+----------
+
+.. _dfn-who5_item3:
+
+WHO-5 - Question 3
+^^^^^^^^^^^^^^^^^^
+
+I have felt active and vigorous
+
+:Field name: who5_item3
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :0: At no time
+  :1: Some of the time
+  :2: Less than half of the time
+  :3: More than half of the time
+  :4: Most of the time
+  :5: All of the time
+  :9: Not stated / Missing
+
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
+
+----------
+
+.. _dfn-who5_item4:
+
+WHO-5 - Question 4
+^^^^^^^^^^^^^^^^^^
+
+I woke up feeling fresh and rested
+
+:Field name: who5_item4
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :0: At no time
+  :1: Some of the time
+  :2: Less than half of the time
+  :3: More than half of the time
+  :4: Most of the time
+  :5: All of the time
+  :9: Not stated / Missing
+
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
+
+----------
+
+.. _dfn-who5_item5:
+
+WHO-5 - Question 5
+^^^^^^^^^^^^^^^^^^
+
+My daily life has been filled with things that interest me
+
+:Field name: who5_item5
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :0: At no time
+  :1: Some of the time
+  :2: Less than half of the time
+  :3: More than half of the time
+  :4: Most of the time
+  :5: All of the time
+  :9: Not stated / Missing
+
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
+
+----------
+
+.. _dfn-who5_tags:
+
+WHO-5 - Tags
+^^^^^^^^^^^^
+
+List of tags for the collection occasion.
+
+:Field name: who5_tags
+
+:Data type: string
+
+:Required: no
+
+:Notes:
+  A comma separated list of tags.
+  
+  Organisations can use this field to tag records in order to partition them as
+  per local requirements.
+  
+  Tags can contain lower case letters (or will get lowercased), numbers, dashes,
+  spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
+  nurse required, pending-outcome-1`` would all be legitimate.
+  
+  Tags beginning with an exclamation mark (!) are reserved for future use by the
+  Department. e.g. ``!reserved, ! reserved, !department-use-only``.
   
 
 ----------
