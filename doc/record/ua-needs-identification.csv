@@ -39,6 +39,6 @@
 
 Multiple space separated values allowed
 "
-"`UA Needs Identification Tags`_ (ua_needs_identification_tags)
+"`Needs Identification Tags`_ (needs_identification_tags)
 
-",string,"—","List of tags for the collection occasion."
+",string,"—","List of tags for the Needs Identification."
