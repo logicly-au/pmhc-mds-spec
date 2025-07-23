@@ -297,6 +297,9 @@
     "url": "table/measure/iar-dst/recommended-level-of-care.csv",
     "tableSchema": "table/measure/iar-dst/iar-dst.json"
   }, {
+    "url": "table/measure/iar-dst/practitioner-level-of-care.csv",
+    "tableSchema": "table/measure/iar-dst/iar-dst.json"
+  }, {
     "url": "table/measure/iar-dst/practitioner-reason-for-override.csv",
     "tableSchema": "table/measure/iar-dst/practitioner-reason-for-override.json"
   }, {
