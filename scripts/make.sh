@@ -19,10 +19,10 @@ echo "Making example files"
 pushd .
 cd doc/_static/example-files
 rm -fv *.zip
-zip PMHC-4-1-combined.zip combined/*
-zip PMHC-4-1-intake.zip intake/*
-zip PMHC-4-1-treatment.zip treatment/*
-zip PMHC-4-1-combined-delete.zip combined-delete/*
+zip PMHC-5-0-combined.zip combined/*
+zip PMHC-5-0-intake.zip intake/*
+zip PMHC-5-0-treatment.zip treatment/*
+zip PMHC-5-0-combined-delete.zip combined-delete/*
 popd
 
 # make zip file

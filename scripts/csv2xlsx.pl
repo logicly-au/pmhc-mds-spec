@@ -17,7 +17,7 @@ EOT
     ;
 our ($example_dir, $help, $delete, $context);
 
-my $version = "4-1";
+my $version = "5-0";
 
 GetOptions(
   'help|?|h'  => \$help,
@@ -55,7 +55,14 @@ if ($delete) {
         'SDQ'                           => "$example_dir/$context/sdq.csv",
         'Service Contacts'              => "$example_dir/$context/service-contacts.csv",
         'Service Contact Practitioners' => "$example_dir/$context/service-contact-practitioners.csv",
-        'Practitioners'                 => "$example_dir/$context/practitioners.csv"
+        'Practitioners'                 => "$example_dir/$context/practitioners.csv",
+        'UA Episodes'                   => "$example_dir/$context/ua-episodes.csv",
+        'UA Recommendation Outs'        => "$example_dir/$context/ua-recommendation-outs.csv",
+        'UA Critical Incidents'         => "$example_dir/$context/ua-critical-incidents.csv",
+        'UA Plans'                      => "$example_dir/$context/ua-plans.csv",
+        'UA Needs Identifications'      => "$example_dir/$context/ua-needs-identifications.csv",
+        'SIDAS'                         => "$example_dir/$context/sidas.csv",
+        'WHO-5'                         => "$example_dir/$context/who5.csv"
     );
 } else {
   if ( $context eq "intake" ) {
@@ -79,7 +86,14 @@ if ($delete) {
           'SDQ'                           => "$example_dir/$context/sdq.csv",
           'Service Contacts'              => "$example_dir/$context/service-contacts.csv",
           'Service Contact Practitioners' => "$example_dir/$context/service-contact-practitioners.csv",
-          'Practitioners'                 => "$example_dir/$context/practitioners.csv"
+          'Practitioners'                 => "$example_dir/$context/practitioners.csv",
+          'UA Episodes'                   => "$example_dir/$context/ua-episodes.csv",
+          'UA Recommendation Outs'        => "$example_dir/$context/ua-recommendation-outs.csv",
+          'UA Critical Incidents'         => "$example_dir/$context/ua-critical-incidents.csv",
+          'UA Plans'                      => "$example_dir/$context/ua-plans.csv",
+          'UA Needs Identifications'      => "$example_dir/$context/ua-needs-identifications.csv",
+          'SIDAS'                         => "$example_dir/$context/sidas.csv",
+          'WHO-5'                         => "$example_dir/$context/who5.csv"
       );
   } elsif ( $context eq "combined" ) {
       %csvfiles = (
@@ -96,7 +110,14 @@ if ($delete) {
           'SDQ'                           => "$example_dir/$context/sdq.csv",
           'Service Contacts'              => "$example_dir/$context/service-contacts.csv",
           'Service Contact Practitioners' => "$example_dir/$context/service-contact-practitioners.csv",
-          'Practitioners'                 => "$example_dir/$context/practitioners.csv"
+          'Practitioners'                 => "$example_dir/$context/practitioners.csv",
+          'UA Episodes'                   => "$example_dir/$context/ua-episodes.csv",
+          'UA Recommendation Outs'        => "$example_dir/$context/ua-recommendation-outs.csv",
+          'UA Critical Incidents'         => "$example_dir/$context/ua-critical-incidents.csv",
+          'UA Plans'                      => "$example_dir/$context/ua-plans.csv",
+          'UA Needs Identifications'      => "$example_dir/$context/ua-needs-identifications.csv",
+          'SIDAS'                         => "$example_dir/$context/sidas.csv",
+          'WHO-5'                         => "$example_dir/$context/who5.csv"
       );
   } else {
     print "Unknown context: $context. Context must be  one of [intake, treatment, combined]\n";
