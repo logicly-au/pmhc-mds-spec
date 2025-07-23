@@ -1,4 +1,4 @@
-organisation_path,ua_needs_identification_key,collection_occasion_key,needs_identification_type,plan_tags
+organisation_path,ua_needs_identification_key,collection_occasion_key,needs_identification_type,needs_identification_tags
 PHN999:IntakeTreatment01,UANI001,CO403,1,
-PHN999:IntakeTreatment01,UANI001,CO403,2,
-PHN999:IntakeTreatment01,UANI001,CO403,23,
+PHN999:IntakeTreatment01,UANI002,CO403,2,
+PHN999:IntakeTreatment01,UANI003,CO403,23,
