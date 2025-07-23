@@ -18,25 +18,25 @@ PMHC MDS Version 5.0 data specifications are as follows:
 
 * The following changes have been made to support Universal Aftercare:
 
-  - In order to support Universal Aftercare a '9: Universal Aftercare' response has been added to the
+  - In order to support Universal Aftercare a `9: Universal Aftercare`` response has been added to the
     :ref:`dfn-program_type` field on both the Intake and Episode tables.
   - Seven entirely new tables have been added. These tables only need to be submitted where Episodes
     using the new '9: Universal Aftercare' Program Type are included.
 
-    * :ref:`ua-episode-data-elements`,
-    * :ref:`ua-recommendation-out-data-elements`,
-    * :ref:`ua-critical-incident-data-elements`,
-    * :ref:`ua-plan-data-elements`,
-    * :ref:`ua-needs-identification-data-elements`,
-    * :ref:`sidas-data-elements`,
-    * :ref:`who5-data-elements`.
+    * :ref:`ua-episode-data-elements`
+    * :ref:`ua-recommendation-out-data-elements`
+    * :ref:`ua-critical-incident-data-elements`
+    * :ref:`ua-plan-data-elements`
+    * :ref:`ua-needs-identification-data-elements`
+    * :ref:`sidas-data-elements`
+    * :ref:`who5-data-elements`
 
 * AMHC and Head to Health have been rebranded as Medicare Mental Health Centres (MMHC). Version 4.1.1 introduced the
   `8: MMHC` reponse for :ref:`dfn-program_type`. The following changes have been applied to the :ref:`dfn-program_type` field on both
   the Intake and Episode tables:
 
-  - '2: Head to Health' renamed to `2: Head to Health Clinic`. This response is only to be used by organisations commissioned by Victorian PHNs. Please refer to :ref:`dfn-program_type` for more information.
-  - '3: AMHC' has been retired. An error will be returned if this response is used.
+  - `2: Head to Health` renamed to `2: Head to Health Clinic`. This response is only to be used by organisations commissioned by Victorian PHNs. Please refer to :ref:`dfn-program_type` for more information.
+  - `3: AMHC` has been retired. An error will be returned if this response is used.
 
 * A new :ref:`dfn-veteran` field has been added to the Episode table. This field was included in The Way Back specification. 
   There is a new IAR-DST varient in development for Veterans. Veterans has been included on the Episode table instead of 

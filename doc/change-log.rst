@@ -3,45 +3,52 @@
 Data Specification Change log
 =============================
 
-?/7/2025 - 4.1.1
-----------------
+??/??/2025 - Draft 5.0.0
+------------------------
 
 * :ref:`data-model-and-specifications`
 
   * :ref:`record-formats`
 
-    * :ref:`dfn-program_type` - Added response '8: MMHC'
-    * :ref:`dfn-funding_source` - Renamed response '24: Head to Health Kids Hubs' to '24: Kids Hubs'
-    * :ref:`dfn-funding_source` - Added response '28: MMHC'
-    * :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` - Added response '45: MMHC'
-    * :ref:`dfn-organisation_type_referred_to_at_episode_conclusion` - Added response '25: MMHC'
+    * :ref:`dfn-program_type`
 
-24/4/2025
----------
+      * Renamed `2: Head to Health` response to `2: Head to Health Clinic`. 
+        This response is only to be used by organisations commissioned by Victorian 
+        PHNs. Please refer to :ref:`dfn-program_type` for more information
+      * Retired `3: AMHC` response
+      * Added `9: Universal Aftercare` response
 
-* :ref:`upload_specification`
+    * :ref:`dfn-iar_dst_practitioner_reason_for_override` field has been added to the :ref:`iar-dst-data-elements` table
+    * :ref:`dfn-veteran` field has been added to the :ref:`episode-data-elements` table
+    * :ref:`ua-episode-data-elements` record added
+    * :ref:`ua-recommendation-out-data-elements` record added
+    * :ref:`ua-critical-incident-data-elements` record added
+    * :ref:`ua-plan-data-elements` record added
+    * :ref:`ua-needs-identification-data-elements` record added
+    * :ref:`sidas-data-elements` record added
+    * :ref:`who5-data-elements` record added
 
-  * :ref:`example-upload-files`
+  * :ref:`validation-rules`
 
-    * Corrected the Metadata worksheet in the example xlsx files so that the version is 4.1, not 4
+    * :ref:`intake-current-validations`
 
+      * Added validation rule for the `42: AMHC` response on the :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` field 
+      * Added validation rule for the `44: HeadtoHelp / HeadtoHealth` response on the :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` field
 
-17/10/2024
-----------
+  * :ref:`episode-current-validations`
 
-* :ref:`data-model-and-specifications`
+      * Added validation rule for the `24: AMHC` response on the :ref:`dfn-organisation_type_referred_to_at_episode_conclusion` field 
+      * Added validation rule for the `22: HeadtoHelp / HeadtoHealth` response on the :ref:`dfn-organisation_type_referred_to_at_episode_conclusion` field
+      * Added validation rule for the `2: Head to Head to Health Clinic` response on the :ref:`dfn-program_type` field
 
-  * :ref:`record-formats`
+  * :ref:`service-contact-current-validations`
 
-    * :ref:`dfn-service_contact_modality` - Added response '5: SMS'
+    * Added validation rule for the `23: Head to Health program` response on the :ref:`dfn-funding_source` field
 
-6/9/2024 - Draft 4.1.0
-----------------------
-
-* :ref:`data-model-and-specifications`
-
-  * :ref:`record-formats`
-
-    * :ref:`dfn-sites` - Added sites field to the Organisation record to allow the sites at which an organisation provides services to clients to be specified
-    * :ref:`dfn-service_contact_site` - Added site field to the Service Contact record to allow the site at which a Service Contact took place to be specified
-    
+  * Added validation rules for the new :ref:`ua-episode-current-validations` record
+  * Added validation rules for the new :ref:`ua-critical-incident-current-validations` record
+  * Added validation rules for the new :ref:`ua-recommendation-out-current-validations` record
+  * Added validation rules for the new :ref:`ua-plan-current-validations` record
+  * Added validation rules for the new :ref:`ua-needs-identification-current-validations` record
+  * Added validation rules for the new :ref:`sidas-current-validations` record
+  * Added validation rules for the new :ref:`who-5-current-validations` record  
