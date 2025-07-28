@@ -18,16 +18,16 @@ Keys
 
 The following rules apply to the key fields in all records:
 
-  1. All key fields are case sensitive
-  2. All key fields must be valid unicode characters
+  #. All key fields are case sensitive
+  #. All key fields must be valid unicode characters
 
 .. _practitioner-current-validations:
 
 Practitioner
 ~~~~~~~~~~~~
 
-  1. Refer to :ref:`key-current-validations` for Practitioner Key validations
-  2. :ref:`dfn-atsi_cultural_training` must only be set to
+  #. Refer to :ref:`key-current-validations` for Practitioner Key validations
+  #. :ref:`dfn-atsi_cultural_training` must only be set to
      '3 - Not required' where :ref:`dfn-practitioner_atsi_status` is one of
 
      * '1: Aboriginal but not Torres Strait Islander origin'
@@ -38,15 +38,15 @@ Practitioner
 
      The organisation to which the practitioner belongs has
      :ref:`dfn-organisation_type` set to '8: Aboriginal Health/Medical Service'
-  3. :ref:`dfn-practitioner_year_of_birth` must not be before 1 January 1900 and must not be in the future
+  #. :ref:`dfn-practitioner_year_of_birth` must not be before 1 January 1900 and must not be in the future
 
 .. _client-current-validations:
 
 Client
 ~~~~~~
 
-  1. Refer to :ref:`key-current-validations` for Client Key validations
-  2. :ref:`dfn-date_of_birth` must not be before 1 January 1900 and must not be in the future
+  #. Refer to :ref:`key-current-validations` for Client Key validations
+  #. :ref:`dfn-date_of_birth` must not be before 1 January 1900 and must not be in the future
 
 .. _intake-current-validations:
 
@@ -124,13 +124,13 @@ IAR-DST
 Intake - Episode
 ~~~~~~~~~~~~~~~~
 
-  1. If a :ref:`dfn-intake_organisation_path` is specified, that organisation must
+  #. If a :ref:`dfn-intake_organisation_path` is specified, that organisation must
      be an existing organisation within the PMHC MDS
-  2. If an :ref:`dfn-intake_key` is specified, a :ref:`dfn-intake_organisation_path`
+  #. If an :ref:`dfn-intake_key` is specified, a :ref:`dfn-intake_organisation_path`
      must also be specified
-  3. If an :ref:`dfn-episode_organisation_path` is specified, that organisation must
+  #. If an :ref:`dfn-episode_organisation_path` is specified, that organisation must
      be an existing organisation within the PMHC MDS
-  4. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC MDS
+  #. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC MDS
 
   **Note:** Intake Episode records can be submitted indepentantly of Intake records.
   The PMHC MDS does not validate that the :ref:`dfn-intake_key` referenced in an 
@@ -196,59 +196,59 @@ Episode
 Service Contact
 ~~~~~~~~~~~~~~~
 
-  1. Refer to :ref:`key-current-validations` for Service Contact Key validations
-  2.  Where :ref:`dfn-service_contact_final` is recorded as '1: No further services
+  #. Refer to :ref:`key-current-validations` for Service Contact Key validations
+  #.  Where :ref:`dfn-service_contact_final` is recorded as '1: No further services
       are planned for the client in the current episode', the
       :ref:`dfn-episode_completion_status` must be recorded using one of the
       'Episode closed' responses (Response items 1-6)
-  3.  Where :ref:`dfn-service_contact_final` is recorded as '1: No further services
+  #.  Where :ref:`dfn-service_contact_final` is recorded as '1: No further services
       are planned for the client in the current episode', the date of the
       :ref:`dfn-service_contact_final` must be recorded as the Episode End Date
-  4.  Where an :ref:`dfn-episode_end_date` has been recorded, a later
+  #.  Where an :ref:`dfn-episode_end_date` has been recorded, a later
       :ref:`dfn-service_contact_date` must not be added
-  5.  If :ref:`dfn-service_contact_type` is '0: No contact took place',
+  #.  If :ref:`dfn-service_contact_type` is '0: No contact took place',
       :ref:`dfn-service_contact_no_show` must be '1: Yes'
-  6.  If :ref:`dfn-service_contact_duration` is '0: No contact took place',
+  #.  If :ref:`dfn-service_contact_duration` is '0: No contact took place',
       :ref:`dfn-service_contact_no_show` must be '1: Yes'
-  7.  If :ref:`dfn-service_contact_modality` is '0: No contact took place',
+  #.  If :ref:`dfn-service_contact_modality` is '0: No contact took place',
       :ref:`dfn-service_contact_no_show` must be '1: Yes'
-  8.  If :ref:`dfn-service_contact_modality` is not '1: Face to Face',
+  #.  If :ref:`dfn-service_contact_modality` is not '1: Face to Face',
       :ref:`dfn-service_contact_postcode` must be 9999
-  9.  If :ref:`dfn-service_contact_modality` is '1: Face to Face',
+  #.  If :ref:`dfn-service_contact_modality` is '1: Face to Face',
       :ref:`dfn-service_contact_postcode` must not be 9999
-  10. If :ref:`dfn-service_contact_modality` is '1: Face to Face',
-      :ref:`dfn-service_contact_venue` must not be
-      '98: Not applicable (Service Contact Modality is not face to face)'
-  11. On :ref:`dfn-service_contact_type` the value '98: ATAPS' must only be
-      used where data has been migrated from ATAPS. The above
-      response must only be used under the following conditions:
+  #. If :ref:`dfn-service_contact_modality` is '1: Face to Face',
+     :ref:`dfn-service_contact_venue` must not be
+     '98: Not applicable (Service Contact Modality is not face to face)'
+  #. On :ref:`dfn-service_contact_type` the value '98: ATAPS' must only be
+     used where data has been migrated from ATAPS. The above
+     response must only be used under the following conditions:
 
       * The :ref:`dfn-service_contact_date` was before 30 June 2018
       * The :ref:`dfn-service_contact_tags` field must contain the ``!ATAPS`` flag
-  12. If :ref:`dfn-service_contact_participants` is '1: Individual client'
-      :ref:`dfn-service_contact_participation_indicator` must be '1: Yes'
-  13. The ``!ATAPS`` tag must only be included in the :ref:`dfn-service_contact_tags`
-      field where the :ref:`dfn-service_contact_date` was before 30 June 2018
-  14. The :ref:`dfn-service_contact_date` 
+  #. If :ref:`dfn-service_contact_participants` is '1: Individual client'
+     :ref:`dfn-service_contact_participation_indicator` must be '1: Yes'
+  #. The ``!ATAPS`` tag must only be included in the :ref:`dfn-service_contact_tags`
+     field where the :ref:`dfn-service_contact_date` was before 30 June 2018
+  #. The :ref:`dfn-service_contact_date` 
 
-      * must not be before 1 January 2016
-      * and must not be before :ref:`dfn-organisation_start_date`
-      * and must not be after :ref:`dfn-organisation_end_date`
-      * and must not be in the future
+     * must not be before 1 January 2016
+     * and must not be before :ref:`dfn-organisation_start_date`
+     * and must not be after :ref:`dfn-organisation_end_date`
+     * and must not be in the future
 
-  15. :ref:`dfn-service_contact_start_time` value of '24:00' cannot be used on new records.
-  16. Existing records already containing a :ref:`dfn-service_contact_start_time` that is not '24:00' may not be updated to '24:00'.
-  17. On :ref:`dfn-funding_source` the value '27: Way Back Support Service' must
-      only be used in conjunction with the Wayback Extension.
-  18. Where :ref:`dfn-program_type` is recorded as '7: Supporting Recovery', 
-      :ref:`dfn-funding_source` must be recorded as '73: Other Government Funding - Commonwealth: Other Commonwealth'
-  19. Where :ref:`dfn-funding_source` is recorded as '73: Other Government Funding - Commonwealth: Other Commonwealth',
-      :ref:`dfn-program_type` must be '7: Supporting Recovery'
-  20. The :ref:`dfn-service_contact_site`
+  #. :ref:`dfn-service_contact_start_time` value of '24:00' cannot be used on new records.
+  #. Existing records already containing a :ref:`dfn-service_contact_start_time` that is not '24:00' may not be updated to '24:00'.
+  #. On :ref:`dfn-funding_source` the value '27: Way Back Support Service' must
+     only be used in conjunction with the Wayback Extension.
+  #. Where :ref:`dfn-program_type` is recorded as '7: Supporting Recovery', 
+     :ref:`dfn-funding_source` must be recorded as '73: Other Government Funding - Commonwealth: Other Commonwealth'
+  #. Where :ref:`dfn-funding_source` is recorded as '73: Other Government Funding - Commonwealth: Other Commonwealth',
+     :ref:`dfn-program_type` must be '7: Supporting Recovery'
+  #. The :ref:`dfn-service_contact_site`
   
-      * When a Service Contact Site is provided, it must have between 2-50 valid unicode characters excluding commas (',')
-      * When a Service Contact Site is provided, it must match a site name that is defined in :ref:`dfn-sites` for the Provider Organisation providing the Service Contact
-  21. On :ref:`dfn-funding_source` the value '23: Head to Health program' must only be used on existing records. It is not allowed on new records.
+     * When a Service Contact Site is provided, it must have between 2-50 valid unicode characters excluding commas (',')
+     * When a Service Contact Site is provided, it must match a site name that is defined in :ref:`dfn-sites` for the Provider Organisation providing the Service Contact
+  #. On :ref:`dfn-funding_source` the value '23: Head to Health program' must only be used on existing records. It is not allowed on new records.
 
 
 .. _service-contact-practitioner-current-validations:
@@ -256,12 +256,12 @@ Service Contact
 Service Contact Practitioner
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  1. Refer to :ref:`key-current-validations` for Service Contact Practitioner Key validations
-  2. :ref:`dfn-service_contact_key` must be an existing PMHC service contact
+  #. Refer to :ref:`key-current-validations` for Service Contact Practitioner Key validations
+  #. :ref:`dfn-service_contact_key` must be an existing PMHC service contact
      within the PMHC MDS
-  3. :ref:`dfn-practitioner_key` must be an existing PMHC practitioner
+  #. :ref:`dfn-practitioner_key` must be an existing PMHC practitioner
      within the PMHC MDS
-  4. One, and only one, Service Contact Practitioner per service contact must be
+  #. One, and only one, Service Contact Practitioner per service contact must be
      flagged as the Primary Practitioner
 
 .. _collection-occasion-current-validations:
@@ -269,9 +269,9 @@ Service Contact Practitioner
 Collection Occasion
 ~~~~~~~~~~~~~~~~~~~
 
-  1. Refer to :ref:`key-current-validations` for Collection Occasion Key validations
-  2. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC MDS
-  3. The :ref:`dfn-collection_occasion_date`
+  #. Refer to :ref:`key-current-validations` for Collection Occasion Key validations
+  #. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC MDS
+  #. The :ref:`dfn-collection_occasion_date`
 
     * must not be before 1 January 2016
     * and must not be before :ref:`dfn-referral_date`
@@ -285,10 +285,10 @@ Collection Occasion
 K10+
 ~~~~
 
-  1. Refer to :ref:`key-current-validations` for Measure Key validations
-  2. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
+  #. Refer to :ref:`key-current-validations` for Measure Key validations
+  #. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
      MDS
-  3. If both item scores and a total score are specified, the item scores must
+  #. If both item scores and a total score are specified, the item scores must
      add up to the total score (as per :ref:`Scoring the K10+ <dfn-k10p_score>`)
 
 .. _k5-current-validations:
@@ -296,10 +296,10 @@ K10+
 K5
 ~~
 
-  1. Refer to :ref:`key-current-validations` for Measure Key validations
-  2. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
+  #. Refer to :ref:`key-current-validations` for Measure Key validations
+  #. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
      MDS.
-  3. If both item scores and a total score are specified, the item scores must
+  #. If both item scores and a total score are specified, the item scores must
      add up to the total score (as per :ref:`Scoring the K5 <dfn-k5_score>`).
 
 .. _sdq-current-validations:
@@ -307,14 +307,14 @@ K5
 SDQ
 ~~~
 
-  1. Refer to :ref:`key-current-validations` for Measure Key validations
-  2. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
+  #. Refer to :ref:`key-current-validations` for Measure Key validations
+  #. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
      MDS.
-  3. Use the table at :ref:`SDQ Data Elements <sdq-data-elements>` to validate the items that
+  #. Use the table at :ref:`SDQ Data Elements <sdq-data-elements>` to validate the items that
      are used in each version of the SDQ
-  4. If both item scores and subscales are specified, the sum of the items
+  #. If both item scores and subscales are specified, the sum of the items
      must agree with the subscales score (as per `Scoring the SDQ <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#scoring-the-sdq>`_)
-  5. If both subscales and total score are specified, the sum of the subscales
+  #. If both subscales and total score are specified, the sum of the subscales
      must agree with the total score (as per `Scoring the SDQ <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#scoring-the-sdq>`_)
 
 .. _organisation-current-validations:
@@ -322,8 +322,8 @@ SDQ
 Organisation
 ~~~~~~~~~~~~
 
-  1. Refer to :ref:`key-current-validations` for Provider Organisation Key validations
-  2. The :ref:`dfn-organisation_start_date`
+  #. Refer to :ref:`key-current-validations` for Provider Organisation Key validations
+  #. The :ref:`dfn-organisation_start_date`
 
      * must not be before 1 January 2014
        or before a commissioning organisation's start date
@@ -334,7 +334,7 @@ Organisation
      * and must not be after the earliest :ref:`dfn-collection_occasion_date`
      * and must not be in the future
 
-  3. The :ref:`dfn-organisation_end_date`
+  #. The :ref:`dfn-organisation_end_date`
 
      * must not be before 1 January 2014
        or after a commissioning organisation's end date
@@ -346,10 +346,10 @@ Organisation
      * and must not be before the latest :ref:`dfn-collection_occasion_date`
      * can be in the future
 
-  4. The :ref:`dfn-organisation_abn` must adhere to the format defined by the Australian Business 
+  #. The :ref:`dfn-organisation_abn` must adhere to the format defined by the Australian Business 
      Register at https://abr.business.gov.au/Help/AbnFormat
 
-  5. The :ref:`dfn-sites` fields
+  #. The :ref:`dfn-sites` fields
 
      * is case sensitive
      * must be blank or contain one or more comma separated site names
@@ -362,9 +362,10 @@ Organisation
 UA Episode
 ~~~~~~~~~~
 
-  1. Refer to :ref:`key-current-validations` for Episode Key validations
-  2. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC MDS.
-  3. The :ref:`dfn-primary_nominated_professional_consent_date`
+  #. Refer to :ref:`key-current-validations` for Episode Key validations
+  #. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC MDS.
+  #. The program type of the linked Episode record must be '9: Universal Aftercare'
+  #. The :ref:`dfn-primary_nominated_professional_consent_date`
 
      * must not be before 1 January 2019
      * and must not be before :ref:`dfn-referral_date`
@@ -373,7 +374,7 @@ UA Episode
      * and must not be after :ref:`dfn-organisation_end_date`
      * and must not be in the future
 
-  4. The :ref:`dfn-primary_nominated_professional_contact_entry_date`
+  #. The :ref:`dfn-primary_nominated_professional_contact_entry_date`
 
      * must not be before 1 January 2019
      * and must not be before :ref:`dfn-referral_date`
@@ -382,7 +383,7 @@ UA Episode
      * and must not be after :ref:`dfn-organisation_end_date`
      * and must not be in the future
 
-  5. The :ref:`dfn-primary_nominated_professional_contact_exit_date`
+  #. The :ref:`dfn-primary_nominated_professional_contact_exit_date`
 
      * must not be before 1 January 2019
      * and must not be before :ref:`dfn-referral_date`
@@ -392,17 +393,20 @@ UA Episode
      * and must not be after :ref:`dfn-organisation_end_date`
      * and must not be in the future
 
-   6. Where :ref:`dfn-previous_suicide_attempts` is recorded as '1: No', 
+   #. Where :ref:`dfn-previous_suicide_attempts` is recorded as '1: No', 
       :ref:`dfn-method_of_suicide_attempt` must be recorded as '0: Not applicable'
+
+
 
 .. _ua-critical-incident-current-validations:
 
 UA Critical Incident
 ~~~~~~~~~~~~~~~~~~~~
 
-  1. Refer to :ref:`key-current-validations` for UA Critical Incident Key validations
-  2. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC MDS.
-  3. The :ref:`dfn-critical_incident_date`
+  #. Refer to :ref:`key-current-validations` for UA Critical Incident Key validations
+  #. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC MDS.
+  #. The program type of the linked Episode record must be '9: Universal Aftercare'
+  #. The :ref:`dfn-critical_incident_date`
 
      * must not be before 1 January 2019
      * and must not be before :ref:`dfn-referral_date`
@@ -416,19 +420,21 @@ UA Critical Incident
 UA Recommendation Out
 ~~~~~~~~~~~~~~~~~~~~~
 
-  1. Refer to :ref:`key-current-validations` for UA Recommendation Out Key validations
-  2. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC MDS.
-  3. UA Recommendation Outs for an Episode must have unique :ref:`dfn-recommendation_out_provider_type`.
+  #. Refer to :ref:`key-current-validations` for UA Recommendation Out Key validations
+  #. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC MDS.
+  #. The program type of the linked Episode record must be '9: Universal Aftercare'
+  #. UA Recommendation Outs for an Episode must have unique :ref:`dfn-recommendation_out_provider_type`.
 
 .. _who-5-current-validations:
 
 WHO-5
 ~~~~~
 
-  1. Refer to :ref:`key-current-validations` for Measure Key validations
-  2. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
+  #. Refer to :ref:`key-current-validations` for Measure Key validations
+  #. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
      MDS.
-  3. If both item scores and a total score are specified, the item scores must
+  #. The program type of the Episode record that is linked via the Collection Occasion record must be '9: Universal Aftercare'
+  #. If both item scores and a total score are specified, the item scores must
      add up to the total score.
 
 .. _sidas-current-validations:
@@ -436,28 +442,31 @@ WHO-5
 SIDAS
 ~~~~~
 
-  1. Refer to :ref:`key-current-validations` for Measure Key validations
-  2. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
+  #. Refer to :ref:`key-current-validations` for Measure Key validations
+  #. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
      MDS.
-  3. When item 1 has the value “0 - Never” all other items must be set to “98 - Not Required”
+  #. The program type of the Episode record that is linked via the Collection Occasion record must be '9: Universal Aftercare'
+  #. When item 1 has the value '0 - Never' all other items must be set to '98 - Not Required'
 
 .. _ua-plan-current-validations:
 
 UA Plan
 ~~~~~~~~
 
-  1. Refer to :ref:`key-current-validations` for Measure Key validations
-  2. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
+  #. Refer to :ref:`key-current-validations` for Measure Key validations
+  #. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
      MDS.
+  #. The program type of the Episode record that is linked via the Collection Occasion record must be '9: Universal Aftercare'
 
 .. _ua-needs-identification-current-validations:
 
 UA Needs Identification
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-  1. Refer to :ref:`key-current-validations` for Measure Key validations
-  2. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
+  #. Refer to :ref:`key-current-validations` for Measure Key validations
+  #. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
      MDS.
+  #. The program type of the Episode record that is linked via the Collection Occasion record must be '9: Universal Aftercare'
 
  .. _future-validations:
 
