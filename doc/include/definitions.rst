@@ -2736,8 +2736,7 @@ The overall K10 score.
   (value 99) should be used.
   
   For more information on scoring the K10+, please refer to page 58 of AMHOCN’s
-  Overview of clinician-rated and consumer self-report measures at https://www.amhocn.org/sites/default/files/publication_files/nocc_clinician_and_self-report_measures_overview_v2.1_20210913_1.pdf
-  
+  Overview of clinician-rated and consumer self-report measures at https://www.amhocn.org/__data/assets/pdf_file/0005/698783/nocc_clinician_and_self-report_measures_overview_v2.1_20210913_1.pdf
   When upload report individual item scores and use a Total Score
   ‘99 - Not stated / Missing’, the PMHC MDS will calculate the total score.
   
