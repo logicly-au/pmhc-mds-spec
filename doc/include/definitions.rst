@@ -4515,6 +4515,9 @@ A unique identifier for a practitioner within the responsible provider organisat
   A recommended approach for the creation of keys is to compute `random
   UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
   
+  Client privacy is critical. To ensure client confidentiality within PMHC MDS data, all data,
+  including keys should not contain identifying information.
+  
 
 ----------
 
@@ -7016,6 +7019,9 @@ This is a number or code assigned to each service contact. The Service Contact K
   A recommended approach for the creation of keys is to compute `random
   UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
   
+  Client privacy is critical. To ensure client confidentiality within PMHC MDS data, all data,
+  including keys should not contain identifying information.
+  
 
 ----------
 
@@ -7047,6 +7053,9 @@ This is a number or code assigned to each service contact practitioner. The Serv
   
   A recommended approach for the creation of keys is to compute `random
   UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
+  
+  Client privacy is critical. To ensure client confidentiality within PMHC MDS data, all data,
+  including keys should not contain identifying information.
   
 
 ----------
