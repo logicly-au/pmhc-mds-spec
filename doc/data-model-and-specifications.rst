@@ -267,11 +267,22 @@ See :ref:`service-contact-data-elements` for the data elements for a service con
 Service Contact Practitioner
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Service Contacts can have more than one practitioner. Practitioners are
-linked to Service Contacts through Service Contact Practitioner.
+A Service Contact Practitioner is a Practitioner who provides clinical 
+support to a client during a specific Service Contact. More than one 
+Practitioner can be involved in a single contact, and there can, and 
+typically will, be different combinations of Service Contact 
+Practitioners for different Service Contacts throughout a single Episode. 
+A particular Practitioner must be personally involved to be counted as 
+a Service Contact Practitioner so a case manager or care co-ordinator, 
+for example, who has overall responsibility for a client's treatment 
+but is not personally involved with a specific contact is not a Service 
+Contact Practitioner.
 
-One (and only one) practitioner must be specified as the Primary Practitioner
-for each Service Contact.
+Service Contacts can have more than one Practitioner. They should be 
+individually listed by a Practitioner Key in Service Contact Practitioner 
+records. One (and only one) practitioner must be identified as the primary 
+practitioner in the set of Service Contact Practitioner records that apply 
+to the same Service Contact.
 
 See :ref:`service-contact-practitioner-data-elements` for the data
 elements for a service contact practitioner.
