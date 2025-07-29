@@ -131,6 +131,17 @@ Concluded Intake
 Concluded intakes are intakes where
 :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` is **not** blank.
 
+.. _dispatch:
+
+Dispatch
+""""""""
+
+A dispatch is a referral from an intake to a treatment organisation. It's called
+a dispatch to distinguish it from the referral that triggers a client's entry 
+into the system (which happens either through an intake or an episode and can be 
+recorded on both records). There can be more than one dispatch per intake 
+from the intake organisation but an episode can only ever receive a single dispatch.
+
 .. _key-concepts-intake-episode:
 
 Intake Episode
