@@ -144,8 +144,8 @@ Episode
      '98: N/A - Self referral' if and only if :ref:`dfn-referrer_profession` is also
      '98: N/A - Self referral'
   #. A maximum of one episode shall be :ref:`open <open-episode>` per client
-  #. :ref:`Open episodes <open-episode>` must NOT have a response to both :ref:`dfn-episode_end_date`
-     and :ref:`dfn-organisation_type_referred_to_at_episode_conclusion`
+  #. :ref:`Open episodes <open-episode>` must NOT have a response to either :ref:`dfn-episode_end_date`
+     or :ref:`dfn-organisation_type_referred_to_at_episode_conclusion`
 
   #. :ref:`Closed episodes <closed-episode>` must have a response to both :ref:`dfn-episode_end_date`
      and :ref:`dfn-organisation_type_referred_to_at_episode_conclusion`
