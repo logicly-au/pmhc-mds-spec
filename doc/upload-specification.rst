@@ -143,6 +143,7 @@ Metadata file
 ^^^^^^^^^^^^^
 
 All version 4 data uploads must include a Metadata file/worksheet.
+
 - In the first row, the first cell must contain 'key' and the second cell must contain 'value'
 - In the second row, the first cell must contain 'type' and the second cell must contain 'PMHC'
 - In the third row, the first cell must contain 'version' and the second cell must contain '4.1'
