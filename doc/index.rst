@@ -34,6 +34,7 @@ Version |version|
    form-creation
    validation-rules
    test-data-sets
+   data-security-privacy
    change-log
 
 .. The LINK TO THE PDF will only appear in the online HTML version

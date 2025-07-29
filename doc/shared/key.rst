@@ -12,3 +12,6 @@ never clash.
 
 A recommended approach for the creation of keys is to compute `random
 UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
+
+Client privacy is critical. To ensure client confidentiality within PMHC MDS data, all data,
+including keys should not contain identifying information.
