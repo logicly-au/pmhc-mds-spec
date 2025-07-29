@@ -1336,10 +1336,11 @@ The source of PHN Mental Health funds that are wholly or primarily funding the S
   :21: Emergency Response - Bushfire Recovery 2020
   :22: Emergency Response - Flood 2022
   :23: Head to Health program
-  :24: Head to Health Kids Hubs
+  :24: Kids Hubs
   :25: Norfolk Island
   :26: National Suicide Prevention Trial
   :27: Way Back Support Service
+  :28: MMHC
   :73: Other Government Funding - Commonwealth: Other Commonwealth
   :97: Other funding source – no Commonwealth Funding
   :98: Unknown/Not stated
@@ -3743,6 +3744,7 @@ Type of organisation to which the the client was referred at the Episode conclus
   :22: HeadtoHelp / HeadtoHealth Hub
   :23: Other PHN funded service
   :24: AMHC
+  :25: MMHC
   :99: Not stated
   
   Multiple space separated values allowed
@@ -3812,6 +3814,7 @@ Type of organisation to which the the client was referred at the Intake conclusi
   :42: AMHC
   :43: Other PHN funded service
   :44: HeadtoHelp / HeadtoHealth
+  :45: MMHC
   :97: No Referral
   :98: Other
   :99: Not stated/Inadequately described
@@ -4453,6 +4456,7 @@ The overarching program area that an Intake or Episode record is associated with
   :4: Psychosocial
   :5: Bushfire Recovery 2020
   :7: Supporting Recovery
+  :8: MMHC
 
 :Notes:
   1 - Flexible Funding Pool
