@@ -6,6 +6,9 @@ Validation Rules
 This document defines validation rules between items and record types.
 The domain of individual items is defined in :ref:`record-formats`.
 
+The use of key words (must, should, may etc.) for requirement levels are defined in
+`RFC 2119 <https://datatracker.ietf.org/doc/html/rfc2119>`_.
+
 .. _current-validations:
 
 Current Validations
