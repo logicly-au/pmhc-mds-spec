@@ -4894,6 +4894,7 @@ The range of activities that best describes the overall services intended to be 
   :5: Child and youth-specific mental health services
   :6: Indigenous-specific mental health services
   :7: Other
+  :8: Psychosocial Support
 
 :Notes:
   Describes the main focus of the services to be delivered to the client for the
@@ -5004,7 +5005,12 @@ The range of activities that best describes the overall services intended to be 
      that cannot be described by other categories.
   
   8 - Psychosocial support
-    For Universal Aftercare only episodes this value must be used.
+    Can only be used where the :ref:`dfn-program_type` is '9: Universal Aftercare'.
+  
+    Where a client is being delivered Universal Aftercare services and accessing another
+    support service within the same Service Provider all Principal Focus of Treatment Plan responses
+    are allowed. Where a client is only being delivered Universal Aftercare services at a Service Provider 
+    the '8: Psychosocial support' response must be used for the Principal Focus of Treatment Plan.
   
     Episodes of care should be classified as Psychosocial Support (code 8) where
     the treatment plan for the client is primarily based around the delivery of
@@ -5044,13 +5050,7 @@ The range of activities that best describes the overall services intended to be 
     for individuals who have significant psychosocial disability but do not meet
     NDIS eligibility criteria.
   
-    Episodes of care delivered to individuals who are recorded as Continuity of
-    Support clients (see below) may be reported as Psychosocial Support.
   
-  Where a client is being delivered Universal Aftercare services and accessing another
-  support service within the same Service Provider the
-  Principal Focus of Treatment Plan responses
-  allowed for standard PMHC MDS episodes is available.
 
 ----------
 
@@ -7279,7 +7279,7 @@ The main type of service provided in the service contact, as represented by the 
   
     Service Contacts recorded as psychosocial support may be delivered in all
     episodes of care, regardless of episode type.  However, it is expected that
-    they will be mainly associated with episodes where the Principal Focus of
+    they will be mainly associated with Universal Aftercare episodes where the Principal Focus of
     Treatment Plan is classified as Psychosocial Support.
   
   98 - ATAPS
