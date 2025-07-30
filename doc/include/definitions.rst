@@ -6553,7 +6553,8 @@ The main type of service provided in the service contact, as represented by the 
   
     Service Contacts recorded as psychosocial support may be delivered in all
     episodes of care, regardless of episode type.  However, it is expected that
-    they will be mainly associated with episodes where the Principal Focus of
+    they will be mainly associated with episodes uploaded under the Wayback
+    extension where the Principal Focus of
     Treatment Plan is classified as Psychosocial Support.
   
   98 - ATAPS
