@@ -106,7 +106,12 @@ each Service Contact.
    that cannot be described by other categories.
 
 8 - Psychosocial support
-  For Universal Aftercare only episodes this value must be used.
+  Can only be used where the :ref:`dfn-program_type` is '9: Universal Aftercare'.
+
+  Where a client is being delivered Universal Aftercare services and accessing another
+  support service within the same Service Provider all Principal Focus of Treatment Plan responses
+  are allowed. Where a client is only being delivered Universal Aftercare services at a Service Provider 
+  the '8: Psychosocial support' response must be used for the Principal Focus of Treatment Plan.
 
   Episodes of care should be classified as Psychosocial Support (code 8) where
   the treatment plan for the client is primarily based around the delivery of
@@ -146,10 +151,3 @@ each Service Contact.
   for individuals who have significant psychosocial disability but do not meet
   NDIS eligibility criteria.
 
-  Episodes of care delivered to individuals who are recorded as Continuity of
-  Support clients (see below) may be reported as Psychosocial Support.
-
-Where a client is being delivered Universal Aftercare services and accessing another
-support service within the same Service Provider the
-Principal Focus of Treatment Plan responses
-allowed for standard PMHC MDS episodes is available.

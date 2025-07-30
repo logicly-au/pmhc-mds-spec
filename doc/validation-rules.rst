@@ -193,6 +193,7 @@ Episode
   #. On :ref:`dfn-organisation_type_referred_to_at_episode_conclusion` the value '22: HeadtoHelp / HeadtoHealth' must only be used on existing records. It is not allowed on new records.
   #. On :ref:`dfn-organisation_type_referred_to_at_episode_conclusion` the value '24: AMHC' must only be used on existing records. It is not allowed on new records.
   #. On :ref:`dfn-program_type` only organisations commissioned by Victorian PHNs can use the value '2: Head to Health Clinc'
+  #. Where :ref:`dfn-principal_focus` is recorded as '8: Psychosocial Support' the :ref:`dfn-program_type` must be '9: Universal Aftercare'
 
 .. _service-contact-current-validations:
 
