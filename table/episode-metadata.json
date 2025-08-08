@@ -239,16 +239,6 @@
     },
     "required": true
   },{
-    "name": "veteran",
-    "titles": [ "veteran" ],
-    "dc:title": "Veteran",
-    "schema:description": "An indication of whether the client identifies as a veteran, as represented by a code.",
-    "schema:dateCreated": "2019-07-05",
-    "datatype": {
-      "base": "string"
-    },
-    "required": true
-  },{
     "name": "suicide_referral_flag",
     "titles": [ "suicide_referral_flag" ],
     "dc:title": "Suicide Referral Flag",
@@ -256,6 +246,16 @@
     "schema:disambiguatingDescription": "type/suicide-referral-flag.rst",
     "schema:whenToCollect": "Episode start",
     "schema:dateCreated": "2016-06-22",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "veteran",
+    "titles": [ "veteran" ],
+    "dc:title": "Veteran",
+    "schema:description": "An indication of whether the client identifies as a veteran, as represented by a code.",
+    "schema:dateCreated": "2019-07-05",
     "datatype": {
       "base": "string"
     },
@@ -475,18 +475,18 @@
       "columnReference": "id"
     }
   },{
+    "columnReference": "suicide_referral_flag",
+    "reference": {
+      "resource": "type/boolean-unknown.csv",
+      "columnReference": "id"
+    }
+  },{
     "columnReference": "veteran",
     "reference": {
       "resource": "table/episode/veteran.csv",
       "columnReference": "id"
     }
   },{
-    "columnReference": "suicide_referral_flag",
-    "reference": {
-      "resource": "type/boolean-unknown.csv",
-      "columnReference": "id"
-    }
-  }, {
     "columnReference": "principal_diagnosis",
     "reference": {
       "resource": "table/episode/principal-diagnosis.csv",

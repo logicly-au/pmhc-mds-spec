@@ -132,6 +132,16 @@
     },
     "required": true
   },{
+    "name": "veteran",
+    "titles": [ "veteran" ],
+    "dc:title": "Veteran",
+    "schema:description": "An indication of whether the client identifies as a veteran, as represented by a code.",
+    "schema:dateCreated": "2019-07-05",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
     "name": "date_referred_to_other_service_at_intake_conclusion",
     "titles": [ "date_referred_to_other_service_at_intake_conclusion" ],
     "dc:title": "Date referred to other service at Intake conclusion",
@@ -217,6 +227,12 @@
     "columnReference": "suicide_referral_flag",
     "reference": {
       "resource": "type/boolean-unknown.csv",
+      "columnReference": "id"
+    }
+  },{
+    "columnReference": "veteran",
+    "reference": {
+      "resource": "table/episode/veteran.csv",
       "columnReference": "id"
     }
   }, {

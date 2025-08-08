@@ -32,15 +32,15 @@ PMHC MDS Version 5.0 data specifications are as follows:
     * :ref:`who5-data-elements`
 
 * AMHC and Head to Health have been rebranded as Medicare Mental Health Centres (MMHC). Version 4.1.1 introduced the
-  `8: MMHC` reponse for :ref:`dfn-program_type`. The following changes have been applied to the :ref:`dfn-program_type` field on both
+  `8: MMHC` response for :ref:`dfn-program_type`. The following changes have been applied to the :ref:`dfn-program_type` field on both
   the Intake and Episode tables:
 
   - `2: Head to Health` renamed to `2: Head to Health Clinic`. This response is only to be used by organisations commissioned by Victorian PHNs. Please refer to :ref:`dfn-program_type` for more information.
   - `3: AMHC` has been retired. An error will be returned if this response is used.
 
-* A new :ref:`dfn-veteran` field has been added to the Episode table. This field was included in The Way Back specification. 
-  There is a new IAR-DST varient in development for Veterans. Veterans has been included on the Episode table instead of 
-  the new UA Episode table so that it can be used for monitoring both the IAR-DST and Univeral Aftercare.
+* A new :ref:`dfn-veteran` field has been added to the Intake and Episode tables. This field was included in The Way Back specification. 
+  There is a new IAR-DST variant in development for Veterans. Veterans has been included on the Intake and Episode tables instead of 
+  the new UA Episode table so that it can be used for monitoring both the IAR-DST and Universal Aftercare.
 
 * A new :ref:`dfn-iar_dst_practitioner_reason_for_override` has been added to the IAR-DST table.
 
