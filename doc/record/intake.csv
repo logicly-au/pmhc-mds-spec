@@ -76,6 +76,11 @@
 ",string,yes,":1: Yes
 :2: No
 :9: Unknown"
+"`Veteran`_ (veteran)
+
+",string,yes,":1: Identifies as a veteran
+:2: Does not identify as a veteran
+:9: Not stated/Inadequately described"
 "`Date referred to other service at Intake conclusion`_ (date_referred_to_other_service_at_intake_conclusion)
 
 ",date,"—","The date the client was referred to another organisation at Intake conclusion."

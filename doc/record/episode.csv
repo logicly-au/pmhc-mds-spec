@@ -117,16 +117,16 @@ METEOR: `291045 <https://meteor.aihw.gov.au/content/291045>`__",string,yes,":1: 
 :4: Separated
 :5: Married (registered and de facto)
 :6: Not stated/inadequately described"
-"`Veteran`_ (veteran)
-
-",string,yes,":1: Identifies as a veteran
-:2: Does not identify as a veteran
-:9: Not stated/Inadequately described"
 "`Suicide Referral Flag`_ (suicide_referral_flag)
 
 ",string,yes,":1: Yes
 :2: No
 :9: Unknown"
+"`Veteran`_ (veteran)
+
+",string,yes,":1: Identifies as a veteran
+:2: Does not identify as a veteran
+:9: Not stated/Inadequately described"
 "`Principal Diagnosis`_ (principal_diagnosis)
 
 ",string,yes,":100: Anxiety disorders (ATAPS)
