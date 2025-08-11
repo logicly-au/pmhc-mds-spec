@@ -1,26 +1,28 @@
-.. _changes-from-v4:
+.. _changes-from-v4-1:
 
-Changes from Version 4.0
+Changes from Version 4.1
 ========================
 
-Version 4.1 introduces the recording of sites within a Provider Organisation.
+Version 4.1.1 begins the rebranding of Adult Mental Health Centres (AMHC) and Head to Health to Medicare Mental Mental Health Centres (MMHC).
 
-A :ref:`dfn-sites` has been added to the Provider Organisation record where the sites of
-a Provider Organisation can be defined.
+* A '8: MMHC' response has been added to  :ref:`dfn-program_type`.
+* Response '24: Head to Health Kids Hubs' on :ref:`dfn-funding_source` has been renamed to '24: Kids Hubs'
+* A '28: MMHC' response has been added to :ref:`dfn-funding_source`.
+* A '45: MMHC' response has been added to :ref:`dfn-organisation_type_referred_to_at_intake_conclusion`.
+* A '25: MMHC' response has been added to :ref:`dfn-organisation_type_referred_to_at_episode_conclusion`.
 
-A :ref:`dfn-service_contact_site` field has been added to the Service Contact record
-to record at which site the service contact took place.
+Version 5.0 of the PMHC data specification is currently in development. Version 5.0 will complete the 
+rebranding of AMHC/HeadtoHealth to MMHC by retiring the AMHC Program Type and renaming the Head to Health 
+Program Type to Head To Health Clinic. The Head to Health clinic Program Type will only be available to 
+organisations commissioned by Victorian PHNs.
 
 .. _steps-required-to-upgrade:
 
-Steps required to upgrade to Version 4.1 uploads
-------------------------------------------------
+Steps required to upgrade to Version 4.1.1 uploads
+--------------------------------------------------
 
-1. Upgrade your Client Management System to export files in the new Version 4.1 format
-   which adds a 'sites' column to the Provider Organisation worksheet and a 'service_contact_site'
-   column to the Service Contact worksheet.
+Version 4.1.1 is backwards compatible with Version 4.1.0. Only organisations needing to use the new responses
+documented above are required to upgrade.
 
-Changes from Version 2
-----------------------
-
-Please refer to `Changes and Upgrading from Version 2 <https://docs.pmhc-mds.com/projects/data-specification/en/v4/changes-from-v2.html>`_.
+1. Upgrade your Client Management System to export files in the new Version 4.1.1 format
+   which adds the responses listed above and requires Version 4.1.1 to be specified in the Metadata file/worksheet.

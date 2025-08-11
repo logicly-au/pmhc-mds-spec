@@ -35,6 +35,7 @@ Version |version|
    validation-rules
    test-data-sets
    reserved-tags
+   data-security-privacy
    change-log
 
 .. The LINK TO THE PDF will only appear in the online HTML version

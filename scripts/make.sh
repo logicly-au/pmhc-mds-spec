@@ -9,7 +9,7 @@ export SPEC_VERSION
 source config.sh
 
 docker pull docker.sdlocal.net/csvw/metadata2rst:multiplatform
-docker pull stratdat/sphinx-html2pdf:production
+docker pull logicly/sphinx-html2pdf:production
 
 docker run --rm -v "$(pwd):/mnt/cwd" docker.sdlocal.net/csvw/metadata2rst:multiplatform \
   --meta="${METADATA_FILE}"
@@ -50,11 +50,11 @@ popd
 echo "Optimising images"
 docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
   --workdir /mnt/workdir/doc/build/singlehtml/_images \
-  stratdat/sphinx-html2pdf:production \
+  logicly/sphinx-html2pdf:production \
   find . -name *.png -exec pngquant --force --output {} 8 {} \;
 
 docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
-  stratdat/sphinx-html2pdf:production \
+  logicly/sphinx-html2pdf:production \
   /mnt/workdir/scripts/make-pdf.pl \
   --spec-name "${SPEC_NAME}-${SPEC_VERSION}" \
   --doc-dir   "/mnt/workdir/doc"

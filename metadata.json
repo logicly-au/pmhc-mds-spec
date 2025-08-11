@@ -8,7 +8,7 @@
   },
   "schema:specification": {
     "schema:name": "pmhc",
-    "schema:version": "4.1"
+    "schema:version": "4.1.1"
   },
   "dc:modified": { "@value": "2021-08-23", "@type": "xsd:date"},
   "tables": [{

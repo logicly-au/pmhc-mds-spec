@@ -36,7 +36,8 @@ METEOR: `730859 <https://meteor.aihw.gov.au/content/730859>`__",date,"—","The 
 :3: AMHC
 :4: Psychosocial
 :5: Bushfire Recovery 2020
-:7: Supporting Recovery"
+:7: Supporting Recovery
+:8: MMHC"
 "`Principal Focus of Treatment Plan`_ (principal_focus)
 
 ",string,yes,":1: Psychological therapy
@@ -309,6 +310,7 @@ METEOR: `291045 <https://meteor.aihw.gov.au/content/291045>`__",string,yes,":1: 
 :22: HeadtoHelp / HeadtoHealth Hub
 :23: Other PHN funded service
 :24: AMHC
+:25: MMHC
 :99: Not stated
 
 Multiple space separated values allowed

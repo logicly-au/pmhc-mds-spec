@@ -144,8 +144,8 @@ Episode
      '98: N/A - Self referral' if and only if :ref:`dfn-referrer_profession` is also
      '98: N/A - Self referral'
   #. A maximum of one episode shall be :ref:`open <open-episode>` per client
-  #. :ref:`Open episodes <open-episode>` must NOT have a response to both :ref:`dfn-episode_end_date`
-     and :ref:`dfn-organisation_type_referred_to_at_episode_conclusion`
+  #. :ref:`Open episodes <open-episode>` must NOT have a response to either :ref:`dfn-episode_end_date`
+     or :ref:`dfn-organisation_type_referred_to_at_episode_conclusion`
 
   #. :ref:`Closed episodes <closed-episode>` must have a response to both :ref:`dfn-episode_end_date`
      and :ref:`dfn-organisation_type_referred_to_at_episode_conclusion`
@@ -212,32 +212,35 @@ Service Contact
   10. If :ref:`dfn-service_contact_modality` is '1: Face to Face',
       :ref:`dfn-service_contact_venue` must not be
       '98: Not applicable (Service Contact Modality is not face to face)'
-  11. On :ref:`dfn-service_contact_type` the value '98: ATAPS' must only be
+  11. If :ref:`dfn-service_contact_modality` is not '1: Face to Face',
+      :ref:`dfn-service_contact_venue` must be
+      '98: Not applicable (Service Contact Modality is not face to face)'
+  12. On :ref:`dfn-service_contact_type` the value '98: ATAPS' must only be
       used where data has been migrated from ATAPS. The above
       response must only be used under the following conditions:
 
       * The :ref:`dfn-service_contact_date` was before 30 June 2018
       * The :ref:`dfn-service_contact_tags` field must contain the ``!ATAPS`` flag
-  12. If :ref:`dfn-service_contact_participants` is '1: Individual client'
+  13. If :ref:`dfn-service_contact_participants` is '1: Individual client'
       :ref:`dfn-service_contact_participation_indicator` must be '1: Yes'
-  13. The ``!ATAPS`` tag must only be included in the :ref:`dfn-service_contact_tags`
+  14. The ``!ATAPS`` tag must only be included in the :ref:`dfn-service_contact_tags`
       field where the :ref:`dfn-service_contact_date` was before 30 June 2018
-  14. The :ref:`dfn-service_contact_date` 
+  15. The :ref:`dfn-service_contact_date` 
 
       * must not be before 1 January 2016
       * and must not be before :ref:`dfn-organisation_start_date`
       * and must not be after :ref:`dfn-organisation_end_date`
       * and must not be in the future
 
-  15. :ref:`dfn-service_contact_start_time` value of '24:00' cannot be used on new records.
-  16. Existing records already containing a :ref:`dfn-service_contact_start_time` that is not '24:00' may not be updated to '24:00'.
-  17. On :ref:`dfn-funding_source` the value '27: Way Back Support Service' must
+  16. :ref:`dfn-service_contact_start_time` value of '24:00' cannot be used on new records.
+  17. Existing records already containing a :ref:`dfn-service_contact_start_time` that is not '24:00' may not be updated to '24:00'.
+  18. On :ref:`dfn-funding_source` the value '27: Way Back Support Service' must
       only be used in conjunction with the Wayback Extension.
-  18. Where :ref:`dfn-program_type` is recorded as '7: Supporting Recovery', 
+  19. Where :ref:`dfn-program_type` is recorded as '7: Supporting Recovery', 
       :ref:`dfn-funding_source` must be recorded as '73: Other Government Funding - Commonwealth: Other Commonwealth'
-  19. Where :ref:`dfn-funding_source` is recorded as '73: Other Government Funding - Commonwealth: Other Commonwealth',
+  20. Where :ref:`dfn-funding_source` is recorded as '73: Other Government Funding - Commonwealth: Other Commonwealth',
       :ref:`dfn-program_type` must be '7: Supporting Recovery'
-  20. The :ref:`dfn-service_contact_site`
+  21. The :ref:`dfn-service_contact_site`
   
       * When a Service Contact Site is provided, it must have between 2-50 valid unicode characters excluding commas (',')
       * When a Service Contact Site is provided, it must match a site name that is defined in :ref:`dfn-sites` for the Provider Organisation providing the Service Contact

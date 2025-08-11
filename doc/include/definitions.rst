@@ -507,11 +507,16 @@ The reason for the collection of the service activities on the identified Collec
 
 :Notes:
   1 - Episode start
-    Refers to an outcome measure undertaken at the beginning of an Episode of Care. For the purposes of the PMHC MDS protocol, episodes may start at the point of first Service Contact with a new client who has not been seen previously by the organisation, or a first contact for a new Episode of Care for a client who has received services from the organisation in a previous Episode of Care that has been completed.
+    Refers to a measure undertaken at the beginning of an Episode of Care. For the 
+    purposes of the PMHC MDS protocol, episodes may start at the point of first 
+    Service Contact with a new client who has not been seen previously by the 
+    organisation, or a first contact for a new Episode of Care for a client who 
+    has received services from the organisation in a previous Episode of Care 
+    that has been completed.
   
   2 - Review
-    Refers to an outcome measure undertaken during the course of an Episode of
-    Care that post-dates Episode Start and pre-dates Episode End. An outcome
+    Refers to a measure undertaken during the course of an Episode of
+    Care that post-dates Episode Start and pre-dates Episode End. A
     measure may be undertaken at Review for a number of reasons including:
   
     - in response to critical clinical events or changes in the client’s mental
@@ -520,7 +525,7 @@ The reason for the collection of the service activities on the identified Collec
     - other situations where a review may be indicated.
   
   3 - Episode end
-    Refers to the outcome measures collected at the end of an Episode of Care.
+    Refers to the measures collected at the end of an Episode of Care.
   
 
 ----------
@@ -1336,10 +1341,11 @@ The source of PHN Mental Health funds that are wholly or primarily funding the S
   :21: Emergency Response - Bushfire Recovery 2020
   :22: Emergency Response - Flood 2022
   :23: Head to Health program
-  :24: Head to Health Kids Hubs
+  :24: Kids Hubs
   :25: Norfolk Island
   :26: National Suicide Prevention Trial
   :27: Way Back Support Service
+  :28: MMHC
   :73: Other Government Funding - Commonwealth: Other Commonwealth
   :97: Other funding source – no Commonwealth Funding
   :98: Unknown/Not stated
@@ -2529,7 +2535,7 @@ The overall K10 score.
   (value 99) should be used.
   
   For more information on scoring the K10+, please refer to page 58 of AMHOCN’s
-  Overview of clinician-rated and consumer self-report measures at https://www.amhocn.org/sites/default/files/publication_files/nocc_clinician_and_self-report_measures_overview_v2.1_20210913_1.pdf
+  Overview of clinician-rated and consumer self-report measures at https://www.amhocn.org/__data/assets/pdf_file/0005/698783/nocc_clinician_and_self-report_measures_overview_v2.1_20210913_1.pdf
   
   When upload report individual item scores and use a Total Score
   ‘99 - Not stated / Missing’, the PMHC MDS will calculate the total score.
@@ -3743,6 +3749,7 @@ Type of organisation to which the the client was referred at the Episode conclus
   :22: HeadtoHelp / HeadtoHealth Hub
   :23: Other PHN funded service
   :24: AMHC
+  :25: MMHC
   :99: Not stated
   
   Multiple space separated values allowed
@@ -3812,6 +3819,7 @@ Type of organisation to which the the client was referred at the Intake conclusi
   :42: AMHC
   :43: Other PHN funded service
   :44: HeadtoHelp / HeadtoHealth
+  :45: MMHC
   :97: No Referral
   :98: Other
   :99: Not stated/Inadequately described
@@ -4077,6 +4085,9 @@ A unique identifier for a practitioner within the responsible provider organisat
   
   A recommended approach for the creation of keys is to compute `random
   UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
+  
+  Client privacy is critical. To ensure client confidentiality within PMHC MDS data, all data,
+  including keys should not contain identifying information.
   
 
 ----------
@@ -4453,6 +4464,7 @@ The overarching program area that an Intake or Episode record is associated with
   :4: Psychosocial
   :5: Bushfire Recovery 2020
   :7: Supporting Recovery
+  :8: MMHC
 
 :Notes:
   1 - Flexible Funding Pool
@@ -6285,6 +6297,9 @@ This is a number or code assigned to each service contact. The Service Contact K
   A recommended approach for the creation of keys is to compute `random
   UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
   
+  Client privacy is critical. To ensure client confidentiality within PMHC MDS data, all data,
+  including keys should not contain identifying information.
+  
 
 ----------
 
@@ -6316,6 +6331,9 @@ This is a number or code assigned to each service contact practitioner. The Serv
   
   A recommended approach for the creation of keys is to compute `random
   UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
+  
+  Client privacy is critical. To ensure client confidentiality within PMHC MDS data, all data,
+  including keys should not contain identifying information.
   
 
 ----------
@@ -6535,7 +6553,8 @@ The main type of service provided in the service contact, as represented by the 
   
     Service Contacts recorded as psychosocial support may be delivered in all
     episodes of care, regardless of episode type.  However, it is expected that
-    they will be mainly associated with episodes where the Principal Focus of
+    they will be mainly associated with episodes uploaded under the Wayback
+    extension where the Principal Focus of
     Treatment Plan is classified as Psychosocial Support.
   
   98 - ATAPS
