@@ -16,6 +16,17 @@ Data Specification Change log
     * :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` - Added response '45: MMHC'
     * :ref:`dfn-organisation_type_referred_to_at_episode_conclusion` - Added response '25: MMHC'
 
+* :ref:`validation-rules`
+
+  * :ref:`service-contact-current-validations`
+
+    * :ref:`dfn-service_contact_venue` - Added the following validation (this is not a new validation,
+      it was already being enforced within the PMHC MDS but was not listed as a validation):
+
+       * If :ref:`dfn-service_contact_modality` is not '1: Face to Face',
+         :ref:`dfn-service_contact_venue` must be
+         '98: Not applicable (Service Contact Modality is not face to face)'
+
 24/4/2025
 ---------
 
