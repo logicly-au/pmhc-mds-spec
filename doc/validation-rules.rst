@@ -223,6 +223,9 @@ Service Contact
   #. If :ref:`dfn-service_contact_modality` is '1: Face to Face',
      :ref:`dfn-service_contact_venue` must not be
      '98: Not applicable (Service Contact Modality is not face to face)'
+  #. If :ref:`dfn-service_contact_modality` is not '1: Face to Face',
+     :ref:`dfn-service_contact_venue` must be
+     '98: Not applicable (Service Contact Modality is not face to face)'
   #. On :ref:`dfn-service_contact_type` the value '98: ATAPS' must only be
      used where data has been migrated from ATAPS. The above
      response must only be used under the following conditions:
