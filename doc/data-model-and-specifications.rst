@@ -366,8 +366,8 @@ See :ref:`key-concepts-provider-organisation` for the definition of a provider
 organisation.
 
 Provider Organisation data is for administrative use within the PMHC MDS
-system. It is managed by the PHN's via the PMHC MDS administrative interface,
-it cannot be uploaded.
+system. It is managed by the PHNs via the PMHC MDS administrative interface,
+or upload.
 
 .. csv-table:: Provider Organisation record layout
   :file: record/organisation.csv
