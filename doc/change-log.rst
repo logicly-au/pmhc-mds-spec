@@ -15,6 +15,7 @@ Data Specification Change log
     * :ref:`dfn-funding_source` - Added response '28: MMHC'
     * :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` - Added response '45: MMHC'
     * :ref:`dfn-organisation_type_referred_to_at_episode_conclusion` - Added response '25: MMHC'
+    * :ref:`dfn-slk` - Corrected the stored format of the SLK.
 
 * :ref:`validation-rules`
 
