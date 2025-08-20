@@ -3,8 +3,8 @@
 Data Specification Change log
 =============================
 
-?/7/2025 - 4.1.1
-----------------
+18/8/2025 - 4.1.1
+-----------------
 
 * :ref:`data-model-and-specifications`
 
