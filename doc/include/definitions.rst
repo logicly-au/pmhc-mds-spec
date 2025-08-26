@@ -43,7 +43,9 @@ Whether a person identifies as being of Aboriginal and/or Torres Strait Islander
   :9: Not stated/inadequately described
 
 :Notes:
-  Code 9 is not to be available as a valid answer to the questions but is
+  **9 - Not stated/inadequately described**
+  
+    Not to be available as a valid answer to the questions but is
     intended for use:
   
     - Primarily when importing data from other data collections that do not
@@ -239,7 +241,8 @@ Indicates whether a practitioner has completed a recognised training programme i
   -	not of Aboriginal or Torres Strait Islander status; or
   -	are not employed by an Aboriginal Community Controlled Health Service.
   
-  1	- Yes
+  **1	- Yes**
+  
     The practitioner has:
   
     - undertaken specific training in the delivery of culturally appropriate
@@ -251,15 +254,18 @@ Indicates whether a practitioner has completed a recognised training programme i
       are practising, as delivered or endorsed by the elders of that community or
       the local Aboriginal Community Controlled Health Service.
   
-  2 - No
+  **2 - No**
+  
     The practitioner has not met the requirements stated above.
   
-  3 - Not required
+  **3 - Not required**
+  
     This option is reserved only for practitioners who are of Aboriginal and
     Torres Strait Islander descent, or employed by an Aboriginal Community
     Controlled Health Service.
   
-  4 - Missing/Not recorded
+  **4 - Missing/Not recorded**
+  
     This is a system code for missing data and not a valid response option for
     practitioners.
   
@@ -284,13 +290,15 @@ An indication that the client has consented to their anonymised data being provi
   :2: No
 
 :Notes:
-  1 - Yes
+  **1 - Yes**
+  
       The client has consented to their anonymised data being provided to the
       Department of Health and Aged Care for statistical purposes in planning and improving
       mental health services. The client's data will be included in reports and
       extracts accessible by the Department of Health and Aged Care. 
   
-  2 - No
+  **2 - No**
+  
       The client has not consented to their anonymised data being provided to the
       Department of Health and Aged Care for statistical purposes in planning and improving
       mental health services. The client's data will be excluded from reports and
@@ -327,15 +335,18 @@ The term 'gender' refers to the way in which a person identifies their masculine
   :3: Other
 
 :Notes:
-  1 - M - Male
+  **1 - M - Male**
+  
     Adults who identify themselves as men, and children who identify themselves
     as boys.
   
-  2 - F - Female
+  **2 - F - Female**
+  
     Adults who identify themselves as women, and children who identify themselves
     as girls.
   
-  3 - X- Other
+  **3 - X- Other**
+  
     Adults and children who identify as non-binary, gender diverse, or with
     descriptors other than man/boy or woman/girl.
   
@@ -391,21 +402,24 @@ An indicator of whether the client participated, or intended to participate, in 
   Service contacts are not restricted to in-person communication but can include
   telephone, video link or other forms of direct communication.
   
-  1 - Yes
+  **1 - Yes**
+  
     This code is to be used for service contacts between a mental health service
     provider and the patient/client in whose clinical record the service contact
     would normally warrant a dated entry, where the patient/client is
     participating.
   
-  2 - No
+  **2 - No**
+  
     This code is to be used for service contacts between a mental health service
     provider and a third party(ies) where the patient/client, in whose clinical
     record the service contact would normally warrant a dated entry, is not
     participating.
   
-  *Note:* Where a client intended to participate in a service contact but failed
-  to attend, :ref:`dfn-service_contact_participation_indicator` should be recorded
-  as '1: Yes' and :ref:`dfn-service_contact_no_show` should be recorded as '1: Yes'.
+  .. note:: 
+     Where a client intended to participate in a service contact but failed
+     to attend, :ref:`dfn-service_contact_participation_indicator` should be recorded
+     as '1: Yes' and :ref:`dfn-service_contact_no_show` should be recorded as '1: Yes'.
   
 
 :METEOR: `494341 <https://meteor.aihw.gov.au/content/494341>`__
@@ -512,7 +526,8 @@ The reason for the collection of the service activities on the identified Collec
   :3: Episode end
 
 :Notes:
-  1 - Episode start
+  **1 - Episode start**
+  
     Refers to a measure undertaken at the beginning of an Episode of Care. For 
     the purposes of the PMHC MDS protocol, episodes may start at the point of first 
     Service Contact with a new client who has not been seen previously by the 
@@ -520,7 +535,8 @@ The reason for the collection of the service activities on the identified Collec
     has received services from the organisation in a previous Episode of Care 
     that has been completed.
   
-  2 - Review
+  **2 - Review**
+  
     Refers to a measure undertaken during the course of an Episode of
     Care that post-dates Episode Start and pre-dates Episode End. A
     measure may be undertaken at Review for a number of reasons including:
@@ -530,7 +546,8 @@ The reason for the collection of the service activities on the identified Collec
     - following a client-requested review; or
     - other situations where a review may be indicated.
   
-  3 - Episode end
+  **3 - Episode end**
+  
     Refers to the measures collected at the end of an Episode of Care.
     
 
@@ -936,9 +953,11 @@ The type of critical incident.
 
 :Notes:
   **Reporting requirements**
+  
   Mandatory where a critical incident is reported.
   
   **Guide for use**
+  
   It is acknowledged that due to the nature of the project and the reporting of
   suicide, Beyond Blue and stakeholders may not be advised of all critical
   incidents. It is also acknowledged that each Service Provider will have the
@@ -1066,7 +1085,8 @@ The time from the start to finish of a service contact.
   or from outreach facilities or private homes, is not to be reported as part of
   the duration of the service contact.
   
-  0 - No contact took place
+  **0 - No contact took place**
+  
     Only use this code where the service contact is recorded as a no show.
   
 
@@ -1092,7 +1112,8 @@ The criteria by which a client is assessed as being eligible for the Universal A
   :99: Not stated/Inadequately described
 
 :Notes:
-  1 - Primary Eligibility Criteria
+  **1 - Primary Eligibility Criteria**
+  
     The primary eligibility criteria are met when a person is referred to
     Universal Aftercare after presenting to a hospital emergency department or
     community mental health service following a suicide attempt. A suicide
@@ -1101,7 +1122,8 @@ The criteria by which a client is assessed as being eligible for the Universal A
     attempt may or may not result in physical injury and may or may not result
     in a hospital admission.
   
-  2 - Secondary Eligibility Criteria
+  **2 - Secondary Eligibility Criteria**
+  
     The secondary eligibility criteria are met when a person is referred to Universal Aftercare
     after presenting to a hospital emergency department or community
     mental health service in or following a suicidal crisis and whose risk of
@@ -1138,18 +1160,23 @@ Whether a person in paid employment is employed full-time or part-time, as repre
   kind, and persons temporarily absent from a paid employment job but who
   retained a formal attachment to that job.
   
-  1 - Full-time
+  **1 - Full-time**
+  
     Employed persons are working full-time if they:
+  
     (a) usually work 35 hours or more in a week (in all paid jobs) or
+    
     (b) although usually working less than 35 hours a week, actually worked 35
     hours or more during the reference period.
   
-  2 - Part-time
+  **2 - Part-time**
+  
     Employed persons are working part-time if they usually work less than 35
     hours a week (in all paid jobs) and either did so during the reference
     period, or were not at work in the reference period.
   
-  9 - Not stated / inadequately described
+  **9 - Not stated / inadequately described**
+  
     Is not to be used on primary collection forms. It is primarily for use in
     administrative collections when transferring data from data sets where the
     item has not been collected.
@@ -1184,53 +1211,63 @@ An indication of the completion status of an *Episode of Care*.
 :Notes:
   In order to use code 1 (Episode closed - treatment concluded) the client must have at least one service contact. All other codes may be applicable even when the client has no service contacts.
   
-  0 or Blank - Episode open
+  **0 or Blank - Episode open**
+  
     The client still requires treatment and further service contacts are
     required.
   
-  1 - Episode closed - treatment concluded
+  **1 - Episode closed - treatment concluded**
+  
     No further service contacts are planned as the client no longer requires
     treatment.
   
-  2 - Episode closed administratively - client could not be contacted
+  **2 - Episode closed administratively - client could not be contacted**
+  
     Further service contacts were planned but the client could no longer be
     contacted.
   
-  3 - Episode closed administratively - client declined further contact
+  **3 - Episode closed administratively - client declined further contact**
+  
     Further service contacts were planned but the client declined further treatment.
   
-  4 - Episode closed administratively - client moved out of area
+  **4 - Episode closed administratively - client moved out of area**
+  
     Further service contacts were planned but the client moved out of the area
     without a referral elsewhere. Where a client was referred somewhere else
     *Episode Completion Status* should be recorded as code 5 (Episode closed
     administratively - client referred elsewhere).
   
-  5 - Episode closed administratively - client referred elsewhere
+  **5 - Episode closed administratively - client referred elsewhere**
+  
     Where a client still requires treatment, but a different service has been
     deemed appropriate or a client has moved out of the area so has moved to a
     different provider.
   
-  6 - Episode closed administratively - other reason
+  **6 - Episode closed administratively - other reason**
+  
     Where a client is no longer being given treatment but the reason for
     conclusion is not covered above.
   
-  *Episode Completion Status* interacts with two other data items in the PMHC MDS
-  - *Service Contact - Final*, and *Episode End Date*.
+  .. note::
+     *Episode Completion Status* interacts with two other data items in the PMHC MDS
+     - *Service Contact - Final*, and *Episode End Date*.
   
-  *Service Contact - Final*
-    Collection of data for *Service Contacts* includes a *Service Contact -
-    Final* item that requires the service provider to indicate whether further
-    Service Contacts are planned. Where this item is recorded as 'no further
-    services planned', the *Episode Completion Status* should be recorded as code
-    1 (Episode closed - treatment concluded) code 3 (Episode closed
-    administratively - client declined further contact), code 4 (Episode closed
-    administratively - client moved out of area), or code 5 (Episode closed
-    administratively - client referred elsewhere). Selection of coding option
-    should be that which best describes the circumstances of the episode ending.
+     *Service Contact - Final*
   
-  *Episode End Date*
-    Where a Final Service Contact is recorded *Episode End Date* should be
-    recorded as the date of the final Service Contact.
+       Collection of data for *Service Contacts* includes a *Service Contact -
+       Final* item that requires the service provider to indicate whether further
+       Service Contacts are planned. Where this item is recorded as 'no further
+       services planned', the *Episode Completion Status* should be recorded as code
+       1 (Episode closed - treatment concluded) code 3 (Episode closed
+       administratively - client declined further contact), code 4 (Episode closed
+       administratively - client moved out of area), or code 5 (Episode closed
+       administratively - client referred elsewhere). Selection of coding option
+       should be that which best describes the circumstances of the episode ending.
+  
+     *Episode End Date*
+  
+       Where a Final Service Contact is recorded *Episode End Date* should be
+       recorded as the date of the final Service Contact.
   
 
 ----------
@@ -1262,24 +1299,27 @@ The date on which an *Episode of Care* is formally or administratively ended
     by the organisation prior to completion of treatment or other factors
     prevented treatment being completed.
   
-  *Episode End Date* interacts with two other data items in the PMHC MDS - *Service
-  Contact - Final*, and *Episode Completion Status*.
+  .. note:: 
+     *Episode End Date* interacts with two other data items in the PMHC MDS - *Service
+     Contact - Final*, and *Episode Completion Status*.
   
-  *Service Contact - Final*
-    Collection of data for *Service Contacts* includes a *Service Contact - Final*
-    item that requires the service provider to indicate whether further *Service
-    Contacts* are planned. Where this item is recorded as ‘no further services
-    planned’, the date of the final *Service Contact* should be recorded as the
-    *Episode End Date*.
+     *Service Contact - Final*
   
-  *Episode Completion Status*
-    This field should be recorded as 'Episode closed treatment concluded' when a
-    *Service Contact - Final* is recorded. The *Episode Completion Status* field
-    can also be manually recorded to allow for administrative closure of episodes
-    (e.g., contact has been lost with a client over a prolonged period - see
-    *Episode Completion Status* for additional guidance). Where an episode is
-    closed administratively, the *Episode End Date* should be recorded as the
-    date on which the organisation made the decision to close episode.
+       Collection of data for *Service Contacts* includes a *Service Contact - Final*
+       item that requires the service provider to indicate whether further *Service
+       Contacts* are planned. Where this item is recorded as ‘no further services
+       planned’, the date of the final *Service Contact* should be recorded as the
+       *Episode End Date*.
+  
+     *Episode Completion Status*
+  
+       This field should be recorded as 'Episode closed treatment concluded' when a
+       *Service Contact - Final* is recorded. The *Episode Completion Status* field
+       can also be manually recorded to allow for administrative closure of episodes
+       (e.g., contact has been lost with a client over a prolonged period - see
+       *Episode Completion Status* for additional guidance). Where an episode is
+       closed administratively, the *Episode End Date* should be recorded as the
+       date on which the organisation made the decision to close episode.
   
 
 :METEOR: `730859 <https://meteor.aihw.gov.au/content/730859>`__
@@ -1406,6 +1446,7 @@ The status of whether the client has consented to be contacted by external evalu
 
 :Notes:
   **Guide for use**
+  
   If the client consents to be contacted for the evaluation, this does not mean
   they have to take part in any activities and can choose to withdraw their
   consent at any time.
@@ -1487,24 +1528,28 @@ The source of PHN Mental Health funds that are wholly or primarily funding the S
   :98: Unknown/Not stated
 
 :Notes:
-  Organisations must record this information for all new Service Contacts
-  under the Version 4 specification.
+  Organisations must record this information for all new Service Contacts.
   
-  0 - Flexible funding pool - Not Otherwise Stated
+  **0 - Flexible funding pool - Not Otherwise Stated**
+  
     This response is only to be used for existing data entered under a Version 2
     or HeadtoHelp Version 3 specification.
   
-  23 - Head to Health program
+  **23 - Head to Health program**
+  
     This includes Head to Health Adult Centres and Satellites, and pop-up clinics.
   
-  25 - Norfolk Island
+  **25 - Norfolk Island**
+  
     This category only applies to services commissioned through the
     Central and Eastern Sydney PHN.
   
-  27 - Way Back Support Service
+  **27 - Way Back Support Service**
+  
     This category must only to be used in conjunction with the Wayback Extension.
   
-  97 - Other funding source - no Commonwealth Funding
+  **97 - Other funding source - no Commonwealth Funding**
+  
     This category can only to be used where a service is wholly funded by a
     non-PHN funding source such as State/Territory jurisdictional funds.
   
@@ -1586,22 +1631,26 @@ An indication of whether the client has been homeless in the 4 weeks prior to th
   :9: Not stated / Missing
 
 :Notes:
-  1	- Sleeping rough or in non-conventional accommodation
+  **1	- Sleeping rough or in non-conventional accommodation**
+  
     Includes sleeping on the streets, in a park, in cars or railway carriages,
     under bridges or other similar ‘rough’ accommodation
   
-  2	- Short-term or emergency accommodation
+  **2	- Short-term or emergency accommodation**
+  
     Includes sleeping in short-term accommodation, emergency accommodation, due
     to a lack of other options. This may include refuges; crisis shelters; couch
     surfing; living temporarily with friends and relatives; insecure
     accommodation on a short term basis; emergency accommodation arranged in
     hotels, motels etc by a specialist homelessness agency.
   
-  3	- Not homeless
+  **3	- Not homeless**
+  
     Includes sleeping in own accommodation/rental accommodation or living with
     friends or relatives on a stable, long term basis
   
-  9	- Not stated / Missing
+  **9	- Not stated / Missing**
+  
     Not stated / Missing
   
   Select the code that best fits the client’s sleeping arrangements over the
@@ -1872,15 +1921,17 @@ The reason the practitioner recommended a different level of care than the level
 :Notes:
   The `Initial Assessment and Referral Decision Support Tool <https://iar-dst.online>`_ allows for the provision of a reason for a practitioner override of the IAR-DST level. 
   
-  1 - Services availability
+  **1 - Services availability**
+  
     e.g. services at recommended level of care not available
   
-  2 - Personal circumstances and preferences of the individual patient/consumer
+  **2 - Personal circumstances and preferences of the individual patient/consumer**
   
-  3 - Clinical judgement
+  **3 - Clinical judgement**
+  
     e.g. concerns about other health, social or risk and safety issues
   
-  4 - Other
+  **4 - Other**
   
   
 
@@ -2068,16 +2119,19 @@ Whether an interpreter service was used during the Service Contact
   Interpreter services includes verbal language, non-verbal language and
   languages other than English.
   
-  1 - Yes
+  **1 - Yes**
+  
     Use this code where interpreter services were used during the Service
     Contact. Use of interpreter services for any form of sign language or other
     forms of non-verbal communication should be coded as Yes.
   
-  2 - No
+  **2 - No**
+  
     Use this code where interpreter services were not used during the Service
     Contact.
   
-  9 - Not stated
+  **9 - Not stated**
+  
     Indicates that the item was not collected. This item should not appear as an
     option for clinicians, it is for administrative use only.
   
@@ -2105,6 +2159,7 @@ An indication of whether the client has an intersex status, as represented by a 
 
 :Notes:
   **Guide for use**
+  
   The term intersex is used to describe people who are born with sex
   characteristics, including genitals, gonads and chromosome patterns, that do
   not fit typical binary notions of male and female bodies
@@ -2792,7 +2847,8 @@ The self-reported status the person currently has in being either in the labour 
   :9: Not stated/inadequately described
 
 :Notes:
-  1 - Employed
+  **1 - Employed**
+  
     Employed persons are those aged 15 years and over who met one of the following
     criteria during the reference week:
   
@@ -2814,7 +2870,8 @@ The self-reported status the person currently has in being either in the labour 
       - on workers’ compensation and expected to return to their job.
     - Were owner managers who had a job, business or farm, but were not at work.
   
-  2 - Unemployed
+  **2 - Unemployed**
+  
     Unemployed persons are those aged 15 years and over who were not employed
     during the reference week, and:
   
@@ -2825,7 +2882,7 @@ The self-reported status the person currently has in being either in the labour 
       reference week and could have started in the reference week if the job
       had been available then.
   
-  Actively looked for work includes:
+    *Actively looked for work* includes:
   
     - written, telephoned or applied to an employer for work;
     - had an interview with an employer for work;
@@ -2836,14 +2893,16 @@ The self-reported status the person currently has in being either in the labour 
     - advertised or tendered for work; and
     - contacted friends or relatives in order to obtain work.
   
-  3 - Not in the labour force
+  **3 - Not in the labour force**
+  
     Persons not in the labour force are those aged 15 years and over who were
     not in the categories employed or unemployed, as defined, during the
     reference week. They include people who undertook unpaid household duties
     or other voluntary work only, were retired, voluntarily inactive and those
     permanently unable to work.
   
-  9 - Not stated/inadequately described
+  **9 - Not stated/inadequately described**
+  
     Includes children under 15 (0-14 years)
   
 
@@ -3361,20 +3420,24 @@ A person's current relationship status in terms of a couple relationship or, for
 :Notes:
   Refers to the current marital status of a person.
   
-  2 - Widowed
+  **2 - Widowed**
+  
     This code usually refers to registered marriages but when self-reported may
     also refer to de facto marriages.
   
-  4 - Separated
+  **4 - Separated**
+  
     This code refers to registered marriages but when self-reported may also
     refer to de facto marriages.
   
-  5 - Married (registered and de facto)
+  **5 - Married (registered and de facto)**
+  
     Includes people who have been divorced or widowed but have since
     re-married, and should be generally accepted as applicable to all de facto
     couples, including of the same sex.
   
-  6 - Not stated/inadequately described
+  **6 - Not stated/inadequately described**
+  
     This code is not for use on primary collection forms. It is primarily for
     use in administrative collections when transferring data from data sets
     where the item has not been collected.
@@ -3631,25 +3694,30 @@ How the service contact was delivered, as represented by a code.
   :5: SMS
 
 :Notes:
-  0 - No contact took place
+  **0 - No contact took place**
+  
     Only use this code where the service contact is recorded as a no show.
   
-  1 - Face to Face
+  **1 - Face to Face**
+  
     - If 'Face to Face' is selected, a value other than 'Not applicable' must
       be selected for Service Contact Venue
     - If 'Face to Face' is selected a valid Australian
       postcode must be entered for Service Contact Postcode. The unknown postcode is not valid.
   
-  2 - Telephone
+  **2 - Telephone**
+  
       Includes any voice based communication that does not use video,
       regardless of the technology used to provide the voice communication.
       For example, this could either be over land line telephone, mobile
       telephone, VoIP.
   
-  3 - Video
+  **3 - Video**
+  
       Includes any video based communication.
   
-  4 - Internet-based
+  **4 - Internet-based**
+  
       Any internet based communications that do not fall into the
       2 - Telephone or 3 - Video categories. This includes email communication,
       providing the communication would normally warrant a dated entry in the
@@ -3657,15 +3725,17 @@ How the service contact was delivered, as represented by a code.
       carer or family member, and/or other professional or mental health worker,
       or other service provider.
   
-  5 - SMS
+  **5 - SMS**
+  
       Service contacts via SMS messaging can only be recorded as a service contact
       if it is evident there is an exchange of messages, between the sender and 
       receiver, relevant to the clinical condition of the client. SMS messaging 
       will be counted as one service contact where the nature of the service would 
       normally warrant a dated entry in the clinical record of the client.
   
-  Note: If Service Contact Modality is not 'Face to Face' the postcode must
-  be entered as unknown 9999.
+  .. note:: 
+     If Service Contact Modality is not 'Face to Face' the postcode must
+     be entered as unknown 9999.
   
 
 ----------
@@ -3780,6 +3850,7 @@ The identified needs of the client at commencement or review of the service.
 
 :Notes:
   **Reporting requirements**
+  
   The Needs Identification (NI) is a screening process where the psychosocial
   needs of a client are identified. It provides the basis for the creation of a
   Support Plan and is considered a useful way to help understand client support
@@ -3813,9 +3884,12 @@ Where an appointment was made for an intended participant(s), but the intended p
   :2: No
 
 :Notes:
-  1 - Yes
+  **1 - Yes**
+  
     The intended participant(s) failed to attend the appointment.
-  2 - No
+  
+  **2 - No**
+  
     The intended participant(s) attended the appointment.
   
 
@@ -3977,24 +4051,29 @@ The category that best describes the provider organisation.
   :99: Missing
 
 :Notes:
-  1 - Private Allied Health Professional Practice
+  **1 - Private Allied Health Professional Practice**
+  
     The provider organisation is a group of single- or multi-discipline allied
     health practitioners operating as private service providers. This includes
     both group and solo practitioner entities.
   
-  2 - Private Psychiatry practice
+  **2 - Private Psychiatry practice**
+  
     The provider organisation is a Private Psychiatry practice. This includes both
     group and solo practitioner entities.
   
-  3 - General Medical Practice
+  **3 - General Medical Practice**
+  
     The provider organisation is a General Medical Practice. This includes both
     group and solo practitioner entities.
   
-  4 - Private Hospital
+  **4 - Private Hospital**
+  
     The provider organisation is a private hospital.  This includes for-profit and
     not-for-profit hospitals.
   
-  5 - Headspace Centre
+  **5 - Headspace Centre**
+  
     The provider organisation is a Headspace centre, delivering services funded by
     the PHN.
   
@@ -4008,44 +4087,53 @@ The category that best describes the provider organisation.
     through headspace National Office sustem or are better reported through the
     PMHC MDS.
   
-  6 - Early Youth Psychosis Centre
+  **6 - Early Youth Psychosis Centre**
+  
     The provider organisation is a Early Youth Psychosis Centre, delivering
     services funded by the PHN.
   
     Note: See Note above re Headspace.
   
-  7 - Community-managed Community Support Organisation
+  **7 - Community-managed Community Support Organisation**
+  
     The provider organisation is a community-managed (non-government) organisation
     that primarily delivers disability-related or social support services.
   
-  8 - Aboriginal Health/Medical Service
+  **8 - Aboriginal Health/Medical Service**
+  
     The provider organisation is an Aboriginal or Torres Strait Islander-controlled
     health service organisation.
   
-  9 - State/Territory Health Service Organisation
+  **9 - State/Territory Health Service Organisation**
+  
     The provider organisation is a health service entity principally funded by a
     state or territory government.  This includes all services delivered through
     Local Hospital Networks (variously named across jurisdictions).
   
-  10 - Drug and/or Alcohol Service Organisation
+  **10 - Drug and/or Alcohol Service Organisation**
+  
     The provider organisation is an organisation that provides specialised drug
     and alcohol treatment services. The organisation may be operating in the
     government or non-government sector, and where the latter, may be for-profit
     or not-for-profit.
   
-  11 - Primary Health Network
+  **11 - Primary Health Network**
+  
     The PHN is the provider organisation and employs the service delivery
     practitioners. This may occur during the transition period as the PHN moves to
     a full commissioning role, or in cases of market failure where there is no
     option to commission external providers.
   
-  12 - Medicare Local
+  **12 - Medicare Local**
+  
     The provider organisation is a former Medicare Local entity.
   
-  13 - Division of General Practice
+  **13 - Division of General Practice**
+  
     The provider organisation is a former Division of General Practice entity.
   
-  98 - Other
+  **98 - Other**
+  
     The provider organisation cannot be described by any of the available options.
   
 
@@ -4169,8 +4257,6 @@ Type of organisation to which the the client was referred at the Intake conclusi
   
 
 :Notes:
-  .. include:: shared/referrer-organisation-type.rst
-  
   The intent is that each referral out only has one organisation type 
   and that multiple organisation types imples multiple referrals. 
   Where an organisation could belong to multiple types, the type that
@@ -4200,32 +4286,38 @@ An indication of who participated in the Service Contact.
   :9: Not stated
 
 :Notes:
-  1 - Individual
+  **1 - Individual**
+  
     Code applies for Service Contacts delivered individually to a single client
     without third party participants. Please refer to the Note below.
   
-  2 - Client group
+  **2 - Client group**
+  
     Code applies for Service Contacts delivered on a group basis to two or more
     clients.
   
-  3 - Family / Client Support Network
+  **3 - Family / Client Support Network**
+  
     Code applies to Service Contacts delivered to the family/social support
     persons of the client, with or without the participation of the client.
   
-  4 - Other health professional or service provider
+  **4 - Other health professional or service provider**
+  
     Code applies for Service Contacts that involve another health professional or
     service provider (in addition to the Practitioner/s), without the
     participation of the client or family support network.
   
-  5 - Other
+  **5 - Other**
+  
     Code applies to Service Contacts delivered to other third parties
     (e.g., teachers, employer), with or without the participation of the client.
   
-  *Note:* This item interacts with :ref:`dfn-service_contact_participation_indicator`.
-  Where :ref:`dfn-service_contact_participants` has a value of
-  '1: Individual', :ref:`dfn-service_contact_participation_indicator` must
-  have a value of '1: Yes'. :ref:`dfn-service_contact_no_show` is used to record if the
-  patient failed to attend the appointment.
+  .. note:: 
+     This item interacts with :ref:`dfn-service_contact_participation_indicator`.
+     Where :ref:`dfn-service_contact_participants` has a value of
+     '1: Individual', :ref:`dfn-service_contact_participation_indicator` must
+     have a value of '1: Yes'. :ref:`dfn-service_contact_no_show` is used to record if the
+     patient failed to attend the appointment.
   
 
 ----------
@@ -4279,45 +4371,45 @@ The type of plan.
 :Notes:
   **1 - Safety Plan**
   
-  Clients referred to Universal Aftercare may have commenced the process of safety
-  planning as part of their discussions with Emergency Department or Ward staff.
-  Any existing safety plans completed by hospital or staff should be shared with
-  or requested by the Universal Aftercare service provider and updated as part of
-  preliminary discussions with Universal Aftercare clients.
-  Where clients referred to Universal Aftercare have not completed any safety planning
-  prior to their referral this should be completed as a priority once the client
-  has consented to participate in Universal Aftercare.
+    Clients referred to Universal Aftercare may have commenced the process of safety
+    planning as part of their discussions with Emergency Department or Ward staff.
+    Any existing safety plans completed by hospital or staff should be shared with
+    or requested by the Universal Aftercare service provider and updated as part of
+    preliminary discussions with Universal Aftercare clients.
+    Where clients referred to Universal Aftercare have not completed any safety planning
+    prior to their referral this should be completed as a priority once the client
+    has consented to participate in Universal Aftercare.
   
-  Safety Plans must be updated/developed within the first contact with the
-  client. Safety plans should be reviewed with a client as needed. Each instance of
-  the review and update of a safety plan should be recorded.
+    Safety Plans must be updated/developed within the first contact with the
+    client. Safety plans should be reviewed with a client as needed. Each instance of
+    the review and update of a safety plan should be recorded.
   
-  Service Providers should choose the most appropriate Support Plan template for
-  their service. The TWB Tools and Templates provide a sample of one and there
-  is also the BeyondNow app.
+    Service Providers should choose the most appropriate Support Plan template for
+    their service. The TWB Tools and Templates provide a sample of one and there
+    is also the BeyondNow app.
   
   **2 - Support Plan**
   
-  All Universal Aftercare service providers must work collaboratively with their clients
-  to develop a Support Plan that articulates:
+    All Universal Aftercare service providers must work collaboratively with their clients
+    to develop a Support Plan that articulates:
   
-  * the client’s **needs** as assessed using the Support Tools
-  * the client’s **goals** of participating in Universal Aftercare
-  * proposed **actions and interventions** planned to address identified needs
-    and goals including referrals to be made
+    * the client’s **needs** as assessed using the Support Tools
+    * the client’s **goals** of participating in Universal Aftercare
+    * proposed **actions and interventions** planned to address identified needs
+      and goals including referrals to be made
   
-  In developing a Support Plan, discussion with clients should consider warning
-  signs, strengths, support mechanisms and strategies that have enabled them to
-  take the next steps. Needs Identified in this process are to be grouped and
-  reported in the UA NI data collection.
+    In developing a Support Plan, discussion with clients should consider warning
+    signs, strengths, support mechanisms and strategies that have enabled them to
+    take the next steps. Needs Identified in this process are to be grouped and
+    reported in the UA NI data collection.
   
-  A Support Plan must be completed with a client within two weeks of their
-  consenting to participate in the service. To identify a client’s needs and
-  build an understanding of what support will be of benefit, all Support Tools
-  and Measures should be completed prior to completing the Support Plan.
-  Support Plans are also required to be reviewed at 6 weeks, or a regular basis
-  throughout the support period to ensure that strategies are current and upon
-  Service Exit. Each review must be documented.
+    A Support Plan must be completed with a client within two weeks of their
+    consenting to participate in the service. To identify a client’s needs and
+    build an understanding of what support will be of benefit, all Support Tools
+    and Measures should be completed prior to completing the Support Plan.
+    Support Plans are also required to be reviewed at 6 weeks, or a regular basis
+    throughout the support period to ensure that strategies are current and upon
+    Service Exit. Each review must be documented.
   
 
 ----------
@@ -4373,7 +4465,9 @@ Whether a person identifies as being of Aboriginal and/or Torres Strait Islander
   :9: Not stated/inadequately described
 
 :Notes:
-  Code 9 is not to be available as a valid answer to the questions but is
+  **9 - Not stated/inadequately described**
+  
+    Not to be available as a valid answer to the questions but is
     intended for use:
   
     - Primarily when importing data from other data collections that do not
@@ -4433,22 +4527,17 @@ The type or category of the practitioner, as represented by a code.
   of their lived experience of a mental illness.  In such instances, the
   practitioner should be classified as a peer support worker.
   
-  12 - Psychosocial Support Worker
+  **12 - Psychosocial Support Worker**
+  
     Refers to practitioners who are principally employed to provide psychosocial
     support services to clients where the practitioner has specific training in
     the area (e.g., Cert 4 qualification) and cannot be better described by
     another category.
   
-  13 - Peer Support Worker
+  **13 - Peer Support Worker**
+  
     Refers to practitioners who are principally employed to provide support to
     clients on the basis of the practitioner’s lived experience of mental illness.
-  
-  
-  **Changes in effect from 1 January 2019**
-  
-  - Two new codes have been added to the existing Practitioner Category data item,
-    to allow for Psychosocial Support Workers (new code 12) and Peer Support
-    Workers (new code 13) who are typically employed in psychosocial support programs.
   
 
 ----------
@@ -4473,15 +4562,18 @@ The term 'gender' refers to the way in which a person identifies their masculine
   :3: Other
 
 :Notes:
-  1 - M - Male
+  **1 - M - Male**
+  
     Adults who identify themselves as men, and children who identify themselves
     as boys.
   
-  2 - F - Female
+  **2 - F - Female**
+  
     Adults who identify themselves as women, and children who identify themselves
     as girls.
   
-  3 - X- Other
+  **3 - X- Other**
+  
     Adults and children who identify as non-binary, gender diverse, or with
     descriptors other than man/boy or woman/girl.
   
@@ -4852,23 +4944,24 @@ The Principal Diagnosis is the diagnosis established after study to be chiefly r
   Reference: Diagnostic and Statistical Manual of Mental Disorders, Fourth
   Edition, Text Revision. Copyright 2000 American Psychiatric Association.
   
-  The following responses have been added to allow mapping of ATAPS data to PMHC
-  format.
+  .. note::
+     The following responses have been added to allow mapping of ATAPS data to PMHC
+     format.
   
-  - 100: Anxiety disorders (ATAPS)
-  - 200: Affective (Mood) disorders (ATAPS)
-  - 300: Substance use disorders (ATAPS)
-  - 400: Psychotic disorders (ATAPS)
+     - 100: Anxiety disorders (ATAPS)
+     - 200: Affective (Mood) disorders (ATAPS)
+     - 300: Substance use disorders (ATAPS)
+     - 400: Psychotic disorders (ATAPS)
   
-  *Note: These four codes should only be used for Episodes that are migrated
-  from ATAPS MDS sources that cannot be described by any other Diagnosis.
-  It is expected that the majority of Episodes delivered to clients
-  from 1st July, 2017 can be assigned to other diagnoses.*
+     These four codes should only be used for Episodes that are migrated
+     from ATAPS MDS sources that cannot be described by any other Diagnosis.
+     It is expected that the majority of Episodes delivered to clients
+     from 1st July, 2017 can be assigned to other diagnoses.*
   
-  These responses will only be allowed on episodes where the original
-  ATAPS referral date was before 1 July 2017
+     These responses will only be allowed on episodes where the original
+     ATAPS referral date was before 1 July 2017
   
-  These responses will only be allowed on episodes with the !ATAPS flag.
+     These responses will only be allowed on episodes with the !ATAPS flag.
   
 
 ----------
@@ -4914,7 +5007,8 @@ The range of activities that best describes the overall services intended to be 
   the client. It should not be confused with Service Type which is collected at
   each Service Contact.
   
-  1 - Psychological therapy
+  **1 - Psychological therapy**
+  
     The treatment plan for the client is primarily based around the delivery of
     psychological therapy by one or more mental health professionals. This
     category most closely matches the type of services delivered under the
@@ -4936,7 +5030,8 @@ The range of activities that best describes the overall services intended to be 
     - Social Workers
     - Aboriginal and Torres Strait Islander health workers.
   
-  2 - Low intensity psychological intervention
+  **2 - Low intensity psychological intervention**
+  
     The treatment plan for the client is primarily based around delivery of
     time-limited, structured psychological interventions that are aimed at
     providing a less costly intervention alternative to 'standard' psychological
@@ -4952,7 +5047,8 @@ The range of activities that best describes the overall services intended to be 
     - delivery of brief or low cost forms of treatment by mental health
       professionals.
   
-  3 - Clinical care coordination
+  **3 - Clinical care coordination**
+  
     The treatment plan for the client is primarily based around delivery of a
     range of services where the overarching aim is to coordinate and better
     integrate care for the individual across multiple providers with the aim of
@@ -4972,7 +5068,8 @@ The range of activities that best describes the overall services intended to be 
     that have some level of responsibility for the client’s treatment and/or
     well-being.
   
-  4 - Complex Care Package
+  **4 - Complex Care Package**
+  
     The treatment plan for the client is primarily based around the delivery of an
     individually tailored ‘package’ of services for a client with severe and
     complex mental illness who is being managed principally within a primary care
@@ -4985,7 +5082,8 @@ The range of activities that best describes the overall services intended to be 
     expected to deliver complex care packages. A wider roll-out may be undertaken
     in the future pending results of the trial.
   
-  5 - Child and youth-specific mental health services
+  **5 - Child and youth-specific mental health services**
+  
     The treatment plan for the client is primarily based around the delivery of a
     range of services for children (0-11 years) or youth (aged 12-24 years) who
     present with a mental illness, or are at risk of mental illness. These
@@ -4995,16 +5093,19 @@ The range of activities that best describes the overall services intended to be 
     care coordination and liaison. Child and youth-specific mental health
     episodes have substantial flexibility in types of services actually delivered.
   
-  6 - Indigenous-specific services
+  **6 - Indigenous-specific services**
+  
     The treatment plan for the client is primarily based around delivery of
     mental health services that are specifically designed to provide culturally
     appropriate services for Aboriginal and Torres Strait Islander peoples.
   
-  7 - Other
+  **7 - Other**
+  
      The treatment plan for the client is primarily based around services
      that cannot be described by other categories.
   
-  8 - Psychosocial support
+  **8 - Psychosocial support**
+  
     Can only be used where the :ref:`dfn-program_type` is '9: Universal Aftercare'.
   
     Where a client is being delivered Universal Aftercare services and accessing another
@@ -5076,11 +5177,13 @@ The self-assessed level of ability to speak English, asked of people whose first
   :9: Not stated/inadequately described
 
 :Notes:
-  0 - Not applicable (persons under 5 years of age or who speak only English)
+  **0 - Not applicable (persons under 5 years of age or who speak only English)**
+  
     Not applicable, is to be used for people under 5 years of age and people
     who speak only English.
   
-  9 - Not stated/inadequately described
+  **9 - Not stated/inadequately described**
+  
     Not stated/inadequately described, is not to be used on primary collection
     forms. It is primarily for use in administrative collections when
     transferring data from data sets where the item has not been collected.
@@ -5113,31 +5216,26 @@ The overarching program area that an Intake or Episode record is associated with
   :9: Universal Aftercare
 
 :Notes:
-  1 - Flexible Funding Pool
+  **1 - Flexible Funding Pool**
+    
     Organisations can use this field for episodes being delivered through all
     other Programs commissioned through Primary Mental Health Care Schedule
     that are not otherwise described by another category. This may include but
     is not limited to general Stepped Care, Mental Health in Residential Aged
     Care Facilities, and Indigenous Mental Health.
   
-  2 - Head to Health Clinic
+  **2 - Head to Health Clinic**
+    
     ******Update this with wording from DoHDA*******
-    Organisations can use this field for episodes delivered through the Head to
-    Health Program. This includes Head to Health Adult Centres and Satellites
-    and pop-up clinics.
+    This response is only to be used by remaining temporary Head to Health 
+    Clinics in NSW and Victoria.
   
-    NSW and Victorian pop-up clinics data have been identified using the Head
-    to Help Version 3 extension and !covid19 tag. Any historical or new records
-    that are identified this way will be mapped to this Program Type field
-    under the Version 4 specification. The !covid19 tag will remain as a
-    reserved tag for the original purpose of indicating that an episode has
-    occurred as result of the COVID-19 pandemic once Head to Help Version 3
-    extension reaches it’s end of life date.
-  
-  4 - Psychosocial
+  **4 - Psychosocial**
+    
     Organisations can use this field for episodes delivered through the National
     Psychosocial Support Services Program.
   
+    ******Remove or update the below for Version 5.0?*******
     Psychosocial data has been identified using the Principal Focus of Treatment
     Plan (PFOT) “Psychosocial” category. Any historical or new records that
     utilise the Psychosocial PFOT will be mapped to this Program Type field
@@ -5150,17 +5248,20 @@ The overarching program area that an Intake or Episode record is associated with
     !amhc, or !br20 tag will be mapped to the respective Program Type associated
     with those tags rather than the Psychosocial Program Type.
   
-  5 - Bushfire Recovery 2020
+  **5 - Bushfire Recovery 2020**
+    
     Organisations in fire affected communities can use this field for episodes
     delivered through the Australian Government Mental Health Response to
     Bushfire Trauma.
   
+    ******Remove or update the below for Version 5.0?*******
     This data has been identified using the !br20 tag. Any historical or new
     records using this tag will be mapped to this Program Type field under
     the Version 4 specification. The !br20 tag will be removed from future
     use once the Bushfire Program is concluded.
   
-  7 - Supporting Recovery
+  **7 - Supporting Recovery**
+    
     Valid as of May 2024. Organisations can use this field for supports 
     being provided under the Supporting Recovery pilot. The Supporting 
     Recovery pilot provides case management services and trauma-informed 
@@ -5175,10 +5276,12 @@ The overarching program area that an Intake or Episode record is associated with
     * Northern Territory PHN, and
     * Country Western Australia PHN.
   
-  8 - MMHC
+  **8 - MMHC**
+    
     Valid as of ?? 2025. *********DoHDA to provide text***********
   
-  9 - Universal Aftercare
+  **9 - Universal Aftercare**
+    
     Valid as of ?? 2025. *********DoHDA to provide text***********
 
 ----------
@@ -5397,8 +5500,6 @@ Type of organisation in which the referring professional is based.
 
 :Notes:
   .. include:: shared/referrer-organisation-type.rst
-  
-  Not applicable should only be selected in instances of Self referral.
   
   Where there is a linked intake and treatment, both the Intake and Episode records
   must use the same referrer organisation type - ie the intake service is NOT the referrer.
@@ -7150,12 +7251,16 @@ The main type of service provided in the service contact, as represented by the 
   that which accounted for most provider time. Service providers are required
   to report on Service Type for all Service Contacts.
   
-  *Note: NEC is used for 'Not Elsewhere Classified'. For these records, only use these service types if they cannot be classified by any of the other service options.*
+  .. note::
+     NEC is used for 'Not Elsewhere Classified'. For these records, only use these 
+     service types if they cannot be classified by any of the other service options.
   
-  0 - No contact took place
+  **0 - No contact took place**
+  
     Only use this code where the service contact is recorded as a no show.
   
-  1 - Assessment
+  **1 - Assessment**
+  
     Determination of a person's mental health status and need for mental
     health services, made by a suitably trained mental health professional,
     based on the collection and evaluation of data obtained through interview
@@ -7164,7 +7269,8 @@ The main type of service provided in the service contact, as represented by the 
     with formation of problems/issues, documentation of a preliminary
     diagnosis, and a treatment plan.
   
-  2 - Structured psychological intervention
+  **2 - Structured psychological intervention**
+  
     Those interventions which include a structured interaction between a
     client and a service provider using a recognised, psychological method,
     for example, cognitive behavioural techniques, family therapy or psycho
@@ -7186,11 +7292,13 @@ The main type of service provided in the service contact, as represented by the 
     - Skills training
     - Interpersonal therapy
   
-  3 - Other psychological intervention
+  **3 - Other psychological intervention**
+  
      Psychological interventions that do not meet criteria for structured
      psychological intervention.
   
-  4 - Clinical care coordination/liaison
+  **4 - Clinical care coordination/liaison**
+  
      Activities focused on working in partnership and liaison with other
      health care and service providers and other individuals to coordinate
      and integrate service delivery to the client with the aim of improving
@@ -7200,7 +7308,8 @@ The main type of service provided in the service contact, as represented by the 
      and other agencies that have some level of responsibility for the
      client's treatment and/or well being.
   
-  5 - Clinical nursing services
+  **5 - Clinical nursing services**
+  
     Services delivered by mental health nurses that cannot be described
     elsewhere.  Typically, these aim to provide clinical support to clients
     to effectively manage their symptoms and avoid unnecessary hospitalisation.
@@ -7214,19 +7323,22 @@ The main type of service provided in the service contact, as represented by the 
       of people with mental illness; and
     - improving links to other health professionals/clinical service providers.
   
-  6 - Child or youth-specific assistance NEC
+  **6 - Child or youth-specific assistance NEC**
+  
     Services delivered to, or on behalf, of a child or young person that cannot
     be described elsewhere. These can include, for example, working with a
     child’s teacher to provide advice on assisting the child in their educational
     environment; working with a young person's employer to assist the young
     person to their work environment.
   
-    *Note: This code should only be used for
-    Service Contacts that cannot be described by any other Service Type. It is
-    expected that the majority of Service Contacts delivered to children and
-    young people can be assigned to other categories.*
+    .. note::
+       This code should only be used for
+       Service Contacts that cannot be described by any other Service Type. It is
+       expected that the majority of Service Contacts delivered to children and
+       young people can be assigned to other categories.*
   
-  7 - Suicide prevention specific assistance NEC
+  **7 - Suicide prevention specific assistance NEC**
+  
     Services delivered to, or on behalf, of a client who presents with risk of
     suicide that cannot be described elsewhere. These can include, for example,
     working with the person's employers to advise on changes in the workplace;
@@ -7234,24 +7346,28 @@ The main type of service provided in the service contact, as represented by the 
     environment; or working with relevant community-based groups to assist the
     client to participate in their activities.
   
-    *Note: This code should only be used for Service Contacts that cannot be
-    described by any other Service Type. It is expected that the majority of
-    Service Contacts delivered to client’s who have a risk of suicide can be
-    assigned to other categories.*
+    .. note::
+       This code should only be used for Service Contacts that cannot be
+       described by any other Service Type. It is expected that the majority of
+       Service Contacts delivered to client’s who have a risk of suicide can be
+       assigned to other categories.*
   
-  8 - Cultural specific assistance NEC
+  **8 - Cultural specific assistance NEC**
+  
     Culturally appropriate services delivered to, or on behalf, of an Aboriginal
     or Torres Strait Islander client that cannot be described elsewhere.  These
     can include, for example, working with the client’s community support network
     including family and carers, men’s and women’s groups, traditional healers,
     interpreters and social and emotional wellbeing counsellors.
   
-    *Note: This code should only be used for Service Contacts that cannot be
-    described by any other Service Type. It is expected that the majority of
-    Service Contacts (see domains below) delivered to Aboriginal or Torres Strait
-    Islander clients can be assigned to other categories.*
+    .. note::
+       This code should only be used for Service Contacts that cannot be
+       described by any other Service Type. It is expected that the majority of
+       Service Contacts (see domains below) delivered to Aboriginal or Torres Strait
+       Islander clients can be assigned to other categories.*
   
-  9 - Psychosocial support
+  **9 - Psychosocial support**
+  
     Service providers are required to report on Service Contact Type for every
     contact with a client. This requires a judgement about the main service
     delivered at each contact, selected from a small list of options, and based
@@ -7282,19 +7398,21 @@ The main type of service provided in the service contact, as represented by the 
     they will be mainly associated with Universal Aftercare episodes where the Principal Focus of
     Treatment Plan is classified as Psychosocial Support.
   
-  98 - ATAPS
+  **98 - ATAPS**
+  
     Services delivered as part of ATAPS funded referrals that are recorded and/or
     migrated into the PMHC MDS.
   
-    *Note: This code should only be used for Service Contacts that are migrated
-    from ATAPS MDS sources that cannot be described by any other Service Type.
-    It is expected that the majority of Service Contacts delivered to clients
-    from 1st July, 2017 can be assigned to other categories.*
+    .. note::
+       This code should only be used for Service Contacts that are migrated
+       from ATAPS MDS sources that cannot be described by any other Service Type.
+       It is expected that the majority of Service Contacts delivered to clients
+       from 1st July, 2017 can be assigned to other categories.*
   
-    This response will not be allowed on service contacts delivered after
-    30 June 2018. (All ATAPS referrals should have concluded by that date).
+       This response will not be allowed on service contacts delivered after
+       30 June 2018. (All ATAPS referrals should have concluded by that date).
   
-    This response will only be allowed on service contacts with the !ATAPS flag.
+       This response will only be allowed on service contacts with the !ATAPS flag.
   
 
 ----------
@@ -7326,29 +7444,30 @@ Identifies how the client describes their sexual orientation, as represented by 
   sexual identity, attraction and behavior, and refers to a person’s
   emotional, physical and/or sexual attraction to another person.
   
-  **Definitions of terms**
+  **2 - Lesbian, gay or homosexual**
   
-  Lesbian
-    The term lesbian is used to describe a person identifying as a woman who
+    *Lesbian*: The term lesbian is used to describe a person identifying as a woman who
     is romantically and/or sexually attracted to other women.
   
-  Gay
-    The term gay is used to describe a person identifying as a man who is
+    *Gay*: The term gay is used to describe a person identifying as a man who is
     romantically and/or sexually attracted to other men.
   
-  Bisexual
-    The term bisexual is used to describe a person of any gender who is
+  **3 - Bisexual or pansexual**
+  
+    *Bisexual*: The term bisexual is used to describe a person of any gender who is
     romantically and/or sexually attracted to people or more than one gender.
     Some people who fit this description prefer the terms ‘queer’ or
     Pansexual, in recognition of more than two genders. It may also be
     defined as romantic or sexual attraction to people of any sex or gender
     identity, which is also known as pansexuality.
   
-  Asexual
-    Asexual is a sexual orientation defined by a lack of sexual attraction to
+  **4 - Asexual**
+  
+    Is a sexual orientation defined by a lack of sexual attraction to
     any person of any gender.
   
-  Questioning
+  **5 - Questioning**
+  
     Is a process of exploration by people who may be unsure, still exploring,
     and concerned about applying a social label to themselves for various reasons.
   
@@ -7877,20 +7996,25 @@ Where the service contact was delivered, as represented by a code.
   the Service Contact Venue should be recorded as ‘GP Practice’ (code 3) to
   accurately reflect where the contact took place.
   
-  Values other than ‘98 - Not applicable’ only to be specified when Service Contact
-  Modality is ‘Face to Face’.
+  .. note::
+     Values other than ‘98 - Not applicable’ only to be specified when Service Contact
+     Modality is ‘Face to Face’.
   
-  6 - Other primary care setting
+  **6 - Other primary care setting**
+  
     This code is suitable for primary care settings such as community health centres.
   
-  8 - Residential aged care facility
+  **8 - Residential aged care facility**
+  
     Use this code when the client is seen at an aged care residential facility.
   
-  12 - Aged care centre - non-residential
+  **12 - Aged care centre - non-residential**
+  
     Use this code when the client is seen at a non-residential aged care centre
     (e.g., community day program centre for older people).
   
-  98 - Not applicable (Service Contact Modality is not face to face)
+  **98 - Not applicable (Service Contact Modality is not face to face)**
+  
     This code must only to be used where the Service Contact Modality is not
     face to face
   
