@@ -1,4 +1,6 @@
-Code 9 is not to be available as a valid answer to the questions but is
+**9 - Not stated/inadequately described**
+
+  Not to be available as a valid answer to the questions but is
   intended for use:
 
   - Primarily when importing data from other data collections that do not

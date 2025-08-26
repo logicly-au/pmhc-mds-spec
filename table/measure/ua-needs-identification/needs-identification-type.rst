@@ -1,4 +1,5 @@
 **Reporting requirements**
+
 The Needs Identification (NI) is a screening process where the psychosocial
 needs of a client are identified. It provides the basis for the creation of a
 Support Plan and is considered a useful way to help understand client support

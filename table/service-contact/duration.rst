@@ -7,5 +7,6 @@ Travel to or from the location at which the service is provided, for example to
 or from outreach facilities or private homes, is not to be reported as part of
 the duration of the service contact.
 
-0 - No contact took place
+**0 - No contact took place**
+
   Only use this code where the service contact is recorded as a no show.

@@ -1,9 +1,15 @@
-Medical Specialist Consulting Rooms includes private medical practitioner rooms
-in public or private hospital or other settings.
+**2 - Medical Specialist Consulting Rooms**
 
-Public mental health service refers to a state- or territory-funded specialised
-mental health services (i.e., specialised mental health care delivered in
-public acute and psychiatric hospital settings, community mental health care
-services, and specialised residential mental health care services).
+  Includes private medical practitioner rooms in public or private 
+  hospital or other settings.
 
-Not applicable should only be selected in instances of Self referral.
+**4 - Public mental health service**
+
+  Refers to a state- or territory-funded specialised mental health 
+  services (i.e., specialised mental health care delivered in
+  public acute and psychiatric hospital settings, community mental health care
+  services, and specialised residential mental health care services).
+
+**0 - None/Not applicable**
+
+  Should only be selected in instances of Self referral.

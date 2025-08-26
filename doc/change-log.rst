@@ -13,8 +13,9 @@ Data Specification Change log
     * :ref:`dfn-program_type`
 
       * Renamed `2: Head to Health` response to `2: Head to Health Clinic`. 
-        This response is only to be used by organisations commissioned by Victorian 
-        PHNs. Please refer to :ref:`dfn-program_type` for more information
+        This response is only to be used by remaining temporary Head to 
+        Health Clinics in NSW and Victoria. Please refer to 
+        :ref:`dfn-program_type` for more information
       * Retired `3: AMHC` response
       * Added `9: Universal Aftercare` response
 

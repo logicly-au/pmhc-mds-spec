@@ -34,7 +34,7 @@ AMHC and Head to Health have been rebranded as Medicare Mental Health Centres (M
 `8: MMHC` reponse for :ref:`dfn-program_type`. The following changes have been applied to the :ref:`dfn-program_type` field on both
 the Intake and Episode tables:
 
-* `2: Head to Health` renamed to `2: Head to Health Clinic`. This response is only to be used by organisations commissioned by Victorian PHNs. Please refer to :ref:`dfn-program_type` for more information.
+* `2: Head to Health` renamed to `2: Head to Health Clinic`. This response is only to be used by remaining temporary Head to Health Clinics in NSW and Victoria. Please refer to :ref:`dfn-program_type` for more information.
 * `3: AMHC` has been retired. An error will be returned if this response is used.
 
 .. _introduction-contexts:

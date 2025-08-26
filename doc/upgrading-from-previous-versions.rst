@@ -35,7 +35,7 @@ PMHC MDS Version 5.0 data specifications are as follows:
   `8: MMHC` response for :ref:`dfn-program_type`. The following changes have been applied to the :ref:`dfn-program_type` field on both
   the Intake and Episode tables:
 
-  - `2: Head to Health` renamed to `2: Head to Health Clinic`. This response is only to be used by organisations commissioned by Victorian PHNs. Please refer to :ref:`dfn-program_type` for more information.
+  - `2: Head to Health` renamed to `2: Head to Health Clinic`. This response is only to be used by remaining temporary Head to Health Clinics in NSW and Victoria. Please refer to :ref:`dfn-program_type` for more information.
   - `3: AMHC` has been retired. An error will be returned if this response is used.
 
 * A new :ref:`dfn-veteran` field has been added to the Intake and Episode tables. This field was included in The Way Back specification. 

@@ -52,20 +52,21 @@ should be used.
 Reference: Diagnostic and Statistical Manual of Mental Disorders, Fourth
 Edition, Text Revision. Copyright 2000 American Psychiatric Association.
 
-The following responses have been added to allow mapping of ATAPS data to PMHC
-format.
+.. note::
+   The following responses have been added to allow mapping of ATAPS data to PMHC
+   format.
 
-- 100: Anxiety disorders (ATAPS)
-- 200: Affective (Mood) disorders (ATAPS)
-- 300: Substance use disorders (ATAPS)
-- 400: Psychotic disorders (ATAPS)
+   - 100: Anxiety disorders (ATAPS)
+   - 200: Affective (Mood) disorders (ATAPS)
+   - 300: Substance use disorders (ATAPS)
+   - 400: Psychotic disorders (ATAPS)
 
-*Note: These four codes should only be used for Episodes that are migrated
-from ATAPS MDS sources that cannot be described by any other Diagnosis.
-It is expected that the majority of Episodes delivered to clients
-from 1st July, 2017 can be assigned to other diagnoses.*
+   These four codes should only be used for Episodes that are migrated
+   from ATAPS MDS sources that cannot be described by any other Diagnosis.
+   It is expected that the majority of Episodes delivered to clients
+   from 1st July, 2017 can be assigned to other diagnoses.*
 
-These responses will only be allowed on episodes where the original
-ATAPS referral date was before 1 July 2017
+   These responses will only be allowed on episodes where the original
+   ATAPS referral date was before 1 July 2017
 
-These responses will only be allowed on episodes with the !ATAPS flag.
+   These responses will only be allowed on episodes with the !ATAPS flag.

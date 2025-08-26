@@ -1,4 +1,5 @@
-1 - Employed
+**1 - Employed**
+
   Employed persons are those aged 15 years and over who met one of the following
   criteria during the reference week:
 
@@ -20,7 +21,8 @@
     - on workers’ compensation and expected to return to their job.
   - Were owner managers who had a job, business or farm, but were not at work.
 
-2 - Unemployed
+**2 - Unemployed**
+
   Unemployed persons are those aged 15 years and over who were not employed
   during the reference week, and:
 
@@ -31,7 +33,7 @@
     reference week and could have started in the reference week if the job
     had been available then.
 
-Actively looked for work includes:
+  *Actively looked for work* includes:
 
   - written, telephoned or applied to an employer for work;
   - had an interview with an employer for work;
@@ -42,12 +44,14 @@ Actively looked for work includes:
   - advertised or tendered for work; and
   - contacted friends or relatives in order to obtain work.
 
-3 - Not in the labour force
+**3 - Not in the labour force**
+
   Persons not in the labour force are those aged 15 years and over who were
   not in the categories employed or unemployed, as defined, during the
   reference week. They include people who undertook unpaid household duties
   or other voluntary work only, were retired, voluntarily inactive and those
   permanently unable to work.
 
-9 - Not stated/inadequately described
+**9 - Not stated/inadequately described**
+
   Includes children under 15 (0-14 years)

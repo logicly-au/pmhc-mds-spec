@@ -4,20 +4,25 @@ residential facility is seen at another venue (e.g., at a GP Clinic), then
 the Service Contact Venue should be recorded as ‘GP Practice’ (code 3) to
 accurately reflect where the contact took place.
 
-Values other than ‘98 - Not applicable’ only to be specified when Service Contact
-Modality is ‘Face to Face’.
+.. note::
+   Values other than ‘98 - Not applicable’ only to be specified when Service Contact
+   Modality is ‘Face to Face’.
 
-6 - Other primary care setting
+**6 - Other primary care setting**
+
   This code is suitable for primary care settings such as community health centres.
 
-8 - Residential aged care facility
+**8 - Residential aged care facility**
+
   Use this code when the client is seen at an aged care residential facility.
 
-12 - Aged care centre - non-residential
+**12 - Aged care centre - non-residential**
+
   Use this code when the client is seen at a non-residential aged care centre
   (e.g., community day program centre for older people).
 
-98 - Not applicable (Service Contact Modality is not face to face)
+**98 - Not applicable (Service Contact Modality is not face to face)**
+
   This code must only to be used where the Service Contact Modality is not
   face to face
 

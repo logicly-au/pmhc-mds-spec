@@ -1,4 +1,5 @@
-1 - Primary Eligibility Criteria
+**1 - Primary Eligibility Criteria**
+
   The primary eligibility criteria are met when a person is referred to
   Universal Aftercare after presenting to a hospital emergency department or
   community mental health service following a suicide attempt. A suicide
@@ -7,7 +8,8 @@
   attempt may or may not result in physical injury and may or may not result
   in a hospital admission.
 
-2 - Secondary Eligibility Criteria
+**2 - Secondary Eligibility Criteria**
+
   The secondary eligibility criteria are met when a person is referred to Universal Aftercare
   after presenting to a hospital emergency department or community
   mental health service in or following a suicidal crisis and whose risk of

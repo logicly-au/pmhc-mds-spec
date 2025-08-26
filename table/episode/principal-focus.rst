@@ -15,7 +15,8 @@ should be made on the basis of a treatment plan developed in collaboration with
 the client. It should not be confused with Service Type which is collected at
 each Service Contact.
 
-1 - Psychological therapy
+**1 - Psychological therapy**
+
   The treatment plan for the client is primarily based around the delivery of
   psychological therapy by one or more mental health professionals. This
   category most closely matches the type of services delivered under the
@@ -37,7 +38,8 @@ each Service Contact.
   - Social Workers
   - Aboriginal and Torres Strait Islander health workers.
 
-2 - Low intensity psychological intervention
+**2 - Low intensity psychological intervention**
+
   The treatment plan for the client is primarily based around delivery of
   time-limited, structured psychological interventions that are aimed at
   providing a less costly intervention alternative to 'standard' psychological
@@ -53,7 +55,8 @@ each Service Contact.
   - delivery of brief or low cost forms of treatment by mental health
     professionals.
 
-3 - Clinical care coordination
+**3 - Clinical care coordination**
+
   The treatment plan for the client is primarily based around delivery of a
   range of services where the overarching aim is to coordinate and better
   integrate care for the individual across multiple providers with the aim of
@@ -73,7 +76,8 @@ each Service Contact.
   that have some level of responsibility for the client’s treatment and/or
   well-being.
 
-4 - Complex Care Package
+**4 - Complex Care Package**
+
   The treatment plan for the client is primarily based around the delivery of an
   individually tailored ‘package’ of services for a client with severe and
   complex mental illness who is being managed principally within a primary care
@@ -86,7 +90,8 @@ each Service Contact.
   expected to deliver complex care packages. A wider roll-out may be undertaken
   in the future pending results of the trial.
 
-5 - Child and youth-specific mental health services
+**5 - Child and youth-specific mental health services**
+
   The treatment plan for the client is primarily based around the delivery of a
   range of services for children (0-11 years) or youth (aged 12-24 years) who
   present with a mental illness, or are at risk of mental illness. These
@@ -96,16 +101,19 @@ each Service Contact.
   care coordination and liaison. Child and youth-specific mental health
   episodes have substantial flexibility in types of services actually delivered.
 
-6 - Indigenous-specific services
+**6 - Indigenous-specific services**
+
   The treatment plan for the client is primarily based around delivery of
   mental health services that are specifically designed to provide culturally
   appropriate services for Aboriginal and Torres Strait Islander peoples.
 
-7 - Other
+**7 - Other**
+
    The treatment plan for the client is primarily based around services
    that cannot be described by other categories.
 
-8 - Psychosocial support
+**8 - Psychosocial support**
+
   Can only be used where the :ref:`dfn-program_type` is '9: Universal Aftercare'.
 
   Where a client is being delivered Universal Aftercare services and accessing another
