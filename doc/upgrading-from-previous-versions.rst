@@ -13,8 +13,8 @@ Version 4.1.1 begins the rebranding of Adult Mental Health Centres (AMHC) and He
 
 Version 5.0 of the PMHC data specification is currently in development. Version 5.0 will complete the 
 rebranding of AMHC/HeadtoHealth to MMHC by retiring the AMHC Program Type and renaming the Head to Health 
-Program Type to Head To Health Clinic. The Head to Health clinic Program Type will only be available to 
-organisations commissioned by Victorian PHNs.
+Program Type to Head To Health Clinic. The Head to Health Clinic Program Type will only be available to 
+remaining temporary Head to Health Clinics in NSW and Victoria.
 
 .. _steps-required-to-upgrade:
 
