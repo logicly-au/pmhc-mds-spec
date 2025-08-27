@@ -11,28 +11,23 @@ Where the client has one or more comorbid mental health conditions in addition t
 the condition coded as the Principal Diagnosis, record the main condition as
 the Additional Diagnosis. 
 
-For Universal Aftercare only episodes response `000: No additional Diagnosis` must be used.
+.. note::
+   The following responses have been added to allow mapping of ATAPS data to PMHC
+   format.
 
-Where a client is being delivered Universal Aftercare services and accessing another
-support service within the same Service Provider the full range of Additional Diagnosis responses
-allowed for standard PMHC MDS episodes is available.
+   - 100: Anxiety disorders (ATAPS)
+   - 200: Affective (Mood) disorders (ATAPS)
+   - 300: Substance use disorders (ATAPS)
+   - 400: Psychotic disorders (ATAPS)
 
-The following responses have been added to allow mapping of ATAPS data to PMHC
-format.
+   These four codes should only be used for Episodes that are migrated
+   from ATAPS MDS sources that cannot be described by any other Diagnosis.
+   It is expected that the majority of Episodes delivered to clients
+   from 1st July, 2017 can be assigned to other diagnoses.
 
-- 100: Anxiety disorders (ATAPS)
-- 200: Affective (Mood) disorders (ATAPS)
-- 300: Substance use disorders (ATAPS)
-- 400: Psychotic disorders (ATAPS)
+   These responses will only be allowed on episodes where the original
+   ATAPS referral date was before 1 July 2017
 
-*Note: These four codes should only be used for Episodes that are migrated
-from ATAPS MDS sources that cannot be described by any other Diagnosis.
-It is expected that the majority of Episodes delivered to clients
-from 1st July, 2017 can be assigned to other diagnoses.*
+   These responses will only be allowed on episodes with the !ATAPS flag.
 
-These responses will only be allowed on episodes where the original
-ATAPS referral date was before 1 July 2017
-
-These responses will only be allowed on episodes with the !ATAPS flag.
-
-For further notes on the recording of diagnosis codes see Principal Diagnosis.
+For further notes on the recording of diagnosis codes see :ref:`dfn-principal_diagnosis`.

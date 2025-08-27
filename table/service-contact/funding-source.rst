@@ -2,21 +2,20 @@ Organisations must record this information for all new Service Contacts.
 
 **0 - Flexible funding pool - Not Otherwise Stated**
 
-  This response is only to be used for existing data entered under a Version 2
-  or HeadtoHelp Version 3 specification.
+  This response must only be used on existing records. It is not allowed on new records.
 
 **23 - Head to Health program**
 
-  This includes Head to Health Adult Centres and Satellites, and pop-up clinics.
+  This response must only be used where the :ref:`dfn-program_type` is '2 - Head to Health Clinic'.
 
 **25 - Norfolk Island**
 
   This category only applies to services commissioned through the
   Central and Eastern Sydney PHN.
 
-**27 - Way Back Support Service**
+**27 - Universal Aftercare**
 
-  This category must only to be used in conjunction with the Wayback Extension.
+  This response must only be used where the :ref:`dfn-program_type` is '9 - Universal Aftercare'.
 
 **97 - Other funding source - no Commonwealth Funding**
 

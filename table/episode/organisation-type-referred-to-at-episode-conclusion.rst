@@ -1,3 +1,7 @@
+**0 - None/Not applicable**
+
+  Should only be selected in instances of Self referral.
+
 **2 - Medical Specialist Consulting Rooms**
 
   Includes private medical practitioner rooms in public or private 
@@ -10,6 +14,10 @@
   public acute and psychiatric hospital settings, community mental health care
   services, and specialised residential mental health care services).
 
-**0 - None/Not applicable**
+**22 - HeadtoHelp / HeadtoHealth Hub**
 
-  Should only be selected in instances of Self referral.
+  Must only be used on existing records. It is not allowed on new records.
+
+**24 - AMHC**
+
+  Must only be used on existing records. It is not allowed on new records.

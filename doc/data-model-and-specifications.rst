@@ -582,13 +582,13 @@ could be collected separately from IAR DST data.
 .. note::
    Versions 4.0.0 through 4.0.2 of the PMHC MDS specifiction only described
    version 1 of the IAR DST. This version was to be used only for adults.
-   As of PMHC-MDS specification v4.0.4 you may supply either v1 or v2 IAR-DST
-   versions. Version 2 adds child, adolescent, and older adult adaptions.
-   The PMHC-MDS implementation of this change is backward compatible with the
-   existing v1 format as the only difference is the extension of the `IAR-DST
-   - Version`_ domain with v2 specific values.
+   As of PMHC MDS specification v4.0.4 you may supply either v1 or v2 IAR-DST
+   versions. IAR DST v2 adds child, adolescent, and older adult adaptions.
+   The PMHC MDS implementation of this change is backward compatible with the
+   existing IAR DST v1 format as the only difference is the extension of the `IAR-DST
+   - Version`_ domain with IAR DST v2 specific values.
    
-   For more information regarding IAR-DST v2 see the `official IAR-DST v2
+   For more information regarding IAR DST v2 see the `official IAR DST v2
    specification documentation <https://docs.iar-dst.online/en/v2/>`_.
 
 .. note::
@@ -618,18 +618,24 @@ could be collected separately from IAR DST data.
 Measures during an Episode
 """"""""""""""""""""""""""
 
-PMHC MDS requires the use of one of the following three required measures, as follows:
+The PMHC MDS requires the use of one of the following three measures:
 
-* **For adults (18+ years)** - :ref:`Kessler Psychological Distress Scale (K10+) <k10p-data-elements>`
-  is the prescribed measure, with the option to use the :ref:`k5-data-elements` for
-  Aboriginal and Torres Strait Islander people if that is considered more appropriate.
-* **For children and young people (up to and including 17 years)** - the
-  :ref:`Strengths & Difficulties Questionnaires (SDQ) <sdq-data-elements>` is the
-  prescribed tool.  The specified versions include the parent-report for 4-10
-  years and 11-17 years; and the self-report for 11-17 years.
+* **For adults (18+ years)**
+  
+  * :ref:`Kessler Psychological Distress Scale (K10+) <k10p-data-elements>`
+    is the prescribed measure
+  *  There is the option to use the :ref:`Kessler 5 (K5) <k5-data-elements>` for
+     Aboriginal and Torres Strait Islander people if that is considered more appropriate
 
-*Please note: For adolescents, clinician-discretion is allowed, and that the
-K10+ or K5 may be used, even though the person is under 18 years*
+* **For children and young people (up to and including 17 years)**
+
+  * The :ref:`Strengths & Difficulties Questionnaires (SDQ) <sdq-data-elements>` is the
+    prescribed tool.  The specified versions include the parent-report for 4-10
+    years and 11-17 years; and the self-report for 11-17 years.
+
+  .. note::
+     For adolescents, clinician-discretion is allowed, and the
+     K10+ or K5 may be used, even though the person is under 18 years
 
 .. _k10p-data-elements:
 
@@ -694,14 +700,17 @@ The versions specified for PMHC MDS reporting are:
 | YR2     | Youth Self Report | 11-17     | Followup    | 1 month       |
 +---------+-------------------+-----------+-------------+---------------+
 
-*We acknowledge that there is also a parent-report for 2-4 years; and teacher versions for all the years (2-4; 4-10 and 11-17) but that these are not to be reported the PMHC-MDS.*
+*We acknowledge that there is also a parent-report for 2-4 years; and teacher 
+versions for all the years (2-4; 4-10 and 11-17) but that these are not to be 
+reported in the PMHC-MDS.*
 
-Please note that the item numbering in the SDQ versions is deliberately non
-sequential because it covers all items in all versions, both to indicate item
-equivalence across versions and to assist data entry, especially of
-translated versions. The table below indicates the items that are included in
-each version, the rating periods used and the broad content covered by each
-item.
+.. note::
+   The item numbering in the SDQ versions is deliberately non
+   sequential because it covers all items in all versions, both to indicate item
+   equivalence across versions and to assist data entry, especially of
+   translated versions. The table below indicates the items that are included in
+   each version, the rating periods used and the broad content covered by each
+   item.
 
 +-------+-----------------------------+----------+----------+----------+----------+----------+----------+
 | Items | Item Content                |                           Version                               |
@@ -726,11 +735,6 @@ item.
 As noted above, reporting individual item scores will eventually be required.
 In the short term, respondents can either report all 42 item scores or report
 the SDQ subscale scores.
-
-For Universal Aftercare only episodes the SDQ is not required.
-
-Where a client is being delivered Universal Aftercare services and accessing another
-support service within the same Service Provider an SDQ may be collected.
 
 .. _scoring-the-sdq:
 

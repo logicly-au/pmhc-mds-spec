@@ -192,7 +192,7 @@ Episode
 
   #. On :ref:`dfn-organisation_type_referred_to_at_episode_conclusion` the value '22: HeadtoHelp / HeadtoHealth' must only be used on existing records. It is not allowed on new records.
   #. On :ref:`dfn-organisation_type_referred_to_at_episode_conclusion` the value '24: AMHC' must only be used on existing records. It is not allowed on new records.
-  #. On :ref:`dfn-program_type` only remaining temporary Head to Health Clinics in NSW and Victoria can use the value '2: Head to Health Clinc'
+  #. On :ref:`dfn-program_type` only NSW and Victorian Provider Organisations can use the value '2: Head to Health Clinc'. Please refer to :ref:`dfn-program_type` for further business rules on this field.
   #. Where :ref:`dfn-principal_focus` is recorded as '8: Psychosocial Support' the :ref:`dfn-program_type` must be '9: Universal Aftercare'
 
 .. _service-contact-current-validations:
@@ -245,8 +245,8 @@ Service Contact
 
   #. :ref:`dfn-service_contact_start_time` value of '24:00' cannot be used on new records.
   #. Existing records already containing a :ref:`dfn-service_contact_start_time` that is not '24:00' may not be updated to '24:00'.
-  #. On :ref:`dfn-funding_source` the value '27: Way Back Support Service' must
-     only be used in conjunction with the Wayback Extension.
+  #. On :ref:`dfn-funding_source` the value '0: Flexible funding pool - Not Otherwise Stated' must only be used on existing records. It is not allowed on new records.
+  #. On :ref:`dfn-funding_source` the value '27: Universal Aftercare' must only be used in conjunction with the Universal Aftercare :ref:`dfn-program_type`.
   #. Where :ref:`dfn-program_type` is recorded as '7: Supporting Recovery', 
      :ref:`dfn-funding_source` must be recorded as '73: Other Government Funding - Commonwealth: Other Commonwealth'
   #. Where :ref:`dfn-funding_source` is recorded as '73: Other Government Funding - Commonwealth: Other Commonwealth',
