@@ -153,31 +153,26 @@ The main additional condition or complaint co-existing with the Principal Diagno
   the condition coded as the Principal Diagnosis, record the main condition as
   the Additional Diagnosis. 
   
-  For Universal Aftercare only episodes response `000: No additional Diagnosis` must be used.
+  .. note::
+     The following responses have been added to allow mapping of ATAPS data to PMHC
+     format.
   
-  Where a client is being delivered Universal Aftercare services and accessing another
-  support service within the same Service Provider the full range of Additional Diagnosis responses
-  allowed for standard PMHC MDS episodes is available.
+     - 100: Anxiety disorders (ATAPS)
+     - 200: Affective (Mood) disorders (ATAPS)
+     - 300: Substance use disorders (ATAPS)
+     - 400: Psychotic disorders (ATAPS)
   
-  The following responses have been added to allow mapping of ATAPS data to PMHC
-  format.
+     These four codes should only be used for Episodes that are migrated
+     from ATAPS MDS sources that cannot be described by any other Diagnosis.
+     It is expected that the majority of Episodes delivered to clients
+     from 1st July, 2017 can be assigned to other diagnoses.
   
-  - 100: Anxiety disorders (ATAPS)
-  - 200: Affective (Mood) disorders (ATAPS)
-  - 300: Substance use disorders (ATAPS)
-  - 400: Psychotic disorders (ATAPS)
+     These responses will only be allowed on episodes where the original
+     ATAPS referral date was before 1 July 2017
   
-  *Note: These four codes should only be used for Episodes that are migrated
-  from ATAPS MDS sources that cannot be described by any other Diagnosis.
-  It is expected that the majority of Episodes delivered to clients
-  from 1st July, 2017 can be assigned to other diagnoses.*
+     These responses will only be allowed on episodes with the !ATAPS flag.
   
-  These responses will only be allowed on episodes where the original
-  ATAPS referral date was before 1 July 2017
-  
-  These responses will only be allowed on episodes with the !ATAPS flag.
-  
-  For further notes on the recording of diagnosis codes see Principal Diagnosis.
+  For further notes on the recording of diagnosis codes see :ref:`dfn-principal_diagnosis`.
   
 
 ----------
@@ -1521,7 +1516,7 @@ The source of PHN Mental Health funds that are wholly or primarily funding the S
   :24: Kids Hubs
   :25: Norfolk Island
   :26: National Suicide Prevention Trial
-  :27: Way Back Support Service
+  :27: Universal Aftercare
   :28: MMHC
   :73: Other Government Funding - Commonwealth: Other Commonwealth
   :97: Other funding source – no Commonwealth Funding
@@ -1532,21 +1527,20 @@ The source of PHN Mental Health funds that are wholly or primarily funding the S
   
   **0 - Flexible funding pool - Not Otherwise Stated**
   
-    This response is only to be used for existing data entered under a Version 2
-    or HeadtoHelp Version 3 specification.
+    This response must only be used on existing records. It is not allowed on new records.
   
   **23 - Head to Health program**
   
-    This includes Head to Health Adult Centres and Satellites, and pop-up clinics.
+    This response must only be used where the :ref:`dfn-program_type` is '2 - Head to Health Clinic'.
   
   **25 - Norfolk Island**
   
     This category only applies to services commissioned through the
     Central and Eastern Sydney PHN.
   
-  **27 - Way Back Support Service**
+  **27 - Universal Aftercare**
   
-    This category must only to be used in conjunction with the Wayback Extension.
+    This response must only be used where the :ref:`dfn-program_type` is '9 - Universal Aftercare'.
   
   **97 - Other funding source - no Commonwealth Funding**
   
@@ -3492,12 +3486,6 @@ Whether the client is taking prescribed antidepressants for a mental health cond
   
   Details of drugs included in the category can be found here:
   http://www.whocc.no/atc_ddd_index/?code=N06A
-  
-  For Universal Aftercare only episodes the response `9: Unknown` must be used.
-  
-  Where a client is being delivered Universal Aftercare services and accessing another
-  support service within the same Service Provider the full range of Medication - Antidepressants (N06A) responses
-  allowed for standard PMHC MDS episodes is available.
 
 ----------
 
@@ -3528,12 +3516,6 @@ Whether the client is taking prescribed antipsychotics for a mental health condi
   
   Details of drugs included in the category can be found here:
   http://www.whocc.no/atc_ddd_index/?code=N05A
-  
-  For Universal Aftercare only episodes the response `9: Unknown` must be used.
-  
-  Where a client is being delivered Universal Aftercare services and accessing another
-  support service within the same Service Provider the full range of Medication - Antipsychotics (N05A) responses
-  allowed for standard PMHC MDS episodes is available.
 
 ----------
 
@@ -3564,12 +3546,6 @@ Whether the client is taking prescribed anxiolytics for a mental health conditio
   
   Details of drugs included in the category can be found here:
   http://www.whocc.no/atc_ddd_index/?code=N05B
-  
-  For Universal Aftercare only episodes the response `9: Unknown` must be used.
-  
-  Where a client is being delivered Universal Aftercare services and accessing another
-  support service within the same Service Provider the full range of Medication - Anxiolytics (N05B) responses
-  allowed for standard PMHC MDS episodes is available.
 
 ----------
 
@@ -3601,12 +3577,6 @@ Whether the client is taking prescribed hypnotics and sedatives for a mental hea
   
   Details of drugs included in the category can be found here:
   http://www.whocc.no/atc_ddd_index/?code=N05C
-  
-  For Universal Aftercare only episodes the response `9: Unknown` must be used.
-  
-  Where a client is being delivered Universal Aftercare services and accessing another
-  support service within the same Service Provider the full range of Medication - Hypnotics and sedatives (N05C) responses
-  allowed for standard PMHC MDS episodes is available.
 
 ----------
 
@@ -3637,12 +3607,6 @@ Whether the client is taking prescribed psychostimulants and nootropics for a me
   
   Details of drugs included in the category can be found here:
   http://www.whocc.no/atc_ddd_index/?code=N06B
-  
-  For Universal Aftercare only episodes the response `9: Unknown` must be used.
-  
-  Where a client is being delivered Universal Aftercare services and accessing another
-  support service within the same Service Provider the full range of Medication - Psychostimulants and nootropics (N06B) responses
-  allowed for standard PMHC MDS episodes is available.
 
 ----------
 
