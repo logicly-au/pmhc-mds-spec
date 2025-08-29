@@ -3,9 +3,8 @@
 Introduction
 ============
 
-Version 5.0 rebrands The Way Back to Universal Aftercare and includes Universal Aftercare
-as part of the default specification. Version 5.0
-also completes the rebranding of AMHC/HeadtoHealth to Medicare Mental Health Centre (MMHC) by
+Version 5.0 includes The Way Back as part of the default specification and rebrands it to Universal Aftercare.
+Version 5.0 also completes the rebranding of AMHC/HeadtoHealth to Medicare Mental Health Centre (MMHC) by
 retiring the AMHC Program Type and renaming the Head to Health Program Type to Head To Health Clinic. 
 
 In order to support Universal Aftercare a `9: Universal Aftercare` response has been added to the
@@ -155,12 +154,12 @@ For information on the UA Needs Identification record please refer to :ref:`key-
 SIDAS
 ^^^^^
 
-For information on the UA Recommendation Out record please refer to :ref:`sidas-data-elements`.
+For information on the SIDAS record please refer to :ref:`sidas-data-elements`.
 
 WHO-5
 ^^^^^
 
-For information on the UA Recommendation Out record please refer to :ref:`who5-data-elements`.
+For information on the WHO-5 record please refer to :ref:`who5-data-elements`.
 
 
 Data release and confidentiality

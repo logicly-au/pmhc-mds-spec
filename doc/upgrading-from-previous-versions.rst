@@ -3,9 +3,8 @@
 Changes and Upgrading from Version 4.1
 ======================================
 
-Version 5.0 rebrands The Way Back to Universal Aftercare and includes Universal Aftercare
-as part of the default specification. Version 5.0
-also completes the rebranding of AMHC/HeadtoHealth to Medicare Mental Health Centre (MMHC) by
+Version 5.0 includes The Way Back as part of the default specification and rebrands it to Universal Aftercare.
+Version 5.0 also completes the rebranding of AMHC/HeadtoHealth to Medicare Mental Health Centre (MMHC) by
 retiring the AMHC Program Type and renaming the Head to Health Program Type to Head To Health Clinic. 
 
 .. _data-specification-changes:
@@ -35,11 +34,13 @@ PMHC MDS Version 5.0 data specifications are as follows:
   `8: MMHC` response for :ref:`dfn-program_type`. The following changes have been applied to the :ref:`dfn-program_type` field on both
   the Intake and Episode tables:
 
-  - `2: Head to Health` renamed to `2: Head to Health Clinic`. This response is only to be used by remaining temporary Head to Health Clinics in NSW and Victoria. Please refer to :ref:`dfn-program_type` for more information.
+  - `2: Head to Health` renamed to `2: Head to Health Clinic`. This response 
+    is only to be used by remaining temporary Head to Health Clinics in New 
+    South Wales and Victoria. Please refer to :ref:`dfn-program_type` for more information.
   - `3: AMHC` has been retired. An error will be returned if this response is used.
 
 * A new :ref:`dfn-veteran` field has been added to the Intake and Episode tables. This field was included in The Way Back specification. 
-  There is a new IAR-DST variant in development for Veterans. Veterans has been included on the Intake and Episode tables instead of 
+  There a new IAR-DST variant has been developed for Veterans. A Veterans field has been included on the Intake and Episode tables instead of 
   the new UA Episode table so that it can be used for monitoring both the IAR-DST and Universal Aftercare.
 
 * A new :ref:`dfn-iar_dst_practitioner_reason_for_override` has been added to the IAR-DST table.

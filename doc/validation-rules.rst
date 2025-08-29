@@ -190,10 +190,16 @@ Episode
   #. Existing records already containing a :ref:`dfn-referral_date` that is
      not '09099999' may not be updated to '09099999'.
 
-  #. On :ref:`dfn-organisation_type_referred_to_at_episode_conclusion` the value '22: HeadtoHelp / HeadtoHealth' must only be used on existing records. It is not allowed on new records.
-  #. On :ref:`dfn-organisation_type_referred_to_at_episode_conclusion` the value '24: AMHC' must only be used on existing records. It is not allowed on new records.
-  #. On :ref:`dfn-program_type` only NSW and Victorian Provider Organisations can use the value '2: Head to Health Clinc'. Please refer to :ref:`dfn-program_type` for further business rules on this field.
-  #. Where :ref:`dfn-principal_focus` is recorded as '8: Psychosocial Support' the :ref:`dfn-program_type` must be '9: Universal Aftercare'
+  #. On :ref:`dfn-organisation_type_referred_to_at_episode_conclusion` the value 
+     '22: HeadtoHelp / HeadtoHealth' must only be used on existing records. It 
+     is not allowed on new records.
+  #. On :ref:`dfn-organisation_type_referred_to_at_episode_conclusion` the value 
+     '24: AMHC' must only be used on existing records. It is not allowed on new records.
+  #. On :ref:`dfn-program_type` only NSW and Victorian Provider Organisations can 
+     use the value '2: Head to Health Clinc'. Please refer to :ref:`dfn-program_type` 
+     for further business rules on this field.
+  #. Where :ref:`dfn-principal_focus` is recorded as '8: Psychosocial Support' 
+     the :ref:`dfn-program_type` must be '9: Universal Aftercare'
 
 .. _service-contact-current-validations:
 
@@ -441,8 +447,6 @@ WHO-5
   #. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
      MDS.
   #. The program type of the Episode record that is linked via the Collection Occasion record must be '9: Universal Aftercare'
-  #. If both item scores and a total score are specified, the item scores must
-     add up to the total score.
 
 .. _sidas-current-validations:
 
