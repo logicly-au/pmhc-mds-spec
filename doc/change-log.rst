@@ -3,6 +3,14 @@
 Data Specification Change log
 =============================
 
+12/9/2025
+---------
+
+* :ref:`changes-from-v4-1`:
+
+  * Updated :ref:`steps-required-to-upgrade` to remove the direction to update the version 
+    in the upload Metadata file/worksheet to 4.1.1. The version in the Metadata file/worksheet remains at 4.1.
+
 18/8/2025 - 4.1.1
 -----------------
 

@@ -25,4 +25,4 @@ Version 4.1.1 is backwards compatible with Version 4.1.0. Only organisations nee
 documented above are required to upgrade.
 
 1. Upgrade your Client Management System to export files in the new Version 4.1.1 format
-   which adds the responses listed above and requires Version 4.1.1 to be specified in the Metadata file/worksheet.
+   which adds the responses listed above. Version 4.1 should still be specified in the Metadata file/worksheet.
