@@ -8,7 +8,7 @@
 
 **2 - Head to Health Clinic**
   
-From ?? Month 2025, the existing Head to Health Program Type is 
+From ?? 2025, the existing Head to Health Program Type is 
 being renamed as Head to Health Clinic Program Type.
 
 The Head to Health Clinic Program Type should only be used by remaining 
@@ -48,7 +48,7 @@ decommissioned as they are replaced by permanent services.
 
 **8 - MMHC**
   
-  Valid as of ?? 2025, organisations can use this Program Type for 
+  Valid as of 18 August 2025, organisations can use this Program Type for 
   episodes being delivered through the national Medicare Mental Health 
   Centre program. Medicare Mental Health Centres provide a safe and 
   welcoming place for anyone to access free, quality mental health care. 
