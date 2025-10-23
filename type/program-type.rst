@@ -8,39 +8,27 @@
 
 **2 - Head to Health Clinic**
   
-  ******Update this with wording from DoHDA*******
-  This response is only to be used by remaining temporary Head to Health 
-  Clinics in NSW and Victoria.
+From ?? Month 2025, the existing Head to Health Program Type is 
+being renamed as Head to Health Clinic Program Type.
+
+The Head to Health Clinic Program Type should only be used by remaining 
+temporary Head to Health Clinics located in Victoria and Thornleigh, NSW, 
+for episodes delivered under these services.  Head to Health Clinics were 
+initially established in Victoria in September 2020 and in NSW and the 
+ACT in September 2021 to provide additional mental health and wellbeing 
+support in response to the COVID pandemic. Clinic services are being 
+decommissioned as they are replaced by permanent services.
 
 **4 - Psychosocial**
   
   Organisations can use this field for episodes delivered through the National
   Psychosocial Support Services Program.
 
-  ******Remove or update the below for Version 5.0?*******
-  Psychosocial data has been identified using the Principal Focus of Treatment
-  Plan (PFOT) “Psychosocial” category. Any historical or new records that
-  utilise the Psychosocial PFOT will be mapped to this Program Type field
-  under the Version 4 specification.  The Psychosocial PFOT category will
-  no longer be available under the Version 4 specification and further
-  guidance will be provided by the Department to support the management
-  of this change in data collection requirements.
-
-  Any records that have the Psychosocial PFOT but also have a !covid19,
-  !amhc, or !br20 tag will be mapped to the respective Program Type associated
-  with those tags rather than the Psychosocial Program Type.
-
 **5 - Bushfire Recovery 2020**
   
   Organisations in fire affected communities can use this field for episodes
   delivered through the Australian Government Mental Health Response to
   Bushfire Trauma.
-
-  ******Remove or update the below for Version 5.0?*******
-  This data has been identified using the !br20 tag. Any historical or new
-  records using this tag will be mapped to this Program Type field under
-  the Version 4 specification. The !br20 tag will be removed from future
-  use once the Bushfire Program is concluded.
 
 **7 - Supporting Recovery**
   
@@ -60,8 +48,14 @@
 
 **8 - MMHC**
   
-  Valid as of ?? 2025. *********DoHDA to provide text***********
+  Valid as of ?? 2025, organisations can use this Program Type for 
+  episodes being delivered through the national Medicare Mental Health 
+  Centre program. Medicare Mental Health Centres provide a safe and 
+  welcoming place for anyone to access free, quality mental health care. 
+  More information about Medicare Mental Health Centres, including locations, 
+  are found here https://www.medicarementalhealth.gov.au/finding-help/medicare-mental-health-services
 
 **9 - Universal Aftercare**
   
-  Valid as of ?? 2025. *********DoHDA to provide text***********
+  Valid as of ?? 2025. Organisations can use this Program Type for 
+  episodes delivered through the Universal Aftercare program.

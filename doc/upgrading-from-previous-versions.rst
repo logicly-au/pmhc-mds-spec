@@ -17,10 +17,10 @@ PMHC MDS Version 5.0 data specifications are as follows:
 
 * The following changes have been made to support Universal Aftercare:
 
-  - In order to support Universal Aftercare a `9: Universal Aftercare`` response has been added to the
+  - In order to support Universal Aftercare a `9: Universal Aftercare` response has been added to the
     :ref:`dfn-program_type` field on both the Intake and Episode tables.
   - Seven entirely new tables have been added. These tables only need to be submitted where Episodes
-    using the new '9: Universal Aftercare' Program Type are included.
+    using the new `9: Universal Aftercare` Program Type are included.
 
     * :ref:`ua-episode-data-elements`
     * :ref:`ua-recommendation-out-data-elements`
@@ -64,15 +64,106 @@ specification:
 
    PMHC MDS Version 5.0.0 combined context upload columns
 
-Data mapping between Version 4.1 and Version 5.0
-------------------------------------------------
+.. note::
+  The above data model diagram is in the SVG format and can be enlarged 
+  or zoomed by opening in a new tab or window or by downloading it.
 
-*****Fill in*****
+Data migration between PMHC MDS Version 4.1 and PMHC MDS Version 5.0
+--------------------------------------------------------------------
+
+During the migration to PMHC Version 5.0 and when PMHC MDS Version 4.1 specifcation files are
+uploaded during the period when both specifications 
+are accepted by the PMHC MDS, the following fields will be migrated as follows:
+
+* Existing episodes with :ref:`dfn-program_type` `3: AMHC` will be migrated to :ref:`dfn-program_type` `8: MMHC`
+* Existing episodes with :ref:`dfn-program_type` `2: Head to Health` will be migrated to :ref:`dfn-program_type` `8: MMHC`, excluding:
+
+  * Former Pop-Up clinics and Head to Health clinics in New South Wales and Australian Capital Territory
+  * Continuing Head to Health clinics in New South Wales 
+  * Existing Pop-Up clinics and Head to Health clinics in Victoria except for the Geelong MMHC 
+
+Data mapping between The Way Back Version 3.0 and PMHC MDS Version 5.0
+----------------------------------------------------------------------
+
+During the migration to PMHC MDS Version 5.0 and when The Way Back Version 3.0 specifcation files are
+uploaded during the period when both The Way Back Version 3.0 and Version 5.0 specification files
+are accepted by the PMHC MDS, The Way Back records will be mapped as follows:
+
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| The Way Back Record Version 3.0 Record | The Way Back Version 3.0 Field.                                | PMHC MDS Version 5.0 Record           | PMHC MDS Version 5.0 Field                       |
++========================================+================================================================+=======================================+==================================================+
+| TWB Episode                            | Organisation Path                                              | UA Episode                            | Organisation Path                                |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB Episode                            | Episode Key                                                    | UA Episode                            | Episode Key                                      |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB Episode                            | TWB Episode - Veteran                                          | Intake                                | Veteran                                          |
+|                                        |                                                                +---------------------------------------+--------------------------------------------------+
+|                                        |                                                                | Episode                               | Veteran                                          |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB Episode                            | TWB Episode - Sexual Orientation                               | UA Episode                            | Sexual Orientation                               |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB Episode                            | TWB Episode - Transgender Status                               | UA Episode                            | Transgender Status                               |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB Episode                            | TWB Episode - Intersex Status                                  | UA Episode                            | Intersex Status                                  |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB Episode                            | TWB Episode - Eligibility Type                                 | UA Episode                            | Eligibility Type                                 |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB Episode                            | TWB Episode - External Evaluator Contact Consent               | UA Episode                            | External Evaluator Contact Consent               |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB Episode                            | TWB Episode - Primary Nominated Professional                   | UA Episode                            | Primary Nominated Professional                   |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB Episode                            | TWB Episode - Primary Nominated Professional Consent Date      | UA Episode                            | Primary Nominated Professional Consent Date      |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB Episode                            | TWB Episode - Primary Nominated Professional Contact Entry     | UA Episode                            | Primary Nominated Professional Contact Entry     |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB Episode                            | TWB Episode - Primary Nominated Professional Contact Exit Date | UA Episode                            | Primary Nominated Professional Contact Exit Date |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB Episode                            | TWB Episode - Previous suicide attempts                        | UA Episode                            | Previous suicide attempts                        |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB Episode                            | TWB Episode - Method of suicide attempt                        | UA Episode                            | Method of suicide attempt                        |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB Critical Incident                  | Organisation Path                                              | UA Critical Incident                  | Organisation Path                                |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB Critical Incident                  | TWB Critical Incident Key                                      | UA Critical Incident                  | UA Critical Incident Key                         |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB Critical Incident                  | Episode Key                                                    | UA Critical Incident                  | Episode Key                                      |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB Critical Incident                  | TWB Critical Incident - Type                                   | UA Critical Incident                  | Critical Incident - Type                         |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB Critical Incident                  | TWB Critical Incident - Date                                   | UA Critical Incident                  | Critical Incident - Date                         |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB Recommendation Out                 | Organisation Path                                              | UA Recommendation Out                 | Organisation Path                                |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB Recommendation Out                 | TWB Recommendation Out Key                                     | UA Recommendation Out                 | UA Recommendation Out Key                        |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB Recommendation Out                 | Episode Key                                                    | UA Recommendation Out                 | Episode Key                                      |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB Recommendation Out                 | TWB Recommendation Out - Provider Type                         | UA Recommendation Out                 | Recommendation Out Provider Type                 |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB Plan                               | Organisation Path                                              | UA Plan                               | Organisation Path                                |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB Plan                               | TWB Plan Key                                                   | UA Plan                               | UA Plan Key                                      |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB Plan                               | Collection Occasion Key                                        | UA Plan                               | Collection Occasion Key                          |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB Plan                               | TWB Plan - Plan Type                                           | UA Plan                               | Plan Type                                        |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB Plan                               | TWB Plan - Tags                                                | UA Plan                               | Plan Tags                                        |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB NI                                 | Organisation Path                                              | UA Needs Identification               | Organisation Path                                |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB NI                                 | TWB NI Key                                                     | UA Needs Identification               | UA Needs Identification Key                      |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB NI                                 | Collection Occasion Key                                        | UA Needs Identification               | Collection Occasion Key                          |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB NI                                 | TWB NI - Type                                                  | UA Needs Identification               | Needs Identification Type                        |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
+| TWB NI                                 | TWB NI - Tags                                                  | UA Needs Identification               | Needs Identification Tags                        |
++----------------------------------------+----------------------------------------------------------------+---------------------------------------+--------------------------------------------------+
 
 .. _steps-required-to-upgrade:
 
 Steps required to upgrade to Version 5.0 uploads
 ------------------------------------------------
 
-1. Upgrade your Client Management System to export files in the new Version 5.0 format
-*****Fill in*****
+1. Upgrade your Client Management System to export files in the new Version 5.0 format by addressing the changes described above.

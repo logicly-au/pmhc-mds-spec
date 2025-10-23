@@ -112,50 +112,9 @@ each Service Contact.
    The treatment plan for the client is primarily based around services
    that cannot be described by other categories.
 
-**8 - Psychosocial support**
-
-  Can only be used where the :ref:`dfn-program_type` is '9: Universal Aftercare'.
-
-  Where a client is being delivered Universal Aftercare services and accessing another
-  support service within the same Service Provider all Principal Focus of Treatment Plan responses
-  are allowed. Where a client is only being delivered Universal Aftercare services at a Service Provider 
-  the '8: Psychosocial support' response must be used for the Principal Focus of Treatment Plan.
-
-  Episodes of care should be classified as Psychosocial Support (code 8) where
-  the treatment plan for the client is primarily based around the delivery of
-  psychosocial support services. Psychosocial support services are defined for
-  PMHC MDS purposes as services that focus on building capacity and stability
-  in one or more of the following areas:
-
-  * social skills and friendships, family connections;
-  * managing daily living needs;
-  * financial management and budgeting;
-  * finding and maintaining a home;
-  * vocational skills and goals, including volunteering;
-  * educational and training goals;
-  * maintaining physical wellbeing, including exercise;
-  * building broader life skills including confidence and resilience.
-
-  These services are usually delivered by a range of non-clinical providers
-  including peer support workers with lived experience of mental illness
-
-  Services delivered to clients receiving episodes of care classified as
-  Psychosocial Support may receive the full range of services as described in
-  the Service Contact Type data item, for example, assessment,
-  care coordination and so forth.  However, in general, where the Principal
-  Focus of Treatment Plan is coded as Psychosocial Support there should be an
-  expectation that the majority of services provided will be of a psychosocial
-  support nature. Further details on the relationship between the episode of
-  care concept and service contacts is available at
-  https://docs.pmhc-mds.com/faqs/concepts-processes/data-definitions.html#episode-one-at-a-time
-
-  PHNs may wish to advise specific commissioned organisations solely funded
-  from their Psychosocial Support Schedule that all episodes of care should be
-  coded as Psychosocial Support, or leave it to the discretion of service providers.
-
-  Clients who are recorded as NDIS recipients would not usually be recorded as
-  receiving a Psychosocial Support episode of care.  The National Psychosocial
-  Support guidance material states explicitly that these services are designed
-  for individuals who have significant psychosocial disability but do not meet
-  NDIS eligibility criteria.
-
+**8 - Psychosocial support (deprecated)**
+ 
+   Episodes of Care provided under The Way Back PMHC MDS extension allowed for this 
+   response. It is no longer a valid response and will not be accepted on new
+   records, but has been retained on existing records. If updating these records,
+   this response will not be accepted.
