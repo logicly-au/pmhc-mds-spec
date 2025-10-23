@@ -4951,7 +4951,6 @@ The range of activities that best describes the overall services intended to be 
   :5: Child and youth-specific mental health services
   :6: Indigenous-specific mental health services
   :7: Other
-  :8: Psychosocial Support
 
 :Notes:
   Describes the main focus of the services to be delivered to the client for the
@@ -5068,54 +5067,12 @@ The range of activities that best describes the overall services intended to be 
      The treatment plan for the client is primarily based around services
      that cannot be described by other categories.
   
-  **8 - Psychosocial support**
-  
-    Can only be used where the :ref:`dfn-program_type` is '9: Universal Aftercare'.
-  
-    Where a client is being delivered Universal Aftercare services and accessing another
-    support service within the same Service Provider all Principal Focus of Treatment Plan responses
-    are allowed. Where a client is only being delivered Universal Aftercare services at a Service Provider 
-    the '8: Psychosocial support' response must be used for the Principal Focus of Treatment Plan.
-  
-    Episodes of care should be classified as Psychosocial Support (code 8) where
-    the treatment plan for the client is primarily based around the delivery of
-    psychosocial support services. Psychosocial support services are defined for
-    PMHC MDS purposes as services that focus on building capacity and stability
-    in one or more of the following areas:
-  
-    * social skills and friendships, family connections;
-    * managing daily living needs;
-    * financial management and budgeting;
-    * finding and maintaining a home;
-    * vocational skills and goals, including volunteering;
-    * educational and training goals;
-    * maintaining physical wellbeing, including exercise;
-    * building broader life skills including confidence and resilience.
-  
-    These services are usually delivered by a range of non-clinical providers
-    including peer support workers with lived experience of mental illness
-  
-    Services delivered to clients receiving episodes of care classified as
-    Psychosocial Support may receive the full range of services as described in
-    the Service Contact Type data item, for example, assessment,
-    care coordination and so forth.  However, in general, where the Principal
-    Focus of Treatment Plan is coded as Psychosocial Support there should be an
-    expectation that the majority of services provided will be of a psychosocial
-    support nature. Further details on the relationship between the episode of
-    care concept and service contacts is available at
-    https://docs.pmhc-mds.com/faqs/concepts-processes/data-definitions.html#episode-one-at-a-time
-  
-    PHNs may wish to advise specific commissioned organisations solely funded
-    from their Psychosocial Support Schedule that all episodes of care should be
-    coded as Psychosocial Support, or leave it to the discretion of service providers.
-  
-    Clients who are recorded as NDIS recipients would not usually be recorded as
-    receiving a Psychosocial Support episode of care.  The National Psychosocial
-    Support guidance material states explicitly that these services are designed
-    for individuals who have significant psychosocial disability but do not meet
-    NDIS eligibility criteria.
-  
-  
+  **8 - Psychosocial support (deprecated)**
+   
+     Episodes of Care provided under The Way Back PMHC MDS extension allowed for this 
+     response. It is no longer a valid response and will not be accepted on new
+     records, but has been retained on existing records. If updating these records,
+     this response will not be accepted.
 
 ----------
 
@@ -5190,39 +5147,27 @@ The overarching program area that an Intake or Episode record is associated with
   
   **2 - Head to Health Clinic**
     
-    ******Update this with wording from DoHDA*******
-    This response is only to be used by remaining temporary Head to Health 
-    Clinics in NSW and Victoria.
+  From ?? Month 2025, the existing Head to Health Program Type is 
+  being renamed as Head to Health Clinic Program Type.
+  
+  The Head to Health Clinic Program Type should only be used by remaining 
+  temporary Head to Health Clinics located in Victoria and Thornleigh, NSW, 
+  for episodes delivered under these services.  Head to Health Clinics were 
+  initially established in Victoria in September 2020 and in NSW and the 
+  ACT in September 2021 to provide additional mental health and wellbeing 
+  support in response to the COVID pandemic. Clinic services are being 
+  decommissioned as they are replaced by permanent services.
   
   **4 - Psychosocial**
     
     Organisations can use this field for episodes delivered through the National
     Psychosocial Support Services Program.
   
-    ******Remove or update the below for Version 5.0?*******
-    Psychosocial data has been identified using the Principal Focus of Treatment
-    Plan (PFOT) “Psychosocial” category. Any historical or new records that
-    utilise the Psychosocial PFOT will be mapped to this Program Type field
-    under the Version 4 specification.  The Psychosocial PFOT category will
-    no longer be available under the Version 4 specification and further
-    guidance will be provided by the Department to support the management
-    of this change in data collection requirements.
-  
-    Any records that have the Psychosocial PFOT but also have a !covid19,
-    !amhc, or !br20 tag will be mapped to the respective Program Type associated
-    with those tags rather than the Psychosocial Program Type.
-  
   **5 - Bushfire Recovery 2020**
     
     Organisations in fire affected communities can use this field for episodes
     delivered through the Australian Government Mental Health Response to
     Bushfire Trauma.
-  
-    ******Remove or update the below for Version 5.0?*******
-    This data has been identified using the !br20 tag. Any historical or new
-    records using this tag will be mapped to this Program Type field under
-    the Version 4 specification. The !br20 tag will be removed from future
-    use once the Bushfire Program is concluded.
   
   **7 - Supporting Recovery**
     
@@ -5242,11 +5187,17 @@ The overarching program area that an Intake or Episode record is associated with
   
   **8 - MMHC**
     
-    Valid as of ?? 2025. *********DoHDA to provide text***********
+    Valid as of ?? 2025, organisations can use this Program Type for 
+    episodes being delivered through the national Medicare Mental Health 
+    Centre program. Medicare Mental Health Centres provide a safe and 
+    welcoming place for anyone to access free, quality mental health care. 
+    More information about Medicare Mental Health Centres, including locations, 
+    are found here https://www.medicarementalhealth.gov.au/finding-help/medicare-mental-health-services
   
   **9 - Universal Aftercare**
     
-    Valid as of ?? 2025. *********DoHDA to provide text***********
+    Valid as of ?? 2025. Organisations can use this Program Type for 
+    episodes delivered through the Universal Aftercare program.
 
 ----------
 
