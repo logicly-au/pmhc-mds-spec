@@ -198,8 +198,7 @@ Episode
   #. On :ref:`dfn-program_type` only NSW and Victorian Provider Organisations can 
      use the value '2: Head to Health Clinc'. Please refer to :ref:`dfn-program_type` 
      for further business rules on this field.
-  #. Where :ref:`dfn-principal_focus` is recorded as '8: Psychosocial Support' 
-     the :ref:`dfn-program_type` must be '9: Universal Aftercare'
+  #. Where :ref:`dfn-program_type` is '9: Universal Aftercare' a UA Episode record should also be recorded.
 
 .. _service-contact-current-validations:
 

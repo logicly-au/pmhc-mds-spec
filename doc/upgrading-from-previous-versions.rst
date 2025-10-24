@@ -65,7 +65,7 @@ specification:
    PMHC MDS Version 5.0.0 combined context upload columns
 
 .. note::
-  The above data model diagram is in the SVG format and can be enlarged 
+  The above table is in the SVG format and can be enlarged 
   or zoomed by opening in a new tab or window or by downloading it.
 
 Data migration between PMHC MDS Version 4.1 and PMHC MDS Version 5.0

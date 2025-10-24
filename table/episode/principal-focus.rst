@@ -112,7 +112,7 @@ each Service Contact.
    The treatment plan for the client is primarily based around services
    that cannot be described by other categories.
 
-**8 - Psychosocial support (deprecated)**
+**8 - Psychosocial support (obsolete)**
  
    Episodes of Care provided under The Way Back PMHC MDS extension allowed for this 
    response. It is no longer a valid response and will not be accepted on new
