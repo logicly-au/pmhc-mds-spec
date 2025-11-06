@@ -27,7 +27,7 @@ A new :ref:`dfn-veteran` field has been added to the Intake and Episode tables. 
 There is a new IAR-DST varient in development for Veterans. Veterans has been included on the Intake and Episode tables instead of 
 the new UA Episode table so that it can be used for monitoring both the IAR-DST and Univeral Aftercare.
 
-A new :ref:`dfn-iar_dst_practitioner_reason_for_override` has been added to the IAR-DST table.
+A new :ref:`dfn-iar_dst_practitioner_reason_for_override` field has been added to the IAR-DST table.
 
 AMHC and Head to Health have been rebranded as Medicare Mental Health Centres (MMHC). Version 4.1.1 introduced the
 `8: MMHC` reponse for :ref:`dfn-program_type`. The following changes have been applied to the :ref:`dfn-program_type` field on both
