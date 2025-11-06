@@ -161,6 +161,21 @@ WHO-5
 
 For information on the WHO-5 record please refer to :ref:`who5-data-elements`.
 
+.. _introduction-veteran:
+
+Veteran
+^^^^^^^
+
+A new :ref:`dfn-veteran` field has been added to the Intake and Episode tables. This field was included in The Way Back specification. 
+There is a new IAR-DST varient in development for Veterans. Veterans has been included on the Intake and Episode tables instead of 
+the new UA Episode table so that it can be used for monitoring both the IAR-DST and Univeral Aftercare.
+
+.. _introduction-practitioner-reason-override:
+
+IAR-DST - Practitioner Reason Override
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A new :ref:`dfn-iar_dst_practitioner_reason_for_override` has been added to the IAR-DST record.
 
 Data release and confidentiality
 --------------------------------
