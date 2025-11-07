@@ -50,7 +50,11 @@ The following entity keys will be created and managed by Provider Organisations:
 * :ref:`Service Contact Key <service-contact-data-elements>`,
 * :ref:`Service Contact Practitioner Key <service-contact-practitioner-data-elements>`,
 * :ref:`Collection Occasion Key <collection-occasion-data-elements>`,
-* :ref:`Measure Key <measure-data-elements>`.
+* :ref:`Measure Key <measure-data-elements>`,
+* :ref:`UA Recommendation Out Key <ua-recommendation-out-data-elements>`,
+* :ref:`UA Critical Incident Key <ua-critical-incident-data-elements>`,
+* :ref:`UA Plan Key <ua-plan-data-elements>`,
+* :ref:`UA Needs Identification Key <ua-needs-identification-data-elements>`
 
 The PMHC MDS specification requires each of these keys to be unique and
 stable at the Provider Organisation level.
