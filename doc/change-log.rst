@@ -3,7 +3,7 @@
 Data Specification Change log
 =============================
 
-23/10/2025 - Draft 5.0.0
+7/11/2025 - Draft 5.0.0
 ------------------------
 
 * :ref:`data-model-and-specifications`
@@ -20,7 +20,7 @@ Data Specification Change log
       * Added `9: Universal Aftercare` response
 
     * :ref:`dfn-iar_dst_practitioner_reason_for_override` field has been added to the :ref:`iar-dst-data-elements` table
-    * :ref:`dfn-veteran` field has been added to the :ref:`episode-data-elements` table
+    * :ref:`dfn-veteran` field has been added to both the :ref:`episode-data-elements` table and the :ref:`intake-data-elements`table
     * :ref:`ua-episode-data-elements` record added
     * :ref:`ua-recommendation-out-data-elements` record added
     * :ref:`ua-critical-incident-data-elements` record added
