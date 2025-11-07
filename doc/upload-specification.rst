@@ -62,7 +62,7 @@ if this limit causes issues for anyone and adjust it if necessary.
 Files or worksheets to upload
 -----------------------------
 
-Version 4 allows for different files/worksheets to be uploaded depending on
+Version 5 allows for different files/worksheets to be uploaded depending on
 whether the organisation is an Intake team, Treatment Service Provider or
 a combined Intake/Treatment Service Provider. Please refer to
 :ref:`introduction-contexts` for further information about these contexts.
@@ -78,7 +78,7 @@ corresponding client in the clients file/worksheet.
 Files/worksheets for the Intake context
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-When uploading Version 4 data files for the Intake context the following
+When uploading Version 5 data files for the Intake context the following
 files/worksheets need to be uploaded to the PMHC MDS:
 
 .. csv-table:: Summary of files to upload in Intake context
@@ -92,7 +92,7 @@ Example Intake Upload files can be found at :ref:`example-upload-files`.
 Files/worksheets for the Treatment Service Provider context
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-When uploading Version 4 data files for the Treatment Service Provider context
+When uploading Version 5 data files for the Treatment Service Provider context
 the following files/worksheets need to be uploaded to the PMHC MDS:
 
 .. csv-table:: Summary of files to upload in Treatment Service Provider context
@@ -106,7 +106,7 @@ Example Treatment Upload files can be found at :ref:`example-upload-files`.
 Files/worksheets for the Combined Intake/Treatment Service Provider context
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-When uploading Version 4 data files for the combined Intake/Treatment Service Provider context
+When uploading Version 5 data files for the combined Intake/Treatment Service Provider context
 the following files/worksheets need to be uploaded to the PMHC MDS:
 
 .. csv-table:: Summary of files to upload in Combined Intake/Treatment Service Provider context
@@ -133,7 +133,7 @@ Requirements for file formats:
   corresponding client in the client file/worksheet.
 - For data elements that allow multiple values, each value should be separated
   by a space; for example: `1 3 6`.
-- All version 4.1 data uploads must include a Metadata file/worksheet.
+- All version 5 data uploads must include a Metadata file/worksheet.
   See :ref:`metadata-format`.
 
 
