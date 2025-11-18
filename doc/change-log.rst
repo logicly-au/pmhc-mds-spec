@@ -3,6 +3,15 @@
 Data Specification Change log
 =============================
 
+18/11/2025
+----------
+
+* :ref:`validation-rules`
+
+  * :ref:`episode-current-validations`
+
+      * Added validation rule for the use of the ``!uaooh`` tag
+
 7/11/2025 - Draft 5.0.0
 ------------------------
 
@@ -29,12 +38,12 @@ Data Specification Change log
     * :ref:`sidas-data-elements` record added
     * :ref:`who5-data-elements` record added
 
-  * :ref:`validation-rules`
+* :ref:`validation-rules`
 
-    * :ref:`intake-current-validations`
+  * :ref:`intake-current-validations`
 
-      * Added validation rule for the `42: AMHC` response on the :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` field 
-      * Added validation rule for the `44: HeadtoHelp / HeadtoHealth` response on the :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` field
+    * Added validation rule for the `42: AMHC` response on the :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` field 
+    * Added validation rule for the `44: HeadtoHelp / HeadtoHealth` response on the :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` field
 
   * :ref:`episode-current-validations`
 

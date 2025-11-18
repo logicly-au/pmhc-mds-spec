@@ -199,6 +199,9 @@ Episode
      use the value '2: Head to Health Clinc'. Please refer to :ref:`dfn-program_type` 
      for further business rules on this field.
   #. Where :ref:`dfn-program_type` is '9: Universal Aftercare' a UA Episode record should also be recorded.
+  #. The ``!uaooh`` tag must only be included in the :ref:`dfn-episode_tags` field
+     where the :ref:`dfn-program_type` is '9: Universal Aftercare'. For more information see 
+     `Current System Tags <https://docs.pmhc-mds.com/data-specifications.html#current-system-tags>`_.
 
 .. _service-contact-current-validations:
 
