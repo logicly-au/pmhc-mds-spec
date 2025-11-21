@@ -136,6 +136,8 @@
     "titles": [ "veteran" ],
     "dc:title": "Veteran",
     "schema:description": "An indication of whether the client identifies as a veteran, as represented by a code.",
+    "schema:disambiguatingDescription": "type/veteran.rst",
+    "schema:meteorItem": "737931",
     "schema:dateCreated": "2019-07-05",
     "datatype": {
       "base": "string"
@@ -232,7 +234,7 @@
   },{
     "columnReference": "veteran",
     "reference": {
-      "resource": "table/episode/veteran.csv",
+      "resource": "type/veteran.csv",
       "columnReference": "id"
     }
   }, {
