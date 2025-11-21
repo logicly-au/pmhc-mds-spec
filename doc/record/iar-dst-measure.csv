@@ -92,7 +92,7 @@
 :9: Not stated"
 "`IAR-DST - Practitioner Reason for Override`_ (iar_dst_practitioner_reason_for_override)
 
-",string,yes,":1: Services availability
+",string,yes,":1: Service availability
 :2: Personal circumstances and preferences of the individual patient/consumer
 :3: Clinical judgement
 :4: Other

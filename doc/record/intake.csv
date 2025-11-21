@@ -78,9 +78,14 @@
 :9: Unknown"
 "`Veteran`_ (veteran)
 
-",string,yes,":1: Identifies as a veteran
-:2: Does not identify as a veteran
-:9: Not stated/Inadequately described"
+
+
+METEOR: `737931 <https://meteor.aihw.gov.au/content/737931>`__",string,yes,":1: Has never served
+:2: Current regular service
+:3: Previous regular service
+:4: Current reserves service
+:5: Previous reserves service
+:9: Not stated/inadequately described"
 "`Date referred to other service at Intake conclusion`_ (date_referred_to_other_service_at_intake_conclusion)
 
 ",date,"—","The date the client was referred to another organisation at Intake conclusion."
