@@ -3,6 +3,15 @@
 Data Specification Change log
 =============================
 
+21/11/2025
+----------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    * :ref:`dfn-veteran` field has been updated to use the current Meteor specification
+
 18/11/2025
 ----------
 

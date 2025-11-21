@@ -1906,7 +1906,7 @@ The reason the practitioner recommended a different level of care than the level
 :Required: yes
 
 :Domain:
-  :1: Services availability
+  :1: Service availability
   :2: Personal circumstances and preferences of the individual patient/consumer
   :3: Clinical judgement
   :4: Other
@@ -7957,9 +7957,24 @@ An indication of whether the client identifies as a veteran, as represented by a
 :Required: yes
 
 :Domain:
-  :1: Identifies as a veteran
-  :2: Does not identify as a veteran
-  :9: Not stated/Inadequately described
+  :1: Has never served
+  :2: Current regular service
+  :3: Previous regular service
+  :4: Current reserves service
+  :5: Previous reserves service
+  :9: Not stated/inadequately described
+
+:Notes:
+  **S - Identifies as a veteran (obsolete)**
+  
+  Episodes of Care provided under The Way Back PMHC MDS extension allowed for 
+  this response. In Version 5 it is no longer a valid response and will not 
+  be accepted on  new records in Version 5 uploads, but has been retained on  
+  records uploaded using The Way Back extension. If updating these records, 
+  this response will not be accepted.
+  
+
+:METEOR: `737931 <https://meteor.aihw.gov.au/content/737931>`__
 
 ----------
 

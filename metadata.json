@@ -232,7 +232,7 @@
     "tableSchema": "table/episode/marital-status.json"
   }, {
     "url": "table/episode/veteran.csv",
-    "tableSchema": "table/episode/veteran.json"
+    "tableSchema": "type/veteran.json"
   }, {
     "url": "table/episode/organisation-type-referred-to-at-episode-conclusion.csv",
     "tableSchema": "table/episode/organisation-type-referred-to-at-episode-conclusion.json"

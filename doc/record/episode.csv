@@ -123,9 +123,14 @@ METEOR: `291045 <https://meteor.aihw.gov.au/content/291045>`__",string,yes,":1: 
 :9: Unknown"
 "`Veteran`_ (veteran)
 
-",string,yes,":1: Identifies as a veteran
-:2: Does not identify as a veteran
-:9: Not stated/Inadequately described"
+
+
+METEOR: `737931 <https://meteor.aihw.gov.au/content/737931>`__",string,yes,":1: Has never served
+:2: Current regular service
+:3: Previous regular service
+:4: Current reserves service
+:5: Previous reserves service
+:9: Not stated/inadequately described"
 "`Principal Diagnosis`_ (principal_diagnosis)
 
 ",string,yes,":100: Anxiety disorders (ATAPS)
