@@ -3,6 +3,16 @@
 Data Specification Change log
 =============================
 
+26/11/2025
+----------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    * :ref:`dfn-slk` notes have been updated to explain how the different supported formats of the SLK are
+      processed before being stored
+
 21/11/2025
 ----------
 

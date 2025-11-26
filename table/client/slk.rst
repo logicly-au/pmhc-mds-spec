@@ -11,3 +11,15 @@ Supported formats:
     in length.
 
 SLK values are stored in the base 32 Crockford encoded format.
+
+Where a 14 character SLK is provided, the SLK will be hashed before being stored.
+
+Where a base 16 hex encoded sha1 hash of a 14 character SLK is provided, no 
+further hashing will be done, however its representation is converted 
+to base 32 Crockford encoding before storing it.
+
+Where a base 32 Crockford encoded sha1 hash of a 14 character SLK is 
+provided, the hashed SLK is stored as provided.
+
+
+
