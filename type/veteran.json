@@ -1,5 +1,5 @@
 {
-  "@id": "table/episode/veteran.json",
+  "@id": "type/veteran.json",
   "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
   "columns": [{
     "name": "id",
