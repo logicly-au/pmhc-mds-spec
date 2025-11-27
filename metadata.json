@@ -231,7 +231,7 @@
     "url": "table/episode/marital-status.csv",
     "tableSchema": "table/episode/marital-status.json"
   }, {
-    "url": "table/episode/veteran.csv",
+    "url": "type/veteran.csv",
     "tableSchema": "type/veteran.json"
   }, {
     "url": "table/episode/organisation-type-referred-to-at-episode-conclusion.csv",
