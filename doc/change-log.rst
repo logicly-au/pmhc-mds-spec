@@ -3,6 +3,28 @@
 Data Specification Change log
 =============================
 
+28/11/2025
+----------
+
+* :ref:`changes-from-v4.1`
+
+  * :ref:`data_migration_41_5`
+
+    * Added migration for :ref:`dfn-veteran` and :ref:`dfn-iar_dst_practitioner_reason_for_override`
+
+  * :ref:`data_mapping_twb3_pmhc5`
+
+    * Added :ref:`dfn-recommendation_out_status` to data mapping table
+    * Added mapping for :ref:`dfn-veteran`
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`data-model`
+
+    * Corrected fields for :ref:`ua-episode-data-elements` in data model diagrams
+
+
+
 26/11/2025
 ----------
 
