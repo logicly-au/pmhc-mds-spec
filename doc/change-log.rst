@@ -13,6 +13,12 @@ Data Specification Change log
     * :ref:`dfn-iar_dst_practitioner_reason_for_override` updated to allow multiple space-separated
       values to be supplied
 
+* :ref:`validation-rules`
+
+  * :ref:`iar-dst-current-validations`
+
+    * Added validation rules for accomodating :ref:`dfn-iar_dst_practitioner_reason_for_override` having multiple values
+
 
 28/11/2025
 ----------

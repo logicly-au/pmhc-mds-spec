@@ -121,6 +121,15 @@ IAR-DST
   #. :ref:`dfn-intake_key` must be an existing Intake within the PMHC MDS
   #. Both all 8 domains and the level of care must be provided
   #. The :ref:`dfn-iar_dst_recommended_level_of_care` must be consistent with the 8 domain scores provided
+  #. The :ref:`dfn-iar_dst_practitioner_reason_for_override` must be supplied when the derived Level of Care differs from the :ref:`dfn-iar_dst_recommended_level_of_care`
+  #. :ref:`dfn-iar_dst_practitioner_reason_for_override` will be validated as follows:
+
+     #. :ref:`dfn-iar_dst_practitioner_reason_for_override` must be supplied when the derived Level of Care differs from the :ref:`dfn-iar_dst_recommended_level_of_care`
+
+     #. If :ref:`dfn-iar_dst_practitioner_reason_for_override` is `9: Missing`, then no other responses can be selected
+
+     #. Duplicates are not allowed
+
 
 .. _intake-episode-current-validations:
 
