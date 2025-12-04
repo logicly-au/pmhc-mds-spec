@@ -157,10 +157,11 @@
     "schema:description": "The reason the practitioner recommended a different level of care than the level calculated by the IAR Decision Support Tool",
     "schema:disambiguatingDescription": "table/measure/iar-dst/practitioner-reason-for-override.rst",
     "schema:dateCreated": "2025-07-17",
+    "separator": " ",
     "datatype": {
       "base": "string"
     },
-    "required": true
+    "required": false
   },{
     "name": "iar_dst_tags",
     "titles": [ "iar_dst_tags" ],
