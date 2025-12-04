@@ -3,6 +3,17 @@
 Data Specification Change log
 =============================
 
+04/12/2025
+----------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`data-model`
+
+    * :ref:`dfn-iar_dst_practitioner_reason_for_override` updated to allow multiple space-separated
+      values to be supplied
+
+
 28/11/2025
 ----------
 
