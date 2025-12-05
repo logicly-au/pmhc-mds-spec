@@ -1903,7 +1903,7 @@ The reason the practitioner recommended a different level of care than the level
 
 :Data type: string
 
-:Required: yes
+:Required: no
 
 :Domain:
   :1: Service availability
@@ -1911,6 +1911,9 @@ The reason the practitioner recommended a different level of care than the level
   :3: Clinical judgement
   :4: Other
   :9: Missing / Not specified
+  
+  Multiple space separated values allowed
+  
 
 :Notes:
   The `Initial Assessment and Referral Decision Support Tool <https://iar-dst.online>`_ allows for the provision of a reason for a practitioner override of the IAR-DST level. 

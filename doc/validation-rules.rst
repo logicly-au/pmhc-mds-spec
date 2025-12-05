@@ -121,6 +121,19 @@ IAR-DST
   #. :ref:`dfn-intake_key` must be an existing Intake within the PMHC MDS
   #. Both all 8 domains and the level of care must be provided
   #. The :ref:`dfn-iar_dst_recommended_level_of_care` must be consistent with the 8 domain scores provided
+  #. :ref:`dfn-iar_dst_practitioner_reason_for_override` will be validated as follows:
+
+     #. :ref:`dfn-iar_dst_practitioner_reason_for_override` must be supplied when the :ref:`dfn-iar_dst_practitioner_level_of_care` differs from 
+        the :ref:`dfn-iar_dst_recommended_level_of_care`. :ref:`dfn-iar_dst_recommended_level_of_care` allows for both "Level x" and "Level x or above" responses, 
+        e.g. `1: Level 1 - Self Management` and `1+: Level 1 or above - Review assemssment on Contextual Domains to determine most appropriate placement`.
+        :ref:`dfn-iar_dst_practitioner_level_of_care` only allows for "Level x" responses, e.g. `1: Level 1 - Self Management`.
+        When determining if :ref:`dfn-iar_dst_practitioner_level_of_care` and :ref:`dfn-iar_dst_recommended_level_of_care` are equivalent the "Level x or above"
+        :ref:`dfn-iar_dst_recommended_level_of_care` responses will be treated the same as "Level x" responses, i.e. the "+" will be dropped.
+
+     #. If :ref:`dfn-iar_dst_practitioner_reason_for_override` is `9: Missing`, then no other responses can be selected
+
+     #. Duplicates are not allowed
+
 
 .. _intake-episode-current-validations:
 
