@@ -562,10 +562,18 @@ administrative interface or upload.
 Measures
 ^^^^^^^^
 
+.. contents::
+   :local:
+   :depth: 2
+
 .. _intake_measures:
 
 Measures at Intake
 """"""""""""""""""
+
+.. contents::
+   :local:
+   :depth: 1
 
 .. _iar-dst-data-elements:
 
@@ -618,6 +626,10 @@ could be collected separately from IAR DST data.
 Measures during an Episode
 """"""""""""""""""""""""""
 
+.. contents::
+   :local:
+   :depth: 1
+
 The PMHC MDS requires the use of one of the following three measures:
 
 * **For adults (18+ years)**
@@ -636,6 +648,16 @@ The PMHC MDS requires the use of one of the following three measures:
   .. note::
      For adolescents, clinician-discretion is allowed, and the
      K10+ or K5 may be used, even though the person is under 18 years
+
+The following measures are availble for the Universal Aftercare Program Type:
+
+  * :ref:`Suicide Ideation Attributes Scale (SIDAS) <sidas-data-elements>`
+  * :ref:`World Health Organization's Five Well-Being Index (WHO-5) <who5-data-elements>`
+
+The following additional information is also available to be collected for the Universal Aftercare Program Type:
+
+  * :ref:`Universal Aftercare Plan (UA Plan) <ua-plan-data-elements>`
+  * :ref:`Universal Aftercare Needs Identification (UA Needs Identification) <ua-needs-identification-data-elements>`
 
 .. _k10p-data-elements:
 
@@ -871,43 +893,12 @@ namely: 0->0, 1->0, 2->1, 3->2.
 
 ----------
 
-.. _ua-plan-data-elements:
-
-UA Plan
-'''''''
-
-.. csv-table:: UA Plan record layout
-  :file: record/ua-plan.csv
-  :header-rows: 1
-
-----------
-
-.. _ua-needs-identification-data-elements:
-
-UA Needs Identification
-'''''''''''''''''''''''
-
-.. csv-table:: UA Needs Identification record layout
-  :file: record/ua-needs-identification.csv
-  :header-rows: 1
-
-----------
-
-.. _who5-data-elements:
-
-WHO-5
-'''''
-
-.. csv-table:: WHO-5 record layout
-  :file: record/who5-measure.csv
-  :header-rows: 1
-
-----------
-
 .. _sidas-data-elements:
 
 SIDAS
 '''''
+
+The SIDAS measure is available for episodes delivered under the Universal Aftercare Program Type.
 
 Scoring the SIDAS
 :::::::::::::::::
@@ -928,7 +919,46 @@ not counted as a valid item. If any item is missing, the Total Score is set as m
   :file: record/sidas-measure.csv
   :header-rows: 1
 
+----------
+
+.. _who5-data-elements:
+
+WHO-5
+'''''
+
+The WHO-5 measure is available for episodes delivered under the Universal Aftercare Program Type.
+
+.. csv-table:: WHO-5 record layout
+  :file: record/who5-measure.csv
+  :header-rows: 1
+
 -----
+
+.. _ua-plan-data-elements:
+
+UA Plan
+'''''''
+
+A UA Plan is available for episodes delivered under the Universal Aftercare Program Type.
+
+.. csv-table:: UA Plan record layout
+  :file: record/ua-plan.csv
+  :header-rows: 1
+
+----------
+
+.. _ua-needs-identification-data-elements:
+
+UA Needs Identification
+'''''''''''''''''''''''
+
+UA Needs Identification is available for episodes delivered under the Universal Aftercare Program Type.
+
+.. csv-table:: UA Needs Identification record layout
+  :file: record/ua-needs-identification.csv
+  :header-rows: 1
+
+----------
 
 .. _definitions:
 
