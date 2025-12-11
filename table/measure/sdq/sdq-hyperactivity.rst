@@ -1,3 +1,3 @@
-See `SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#scoring-the-sdq>`_ for instructions on scoring the Hyperactivity Scale.
+See `Strengths and Difficulties Questionnaire (SDQ) <https://docs.pmhc-mds.com/phn-po-documentation.html#strengths-and-difficulties-questionnaire-sdq>`__ for instructions on scoring the Hyperactivity Scale.
 
 When reporting individual item scores use ‘99 - Not stated / Missing’.

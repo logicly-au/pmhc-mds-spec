@@ -421,8 +421,8 @@ UA Episode
      * and must not be after :ref:`dfn-organisation_end_date`
      * and must not be in the future
 
-   #. Where :ref:`dfn-previous_suicide_attempts` is recorded as '1: No', 
-      :ref:`dfn-method_of_suicide_attempt` must be recorded as '0: Not applicable'
+  #. Where :ref:`dfn-previous_suicide_attempts` is recorded as '1: No', 
+     :ref:`dfn-method_of_suicide_attempt` must be recorded as '0: Not applicable'
 
 
 
