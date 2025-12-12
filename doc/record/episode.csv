@@ -46,7 +46,8 @@ METEOR: `730859 <https://meteor.aihw.gov.au/content/730859>`__",date,"—","The 
 :4: Complex care package
 :5: Child and youth-specific mental health services
 :6: Indigenous-specific mental health services
-:7: Other"
+:7: Other
+:8: Psychosocial support (obsolete)"
 "`GP Mental Health Treatment Plan Flag`_ (mental_health_treatment_plan)
 
 ",string,yes,":1: Yes
@@ -130,6 +131,7 @@ METEOR: `737931 <https://meteor.aihw.gov.au/content/737931>`__",string,yes,":1: 
 :3: Previous regular service
 :4: Current reserves service
 :5: Previous reserves service
+:S: Identifies as a veteran (obsolete)
 :9: Not stated/inadequately described"
 "`Principal Diagnosis`_ (principal_diagnosis)
 
