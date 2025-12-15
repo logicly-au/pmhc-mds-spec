@@ -85,6 +85,7 @@ METEOR: `737931 <https://meteor.aihw.gov.au/content/737931>`__",string,yes,":1: 
 :3: Previous regular service
 :4: Current reserves service
 :5: Previous reserves service
+:S: Identifies as a veteran (obsolete)
 :9: Not stated/inadequately described"
 "`Date referred to other service at Intake conclusion`_ (date_referred_to_other_service_at_intake_conclusion)
 
