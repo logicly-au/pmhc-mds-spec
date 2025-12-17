@@ -4923,6 +4923,7 @@ The range of activities that best describes the overall services intended to be 
   :5: Child and youth-specific mental health services
   :6: Indigenous-specific mental health services
   :7: Other
+  :8: Psychosocial support (obsolete)
 
 :Notes:
   Describes the main focus of the services to be delivered to the client for the
@@ -7946,6 +7947,7 @@ An indication of whether the client identifies as a veteran, as represented by a
   :3: Previous regular service
   :4: Current reserves service
   :5: Previous reserves service
+  :S: Identifies as a veteran (obsolete)
   :9: Not stated/inadequately described
 
 :Notes:
@@ -7953,7 +7955,7 @@ An indication of whether the client identifies as a veteran, as represented by a
   
   Episodes of Care provided under The Way Back PMHC MDS extension allowed for 
   this response. In Version 5 it is no longer a valid response and will not 
-  be accepted on  new records in Version 5 uploads, but has been retained on  
+  be accepted on new records in Version 5 uploads, but has been retained on  
   records uploaded using The Way Back extension. If updating these records, 
   this response will not be accepted.
   
