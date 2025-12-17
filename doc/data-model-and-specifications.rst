@@ -106,7 +106,7 @@ See :ref:`client-data-elements` for the data elements for a client.
 Active Client
 """""""""""""
 
-An **active client** is a client who has had  one or more Service Contacts
+An **active client** is a client who has had one or more :ref:`Active Episodes <active-episode>`
 in a reference reporting period.
 
 .. _key-concepts-intake:
