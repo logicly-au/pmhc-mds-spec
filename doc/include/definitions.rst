@@ -2338,16 +2338,7 @@ The overall K5 score.
   5 - 25, 99 = Not stated / Missing
 
 :Notes:
-  The K5 Total score is based on the sum of K5 item 1 through 5 (range: 5-25).
-  
-  The Total score is computed as the sum of the item scores. If any item has not
-  been completed (that is, has not been coded 1, 2, 3, 4, 5), it is excluded from
-  the calculation and not counted as a valid item. If any item is missing, the
-  Total Score is set as missing.
-  
-  For the Total score, the missing value used should be 99.
-  
-  When reporting individual item scores use ‘99 - Not stated / Missing’
+  `Kessler 5 (K5) <https://docs.pmhc-mds.com/phn-po-documentation.html#kessler_5>`_ provides a copy of the K5 and information about scoring.
   
 
 ----------
@@ -2769,29 +2760,7 @@ The overall K10 score.
   10 - 50, 99 = Not stated / Missing
 
 :Notes:
-  The K10 Total score is based on the sum of K10 item 01 through 10 (range: 10-50).
-  Items 11 through 14 are excluded from the total because they are separate
-  measures of disability associated with the problems referred to in the preceding
-  ten items.
-  
-  The Total score is computed as the sum of the scores for items 1 to 10. If any
-  item has not been completed (that is, has not been coded 1, 2, 3, 4, 5), it is
-  excluded from the total
-  
-  When items 01 through 10 has one item "not stated/missing" (value 9), the Total
-  Score is pro-rated using the following formula:
-  
-     Total score = round( sum of valid item scores / 9 * 10 )
-  
-  When items 01 through 10 has more than one item "not stated/missing" (value 9),
-  the Total Score is set as invalid. Where this is the case, the "not stated/missing"
-  (value 99) should be used.
-  
-  For more information on scoring the K10+, please refer to page 58 of AMHOCN’s
-  Overview of clinician-rated and consumer self-report measures at https://www.amhocn.org/__data/assets/pdf_file/0005/698783/nocc_clinician_and_self-report_measures_overview_v2.1_20210913_1.pdf
-  When upload report individual item scores and use a Total Score
-  ‘99 - Not stated / Missing’, the PMHC MDS will calculate the total score.
-  
+  `Kessler 10 Plus (K10+) <https://docs.pmhc-mds.com/phn-po-documentation.html#kessler_10_plus>`_ provides a copy of the K10+ and information about scoring.
 
 ----------
 
@@ -5512,7 +5481,7 @@ SDQ - Conduct Problem Scale
   0 - 10, 99 = Not stated / Missing
 
 :Notes:
-  See `SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#scoring-the-sdq>`_ for instructions on scoring the Conduct Problem Scale.
+  See `Strengths and Difficulties Questionnaire (SDQ) <https://docs.pmhc-mds.com/phn-po-documentation.html#strengths-and-difficulties-questionnaire-sdq>`__ for instructions on scoring the Conduct Problem Scale.
   
   When reporting individual item scores use ‘99 - Not stated / Missing’.
   
@@ -5535,7 +5504,7 @@ SDQ - Emotional Symptoms Scale
   0 - 10, 99 = Not stated / Missing
 
 :Notes:
-  See `SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#scoring-the-sdq>`_ for instructions on scoring the Emotional Symptoms Scale.
+  See `Strengths and Difficulties Questionnaire (SDQ) <https://docs.pmhc-mds.com/phn-po-documentation.html#strengths-and-difficulties-questionnaire-sdq>`__ for instructions on scoring the Emotional Symptoms Scale.
   
   When reporting individual item scores use ‘99 - Not stated / Missing’.
   
@@ -5558,7 +5527,7 @@ SDQ - Hyperactivity Scale
   0 - 10, 99 = Not stated / Missing
 
 :Notes:
-  See `SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#scoring-the-sdq>`_ for instructions on scoring the Hyperactivity Scale.
+  See `Strengths and Difficulties Questionnaire (SDQ) <https://docs.pmhc-mds.com/phn-po-documentation.html#strengths-and-difficulties-questionnaire-sdq>`__ for instructions on scoring the Hyperactivity Scale.
   
   When reporting individual item scores use ‘99 - Not stated / Missing’.
   
@@ -5581,7 +5550,7 @@ SDQ - Impact Score
   0 - 10, 99 = Not stated / Missing
 
 :Notes:
-  See `SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#scoring-the-sdq>`_ for instructions on scoring the Impact Score.
+  See `Strengths and Difficulties Questionnaire (SDQ) <https://docs.pmhc-mds.com/phn-po-documentation.html#strengths-and-difficulties-questionnaire-sdq>`__ for instructions on scoring the Impact Score.
   
   When reporting individual item scores use ‘99 - Not stated / Missing’.
   
@@ -5604,7 +5573,7 @@ SDQ - Peer Problem Scale
   0 - 10, 99 = Not stated / Missing
 
 :Notes:
-  See `SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#scoring-the-sdq>`_ for instructions on scoring the Peer Problem Scale.
+  See `Strengths and Difficulties Questionnaire (SDQ) <https://docs.pmhc-mds.com/phn-po-documentation.html#strengths-and-difficulties-questionnaire-sdq>`__ for instructions on scoring the Peer Problem Scale.
   
   When reporting individual item scores use ‘99 - Not stated / Missing’.
   
@@ -5627,7 +5596,7 @@ SDQ - Prosocial Scale
   0 - 10, 99 = Not stated / Missing
 
 :Notes:
-  See `SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#scoring-the-sdq>`_ for instructions on scoring the Prosocial Scale.
+  See `Strengths and Difficulties Questionnaire (SDQ) <https://docs.pmhc-mds.com/phn-po-documentation.html#strengths-and-difficulties-questionnaire-sdq>`__ for instructions on scoring the Prosocial Scale.
   
   When reporting individual item scores use ‘99 - Not stated / Missing’.
   
@@ -6978,7 +6947,7 @@ SDQ - Total Difficulties Score
   0 - 40, 99 = Not stated / Missing
 
 :Notes:
-  See `SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#scoring-the-sdq>`_ for instructions on scoring the Total Difficulties Score.
+  See `Strengths and Difficulties Questionnaire (SDQ) <https://docs.pmhc-mds.com/phn-po-documentation.html#strengths-and-difficulties-questionnaire-sdq>`__ for instructions on scoring the Total Difficulties Score.
   
   When reporting individual item scores use ‘99 - Not stated / Missing’.
   
