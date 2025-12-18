@@ -5120,7 +5120,7 @@ The overarching program area that an Intake or Episode record is associated with
   
   **2 - Head to Health Clinic**
     
-  From ?? 2025, the existing Head to Health Program Type is 
+  From 18 December 2025, the existing Head to Health Program Type is 
   being renamed as Head to Health Clinic Program Type.
   
   The Head to Health Clinic Program Type should only be used by remaining 
@@ -5169,7 +5169,7 @@ The overarching program area that an Intake or Episode record is associated with
   
   **9 - Universal Aftercare**
     
-    Valid as of ?? 2025. Organisations can use this Program Type for 
+    Valid as of 18 December 2025. Organisations can use this Program Type for 
     episodes delivered through the Universal Aftercare program.
 
 ----------
