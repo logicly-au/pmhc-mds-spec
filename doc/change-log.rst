@@ -15,6 +15,11 @@ Data Specification Change log
       the HeadtoHelp / HeadtoHealth option can be used by remaining temporary Head to Health Clinics located in
       Victoria and Thornleigh, NSW.
 
+  * :ref:`intake-current-validations`
+  
+    * Updated validation rule for :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` to reflect that
+      for other values that are not otherwise stated, :ref:`dfn-referred_to_organisation_path` is not required
+
 * :ref:`data-model-and-specifications`
 
   * :ref:`record-formats`

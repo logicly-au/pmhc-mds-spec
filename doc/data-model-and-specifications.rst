@@ -622,7 +622,7 @@ that veterans have additional referral options. Veteran status is not used
 to calculate the IAR-DST recommended level of care.
 
 Version 5.0.0 of the PMHC MDS specification introduced the collection of :ref:`dfn-veteran`
-for consistancy with the online tool. 
+in order to capture veteran status in line with other health data sets and DVA recommendations.
 
 For more information regarding IAR DST v2 see the `official IAR DST v2
 specification documentation <https://docs.iar-dst.online/en/v2/>`_.
