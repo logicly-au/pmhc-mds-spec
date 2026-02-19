@@ -595,10 +595,8 @@ could be collected separately from IAR DST data.
    The PMHC MDS implementation of this change is backward compatible with the
    existing IAR DST v1 format as the only difference is the extension of the `IAR-DST
    - Version`_ domain with IAR DST v2 specific values.
-   
-   For more information regarding IAR DST v2 see the `official IAR DST v2
-   specification documentation <https://docs.iar-dst.online/en/v2/>`_.
 
+   
 .. note::
    **Technical implementation guidance**
 
@@ -617,6 +615,18 @@ could be collected separately from IAR DST data.
    simplified if they are recorded separately in local systems and only combined
    for use during data supply.
    
+ADF veteran status was introduced in the `iar-dst.online tool <https://iar-dst.online>`_ in mid July 2025.
+It was added in order to expose additional information in the report that the
+tool generates. The additional information is a reminder to clinicians
+that veterans have additional referral options. Veteran status is not used
+to calculate the IAR-DST recommended level of care.
+
+Version 5.0.0 of the PMHC MDS specification introduced the collection of :ref:`dfn-veteran`
+for consistancy with the online tool. 
+
+For more information regarding IAR DST v2 see the `official IAR DST v2
+specification documentation <https://docs.iar-dst.online/en/v2/>`_.
+
 .. csv-table:: IAR-DST record layout
    :file: record/iar-dst-measure.csv
    :header-rows: 1

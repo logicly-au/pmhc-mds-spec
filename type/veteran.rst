@@ -1,3 +1,6 @@
+Please see :ref:`iar-dst-data-elements`
+for more information about how the IAR-DST uses the Veteran field.
+
 **S - Identifies as a veteran (obsolete)**
 
 Episodes of Care provided under The Way Back PMHC MDS extension allowed for 
