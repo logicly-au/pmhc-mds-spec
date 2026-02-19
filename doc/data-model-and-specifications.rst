@@ -618,11 +618,8 @@ could be collected separately from IAR DST data.
 ADF veteran status was introduced in the `iar-dst.online tool <https://iar-dst.online>`_ in mid July 2025.
 It was added in order to expose additional information in the report that the
 tool generates. The additional information is a reminder to clinicians
-that veterans have additional referral options. Veteran status is not used
+that veterans have additional referral options. :ref:`dfn-veteran` is not used
 to calculate the IAR-DST recommended level of care.
-
-Version 5.0.0 of the PMHC MDS specification introduced the collection of :ref:`dfn-veteran`
-in order to capture veteran status in line with other health data sets and DVA recommendations.
 
 For more information regarding IAR DST v2 see the `official IAR DST v2
 specification documentation <https://docs.iar-dst.online/en/v2/>`_.

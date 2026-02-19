@@ -165,9 +165,9 @@ Veteran
 ^^^^^^^
 
 A new :ref:`dfn-veteran` field has been added to the Intake and Episode tables. This field was included in The Way Back specification. 
-ADF veteran status is now collected by the IAR-DST online tool. :ref:`dfn-veteran` has been included on the Intake and Episode tables instead of 
-the new UA Episode table so that it can be used for monitoring both the IAR-DST and Univeral Aftercare. Please see :ref:`iar-dst-data-elements`
-for more information about how the IAR-DST uses the :ref:`dfn-veteran` field.
+ADF veteran status was introduced to the IAR-DST online tool in mid July 2025. :ref:`dfn-veteran` has been included on the Intake 
+and Episode tables instead of the new UA Episode table so that it can be used for monitoring both the IAR-DST, Univeral Aftercare
+and in order to capture this data item in line with other health data sets and DVA recommendations.
 
 .. _introduction-practitioner-reason-override:
 
