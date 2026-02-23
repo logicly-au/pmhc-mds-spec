@@ -30,7 +30,8 @@ Data Specification Change log
 
         * :ref:`iar-dst-data-elements`
 
-          * Updated to explain how the IAR-DST online tool uses :ref:`dfn-veteran`
+          * Updated to explain that :ref:`dfn-veteran` is not used in the calculation of the IAR-DST recommended
+            level of care.
 
 
 10/12/2025 - 5.0.0
