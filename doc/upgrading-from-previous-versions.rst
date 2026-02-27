@@ -5,7 +5,7 @@ Changes and Upgrading from Version 4.1
 
 Version 5.0 includes The Way Back as part of the default specification and rebrands it to Universal Aftercare.
 Version 5.0 also completes the rebranding of AMHC/HeadtoHealth to Medicare Mental Health Centre (MMHC) by
-retiring the AMHC Program Type and renaming the Head to Health Program Type to Head To Health Clinic. 
+retiring the AMHC Program Type and renaming the Head to Health Program Type to Head To Health Clinic.
 
 .. _data-specification-changes:
 
@@ -34,13 +34,13 @@ PMHC MDS Version 5.0 data specifications are as follows:
   `8: MMHC` response for :ref:`dfn-program_type`. The following changes have been applied to the :ref:`dfn-program_type` field on both
   the Intake and Episode tables:
 
-  - `2: Head to Health` renamed to `2: Head to Health Clinic`. This response 
-    is only to be used by remaining temporary Head to Health Clinics in New 
+  - `2: Head to Health` renamed to `2: Head to Health Clinic`. This response
+    is only to be used by remaining temporary Head to Health Clinics in New
     South Wales and Victoria. Please refer to :ref:`dfn-program_type` for more information.
   - `3: AMHC` has been retired. An error will be returned if this response is used.
 
-* A new :ref:`dfn-veteran` field has been added to the Intake and Episode tables. This field was included in The Way Back specification. 
-  There a new IAR-DST variant has been developed for Veterans. A Veterans field has been included on the Intake and Episode tables instead of 
+* A new :ref:`dfn-veteran` field has been added to the Intake and Episode tables. This field was included in The Way Back specification.
+  There a new IAR-DST variant has been developed for Veterans. A Veterans field has been included on the Intake and Episode tables instead of
   the new UA Episode table so that it can be used for monitoring both the IAR-DST and Universal Aftercare.
 
 * A new :ref:`dfn-iar_dst_practitioner_reason_for_override` has been added to the IAR-DST table.
@@ -65,7 +65,7 @@ specification:
    PMHC MDS Version 5.0.0 combined context upload columns
 
 .. note::
-  The above table is in the SVG format and can be enlarged 
+  The above table is in the SVG format and can be enlarged
   or zoomed by opening in a new tab or window or by downloading it.
 
 .. _data_migration_41_5:
@@ -73,8 +73,8 @@ specification:
 Data migration between PMHC MDS Version 4.1 and PMHC MDS Version 5.0
 --------------------------------------------------------------------
 
-During the migration to PMHC Version 5.0 and when PMHC MDS Version 4.1 specifcation files are
-uploaded during the period when both specifications 
+During the migration to PMHC Version 5.0 and when PMHC MDS Version 4.1 specification files are
+uploaded during the period when both specifications
 are accepted by the PMHC MDS, the existing following fields will be migrated as follows:
 
 * Existing episodes with :ref:`dfn-program_type` `3: AMHC` will be migrated to :ref:`dfn-program_type` `8: MMHC`
@@ -84,7 +84,7 @@ are accepted by the PMHC MDS, the existing following fields will be migrated as 
   * Continuing Head to Health clinics in New South Wales 
   * Existing Pop-Up clinics and Head to Health clinics in Victoria except for the Geelong MMHC
 
-The following new fields will be populated as follows: 
+The following new fields will be populated as follows:
 
 * :ref:`dfn-veteran` will be set to `9: Not stated/inadequately described` - Please see :ref:`data_mapping_twb3_pmhc5` for details on how :ref:`dfn-veteran` will be
   mapped for data submitted using The Wayback Version 3.0 specification.
@@ -95,7 +95,7 @@ The following new fields will be populated as follows:
 Data mapping between The Way Back Version 3.0 and PMHC MDS Version 5.0
 ----------------------------------------------------------------------
 
-During the migration to PMHC MDS Version 5.0 and when The Way Back Version 3.0 specifcation files are
+During the migration to PMHC MDS Version 5.0 and when The Way Back Version 3.0 specification files are
 uploaded during the period when both The Way Back Version 3.0 and Version 5.0 specification files
 are accepted by the PMHC MDS, The Way Back records will be mapped as follows:
 
