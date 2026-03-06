@@ -23,9 +23,7 @@ The new tables are:
 * :ref:`sidas-data-elements`
 * :ref:`who5-data-elements`
 
-A new :ref:`dfn-veteran` field has been added to the Intake and Episode tables. This field was included in The Way Back specification. 
-There is a new IAR-DST varient in development for Veterans. Veterans has been included on the Intake and Episode tables instead of 
-the new UA Episode table so that it can be used for monitoring both the IAR-DST and Univeral Aftercare.
+A new :ref:`dfn-veteran` field has been added to the Intake and Episode tables. More information is available at :ref:`introduction-veteran`.
 
 A new :ref:`dfn-iar_dst_practitioner_reason_for_override` field has been added to the IAR-DST table.
 
@@ -167,8 +165,9 @@ Veteran
 ^^^^^^^
 
 A new :ref:`dfn-veteran` field has been added to the Intake and Episode tables. This field was included in The Way Back specification. 
-There is a new IAR-DST varient in development for Veterans. Veterans has been included on the Intake and Episode tables instead of 
-the new UA Episode table so that it can be used for monitoring both the IAR-DST and Univeral Aftercare.
+ADF veteran status was introduced to the IAR-DST online tool in mid July 2025. :ref:`dfn-veteran` has been included on the Intake 
+and Episode tables instead of the new UA Episode table so that it can be used for monitoring both the IAR-DST, Univeral Aftercare
+and in order to capture this data item in line with other health data sets and DVA recommendations.
 
 .. _introduction-practitioner-reason-override:
 

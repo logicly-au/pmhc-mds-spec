@@ -3,6 +3,37 @@
 Data Specification Change log
 =============================
 
+19/2/2026 - 5.0.1
+-----------------
+
+* :ref:`validation-rules`
+
+  * :ref:`episode-current-validations` and :ref:`intake-current-validations`
+
+    * Updated validation rules for :ref:`dfn-organisation_type_referred_to_at_episode_conclusion` 
+      and :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` to reflect that
+      the HeadtoHelp / HeadtoHealth option can be used by remaining temporary Head to Health Clinics located in
+      Victoria and Thornleigh, NSW.
+
+  * :ref:`intake-current-validations`
+  
+    * Updated validation rule for :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` to reflect that
+      for other values that are not otherwise stated, :ref:`dfn-referred_to_organisation_path` is not required
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    * :ref:`measure-data-elements`
+
+      * :ref:`intake_measures`
+
+        * :ref:`iar-dst-data-elements`
+
+          * Updated to explain that :ref:`dfn-veteran` is not used in the calculation of the IAR-DST recommended
+            level of care.
+
+
 10/12/2025 - 5.0.0
 ------------------
 

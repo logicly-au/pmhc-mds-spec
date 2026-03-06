@@ -106,10 +106,13 @@ Intake
      #. Any other values for :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` require both
 
          * :ref:`dfn-date_referred_to_other_service_at_intake_conclusion` and
-         * :ref:`dfn-referred_to_organisation_path`
 
-  #. On :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` the value '42: AMHC' must only be used on existing records. It is not allowed on new records.
-  #. On :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` the value '44: HeadtoHelp / HeadtoHealth' must only be used on existing records. It is not allowed on new records.
+  #. On :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` the value 
+     '42: AMHC' must only be used on existing records. It is not allowed on new records.
+  #. On :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` the value 
+     '44: HeadtoHelp / HeadtoHealth' must only be used by remaining temporary 
+     Head to Health Clinics located in Victoria and Thornleigh, NSW. For all other 
+     organisations, it must only be use on existing records - it is not allowed on new records.
 
 
 .. _iar-dst-current-validations:
@@ -204,8 +207,9 @@ Episode
      not '09099999' may not be updated to '09099999'.
 
   #. On :ref:`dfn-organisation_type_referred_to_at_episode_conclusion` the value 
-     '22: HeadtoHelp / HeadtoHealth' must only be used on existing records. It 
-     is not allowed on new records.
+     '22: HeadtoHelp / HeadtoHealth' must only be used by remaining temporary 
+     Head to Health Clinics located in Victoria and Thornleigh, NSW. For all other 
+     organisations, it must only be use on existing records - it is not allowed on new records.
   #. On :ref:`dfn-organisation_type_referred_to_at_episode_conclusion` the value 
      '24: AMHC' must only be used on existing records. It is not allowed on new records.
   #. On :ref:`dfn-program_type` only NSW and Victorian Provider Organisations can 

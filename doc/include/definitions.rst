@@ -7951,6 +7951,9 @@ An indication of whether the client identifies as a veteran, as represented by a
   :9: Not stated/inadequately described
 
 :Notes:
+  Version 5.0.0 of the PMHC MDS specification introduced the collection of Veteran
+  in order to capture veteran status in line with other health data sets and DVA recommendations.
+  
   **S - Identifies as a veteran (obsolete)**
   
   Episodes of Care provided under The Way Back PMHC MDS extension allowed for 
