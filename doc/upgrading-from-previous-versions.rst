@@ -97,11 +97,13 @@ Data mapping between The Way Back Version 3.0 and PMHC MDS Version 5.0
 
 During the migration to PMHC MDS Version 5.0 and when The Way Back Version 3.0 specification files are
 uploaded during the period when both The Way Back Version 3.0 and Version 5.0 specification files
-are accepted by the PMHC MDS, The Way Back records will be mapped as follows:
+are accepted by the PMHC MDS, The Way Back records - which are any episode record with a `!wayback` tag, or associated TWB records - will be mapped as follows:
 
 +----------------------------------------+-----------------------------------------------------------------+---------------------------------------+--------------------------------------------------------------+--------------------------------------+--------------------------------------+
 | The Way Back Record Version 3.0 Record | The Way Back Version 3.0 Field                                  | PMHC MDS Version 5.0 Record           | PMHC MDS Version 5.0 Field                                   | The Way Back Version 3.0 Response    | PMHC MDS Version 5.0 Response        |
 +========================================+=================================================================+=======================================+==============================================================+======================================+======================================+
+| Episode                                | Program Type                                                    | Episode                               | :ref:`dfn-program_type`                                      | Any response                         | 9: Universal Aftercare               |
++----------------------------------------+-----------------------------------------------------------------+---------------------------------------+--------------------------------------------------------------+--------------------------------------+--------------------------------------+
 | TWB Episode                            | Organisation Path                                               | UA Episode                            | :ref:`dfn-organisation_path`                                 | Responses directly translate                                                |
 +----------------------------------------+-----------------------------------------------------------------+---------------------------------------+--------------------------------------------------------------+-----------------------------------------------------------------------------+
 | TWB Episode                            | Episode Key                                                     | UA Episode                            | :ref:`dfn-episode_key`                                       | Responses directly translate                                                |
