@@ -183,3 +183,6 @@ Steps required to upgrade to Version 5.0 uploads
 ------------------------------------------------
 
 1. Upgrade your Client Management System to export files in the new Version 5.0 format by addressing the changes described above.
+2. For organisations submitting Universal Aftercare data - as there was no Service Contact Practitioner record prior to Version 4.0,
+   uploads using The Way Back Version 3.0 extension have been auto generating Service Contact Practitioner keys since the introduction
+   of the base PMHC MDS Version 4.0 specification. More information is provided at https://docs.pmhc-mds.com/projects/data-specification/en/v4/changes-from-v2.html#steps-required-to-upgrade-to-version-4-uploads
