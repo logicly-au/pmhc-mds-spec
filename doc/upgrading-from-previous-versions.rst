@@ -97,11 +97,13 @@ Data mapping between The Way Back Version 3.0 and PMHC MDS Version 5.0
 
 During the migration to PMHC MDS Version 5.0 and when The Way Back Version 3.0 specification files are
 uploaded during the period when both The Way Back Version 3.0 and Version 5.0 specification files
-are accepted by the PMHC MDS, The Way Back records will be mapped as follows:
+are accepted by the PMHC MDS, The Way Back records - which are any episode record with a `!wayback` tag, or associated TWB records - will be mapped as follows:
 
 +----------------------------------------+-----------------------------------------------------------------+---------------------------------------+--------------------------------------------------------------+--------------------------------------+--------------------------------------+
 | The Way Back Record Version 3.0 Record | The Way Back Version 3.0 Field                                  | PMHC MDS Version 5.0 Record           | PMHC MDS Version 5.0 Field                                   | The Way Back Version 3.0 Response    | PMHC MDS Version 5.0 Response        |
 +========================================+=================================================================+=======================================+==============================================================+======================================+======================================+
+| Episode                                | Program Type                                                    | Episode                               | :ref:`dfn-program_type`                                      | Any response                         | 9: Universal Aftercare               |
++----------------------------------------+-----------------------------------------------------------------+---------------------------------------+--------------------------------------------------------------+--------------------------------------+--------------------------------------+
 | TWB Episode                            | Organisation Path                                               | UA Episode                            | :ref:`dfn-organisation_path`                                 | Responses directly translate                                                |
 +----------------------------------------+-----------------------------------------------------------------+---------------------------------------+--------------------------------------------------------------+-----------------------------------------------------------------------------+
 | TWB Episode                            | Episode Key                                                     | UA Episode                            | :ref:`dfn-episode_key`                                       | Responses directly translate                                                |
@@ -181,3 +183,6 @@ Steps required to upgrade to Version 5.0 uploads
 ------------------------------------------------
 
 1. Upgrade your Client Management System to export files in the new Version 5.0 format by addressing the changes described above.
+2. For organisations submitting Universal Aftercare data - as there was no Service Contact Practitioner record prior to Version 4.0,
+   uploads using The Way Back Version 3.0 extension have been auto generating Service Contact Practitioner keys since the introduction
+   of the base PMHC MDS Version 4.0 specification. More information is provided at https://docs.pmhc-mds.com/projects/data-specification/en/v4/changes-from-v2.html#steps-required-to-upgrade-to-version-4-uploads

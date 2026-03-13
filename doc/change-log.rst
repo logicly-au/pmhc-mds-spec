@@ -3,6 +3,16 @@
 Data Specification Change log
 =============================
 
+12/3/2026 - 5.0.2
+-----------------
+
+* :ref:`changes-from-v4.1`
+
+  * :ref:`data_mapping_twb3_pmhc5`
+
+    * Added information about how Wayback records are identified and how :ref:`dfn-program_type` is mapped from
+      The Way Back Version 3.0 to PMHC MDS Version 5.0
+
 19/2/2026 - 5.0.1
 -----------------
 
