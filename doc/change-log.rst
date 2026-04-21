@@ -3,6 +3,17 @@
 Data Specification Change log
 =============================
 
+??/?/2026 - 5.0.3
+-----------------
+
+* :ref:`validation-rules`
+
+  * :ref:`episode-current-validations` and :ref:`intake-current-validations`
+
+    * Updated validation rules for such that `!rchpsychology` and `!rchpsychiatry` tags must 
+      must only be included in the :ref:`dfn-episode_tags` field
+      where the :ref:`dfn-program_type` is '8: MMHC'.
+
 12/3/2026 - 5.0.2
 -----------------
 
