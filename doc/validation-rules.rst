@@ -219,6 +219,12 @@ Episode
   #. The ``!uaooh`` tag must only be included in the :ref:`dfn-episode_tags` field
      where the :ref:`dfn-program_type` is '9: Universal Aftercare'. For more information see 
      `Current System Tags <https://docs.pmhc-mds.com/data-specifications.html#current-system-tags>`_.
+  #. The ``!rchpsychology`` tag must only be included in the :ref:`dfn-episode_tags` field
+     where the :ref:`dfn-program_type` is '8: MMHC'. For more information see 
+     `Current System Tags <https://docs.pmhc-mds.com/data-specifications.html#current-system-tags>`_.
+  #. The ``!rchpsychiatry`` tag must only be included in the :ref:`dfn-episode_tags` field
+     where the :ref:`dfn-program_type` is '8: MMHC'. For more information see 
+     `Current System Tags <https://docs.pmhc-mds.com/data-specifications.html#current-system-tags>`_.
 
 .. _service-contact-current-validations:
 
