@@ -3,7 +3,7 @@
 Data Specification Change log
 =============================
 
-??/?/2026 - 5.0.3
+4/5/2026 - 5.0.3
 -----------------
 
 * :ref:`validation-rules`
