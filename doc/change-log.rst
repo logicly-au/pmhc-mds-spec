@@ -3,6 +3,13 @@
 Data Specification Change log
 =============================
 
+24/6/2026
+---------
+
+* :ref:`data-model`
+
+  * Added PDF version of the data model diagram
+
 4/5/2026 - 5.0.3
 -----------------
 
