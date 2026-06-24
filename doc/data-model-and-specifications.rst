@@ -35,8 +35,10 @@ of the different contexts that may be submitted.
    PMHC MDS Version 5.0 combined data model
 
 .. note::
-  * The above data model diagram is in the SVG format and can be enlarged 
-    or zoomed by opening in a new tab or window or by downloading it.
+  The above data model diagram can be downloaded in the following formats:
+
+  * :download:`SVG <figures/data-model-v5.0-combined.svg>`
+  * :download:`PDF <figures/data-model-v5.0-combined.pdf>`
 
 .. _collection-occasion-diagram:
 
