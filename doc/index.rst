@@ -9,6 +9,8 @@ Version |version|
    
    Uploads are no longer be accepted in the 4.1 format.
 
+   `Version 5.0 uploads have been accepted since December 2025 <https://pmhc-mds.com/communications/#/2025/12/18/Release-of-Version-5-0-for-upload-and-data-entry/>`_.
+
 .. This INTRODUCTION will only appear in the online HTML version
    (make.sh html) and not in PDFs or any other renderings
 
