@@ -20,7 +20,7 @@ docker run --rm -v "$(pwd):/mnt/cwd" docker.sdlocal.net/csvw/metadata2rst:multip
 echo "Making example files"
 pushd .
 cd doc/_static/example-files
-rm -fv *.zip
+rm -fv ./*.zip
 zip PMHC-5-0-combined.zip combined/*
 zip PMHC-5-0-intake.zip intake/*
 zip PMHC-5-0-treatment.zip treatment/*
@@ -54,7 +54,7 @@ echo "Optimising images"
 docker run --rm -e GIT_VERSION -v .:/mnt/workdir \
   --workdir /mnt/workdir/doc/build/singlehtml/_images \
   logicly/sphinx-html2pdf:production \
-  find . -name *.png -exec pngquant --force --output {} 8 {} \;
+  find . -name ./*.png -exec pngquant --force --output {} 8 {} \;
 
 docker run --rm -e GIT_VERSION -v .:/mnt/workdir \
   logicly/sphinx-html2pdf:production \
