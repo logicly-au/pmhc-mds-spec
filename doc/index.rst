@@ -5,7 +5,8 @@ Version |version|
 
 .. warning::
 
-   Version 4.1 is no longer supported. It's end-of-life was 30 June 2026.
+   Version 4.1 is no longer supported. Its end-of-life was 30 June 2026.
+   
    Uploads are no longer be accepted in the 4.1 format.
 
 .. This INTRODUCTION will only appear in the online HTML version
