@@ -103,9 +103,9 @@ Intake
          * :ref:`dfn-date_referred_to_other_service_at_intake_conclusion` must NOT be blank
          * :ref:`dfn-referred_to_organisation_path` must be blank
 
-     #. Any other values for :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` require both
+     #. Any other values for :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` require:
 
-         * :ref:`dfn-date_referred_to_other_service_at_intake_conclusion` and
+         * :ref:`dfn-date_referred_to_other_service_at_intake_conclusion`
 
   #. On :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` the value 
      '42: AMHC' must only be used on existing records. It is not allowed on new records.
