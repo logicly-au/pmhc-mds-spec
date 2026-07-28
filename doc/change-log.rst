@@ -3,6 +3,24 @@
 Data Specification Change log
 =============================
 
+28/7/2026
+---------
+
+* :ref:`validation-rules`
+
+  * :ref:`intake-current-validations`
+
+    * Updated the validation rule for :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` so that
+      the response '42: AMHC' is obsolete where :ref:`dfn-date_client_contacted_intake` is 18 December 2025 or later.
+      Previously this rule allowed the '42: AMHC' response on data that had already
+      been uploaded to the PMHC, but not on new data.
+    * Updated the validation rule for :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` so that
+      the response '44: HeadtoHelp / HeadtoHealth' can be used by all organisations where 
+      :ref:`dfn-date_client_contacted_intake` is earlier than 18 December 2025. After that date is is
+      obsolete except for remaining Head to Health Clinics located in Victoria and Thornleigh, NSW.
+      Previously this rule allowed the '44: HeadtoHelp / HeadtoHealth' response on data that had already
+      been uploaded to the PMHC, but not on new data.
+
 24/6/2026
 ---------
 
