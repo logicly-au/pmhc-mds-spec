@@ -365,7 +365,7 @@
     "titles": [ "referrer_organisation_type" ],
     "dc:title": "Referrer Organisation Type",
     "schema:description": "Type of organisation in which the referring professional is based.",
-    "schema:disambiguatingDescription": "table/episode/referrer-organisation-type.rst",
+    "schema:disambiguatingDescription": "type/referrer-organisation-type.rst",
     "schema:whenToCollect": "Episode start",
     "schema:dateCreated": "2021-08-23",
     "datatype": {
