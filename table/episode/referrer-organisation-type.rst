@@ -7,3 +7,9 @@ public acute and psychiatric hospital settings, community mental health care
 services, and s specialised residential mental health care services).
 
 Not applicable should only be selected in instances of Self referral.
+
+.. include:: shared/referrer-organisation-type.rst
+
+**98 - None/Not applicable**
+
+  Should only be selected in instances of Self referral.

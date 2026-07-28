@@ -107,12 +107,14 @@ Intake
 
          * :ref:`dfn-date_referred_to_other_service_at_intake_conclusion`
 
-  #. On :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` the value 
+  #. For :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` the value 
      '42: AMHC' must only be used on existing records. It is not allowed on new records.
-  #. On :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` the value 
-     '44: HeadtoHelp / HeadtoHealth' must only be used by remaining temporary 
+  #. For :ref:`dfn-organisation_type_referred_to_at_intake_conclusion` the value 
+     '44: HeadtoHelp / HeadtoHealth' must only be used by remaining 
      Head to Health Clinics located in Victoria and Thornleigh, NSW. For all other 
-     organisations, it must only be use on existing records - it is not allowed on new records.
+     organisations this response is obsolete where 
+     :ref:`dfn-date_client_contacted_intake` is 18 December 2025 or later. It may still be
+     used by all organisations when adding intakes prior to this date.
 
 
 .. _iar-dst-current-validations:
