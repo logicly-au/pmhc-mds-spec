@@ -128,6 +128,14 @@ html_theme_options = {
     'analytics_id': 'UA-84023505-2',
 }
 
+html_context = {
+    "display_github": True, # Integrate GitHub
+    "github_user": "strategicdata", # Username
+    "github_repo": "pmhc-mds-spec", # Repo name
+    "github_version": "v5.0", # Version
+    "conf_py_path": "/doc/", # Path in the checkout to the docs root
+}
+
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
 
